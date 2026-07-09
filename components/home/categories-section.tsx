@@ -12,6 +12,16 @@ const CATEGORY_ICONS: Record<string, React.ElementType> = {
   body: Square,
 }
 
+const CATEGORY_IMAGES: Record<string, string> = {
+  engines: "/images/category-engines.png",
+  transmissions: "/images/category-transmissions.png",
+  drivetrain: "/images/category-drivetrain.png",
+  electrical: "/images/category-electrical.png",
+  cooling: "/images/category-cooling.png",
+  brakes: "/images/category-brakes.png",
+  suspension: "/images/category-suspension.png",
+}
+
 export function CategoriesSection() {
   return (
     <section className="py-20 bg-background">
@@ -30,26 +40,42 @@ export function CategoriesSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
           {PART_CATEGORIES.map((cat) => {
             const Icon = CATEGORY_ICONS[cat.id]
+            const categoryImage = CATEGORY_IMAGES[cat.id]
             return (
               <Link
                 key={cat.id}
                 href={`/parts/${cat.id}`}
-                className="group glass-card rounded-sm p-7 transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-[0_8px_40px_rgba(0,0,0,0.5)]"
+                className="group glass-card rounded-sm overflow-hidden transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-[0_8px_40px_rgba(0,0,0,0.5)]"
               >
-                {cat.id === 'engines' ? (
-                  <div className="w-8 h-8 mb-4 object-cover">
-                    <img src="/images/icon-gear.png" alt={cat.label} className="w-full h-full" />
+                {/* Product Image */}
+                {categoryImage && (
+                  <div className="w-full h-40 mb-4 overflow-hidden rounded-sm relative bg-black/20">
+                    <Image
+                      src={categoryImage}
+                      alt={cat.label}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                ) : Icon ? (
-                  <Icon className="w-7 h-7 text-muted-foreground mb-4 group-hover:text-primary transition-colors" />
-                ) : null}
-                <h3 className="text-[15px] font-bold tracking-wide text-foreground mb-2">{cat.label}</h3>
-                <p className="text-[11px] text-muted-foreground mb-4">{cat.parts.length} parts available</p>
-                <div className="border-t border-border/30 pt-3 flex flex-wrap gap-1.5">
-                  {cat.parts.slice(0, 3).map((p) => (
-                    <span key={p} className="px-2.5 py-1 bg-secondary/50 border border-border/40 text-[10px] text-muted-foreground rounded-sm">{p}</span>
-                  ))}
-                  <span className="px-2.5 py-1 bg-secondary/50 border border-border/40 text-[10px] text-muted-foreground rounded-sm">+{cat.parts.length - 3}</span>
+                )}
+                
+                {/* Content */}
+                <div className="p-7 pt-3">
+                  {cat.id === 'engines' ? (
+                    <div className="w-8 h-8 mb-4 object-cover">
+                      <img src="/images/icon-gear.png" alt={cat.label} className="w-full h-full" />
+                    </div>
+                  ) : Icon ? (
+                    <Icon className="w-7 h-7 text-muted-foreground mb-4 group-hover:text-primary transition-colors" />
+                  ) : null}
+                  <h3 className="text-[15px] font-bold tracking-wide text-foreground mb-2">{cat.label}</h3>
+                  <p className="text-[11px] text-muted-foreground mb-4">{cat.parts.length} parts available</p>
+                  <div className="border-t border-border/30 pt-3 flex flex-wrap gap-1.5">
+                    {cat.parts.slice(0, 3).map((p) => (
+                      <span key={p} className="px-2.5 py-1 bg-secondary/50 border border-border/40 text-[10px] text-muted-foreground rounded-sm">{p}</span>
+                    ))}
+                    <span className="px-2.5 py-1 bg-secondary/50 border border-border/40 text-[10px] text-muted-foreground rounded-sm">+{cat.parts.length - 3}</span>
+                  </div>
                 </div>
               </Link>
             )
