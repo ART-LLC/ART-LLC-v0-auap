@@ -32,7 +32,7 @@ export function HeroSection() {
             {/* Logo + Wordmark — ULTRA brand block */}
             <div className="flex flex-col items-center gap-16 sm:gap-20 w-full py-14 pb-0">
               {/* Ultra-massive logo */}
-              <Logo size="7xl" variant="medallion" priority showGlow />
+              <Logo size="4xl" variant="medallion" priority showGlow />
               {/* Ultra wordmark */}
               <BrandWordmark 
                 size="hero-5xl" 
