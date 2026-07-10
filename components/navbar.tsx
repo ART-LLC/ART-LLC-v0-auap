@@ -49,6 +49,7 @@ export function Navbar() {
 
   const navItems = [
     { label: "Home", href: "/", icon: Home },
+    { label: "Shop", href: "/shop" },
     { label: "Used Parts", href: "/parts" },
     { label: "Engines", href: "/used-engines" },
     { label: "Transmissions", href: "/used-transmissions" },

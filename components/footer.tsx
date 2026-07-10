@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { CAR_MAKES, PART_CATEGORIES, PHONE_DISPLAY, CONTACT_EMAIL } from "@/lib/data"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
 
@@ -78,6 +78,30 @@ export function Footer() {
                 <MapPin className="w-4 h-4 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">Woodbine, NJ</span>
               </a>
+            </div>
+            
+            {/* Social Media Links */}
+            <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-border/20">
+              <p className="text-xs font-bold tracking-[0.15em] uppercase text-muted-foreground mb-4">Follow Us</p>
+              <div className="flex gap-3">
+                {[
+                  { icon: Facebook, href: "https://facebook.com/auapw", label: "Facebook" },
+                  { icon: Twitter, href: "https://twitter.com/auapw", label: "Twitter" },
+                  { icon: Instagram, href: "https://instagram.com/auapw", label: "Instagram" },
+                  { icon: Linkedin, href: "https://linkedin.com/company/auapw", label: "LinkedIn" },
+                ].map(({ icon: Icon, href, label }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-200 border border-primary/30 hover:border-primary/60"
+                    title={label}
+                  >
+                    <Icon className="w-4 h-4" />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
