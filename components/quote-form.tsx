@@ -46,43 +46,26 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
 
     setLoading(true)
 
-    // Build subject + body
-    const subject = `Quote Request: ${year || ""} ${make} ${model || ""} — ${part || "Auto Part"}`.trim()
-    const body = [
-      "New Quote Request — AUAPW LLC",
-      "",
-      "--- Vehicle Details ---",
-      `Part:    ${part    || "Not specified"}`,
-      `Make:    ${make}`,
-      `Model:   ${model   || "Not specified"}`,
-      `Year:    ${year    || "Not specified"}`,
-      `Option:  ${option  || "Not specified"}`,
-      "",
-      "--- Customer Details ---",
-      `Name:    ${name}`,
-      `Phone:   ${phone}`,
-      `Email:   ${email   || "Not provided"}`,
-      `ZIP:     ${zip     || "Not provided"}`,
-      "",
-      "--- Message ---",
-      message || "(no additional details)",
-    ].join("\n")
+    try {
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ part, make, model, year, option, name, phone, email, zip, message }),
+      })
+      const data = await res.json()
 
-    const mailtoUrl =
-      `mailto:${CONTACT_EMAIL}` +
-      `?subject=${encodeURIComponent(subject)}` +
-      `&body=${encodeURIComponent(body)}`
+      if (!res.ok) {
+        setError(data.error || "Something went wrong. Please try again or call us.")
+        setLoading(false)
+        return
+      }
 
-    const link = document.createElement("a")
-    link.href = mailtoUrl
-    link.target = "_blank"
-    link.rel = "noopener noreferrer"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-
-    setLoading(false)
-    setSuccess(true)
+      setLoading(false)
+      setSuccess(true)
+    } catch {
+      setError("Network error. Please try again or call us at " + PHONE_DISPLAY + ".")
+      setLoading(false)
+    }
   }
 
   const field =
@@ -92,12 +75,12 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
     return (
       <div className="glass-card rounded-xl p-8 flex flex-col items-center text-center gap-4">
         <CheckCircle2 className="w-14 h-14 text-green-400" />
-        <h3 className="text-xl font-bold text-foreground">Email Client Opened!</h3>
+        <h3 className="text-xl font-bold text-foreground">Quote Request Sent!</h3>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Your email client should now be open with all quote details pre-filled. Just hit <strong>Send</strong> to reach us at <strong>{CONTACT_EMAIL}</strong>.
+          Your quote request has been delivered to our team. We will contact you within <strong>24 hours</strong> with your free quote.
         </p>
         <div className="w-full bg-card/50 border border-border/30 rounded-lg p-4 flex flex-col sm:flex-row gap-3 justify-center">
-          <p className="text-xs text-muted-foreground w-full text-center mb-1 sm:hidden">Email did not open? Contact us directly:</p>
+          <p className="text-xs text-muted-foreground w-full text-center mb-1 sm:hidden">Need it faster? Contact us directly:</p>
           <a href="tel:8888185001" className="auapw-btn auapw-btn-green auapw-btn-sm">
             <Phone className="w-4 h-4" />
             {PHONE_DISPLAY}

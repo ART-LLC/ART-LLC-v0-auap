@@ -25,48 +25,13 @@ export default function QuotePage() {
   const [message, setMessage] = useState("")
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
 
   const models = make ? CAR_MODELS[make] || [] : []
   const partOptions = part ? getPartOptions(part) : []
   const selectClass = "w-full text-sm px-3 py-2.5 bg-[rgba(13,15,22,0.75)] border border-border/50 rounded-lg text-foreground appearance-none focus:border-primary/55 focus:ring-1 focus:ring-primary/20 outline-none transition-all"
 
-  function buildMailtoUrl() {
-    const subject = `Quote Request: ${[year, make, model].filter(Boolean).join(" ")} — ${part || "Auto Part"}`
-
-    const body = [
-      `New Quote Request — AUAPW LLC`,
-      ``,
-      `═══════════════════════════`,
-      `  VEHICLE & PART DETAILS`,
-      `═══════════════════════════`,
-      `Part Needed : ${part || "Not specified"}`,
-      `Make        : ${make}`,
-      `Model       : ${model || "Not specified"}`,
-      `Year        : ${year || "Not specified"}`,
-      `Option      : ${option || "Not specified"}`,
-      ``,
-      `═══════════════════════════`,
-      `  CUSTOMER DETAILS`,
-      `═══════════════════════════`,
-      `Name        : ${name}`,
-      `Phone       : ${phone}`,
-      `Email       : ${email || "Not provided"}`,
-      `State       : ${state || "Not provided"}`,
-      `ZIP Code    : ${zip || "Not provided"}`,
-      ``,
-      `═══════════════════════════`,
-      `  ADDITIONAL NOTES`,
-      `═══════════════════════════`,
-      message || "(none)",
-      ``,
-      `---`,
-      `Submitted via AUAPW LLC — ${new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" })} PST`,
-    ].join("\n")
-
-    return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-  }
-
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setError(null)
 
@@ -74,18 +39,28 @@ export default function QuotePage() {
     if (!name.trim()) { setError("Please enter your name."); return }
     if (!phone.trim()) { setError("Please enter your phone number."); return }
 
-    // Immediately open the customer's email client — no server round-trip needed
-    const mailtoUrl = buildMailtoUrl()
-    window.location.href = mailtoUrl
+    setLoading(true)
 
-    setSuccess(true)
+    try {
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ part, make, model, year, option, name, phone, email, state, zip, message }),
+      })
+      const data = await res.json()
 
-    // Also fire the API in the background for logging (non-blocking, no await)
-    fetch("/api/quote", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ part, make, model, year, option, name, phone, email, state, zip, message }),
-    }).catch(() => {/* silent — mailto already fired */})
+      if (!res.ok) {
+        setError(data.error || "Something went wrong. Please try again or call us.")
+        setLoading(false)
+        return
+      }
+
+      setLoading(false)
+      setSuccess(true)
+    } catch {
+      setError(`Network error. Please try again or call us at ${PHONE_DISPLAY}.`)
+      setLoading(false)
+    }
   }
 
   return (
@@ -102,7 +77,7 @@ export default function QuotePage() {
             </div>
             <h1 className="font-serif text-[clamp(1.75rem,4vw,3.5rem)] font-bold text-foreground">Request a Free Quote</h1>
             <p className="mt-3 text-sm text-muted-foreground max-w-[520px]">
-              Fill out the form and our team will find the best available parts from our 2,000+ yard network. Your email client will open to send the request directly to our team.
+              Fill out the form and our team will find the best available parts from our 2,000+ yard network. Your request is sent directly to our team the moment you submit.
             </p>
           </div>
         </div>
@@ -143,21 +118,17 @@ export default function QuotePage() {
               {success ? (
                 <div className="glass-card rounded-sm p-8 text-center">
                   <CheckCircle2 className="w-16 h-16 text-green-400 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-foreground mb-3">Quote Request Prepared!</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-3">Quote Request Sent!</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-2">
-                    Your email client should open with the quote details pre-filled. Please click &quot;Send&quot; in your email client to submit.
+                    Your quote request has been delivered directly to our team. We will contact you within <strong>24 hours</strong> with your free quote.
                   </p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                    If the email didn&apos;t open, you can send your request directly to{" "}
+                    Need it faster? Call us at{" "}
+                    <a href={`tel:${PHONE_SALES.replace(/-/g, "")}`} className="text-primary font-bold hover:underline">{PHONE_DISPLAY}</a>
+                    {" "}or email{" "}
                     <a href={`mailto:${CONTACT_EMAIL}`} className="text-primary font-bold hover:underline">{CONTACT_EMAIL}</a>
                   </p>
                   <div className="flex flex-wrap gap-3 justify-center">
-                    <a 
-                      href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Quote Request: ${year} ${make} ${model} - ${part}`)}&body=${encodeURIComponent(`Hi, I would like a quote for:\n\nPart: ${part}\nMake: ${make}\nModel: ${model}\nYear: ${year}\nOption: ${option}\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\n\n${message}`)}`}
-                      className="auapw-btn auapw-btn-blue inline-flex items-center justify-center gap-2 px-6 py-3 text-[0.72rem] font-bold tracking-[0.18em] uppercase rounded-sm"
-                    >
-                      <Mail className="w-4 h-4" /> Open Email Again
-                    </a>
                     <button onClick={() => { setSuccess(false); setMake(""); setModel(""); setPart(""); }} className="px-6 py-3 text-sm text-muted-foreground border border-border/50 rounded-sm hover:text-foreground hover:border-foreground/50 transition-all">
                       Submit Another Request
                     </button>
@@ -257,12 +228,12 @@ export default function QuotePage() {
                       <textarea rows={3} placeholder="Any extra details that help us find the right part faster..." className={`${selectClass} resize-none`} value={message} onChange={e => setMessage(e.target.value)} />
                     </div>
 
-                    <button type="submit" className="auapw-btn auapw-btn-blue w-full inline-flex items-center justify-center gap-2 px-6 py-4 text-[0.75rem] font-bold tracking-[0.18em] uppercase rounded-lg transition-all shadow-lg hover:shadow-xl hover:shadow-primary/20 mt-8">
+                    <button type="submit" disabled={loading} className="auapw-btn auapw-btn-blue w-full inline-flex items-center justify-center gap-2 px-6 py-4 text-[0.75rem] font-bold tracking-[0.18em] uppercase rounded-lg transition-all shadow-lg hover:shadow-xl hover:shadow-primary/20 mt-8 disabled:opacity-60">
                       <Mail className="w-4 h-4" />
-                      Get A Free Quote — Send Now
+                      {loading ? "Sending..." : "Get A Free Quote — Send Now"}
                     </button>
                     <p className="text-[11px] text-muted-foreground text-center">
-                      Clicking &quot;Get A Quote&quot; will open your email client to send the request to {CONTACT_EMAIL}. No spam, no obligation.
+                      Your request is emailed instantly to our team at {CONTACT_EMAIL}. No spam, no obligation.
                     </p>
                     <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
                       By Submitting, you authorize AUAPW LLC to text and call the number you provided with offers &amp; other information, possibly using automated means. Messages/Data rates apply. Consent is not a condition of purchase.
