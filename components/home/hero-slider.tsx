@@ -8,6 +8,8 @@ const SLIDES = [
   { src: "/images/hero-slide-2.png", alt: "Aerial view of auto salvage yard" },
   { src: "/images/hero-slide-3.png", alt: "Used transmissions and auto parts" },
   { src: "/images/hero-slide-4.png", alt: "Vast auto parts warehouse interior" },
+  { src: "/images/section-used-engines.png", alt: "Premium used engine block" },
+  { src: "/images/section-used-transmissions.png", alt: "High-quality transmission" },
 ]
 
 const INTERVAL = 4500
@@ -61,16 +63,16 @@ export function HeroSlider() {
           fill
           className={`object-cover transition-all duration-[1200ms] ease-in-out ${
             idx === current
-              ? "opacity-40 scale-105"
+              ? "opacity-70 scale-105"
               : "opacity-0 scale-110"
           }`}
           priority={idx === 0}
         />
       ))}
 
-      {/* Dark vignette overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[rgba(8,8,8,0.55)] via-[rgba(8,8,8,0.1)] to-[rgba(8,8,8,0.92)]" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[rgba(8,8,8,0.4)] via-transparent to-[rgba(8,8,8,0.4)]" />
+      {/* Lighter vignette overlays for better visibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[rgba(8,8,8,0.35)] via-[rgba(8,8,8,0.05)] to-[rgba(8,8,8,0.75)]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[rgba(8,8,8,0.2)] via-transparent to-[rgba(8,8,8,0.2)]" />
 
       {/* Slide indicators */}
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 z-10">

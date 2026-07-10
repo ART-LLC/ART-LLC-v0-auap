@@ -4,8 +4,15 @@ import { Search, Truck, Shield, RotateCcw, Clock, ThumbsUp, DollarSign, Grid3X3 
 
 export function ContentSection() {
   return (
-    <section className="py-20 bg-background ghost-scan-section" style={{ paddingTop: '9px' }}>
-      <div className="mx-auto max-w-[1000px] px-6" style={{ fontFamily: 'system-ui' }}>
+    <section className="py-20 bg-background ghost-scan-section relative" style={{ paddingTop: '9px' }}>
+      {/* Vivid background section */}
+      <div className="absolute inset-0 z-0">
+        <Image src="/images/section-content-banner.png" alt="" fill className="object-cover opacity-15" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background/90" />
+      </div>
+      {/* Content wrapper */}
+      <div className="absolute inset-0 z-0" />
+      <div className="mx-auto max-w-[1000px] px-6 relative z-10" style={{ fontFamily: 'system-ui' }}>
         {/* Banner Image */}
         <div className="relative w-full h-56 sm:h-72 rounded-xl overflow-hidden mb-10">
           <Image src="/images/section-content-banner.png" alt="AUAPW - All Used Auto Parts Warehouse" fill className="object-cover" priority />
