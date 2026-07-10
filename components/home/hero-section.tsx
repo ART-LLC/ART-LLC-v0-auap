@@ -29,12 +29,30 @@ export function HeroSection() {
               boxShadow: "0 8px 48px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.08)"
             }}
           >
-            {/* Logo + Wordmark — ULTRA brand block */}
-            <div className="flex flex-col items-center gap-16 sm:gap-20 w-full py-14">
-              {/* Ultra-massive logo */}
-              <Logo size="7xl" variant="medallion" priority showGlow />
-              {/* Ultra wordmark */}
-              <BrandWordmark size="hero-5xl" className="text-center items-center" />
+            {/* Logo + Wordmark — brand block scaled up */}
+            <div
+              className="flex flex-col items-center w-full py-16"
+              style={{ gap: "clamp(3rem, 5vw, 5rem)" }}
+            >
+              {/* Logo — fill most of the viewport width */}
+              <div style={{ width: "clamp(360px, 55vw, 680px)", height: "clamp(360px, 55vw, 680px)", position: "relative" }}>
+                <Logo size="7xl" variant="medallion" priority showGlow />
+              </div>
+              {/* Wordmark — inline font-size override */}
+              <div
+                className="flex flex-col items-center text-center gap-3"
+                style={{ fontSize: "clamp(5rem, 18vw, 14rem)", lineHeight: 1 }}
+              >
+                <span className="wordmark-3d" style={{ fontSize: "inherit", lineHeight: "inherit", letterSpacing: "0.04em" }}>
+                  𝐀𝐔𝐀𝐏𝐖 LLC
+                </span>
+                <span className="wordmark-sub" style={{ fontSize: "clamp(0.9rem, 2.2vw, 1.6rem)", letterSpacing: "0.3em" }}>
+                  ALL USED AUTO PARTS WAREHOUSE
+                </span>
+                <span className="wordmark-tag" style={{ fontSize: "clamp(0.75rem, 1.6vw, 1.2rem)", letterSpacing: "0.2em" }}>
+                  &ldquo;Trusted Partner for Automotive Services and Solutions&rdquo;
+                </span>
+              </div>
             </div>
 
             {/* Headline */}
