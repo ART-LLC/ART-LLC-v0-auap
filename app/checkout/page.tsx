@@ -46,7 +46,7 @@ export default function CheckoutPage() {
 
   const handleShippingSubmit = () => {
     if (formData.firstName && formData.lastName && formData.email && formData.address && formData.city && formData.state && formData.zipCode) {
-      setStep('payment')
+      setStep('payment' as const)
     }
   }
 
@@ -56,7 +56,7 @@ export default function CheckoutPage() {
     await new Promise((resolve) => setTimeout(resolve, 2000))
     setIsProcessing(false)
     clearCart()
-    setStep('confirmation' as const)
+    setStep('confirmation')
   }
 
   if (items.length === 0 && step !== 'confirmation') {
@@ -194,7 +194,7 @@ export default function CheckoutPage() {
                       </div>
                     )}
 
-                    {step !== 'shipping' && (
+                    {(step === 'payment' || step === 'confirmation' as const) && (
                       <div className="text-sm text-foreground/60 space-y-1">
                         <p>{formData.firstName} {formData.lastName}</p>
                         <p>{formData.address}</p>
@@ -245,7 +245,7 @@ export default function CheckoutPage() {
                       </div>
                     )}
 
-                    {step !== 'shipping' && step !== 'payment' && (
+                    {step === 'confirmation' && (
                       <p className="text-sm text-foreground/60">Payment confirmed</p>
                     )}
                   </div>
