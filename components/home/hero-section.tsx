@@ -29,12 +29,12 @@ export function HeroSection() {
               boxShadow: "0 8px 48px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.08)"
             }}
           >
-            {/* Logo + Wordmark — MONUMENTAL brand block */}
-            <div className="flex flex-col items-center gap-10 sm:gap-12 w-full py-8">
-              {/* Colossal logo */}
-              <Logo size="4xl" variant="medallion" priority showGlow />
-              {/* Monumental wordmark */}
-              <BrandWordmark size="hero-2xl" className="text-center items-center" />
+            {/* Logo + Wordmark — EPIC brand block */}
+            <div className="flex flex-col items-center gap-12 sm:gap-14 w-full py-10">
+              {/* Titanic logo */}
+              <Logo size="5xl" variant="medallion" priority showGlow />
+              {/* Epic wordmark */}
+              <BrandWordmark size="hero-3xl" className="text-center items-center" />
             </div>
 
             {/* Headline */}
