@@ -57,6 +57,7 @@ export function Navbar() {
   const allPages = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
+    { label: "Acura Parts", href: "/acura" },
     { label: "Used Parts", href: "/parts" },
     { label: "Used Engines", href: "/used-engines" },
     { label: "Used Transmissions", href: "/used-transmissions" },
