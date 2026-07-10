@@ -4,25 +4,18 @@ import { BrandWordmark } from "@/components/brand-wordmark"
 import { BrandEmblem3D } from "@/components/brand-emblem-3d"
 import { Logo } from "@/components/logo"
 import Image from "next/image"
+import { HeroSlider } from "@/components/home/hero-slider"
 import { Search, MessageSquare, Phone, Mail, Cog, Settings2, Calendar } from "lucide-react"
 
 export function HeroSection() {
   return (
     <section className="relative pt-[58px] overflow-hidden ghost-scan-section" style={{ paddingTop: "45px" }}>
-      {/* Background — always matte black with engine image */}
+      {/* Background — auto-sliding image carousel */}
       <div className="absolute inset-0 bg-[#080808]">
-        <Image
-          src="/images/hero-engines.png"
-          alt="Used automotive engines warehouse inventory"
-          fill
-          className="object-cover opacity-35 scale-105"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-[rgba(232,232,232,0.04)] via-transparent to-[rgba(10,12,20,0.5)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(8,8,8,0.5)] via-[rgba(8,8,8,0.08)] to-[rgba(8,8,8,0.92)]" />
-        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.05]" style={{ background: "radial-gradient(circle, #e8e8e8 0%, transparent 70%)" }} />
+        <HeroSlider />
+        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: "radial-gradient(circle, #e8e8e8 0%, transparent 70%)" }} />
         <GearBackground />
-        <div className="absolute inset-0 opacity-[0.025]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E\")", backgroundSize: "100px" }} />
+        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E\")", backgroundSize: "100px" }} />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1280px] px-4 sm:px-6">
@@ -36,16 +29,18 @@ export function HeroSection() {
               boxShadow: "0 8px 48px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.08)"
             }}
           >
-            {/* Logo + Wordmark row */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-              <Logo size="xl" variant="medallion" priority showGlow />
-              <BrandWordmark size="hero" />
+            {/* Logo + Wordmark — BIG brand block */}
+            <div className="flex flex-col items-center gap-6 sm:gap-8 w-full py-4">
+              {/* Giant logo */}
+              <Logo size="2xl" variant="medallion" priority showGlow />
+              {/* Giant wordmark */}
+              <BrandWordmark size="about" className="text-center items-center" />
             </div>
 
             {/* Headline */}
-            <h1 className="font-sans leading-tight text-balance max-w-3xl" style={{ fontFamily: "system-ui" }}>
-              <span className="block text-[0.7rem] sm:text-[0.9rem] font-black tracking-[0.2em] uppercase text-muted-foreground mb-2" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
-              <span className="block mercury-heading text-[1.6rem] sm:text-[clamp(1.6rem,4vw,3rem)] font-black" style={{ fontFamily: "system-ui" }}>Premium Quality Used Auto Parts</span>
+            <h1 className="font-sans leading-tight text-balance max-w-4xl" style={{ fontFamily: "system-ui" }}>
+              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-muted-foreground mb-3" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
+              <span className="block mercury-heading text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black" style={{ fontFamily: "system-ui" }}>Premium Quality Used Auto Parts</span>
             </h1>
 
             {/* Key stats */}

@@ -17,7 +17,7 @@ const SIZE_MAP: Record<LogoSize, { width: number; height: number; containerClass
   md: { width: 56, height: 56, containerClass: "w-14 h-14" },
   lg: { width: 72, height: 72, containerClass: "w-[72px] h-[72px] sm:w-[90px] sm:h-[90px]" },
   xl: { width: 100, height: 100, containerClass: "w-[72px] h-[72px] sm:w-[90px] sm:h-[90px] lg:w-[110px] lg:h-[110px]" },
-  "2xl": { width: 120, height: 120, containerClass: "w-[100px] h-[100px] sm:w-[120px] sm:h-[120px]" },
+  "2xl": { width: 220, height: 220, containerClass: "w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] lg:w-[220px] lg:h-[220px]" },
 }
 
 export function Logo({
