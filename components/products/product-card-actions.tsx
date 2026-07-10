@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { useCartStore } from '@/lib/stores/cart-store'
-import { Phone, MessageSquare, ShoppingCart, Zap, HelpCircle } from 'lucide-react'
+import { Phone, MessageSquare, ShoppingCart, Zap, HelpCircle, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
 
 interface ProductCardActionsProps {
@@ -113,7 +113,7 @@ export function ProductCardActions({
       </div>
 
       {/* Secondary Actions */}
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-4 gap-2">
         <Button
           onClick={handleCall}
           variant="outline"
@@ -140,6 +140,17 @@ export function ProductCardActions({
         >
           <HelpCircle className="w-3 h-3" />
           Quote
+        </Button>
+        <Button
+          variant="outline"
+          className="text-xs font-bold border-primary/50 hover:border-primary hover:bg-primary/10"
+          title="View full product details"
+          asChild
+        >
+          <Link href={`/products/${productId}`}>
+            <ExternalLink className="w-3 h-3" />
+            Details
+          </Link>
         </Button>
       </div>
 
