@@ -26,6 +26,7 @@ export function ContentSection() {
         {/* Main intro */}
         <div className="mb-16">
           <h2 className="small-caps font-sans text-[clamp(1.75rem,4vw,2.75rem)] font-black mercury-heading text-3d-section mb-6" style={{ fontFamily: 'system-ui', fontSize: '29px', textTransform: 'uppercase', marginBottom: '0px' }}>
+            𝐀𝐔𝐀𝐏𝐖 LLC<br />
             𝐀𝐔𝐀𝐏𝐖.𝑶𝑹𝑮<br />
             All Used Auto Parts Warehouse<br />
             Trusted Partner for Automotive Services and Solutions<br />
