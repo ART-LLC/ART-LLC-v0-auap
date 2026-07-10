@@ -51,67 +51,67 @@ body {
 }
 
 :root {
-  /* ── Dull Matte Black — true industrial dark theme ── */
+  /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic ── */
   --background: #080808;
-  --foreground: #e8eaf0;
-  --card: #111216;
-  --card-foreground: #e8eaf0;
-  --popover: #161820;
-  --popover-foreground: #e8eaf0;
-  --primary: #d0d4e0;
-  --primary-foreground: #0a0a0c;
-  --secondary: #1c1e26;
-  --secondary-foreground: #c8ccd8;
-  --muted: #181a22;
-  --muted-foreground: #7a7f90;
-  --accent: #4a5568;
-  --accent-foreground: #ffffff;
+  --foreground: #dce1f0;
+  --card: #0f1117;
+  --card-foreground: #dce1f0;
+  --popover: #141820;
+  --popover-foreground: #dce1f0;
+  --primary: #b4bddc;
+  --primary-foreground: #080808;
+  --secondary: #1a1f2e;
+  --secondary-foreground: #b4bddc;
+  --muted: #16181f;
+  --muted-foreground: #6a7080;
+  --accent: #3a4555;
+  --accent-foreground: #dce1f0;
   --destructive: #c84040;
   --destructive-foreground: #ffffff;
-  --border: #22252f;
-  --input: #161820;
-  --ring: #d0d4e0;
-  --chart-1: #4a5568;
-  --chart-2: #7a7f90;
-  --chart-3: #e8eaf0;
-  --chart-4: #4a4f60;
-  --chart-5: #22252f;
+  --border: #1f2230;
+  --input: #141820;
+  --ring: #b4bddc;
+  --chart-1: #3a4555;
+  --chart-2: #6a7080;
+  --chart-3: #dce1f0;
+  --chart-4: #4a5568;
+  --chart-5: #1f2230;
   --radius: 0.5rem;
   --sidebar: #080a0c;
-  --sidebar-foreground: #e8eaf0;
-  --sidebar-primary: #4a5568;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #181a22;
-  --sidebar-accent-foreground: #e8eaf0;
-  --sidebar-border: #22252f;
-  --sidebar-ring: #4a5568;
+  --sidebar-foreground: #dce1f0;
+  --sidebar-primary: #3a4555;
+  --sidebar-primary-foreground: #dce1f0;
+  --sidebar-accent: #16181f;
+  --sidebar-accent-foreground: #dce1f0;
+  --sidebar-border: #1f2230;
+  --sidebar-ring: #3a4555;
 }
 
 /* ── Light mode overrides ────────────────────────────── */
-/* Clean bright white — maximum readability */
+/* Metallic silver on light background — maintain brand aesthetic */
 .light {
-  --background: #f4f5f7;
-  --foreground: #0f1117;
+  --background: #f8f9fa;
+  --foreground: #1a1f2e;
   --card: #ffffff;
-  --card-foreground: #0f1117;
+  --card-foreground: #1a1f2e;
   --popover: #ffffff;
-  --popover-foreground: #0f1117;
-  --primary: #2a3a5c;
+  --popover-foreground: #1a1f2e;
+  --primary: #3a4555;
   --primary-foreground: #ffffff;
-  --secondary: #e8eaf0;
+  --secondary: #e0e4f0;
   --secondary-foreground: #1a1f2e;
-  --muted: #eceef4;
-  --muted-foreground: #3a4055;
-  --accent: #2a3a5c;
+  --muted: #f0f2f6;
+  --muted-foreground: #5a6575;
+  --accent: #3a4555;
   --accent-foreground: #ffffff;
   --destructive: #b83025;
   --destructive-foreground: #ffffff;
-  --border: #c8cad4;
+  --border: #d0d4e0;
   --input: #ffffff;
-  --ring: #2a3a5c;
+  --ring: #3a4555;
   --sidebar: #f0f2f6;
-  --sidebar-foreground: #0f1117;
-  --sidebar-border: #c8cad4;
+  --sidebar-foreground: #1a1f2e;
+  --sidebar-border: #d0d4e0;
 }
 
 @theme inline {
@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0f1117 !important;
 }
 
-/* Primary color in light mode — deep navy for contrast */
+/* Primary color in light mode ��� deep navy for contrast */
 .light .text-primary,
 .light [class*="text-primary"]:not([class*="bg-primary"]) {
   color: #1e3a6e !important;
