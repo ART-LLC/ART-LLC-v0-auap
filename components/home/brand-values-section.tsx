@@ -1,26 +1,22 @@
 "use client"
 
-import Image from "next/image"
 import { CheckCircle2, Handshake, Award, Wrench } from "lucide-react"
 
 const values = [
   {
     title: "Your Trusted US Partner",
     description: "As a US-based platform, we connect car owners and repair professionals with America's most reliable junkyards and salvage yards. Our commitment to quality relationships ensures you always have a dependable partner in sourcing auto parts.",
-    Icon: Handshake,
-    image: "/images/section-warehouse.png"
+    Icon: Handshake
   },
   {
     title: "Premium Quality Guarantee",
     description: "Every supplier in our nationwide network is vetted for quality and reliability. We only connect you with yards that meet our strict standards, ensuring you receive genuine OEM parts that perform like new.",
-    Icon: Award,
-    image: "/images/section-quality-check.png"
+    Icon: Award
   },
   {
     title: "Comprehensive Solutions",
     description: "From engines and transmissions to body parts and accessories, our extensive US network covers all vehicle makes and models. One platform, thousands of qualified suppliers, endless possibilities.",
-    Icon: Wrench,
-    image: "/images/section-truck-parts.png"
+    Icon: Wrench
   }
 ]
 
@@ -41,15 +37,7 @@ export function BrandValuesSection() {
         {/* Values Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-10 sm:mb-16">
           {values.map((value, idx) => (
-            <div key={idx} className="group relative glass-card rounded-xl sm:rounded-2xl p-6 sm:p-8 backdrop-blur-sm border border-primary/10 hover:border-primary/20 transition-all duration-300 overflow-hidden">
-              {value.image && (
-                <Image
-                  src={value.image}
-                  alt={value.title}
-                  fill
-                  className="absolute inset-0 object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300 -z-10"
-                />
-              )}
+            <div key={idx} className="group glass-card rounded-xl sm:rounded-2xl p-6 sm:p-8 backdrop-blur-sm border border-primary/10 hover:border-primary/20 transition-all duration-300">
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                 <value.Icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
