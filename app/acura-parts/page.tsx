@@ -322,7 +322,7 @@ export default function AcuraPartsPage() {
                 Our network of 2,000+ verified yards can source any Acura part. Get a free quote today — no obligation.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/quote" className="get-quote-btn">
+                <Link href="/quote" className="auapw-btn auapw-btn-amber">
                   <Mail className="w-4 h-4" />
                   GET QUOTE
                 </Link>

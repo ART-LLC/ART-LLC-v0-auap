@@ -139,10 +139,10 @@ export default function IndividualPartPage() {
 
             {/* CTA */}
             <div className="flex flex-wrap gap-3">
-              <Link href={`/search?part=${encodeURIComponent(partName)}`} className="btn-led metal-btn inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
+              <Link href={`/search?part=${encodeURIComponent(partName)}`} className="auapw-btn auapw-btn-blue metal-btn inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
                 <Search className="w-3.5 h-3.5" /> Search {partName}
               </Link>
-              <Link href="/quote" className="metal-btn inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.65rem] font-bold tracking-[0.18em] uppercase rounded-sm">
+              <Link href="/quote" className="auapw-btn auapw-btn-silver inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.65rem] font-bold tracking-[0.18em] uppercase rounded-sm">
                 <MessageSquare className="w-3 h-3" /> Get Free Quote
               </Link>
             </div>
@@ -200,13 +200,13 @@ export default function IndividualPartPage() {
             <h3 className="font-serif text-xl font-semibold text-foreground mb-2">Need Help Finding a {partName}?</h3>
             <p className="text-sm text-muted-foreground mb-6">Our experts can help you find the exact part for your vehicle.</p>
             <div className="flex gap-3 justify-center flex-wrap">
-              <Link href="/search" className="btn-led metal-btn inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
+              <Link href="/search" className="auapw-btn auapw-btn-blue metal-btn inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
                 <Search className="w-3.5 h-3.5" /> Search Parts
               </Link>
-              <a href={`tel:${PHONE_SALES.replace(/-/g, "")}`} className="metal-btn inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.65rem] font-bold tracking-[0.18em] uppercase rounded-sm">
+              <a href={`tel:${PHONE_SALES.replace(/-/g, "")}`} className="auapw-btn auapw-btn-silver inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.65rem] font-bold tracking-[0.18em] uppercase rounded-sm">
                 <Phone className="w-3 h-3" /> {PHONE_DISPLAY}
               </a>
-              <Link href="/quote" className="metal-btn inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.65rem] font-bold tracking-[0.18em] uppercase rounded-sm">
+              <Link href="/quote" className="auapw-btn auapw-btn-silver inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.65rem] font-bold tracking-[0.18em] uppercase rounded-sm">
                 <MessageSquare className="w-3 h-3" /> Free Quote
               </Link>
             </div>

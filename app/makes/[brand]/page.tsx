@@ -318,7 +318,7 @@ export default function BrandPage() {
                 <div className="flex items-center gap-2 mt-auto pt-1">
                   <Link
                     href={`/quote?make=${encodeURIComponent(brand)}&category=${encodeURIComponent(cat.label)}`}
-                    className="get-quote-btn flex-1 justify-center text-xs py-2 px-3"
+                    className="auapw-btn auapw-btn-amber flex-1 justify-center text-xs py-2 px-3"
                     style={{ padding: '0.5rem 0.75rem', fontSize: '0.7rem', letterSpacing: '0.06em' }}
                   >
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 flex-shrink-0">
@@ -411,7 +411,7 @@ export default function BrandPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 items-center">
               {/* Premium metallic GET QUOTE button */}
-              <Link href="/quote" className="get-quote-btn">
+              <Link href="/quote" className="auapw-btn auapw-btn-amber">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 flex-shrink-0">
                   <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="1.8" fill="none"/>
                   <path d="M2 8l10 7 10-7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>

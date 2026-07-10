@@ -181,7 +181,7 @@ export default function CategoryPage() {
 
                   {/* CTA for this part */}
                   <div className="mt-6 flex flex-wrap gap-3">
-                    <Link href={`/search?part=${encodeURIComponent(partInfo.name)}`} className="btn-led inline-flex items-center justify-center gap-2 px-5 py-2.5 text-[0.65rem] font-bold tracking-[0.15em] uppercase rounded-sm">
+                    <Link href={`/search?part=${encodeURIComponent(partInfo.name)}`} className="auapw-btn auapw-btn-blue inline-flex items-center justify-center gap-2 px-5 py-2.5 text-[0.65rem] font-bold tracking-[0.15em] uppercase rounded-sm">
                       <Search className="w-3.5 h-3.5" /> Search {partInfo.name}
                     </Link>
                     <Link href="/quote" className="inline-flex items-center justify-center gap-2 px-5 py-2.5 text-[0.65rem] font-bold tracking-[0.15em] uppercase border border-border/60 text-muted-foreground rounded-sm hover:border-foreground/50 hover:text-foreground transition-all">
@@ -201,7 +201,7 @@ export default function CategoryPage() {
             <h3 className="font-serif text-xl font-semibold text-foreground mb-2">Ready to find your {cat.label.toLowerCase()} part?</h3>
             <p className="text-sm text-muted-foreground mb-6">Search by vehicle for specific pricing or request a quote from our team.</p>
             <div className="flex gap-3 justify-center flex-wrap">
-              <Link href="/search" className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
+              <Link href="/search" className="auapw-btn auapw-btn-blue inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
                 <Search className="w-3.5 h-3.5" /> Search Parts
               </Link>
               <a href={`tel:${PHONE_SALES.replace(/-/g, "")}`} className="inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.65rem] font-bold tracking-[0.18em] uppercase border border-border/60 text-muted-foreground rounded-sm hover:border-foreground/50 hover:text-foreground transition-all">

@@ -49,7 +49,7 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
             <button
               type="button"
               onClick={reset}
-              className="btn-led inline-flex items-center gap-2 px-5 py-2.5 text-[0.7rem] font-bold tracking-[0.18em] uppercase rounded-sm"
+              className="auapw-btn auapw-btn-blue inline-flex items-center gap-2 px-5 py-2.5 text-[0.7rem] font-bold tracking-[0.18em] uppercase rounded-sm"
             >
               <RefreshCw className="w-3.5 h-3.5" aria-hidden="true" />
               Try Again

@@ -248,7 +248,7 @@ export default function PartsPage() {
                         <Phone className="w-4 h-4" />
                         Call (888) 818-5001
                       </a>
-                      <Link href="/quote" className="browse-btn">
+                      <Link href="/quote" className="auapw-btn auapw-btn-amber">
                         <MessageSquare className="w-4 h-4" />
                         Get A Quote
                         <ArrowRight className="w-4 h-4" />
@@ -307,7 +307,7 @@ export default function PartsPage() {
                           </button>
                           <button
                             onClick={() => window.location.href = '/quote'}
-                            className="get-quote-btn flex-1 sm:flex-none"
+                            className="auapw-btn auapw-btn-amber flex-1 sm:flex-none"
                             aria-label="Get quote for this part"
                             title="Get quote"
                           >
@@ -334,11 +334,11 @@ export default function PartsPage() {
                         <Phone className="w-4 h-4" />
                         Call (888) 818-5001
                       </a>
-                      <Link href="/quote" className="get-quote-btn">
+                      <Link href="/quote" className="auapw-btn auapw-btn-amber">
                         <Mail className="w-4 h-4" />
                         GET QUOTE
                       </Link>
-                      <Link href="/catalog" className="browse-btn">
+                      <Link href="/catalog" className="auapw-btn auapw-btn-amber">
                         <ArrowRight className="w-4 h-4" />
                         Browse Inventory
                       </Link>

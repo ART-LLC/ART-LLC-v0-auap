@@ -66,7 +66,7 @@ export default function AboutPage() {
                   <p>With a simple search, you get access to 2,000+ verified inventory yards across all 50 states -- and a response within 24 hours with the best available options and pricing.</p>
                 </div>
                 <div className="flex gap-3 mt-8 flex-wrap">
-                  <Link href="/search" className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">Search Parts</Link>
+                  <Link href="/search" className="auapw-btn auapw-btn-blue inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">Search Parts</Link>
                   <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.65rem] font-bold tracking-[0.18em] uppercase border border-border/60 text-muted-foreground rounded-sm hover:border-foreground/50 hover:text-foreground transition-all">Contact Us</Link>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function AboutPage() {
             <h2 className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] font-bold text-foreground mb-4">Work With Us</h2>
             <p className="text-sm text-muted-foreground mb-10 leading-relaxed">Search our parts database or get a free quote from our team today. We respond within 24 hours.</p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Link href="/search" className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">Search Parts</Link>
+              <Link href="/search" className="auapw-btn auapw-btn-blue inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">Search Parts</Link>
               <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.65rem] font-bold tracking-[0.18em] uppercase border border-border/60 text-muted-foreground rounded-sm hover:border-foreground/50 hover:text-foreground transition-all">Get in Touch</Link>
             </div>
           </div>

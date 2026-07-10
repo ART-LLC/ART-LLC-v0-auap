@@ -154,7 +154,7 @@ export default function QuotePage() {
                   <div className="flex flex-wrap gap-3 justify-center">
                     <a 
                       href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Quote Request: ${year} ${make} ${model} - ${part}`)}&body=${encodeURIComponent(`Hi, I would like a quote for:\n\nPart: ${part}\nMake: ${make}\nModel: ${model}\nYear: ${year}\nOption: ${option}\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\n\n${message}`)}`}
-                      className="btn-led inline-flex items-center justify-center gap-2 px-6 py-3 text-[0.72rem] font-bold tracking-[0.18em] uppercase rounded-sm"
+                      className="auapw-btn auapw-btn-blue inline-flex items-center justify-center gap-2 px-6 py-3 text-[0.72rem] font-bold tracking-[0.18em] uppercase rounded-sm"
                     >
                       <Mail className="w-4 h-4" /> Open Email Again
                     </a>
@@ -257,7 +257,7 @@ export default function QuotePage() {
                       <textarea rows={3} placeholder="Any extra details that help us find the right part faster..." className={`${selectClass} resize-none`} value={message} onChange={e => setMessage(e.target.value)} />
                     </div>
 
-                    <button type="submit" className="btn-led w-full inline-flex items-center justify-center gap-2 px-6 py-4 text-[0.75rem] font-bold tracking-[0.18em] uppercase rounded-lg transition-all shadow-lg hover:shadow-xl hover:shadow-primary/20 mt-8">
+                    <button type="submit" className="auapw-btn auapw-btn-blue w-full inline-flex items-center justify-center gap-2 px-6 py-4 text-[0.75rem] font-bold tracking-[0.18em] uppercase rounded-lg transition-all shadow-lg hover:shadow-xl hover:shadow-primary/20 mt-8">
                       <Mail className="w-4 h-4" />
                       Get A Free Quote — Send Now
                     </button>

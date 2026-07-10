@@ -40,7 +40,7 @@ export default function NotFound() {
               <div className="flex gap-3 justify-center flex-wrap mb-8">
                 <Link
                   href="/"
-                  className="btn-led inline-flex items-center gap-2 px-5 py-2.5 text-[0.7rem] font-bold tracking-[0.18em] uppercase rounded-sm"
+                  className="auapw-btn auapw-btn-blue inline-flex items-center gap-2 px-5 py-2.5 text-[0.7rem] font-bold tracking-[0.18em] uppercase rounded-sm"
                 >
                   <Home className="w-3.5 h-3.5" aria-hidden="true" />
                   Go Home

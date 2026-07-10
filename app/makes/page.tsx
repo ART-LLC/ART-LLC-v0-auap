@@ -169,7 +169,7 @@ export default function MakesPage() {
               </div>
 
               <div className="flex gap-3 mt-8 flex-wrap">
-                <Link href={`/search?make=${encodeURIComponent(selectedMake)}`} className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
+                <Link href={`/search?make=${encodeURIComponent(selectedMake)}`} className="auapw-btn auapw-btn-blue inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
                   <Search className="w-3.5 h-3.5" /> Search {selectedMake} Parts
                 </Link>
                 <a href="tel:8888185001" className="inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.65rem] font-bold tracking-[0.18em] uppercase border border-border/60 text-muted-foreground rounded-sm hover:border-foreground/50 hover:text-foreground transition-all">
