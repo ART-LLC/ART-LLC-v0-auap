@@ -42,10 +42,10 @@ export function BrandWordmark({
   return (
     <div className={`flex flex-col gap-0 ${cfg.align} ${className}`}>
 
-      {/* AUAPW.ORG — 3D Block Extrusion + Diamond LED + Ghost Scan */}
+      {/* AUAPW LLC — 3D Block Extrusion + Diamond LED + Ghost Scan */}
       <div className="wordmark-3d-wrap pt-[0.08em]">
         <span className={`wordmark-3d ${cfg.wordmarkSize}`}>
-          𝐀𝐔𝐀𝐏𝐖.𝑶𝑹𝑮
+          𝐀𝐔𝐀𝐏𝐖 LLC
         </span>
         <span className="ghost-scan-bar" aria-hidden="true" />
       </div>
