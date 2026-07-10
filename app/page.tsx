@@ -6,8 +6,6 @@ import { ContentSection } from "@/components/home/content-section"
 import { BrandValuesSection } from "@/components/home/brand-values-section"
 import { CategoriesSection } from "@/components/home/categories-section"
 import { FeaturedProductsSection } from "@/components/home/featured-products-section"
-import { TestimonialsSection } from "@/components/home/testimonials-section"
-import { ProcessSection } from "@/components/home/process-section"
 
 export default function HomePage() {
   return (
@@ -19,8 +17,6 @@ export default function HomePage() {
         <BrandValuesSection />
         <CategoriesSection />
         <FeaturedProductsSection />
-        <ProcessSection />
-        <TestimonialsSection />
         <BrandLogosSection />
       </main>
       <Footer />
