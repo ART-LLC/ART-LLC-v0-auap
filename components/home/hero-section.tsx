@@ -30,11 +30,15 @@ export function HeroSection() {
             }}
           >
             {/* Logo + Wordmark — ULTRA brand block */}
-            <div className="flex flex-col items-center gap-16 sm:gap-20 w-full py-14">
+            <div className="flex flex-col items-center gap-16 sm:gap-20 w-full py-14 pb-0">
               {/* Ultra-massive logo */}
               <Logo size="7xl" variant="medallion" priority showGlow />
               {/* Ultra wordmark */}
-              <BrandWordmark size="hero-5xl" className="text-center items-center on-dark" />
+              <BrandWordmark 
+                size="hero-5xl" 
+                className="text-center items-center on-dark" 
+                style={{ fontWeight: 700, fontFamily: "inherit", fontSize: "14px", gap: "4px" }}
+              />
             </div>
 
             {/* Headline */}
