@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
-type LogoSize = "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl"
+type LogoSize = "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl"
 
 interface LogoProps {
   size?: LogoSize
@@ -21,6 +21,7 @@ const SIZE_MAP: Record<LogoSize, { width: number; height: number; containerClass
   "3xl": { width: 280, height: 280, containerClass: "w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] lg:w-[280px] lg:h-[280px]" },
   "4xl": { width: 360, height: 360, containerClass: "w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] lg:w-[360px] lg:h-[360px]" },
   "5xl": { width: 440, height: 440, containerClass: "w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] lg:w-[440px] lg:h-[440px]" },
+  "6xl": { width: 520, height: 520, containerClass: "w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[520px] lg:h-[520px]" },
 }
 
 export function Logo({
