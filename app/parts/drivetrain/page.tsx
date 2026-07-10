@@ -12,6 +12,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { ProductFAQ } from '@/components/products/product-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 
 const DRIVETRAIN_PARTS = [
   { id: 'axle-front', name: 'Front Axle Assembly', description: 'Complete front axle assembly', avgPrice: 599 },

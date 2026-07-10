@@ -12,6 +12,10 @@ import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { ProductFAQ } from '@/components/products/product-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 const EXHAUST_PARTS = [
   { id: 'catalytic-converter', name: 'Catalytic Converter', description: 'OEM catalytic converter assembly', avgPrice: 599 },
   { id: 'muffler', name: 'Muffler', description: 'Complete muffler assembly', avgPrice: 199 },

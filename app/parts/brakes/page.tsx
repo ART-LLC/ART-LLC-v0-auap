@@ -12,6 +12,10 @@ import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { ProductFAQ } from '@/components/products/product-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 const BRAKES_PARTS = [
   { id: 'brake-caliper', name: 'Brake Caliper', description: 'Front or rear brake caliper', avgPrice: 149 },
   { id: 'brake-rotor', name: 'Brake Rotor', description: 'OEM brake rotor disc', avgPrice: 129 },

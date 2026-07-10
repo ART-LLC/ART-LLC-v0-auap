@@ -12,6 +12,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { ProductFAQ } from '@/components/products/product-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 
 const TRANSMISSION_PARTS = [
   { id: 'automatic-tx', name: 'Automatic Transmission', description: 'Complete automatic transmission assembly', type: 'automatic', avgPrice: 1299 },
@@ -238,6 +242,22 @@ export default function TransmissionsProductPage() {
             )}
           </div>
         </section>
+
+        {/* Parts Details Section */}
+        <PartsDetails 
+          partType="Transmission"
+          yearRange="1990-Present"
+          mileageRange="0-150,000 miles"
+        />
+
+        {/* Parts History Section */}
+        <PartsHistory partType="Transmission" />
+
+        {/* Shipping Info Section */}
+        <ShippingInfo />
+
+        {/* FAQ Section */}
+        <ProductFAQ productType="Transmission" />
       </main>
       <Footer />
     </>

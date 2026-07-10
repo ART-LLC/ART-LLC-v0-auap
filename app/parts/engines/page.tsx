@@ -14,6 +14,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Search, Filter, Grid3x3, List, ChevronDown } from 'lucide-react'
 import { CAR_MAKES } from '@/lib/data'
+import { ProductFAQ } from '@/components/products/product-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 
 const ENGINE_PARTS = [
   { id: 'complete-engine', name: 'Complete Engine', description: 'Fully assembled ready-to-run engines', category: 'engine', avgPrice: 899 },
@@ -249,6 +253,21 @@ export default function EnginesProductPage() {
             )}
           </div>
         </section>
+        {/* Parts Details Section */}
+        <PartsDetails 
+          partType="Engine"
+          yearRange="1990-Present"
+          mileageRange="0-200,000 miles"
+        />
+
+        {/* Parts History Section */}
+        <PartsHistory partType="Engine" />
+
+        {/* Shipping Info Section */}
+        <ShippingInfo />
+
+        {/* FAQ Section */}
+        <ProductFAQ productType="Engine" />
       </main>
       <Footer />
     </>

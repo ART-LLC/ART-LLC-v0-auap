@@ -12,6 +12,10 @@ import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { ProductFAQ } from '@/components/products/product-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 const SUSPENSION_PARTS = [
   { id: 'control-arm-front', name: 'Front Control Arm', description: 'Front suspension control arm', avgPrice: 199 },
   { id: 'strut', name: 'Strut Assembly', description: 'Complete strut with coil spring', avgPrice: 249 },
