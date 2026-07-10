@@ -12,6 +12,10 @@ import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { PartsFAQ } from '@/components/products/parts-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 const ELECTRICAL_PARTS = [
   { id: 'alternator', name: 'Alternator', description: 'OEM alternator assembly', avgPrice: 199 },
   { id: 'starter', name: 'Starter Motor', description: 'Complete starter motor', avgPrice: 249 },
@@ -132,6 +136,44 @@ export default function ElectricalProductPage() {
             )}
           </div>
         </section>
+
+        {/* Parts History */}
+        <PartsHistory />
+
+        {/* Parts Details */}
+        <PartsDetails 
+          details={{
+            category: "Electrical Systems",
+            condition: "Used - Tested & Verified",
+            source: "Certified Auto Salvage Yards",
+            mileage: "75,000 - 135,000 miles average",
+            warranty: "90-Day Electrical Warranty",
+            testing: [
+              "Full functionality electrical test",
+              "Voltage and amperage verification",
+              "Control module diagnostics",
+              "Connector and wiring inspection"
+            ],
+            includes: [
+              "Complete electrical assembly",
+              "All connectors and terminals",
+              "Wiring harness complete",
+              "Installation guide and warranty"
+            ],
+            compatibility: [
+              "Vehicle electrical system specific",
+              "Voltage compatibility verified",
+              "Control module programming available",
+              "Integration testing included"
+            ]
+          }}
+        />
+
+        {/* Shipping Information */}
+        <ShippingInfo />
+
+        {/* FAQ */}
+        <PartsFAQ category="electrical" />
       </main>
       <Footer />
     </>

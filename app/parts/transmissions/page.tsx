@@ -12,6 +12,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { PartsFAQ } from '@/components/products/parts-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 
 const TRANSMISSION_PARTS = [
   { id: 'automatic-tx', name: 'Automatic Transmission', description: 'Complete automatic transmission assembly', type: 'automatic', avgPrice: 1299 },
@@ -238,6 +242,44 @@ export default function TransmissionsProductPage() {
             )}
           </div>
         </section>
+
+        {/* Parts History */}
+        <PartsHistory />
+
+        {/* Parts Details */}
+        <PartsDetails 
+          details={{
+            category: "Transmission Assembly",
+            condition: "Used - Tested & Verified",
+            source: "Certified Auto Salvage Yards",
+            mileage: "60,000 - 120,000 miles average",
+            warranty: "90-Day Transmission Warranty",
+            testing: [
+              "Full shift and engagement testing",
+              "Fluid condition and level verification",
+              "Seal integrity inspection",
+              "Computer diagnostics and programming check"
+            ],
+            includes: [
+              "Complete transmission assembly",
+              "Torque converter (automatic)",
+              "Transfer case (if applicable)",
+              "Installation guide and warranty certificate"
+            ],
+            compatibility: [
+              "Year, make, and model specific",
+              "Transmission code verification",
+              "Computer compatibility check",
+              "Engine variant matching available"
+            ]
+          }}
+        />
+
+        {/* Shipping Information */}
+        <ShippingInfo />
+
+        {/* FAQ */}
+        <PartsFAQ category="transmission" />
       </main>
       <Footer />
     </>

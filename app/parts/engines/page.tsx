@@ -10,6 +10,10 @@ import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { PartsFAQ } from '@/components/products/parts-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Search, Filter, Grid3x3, List, ChevronDown } from 'lucide-react'
@@ -249,6 +253,44 @@ export default function EnginesProductPage() {
             )}
           </div>
         </section>
+
+        {/* Parts History */}
+        <PartsHistory />
+
+        {/* Parts Details */}
+        <PartsDetails 
+          details={{
+            category: "Engine & Motor",
+            condition: "Used - Tested & Verified",
+            source: "Certified Auto Salvage Yards",
+            mileage: "80,000 - 140,000 miles average",
+            warranty: "90-Day Parts Warranty",
+            testing: [
+              "Complete engine startup and run test",
+              "Compression and leak-down testing",
+              "Oil pressure and temperature verification",
+              "Component integrity inspection"
+            ],
+            includes: [
+              "Complete engine block assembly",
+              "Heads and manifolds included",
+              "Belts and gaskets",
+              "Installation documentation and warranty"
+            ],
+            compatibility: [
+              "Year, make, and model verification",
+              "Engine code matching",
+              "Transmission compatibility check",
+              "Custom fitment consultation available"
+            ]
+          }}
+        />
+
+        {/* Shipping Information */}
+        <ShippingInfo />
+
+        {/* FAQ */}
+        <PartsFAQ category="engine" />
       </main>
       <Footer />
     </>

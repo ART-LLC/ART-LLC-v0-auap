@@ -12,6 +12,10 @@ import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { PartsFAQ } from '@/components/products/parts-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 const SUSPENSION_PARTS = [
   { id: 'control-arm-front', name: 'Front Control Arm', description: 'Front suspension control arm', avgPrice: 199 },
   { id: 'strut', name: 'Strut Assembly', description: 'Complete strut with coil spring', avgPrice: 249 },
@@ -118,6 +122,11 @@ export default function SuspensionProductPage() {
             )}
           </div>
         </section>
+
+        <PartsHistory />
+        <PartsDetails details={{ category: "Suspension & Steering", condition: "Used - Tested & Verified", source: "Certified Auto Salvage Yards", mileage: "70,000 - 130,000 miles average", warranty: "90-Day Suspension Warranty", testing: ["Suspension travel test", "Steering response verification", "Alignment check", "Ball joint and tie rod inspection"], includes: ["Complete suspension assembly", "Steering components", "All fasteners and hardware", "Installation guide and warranty"], compatibility: ["Vehicle suspension specific", "Steering geometry verified", "Alignment compatibility checked", "Custom fitting available"] }} />
+        <ShippingInfo />
+        <PartsFAQ category="suspension" />
       </main>
       <Footer />
     </>

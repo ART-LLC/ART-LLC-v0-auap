@@ -12,6 +12,10 @@ import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { PartsFAQ } from '@/components/products/parts-faq'
+import { ShippingInfo } from '@/components/products/shipping-info'
+import { PartsDetails } from '@/components/products/parts-details'
+import { PartsHistory } from '@/components/products/parts-history'
 const COOLING_PARTS = [
   { id: 'radiator', name: 'Radiator', description: 'Complete radiator assembly', avgPrice: 249 },
   { id: 'ac-compressor', name: 'AC Compressor', description: 'Air conditioning compressor', avgPrice: 399 },
@@ -118,6 +122,11 @@ export default function CoolingProductPage() {
             )}
           </div>
         </section>
+
+        <PartsHistory />
+        <PartsDetails details={{ category: "Cooling & Climate Systems", condition: "Used - Tested & Verified", source: "Certified Auto Salvage Yards", mileage: "70,000 - 125,000 miles average", warranty: "90-Day Cooling Warranty", testing: ["Coolant flow test", "Temperature control verification", "Seal integrity check", "Refrigerant pressure test"], includes: ["Complete cooling assembly", "All hoses and connections", "Thermostat and valves", "Installation guide and warranty"], compatibility: ["Vehicle cooling system specific", "Temperature range verified", "Pressure compatibility checked", "Refrigerant type compatible"] }} />
+        <ShippingInfo />
+        <PartsFAQ category="cooling" />
       </main>
       <Footer />
     </>
