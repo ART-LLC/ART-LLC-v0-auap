@@ -94,7 +94,7 @@ export function BrandValuesSection() {
         <div className="text-center px-2">
           <div className="inline-block glass-card rounded-xl sm:rounded-2xl p-6 sm:p-8 backdrop-blur-sm border border-primary/10 max-w-2xl">
             <p className="text-foreground text-base sm:text-lg leading-relaxed tracking-tight">
-              AUAPW.ORG is your reliable connector to America&apos;s finest salvage yards. We bring <span className="text-primary font-bold">top-quality service, verified suppliers, and a seamless experience</span> right to your fingertips – no hassle, no guesswork, just quality parts delivered.
+              AUAPW LLC is your reliable connector to America&apos;s finest salvage yards. We bring <span className="text-primary font-bold">top-quality service, verified suppliers, and a seamless experience</span> right to your fingertips – no hassle, no guesswork, just quality parts delivered.
             </p>
           </div>
         </div>

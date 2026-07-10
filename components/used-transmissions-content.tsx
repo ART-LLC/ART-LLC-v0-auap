@@ -27,10 +27,10 @@ export function UsedTransmissionsContent() {
 
             <div className="text-muted-foreground text-[0.95rem] leading-[1.8] flex flex-col gap-4 mb-12">
               <p>
-                Welcome to <strong className="text-foreground">AUAPW.ORG</strong>. You are here because you are looking for a used transmission for your car. There are lots of auto part dealers selling quality used transmissions online. Prices may vary from dealer to dealer. Some dealers will offer a transmission for $1750 where the same transmission is available for $950. Reaching all the auto parts dealers is not easy, but we have solutions for you to find quality, cheap used transmissions in just one click.
+                Welcome to <strong className="text-foreground">AUAPW LLC</strong>. You are here because you are looking for a used transmission for your car. There are lots of auto part dealers selling quality used transmissions online. Prices may vary from dealer to dealer. Some dealers will offer a transmission for $1750 where the same transmission is available for $950. Reaching all the auto parts dealers is not easy, but we have solutions for you to find quality, cheap used transmissions in just one click.
               </p>
               <p>
-                AUAPW.ORG is connected with all junkyards and salvage yards near you, and can compare the best offers among them. When you fill the part request form, our system will send requests to all the auto part dealers and receive the part availability with price. The quality transmission and lowest price quote will be sent to you. Also, we will assist you to place an order to your home or garage.
+                AUAPW LLC is connected with all junkyards and salvage yards near you, and can compare the best offers among them. When you fill the part request form, our system will send requests to all the auto part dealers and receive the part availability with price. The quality transmission and lowest price quote will be sent to you. Also, we will assist you to place an order to your home or garage.
               </p>
             </div>
 
@@ -40,7 +40,7 @@ export function UsedTransmissionsContent() {
                 Are you looking for an affordable and high-quality car transmission? Transmission is the second most important part of your vehicle after the engine -- and it can be a real struggle when it stops working properly. Buying a new one can cost you a lot of money but fortunately, we have the perfect alternative -- used transmissions from the most trusted dealers in the country.
               </p>
               <p>
-                At AUAPW.ORG, we offer you a custom-designed used auto part locator that finds the best options from thousands of junkyards. Here, we guarantee our customers that they will get only high-performance transmissions at the most competitive prices.
+                At AUAPW LLC, we offer you a custom-designed used auto part locator that finds the best options from thousands of junkyards. Here, we guarantee our customers that they will get only high-performance transmissions at the most competitive prices.
               </p>
               <p>
                 Whether you need a standard or automatic transmission, you can find the best deals here. With our simple-to-use search tool, it will take a few minutes to find the most affordable and cutting-edge used transmission for any vehicle -- BMW, Honda, Chevy and more.

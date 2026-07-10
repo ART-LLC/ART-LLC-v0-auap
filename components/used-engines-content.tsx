@@ -29,10 +29,10 @@ export function UsedEnginesContent() {
 
             <div className="text-muted-foreground text-[0.95rem] leading-[1.8] flex flex-col gap-4 mb-12">
               <p>
-                Welcome to <strong className="text-foreground">AUAPW.ORG</strong>. You are here because you are looking for a used engine for your car. There are lots of auto part dealers selling quality used engines online. Prices may vary from dealer to dealer. Some dealers will offer an engine for $1500 where the same engine is available for $850. Reaching all the auto parts dealers is not easy, but we have solutions for you to find quality, cheap used engines in just one click.
+                Welcome to <strong className="text-foreground">AUAPW LLC</strong>. You are here because you are looking for a used engine for your car. There are lots of auto part dealers selling quality used engines online. Prices may vary from dealer to dealer. Some dealers will offer an engine for $1500 where the same engine is available for $850. Reaching all the auto parts dealers is not easy, but we have solutions for you to find quality, cheap used engines in just one click.
               </p>
               <p>
-                AUAPW.ORG is connected with all junkyards and salvage yards near you, and can compare the best offers among them. When you fill the part request form, our system will send requests to all the auto part dealers and receive the part availability with price. The quality engine and lowest price quote will be sent to you. Also, we will assist you to place an order to your home or garage.
+                AUAPW LLC is connected with all junkyards and salvage yards near you, and can compare the best offers among them. When you fill the part request form, our system will send requests to all the auto part dealers and receive the part availability with price. The quality engine and lowest price quote will be sent to you. Also, we will assist you to place an order to your home or garage.
               </p>
               <p>
                 We always ensure that you will get free shipping and the best warranty. We ensure that we should have the return or replacement facility if there is any problem with your purchase. What are you waiting for? Fill the form or call us at our toll free number. We are happy to assist you now!
@@ -42,10 +42,10 @@ export function UsedEnginesContent() {
             <h2 className="font-serif text-2xl font-bold text-foreground mb-4">Used Engines For Sale</h2>
             <div className="text-muted-foreground text-[0.95rem] leading-[1.8] flex flex-col gap-4 mb-12">
               <p>
-                The engine is the heart of your vehicle, thus the most important part of it. Proper maintenance is required to keep the engine working for a long period. Sometimes buying a good engine can cost you a lot of money. To help you out, we created this online locator of the best junkyards and salvage yards around the USA. Here, at AUAPW.ORG, you can find a wide selection of top-quality engines that can fit any budget.
+                The engine is the heart of your vehicle, thus the most important part of it. Proper maintenance is required to keep the engine working for a long period. Sometimes buying a good engine can cost you a lot of money. To help you out, we created this online locator of the best junkyards and salvage yards around the USA. Here, at AUAPW LLC, you can find a wide selection of top-quality engines that can fit any budget.
               </p>
               <p>
-                So, instead of paying a fortune to buy a new engine from a salon you can save some time and money -- and purchase a used engine online. AUAPW.ORG is one of the leading online used auto parts locators offering bespoke products with the most affordable prices in the industry.
+                So, instead of paying a fortune to buy a new engine from a salon you can save some time and money -- and purchase a used engine online. AUAPW LLC is one of the leading online used auto parts locators offering bespoke products with the most affordable prices in the industry.
               </p>
             </div>
 

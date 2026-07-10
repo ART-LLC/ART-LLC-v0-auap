@@ -34,7 +34,7 @@ export default function QuotePage() {
     const subject = `Quote Request: ${[year, make, model].filter(Boolean).join(" ")} — ${part || "Auto Part"}`
 
     const body = [
-      `New Quote Request — AUAPW.ORG`,
+      `New Quote Request — AUAPW LLC`,
       ``,
       `═══════════════════════════`,
       `  VEHICLE & PART DETAILS`,
@@ -60,7 +60,7 @@ export default function QuotePage() {
       message || "(none)",
       ``,
       `---`,
-      `Submitted via AUAPW.ORG — ${new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" })} PST`,
+      `Submitted via AUAPW LLC — ${new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" })} PST`,
     ].join("\n")
 
     return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
@@ -265,7 +265,7 @@ export default function QuotePage() {
                       Clicking &quot;Get A Quote&quot; will open your email client to send the request to {CONTACT_EMAIL}. No spam, no obligation.
                     </p>
                     <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
-                      By Submitting, you authorize AUAPW.ORG to text and call the number you provided with offers &amp; other information, possibly using automated means. Messages/Data rates apply. Consent is not a condition of purchase.
+                      By Submitting, you authorize AUAPW LLC to text and call the number you provided with offers &amp; other information, possibly using automated means. Messages/Data rates apply. Consent is not a condition of purchase.
                     </p>
                   </form>
                 </div>

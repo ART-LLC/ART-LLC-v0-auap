@@ -6,7 +6,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 export const metadata = {
-  title: "Blog | AUAPW.ORG - Auto Parts Tips & Articles",
+  title: "Blog | AUAPW LLC - Auto Parts Tips & Articles",
   description: "Read our latest articles about used auto parts, maintenance tips, and automotive industry news.",
 }
 

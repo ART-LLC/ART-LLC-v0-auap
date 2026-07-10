@@ -49,7 +49,7 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
     // Build subject + body
     const subject = `Quote Request: ${year || ""} ${make} ${model || ""} — ${part || "Auto Part"}`.trim()
     const body = [
-      "New Quote Request — AUAPW.ORG",
+      "New Quote Request — AUAPW LLC",
       "",
       "--- Vehicle Details ---",
       `Part:    ${part    || "Not specified"}`,
@@ -291,7 +291,7 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
               )}
             </button>
             <p className="text-[9px] text-muted-foreground mt-2 leading-relaxed text-center">
-              By submitting, you authorize AUAPW.ORG to contact the number provided with offers &amp; information.
+              By submitting, you authorize AUAPW LLC to contact the number provided with offers &amp; information.
               Messages/data rates may apply.{" "}
               <a href="/privacy-policy" className="underline hover:text-foreground transition-colors">
                 Privacy Policy

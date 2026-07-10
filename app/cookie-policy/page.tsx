@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 
 export const metadata = {
-  title: "Cookie Policy | AUAPW.ORG",
-  description: "AUAPW.ORG cookie policy and information about how we use cookies.",
+  title: "Cookie Policy | AUAPW LLC",
+  description: "AUAPW LLC cookie policy and information about how we use cookies.",
 }
 
 export default function CookiePolicyPage() {

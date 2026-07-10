@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 
 export const metadata = {
-  title: "Return Policy | AUAPW.ORG",
-  description: "AUAPW.ORG return and refund policy for used auto parts purchases.",
+  title: "Return Policy | AUAPW LLC",
+  description: "AUAPW LLC return and refund policy for used auto parts purchases.",
 }
 
 export default function ReturnPolicyPage() {

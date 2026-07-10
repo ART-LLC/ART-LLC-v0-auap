@@ -7,8 +7,8 @@ import Image from "next/image"
 import { Phone, MapPin, Clock } from "lucide-react"
 
 export const metadata = {
-  title: "Contact Us - AUAPW.ORG",
-  description: "Get in touch with AUAPW.ORG. Call (888) 818-5001 or fill out our contact form. We respond within 24 hours.",
+  title: "Contact Us - AUAPW LLC",
+  description: "Get in touch with AUAPW LLC. Call (888) 818-5001 or fill out our contact form. We respond within 24 hours.",
 }
 
 export default function ContactPage() {

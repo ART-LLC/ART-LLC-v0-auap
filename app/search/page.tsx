@@ -6,7 +6,7 @@ import { SearchPageContent } from "@/components/search/search-page-content"
 import { Suspense } from "react"
 
 export const metadata = {
-  title: "Search Parts - AUAPW.ORG",
+  title: "Search Parts - AUAPW LLC",
   description: "Search our nationwide inventory of used auto parts from 2,000+ verified yards.",
 }
 

@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 
 export const metadata = {
-  title: "Acceptable Use Policy | AUAPW.ORG",
-  description: "AUAPW.ORG Acceptable Use Policy regarding website and service usage.",
+  title: "Acceptable Use Policy | AUAPW LLC",
+  description: "AUAPW LLC Acceptable Use Policy regarding website and service usage.",
 }
 
 export default function AcceptableUsePolicyPage() {

@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 
 export const metadata = {
-  title: "Privacy Policy - AUAPW.ORG",
-  description: "Privacy policy for AUAPW.ORG. Learn how we collect, use, and protect your personal information.",
+  title: "Privacy Policy - AUAPW LLC",
+  description: "Privacy policy for AUAPW LLC. Learn how we collect, use, and protect your personal information.",
 }
 
 const sections = [
@@ -42,7 +42,7 @@ const sections = [
   {
     title: "Communication Consent",
     content: [
-      "By submitting a form on our website, you authorize AUAPW.ORG to contact you via text message and phone call at the number you provided, including through automated means, with offers and other information.",
+      "By submitting a form on our website, you authorize AUAPW LLC to contact you via text message and phone call at the number you provided, including through automated means, with offers and other information.",
       "Message and data rates may apply. Consent is not a condition of purchase.",
       "You may opt out of text messages at any time by replying STOP to any message received.",
     ],
@@ -118,7 +118,7 @@ export default function PrivacyPolicyPage() {
             </div>
             <h1 className="font-serif text-[clamp(1.75rem,4vw,3.5rem)] font-bold text-foreground">Privacy Policy</h1>
             <p className="mt-3 text-sm text-muted-foreground max-w-[520px]">
-              AUAPW.ORG is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information.
+              AUAPW LLC is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information.
             </p>
             <p className="mt-2 text-xs text-muted-foreground/60">Effective Date: January 1, 2024</p>
           </div>

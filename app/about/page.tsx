@@ -8,8 +8,8 @@ import { Logo } from "@/components/logo"
 import Link from "next/link"
 
 export const metadata = {
-  title: "About Us - AUAPW.ORG | Quality Used Auto Parts",
-  description: "Learn about AUAPW.ORG - Your trusted source for quality used auto parts. 2,000+ verified yards, 6-month warranty, ASE-certified team.",
+  title: "About Us - AUAPW LLC | Quality Used Auto Parts",
+  description: "Learn about AUAPW LLC - Your trusted source for quality used auto parts. 2,000+ verified yards, 6-month warranty, ASE-certified team.",
 }
 
 export default function AboutPage() {
@@ -62,7 +62,7 @@ export default function AboutPage() {
                 <h2 className="font-serif text-[clamp(1.75rem,3vw,3rem)] font-bold text-foreground mb-6">Our Mission</h2>
                 <div className="flex flex-col gap-4 text-sm text-muted-foreground leading-relaxed">
                   <p>Quality auto parts should be accessible and affordable for everyone. Taking care of your vehicle should not mean breaking the bank -- used parts can save thousands while delivering the same performance as new.</p>
-                  <p>AUAPW.ORG serves as the bridge between you and our network of verified dealers. We do the hard work of searching thousands of inventory yards so you do not have to.</p>
+                  <p>AUAPW LLC serves as the bridge between you and our network of verified dealers. We do the hard work of searching thousands of inventory yards so you do not have to.</p>
                   <p>With a simple search, you get access to 2,000+ verified inventory yards across all 50 states -- and a response within 24 hours with the best available options and pricing.</p>
                 </div>
                 <div className="flex gap-3 mt-8 flex-wrap">

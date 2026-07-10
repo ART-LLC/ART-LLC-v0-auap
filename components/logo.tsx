@@ -66,7 +66,7 @@ export function Logo({
       <div className={containerStyles} style={boxShadow ? { boxShadow } : undefined}>
         <Image
           src="/auapw-logo.png"
-          alt="AUAPW.ORG - Quality Used Auto Parts"
+          alt="AUAPW LLC - Quality Used Auto Parts"
           width={width}
           height={height}
           className="object-contain"

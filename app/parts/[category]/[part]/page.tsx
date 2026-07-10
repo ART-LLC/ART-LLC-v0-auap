@@ -61,7 +61,7 @@ export default function IndividualPartPage() {
   const partDescription = partInfo?.longDescription || `Quality used ${partName.toLowerCase()} parts from our network of 2,000+ verified salvage yards. Every part comes with warranty coverage and free shipping nationwide.`
   const partBenefits = partInfo?.benefits || ["Save 40-70% vs new parts", "All parts inspected and tested", "Up to 6-month warranty", "Free shipping to all 50 states", "24-hour quote response"]
   const partFaqs = partInfo?.faqs || [
-    { q: `Where can I buy a used ${partName.toLowerCase()}?`, a: `AUAPW.ORG connects you with 2,000+ verified salvage yards nationwide to find quality used ${partName.toLowerCase()} parts at competitive prices.` },
+    { q: `Where can I buy a used ${partName.toLowerCase()}?`, a: `AUAPW LLC connects you with 2,000+ verified salvage yards nationwide to find quality used ${partName.toLowerCase()} parts at competitive prices.` },
     { q: `How much does a used ${partName.toLowerCase()} cost?`, a: `Used ${partName.toLowerCase()} parts typically cost 40-70% less than new OEM parts. Contact us for a specific quote for your vehicle.` },
     { q: `Do used ${partName.toLowerCase()} parts come with a warranty?`, a: `Yes, all our used ${partName.toLowerCase()} parts come with warranty coverage ranging from 30 days to 6 months depending on the specific part.` },
   ]

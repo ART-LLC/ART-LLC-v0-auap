@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 
 export const metadata = {
-  title: "Shipping Policy | AUAPW.ORG",
-  description: "AUAPW.ORG shipping policy, rates, and delivery information for used auto parts.",
+  title: "Shipping Policy | AUAPW LLC",
+  description: "AUAPW LLC shipping policy, rates, and delivery information for used auto parts.",
 }
 
 export default function ShippingPolicyPage() {
@@ -44,7 +44,7 @@ export default function ShippingPolicyPage() {
             <p className="mb-4">High-value items (over $1,000) require signature upon delivery for proof of delivery and insurance purposes.</p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">Liability</h2>
-            <p className="mb-4">While we take every precaution to ensure safe delivery, AUAPW.ORG is not liable for damage caused by carrier negligence. We recommend purchasing additional shipping insurance for high-value items.</p>
+            <p className="mb-4">While we take every precaution to ensure safe delivery, AUAPW LLC is not liable for damage caused by carrier negligence. We recommend purchasing additional shipping insurance for high-value items.</p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">International Shipping</h2>
             <p className="mb-4">At this time, we only ship to addresses within the United States. For international inquiries, please contact our team.</p>
@@ -53,7 +53,7 @@ export default function ShippingPolicyPage() {
             <p className="mb-4">For shipping inquiries, contact us at:</p>
             <ul className="list-none pl-0 space-y-2">
               <li>📞 Phone: <a href="tel:8888185001" className="text-blue-400 hover:text-blue-300">(888) 818-5001</a></li>
-              <li>📧 Email: <a href="mailto:support@auapw.org" className="text-blue-400 hover:text-blue-300">support@auapw.org</a></li>
+              <li>📧 Email: <a href="mailto:support@auapw.com" className="text-blue-400 hover:text-blue-300">support@auapw.com</a></li>
             </ul>
           </div>
         </div>

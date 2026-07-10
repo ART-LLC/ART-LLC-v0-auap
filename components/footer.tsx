@@ -66,13 +66,13 @@ export function Footer() {
                 <Phone className="w-4 h-4 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">(888) 818-5001</span>
               </a>
-              <a href="mailto:support@auapw.org" className="auapw-btn auapw-btn-teal auapw-btn-sm w-full">
+              <a href="mailto:support@auapw.com" className="auapw-btn auapw-btn-teal auapw-btn-sm w-full">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span className="text-xs sm:text-sm">support@auapw.org</span>
+                <span className="text-xs sm:text-sm">support@auapw.com</span>
               </a>
-              <a href="mailto:info@auapw.org" className="auapw-btn auapw-btn-blue auapw-btn-sm w-full">
+              <a href="mailto:info@auapw.com" className="auapw-btn auapw-btn-blue auapw-btn-sm w-full">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span className="text-xs sm:text-sm">info@auapw.org</span>
+                <span className="text-xs sm:text-sm">info@auapw.com</span>
               </a>
               <a href="https://maps.google.com/?q=107+Myrtle+Ave+Woodbine+NJ+08270" target="_blank" rel="noopener noreferrer" className="auapw-btn auapw-btn-silver auapw-btn-sm w-full">
                 <MapPin className="w-4 h-4 flex-shrink-0" />
@@ -174,7 +174,7 @@ export function Footer() {
       <div className="border-t border-border/30 bg-background/60 backdrop-blur-sm">
         <div className="mx-auto w-full max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 py-5 sm:py-7 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6">
           <span className="text-xs sm:text-sm text-muted-foreground font-semibold tracking-tight text-center sm:text-left text-3d-subtle">
-            &copy; {new Date().getFullYear()} <strong className="font-black text-foreground text-3d-bold">AUAPW.ORG</strong>
+            &copy; {new Date().getFullYear()} <strong className="font-black text-foreground text-3d-bold">AUAPW LLC</strong>
           </span>
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {[

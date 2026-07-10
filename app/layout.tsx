@@ -14,11 +14,11 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.auapw.org'),
-  title: 'AUAPW.ORG - Quality Used Auto Parts | Engines, Transmissions & More',
-  description: 'AUAPW.ORG - Your trusted source for quality used auto parts. Shop engines, transmissions, body parts and more from 2,000+ verified salvage yards nationwide. Free shipping, 6-month warranty.',
+  metadataBase: new URL('https://www.auapw.com'),
+  title: 'AUAPW LLC - Quality Used Auto Parts | Engines, Transmissions & More',
+  description: 'AUAPW LLC - Your trusted source for quality used auto parts. Shop engines, transmissions, body parts and more from 2,000+ verified salvage yards nationwide. Free shipping, 6-month warranty.',
   generator: 'v0.dev',
-  applicationName: 'AUAPW.ORG',
+  applicationName: 'AUAPW LLC',
   referrer: 'origin-when-cross-origin',
   formatDetection: {
     email: true,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     telephone: true,
   },
   alternates: {
-    canonical: 'https://www.auapw.org',
+    canonical: 'https://www.auapw.com',
   },
   robots: {
     index: true,
@@ -41,23 +41,23 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://www.auapw.org',
-    siteName: 'AUAPW.ORG',
-    title: 'AUAPW.ORG - Quality Used Auto Parts | Engines, Transmissions & More',
+    url: 'https://www.auapw.com',
+    siteName: 'AUAPW LLC',
+    title: 'AUAPW LLC - Quality Used Auto Parts | Engines, Transmissions & More',
     description: 'Your trusted source for quality used auto parts. Shop engines, transmissions, body parts and more from 2,000+ verified salvage yards nationwide.',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     site: '@auapworg',
-    title: 'AUAPW.ORG - Quality Used Auto Parts',
+    title: 'AUAPW LLC - Quality Used Auto Parts',
     description: 'Your trusted source for quality used auto parts. Engines, transmissions, body parts and more from 2,000+ verified salvage yards.',
   },
   other: {
     'mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
-    'apple-mobile-web-app-title': 'AUAPW.ORG',
+    'apple-mobile-web-app-title': 'AUAPW LLC',
   },
 }
 

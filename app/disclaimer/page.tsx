@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 
 export const metadata = {
-  title: "Disclaimer | AUAPW.ORG",
-  description: "AUAPW.ORG disclaimer and legal notices regarding the use of our services.",
+  title: "Disclaimer | AUAPW LLC",
+  description: "AUAPW LLC disclaimer and legal notices regarding the use of our services.",
 }
 
 export default function DisclaimerPage() {

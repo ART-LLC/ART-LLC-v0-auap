@@ -6,7 +6,7 @@ import Link from "next/link"
 import { Search, Zap, Package, MapPin } from "lucide-react"
 
 export const metadata = {
-  title: "Inventory | AUAPW.ORG",
+  title: "Inventory | AUAPW LLC",
   description: "Browse our current inventory of used auto parts. Real-time stock from 2,000+ verified yards nationwide.",
 }
 

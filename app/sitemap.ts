@@ -6,7 +6,7 @@ function slugify(text: string) {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.auapw.org'
+  const baseUrl = 'https://www.auapw.com'
 
   // Main pages
   const mainPages = [

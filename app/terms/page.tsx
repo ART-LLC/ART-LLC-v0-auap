@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 
 export const metadata = {
-  title: "Terms and Conditions | AUAPW.ORG",
-  description: "Terms and conditions for using AUAPW.ORG services.",
+  title: "Terms and Conditions | AUAPW LLC",
+  description: "Terms and conditions for using AUAPW LLC services.",
 }
 
 export default function TermsPage() {
@@ -20,7 +20,7 @@ export default function TermsPage() {
             <p className="text-muted-foreground mb-6">Last updated: March 2026</p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">1. Agreement to Terms</h2>
-            <p className="mb-4">By accessing and using AUAPW.ORG website, you agree to be bound by these Terms and Conditions. If you do not agree to abide by the above, please do not use this service.</p>
+            <p className="mb-4">By accessing and using AUAPW LLC website, you agree to be bound by these Terms and Conditions. If you do not agree to abide by the above, please do not use this service.</p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">2. Use License</h2>
             <p className="mb-4">Permission is granted to temporarily download one copy of the materials (information or software) on AUAPW's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>

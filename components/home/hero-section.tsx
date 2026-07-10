@@ -87,7 +87,7 @@ export function HeroSection() {
                 {[
                   {
                     title: "America's Largest Parts Network",
-                    body: "AUAPW.ORG connects you with over 2,000 top junkyards and salvage yards across the United States. Our extensive network ensures you find the right part, whether it is a common component or a rare discontinued item."
+                    body: "AUAPW LLC connects you with over 2,000 top junkyards and salvage yards across the United States. Our extensive network ensures you find the right part, whether it is a common component or a rare discontinued item."
                   },
                   {
                     title: "Seamless Search Experience",
@@ -111,7 +111,7 @@ export function HeroSection() {
 
             {/* What Are the Benefits */}
             <div className="w-full pt-6 border-t border-white/10">
-              <h2 className="text-primary font-bold tracking-tight text-center text-lg sm:text-xl mb-4 uppercase">Benefits of Choosing AUAPW.ORG</h2>
+              <h2 className="text-primary font-bold tracking-tight text-center text-lg sm:text-xl mb-4 uppercase">Benefits of Choosing AUAPW LLC</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
                 {[
                   {
@@ -193,7 +193,7 @@ export function HeroSection() {
                   <span className="text-2xl font-bold tracking-wide text-primary/40">04</span>
                   <span className="text-sm font-bold tracking-wide text-primary uppercase">Fast Delivery</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">Your part ships same day when available, delivered directly to your door or local shop.</p>
-                  <a href="mailto:support@auapw.org" className="mt-auto w-full auapw-btn auapw-btn-teal auapw-btn-sm">
+                  <a href="mailto:support@auapw.com" className="mt-auto w-full auapw-btn auapw-btn-teal auapw-btn-sm">
                     <Mail className="w-4 h-4" />
                     <span>Email Us</span>
                   </a>
@@ -291,9 +291,9 @@ export function HeroSection() {
                       <Calendar className="w-4 h-4" />
                       <span>Schedule Callback</span>
                     </Link>
-                    <a href="mailto:support@auapw.org" className="w-full auapw-btn auapw-btn-teal auapw-btn-sm">
+                    <a href="mailto:support@auapw.com" className="w-full auapw-btn auapw-btn-teal auapw-btn-sm">
                       <Mail className="w-4 h-4" />
-                      <span>support@auapw.org</span>
+                      <span>support@auapw.com</span>
                     </a>
                   </div>
                   </div>

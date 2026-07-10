@@ -25,7 +25,7 @@ export function ContentSection() {
           </h2>
           <div className="text-muted-foreground text-[0.95rem] leading-[1.8] flex flex-col gap-4" style={{ textTransform: 'uppercase', fontWeight: '700' }}>
             <p className="font-medium text-foreground/90">
-              AUAPW.ORG is a US-based online platform for finding all kinds of used auto parts. We cooperate with the best junkyards and salvage yards around the country, to provide our customers with only top-notch services.
+              AUAPW LLC is a US-based online platform for finding all kinds of used auto parts. We cooperate with the best junkyards and salvage yards around the country, to provide our customers with only top-notch services.
             </p>
             <p className="font-medium text-foreground/85">
               On our website, you can find a simple search tool that helps you find a wide variety of used car parts from different dealers. We help you connect with the best suppliers without extra efforts, serving as a bridge between you and the dealers.
@@ -34,23 +34,23 @@ export function ContentSection() {
               After choosing your desired <strong className="text-foreground font-bold text-3d-accent">used engines</strong> and <strong className="text-foreground font-bold text-3d-accent">used transmissions</strong> and contacting a dealer, you will receive a response in less than 24 hours. All you need is internet access -- no need to roam around different junkyards to find a car part -- we do it all for you.
             </p>
             <p className="font-medium text-foreground/85">
-              Taking care of your vehicle can sometimes be a pain and very expensive but with used auto parts you can save a fortune. On AUAPW.ORG, we take all the struggle of finding the best auto parts on us. We guarantee that you will get only high-quality products at the most affordable prices.
+              Taking care of your vehicle can sometimes be a pain and very expensive but with used auto parts you can save a fortune. On AUAPW LLC, we take all the struggle of finding the best auto parts on us. We guarantee that you will get only high-quality products at the most affordable prices.
             </p>
             <p className="font-medium text-foreground/85">
               Our network spans all 50 states with partnerships across <strong className="text-foreground font-bold text-3d-accent">2,000+ verified salvage yards</strong> and recyclers. Whether you need a complete engine, transmission, body panels, electrical components, or any other part -- we have access to millions of quality-tested components ready for immediate shipping.
             </p>
             <p className="font-medium text-foreground/85">
-              Every part listed on AUAPW.ORG goes through a rigorous quality inspection process. Our partnered dealers test and verify each component before listing, ensuring you receive parts that meet or exceed OEM specifications. We stand behind every sale with our comprehensive <strong className="text-foreground font-bold text-3d-accent">30 to 180-day warranty</strong> program.
+              Every part listed on AUAPW LLC goes through a rigorous quality inspection process. Our partnered dealers test and verify each component before listing, ensuring you receive parts that meet or exceed OEM specifications. We stand behind every sale with our comprehensive <strong className="text-foreground font-bold text-3d-accent">30 to 180-day warranty</strong> program.
             </p>
             <p className="font-medium text-foreground/85">
-              Why pay dealership prices when you can get the same quality at a fraction of the cost? Used auto parts from AUAPW.ORG typically save our customers <strong className="text-foreground font-bold text-3d-accent">40-70% compared to new OEM parts</strong>. Our transparent pricing means no hidden fees -- what you see is what you pay, with free shipping on most orders.
+              Why pay dealership prices when you can get the same quality at a fraction of the cost? Used auto parts from AUAPW LLC typically save our customers <strong className="text-foreground font-bold text-3d-accent">40-70% compared to new OEM parts</strong>. Our transparent pricing means no hidden fees -- what you see is what you pay, with free shipping on most orders.
             </p>
           </div>
         </div>
 
         {/* Trust & Quality Section */}
         <div className="glass-card rounded-sm p-8 mb-16">
-          <h3 className="font-serif text-xl font-bold text-foreground text-3d-subtle mb-4">Why Customers Trust AUAPW.ORG</h3>
+          <h3 className="font-serif text-xl font-bold text-foreground text-3d-subtle mb-4">Why Customers Trust AUAPW LLC</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h4 className="text-sm font-bold text-foreground text-3d-subtle mb-2">Quality Guaranteed</h4>
@@ -81,7 +81,7 @@ export function ContentSection() {
 
         {/* How it works */}
         <div className="glass-card rounded-sm p-8 mb-16">
-          <h3 className="font-serif text-xl font-bold text-foreground text-3d-subtle mb-4">How Does AUAPW.ORG Work?</h3>
+          <h3 className="font-serif text-xl font-bold text-foreground text-3d-subtle mb-4">How Does AUAPW LLC Work?</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
             Simple. Browsing through our website is just a breeze - within a few minutes you can find everything you have been looking for. Just fill the required fields, such as the brand, car model, year, etc. and find the most affordable and top-quality parts.
           </p>
@@ -109,7 +109,7 @@ export function ContentSection() {
         <div className="mb-16">
           <h3 className="font-serif text-xl font-bold text-foreground text-3d-subtle mb-4">Our Services</h3>
           <p className="text-muted-foreground text-sm leading-relaxed mb-6 font-medium">
-            AUAPW.ORG offers top-of-the-line used car auto parts for all types of vehicles -- Honda, Acura, Dodge, Ford, BMW, you name it. On our online platform, you get the chance to browse through all the best junkyards in the country within minutes.
+            AUAPW LLC offers top-of-the-line used car auto parts for all types of vehicles -- Honda, Acura, Dodge, Ford, BMW, you name it. On our online platform, you get the chance to browse through all the best junkyards in the country within minutes.
           </p>
           <h3 className="font-serif text-xl font-bold text-foreground text-3d-subtle mb-4">What Makes Us The Best?</h3>
           <div className="flex flex-col gap-3">
