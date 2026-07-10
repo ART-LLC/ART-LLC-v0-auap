@@ -8,11 +8,46 @@
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
 }
 
+/* ── Metallic silver emboss effect on all text globally ── */
+h1, h2, h3, h4, h5, h6,
+p, span, a, button, label, div,
+li, td, th, input, textarea {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.95) 0%,
+    rgba(220,225,240,0.85) 50%,
+    rgba(180,190,220,0.8) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow:
+    -1px -1px 0 rgba(0,0,0,0.3),
+     1px  1px 0 rgba(255,255,255,0.2),
+    -2px -2px 4px rgba(0,0,0,0.4),
+     2px  2px 4px rgba(255,255,255,0.1);
+}
+
 /* Dull matte black — industrial automotive body */
 body {
   background-color: var(--background);
   background-attachment: fixed;
   background-size: cover;
+  /* Apply metallic silver emboss effect to all text */
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.95) 0%,
+    rgba(220,225,240,0.85) 50%,
+    rgba(180,190,220,0.8) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow:
+    -1px -1px 0 rgba(0,0,0,0.3),
+     1px  1px 0 rgba(255,255,255,0.2),
+    -2px -2px 4px rgba(0,0,0,0.4),
+     2px  2px 4px rgba(255,255,255,0.1);
 }
 
 :root {
