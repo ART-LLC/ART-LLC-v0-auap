@@ -541,7 +541,7 @@ footer .wordmark-3d {
   );
 }
 
-/* ── Liquid Mercury Chrome on company name — ENHANCED ── */
+/* ── All Used Auto Parts Warehouse — Same 3D emboss as AUAPW LLC ── */
 .wordmark-sub {
   display: inline-block;
   font-family: 'Inter', 'Inter Fallback', sans-serif;
@@ -550,22 +550,20 @@ footer .wordmark-3d {
   text-transform: uppercase;
   line-height: 1;
   background: linear-gradient(
-    90deg,
-    #5c6374 0%,
-    #959daf 14%,
-    #cdd2e2 28%,
-    #edf0f8 40%,
-    #ffffff 50%,
-    #edf0f8 60%,
-    #cdd2e2 72%,
-    #959daf 86%,
-    #5c6374 100%
+    180deg,
+    rgba(255,255,255,0.95) 0%,
+    rgba(220,225,240,0.85) 50%,
+    rgba(180,190,220,0.8) 100%
   );
-  background-size: 280% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: mercury-flow 5s ease-in-out infinite;
+  text-shadow:
+    -1px -1px 0 rgba(0,0,0,0.3),
+     1px  1px 0 rgba(255,255,255,0.2),
+    -2px -2px 4px rgba(0,0,0,0.4),
+     2px  2px 4px rgba(255,255,255,0.1);
+  position: relative;
 }
 
 /* ── Tagline — italic silver shimmer ── */
@@ -4045,7 +4043,7 @@ footer .wordmark-3d {
   );
 }
 
-/* ─── Mobile Responsive Adjustments ─── */
+/* ─── Mobile Responsive Adjustments ��── */
 @media (max-width: 640px) {
   .auapw-btn {
     padding: 0.625rem 1rem;
