@@ -221,7 +221,13 @@ export function HeroSection() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
 
                 {/* Used Engines */}
-                <div className="flex flex-col gap-4 p-5 rounded-lg" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
+                <div className="relative flex flex-col gap-4 p-5 rounded-lg overflow-hidden group" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
+                  <Image
+                    src="/images/section-engines.png"
+                    alt="Used engines inventory"
+                    fill
+                    className="absolute inset-0 object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300 -z-10"
+                  />
                   <span className="text-primary font-bold tracking-wide text-base uppercase">Used Engines</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">
                     Our used engines are pulled from low-mileage donor vehicles, inspected for compression, leaks, and overall condition before they ship. Whether you need a replacement engine for a sedan, SUV, or truck, we source the right match for your year, make, and model. Every engine comes with a 30 to 180-day warranty so you have coverage after installation.
@@ -240,7 +246,13 @@ export function HeroSection() {
                 </div>
 
                 {/* Used Transmissions */}
-                <div className="flex flex-col gap-4 p-5 rounded-lg" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
+                <div className="relative flex flex-col gap-4 p-5 rounded-lg overflow-hidden group" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
+                  <Image
+                    src="/images/section-transmissions.png"
+                    alt="Used transmissions inventory"
+                    fill
+                    className="absolute inset-0 object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300 -z-10"
+                  />
                   <span className="text-primary font-bold tracking-wide text-base uppercase">Used Transmissions</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">
                     We carry automatic and manual used transmissions for cars, trucks, and SUVs. Each unit is tested for proper shifting, gear engagement, and fluid integrity before it leaves the yard. Get a direct-fit replacement at a fraction of dealership or rebuild cost without sacrificing reliability or quality.
@@ -259,7 +271,13 @@ export function HeroSection() {
                 </div>
 
                 {/* Book Appointment / Contact */}
-                <div className="flex flex-col gap-4 p-5 rounded-lg" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
+                <div className="relative flex flex-col gap-4 p-5 rounded-lg overflow-hidden group" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
+                  <Image
+                    src="/images/section-service.png"
+                    alt="Customer service appointment"
+                    fill
+                    className="absolute inset-0 object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300 -z-10"
+                  />
                   <span className="text-primary font-bold tracking-wide text-base uppercase">Schedule a Callback</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">
                     Tell us what time works best for you and we will call you back — on your schedule. Whether you need a quote, technical advice, or help finding a specific part, our team is ready to connect at the time you choose. No hold music. No waiting. Just real help when you need it.
