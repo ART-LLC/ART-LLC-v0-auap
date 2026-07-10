@@ -12,8 +12,8 @@ export function HeroSection() {
       {/* Background — always matte black with engine image */}
       <div className="absolute inset-0 bg-[#080808]">
         <Image
-          src="/images/hero-engines.jpg"
-          alt=""
+          src="/images/hero-engines.png"
+          alt="Used automotive engines warehouse inventory"
           fill
           className="object-cover opacity-35 scale-105"
           priority
