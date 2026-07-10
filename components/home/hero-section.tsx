@@ -221,8 +221,14 @@ export function HeroSection() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
 
                 {/* Used Engines */}
-                <div className="flex flex-col gap-4 p-5 rounded-lg" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
-                  <span className="text-primary font-bold tracking-wide text-base uppercase">Used Engines</span>
+                <div className="flex flex-col gap-4 rounded-lg overflow-hidden" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
+                  <div className="relative w-full h-44 overflow-hidden">
+                    <Image src="/images/section-used-engines.png" alt="Used Engines" fill className="object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <span className="absolute bottom-3 left-4 text-white font-bold tracking-wide text-base uppercase drop-shadow">Used Engines</span>
+                  </div>
+                  <div className="flex flex-col gap-4 p-5 pt-2">
+                  <span className="text-primary font-bold tracking-wide text-base uppercase sr-only">Used Engines</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">
                     Our used engines are pulled from low-mileage donor vehicles, inspected for compression, leaks, and overall condition before they ship. Whether you need a replacement engine for a sedan, SUV, or truck, we source the right match for your year, make, and model. Every engine comes with a 30 to 180-day warranty so you have coverage after installation.
                   </p>
@@ -237,11 +243,18 @@ export function HeroSection() {
                     <Cog className="w-4 h-4" />
                     <span>Used Engines</span>
                   </Link>
+                  </div>
                 </div>
 
                 {/* Used Transmissions */}
-                <div className="flex flex-col gap-4 p-5 rounded-lg" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
-                  <span className="text-primary font-bold tracking-wide text-base uppercase">Used Transmissions</span>
+                <div className="flex flex-col gap-4 rounded-lg overflow-hidden" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
+                  <div className="relative w-full h-44 overflow-hidden">
+                    <Image src="/images/section-used-transmissions.png" alt="Used Transmissions" fill className="object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <span className="absolute bottom-3 left-4 text-white font-bold tracking-wide text-base uppercase drop-shadow">Used Transmissions</span>
+                  </div>
+                  <div className="flex flex-col gap-4 p-5 pt-2">
+                  <span className="text-primary font-bold tracking-wide text-base uppercase sr-only">Used Transmissions</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">
                     We carry automatic and manual used transmissions for cars, trucks, and SUVs. Each unit is tested for proper shifting, gear engagement, and fluid integrity before it leaves the yard. Get a direct-fit replacement at a fraction of dealership or rebuild cost without sacrificing reliability or quality.
                   </p>
@@ -256,11 +269,18 @@ export function HeroSection() {
                     <Settings2 className="w-4 h-4" />
                     <span>Used Transmissions</span>
                   </Link>
+                  </div>
                 </div>
 
                 {/* Book Appointment / Contact */}
-                <div className="flex flex-col gap-4 p-5 rounded-lg" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
-                  <span className="text-primary font-bold tracking-wide text-base uppercase">Schedule a Callback</span>
+                <div className="flex flex-col gap-4 rounded-lg overflow-hidden" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
+                  <div className="relative w-full h-44 overflow-hidden">
+                    <Image src="/images/section-appointment.png" alt="Schedule a Callback" fill className="object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <span className="absolute bottom-3 left-4 text-white font-bold tracking-wide text-base uppercase drop-shadow">Schedule a Callback</span>
+                  </div>
+                  <div className="flex flex-col gap-4 p-5 pt-2">
+                  <span className="text-primary font-bold tracking-wide text-base uppercase sr-only">Schedule a Callback</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">
                     Tell us what time works best for you and we will call you back — on your schedule. Whether you need a quote, technical advice, or help finding a specific part, our team is ready to connect at the time you choose. No hold music. No waiting. Just real help when you need it.
                   </p>
@@ -280,6 +300,7 @@ export function HeroSection() {
                       <Mail className="w-4 h-4" />
                       <span>support@auapw.org</span>
                     </a>
+                  </div>
                   </div>
                 </div>
 

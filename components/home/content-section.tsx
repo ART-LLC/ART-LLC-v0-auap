@@ -1,10 +1,21 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Search, Truck, Shield, RotateCcw, Clock, ThumbsUp, DollarSign, Grid3X3 } from "lucide-react"
 
 export function ContentSection() {
   return (
     <section className="py-20 bg-background ghost-scan-section" style={{ paddingTop: '9px' }}>
       <div className="mx-auto max-w-[1000px] px-6" style={{ fontFamily: 'system-ui' }}>
+        {/* Banner Image */}
+        <div className="relative w-full h-56 sm:h-72 rounded-xl overflow-hidden mb-10">
+          <Image src="/images/section-content-banner.png" alt="AUAPW - All Used Auto Parts Warehouse" fill className="object-cover" priority />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+          <div className="absolute inset-0 flex flex-col justify-center px-8">
+            <span className="text-[0.65rem] font-black tracking-[0.25em] uppercase text-white/60 mb-2">America&apos;s Largest Network</span>
+            <span className="text-2xl sm:text-3xl font-black text-white leading-tight">2,000+ Verified Yards<br />Across All 50 States</span>
+          </div>
+        </div>
+
         {/* Main intro */}
         <div className="mb-16">
           <h2 className="small-caps font-sans text-[clamp(1.75rem,4vw,2.75rem)] font-black mercury-heading text-3d-section mb-6" style={{ fontFamily: 'system-ui', fontSize: '29px', textTransform: 'uppercase', marginBottom: '0px' }}>

@@ -1,22 +1,26 @@
 "use client"
 
+import Image from "next/image"
 import { CheckCircle2, Handshake, Award, Wrench } from "lucide-react"
 
 const values = [
   {
     title: "Your Trusted US Partner",
     description: "As a US-based platform, we connect car owners and repair professionals with America's most reliable junkyards and salvage yards. Our commitment to quality relationships ensures you always have a dependable partner in sourcing auto parts.",
-    Icon: Handshake
+    Icon: Handshake,
+    image: "/images/section-trusted-partner.png"
   },
   {
     title: "Premium Quality Guarantee",
     description: "Every supplier in our nationwide network is vetted for quality and reliability. We only connect you with yards that meet our strict standards, ensuring you receive genuine OEM parts that perform like new.",
-    Icon: Award
+    Icon: Award,
+    image: "/images/section-quality.png"
   },
   {
     title: "Comprehensive Solutions",
     description: "From engines and transmissions to body parts and accessories, our extensive US network covers all vehicle makes and models. One platform, thousands of qualified suppliers, endless possibilities.",
-    Icon: Wrench
+    Icon: Wrench,
+    image: "/images/section-network.png"
   }
 ]
 
@@ -37,14 +41,23 @@ export function BrandValuesSection() {
         {/* Values Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-10 sm:mb-16">
           {values.map((value, idx) => (
-            <div key={idx} className="group glass-card rounded-xl sm:rounded-2xl p-6 sm:p-8 backdrop-blur-sm border border-primary/10 hover:border-primary/20 transition-all duration-300">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <value.Icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+            <div key={idx} className="group glass-card rounded-xl sm:rounded-2xl overflow-hidden backdrop-blur-sm border border-primary/10 hover:border-primary/20 transition-all duration-300">
+              {/* Card image */}
+              <div className="relative w-full h-44 overflow-hidden">
+                <Image src={value.image} alt={value.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute bottom-3 left-4 flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-lg bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+                    <value.Icon className="w-4 h-4 text-primary" />
+                  </div>
+                </div>
               </div>
-              <h3 className="text-base sm:text-lg font-bold tracking-tight text-foreground text-3d-subtle mb-2 sm:mb-3">{value.title}</h3>
-              <p className="text-muted-foreground text-[0.85rem] sm:text-[0.95rem] leading-relaxed tracking-tight">
-                {value.description}
-              </p>
+              <div className="p-6 sm:p-8">
+                <h3 className="text-base sm:text-lg font-bold tracking-tight text-foreground text-3d-subtle mb-2 sm:mb-3">{value.title}</h3>
+                <p className="text-muted-foreground text-[0.85rem] sm:text-[0.95rem] leading-relaxed tracking-tight">
+                  {value.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
