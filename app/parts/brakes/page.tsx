@@ -12,10 +12,6 @@ import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
 import { ProductCardActions } from '@/components/products/product-card-actions'
-import { PartsFAQ } from '@/components/products/parts-faq'
-import { ShippingInfo } from '@/components/products/shipping-info'
-import { PartsDetails } from '@/components/products/parts-details'
-import { PartsHistory } from '@/components/products/parts-history'
 const BRAKES_PARTS = [
   { id: 'brake-caliper', name: 'Brake Caliper', description: 'Front or rear brake caliper', avgPrice: 149 },
   { id: 'brake-rotor', name: 'Brake Rotor', description: 'OEM brake rotor disc', avgPrice: 129 },
@@ -122,11 +118,6 @@ export default function BrakesProductPage() {
             )}
           </div>
         </section>
-
-        <PartsHistory />
-        <PartsDetails details={{ category: "Brakes & Safety Systems", condition: "Used - Tested & Verified", source: "Certified Auto Salvage Yards", mileage: "65,000 - 120,000 miles average", warranty: "90-Day Brake Warranty", testing: ["Brake pad wear inspection", "Rotor condition verification", "Hydraulic system pressure test", "ABS system diagnostics"], includes: ["Complete brake assembly", "Calipers or drums", "Brake fluid and lines", "Installation guide and warranty"], compatibility: ["Vehicle brake system specific", "Brake line compatibility verified", "ABS integration tested", "Rotor size matching available"] }} />
-        <ShippingInfo />
-        <PartsFAQ category="brakes" />
       </main>
       <Footer />
     </>

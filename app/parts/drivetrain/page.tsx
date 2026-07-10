@@ -13,10 +13,6 @@ import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 import { ProductCardActions } from '@/components/products/product-card-actions'
 
-import { PartsFAQ } from '@/components/products/parts-faq'
-import { ShippingInfo } from '@/components/products/shipping-info'
-import { PartsDetails } from '@/components/products/parts-details'
-import { PartsHistory } from '@/components/products/parts-history'
 const DRIVETRAIN_PARTS = [
   { id: 'axle-front', name: 'Front Axle Assembly', description: 'Complete front axle assembly', avgPrice: 599 },
   { id: 'axle-rear', name: 'Rear Axle Assembly', description: 'Complete rear axle assembly', avgPrice: 749 },
@@ -153,44 +149,6 @@ export default function DrivetrainProductPage() {
             )}
           </div>
         </section>
-
-        {/* Parts History */}
-        <PartsHistory />
-
-        {/* Parts Details */}
-        <PartsDetails 
-          details={{
-            category: "Drivetrain Components",
-            condition: "Used - Tested & Verified",
-            source: "Certified Auto Salvage Yards",
-            mileage: "70,000 - 130,000 miles average",
-            warranty: "90-Day Drivetrain Warranty",
-            testing: [
-              "Rotation and bearing function test",
-              "Seal and gasket integrity check",
-              "Noise and vibration assessment",
-              "Fitment verification for your vehicle"
-            ],
-            includes: [
-              "Complete assembly",
-              "All original components",
-              "Installation hardware",
-              "Warranty documentation"
-            ],
-            compatibility: [
-              "AWD/FWD/RWD specific variants",
-              "Year and model verification",
-              "Ratio matching for differentials",
-              "Professional fitment consultation"
-            ]
-          }}
-        />
-
-        {/* Shipping Information */}
-        <ShippingInfo />
-
-        {/* FAQ */}
-        <PartsFAQ category="drivetrain" />
       </main>
       <Footer />
     </>

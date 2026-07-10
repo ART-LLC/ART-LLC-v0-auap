@@ -151,7 +151,7 @@ export default function CatalogPage() {
     addToCart({
       id: String(part.id),
       name: part.name,
-      price: part.price,
+      price: String(part.price),
       quantity: 1,
       image: '',
       make: 'Universal',
@@ -163,7 +163,7 @@ export default function CatalogPage() {
     addToWishlist({
       id: String(part.id),
       name: part.name,
-      price: part.price,
+      price: String(part.price),
       image: '',
       make: 'Universal',
       partType: part.category,
@@ -175,7 +175,7 @@ export default function CatalogPage() {
     addToComparison({
       id: String(part.id),
       name: part.name,
-      price: part.price,
+      price: String(part.price),
       make: 'Universal',
       partType: part.category,
     })

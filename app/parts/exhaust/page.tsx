@@ -12,10 +12,6 @@ import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
 import { ProductCardActions } from '@/components/products/product-card-actions'
-import { PartsFAQ } from '@/components/products/parts-faq'
-import { ShippingInfo } from '@/components/products/shipping-info'
-import { PartsDetails } from '@/components/products/parts-details'
-import { PartsHistory } from '@/components/products/parts-history'
 const EXHAUST_PARTS = [
   { id: 'catalytic-converter', name: 'Catalytic Converter', description: 'OEM catalytic converter assembly', avgPrice: 599 },
   { id: 'muffler', name: 'Muffler', description: 'Complete muffler assembly', avgPrice: 199 },
@@ -122,11 +118,6 @@ export default function ExhaustProductPage() {
             )}
           </div>
         </section>
-
-        <PartsHistory />
-        <PartsDetails details={{ category: "Exhaust Systems", condition: "Used - Tested & Verified", source: "Certified Auto Salvage Yards", mileage: "75,000 - 140,000 miles average", warranty: "90-Day Exhaust Warranty", testing: ["Flow rate verification", "Exhaust gas emissions check", "Component integrity test", "Leak detection inspection"], includes: ["Complete exhaust assembly", "Catalytic converter", "Muffler and silencers", "Installation hardware and warranty"], compatibility: ["Vehicle exhaust system specific", "Emissions standard verified", "Mounting compatibility confirmed", "Performance specifications matched"] }} />
-        <ShippingInfo />
-        <PartsFAQ category="exhaust" />
       </main>
       <Footer />
     </>

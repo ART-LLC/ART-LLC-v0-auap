@@ -194,7 +194,7 @@ export default function CheckoutPage() {
                       </div>
                     )}
 
-                    {(step === 'payment' || step === 'confirmation') && (
+                    {(step === 'payment' || step === 'confirmation' as const) && (
                       <div className="text-sm text-foreground/60 space-y-1">
                         <p>{formData.firstName} {formData.lastName}</p>
                         <p>{formData.address}</p>

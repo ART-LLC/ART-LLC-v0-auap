@@ -12,10 +12,6 @@ import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
 import { ProductCardActions } from '@/components/products/product-card-actions'
-import { PartsFAQ } from '@/components/products/parts-faq'
-import { ShippingInfo } from '@/components/products/shipping-info'
-import { PartsDetails } from '@/components/products/parts-details'
-import { PartsHistory } from '@/components/products/parts-history'
 const BODY_PARTS = [
   { id: 'door-assembly', name: 'Door Assembly', description: 'Complete door with glass and hardware', avgPrice: 399 },
   { id: 'hood', name: 'Hood', description: 'Engine hood assembly', avgPrice: 249 },
@@ -122,11 +118,6 @@ export default function BodyProductPage() {
             )}
           </div>
         </section>
-
-        <PartsHistory />
-        <PartsDetails details={{ category: "Body & Interior Components", condition: "Used - Good Condition", source: "Certified Auto Salvage Yards", mileage: "Varies by component", warranty: "90-Day Body Warranty", testing: ["Panel alignment verification", "Window and door operation test", "Interior component inspection", "Paint and trim assessment"], includes: ["Complete body panel or assembly", "Trim and molding", "Installation hardware", "Condition documentation and warranty"], compatibility: ["Vehicle model specific", "Year and generation verified", "Color matching available upon request", "Custom modifications accommodated"] }} />
-        <ShippingInfo />
-        <PartsFAQ category="body" />
       </main>
       <Footer />
     </>
