@@ -46,7 +46,7 @@ export default function CheckoutPage() {
 
   const handleShippingSubmit = () => {
     if (formData.firstName && formData.lastName && formData.email && formData.address && formData.city && formData.state && formData.zipCode) {
-      setStep('payment')
+      setStep('payment' as const)
     }
   }
 
@@ -194,7 +194,7 @@ export default function CheckoutPage() {
                       </div>
                     )}
 
-                    {(step === 'payment' || step === 'confirmation') && (
+                    {(step === 'payment' || step === 'confirmation' as const) && (
                       <div className="text-sm text-foreground/60 space-y-1">
                         <p>{formData.firstName} {formData.lastName}</p>
                         <p>{formData.address}</p>
@@ -206,7 +206,7 @@ export default function CheckoutPage() {
                   {/* Payment Info */}
                   <div className="p-6 border border-white/10 rounded-lg bg-white/5">
                     <div className="flex items-center gap-3 mb-6">
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${step === 'payment' || step === 'confirmation' ? 'bg-blue-500 text-white' : 'bg-white/10 text-foreground/60'}`}>
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${step !== 'shipping' ? 'bg-blue-500 text-white' : 'bg-white/10 text-foreground/60'}`}>
                         2
                       </div>
                       <h2 className="text-xl font-bold">Payment Information</h2>

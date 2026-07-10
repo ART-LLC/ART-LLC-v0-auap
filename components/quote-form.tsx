@@ -145,7 +145,7 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
               <label htmlFor="qf-part" className="text-[0.6rem] font-black tracking-[0.2em] uppercase text-muted-foreground">
                 Select Part
               </label>
-              <select id="qf-part" className={field} value={part} onChange={(e) => setPart(e.target.value)}>
+              <select id="qf-part" className={field} value={part} onChange={(e) => setPart(e.target.value as '' | 'Engine' | 'Transmission')}>
                 <option value="">Select Part</option>
                 <option value="Engine">Engine</option>
                 <option value="Transmission">Transmission</option>

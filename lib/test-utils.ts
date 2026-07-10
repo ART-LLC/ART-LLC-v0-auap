@@ -202,7 +202,7 @@ export function runDataValidationSuite(): TestResult[] {
     }),
     t("dv-8", "BRAND_LOGOS has entries", "At least 10 brand logos defined", () => Object.keys(BRAND_LOGOS).length >= 10),
     t("dv-9", "Brand logo URLs are valid", "All logo values are well-formed URLs", () => {
-      const bad = Object.entries(BRAND_LOGO_URLS).filter(([, url]) => !Validators.isValidUrl(url))
+      const bad = Object.entries(BRAND_LOGOS).filter(([, url]) => typeof url === 'string' && !Validators.isValidUrl(url))
       return { pass: bad.length === 0, detail: bad.length ? `Bad URLs for: ${bad.map(([b]) => b).join(", ")}` : "All valid" }
     }),
     t("dv-10", "generateResults – valid make returns results", "Engine search for Toyota returns 1+ results", () => {

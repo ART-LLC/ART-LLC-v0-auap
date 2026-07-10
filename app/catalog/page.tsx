@@ -149,9 +149,9 @@ export default function CatalogPage() {
 
   const handleAddToCart = (part: typeof ALL_PARTS[0]) => {
     addToCart({
-      id: part.id,
+      id: String(part.id),
       name: part.name,
-      price: part.price,
+      price: String(part.price),
       quantity: 1,
       image: '',
       make: 'Universal',
@@ -161,9 +161,9 @@ export default function CatalogPage() {
 
   const handleAddToWishlist = (part: typeof ALL_PARTS[0]) => {
     addToWishlist({
-      id: part.id,
+      id: String(part.id),
       name: part.name,
-      price: part.price,
+      price: String(part.price),
       image: '',
       make: 'Universal',
       partType: part.category,
@@ -173,9 +173,9 @@ export default function CatalogPage() {
 
   const handleAddToComparison = (part: typeof ALL_PARTS[0]) => {
     addToComparison({
-      id: part.id,
+      id: String(part.id),
       name: part.name,
-      price: part.price,
+      price: String(part.price),
       make: 'Universal',
       partType: part.category,
     })
