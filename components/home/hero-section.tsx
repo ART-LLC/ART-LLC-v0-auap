@@ -34,7 +34,7 @@ export function HeroSection() {
               {/* Ultra-massive logo */}
               <Logo size="7xl" variant="medallion" priority showGlow />
               {/* Ultra wordmark */}
-              <BrandWordmark size="hero-5xl" className="text-center items-center" />
+              <BrandWordmark size="hero-5xl" className="text-center items-center on-dark" />
             </div>
 
             {/* Headline */}

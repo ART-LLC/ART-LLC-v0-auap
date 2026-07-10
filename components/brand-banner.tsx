@@ -43,6 +43,7 @@ export function BrandBanner({ subtitle }: BrandBannerProps) {
         <BrandWordmark
           size="banner"
           subtitle={subtitle ? `"${subtitle}"` : undefined}
+          className="on-dark"
         />
 
         {/* Chrome divider with gear icon */}

@@ -286,6 +286,70 @@ h1, h2, h3, h4, h5, h6 {
      0   -1px 2px rgba(255,255,255,0.8);
 }
 
+/* ── Light mode: brand wordmark must be dark to stay visible ──
+   The default silver/white gradient disappears on light backgrounds
+   (navbar, footer, about). Render it as dark embossed text instead. */
+.light .wordmark-3d,
+.light .wordmark-sub {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: #0f1117;
+  color: #0f1117;
+  text-shadow:
+     1px  1px 0 rgba(255,255,255,0.85),
+    -1px -1px 0 rgba(0,0,0,0.12),
+     0    1px 2px rgba(0,0,0,0.15);
+  animation: none;
+}
+.light .wordmark-tag {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: #3a3f4c;
+  color: #3a3f4c;
+  animation: none;
+}
+
+/* ── Escape hatch: keep the light gradient on permanently-dark
+   backgrounds (hero slider, brand banner) even in light mode. ── */
+.light .on-dark .wordmark-3d,
+.light .on-dark .wordmark-sub {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.95) 0%,
+    rgba(220,225,240,0.85) 50%,
+    rgba(180,190,220,0.8) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow:
+    -1px -1px 0 rgba(0,0,0,0.3),
+     1px  1px 0 rgba(255,255,255,0.2),
+    -2px -2px 4px rgba(0,0,0,0.4),
+     2px  2px 4px rgba(255,255,255,0.1);
+}
+.light .on-dark .wordmark-tag {
+  background: linear-gradient(
+    90deg,
+    #555a6a 0%,
+    #909aae 20%,
+    #cdd2e0 38%,
+    #ffffff 50%,
+    #cdd2e0 62%,
+    #909aae 80%,
+    #555a6a 100%
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: mercury-flow 6s ease-in-out infinite reverse;
+}
+
 /* ═══════════════════════════════════════════════════════
    AUAPW PREMIUM EFFECTS SYSTEM
    3D Block Extrusion | Animated Gear Backdrop |
@@ -2047,7 +2111,7 @@ footer .wordmark-3d {
   animation: phone-icon-spin 2s ease-in-out infinite;
 }
 
-/* ── Luxury Logo Tile ──────────────────────────────── */
+/* ── Luxury Logo Tile ─────────────────────────────��── */
 
 @keyframes logo-chrome-sweep {
   0%   { transform: translateX(-150%) skewX(-12deg); }
