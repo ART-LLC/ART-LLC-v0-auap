@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
+import { ProductCardActions } from '@/components/products/product-card-actions'
 const COOLING_PARTS = [
   { id: 'radiator', name: 'Radiator', description: 'Complete radiator assembly', avgPrice: 249 },
   { id: 'ac-compressor', name: 'AC Compressor', description: 'Air conditioning compressor', avgPrice: 399 },

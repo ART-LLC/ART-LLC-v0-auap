@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
+import { ProductCardActions } from '@/components/products/product-card-actions'
 const ELECTRICAL_PARTS = [
   { id: 'alternator', name: 'Alternator', description: 'OEM alternator assembly', avgPrice: 199 },
   { id: 'starter', name: 'Starter Motor', description: 'Complete starter motor', avgPrice: 249 },

@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
 
+import { ProductCardActions } from '@/components/products/product-card-actions'
 const EXHAUST_PARTS = [
   { id: 'catalytic-converter', name: 'Catalytic Converter', description: 'OEM catalytic converter assembly', avgPrice: 599 },
   { id: 'muffler', name: 'Muffler', description: 'Complete muffler assembly', avgPrice: 199 },

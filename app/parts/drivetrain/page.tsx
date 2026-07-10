@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
+import { ProductCardActions } from '@/components/products/product-card-actions'
 
 const DRIVETRAIN_PARTS = [
   { id: 'axle-front', name: 'Front Axle Assembly', description: 'Complete front axle assembly', avgPrice: 599 },

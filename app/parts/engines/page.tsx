@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { ProductCardActions } from '@/components/products/product-card-actions'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Search, Filter, Grid3x3, List, ChevronDown } from 'lucide-react'
@@ -196,9 +197,14 @@ export default function EnginesProductPage() {
                         <span className="text-2xl font-bold text-primary">${part.avgPrice}</span>
                         <span className="text-xs text-muted-foreground">avg price</span>
                       </div>
-                      <Button className="w-full auapw-btn auapw-btn-blue" asChild>
-                        <Link href={`/quote?part=${part.id}&type=engine`}>Get Quote</Link>
-                      </Button>
+                      <ProductCardActions
+                        productId={part.id}
+                        productName={part.name}
+                        productPrice={part.avgPrice}
+                        productImage={ENGINE_IMAGES[part.id]}
+                        productType={part.category}
+                        make="Multi-Make"
+                      />
                     </CardContent>
                   </Card>
                 ))}
@@ -226,9 +232,16 @@ export default function EnginesProductPage() {
                           <Badge>In Stock</Badge>
                         </div>
                       </div>
-                      <Button className="auapw-btn auapw-btn-blue" asChild>
-                        <Link href={`/quote?part=${part.id}&type=engine`}>Get Quote</Link>
-                      </Button>
+                      <div className="flex gap-2">
+                        <ProductCardActions
+                          productId={part.id}
+                          productName={part.name}
+                          productPrice={part.avgPrice}
+                          productImage={ENGINE_IMAGES[part.id]}
+                          productType={part.category}
+                          make="Multi-Make"
+                        />
+                      </div>
                     </div>
                   </Card>
                 ))}

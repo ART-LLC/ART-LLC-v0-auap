@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Search, Grid3x3, List } from 'lucide-react'
+import { ProductCardActions } from '@/components/products/product-card-actions'
 
 const TRANSMISSION_PARTS = [
   { id: 'automatic-tx', name: 'Automatic Transmission', description: 'Complete automatic transmission assembly', type: 'automatic', avgPrice: 1299 },
@@ -185,9 +186,14 @@ export default function TransmissionsProductPage() {
                         <span className="text-2xl font-bold text-primary">${part.avgPrice}</span>
                         <span className="text-xs text-muted-foreground">avg price</span>
                       </div>
-                      <Button className="w-full auapw-btn auapw-btn-blue" asChild>
-                        <Link href={`/quote?part=${part.id}&type=transmission`}>Get Quote</Link>
-                      </Button>
+                      <ProductCardActions
+                        productId={part.id}
+                        productName={part.name}
+                        productPrice={part.avgPrice}
+                        productImage={TRANSMISSION_IMAGES[part.id]}
+                        productType={part.type}
+                        make="Multi-Make"
+                      />
                     </CardContent>
                   </Card>
                 ))}
@@ -215,9 +221,16 @@ export default function TransmissionsProductPage() {
                           <Badge>In Stock</Badge>
                         </div>
                       </div>
-                      <Button className="auapw-btn auapw-btn-blue" asChild>
-                        <Link href={`/quote?part=${part.id}&type=transmission`}>Get Quote</Link>
-                      </Button>
+                      <div className="flex gap-2">
+                        <ProductCardActions
+                          productId={part.id}
+                          productName={part.name}
+                          productPrice={part.avgPrice}
+                          productImage={TRANSMISSION_IMAGES[part.id]}
+                          productType={part.type}
+                          make="Multi-Make"
+                        />
+                      </div>
                     </div>
                   </Card>
                 ))}
