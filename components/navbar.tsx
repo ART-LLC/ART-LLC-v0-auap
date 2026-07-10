@@ -73,15 +73,15 @@ export function Navbar() {
   ]
 
   const partsCategories = [
-    { label: "Engine Parts", href: "/used-engines-parts" },
-    { label: "Transmission Parts", href: "/used-transmissions-parts" },
-    { label: "Drivetrain Parts", href: "/used-drivetrain-parts" },
-    { label: "Electrical Parts", href: "/used-electrical-parts" },
-    { label: "Cooling & Climate", href: "/used-cooling-parts" },
-    { label: "Brakes & Safety", href: "/used-brakes-parts" },
-    { label: "Suspension & Steering", href: "/used-suspension-parts" },
-    { label: "Body & Interior", href: "/used-body-parts" },
-    { label: "Exhaust System", href: "/used-exhaust-parts" },
+    { label: "Engine Parts", href: "/parts/engines" },
+    { label: "Transmission Parts", href: "/parts/transmissions" },
+    { label: "Drivetrain Parts", href: "/parts/drivetrain" },
+    { label: "Electrical Parts", href: "/parts/electrical" },
+    { label: "Cooling & Climate", href: "/parts/cooling" },
+    { label: "Brakes & Safety", href: "/parts/brakes" },
+    { label: "Suspension & Steering", href: "/parts/suspension" },
+    { label: "Body & Interior", href: "/parts/body" },
+    { label: "Exhaust System", href: "/parts/exhaust" },
   ]
 
   return (
