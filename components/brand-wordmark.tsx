@@ -1,6 +1,6 @@
 "use client"
 
-type BrandSize = "nav" | "hero" | "banner" | "footer" | "about" | "hero-xl" | "hero-2xl" | "hero-3xl" | "hero-4xl" | "hero-5xl"
+type BrandSize = "nav" | "hero" | "banner" | "footer" | "about" | "hero-xl" | "hero-2xl" | "hero-3xl" | "hero-4xl" | "hero-5xl" | "hero-6xl"
 
 interface SizeCfg {
   wordmarkSize: string
@@ -22,6 +22,7 @@ const SIZES: Record<BrandSize, SizeCfg> = {
   "hero-3xl": { wordmarkSize: "text-[clamp(3.6rem,12vw,9.5rem)]", subSize: "text-[clamp(0.85rem,1.8vw,1.25rem)]",      tagSize: "text-[clamp(0.68rem,1.6vw,1rem)]",        showSub: true,  showTag: true,  align: "items-center" },
   "hero-4xl": { wordmarkSize: "text-[clamp(4.2rem,14vw,11rem)]",   subSize: "text-[clamp(0.95rem,2vw,1.4rem)]",        tagSize: "text-[clamp(0.76rem,1.8vw,1.15rem)]",     showSub: true,  showTag: true,  align: "items-center" },
   "hero-5xl": { wordmarkSize: "text-[clamp(4.8rem,16vw,12.5rem)]", subSize: "text-[clamp(1.05rem,2.2vw,1.6rem)]",       tagSize: "text-[clamp(0.84rem,2vw,1.3rem)]",        showSub: true,  showTag: true,  align: "items-center" },
+  "hero-6xl": { wordmarkSize: "text-[clamp(5.4rem,18vw,14rem)]",   subSize: "text-[clamp(1.15rem,2.4vw,1.8rem)]",       tagSize: "text-[clamp(0.92rem,2.2vw,1.45rem)]",     showSub: true,  showTag: true,  align: "items-center" },
 }
 
 interface BrandWordmarkProps {
