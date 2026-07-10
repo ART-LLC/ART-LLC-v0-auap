@@ -76,27 +76,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  // Script to prevent flash of wrong theme
-  const themeScript = `
-    (function() {
-      try {
-        var theme = localStorage.getItem('auapw-theme');
-        var resolved = theme;
-        if (!theme || theme === 'system') {
-          resolved = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-        }
-        document.documentElement.classList.add(resolved);
-      } catch (e) {
-        document.documentElement.classList.add('dark');
-      }
-    })();
-  `
-
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
+    <html lang="en" className="dark bg-background" suppressHydrationWarning>
       <body className={`${roboto.variable} font-sans antialiased bg-background text-foreground`}>
         <AuthProvider>
           <ThemeProvider>
