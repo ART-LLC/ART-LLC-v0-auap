@@ -33,10 +33,15 @@ body {
   color: var(--foreground);
 }
 
-/* Brushed-metal charcoal texture for the dark #3a3d44 surfaces used
-   across the hero, main wrapper, and home sections. Adds a fine vertical
-   pinstripe plus a soft horizontal sheen (lighter center, darker edges). */
-.bg-\[\#3a3d44\] {
+/* Brushed-metal spray texture applied GLOBALLY to every page-level surface:
+   the home #3a3d44 sections plus the full-page main/section wrappers used on
+   /acura, /catalog, /analytics, etc. Targets only large page surfaces
+   (main, section, .min-h-screen) so inputs, cards, and small boxes are
+   left untouched. Adds a fine vertical pinstripe plus a soft horizontal sheen. */
+.bg-\[\#3a3d44\],
+main.bg-background,
+section.bg-background,
+.min-h-screen.bg-background {
   background-image:
     repeating-linear-gradient(
       90deg,
