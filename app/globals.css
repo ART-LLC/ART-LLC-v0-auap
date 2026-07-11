@@ -8,28 +8,9 @@
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
 }
 
-/* Brushed-metal spray pattern — global on all pages */
+/* Page background — light theme base, texture applied to visible surfaces */
 body {
   background-color: var(--background);
-  /* Fine vertical pinstripe + horizontal sheen spray texture */
-  background-image:
-    repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.022) 0px,
-      rgba(255, 255, 255, 0.022) 1px,
-      rgba(0, 0, 0, 0.06) 1px,
-      rgba(0, 0, 0, 0.06) 3px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.20) 0%,
-      rgba(255, 255, 255, 0.035) 48%,
-      rgba(255, 255, 255, 0.045) 52%,
-      rgba(0, 0, 0, 0.20) 100%
-    );
-  background-attachment: fixed;
-  background-size: 3px 100%, 100% 100%;
-  background-repeat: repeat, no-repeat;
   color: var(--foreground);
 }
 
@@ -3266,7 +3247,7 @@ footer .wordmark-3d {
 
 /* ═══════════════════════════════════════════════════════
    PREMIUM HEADER — Apple Glassmorphism + LED Animations
-   ════════════════��══════════════════════════════════════ */
+   ════════════════��═══════════════���══════════════════════ */
 
 /* Animated promotional banner — scrolling text */
 .header-premium-banner {
