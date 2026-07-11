@@ -129,6 +129,25 @@ export default function MakesPage() {
             })}
           </div>
 
+          {/* Featured: Acura Parts full catalog link — after all makes */}
+          <Link
+            href="/acura"
+            className="group flex flex-col sm:flex-row items-center justify-between gap-4 rounded-xl border border-primary/40 bg-gradient-to-r from-primary/15 via-primary/5 to-transparent p-5 sm:p-6 mb-8 sm:mb-12 hover:border-primary/70 hover:-translate-y-0.5 transition-all"
+          >
+            <div className="flex items-center gap-4">
+              <MakeLogo brand="Acura" size="lg" />
+              <div>
+                <h2 className="font-serif text-lg sm:text-xl font-bold text-foreground">Acura Parts Catalog</h2>
+                <p className="text-xs text-muted-foreground mt-1 max-w-md">
+                  Browse our full Acura inventory with detailed product listings, pricing, and every available model.
+                </p>
+              </div>
+            </div>
+            <span className="auapw-btn auapw-btn-blue inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm shrink-0">
+              <Eye className="w-3.5 h-3.5" /> View Acura Parts
+            </span>
+          </Link>
+
           {/* Selected Make Detail */}
           {selectedMake && (
             <div className="glass-card rounded-lg p-4 sm:p-8 mb-8 sm:mb-12">
