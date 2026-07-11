@@ -16,6 +16,29 @@ body {
   color: var(--foreground);
 }
 
+/* Brushed-metal charcoal texture for the dark #3a3d44 surfaces used
+   across the hero, main wrapper, and home sections. Adds a fine vertical
+   pinstripe plus a soft horizontal sheen (lighter center, darker edges). */
+.bg-\[\#3a3d44\] {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.022) 0px,
+      rgba(255, 255, 255, 0.022) 1px,
+      rgba(0, 0, 0, 0.06) 1px,
+      rgba(0, 0, 0, 0.06) 3px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.20) 0%,
+      rgba(255, 255, 255, 0.035) 48%,
+      rgba(255, 255, 255, 0.045) 52%,
+      rgba(0, 0, 0, 0.20) 100%
+    ) !important;
+  background-size: 3px 100%, 100% 100% !important;
+  background-repeat: repeat, no-repeat !important;
+}
+
 :root {
   /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic ── */
   --background: #3a3d44;
