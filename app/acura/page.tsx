@@ -40,14 +40,7 @@ export default function AcuraProductsPage() {
   const categories = Object.keys(currentModelData)
 
   return (
-    <div 
-      className="min-h-screen"
-      style={{
-        backgroundImage: 'url(/images/grey-texture-pattern.png)',
-        backgroundColor: '#4a4d52',
-        backgroundSize: '400px 400px',
-      }}
-    >
+    <main className="min-h-screen bg-background pt-32 pb-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -191,6 +184,6 @@ export default function AcuraProductsPage() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }

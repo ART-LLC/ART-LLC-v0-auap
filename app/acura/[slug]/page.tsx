@@ -31,15 +31,9 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
   return (
     <>
       <Navbar />
-      <main
-        style={{
-          backgroundImage: 'url(/images/grey-texture-pattern.png)',
-          backgroundColor: '#4a4d52',
-          backgroundSize: '400px 400px',
-        }}
-      >
+      <main>
         {/* Breadcrumb */}
-        <div className="bg-background/50 backdrop-blur-sm border-b border-border/20">
+        <div className="bg-background border-b border-border/20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground flex-wrap">
               <Link href="/" className="hover:text-primary transition-colors">Home</Link>
