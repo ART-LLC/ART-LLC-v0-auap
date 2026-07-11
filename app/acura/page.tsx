@@ -61,7 +61,7 @@ export default function AcuraProductsPage() {
                           >
                             {/* Product Image */}
                             {product.image && (
-                              <div className="relative h-48 w-full bg-muted overflow-hidden">
+                              <Link href={`/acura/${product.slug}`} className="relative h-48 w-full bg-muted overflow-hidden block">
                                 <Image
                                   src={product.image}
                                   alt={product.name}
@@ -72,7 +72,7 @@ export default function AcuraProductsPage() {
                                     img.src = '/images/placeholder-part.png'
                                   }}
                                 />
-                              </div>
+                              </Link>
                             )}
                             
                             <CardHeader className="pb-3">
@@ -84,9 +84,11 @@ export default function AcuraProductsPage() {
                                   {product.availability || 'In Stock'}
                                 </Badge>
                               </div>
-                              <CardTitle className="text-base line-clamp-2">
-                                {product.name}
-                              </CardTitle>
+                              <Link href={`/acura/${product.slug}`}>
+                                <CardTitle className="text-base line-clamp-2 hover:text-primary transition-colors">
+                                  {product.name}
+                                </CardTitle>
+                              </Link>
                               {product.compatibility && (
                                 <CardDescription className="text-xs">
                                   Fits: {product.compatibility}
@@ -128,8 +130,14 @@ export default function AcuraProductsPage() {
                               </div>
                             </CardContent>
 
-                            {/* CTA Button */}
-                            <div className="px-4 pb-4 border-t border-border/50 pt-3">
+                            {/* CTA Buttons */}
+                            <div className="px-4 pb-4 border-t border-border/50 pt-3 grid grid-cols-2 gap-2">
+                              <Link
+                                href={`/acura/${product.slug}`}
+                                className="w-full inline-flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg border border-primary/50 text-foreground hover:bg-primary/10 hover:border-primary transition-colors"
+                              >
+                                View Details
+                              </Link>
                               <Link
                                 href={`/quote?part=${encodeURIComponent(product.name)}&price=${product.price}`}
                                 className="w-full inline-flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
