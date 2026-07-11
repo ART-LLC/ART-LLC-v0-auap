@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
@@ -10,11 +9,34 @@ import acuraData from '@/lib/acura-products.json'
 import { resolveAcuraImage } from '@/lib/acura-data'
 import { ProductCardActions } from '@/components/products/product-card-actions'
 
+// Extract the base model name (e.g. "CL") from a full year-model key
+// (e.g. "2003 Acura CL"). Falls back to the last word.
+function baseModelName(key: string): string {
+  const cleaned = key.replace(/\b(19|20)\d{2}\b/g, '').replace(/acura/i, '').trim()
+  return cleaned || key.split(' ').pop() || key
+}
+
 export default function AcuraProductsPage() {
   const acuraProducts = useMemo(() => acuraData as any, [])
-  const modelsList = useMemo(() => Object.keys(acuraProducts.grouped || {}), [acuraProducts])
+
+  // Consolidate the 173 year-model keys into unique base models (CL, MDX, TL...),
+  // merging each model's products by category across all years.
+  const { modelsList, byModel } = useMemo(() => {
+    const grouped = (acuraProducts.grouped as any) || {}
+    const byModel: Record<string, Record<string, any[]>> = {}
+    for (const fullKey of Object.keys(grouped)) {
+      const model = baseModelName(fullKey)
+      byModel[model] = byModel[model] || {}
+      const cats = grouped[fullKey] || {}
+      for (const cat of Object.keys(cats)) {
+        byModel[model][cat] = (byModel[model][cat] || []).concat(cats[cat] || [])
+      }
+    }
+    return { modelsList: Object.keys(byModel).sort(), byModel }
+  }, [acuraProducts])
+
   const [selectedModel, setSelectedModel] = useState(modelsList[0] || 'Acura')
-  const currentModelData = useMemo(() => (acuraProducts.grouped as any)?.[selectedModel] || {}, [selectedModel, acuraProducts])
+  const currentModelData = useMemo(() => byModel[selectedModel] || {}, [selectedModel, byModel])
   const categories = Object.keys(currentModelData)
 
   return (
@@ -30,23 +52,28 @@ export default function AcuraProductsPage() {
           </p>
         </div>
 
-        {/* Model Selection Tabs */}
+        {/* Model Selection */}
         <div className="mb-8">
-          <Tabs value={selectedModel} onValueChange={setSelectedModel} className="w-full">
-            <TabsList className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 h-auto p-2 bg-card/50">
-              {modelsList.map((model) => (
-                <TabsTrigger 
-                  key={model} 
-                  value={model}
-                  className="text-xs sm:text-sm whitespace-nowrap"
-                >
-                  {model.split(' ').pop()}
-                </TabsTrigger>
-              ))}
-            </TabsList>
+          <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 p-2 bg-card/50 rounded-lg">
+            {modelsList.map((model) => (
+              <button
+                key={model}
+                type="button"
+                onClick={() => setSelectedModel(model)}
+                aria-pressed={selectedModel === model}
+                className={`text-xs sm:text-sm whitespace-nowrap rounded-md px-2 py-2 font-semibold transition-colors ${
+                  selectedModel === model
+                    ? 'bg-primary text-primary-foreground shadow'
+                    : 'bg-secondary/40 text-muted-foreground hover:bg-primary/10 hover:text-foreground'
+                }`}
+              >
+                {model}
+              </button>
+            ))}
+          </div>
 
-            {/* Products Display */}
-            <TabsContent value={selectedModel} className="mt-8">
+          {/* Products Display */}
+          <div className="mt-8">
               <div className="space-y-6">
                 {categories.length > 0 ? (
                   categories.map((category) => (
@@ -154,8 +181,7 @@ export default function AcuraProductsPage() {
                   </div>
                 )}
               </div>
-            </TabsContent>
-          </Tabs>
+          </div>
         </div>
       </div>
     </main>
