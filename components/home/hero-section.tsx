@@ -4,15 +4,13 @@ import { BrandWordmark } from "@/components/brand-wordmark"
 import { BrandEmblem3D } from "@/components/brand-emblem-3d"
 import { Logo } from "@/components/logo"
 import Image from "next/image"
-import { HeroSlider } from "@/components/home/hero-slider"
 import { Search, MessageSquare, Phone, Mail, Cog, Settings2, Calendar } from "lucide-react"
 
 export function HeroSection() {
   return (
     <section className="relative pt-[58px] overflow-hidden ghost-scan-section" style={{ paddingTop: "45px" }}>
-      {/* Background — auto-sliding image carousel */}
-      <div className="absolute inset-0 bg-[#080808]">
-        <HeroSlider />
+      {/* Background — solid grey */}
+      <div className="absolute inset-0 bg-[#3a3d44]">
         <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: "radial-gradient(circle, #e8e8e8 0%, transparent 70%)" }} />
         <GearBackground />
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E\")", backgroundSize: "100px" }} />

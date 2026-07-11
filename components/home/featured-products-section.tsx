@@ -51,7 +51,7 @@ const FEATURED_PRODUCTS = [
 
 export function FeaturedProductsSection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-card/20">
+    <section className="py-20 bg-[#3a3d44]">
       <div className="mx-auto max-w-[1280px] px-6">
         {/* Header */}
         <div className="flex items-end justify-between gap-6 mb-14 flex-wrap">

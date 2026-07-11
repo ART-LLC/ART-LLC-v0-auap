@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="bg-[#3a3d44]">
         <HeroSection />
         <ContentSection />
         <BrandValuesSection />
