@@ -14,6 +14,7 @@ interface ProductCardActionsProps {
   productImage?: string
   productType?: string
   make?: string
+  shipping?: string
   /** Where the "Details" button links. Defaults to /products/[productId]. */
   detailsHref?: string
 }
@@ -29,6 +30,7 @@ export function ProductCardActions({
   productImage,
   productType,
   make,
+  shipping,
   detailsHref,
 }: ProductCardActionsProps) {
   const [quantity, setQuantity] = useState(1)
@@ -163,7 +165,7 @@ export function ProductCardActions({
           90-Day Warranty
         </Badge>
         <Badge variant="secondary" className="text-[10px]">
-          Free Shipping
+          Shipping: {shipping}
         </Badge>
       </div>
     </div>

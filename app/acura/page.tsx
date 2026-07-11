@@ -166,6 +166,7 @@ export default function AcuraProductsPage() {
                                 productImage={product.image}
                                 productType={category}
                                 make="Acura"
+                                shipping={product.shipping}
                                 detailsHref={`/acura/${product.slug}`}
                               />
                             </div>
