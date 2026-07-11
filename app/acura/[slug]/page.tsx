@@ -13,7 +13,7 @@ import { ProductFAQ } from '@/components/products/product-faq'
 import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
-import { getAcuraProductBySlug, getRelatedAcuraProducts } from '@/lib/acura-data'
+import { getAcuraProductBySlug, getRelatedAcuraProducts, resolveAcuraImage } from '@/lib/acura-data'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight } from 'lucide-react'
 
 export default function AcuraProductPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -25,6 +25,7 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
   }
 
   const related = getRelatedAcuraProducts(product)
+  const productImage = resolveAcuraImage(product)
   const priceDisplay = `$${product.price.toLocaleString()}`
 
   return (
@@ -51,9 +52,10 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
               {/* Image */}
               <div className="relative w-full aspect-square bg-muted rounded-xl overflow-hidden border border-border/40">
                 <Image
-                  src={product.image || "/placeholder.svg"}
+                  src={productImage}
                   alt={product.name}
                   fill
+                  unoptimized
                   className="object-cover"
                   priority
                 />
@@ -129,7 +131,7 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                   productId={product.id}
                   productName={product.name}
                   productPrice={product.price}
-                  productImage={product.image || "/placeholder.svg"}
+                  productImage={productImage}
                   productType={product.category}
                   make={product.compatibility || 'Acura'}
                 />
@@ -164,7 +166,7 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                   <Link key={rp.id} href={`/acura/${rp.slug}`}>
                     <Card className="hover:shadow-lg hover:border-primary/50 transition-all overflow-hidden h-full">
                       <div className="relative w-full h-40 bg-muted">
-                        <Image src={rp.image || "/placeholder.svg"} alt={rp.name} fill className="object-cover" />
+                        <Image src={resolveAcuraImage(rp)} alt={rp.name} fill unoptimized className="object-cover" />
                       </div>
                       <CardHeader className="pb-2">
                         <Badge className="w-fit mb-1 capitalize">{rp.category}</Badge>

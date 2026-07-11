@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
 import acuraData from '@/lib/acura-products.json'
+import { resolveAcuraImage } from '@/lib/acura-data'
 import { ProductCardActions } from '@/components/products/product-card-actions'
 
 export default function AcuraProductsPage() {
@@ -55,26 +56,24 @@ export default function AcuraProductsPage() {
                       </h2>
                       
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        {(currentModelData[category] as any[] || []).map((product: any) => (
+                        {(currentModelData[category] as any[] || []).map((product: any) => {
+                          const resolvedImage = resolveAcuraImage(product)
+                          return (
                           <Card 
                             key={product.id} 
                             className="hover:shadow-lg hover:border-primary/50 transition-all overflow-hidden flex flex-col"
                           >
                             {/* Product Image */}
-                            {product.image && (
-                              <Link href={`/acura/${product.slug}`} className="relative h-48 w-full bg-muted overflow-hidden block">
-                                <Image
-                                  src={product.image}
-                                  alt={product.name}
-                                  fill
-                                  className="object-cover hover:scale-105 transition-transform"
-                                  onError={(e) => {
-                                    const img = e.target as HTMLImageElement
-                                    img.src = '/images/placeholder-part.png'
-                                  }}
-                                />
-                              </Link>
-                            )}
+                            <Link href={`/acura/${product.slug}`} className="relative h-48 w-full bg-muted overflow-hidden block">
+                              <Image
+                                src={resolvedImage}
+                                alt={product.name}
+                                fill
+                                unoptimized
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                                className="object-cover hover:scale-105 transition-transform"
+                              />
+                            </Link>
                             
                             <CardHeader className="pb-3">
                               <div className="flex justify-between items-start gap-2 mb-2">
@@ -144,7 +143,8 @@ export default function AcuraProductsPage() {
                               />
                             </div>
                           </Card>
-                        ))}
+                          )
+                        })}
                       </div>
                     </div>
                   ))
