@@ -86,7 +86,7 @@ export function HeroSlider() {
           <button
             key={idx}
             onClick={() => setCurrent(idx)}
-            className={`h-[3px] rounded-full transition-all duration-500 ${
+            className={`slider-dot h-[3px] rounded-full transition-all duration-500 ${
               idx === current ? "w-8 bg-white" : "w-3 bg-white/30"
             }`}
             aria-label={`Go to slide ${idx + 1}`}
