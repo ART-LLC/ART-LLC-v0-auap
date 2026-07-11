@@ -247,6 +247,54 @@ h1, h2, h3, h4, h5, h6 {
   border-color: rgba(15,17,23,0.1) !important;
 }
 
+/* Brushed metal background with vertical striping pattern */
+.bg-metal-stripe {
+  background-color: #4a4a5a !important;
+  background-image: 
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent calc(50% - 0.5px),
+      rgba(255, 255, 255, 0.03) calc(50% - 0.5px),
+      rgba(255, 255, 255, 0.03) calc(50% + 0.5px),
+      transparent calc(50% + 0.5px),
+      transparent 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.05) 50%,
+      rgba(0, 0, 0, 0.1) 100%
+    ) !important;
+  background-size: 2px 100%, 100% 100% !important;
+  background-repeat: repeat-x, repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* Light mode: use a lighter grey metal stripe pattern */
+.light .bg-metal-stripe {
+  background-color: #6b7280 !important;
+  background-image: 
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent calc(50% - 0.5px),
+      rgba(255, 255, 255, 0.08) calc(50% - 0.5px),
+      rgba(255, 255, 255, 0.08) calc(50% + 0.5px),
+      transparent calc(50% + 0.5px),
+      transparent 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.06) 0%,
+      rgba(0, 0, 0, 0.03) 50%,
+      rgba(0, 0, 0, 0.06) 100%
+    ) !important;
+  background-size: 2px 100%, 100% 100% !important;
+  background-repeat: repeat-x, repeat !important;
+  background-attachment: fixed !important;
+}
+
 /* Section backgrounds */
 .light .bg-background {
   background-color: #f4f5f7 !important;
