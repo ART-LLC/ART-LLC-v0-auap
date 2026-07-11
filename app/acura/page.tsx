@@ -61,9 +61,9 @@ export default function AcuraProductsPage() {
                 type="button"
                 onClick={() => setSelectedModel(model)}
                 aria-pressed={selectedModel === model}
-                className={`text-xs sm:text-sm whitespace-nowrap rounded-md px-2 py-2 font-semibold transition-colors ${
+                className={`text-xs sm:text-sm whitespace-nowrap rounded-md px-2 py-2 font-semibold transition-all active:scale-95 ${
                   selectedModel === model
-                    ? 'bg-primary text-primary-foreground shadow'
+                    ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/50'
                     : 'bg-secondary/40 text-muted-foreground hover:bg-primary/10 hover:text-foreground'
                 }`}
               >
@@ -88,7 +88,7 @@ export default function AcuraProductsPage() {
                           return (
                           <Card 
                             key={product.id} 
-                            className="hover:shadow-lg hover:border-primary/50 transition-all overflow-hidden flex flex-col"
+                            className="product-card hover:shadow-lg hover:border-primary/50 transition-all overflow-hidden flex flex-col relative cursor-pointer"
                           >
                             {/* Product Image */}
                             <Link href={`/acura/${product.slug}`} className="relative h-48 w-full bg-muted overflow-hidden block">
