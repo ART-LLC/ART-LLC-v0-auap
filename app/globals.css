@@ -18,8 +18,8 @@ body {
 
 :root {
   /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic ── */
-  --background: #080808;
-  --foreground: #dce1f0;
+  --background: #3a3d44;
+  --foreground: #eef1f8;
   --card: #0f1117;
   --card-foreground: #dce1f0;
   --popover: #141820;
@@ -2048,7 +2048,7 @@ footer .wordmark-3d {
 
 /* ────────────────────────────────────────────────────
    END PREMIUM 3D EMBLEM EFFECTS
-   ──────────────────────────────��───────────────────── */
+   ──────────────────────────────���───────────────────── */
 
 @keyframes phone-pulse {
   0%, 100% {
