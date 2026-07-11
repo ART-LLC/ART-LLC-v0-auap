@@ -223,10 +223,10 @@ export function SearchPageContent() {
             <p className="text-sm text-muted-foreground max-w-[480px] mx-auto mb-6 leading-relaxed">
               We couldn't find parts matching your search criteria. Try adjusting your filters or contact our team to source from additional yards.
             </p>
-              <div className="flex gap-3 justify-center flex-wrap">
-                <a href="tel:8888185001" className="inline-flex items-center justify-center gap-2 px-5 py-3 text-xs font-bold border border-primary/50 hover:border-primary hover:bg-primary/10 transition-colors rounded">
-                  <Phone className="w-3.5 h-3.5" /> Call Us for Help
-                </a>
+            <div className="flex gap-3 justify-center flex-wrap">
+              <a href="tel:8888185001" className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
+                <Phone className="w-3.5 h-3.5" /> Call Us for Help
+              </a>
               <Link href="/quote" className="w-40 inline-block hover:-translate-y-1 transition-transform duration-200">
                 <img src="/images/button-request-free-quote.png" alt="Request Free Quote" className="w-full h-auto drop-shadow-lg" />
               </Link>
@@ -305,7 +305,7 @@ export function SearchPageContent() {
                 Our team can source from additional yards not listed here. Call or request a quote for immediate assistance.
               </p>
               <div className="flex gap-3 justify-center flex-wrap">
-                <a href="tel:8888185001" className="inline-flex items-center justify-center gap-2 px-5 py-3 text-xs font-bold border border-primary/50 hover:border-primary hover:bg-primary/10 transition-colors rounded">
+                <a href="tel:8888185001" className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
                   <Phone className="w-3.5 h-3.5" /> Call (888) 818-5001
                 </a>
                 <Link href="/quote" className="w-40 inline-block hover:-translate-y-1 transition-transform duration-200">
