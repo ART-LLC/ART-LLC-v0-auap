@@ -9,7 +9,7 @@ import { Search, MessageSquare, Phone, Mail, Cog, Settings2, Calendar } from "lu
 
 export function HeroSection() {
   return (
-    <section className="relative pt-[58px] overflow-hidden ghost-scan-section" style={{ paddingTop: "45px" }}>
+    <section className="relative pt-[58px] overflow-hidden ghost-scan-section hero-on-dark" style={{ paddingTop: "45px" }}>
       {/* Background — grey base; photo carousel constrained to the top hero band */}
       <div className="absolute inset-0 bg-[#3a3d44]">
         <div className="absolute top-0 inset-x-0 h-[820px] overflow-hidden">
@@ -40,7 +40,7 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="font-sans leading-tight text-balance max-w-4xl" style={{ fontFamily: "system-ui" }}>
-              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-muted-foreground mb-3" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
+              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
               <span className="block mercury-heading text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black" style={{ fontFamily: "system-ui" }}>Premium Quality Used Auto Parts</span>
             </h1>
 
@@ -53,8 +53,8 @@ export function HeroSection() {
                 { value: "50", label: "States Covered" },
               ].map(({ value, label }) => (
                 <div key={label} className="flex flex-col items-center gap-0.5">
-                  <span className="text-[1.4rem] sm:text-[1.8rem] font-black mercury-heading text-foreground">{value}</span>
-                  <span className="text-[0.6rem] sm:text-[0.65rem] font-bold tracking-[0.18em] uppercase text-muted-foreground">{label}</span>
+                  <span className="text-[1.4rem] sm:text-[1.8rem] font-black text-white">{value}</span>
+                  <span className="text-[0.6rem] sm:text-[0.65rem] font-bold tracking-[0.18em] uppercase text-white/70">{label}</span>
                 </div>
               ))}
             </div>

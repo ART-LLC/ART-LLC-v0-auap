@@ -921,6 +921,33 @@ footer .wordmark-3d {
   filter: drop-shadow(0 1px 0 rgba(255,255,255,0.8)) drop-shadow(0 -1px 0 rgba(0,0,0,0.08));
 }
 
+/* Hero sits on a dark grey background even in light theme, so force the
+   bright metallic gradient for its heading and lift muted text contrast. */
+.light .hero-on-dark .mercury-heading,
+.hero-on-dark .mercury-heading {
+  background: linear-gradient(
+    90deg,
+    #707585 0%,
+    #b0b8c8 18%,
+    #e0e4f0 32%,
+    #ffffff 42%,
+    #f0f4ff 50%,
+    #ffffff 58%,
+    #e0e4f0 68%,
+    #b0b8c8 82%,
+    #707585 100%
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.35));
+}
+
+.hero-on-dark .text-muted-foreground {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
 .light .shimmer-text {
   background: linear-gradient(
     90deg,
@@ -2048,7 +2075,7 @@ footer .wordmark-3d {
 
 /* ────────────────────────────────────────────────────
    END PREMIUM 3D EMBLEM EFFECTS
-   ──────────────────────────────����───────────────────── */
+   ──────────────────────────────������───────────────────── */
 
 @keyframes phone-pulse {
   0%, 100% {
