@@ -57,7 +57,7 @@ export default function MakesPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-[58px] bg-metal-stripe min-h-screen">
+      <main className="pt-[58px]">
         {/* Header */}
         <div className="bg-gradient-to-br from-background via-card to-background border-b border-border/30">
           <div className="metal-line" />

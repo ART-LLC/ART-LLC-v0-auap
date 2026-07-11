@@ -8,89 +8,6 @@
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
 }
 
-/* ── LED Flash & Click Feedback Animations ── */
-@keyframes led-flash {
-  0% {
-    box-shadow: inset 0 0 0 0 rgba(180, 189, 220, 0.3), 0 0 0 0 rgba(180, 189, 220, 0.6);
-  }
-  50% {
-    box-shadow: inset 0 0 20px 8px rgba(180, 189, 220, 0.8), 0 0 30px 15px rgba(180, 189, 220, 0.4);
-  }
-  100% {
-    box-shadow: inset 0 0 0 0 rgba(180, 189, 220, 0.3), 0 0 0 0 rgba(180, 189, 220, 0);
-  }
-}
-
-@keyframes click-ripple {
-  0% {
-    transform: scale(0.5);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(2.5);
-    opacity: 0;
-  }
-}
-
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(180, 189, 220, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 0 8px rgba(180, 189, 220, 0);
-  }
-}
-
-@keyframes bg-highlight {
-  0% {
-    background-color: inherit;
-  }
-  50% {
-    background-color: rgba(180, 189, 220, 0.15);
-  }
-  100% {
-    background-color: inherit;
-  }
-}
-
-/* Apply LED flash to clickable elements */
-button:active, a:active, [role="button"]:active {
-  animation: led-flash 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-/* Hover glow for interactive elements */
-button:hover, a:hover, [role="button"]:hover {
-  animation: pulse-glow 1.5s infinite;
-}
-
-/* Tab activation effect */
-[aria-pressed="true"], [data-state="active"], [role="tab"][aria-selected="true"] {
-  animation: bg-highlight 0.5s ease-out forwards;
-  box-shadow: 0 0 15px rgba(180, 189, 220, 0.4) !important;
-}
-
-/* Product card click effect */
-.product-card:active, [class*="card"]:active {
-  animation: led-flash 0.5s ease-out;
-  transform: scale(0.98);
-}
-
-/* Smooth page transition */
-main {
-  animation: fadeIn 0.4s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Dull matte black — industrial automotive body */
 body {
   background-color: var(--background);
@@ -328,54 +245,6 @@ h1, h2, h3, h4, h5, h6 {
 .light [style*="rgba(255,255,255,0.09)"] {
   background: rgba(15,17,23,0.04) !important;
   border-color: rgba(15,17,23,0.1) !important;
-}
-
-/* Brushed metal background with vertical striping pattern */
-.bg-metal-stripe {
-  background-color: #4a4a5a !important;
-  background-image: 
-    linear-gradient(
-      90deg,
-      transparent 0%,
-      transparent calc(50% - 0.5px),
-      rgba(255, 255, 255, 0.03) calc(50% - 0.5px),
-      rgba(255, 255, 255, 0.03) calc(50% + 0.5px),
-      transparent calc(50% + 0.5px),
-      transparent 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.1) 0%,
-      rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.1) 100%
-    ) !important;
-  background-size: 2px 100%, 100% 100% !important;
-  background-repeat: repeat-x, repeat !important;
-  background-attachment: fixed !important;
-}
-
-/* Light mode: use a lighter grey metal stripe pattern */
-.light .bg-metal-stripe {
-  background-color: #6b7280 !important;
-  background-image: 
-    linear-gradient(
-      90deg,
-      transparent 0%,
-      transparent calc(50% - 0.5px),
-      rgba(255, 255, 255, 0.08) calc(50% - 0.5px),
-      rgba(255, 255, 255, 0.08) calc(50% + 0.5px),
-      transparent calc(50% + 0.5px),
-      transparent 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.06) 0%,
-      rgba(0, 0, 0, 0.03) 50%,
-      rgba(0, 0, 0, 0.06) 100%
-    ) !important;
-  background-size: 2px 100%, 100% 100% !important;
-  background-repeat: repeat-x, repeat !important;
-  background-attachment: fixed !important;
 }
 
 /* Section backgrounds */
@@ -2123,7 +1992,7 @@ footer .wordmark-3d {
   color: rgba(232, 232, 232, 0.7);
 }
 
-/* ───────────────────────────────────��────�����──────────
+/* ───────────────────────────────────��────��───────────
    PREMIUM 3D EMBLEM EFFECTS
    ──────────────────────────────────────────────────── */
 
@@ -2950,7 +2819,7 @@ footer .wordmark-3d {
 
 /* ═══════════════════════════════════════════════════════
    BOSS HEADER — Premium Typography + Embossing + Dynamic Effects
-   ══════════════════════════════════��════════════════════ */
+   ═══════════════════════════════════════════════════════ */
 
 /* Animated scrolling banner */
 .header-boss-banner {
@@ -4225,7 +4094,7 @@ footer .wordmark-3d {
   padding: 4px;
 }
 
-/* ─── Icon Positioning ─��─ */
+/* ─── Icon Positioning ─── */
 .auapw-btn svg {
   flex-shrink: 0;
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
