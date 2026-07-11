@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
 import acuraData from '@/lib/acura-products.json'
+import { ProductCardActions } from '@/components/products/product-card-actions'
 
 export default function AcuraProductsPage() {
   const acuraProducts = useMemo(() => acuraData as any, [])
@@ -130,20 +131,17 @@ export default function AcuraProductsPage() {
                               </div>
                             </CardContent>
 
-                            {/* CTA Buttons */}
-                            <div className="px-4 pb-4 border-t border-border/50 pt-3 grid grid-cols-2 gap-2">
-                              <Link
-                                href={`/acura/${product.slug}`}
-                                className="w-full inline-flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg border border-primary/50 text-foreground hover:bg-primary/10 hover:border-primary transition-colors"
-                              >
-                                View Details
-                              </Link>
-                              <Link
-                                href={`/quote?part=${encodeURIComponent(product.name)}&price=${product.price}`}
-                                className="w-full inline-flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-                              >
-                                Get Quote
-                              </Link>
+                            {/* Full Action Buttons: Add to Cart, Buy Now, Call, Message, Quote, Details */}
+                            <div className="px-4 pb-4">
+                              <ProductCardActions
+                                productId={String(product.id)}
+                                productName={product.name}
+                                productPrice={Number(product.price) || 0}
+                                productImage={product.image}
+                                productType={category}
+                                make="Acura"
+                                detailsHref={`/acura/${product.slug}`}
+                              />
                             </div>
                           </Card>
                         ))}

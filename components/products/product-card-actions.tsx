@@ -14,6 +14,8 @@ interface ProductCardActionsProps {
   productImage?: string
   productType?: string
   make?: string
+  /** Where the "Details" button links. Defaults to /products/[productId]. */
+  detailsHref?: string
 }
 
 const PHONE_SALES = '888-818-5001'
@@ -27,6 +29,7 @@ export function ProductCardActions({
   productImage,
   productType,
   make,
+  detailsHref,
 }: ProductCardActionsProps) {
   const [quantity, setQuantity] = useState(1)
   const [addedToCart, setAddedToCart] = useState(false)
@@ -147,7 +150,7 @@ export function ProductCardActions({
           title="View full product details"
           asChild
         >
-          <Link href={`/products/${productId}`}>
+          <Link href={detailsHref ?? `/products/${productId}`}>
             <ExternalLink className="w-3 h-3" />
             Details
           </Link>
