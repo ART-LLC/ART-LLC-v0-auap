@@ -2048,7 +2048,7 @@ footer .wordmark-3d {
 
 /* ────────────────────────────────────────────────────
    END PREMIUM 3D EMBLEM EFFECTS
-   ──────────────────────────────���───────────────────── */
+   ──────────────────────────────����───────────────────── */
 
 @keyframes phone-pulse {
   0%, 100% {
@@ -4199,19 +4199,6 @@ footer .wordmark-3d {
     padding-right: 0.75rem !important;
   }
   
-  /* Grid collapse to single column */
-  .grid-cols-2, .grid-cols-3, .grid-cols-4, .grid-cols-5 {
-    grid-template-columns: 1fr !important;
-  }
-  
-  /* Flex direction for small screens */
-  .flex-col, .flex-row {
-    flex-direction: column;
-  }
-  
-  .flex-row {
-    flex-direction: column;
-  }
   
   /* Image sizing on mobile */
   img {
