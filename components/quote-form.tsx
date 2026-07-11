@@ -36,7 +36,7 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
     setError(null)
   }
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setError(null)
 
@@ -46,26 +46,42 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
 
     setLoading(true)
 
-    try {
-      const res = await fetch("/api/quote", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ part, make, model, year, option, name, phone, email, zip, message }),
-      })
-      const data = await res.json()
+    // Build the email subject and body from the form fields.
+    const subject = `Quote Request: ${[year, make, model].filter(Boolean).join(" ")} - ${part || "Auto Part"}`
+      .replace(/\s+/g, " ")
+      .trim()
 
-      if (!res.ok) {
-        setError(data.error || "Something went wrong. Please try again or call us.")
-        setLoading(false)
-        return
-      }
+    const body = [
+      "Hi AUAPW LLC team,",
+      "",
+      "I'd like a free quote for the following part:",
+      "",
+      "--- Vehicle Details ---",
+      `Part:    ${part || "Not specified"}`,
+      `Make:    ${make}`,
+      `Model:   ${model || "Not specified"}`,
+      `Year:    ${year || "Not specified"}`,
+      `Option:  ${option || "Not specified"}`,
+      "",
+      "--- My Contact Details ---",
+      `Name:    ${name}`,
+      `Phone:   ${phone}`,
+      `Email:   ${email || "Not provided"}`,
+      `ZIP:     ${zip || "Not provided"}`,
+      "",
+      "--- Message ---",
+      message || "(no additional details)",
+      "",
+      "Thank you!",
+    ].join("\n")
 
-      setLoading(false)
-      setSuccess(true)
-    } catch {
-      setError("Network error. Please try again or call us at " + PHONE_DISPLAY + ".")
-      setLoading(false)
-    }
+    // Open the customer's own email client with everything pre-filled,
+    // so the quote request is sent from their mailbox to AUAPW LLC.
+    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.location.href = mailto
+
+    setLoading(false)
+    setSuccess(true)
   }
 
   const field =
@@ -75,9 +91,9 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
     return (
       <div className="glass-card rounded-xl p-8 flex flex-col items-center text-center gap-4">
         <CheckCircle2 className="w-14 h-14 text-green-400" />
-        <h3 className="text-xl font-bold text-foreground">Quote Request Sent!</h3>
+        <h3 className="text-xl font-bold text-foreground">Your Email Is Ready to Send!</h3>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Your quote request has been delivered to our team. We will contact you within <strong>24 hours</strong> with your free quote.
+          We&apos;ve opened your email app with your quote request pre-filled. Just press <strong>Send</strong> to deliver it to us, and we&apos;ll reply within <strong>24 hours</strong>. If your email app didn&apos;t open, contact us directly below.
         </p>
         <div className="w-full bg-card/50 border border-border/30 rounded-lg p-4 flex flex-col sm:flex-row gap-3 justify-center">
           <p className="text-xs text-muted-foreground w-full text-center mb-1 sm:hidden">Need it faster? Contact us directly:</p>

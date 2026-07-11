@@ -31,7 +31,7 @@ export default function QuotePage() {
   const partOptions = part ? getPartOptions(part) : []
   const selectClass = "w-full text-sm px-3 py-2.5 bg-[rgba(13,15,22,0.75)] border border-border/50 rounded-lg text-foreground appearance-none focus:border-primary/55 focus:ring-1 focus:ring-primary/20 outline-none transition-all"
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setError(null)
 
@@ -41,26 +41,43 @@ export default function QuotePage() {
 
     setLoading(true)
 
-    try {
-      const res = await fetch("/api/quote", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ part, make, model, year, option, name, phone, email, state, zip, message }),
-      })
-      const data = await res.json()
+    // Build the email subject and body from the form fields.
+    const subject = `Quote Request: ${[year, make, model].filter(Boolean).join(" ")} - ${part || "Auto Part"}`
+      .replace(/\s+/g, " ")
+      .trim()
 
-      if (!res.ok) {
-        setError(data.error || "Something went wrong. Please try again or call us.")
-        setLoading(false)
-        return
-      }
+    const body = [
+      "Hi AUAPW LLC team,",
+      "",
+      "I'd like a free quote for the following part:",
+      "",
+      "--- Vehicle Details ---",
+      `Part:    ${part || "Not specified"}`,
+      `Make:    ${make}`,
+      `Model:   ${model || "Not specified"}`,
+      `Year:    ${year || "Not specified"}`,
+      `Option:  ${option || "Not specified"}`,
+      "",
+      "--- My Contact Details ---",
+      `Name:    ${name}`,
+      `Phone:   ${phone}`,
+      `Email:   ${email || "Not provided"}`,
+      `State:   ${state || "Not provided"}`,
+      `ZIP:     ${zip || "Not provided"}`,
+      "",
+      "--- Message ---",
+      message || "(no additional details)",
+      "",
+      "Thank you!",
+    ].join("\n")
 
-      setLoading(false)
-      setSuccess(true)
-    } catch {
-      setError(`Network error. Please try again or call us at ${PHONE_DISPLAY}.`)
-      setLoading(false)
-    }
+    // Open the customer's own email client with everything pre-filled,
+    // so the quote request is sent from their mailbox to AUAPW LLC.
+    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.location.href = mailto
+
+    setLoading(false)
+    setSuccess(true)
   }
 
   return (
@@ -77,7 +94,7 @@ export default function QuotePage() {
             </div>
             <h1 className="font-serif text-[clamp(1.75rem,4vw,3.5rem)] font-bold text-foreground">Request a Free Quote</h1>
             <p className="mt-3 text-sm text-muted-foreground max-w-[520px]">
-              Fill out the form and our team will find the best available parts from our 2,000+ yard network. Your request is sent directly to our team the moment you submit.
+              Fill out the form and our team will find the best available parts from our 2,000+ yard network. When you submit, your email app opens with the request pre-filled &mdash; just press Send.
             </p>
           </div>
         </div>
@@ -118,9 +135,9 @@ export default function QuotePage() {
               {success ? (
                 <div className="glass-card rounded-sm p-8 text-center">
                   <CheckCircle2 className="w-16 h-16 text-green-400 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-foreground mb-3">Quote Request Sent!</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-3">Your Email Is Ready to Send!</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-2">
-                    Your quote request has been delivered directly to our team. We will contact you within <strong>24 hours</strong> with your free quote.
+                    We&apos;ve opened your email app with your quote request pre-filled. Just press <strong>Send</strong> to deliver it, and we&apos;ll reply within <strong>24 hours</strong>. If your email app didn&apos;t open, use the options below.
                   </p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                     Need it faster? Call us at{" "}
