@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { useChat } from "@ai-sdk/react"
 import { DefaultChatTransport } from "ai"
 import { Bot, Send, X, Sparkles, Loader2, ArrowRight } from "lucide-react"
@@ -50,15 +51,23 @@ export function PartsAssistant() {
 
   return (
     <>
-      {/* Launcher */}
+      {/* Launcher - Mechanic Badge */}
       {!open && (
         <button
           onClick={() => setOpen(true)}
           aria-label="Open Parts Assistant"
-          className="fixed bottom-6 right-6 z-[9985] flex items-center gap-2 rounded-full bg-primary px-5 py-3.5 text-primary-foreground shadow-lg shadow-black/40 ring-1 ring-white/10 transition-transform hover:scale-105 max-sm:bottom-24 max-sm:right-4"
+          className="fixed bottom-6 right-6 z-[9985] flex flex-col items-center gap-1.5 transition-transform hover:scale-110 max-sm:bottom-24 max-sm:right-4"
         >
-          <Bot className="h-5 w-5" />
-          <span className="text-sm font-bold">Parts Assistant</span>
+          <div className="relative h-20 w-20 drop-shadow-lg">
+            <Image
+              src="/images/ai/mechanic-badge.png"
+              alt="Parts Assistant"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <span className="text-xs font-bold text-white drop-shadow-md">Parts Assistant</span>
         </button>
       )}
 
@@ -68,9 +77,14 @@ export function PartsAssistant() {
           {/* Header */}
           <header className="flex items-center justify-between border-b border-white/10 bg-[#3a3d44] px-4 py-3">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/20 ring-1 ring-primary/40">
-                <Bot className="h-5 w-5 text-primary-foreground" />
-              </span>
+              <div className="relative h-10 w-10 flex-shrink-0 rounded-full overflow-hidden ring-1 ring-primary/40">
+                <Image
+                  src="/images/ai/mechanic-badge.png"
+                  alt="Parts Assistant"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="leading-tight">
                 <p className="text-sm font-bold text-white">Parts Assistant</p>
                 <p className="flex items-center gap-1 text-[11px] text-white/60">
