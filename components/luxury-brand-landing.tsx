@@ -79,9 +79,9 @@ const BRAND_LOGO: Record<string, string> = {
   acura: '/logos/acura.png',
   'alfa-romeo': '/logos/alfa-romeo.png',
   amc: '/logos/amc.png',
-  'aston-martin': '/logos/aston-martin.jpg',
+  'aston-martin': '/logos/aston-martin.png',
   audi: '/logos/audi.png',
-  austin: '/logos/austin.jpg',
+  austin: '/logos/austin.png',
   bmw: '/logos/bmw.png',
   buick: '/logos/buick.png',
   cadillac: '/logos/cadillac.png',
@@ -94,24 +94,24 @@ const BRAND_LOGO: Record<string, string> = {
   fiat: '/logos/fiat.png',
   ford: '/logos/ford.png',
   geo: '/logos/geo.png',
-  gmc: '/logos/gmc.jpg',
-  honda: '/logos/honda.jpg',
+  gmc: '/logos/gmc.png',
+  honda: '/logos/honda.png',
   hummer: '/logos/hummer.png',
-  hyundai: '/logos/hyundai.jpg',
-  infiniti: '/logos/infiniti.jpg',
+  hyundai: '/logos/hyundai.png',
+  infiniti: '/logos/infiniti.png',
   isuzu: '/logos/isuzu.png',
-  jaguar: '/logos/jaguar.jpg',
-  jeep: '/logos/jeep.jpg',
-  kia: '/logos/kia.jpg',
-  'land-rover': '/logos/land-rover.jpg',
-  lexus: '/logos/lexus.jpg',
-  lincoln: '/logos/lincoln.jpg',
-  mazda: '/logos/mazda.jpg',
-  'mercedes-benz': '/logos/mercedes-benz.jpg',
+  jaguar: '/logos/jaguar.png',
+  jeep: '/logos/jeep.png',
+  kia: '/logos/kia.png',
+  'land-rover': '/logos/land-rover.png',
+  lexus: '/logos/lexus.png',
+  lincoln: '/logos/lincoln.png',
+  mazda: '/logos/mazda.png',
+  'mercedes-benz': '/logos/mercedes-benz.png',
   mercury: '/logos/mercury.png',
   mini: '/logos/mini.png',
-  mitsubishi: '/logos/mitsubishi.jpg',
-  nissan: '/logos/nissan.jpg',
+  mitsubishi: '/logos/mitsubishi.png',
+  nissan: '/logos/nissan.png',
   oldsmobile: '/logos/oldsmobile.png',
   opel: '/logos/opel.png',
   peugeot: '/logos/peugeot.png',
@@ -119,15 +119,15 @@ const BRAND_LOGO: Record<string, string> = {
   pontiac: '/logos/pontiac.png',
   porsche: '/logos/porsche.png',
   renault: '/logos/renault.png',
-  saab: '/logos/saab.jpg',
+  saab: '/logos/saab.png',
   saturn: '/logos/saturn.png',
   scion: '/logos/scion.png',
-  subaru: '/logos/subaru.jpg',
+  subaru: '/logos/subaru.png',
   suzuki: '/logos/suzuki.png',
-  toyota: '/logos/toyota.jpg',
+  toyota: '/logos/toyota.png',
   triumph: '/logos/triumph.png',
-  volkswagen: '/logos/volkswagen.jpg',
-  volvo: '/logos/volvo.jpg',
+  volkswagen: '/logos/volkswagen.png',
+  volvo: '/logos/volvo.png',
 }
 
 // Brands that have a real hero curve image in /public/brand-curves.
@@ -252,19 +252,14 @@ export function LuxuryBrandLanding({
               {/* Brand logo */}
               <div className="flex items-center gap-4">
                 {logoSrc ? (
-                  <div
-                    className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl border-2 bg-white p-2 shadow-lg"
-                    style={{ borderColor: accent }}
-                  >
-                    <Image
-                      src={logoSrc || "/placeholder.svg"}
-                      alt={`${label} logo`}
-                      width={56}
-                      height={56}
-                      className="h-full w-full object-contain"
-                      priority
-                    />
-                  </div>
+                  <Image
+                    src={logoSrc || "/placeholder.svg"}
+                    alt={`${label} logo`}
+                    width={64}
+                    height={64}
+                    className="h-16 w-16 object-contain drop-shadow-[0_2px_8px_rgba(255,255,255,0.25)]"
+                    priority
+                  />
                 ) : (
                   <div
                     className="flex h-16 w-16 items-center justify-center rounded-xl border-2 shadow-lg"
@@ -375,18 +370,13 @@ export function LuxuryBrandLanding({
                   {/* Logo badge over the car */}
                   <div className="absolute bottom-4 left-4 flex items-center gap-3">
                     {logoSrc ? (
-                      <div
-                        className="flex h-14 w-14 items-center justify-center rounded-xl border-2 bg-white p-1.5 shadow-lg"
-                        style={{ borderColor: accent }}
-                      >
-                        <Image
-                          src={logoSrc || "/placeholder.svg"}
-                          alt={`${label} logo`}
-                          width={48}
-                          height={48}
-                          className="h-full w-full object-contain"
-                        />
-                      </div>
+                      <Image
+                        src={logoSrc || "/placeholder.svg"}
+                        alt={`${label} logo`}
+                        width={56}
+                        height={56}
+                        className="h-14 w-14 object-contain drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+                      />
                     ) : (
                       <div
                         className="flex h-14 w-14 items-center justify-center rounded-xl border-2 shadow-lg"
@@ -427,19 +417,14 @@ export function LuxuryBrandLanding({
                   </div>
                   <div className="relative flex h-full items-center justify-center">
                     {logoSrc ? (
-                      <div
-                        className="flex h-48 w-48 items-center justify-center rounded-2xl border-4 bg-white p-6 shadow-2xl"
-                        style={{ borderColor: accent }}
-                      >
-                        <Image
-                          src={logoSrc || "/placeholder.svg"}
-                          alt={`${label} logo`}
-                          width={160}
-                          height={160}
-                          className="h-full w-full object-contain"
-                          priority
-                        />
-                      </div>
+                      <Image
+                        src={logoSrc || "/placeholder.svg"}
+                        alt={`${label} logo`}
+                        width={224}
+                        height={224}
+                        className="h-56 w-56 object-contain drop-shadow-[0_4px_16px_rgba(255,255,255,0.2)]"
+                        priority
+                      />
                     ) : (
                       <div
                         className="flex h-40 w-40 items-center justify-center rounded-2xl border-4 shadow-2xl"
@@ -497,15 +482,13 @@ export function LuxuryBrandLanding({
                     }}
                   >
                     {logoSrc ? (
-                      <div className="flex h-14 items-center justify-center rounded-md bg-white px-4 py-2">
-                        <Image
-                          src={logoSrc || "/placeholder.svg"}
-                          alt={`${label} logo`}
-                          width={120}
-                          height={48}
-                          className="h-full w-auto object-contain"
-                        />
-                      </div>
+                      <Image
+                        src={logoSrc || "/placeholder.svg"}
+                        alt={`${label} logo`}
+                        width={120}
+                        height={64}
+                        className="h-16 w-auto object-contain drop-shadow-[0_2px_8px_rgba(255,255,255,0.25)]"
+                      />
                     ) : (
                       <span className="text-2xl font-black text-white/80">{label}</span>
                     )}
