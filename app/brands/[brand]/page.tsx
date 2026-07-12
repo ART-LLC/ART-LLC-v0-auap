@@ -20,6 +20,7 @@ import {
 import { ChevronRight, ChevronLeft, Search } from 'lucide-react'
 import { LuxuryBrandLanding } from '@/components/luxury-brand-landing'
 import { AcuraDrivetrainReport } from '@/components/acura-drivetrain-report'
+import { AcuraFeaturedComponents } from '@/components/acura-featured-components'
 
 interface PageProps {
   params: Promise<{ brand: string }>
@@ -270,6 +271,9 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
             </nav>
           </div>
         </section>
+
+        {/* Acura Featured Components Showcase */}
+        {brand === 'acura' && <AcuraFeaturedComponents />}
 
         {/* Keyword-rich internal backlinks for Google indexing */}
         {brand === 'acura' && <AcuraDrivetrainReport />}

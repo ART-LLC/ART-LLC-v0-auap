@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 import { AcuraDrivetrainReport } from "@/components/acura-drivetrain-report"
+import { AcuraFeaturedComponents } from "@/components/acura-featured-components"
 import { CAR_MAKES, CAR_MODELS, BRAND_COLORS, PART_CATEGORIES, MODEL_YEAR_RANGES, getBrandLogoUrl, getBrandCarImageUrl, PHONE_SALES, PHONE_DISPLAY } from "@/lib/data"
 import { ALL_PARTS, getBrandContent } from "@/lib/parts-content"
 import { Search, Phone, ArrowLeft, Shield, Clock, Truck, Star, ChevronDown, Package, Undo2, Globe, Headphones } from "lucide-react"
@@ -438,6 +439,9 @@ export default function BrandPage() {
             <a href={`tel:${PHONE_SALES.replace(/-/g, "")}`} className="text-primary font-semibold hover:underline">{PHONE_DISPLAY}</a>.
           </p>
         </section>
+
+        {/* Acura Featured Components Showcase */}
+        {brand.toLowerCase() === 'acura' && <AcuraFeaturedComponents />}
 
         {/* Acura Drivetrain Report — special issue content */}
         {brand.toLowerCase() === 'acura' && <AcuraDrivetrainReport />}
