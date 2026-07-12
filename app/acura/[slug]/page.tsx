@@ -14,9 +14,9 @@ import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 import { PartRecommendations } from '@/components/ai/part-recommendations'
-import { getAcuraProductBySlug, getAcuraProductUrl, getRelatedAcuraProducts, resolveAcuraImage } from '@/lib/acura-data'
+import { getAcuraProductBySlug, getAcuraProductUrl, getRelatedAcuraProducts, resolveAcuraImage, getAcuraPartTypeLabel, getAcuraPartImageSearchUrl } from '@/lib/acura-data'
 import { getAcuraPartSpecs } from '@/lib/acura-part-specs'
-import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight } from 'lucide-react'
+import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight, ImageIcon, ExternalLink } from 'lucide-react'
 
 export default function AcuraProductPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params)
@@ -32,6 +32,8 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
   // Part-specific specifications for engines/transmissions (null for other parts).
   const partSpecs = getAcuraPartSpecs(product)
   const partTypeLabel = product.category.replace(/^used\s+/i, '')
+  const partTypeHeading = getAcuraPartTypeLabel(product)
+  const imageSearchUrl = getAcuraPartImageSearchUrl(product)
   const fitmentYear = product.year || '1990-Present'
 
   return (
@@ -69,14 +71,41 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                 {product.availability && (
                   <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground capitalize">{product.availability}</Badge>
                 )}
-                <p className="absolute inset-x-0 bottom-0 bg-card/90 px-4 py-2 text-center text-xs font-medium text-muted-foreground">
-                  {product.imageLabel}
-                </p>
+                <div className="absolute inset-x-0 bottom-0 bg-card/90 px-4 py-2 flex items-center justify-between gap-2">
+                  <p className="text-xs font-medium text-muted-foreground line-clamp-1">
+                    {product.imageLabel}
+                  </p>
+                  <a
+                    href={imageSearchUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold text-primary hover:underline"
+                  >
+                    <ImageIcon className="w-3.5 h-3.5" />
+                    View real photos
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
               </div>
 
               {/* Details */}
               <div className="flex flex-col gap-5">
                 <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-primary">
+                      {partTypeHeading}
+                    </span>
+                    <a
+                      href={imageSearchUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <ImageIcon className="w-3.5 h-3.5" />
+                      Search this part on Google
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </div>
                   <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-foreground text-balance">{product.name}</h1>
                   <div className="flex items-center gap-3 mt-3 flex-wrap">
                     <div className="flex items-center gap-1">

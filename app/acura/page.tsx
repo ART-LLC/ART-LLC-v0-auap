@@ -5,7 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
-import { acuraGrouped, acuraProducts, getAcuraProductUrl, resolveAcuraImage, type AcuraProduct } from '@/lib/acura-data'
+import { acuraGrouped, acuraProducts, getAcuraProductUrl, resolveAcuraImage, getAcuraPartTypeLabel, getAcuraPartImageSearchUrl, type AcuraProduct } from '@/lib/acura-data'
+import { ImageIcon, ExternalLink } from 'lucide-react'
 import { ProductCardActions } from '@/components/products/product-card-actions'
 import { AcuraPartsSearch } from '@/components/acura/acura-parts-search'
 import { Navbar } from '@/components/navbar'
@@ -61,19 +62,31 @@ export default function AcuraProductsPage() {
         key={product.id}
         className="hover:shadow-lg hover:border-primary/50 transition-all overflow-hidden flex flex-col"
       >
-        <Link href={getAcuraProductUrl(product)} className="relative h-48 w-full bg-muted overflow-hidden block">
-          <Image
-            src={resolvedImage}
-            alt={product.name}
-            fill
-            unoptimized
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-            className="object-cover hover:scale-105 transition-transform"
-          />
-          <span className="absolute inset-x-0 bottom-0 bg-card/90 px-2 py-1 text-center text-[10px] font-medium text-muted-foreground">
-            Representative image — verify VIN/fitment
+        <div className="relative h-48 w-full bg-muted overflow-hidden">
+          <Link href={getAcuraProductUrl(product)} className="block h-full w-full">
+            <Image
+              src={resolvedImage}
+              alt={product.name}
+              fill
+              unoptimized
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              className="object-cover hover:scale-105 transition-transform"
+            />
+          </Link>
+          <span className="absolute top-2 left-2 rounded-full bg-primary/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-primary-foreground">
+            {getAcuraPartTypeLabel(product)}
           </span>
-        </Link>
+          <a
+            href={getAcuraPartImageSearchUrl(product)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-x-0 bottom-0 flex items-center justify-center gap-1 bg-card/90 px-2 py-1 text-[10px] font-semibold text-primary hover:underline"
+          >
+            <ImageIcon className="w-3 h-3" />
+            View real photos on Google
+            <ExternalLink className="w-2.5 h-2.5" />
+          </a>
+        </div>
 
         <CardHeader className="pb-3">
           <div className="flex justify-between items-start gap-2 mb-2">
