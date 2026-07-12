@@ -14,6 +14,7 @@ import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
+import { MileagePriceSelector } from '@/components/acura/mileage-price-selector'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRight, Star, Shield, Truck, MapPin, Phone, MessageSquare } from 'lucide-react'
@@ -28,6 +29,8 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
   const router = useRouter()
   const [quantity, setQuantity] = useState(1)
   const [selectedTab, setSelectedTab] = useState('overview')
+  // Price of the mileage tier the shopper selected (null = default medium tier).
+  const [selectedPrice, setSelectedPrice] = useState<number | null>(null)
 
   const handleSearch = (filters: SearchFilters) => {
     const queryParams = new URLSearchParams()
@@ -69,6 +72,13 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
     shipping: 'Free',
     insurance: '$2M Transit Insurance',
     tags: ['Engine', 'Honda', 'Civic', '2015', 'Used', 'Complete'],
+  }
+
+  // Three-tier mileage pricing derived from the sheet's ratios (low ≈ +8.3%, high ≈ −16.7%).
+  const pricingTiers = {
+    low: Math.round(product.price * 1.083),
+    medium: Math.round(product.price),
+    high: Math.round(product.price * 0.833),
   }
 
   const relatedProducts = [
@@ -171,13 +181,13 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                   </div>
                 </div>
 
-                {/* Pricing */}
+                {/* Interactive pricing by mileage — click a tier to change the price */}
                 <div className="space-y-3">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-4xl font-bold text-primary">${product.price}</span>
-                    <span className="text-lg line-through text-muted-foreground">${product.originalPrice}</span>
-                    <span className="text-sm font-semibold text-green-600">Save ${(product.originalPrice - product.price).toFixed(2)}</span>
-                  </div>
+                  <MileagePriceSelector
+                    basePrice={product.price}
+                    tiers={pricingTiers}
+                    onTierChange={(_, price) => setSelectedPrice(price)}
+                  />
 
                   {/* Stock Status */}
                   <div className="flex items-center gap-2">
@@ -200,7 +210,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                   <ProductCardActions
                     productId={product.id}
                     productName={product.name}
-                    productPrice={product.price}
+                    productPrice={selectedPrice ?? pricingTiers.medium}
                     productImage={product.image}
                     productType={product.category}
                     make={product.make}

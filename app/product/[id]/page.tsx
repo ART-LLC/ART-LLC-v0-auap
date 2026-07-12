@@ -15,6 +15,7 @@ import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
+import { MileagePriceSelector } from '@/components/acura/mileage-price-selector'
 import { getProductById, getRelatedProducts } from '@/lib/products-catalog'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight } from 'lucide-react'
 
@@ -22,12 +23,21 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
   const router = useRouter()
   const { id } = use(params)
   const product = getProductById(Number(id))
+  // Price of the mileage tier the shopper selected (null = default medium tier).
+  const [selectedPrice, setSelectedPrice] = useState<number | null>(null)
 
   if (!product) {
     notFound()
   }
 
   const related = getRelatedProducts(product)
+
+  // Three-tier mileage pricing derived from the sheet's ratios (low ≈ +8.3%, high ≈ −16.7%).
+  const pricingTiers = {
+    low: Math.round(product.price * 1.083),
+    medium: product.price,
+    high: Math.round(product.price * 0.833),
+  }
 
   const handleSearch = (filters: SearchFilters) => {
     const queryParams = new URLSearchParams()
@@ -110,17 +120,18 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                   </div>
                 </div>
 
-                {/* Price */}
-                <div className="flex items-baseline gap-3">
-                  <span className="text-4xl font-black text-primary">{product.priceDisplay}</span>
-                  <span className="text-sm text-muted-foreground">+ free shipping</span>
-                </div>
+                {/* Interactive pricing by mileage — click a tier to change the price */}
+                <MileagePriceSelector
+                  basePrice={product.price}
+                  tiers={pricingTiers}
+                  onTierChange={(_, price) => setSelectedPrice(price)}
+                />
 
                 {/* Actions */}
                 <ProductCardActions
                   productId={String(product.id)}
                   productName={product.name}
-                  productPrice={product.price}
+                  productPrice={selectedPrice ?? pricingTiers.medium}
                   productImage={product.image}
                   productType={product.category}
                   make={product.fits}
