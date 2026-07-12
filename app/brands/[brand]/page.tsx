@@ -11,6 +11,7 @@ import {
   getBrandLabel,
   getBrandModels,
   getBrandProductUrl,
+  getProductDisplayImage,
   isValidBrand,
   loadBrandCatalog,
   resolveBrandPartImage,
@@ -161,7 +162,9 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
                   >
                     <div className="relative aspect-[4/3] w-full bg-muted">
                       <BrandProductImage
-                        src={product.imageUrl}
+                        src={getProductDisplayImage(brand, product).src}
+                        generatedSrc={getProductDisplayImage(brand, product).generatedSrc}
+                        illustrative={getProductDisplayImage(brand, product).illustrative}
                         fallbackSrc={resolveBrandPartImage(product)}
                         alt={product.name}
                         sku={product.mpn || product.id}

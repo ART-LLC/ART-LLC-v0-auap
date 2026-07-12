@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import { Search, X, CornerDownLeft } from 'lucide-react'
 import { acuraProducts, getAcuraProductUrl, resolveAcuraImage, type AcuraProduct } from '@/lib/acura-data'
+import { getPartsSearchUrl } from '@/lib/parts-search-routing'
 
 interface AcuraPartsSearchProps {
   /**
@@ -91,8 +92,13 @@ export function AcuraPartsSearch({ onSearch, activeQuery = '', size = 'lg', plac
     if (onSearch) {
       onSearch(trimmedQuery)
     } else if (trimmedQuery) {
-      // No parent handler (detail page) — navigate to the Acura page results.
-      router.push(`/acura?q=${encodeURIComponent(trimmedQuery)}`)
+      // Shared routing rule: engine/transmission queries go to their category
+      // pages; everything else stays in the Acura catalog results.
+      if (/\b(engine|transmission)\b/i.test(trimmedQuery)) {
+        router.push(getPartsSearchUrl({ make: 'Acura', partType: trimmedQuery }))
+      } else {
+        router.push(`/acura?q=${encodeURIComponent(trimmedQuery)}`)
+      }
     }
   }
 

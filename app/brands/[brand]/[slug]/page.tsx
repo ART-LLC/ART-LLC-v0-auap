@@ -18,6 +18,7 @@ import {
   getBrandPartTypeLabel,
   getBrandProductBySlug,
   getBrandProductUrl,
+  getProductDisplayImage,
   getRelatedBrandProducts,
   isValidBrand,
   resolveBrandPartImage,
@@ -60,6 +61,7 @@ export default async function BrandProductPage({ params }: PageProps) {
   const label = getBrandLabel(brand)
   const related = getRelatedBrandProducts(brand, product)
   const fallbackImage = resolveBrandPartImage(product)
+  const displayImage = getProductDisplayImage(brand, product)
   const partTypeHeading = getBrandPartTypeLabel(product)
   const imageSearchUrl = getImageSearchUrl(product.name)
   const fitmentYear = product.year || '1990-Present'
@@ -74,7 +76,10 @@ export default async function BrandProductPage({ params }: PageProps) {
     '@context': 'https://schema.org/',
     '@type': 'Product',
     name: product.name,
-    image: [product.imageUrl, `${SITE_URL}${fallbackImage}`].filter(Boolean),
+    image: [
+      displayImage.illustrative ? `${SITE_URL}${displayImage.generatedSrc}` : displayImage.src,
+      `${SITE_URL}${fallbackImage}`,
+    ].filter(Boolean),
     description: product.description || product.name,
     sku: product.mpn || product.id,
     mpn: product.mpn || product.id,
@@ -132,7 +137,9 @@ export default async function BrandProductPage({ params }: PageProps) {
               {/* Image */}
               <div className="relative w-full aspect-[4/3] bg-muted rounded-2xl overflow-hidden border border-border/40 shadow-lg lg:sticky lg:top-28">
                 <BrandProductImage
-                  src={product.imageUrl}
+                  src={displayImage.src}
+                  generatedSrc={displayImage.generatedSrc}
+                  illustrative={displayImage.illustrative}
                   fallbackSrc={fallbackImage}
                   alt={product.name}
                   sku={product.mpn || product.id}
@@ -144,11 +151,7 @@ export default async function BrandProductPage({ params }: PageProps) {
                 />
                 <Badge className="absolute top-4 left-4 capitalize">{product.category || 'Part'}</Badge>
                 <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">In Stock</Badge>
-                <div className="absolute inset-x-4 top-14 flex justify-end">
-                  <span className="rounded-full bg-card/95 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-card-foreground shadow-sm">
-                    Representative photo
-                  </span>
-                </div>
+
               </div>
 
               {/* Details */}
@@ -267,10 +270,12 @@ export default async function BrandProductPage({ params }: PageProps) {
                   <Link key={rp.canonicalSlug} href={getBrandProductUrl(brand, rp)}>
                     <Card className="hover:shadow-lg hover:border-primary/50 transition-all overflow-hidden h-full">
                       <div className="relative w-full h-40 bg-muted">
-                        <BrandProductImage
-                          src={rp.imageUrl}
-                          fallbackSrc={resolveBrandPartImage(rp)}
-                          alt={rp.name}
+                      <BrandProductImage
+                        src={getProductDisplayImage(brand, rp).src}
+                        generatedSrc={getProductDisplayImage(brand, rp).generatedSrc}
+                        illustrative={getProductDisplayImage(brand, rp).illustrative}
+                        fallbackSrc={resolveBrandPartImage(rp)}
+                        alt={rp.name}
                           sku={rp.mpn || rp.id}
                           brand={label}
                           year={rp.year}
