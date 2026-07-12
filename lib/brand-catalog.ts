@@ -173,6 +173,49 @@ export function resolveBrandPartImage(product: Pick<BrandProduct, "category" | "
   return "/images/parts/engine-used.jpg"
 }
 
+const sharedImageCache = new Map<string, Set<string>>()
+
+/** Image URLs used by more than one SKU within a brand catalog. */
+function getSharedImageUrls(brand: string): Set<string> {
+  const cached = sharedImageCache.get(brand)
+  if (cached) return cached
+  const catalog = loadBrandCatalog(brand)
+  const counts = new Map<string, number>()
+  for (const p of catalog?.products ?? []) {
+    if (p.imageUrl) counts.set(p.imageUrl, (counts.get(p.imageUrl) || 0) + 1)
+  }
+  const shared = new Set([...counts.entries()].filter(([, n]) => n > 1).map(([url]) => url))
+  sharedImageCache.set(brand, shared)
+  return shared
+}
+
+export interface ProductDisplayImage {
+  /** Preferred image to render. */
+  src: string
+  /** Per-SKU generated illustration URL (also the on-error fallback). */
+  generatedSrc: string
+  /** True when src is NOT a genuine SKU-specific photo. */
+  illustrative: boolean
+}
+
+/**
+ * Unique-per-SKU image policy: a genuine photo is used only when it belongs
+ * to exactly one SKU. Shared or missing photos resolve to a deterministic
+ * per-SKU illustration rendered by /api/product-image, clearly disclosed.
+ */
+export function getProductDisplayImage(
+  brand: string,
+  product: Pick<BrandProduct, "imageUrl" | "canonicalSlug">,
+): ProductDisplayImage {
+  const generatedSrc = `/api/product-image/${brand}/${product.canonicalSlug}`
+  const unique = !!product.imageUrl && !getSharedImageUrls(brand).has(product.imageUrl)
+  return {
+    src: unique ? product.imageUrl! : generatedSrc,
+    generatedSrc,
+    illustrative: !unique,
+  }
+}
+
 /** Human-readable part-type label, e.g. "Used Engine". */
 export function getBrandPartTypeLabel(product: Pick<BrandProduct, "category">): string {
   const category = (product.category || "Part").replace(/^used\s+/i, "").trim()
