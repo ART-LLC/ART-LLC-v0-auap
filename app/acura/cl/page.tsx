@@ -13,7 +13,7 @@ import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 import Image from 'next/image'
 import { Search, Grid3x3, List } from 'lucide-react'
-import { acuraProducts, resolveAcuraImage } from '@/lib/acura-data'
+import { acuraProducts, getAcuraProductUrl, resolveAcuraImage } from '@/lib/acura-data'
 
 export default function AcuraClPage() {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
@@ -68,7 +68,7 @@ export default function AcuraClPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {viewMode === 'grid' ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {filteredProducts.map(product => (
+                {filteredProducts.slice(0, 48).map(product => (
                   <Card key={product.id} className="overflow-hidden">
                     {resolveAcuraImage(product) && (
                       <div className="relative w-full h-48 bg-muted">
@@ -89,6 +89,8 @@ export default function AcuraClPage() {
                         productImage={resolveAcuraImage(product)}
                         productType={product.category}
                         make="Acura CL"
+                        shipping={product.shipping}
+                        detailsHref={getAcuraProductUrl(product)}
                       />
                     </CardContent>
                   </Card>
@@ -96,7 +98,7 @@ export default function AcuraClPage() {
               </div>
             ) : (
               <div className="space-y-4">
-                {filteredProducts.map(product => (
+                {filteredProducts.slice(0, 48).map(product => (
                   <Card key={product.id} className="overflow-hidden">
                     <div className="flex gap-6 p-6">
                       {resolveAcuraImage(product) && (
@@ -116,6 +118,8 @@ export default function AcuraClPage() {
                             productImage={resolveAcuraImage(product)}
                             productType={product.category}
                             make="Acura CL"
+                        shipping={product.shipping}
+                        detailsHref={getAcuraProductUrl(product)}
                           />
                         </div>
                       </div>

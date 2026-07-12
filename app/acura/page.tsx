@@ -7,6 +7,8 @@ import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
 import { acuraGrouped, acuraProducts, getAcuraProductUrl, resolveAcuraImage, type AcuraProduct } from '@/lib/acura-data'
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
 
 // Extract the base model name (e.g. "CL") from a full year-model key
 // (e.g. "2003 Acura CL"). Falls back to the last word.
@@ -35,12 +37,14 @@ export default function AcuraProductsPage() {
   const categories = Object.keys(currentModelData)
 
   return (
-    <main className="min-h-screen bg-background pt-32 pb-20">
+    <>
+      <Navbar />
+      <main className="min-h-screen bg-background pt-32 pb-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">
-            𝐀𝐂𝐔𝐑𝐀 Used Auto Parts
+            ACURA Used Auto Parts
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Premium quality used Acura parts from our 2,000+ yard network. Browse {acuraProducts.length} products across {modelsList.length} vehicle models with verified pricing and warranty.
@@ -183,6 +187,8 @@ export default function AcuraProductsPage() {
           </div>
         </div>
       </div>
-    </main>
+      </main>
+      <Footer />
+    </>
   )
 }

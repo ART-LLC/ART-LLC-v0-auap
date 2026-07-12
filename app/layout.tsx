@@ -17,7 +17,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.auapw.com'),
   title: 'AUAPW LLC - Quality Used Auto Parts | Engines, Transmissions & More',
-  description: 'AUAPW LLC - Your trusted source for quality used auto parts. Shop engines, transmissions, body parts and more from 2,000+ verified salvage yards nationwide. Free shipping, 6-month warranty.',
+  description: 'AUAPW LLC - Your trusted source for quality used auto parts. Shop engines, transmissions, body parts and more from 2,000+ verified salvage yards nationwide. $240 flat-rate shipping per part and a 6-month warranty.',
   generator: 'v0.dev',
   applicationName: 'AUAPW LLC',
   referrer: 'origin-when-cross-origin',
