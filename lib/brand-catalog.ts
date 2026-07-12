@@ -200,9 +200,8 @@ export interface ProductDisplayImage {
 
 /**
  * Unique-per-SKU image policy: a genuine photo is used only when it belongs
- * to exactly one SKU. Shared or missing photos resolve to category-specific
- * professional images (/product-images/[category]/) or deterministic per-SKU
- * illustration rendered by /api/product-image, clearly disclosed.
+ * to exactly one SKU. Shared or missing photos resolve to brand-specific and
+ * category-specific professional images, or deterministic per-SKU illustration.
  */
 export function getProductDisplayImage(
   brand: string,
@@ -220,38 +219,60 @@ export function getProductDisplayImage(
     }
   }
   
-  // For shared/missing photos, use category-specific professional images
-  const categoryImage = getCategoryImage(product.category || 'part')
+  // For shared/missing photos, use brand-specific and category professional images
+  const brandCategoryImage = getBrandCategoryImage(brand, product.category || 'part')
   return {
-    src: categoryImage,
+    src: brandCategoryImage,
     generatedSrc,
     illustrative: false,
   }
 }
 
-/** Get professional category image path for engines, transmissions, and other parts. */
-function getCategoryImage(category: string): string {
+/** Get brand-specific product image for engines, transmissions, and other parts. */
+function getBrandCategoryImage(brand: string, category: string): string {
+  const normalizedBrand = (brand || '').toLowerCase().trim()
   const cat = (category || '').toLowerCase().trim()
   
-  // Map categories to stored product images
-  const categoryImageMap: Record<string, string> = {
-    'engine': '/product-images/engine/chevrolet-engine.png',
-    'transmission': '/product-images/transmission/automatic-transmission.png',
-    'automatic transmission': '/product-images/transmission/automatic-transmission.png',
-    'manual transmission': '/product-images/transmission/manual-transmission.png',
-    'cvt': '/product-images/transmission/cvt-transmission.png',
+  // Brand-specific engine images
+  const brandEngineMap: Record<string, string> = {
+    'acura': '/product-images/engine/acura-engine-branded.png',
+    'chevrolet': '/product-images/engine/chevrolet-engine-branded.png',
+    'toyota': '/product-images/engine/toyota-engine-branded.png',
+    'nissan': '/product-images/engine/nissan-engine-branded.png',
+    'bmw': '/product-images/engine/bmw-engine-branded.png',
+    'honda': '/product-images/engine/honda-engine-branded.png',
+    'ford': '/product-images/engine/ford-engine-branded.png',
+    'mercedes-benz': '/product-images/engine/mercedes-engine-branded.png',
   }
   
-  // Check direct match
-  if (categoryImageMap[cat]) return categoryImageMap[cat]
-  
-  // Check partial match (e.g., 'manual trans' → 'manual transmission')
-  for(const [key, img] of Object.entries(categoryImageMap)) {
-    if(cat.includes(key) || key.includes(cat)) return img
+  // Category-specific transmission images
+  const transmissionMap: Record<string, string> = {
+    'transmission': '/product-images/transmission/automatic-transmission-branded.png',
+    'automatic transmission': '/product-images/transmission/automatic-transmission-branded.png',
+    'manual transmission': '/product-images/transmission/manual-transmission-branded.png',
+    'cvt': '/product-images/transmission/cvt-transmission-branded.png',
   }
   
-  // Default: return transmission image as fallback for unknown parts
-  return '/product-images/transmission/transmission-generic.png'
+  // Check if it's an engine - use brand-specific image if available
+  if (cat.includes('engine')) {
+    if (brandEngineMap[normalizedBrand]) {
+      return brandEngineMap[normalizedBrand]
+    }
+    // Fallback to generic Chevrolet engine for unknown brands
+    return '/product-images/engine/chevrolet-engine-branded.png'
+  }
+  
+  // Check if it's a transmission - use transmission-specific image
+  if (cat.includes('transmission') || cat.includes('trans')) {
+    // Determine transmission type
+    if (cat.includes('manual')) return transmissionMap['manual transmission']
+    if (cat.includes('cvt')) return transmissionMap['cvt']
+    // Default to automatic for generic 'transmission'
+    return transmissionMap['transmission']
+  }
+  
+  // Default fallback to automatic transmission for unknown categories
+  return '/product-images/transmission/automatic-transmission-branded.png'
 }
 
 /** Human-readable part-type label, e.g. "Used Engine". */
