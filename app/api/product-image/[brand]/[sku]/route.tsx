@@ -66,7 +66,7 @@ export async function GET(
       ? '/product-images/transmission/manual-transmission-branded.png'
       : '/product-images/transmission/automatic-transmission-branded.png'
   
-  // Professional engine image mapping - brand-specific professional photos with fallback
+  // Professional engine image mapping - premium studio photos for select brands.
   const brandEngineImageMap: Record<string, string> = {
     'acura': '/product-images/engine/acura-engine-professional.png',
     'bmw': '/product-images/engine/bmw-engine-professional.png',
@@ -75,8 +75,10 @@ export async function GET(
     'lexus': '/product-images/engine/lexus-engine-professional.png',
     'ford': '/product-images/engine/ford-engine-professional.png',
   }
-  
-  const enginePhoto = brandEngineImageMap[brand] || '/product-images/engine/chevrolet-engine-branded.png'
+
+  // Every catalog brand has a dedicated /product-images/engine/[brand]-engine.png,
+  // so unmapped brands use their own photo instead of a cross-brand fallback.
+  const enginePhoto = brandEngineImageMap[brand] || `/product-images/engine/${brand}-engine.png`
   
   const mechanicalPhotoUrl = inferredCategory === 'transmission'
     ? new URL(transmissionPhoto, _req.url).toString()
