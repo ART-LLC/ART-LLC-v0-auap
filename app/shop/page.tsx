@@ -10,6 +10,7 @@ import { Footer } from '@/components/footer'
 import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
 import brandManifest from '@/data/brands/manifest.json'
 
+import { getPartsSearchUrl } from '@/lib/parts-search-routing'
 const INVENTORY_BRANDS = brandManifest.filter((brand) => brand.count > 0)
 
 const SHOP_PRODUCTS = [
@@ -73,12 +74,7 @@ export default function ShopPage() {
   const categories = ['Engines', 'Transmissions', 'Electrical', 'Cooling', 'Drivetrain']
 
   const handleSearch = (filters: SearchFilters) => {
-    const params = new URLSearchParams()
-    if (filters.make) params.append('make', filters.make)
-    if (filters.model) params.append('model', filters.model)
-    if (filters.year) params.append('year', filters.year)
-    if (filters.partType) params.append('part', filters.partType)
-    router.push(`/search?${params.toString()}`)
+    router.push(getPartsSearchUrl(filters))
   }
 
   const filteredProducts = SHOP_PRODUCTS.filter(product => {

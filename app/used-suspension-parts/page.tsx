@@ -1,5 +1,7 @@
 "use client"
 
+import { getPartsSearchUrl } from '@/lib/parts-search-routing'
+
 import { useRouter } from "next/navigation"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
@@ -16,12 +18,7 @@ export default function UsedSuspensionPartsPage() {
   const router = useRouter()
 
   const handleSearch = (filters: SearchFilters) => {
-    const params = new URLSearchParams()
-    if (filters.make) params.append('make', filters.make)
-    if (filters.model) params.append('model', filters.model)
-    if (filters.year) params.append('year', filters.year)
-    params.append('part', CATEGORY.label)
-    router.push(`/search?${params.toString()}`)
+    router.push(getPartsSearchUrl(filters))
   }
 
   return (

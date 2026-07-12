@@ -20,6 +20,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRight, Star, Shield, Truck, MapPin, Phone, MessageSquare } from 'lucide-react'
 
+import { getPartsSearchUrl } from '@/lib/parts-search-routing'
 interface ProductPageProps {
   params: {
     id: string
@@ -34,12 +35,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
   const [selectedPrice, setSelectedPrice] = useState<number | null>(null)
 
   const handleSearch = (filters: SearchFilters) => {
-    const queryParams = new URLSearchParams()
-    if (filters.make) queryParams.append('make', filters.make)
-    if (filters.model) queryParams.append('model', filters.model)
-    if (filters.year) queryParams.append('year', filters.year)
-    if (filters.partType) queryParams.append('part', filters.partType)
-    router.push(`/search?${queryParams.toString()}`)
+    router.push(getPartsSearchUrl(filters))
   }
 
   // Mock product data - in production, fetch from API based on params.id
