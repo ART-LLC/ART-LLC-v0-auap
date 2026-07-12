@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Star, Shield, Truck, Clock, ArrowRight } from 'lucide-react'
+import { SearchForm } from '@/components/search-form'
 
 interface LuxuryBrandLandingProps {
   brand: string
@@ -476,6 +477,32 @@ export function LuxuryBrandLanding({
               )}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FIND YOUR PARTS SEARCH BANNER */}
+      <section
+        className="relative border-t"
+        style={{ background: heroBackground, borderColor: softBorder }}
+        aria-label={`Search ${label} parts`}
+      >
+        <div className="absolute inset-0 pointer-events-none opacity-10">
+          <div
+            className="absolute left-0 top-1/2 h-64 w-64 rounded-full blur-3xl"
+            style={{ background: accent }}
+          />
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-black uppercase tracking-[0.15em] text-white lg:text-4xl text-balance">
+              Find Your Parts
+            </h2>
+            <p className="mt-2 text-slate-300/70">
+              Search across 2,000+ salvage yards nationwide
+            </p>
+          </div>
+          <SearchForm compact />
         </div>
       </section>
 
