@@ -315,7 +315,7 @@ export default function BrandPage() {
                   {cat.parts.length > 4 && <span className="text-xs px-2 py-1 rounded bg-muted text-muted-foreground">+{cat.parts.length - 4} more</span>}
                 </div>
                 {/* Action buttons */}
-                <div className="flex flex-col sm:flex-row items-stretch gap-2 mt-auto pt-1">
+                <div className="flex items-center gap-2 mt-auto pt-1">
                   <Link
                     href={`/quote?make=${encodeURIComponent(brand)}&category=${encodeURIComponent(cat.label)}`}
                     className="auapw-btn auapw-btn-amber flex-1 justify-center text-xs py-2 px-3"
@@ -329,15 +329,14 @@ export default function BrandPage() {
                   </Link>
                   <a
                     href={`tel:${PHONE_SALES.replace(/-/g, "")}`}
-                    className="brand-chrome-call-btn flex-1 justify-center text-xs py-2 px-3"
-                    style={{ padding: '0.5rem 0.75rem', fontSize: '0.7rem', letterSpacing: '0.06em', borderRadius: '0.5rem' }}
+                    className="brand-chrome-call-btn"
+                    style={{ width: '2.25rem', height: '2.25rem', borderRadius: '0.5rem' }}
                     title={`Call ${PHONE_DISPLAY}`}
-                    aria-label={`Call ${PHONE_DISPLAY}`}
+                    aria-label="Call us"
                   >
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 flex-shrink-0">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4">
                       <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
                     </svg>
-                    {PHONE_DISPLAY}
                   </a>
                 </div>
               </div>
