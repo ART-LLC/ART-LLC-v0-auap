@@ -69,10 +69,23 @@ export function getCanonicalAcuraSlug(product: Pick<RawAcuraProduct, "slug" | "i
   return `${base}-${product.id.toLowerCase()}`
 }
 
+function clampPrice(price: number | undefined): number | undefined {
+  if (typeof price !== "number" || !Number.isFinite(price)) return undefined
+  return Math.min(1400, Math.max(40, Math.round(price)))
+}
+
 function normalizeProduct(product: RawAcuraProduct): AcuraProduct {
   const { model, year } = parseAcuraModelYear(product)
   return {
     ...product,
+    price: clampPrice(product.price) ?? 40,
+    pricingTiers: product.pricingTiers
+      ? {
+          low: clampPrice(product.pricingTiers.low),
+          medium: clampPrice(product.pricingTiers.medium),
+          high: clampPrice(product.pricingTiers.high),
+        }
+      : undefined,
     canonicalSlug: getCanonicalAcuraSlug(product),
     model,
     year,

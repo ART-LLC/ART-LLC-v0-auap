@@ -98,7 +98,7 @@ export function Navbar() {
           </div>
           <div className="header-boss-banner-item">
             <Zap className="w-3 h-3" />
-            <span>Free Shipping All Parts</span>
+            <span>$240 Flat Shipping Per Part</span>
           </div>
           <div className="header-boss-banner-item">
             <Zap className="w-3 h-3" />
@@ -110,7 +110,7 @@ export function Navbar() {
           </div>
           <div className="header-boss-banner-item">
             <Zap className="w-3 h-3" />
-            <span>Free Shipping All Parts</span>
+            <span>$240 Flat Shipping Per Part</span>
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@ export function Navbar() {
             </div>
             {/* Mobile: tiny bold brand name */}
             <div className="flex flex-col justify-center sm:hidden min-w-0">
-              <span className="wordmark-3d leading-none" style={{ fontSize: '0.55rem', letterSpacing: '0.05em' }}>𝐀𝐔𝐀𝐏𝐖.𝑶𝑹𝑮</span>
+              <span className="wordmark-3d leading-none" style={{ fontSize: '0.55rem', letterSpacing: '0.05em' }}>AUAPW.ORG</span>
               <span className="wordmark-sub font-bold uppercase leading-none mt-px" style={{ fontSize: '0.3rem', letterSpacing: '0.12em' }}>Auto Parts</span>
             </div>
             {/* Desktop: full wordmark */}

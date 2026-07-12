@@ -7,31 +7,31 @@ export function ShippingInfo() {
   const shippingOptions = [
     {
       icon: Truck,
-      title: 'Standard Shipping',
-      description: '3-5 Business Days',
-      price: 'FREE',
-      details: 'Free shipping on all orders within the continental US'
+      title: 'Flat-Rate Shipping',
+      description: '7-14 Business Days',
+      price: '$240',
+      details: 'A fixed $240 shipping charge applies to every part'
     },
     {
       icon: Clock,
-      title: 'Expedited Shipping',
-      description: '1-2 Business Days',
-      price: '$89.99',
-      details: 'Rush delivery available for urgent needs'
+      title: 'Tracking Included',
+      description: 'Sent After Dispatch',
+      price: 'Included',
+      details: 'Carrier and tracking details are emailed when your order ships'
     },
     {
       icon: Package,
-      title: 'Full Insured Shipping',
+      title: 'Secure Packaging',
       description: 'All Orders',
       price: 'Included',
-      details: '$2 million in transit insurance on all shipments'
+      details: 'Each part is packed for safe transportation and delivery'
     },
     {
       icon: MapPin,
       title: 'Nationwide Coverage',
-      description: '48 States',
-      price: 'Available',
-      details: 'We ship to all continental US states and territories'
+      description: 'United States',
+      price: '$240',
+      details: 'The same flat shipping charge is shown in your cart and at checkout'
     }
   ]
 
@@ -142,7 +142,7 @@ export function ShippingInfo() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Not satisfied? Return unused parts within 14 days for a full refund. Free return shipping on most items.
+                Not satisfied? Return eligible unused parts within 14 days under the terms of our return policy.
               </p>
             </CardContent>
           </Card>
@@ -174,7 +174,7 @@ export function ShippingInfo() {
             </li>
             <li className="flex gap-3">
               <span className="text-primary font-bold">•</span>
-              <span>Oversized items may have additional shipping fees calculated at checkout</span>
+              <span>A flat $240 shipping charge is applied to every part in the cart</span>
             </li>
             <li className="flex gap-3">
               <span className="text-primary font-bold">•</span>
