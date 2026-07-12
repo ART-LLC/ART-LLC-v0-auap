@@ -59,12 +59,12 @@ export async function GET(
   const skuLabel = (product.mpn || product.id || sku).toUpperCase()
   const vehicle = [product.year, label, product.model].filter(Boolean).join(' ')
   const category = inferredCategory.replace(/\b\w/g, (c) => c.toUpperCase())
-  // Professional transmission images by type
+  // Professional transmission images by type - stock images for all categories
   const transmissionPhoto = productName.includes('cvt')
-    ? '/product-images/transmission/cvt-transmission-branded.png'
+    ? '/product-images/transmissions/cvt-transmission.png'
     : productName.includes('manual') || /\bmt\b/.test(productName)
-      ? '/product-images/transmission/manual-transmission-branded.png'
-      : '/product-images/transmission/automatic-transmission-branded.png'
+      ? '/product-images/transmissions/manual-transmission.png'
+      : '/product-images/transmissions/automatic-transmission.png'
   
   // Professional engine image mapping - premium studio photos for select brands.
   const brandEngineImageMap: Record<string, string> = {
@@ -78,7 +78,15 @@ export async function GET(
 
   // Every catalog brand has a dedicated /product-images/engine/[brand]-engine.png,
   // so unmapped brands use their own photo instead of a cross-brand fallback.
+  // For products without specific brand images, use category-based stock images.
   const enginePhoto = brandEngineImageMap[brand] || `/product-images/engine/${brand}-engine.png`
+  
+  // Determine generic engine type for fallback stock images
+  const engineTypeForStock = productName.includes('v8') || productName.includes('8-cylinder')
+    ? '/product-images/engines/v8-engine.png'
+    : productName.includes('v6') || productName.includes('6-cylinder')
+      ? '/product-images/engines/v6-engine.png'
+      : '/product-images/engines/inline-4-engine.png'
   
   const mechanicalPhotoUrl = inferredCategory === 'transmission'
     ? new URL(transmissionPhoto, _req.url).toString()
