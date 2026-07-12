@@ -157,13 +157,21 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
             </p>
 
             {result.products.length === 0 ? (
-              <div className="rounded-xl border border-border/40 bg-card p-10 text-center">
-                <p className="text-foreground font-semibold">No parts matched your search.</p>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  Try a different keyword, or{' '}
-                  <Link href="/quote" className="text-primary font-medium hover:underline">request a free quote</Link>{' '}
-                  and we&apos;ll locate it for you.
+              <div className="rounded-xl border border-border/40 bg-gradient-to-br from-card to-card/50 p-12 text-center">
+                <div className="mb-4 text-4xl text-muted-foreground/20">🔍</div>
+                <h3 className="text-xl font-bold text-foreground mb-2">No Parts Found</h3>
+                <p className="text-sm text-muted-foreground mb-6 max-w-md mx-auto leading-relaxed">
+                  We couldn&apos;t find {label}{sp.model ? ` ${sp.model}` : ''} parts{sp.q ? ` matching "${sp.q}"` : ''}. 
+                  Try adjusting your search or let our team help locate it from our nationwide network.
                 </p>
+                <div className="flex gap-3 justify-center flex-wrap">
+                  <Link href="/quote" className="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">
+                    Request Free Quote
+                  </Link>
+                  <a href="tel:8888185001" className="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-lg border border-border/40 text-foreground font-semibold hover:border-foreground/50 transition-colors">
+                    Call Us
+                  </a>
+                </div>
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">

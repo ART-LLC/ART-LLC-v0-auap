@@ -223,22 +223,24 @@ export function SearchPageContent() {
         )}
 
         {searched && !loading && results.length === 0 && (
-          <div className="text-center py-16">
-            <div className="text-6xl mb-4 text-muted-foreground">
-              <Search className="w-16 h-16 mx-auto opacity-20" />
+          <div className="text-center py-20">
+            <div className="mb-6">
+              <Search className="w-20 h-20 mx-auto text-muted-foreground/30" />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">No Results Found</h3>
-            <p className="text-sm text-muted-foreground max-w-[480px] mx-auto mb-6 leading-relaxed">
-              We couldn't find parts matching your search criteria. Try adjusting your filters or contact our team to source from additional yards.
+            <h3 className="text-2xl font-bold text-foreground mb-3">No Parts Matched Your Search</h3>
+            <p className="text-base text-muted-foreground max-w-[520px] mx-auto mb-8 leading-relaxed">
+              We searched across 2,000+ salvage yards nationwide but couldn&apos;t find what you&apos;re looking for. 
+              Our team can source from additional inventory or specialty yards.
             </p>
-            <div className="flex gap-3 justify-center flex-wrap">
-              <a href="tel:8888185001" className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
-                <Phone className="w-3.5 h-3.5" /> Call Us for Help
+            <div className="flex gap-4 justify-center flex-wrap mb-8">
+              <a href="tel:8888185001" className="btn-led inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold tracking-wide uppercase rounded-lg">
+                <Phone className="w-4 h-4" /> Call (888) 818-5001
               </a>
-              <Link href="/quote" className="w-40 inline-block hover:-translate-y-1 transition-transform duration-200">
-                <img src="/images/button-request-free-quote.png" alt="Request Free Quote" className="w-full h-auto drop-shadow-lg" />
+              <Link href="/quote" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground text-sm font-bold tracking-wide uppercase rounded-lg hover:opacity-90 transition-opacity">
+                Request Free Quote
               </Link>
             </div>
+            <p className="text-xs text-muted-foreground/60">Response time: Usually within 1 hour during business hours</p>
           </div>
         )}
 
