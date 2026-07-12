@@ -9,16 +9,16 @@ import { Search, MessageSquare, Phone, Mail, Cog, Settings2, Calendar } from "lu
 
 export function HeroSection() {
   return (
-    <section className="relative pt-[58px] overflow-hidden ghost-scan-section hero-on-dark" style={{ paddingTop: "45px" }}>
+    <section className="relative pt-[45px] overflow-hidden ghost-scan-section hero-on-dark hero-bg">
       {/* Background — grey base; photo carousel constrained to the top hero band */}
-      <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #6b7280 0%, #5a6370 50%, #4b5563 100%)" }}>
+      <div className="absolute inset-0 hero-gradient-bg">
         <div className="absolute top-0 inset-x-0 h-[820px] overflow-hidden">
           <HeroSlider />
-          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent" style={{ backgroundColor: "transparent", backgroundImage: "linear-gradient(to bottom, transparent, #6b7280)" }} />
+          <div className="absolute inset-x-0 bottom-0 h-48 hero-gradient-fade" />
         </div>
-        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: "radial-gradient(circle, #e8e8e8 0%, transparent 70%)" }} />
+        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.05] pointer-events-none hero-radial-glow" />
         <GearBackground />
-        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E\")", backgroundSize: "100px" }} />
+        <div className="absolute inset-0 opacity-[0.025] pointer-events-none hero-noise-texture" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1280px] px-4 sm:px-6">
@@ -38,20 +38,9 @@ export function HeroSection() {
             </div>
 
             {/* Headline */}
-            <h1 className="font-sans leading-tight text-balance max-w-4xl" style={{ fontFamily: "system-ui" }}>
-              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
-              <span
-                className="block text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black"
-                style={{
-                  fontFamily: "system-ui",
-                  backgroundImage:
-                    "linear-gradient(90deg,#c8cdda 0%,#eef1f8 30%,#ffffff 50%,#eef1f8 70%,#c8cdda 100%)",
-                  WebkitBackgroundClip: "text",
-                  backgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.4))",
-                }}
-              >
+            <h1 className="font-sans leading-tight text-balance max-w-4xl">
+              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3">Your Trusted Partner</span>
+              <span className="block text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black hero-title-gradient">
                 Premium Quality Used Auto Parts
               </span>
             </h1>
