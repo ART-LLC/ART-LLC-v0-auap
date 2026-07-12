@@ -10,20 +10,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2008",
       "model": "Astra Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-astra-1.8l-vin-1-8th-digit-opt-2h0-at.jpg",
@@ -41,20 +32,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2008",
       "model": "Astra Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-astra-1.8l-vin-1-8th-digit-opt-2h0-mt.jpg",
@@ -72,20 +54,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2009",
       "model": "Astra Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-astra-1.8l-vin-1-8th-digit-opt-2h0-at.jpg",
@@ -103,20 +76,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2009",
       "model": "Astra Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-astra-1.8l-vin-1-8th-digit-opt-2h0-mt.jpg",
@@ -134,20 +98,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2007",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-aura-2.4l-vin-5-8th-digit-opt-lat-hybrid.jpg",
@@ -165,20 +120,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "2007",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-aura-3.5l-vin-n-8th-digit-opt-lz4.jpg",
@@ -196,20 +142,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "2007",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-aura-3.6l-vin-7-8th-digit-opt-ly7-crankshaft-key.jpg",
@@ -227,20 +164,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2231,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2632.58
-        },
-        {
-          "mileage": "Medium",
-          "price": 2231
-        },
-        {
-          "mileage": "High",
-          "price": 1874.04
-        }
-      ],
+      "tiers": {
+        "low": 2632.58,
+        "medium": 2231,
+        "high": 1874.04
+      },
       "year": "2007",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-aura-3.6l-vin-7-8th-digit-opt-ly7-w/o-crankshaft-key.jpg",
@@ -258,20 +186,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2008",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-aura-2.4l-vin-5-8th-digit-opt-lat-hybrid.jpg",
@@ -289,20 +208,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "2008",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-aura-2.4l-vin-b-8th-digit-opt-le5.jpg",
@@ -320,20 +230,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "2008",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-aura-3.5l-vin-n-8th-digit-opt-lz4.jpg",
@@ -351,20 +252,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "2008",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-aura-3.6l-vin-7-8th-digit-opt-ly7.jpg",
@@ -382,20 +274,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "2009",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-aura-3.6l-vin-7-8th-digit-opt-ly7.jpg",
@@ -413,20 +296,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1857.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2191.55
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857.25
-        },
-        {
-          "mileage": "High",
-          "price": 1560.09
-        }
-      ],
+      "tiers": {
+        "low": 2191.55,
+        "medium": 1857.25,
+        "high": 1560.09
+      },
       "year": "2009",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-aura-2.4l-vin-5-8th-digit-opt-lat-hybrid.jpg",
@@ -444,20 +318,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1707.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2015.15
-        },
-        {
-          "mileage": "Medium",
-          "price": 1707.75
-        },
-        {
-          "mileage": "High",
-          "price": 1434.51
-        }
-      ],
+      "tiers": {
+        "low": 2015.15,
+        "medium": 1707.75,
+        "high": 1434.51
+      },
       "year": "2009",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-aura-2.4l-vin-b-8th-digit-opt-le5-california-emission-pzev-opt-nu6.jpg",
@@ -475,20 +340,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2009",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-aura-2.4l-vin-b-8th-digit-opt-le5-california-emission-w/o-pzev;-opt-nu1.jpg",
@@ -506,20 +362,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1476.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1741.7
-        },
-        {
-          "mileage": "Medium",
-          "price": 1476.02
-        },
-        {
-          "mileage": "High",
-          "price": 1239.86
-        }
-      ],
+      "tiers": {
+        "low": 1741.7,
+        "medium": 1476.02,
+        "high": 1239.86
+      },
       "year": "2009",
       "model": "Aura Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-aura-2.4l-vin-b-8th-digit-opt-le5-federal-emissions-opt-nt7.jpg",
@@ -537,20 +384,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2003",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-saturn-ion-2.2l-vin-f-8th-digit-exhaust-manifold-is-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -568,20 +406,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2003",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-saturn-ion-2.2l-vin-f-8th-digit-exhaust-manifold-is-not-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -599,20 +428,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2004",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-saturn-ion-2.0l-red-line-package-vin-p-8th-digit.jpg",
@@ -630,20 +450,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2004",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-saturn-ion-2.2l-vin-f-8th-digit-opt-l61-exhaust-manifold-is-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -661,20 +472,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2004",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-saturn-ion-2.2l-vin-f-8th-digit-opt-l61-exhaust-manifold-is-not-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -692,20 +494,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2005",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2005-saturn-ion-2.2l-vin-f-8th-digit-opt-l61-exhaust-manifold-is-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -723,20 +516,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2005",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2005-saturn-ion-2.2l-vin-f-8th-digit-opt-l61-exhaust-manifold-is-not-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -754,20 +538,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2005",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2005-saturn-ion-2.0l-vin-p-8th-digit-opt-lsj.jpg",
@@ -785,20 +560,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2006",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-ion-2.0l-vin-p-8th-digit-opt-lsj.jpg",
@@ -816,20 +582,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "2006",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-ion-2.2l-vin-f-8th-digit-opt-l61-air-check-valve-california.jpg",
@@ -847,20 +604,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1932,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2279.76
-        },
-        {
-          "mileage": "Medium",
-          "price": 1932
-        },
-        {
-          "mileage": "High",
-          "price": 1622.88
-        }
-      ],
+      "tiers": {
+        "low": 2279.76,
+        "medium": 1932,
+        "high": 1622.88
+      },
       "year": "2006",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-ion-2.2l-vin-f-8th-digit-opt-l61-w/o-air-check-valve;-exhaust-manifold-is-drilled-and-tapped-for-air-check-valve.jpg",
@@ -878,20 +626,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2006",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-ion-2.2l-vin-f-8th-digit-opt-l61-w/o-air-check-valve;-exhaust-manifold-is-not-drilled-and-tapped-for-air-check-valve.jpg",
@@ -909,20 +648,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2006",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-ion-2.4l-vin-b-8th-digit-opt-le5-oil-cooler.jpg",
@@ -940,20 +670,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2006",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-ion-2.4l-vin-b-8th-digit-opt-le5-w/o-oil-cooler.jpg",
@@ -971,20 +692,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2007",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-ion-2.0l-vin-p-8th-digit-opt-lsj.jpg",
@@ -1002,20 +714,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "2007",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-ion-2.2l-vin-f-8th-digit-opt-l61-air-check-valve-california.jpg",
@@ -1033,20 +736,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1932,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2279.76
-        },
-        {
-          "mileage": "Medium",
-          "price": 1932
-        },
-        {
-          "mileage": "High",
-          "price": 1622.88
-        }
-      ],
+      "tiers": {
+        "low": 2279.76,
+        "medium": 1932,
+        "high": 1622.88
+      },
       "year": "2007",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-ion-2.2l-vin-f-8th-digit-opt-l61-w/o-air-check-valve;-exhaust-manifold-is-drilled-and-tapped-for-air-check-valve.jpg",
@@ -1064,20 +758,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2007",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-ion-2.2l-vin-f-8th-digit-opt-l61-w/o-air-check-valve;-exhaust-manifold-is-not-drilled-and-tapped-for-air-check-valve.jpg",
@@ -1095,20 +780,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2007",
       "model": "Ion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-ion-2.4l-vin-b-8th-digit-opt-le5.jpg",
@@ -1126,20 +802,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2000",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-saturn-l-series-2.2l-vin-f-8th-digit-egr-port-in-head.jpg",
@@ -1157,20 +824,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2000",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-saturn-l-series-2.2l-vin-f-8th-digit-w/o-egr-port-in-head.jpg",
@@ -1188,20 +846,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2000",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-saturn-l-series-3.0l-vin-r-8th-digit.jpg",
@@ -1219,20 +868,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2001",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-saturn-l-series-2.2l-vin-f-8th-digit-egr-port-in-head.jpg",
@@ -1250,20 +890,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2001",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-saturn-l-series-2.2l-vin-f-8th-digit-w/o-egr-port-in-head.jpg",
@@ -1281,20 +912,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2001",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-saturn-l-series-3.0l-vin-r-8th-digit.jpg",
@@ -1312,20 +934,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2002",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-saturn-l-series-2.2l-vin-f-8th-digit-egr-port-in-head.jpg",
@@ -1343,20 +956,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2002",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-saturn-l-series-2.2l-vin-f-8th-digit-w/o-egr-port-in-head.jpg",
@@ -1374,20 +978,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2002",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-saturn-l-series-3.0l-vin-r-8th-digit.jpg",
@@ -1405,20 +1000,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2003",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-saturn-l-series-2.2l-vin-f-8th-digit-egr-port-in-head.jpg",
@@ -1436,20 +1022,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2003",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-saturn-l-series-2.2l-vin-f-8th-digit-w/o-egr-port-in-head.jpg",
@@ -1467,20 +1044,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2003",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-saturn-l-series-3.0l-vin-r-8th-digit.jpg",
@@ -1498,20 +1066,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2004",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-saturn-l-series-2.2l-vin-f-8th-digit-egr-port-in-head.jpg",
@@ -1529,20 +1088,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2004",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-saturn-l-series-2.2l-vin-f-8th-digit-w/o-egr-port-in-head.jpg",
@@ -1560,20 +1110,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2004",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-saturn-l-series-3.0l-vin-r-8th-digit.jpg",
@@ -1591,20 +1132,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2005",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2005-saturn-l-series-3.0l-vin-r-8th-digit.jpg",
@@ -1622,20 +1154,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2829,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3338.22
-        },
-        {
-          "mileage": "Medium",
-          "price": 2829
-        },
-        {
-          "mileage": "High",
-          "price": 2376.36
-        }
-      ],
+      "tiers": {
+        "low": 3338.22,
+        "medium": 2829,
+        "high": 2376.36
+      },
       "year": "2007",
       "model": "Outlook Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-outlook-3.6l-vin-7-8th-digit-opt-ly7.jpg",
@@ -1653,20 +1176,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2829,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3338.22
-        },
-        {
-          "mileage": "Medium",
-          "price": 2829
-        },
-        {
-          "mileage": "High",
-          "price": 2376.36
-        }
-      ],
+      "tiers": {
+        "low": 3338.22,
+        "medium": 2829,
+        "high": 2376.36
+      },
       "year": "2008",
       "model": "Outlook Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-outlook-3.6l-vin-7-8th-digit-opt-ly7.jpg",
@@ -1684,20 +1198,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 3576.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 4220.27
-        },
-        {
-          "mileage": "Medium",
-          "price": 3576.5
-        },
-        {
-          "mileage": "High",
-          "price": 3004.26
-        }
-      ],
+      "tiers": {
+        "low": 4220.27,
+        "medium": 3576.5,
+        "high": 3004.26
+      },
       "year": "2009",
       "model": "Outlook Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-outlook-3.6l-vin-d-8th-digit-opt-llt.jpg",
@@ -1715,20 +1220,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 3576.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 4220.27
-        },
-        {
-          "mileage": "Medium",
-          "price": 3576.5
-        },
-        {
-          "mileage": "High",
-          "price": 3004.26
-        }
-      ],
+      "tiers": {
+        "low": 4220.27,
+        "medium": 3576.5,
+        "high": 3004.26
+      },
       "year": "2010",
       "model": "Outlook Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2010-saturn-outlook-3.6l-vin-d-8th-digit-opt-llt.jpg",
@@ -1746,20 +1242,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2005",
       "model": "Relay Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2005-saturn-relay-3.5l-vin-l-8th-digit.jpg",
@@ -1777,20 +1264,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2006",
       "model": "Relay Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-relay-3.5l-vin-l-8th-digit.jpg",
@@ -1808,20 +1286,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2006",
       "model": "Relay Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-relay-3.9l-vin-1-8th-digit.jpg",
@@ -1839,20 +1308,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2007",
       "model": "Relay Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-relay-3.9l-vin-1-8th-digit-opt-lz9.jpg",
@@ -1870,20 +1330,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1995",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-saturn-s-series-4-116-1.9l-dohc-vin-7-8th-digit.jpg",
@@ -1901,20 +1352,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1995",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-saturn-s-series-4-116-1.9l-sohc-vin-8-8th-digit.jpg",
@@ -1932,20 +1374,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-saturn-s-series-4-116-1.9l-dohc-vin-7-8th-digit.jpg",
@@ -1963,20 +1396,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1996",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-saturn-s-series-4-116-1.9l-sohc-vin-8-8th-digit.jpg",
@@ -1994,20 +1418,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1997",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-saturn-s-series-4-116-1.9l-dohc-vin-7-8th-digit.jpg",
@@ -2025,20 +1440,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1997",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-saturn-s-series-4-116-1.9l-sohc-vin-8-8th-digit.jpg",
@@ -2056,20 +1462,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1998",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-saturn-s-series-4-116-1.9l-dohc-vin-7-8th-digit.jpg",
@@ -2087,20 +1484,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1998",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-saturn-s-series-4-116-1.9l-sohc-vin-8-8th-digit.jpg",
@@ -2118,20 +1506,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1999",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-saturn-s-series-1.9l-4-116-dohc-vin-7-8th-digit.jpg",
@@ -2149,20 +1528,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1999",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-saturn-s-series-1.9l-4-116-sohc-vin-8-8th-digit.jpg",
@@ -2180,20 +1550,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2000",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-saturn-s-series-1.9l-4-116-dohc-vin-7-8th-digit.jpg",
@@ -2211,20 +1572,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2000",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-saturn-s-series-1.9l-4-116-sohc-vin-8-8th-digit.jpg",
@@ -2242,20 +1594,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2001",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-saturn-s-series-1.9l-4-116-dohc-vin-7-8th-digit.jpg",
@@ -2273,20 +1616,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2001",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-saturn-s-series-1.9l-4-116-sohc-vin-8-8th-digit.jpg",
@@ -2304,20 +1638,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2002",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-saturn-s-series-1.9l-4-116-dohc-vin-7-8th-digit.jpg",
@@ -2335,20 +1660,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2002",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-saturn-s-series-1.9l-4-116-sohc-vin-8-8th-digit.jpg",
@@ -2366,20 +1682,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 4025,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 4749.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 4025
-        },
-        {
-          "mileage": "High",
-          "price": 3381
-        }
-      ],
+      "tiers": {
+        "low": 4749.5,
+        "medium": 4025,
+        "high": 3381
+      },
       "year": "2007",
       "model": "Sky Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-sky-2.0l-vin-x-8th-digit-opt-lnf.jpg",
@@ -2397,20 +1704,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2007",
       "model": "Sky Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-sky-2.4l-vin-b-8th-digit-opt-le5.jpg",
@@ -2428,20 +1726,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 4025,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 4749.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 4025
-        },
-        {
-          "mileage": "High",
-          "price": 3381
-        }
-      ],
+      "tiers": {
+        "low": 4749.5,
+        "medium": 4025,
+        "high": 3381
+      },
       "year": "2008",
       "model": "Sky Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-sky-2.4l-vin-b-8th-digit-opt-le5.jpg",
@@ -2459,20 +1748,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2008",
       "model": "Sky Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-sky-2.0l-vin-x-8th-digit-opt-lnf.jpg",
@@ -2490,20 +1770,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 4025,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 4749.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 4025
-        },
-        {
-          "mileage": "High",
-          "price": 3381
-        }
-      ],
+      "tiers": {
+        "low": 4749.5,
+        "medium": 4025,
+        "high": 3381
+      },
       "year": "2009",
       "model": "Sky Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-sky-2.0l-vin-x-8th-digit-opt-lnf.jpg",
@@ -2521,20 +1792,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2009",
       "model": "Sky Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-sky-2.4l-vin-b-8th-digit-opt-le5.jpg",
@@ -2552,20 +1814,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 4025,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 4749.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 4025
-        },
-        {
-          "mileage": "High",
-          "price": 3381
-        }
-      ],
+      "tiers": {
+        "low": 4749.5,
+        "medium": 4025,
+        "high": 3381
+      },
       "year": "2010",
       "model": "Sky Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2010-saturn-sky-2.0l-vin-x-8th-digit-opt-lnf.jpg",
@@ -2583,20 +1836,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2010",
       "model": "Sky Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2010-saturn-sky-2.4l-vin-b-8th-digit-opt-le5.jpg",
@@ -2614,20 +1858,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2002",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-saturn-vue-3.0l-vin-b-8th-digit-opt-l81-awd.jpg",
@@ -2645,20 +1880,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2002",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-saturn-vue-3.0l-vin-b-8th-digit-opt-l81-fwd.jpg",
@@ -2676,20 +1902,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2002",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-saturn-vue-2.2l-vin-d-8th-digit-opt-l61-exhaust-manifold-is-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -2707,20 +1924,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2002",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-saturn-vue-2.2l-vin-d-8th-digit-opt-l61-exhaust-manifold-is-not-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -2738,20 +1946,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2003",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-saturn-vue-3.0l-vin-b-8th-digit-opt-l81-awd.jpg",
@@ -2769,20 +1968,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2003",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-saturn-vue-3.0l-vin-b-8th-digit-opt-l81-fwd.jpg",
@@ -2800,20 +1990,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2003",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-saturn-vue-2.2l-vin-d-8th-digit-opt-l61-exhaust-manifold-is-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -2831,20 +2012,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2003",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-saturn-vue-2.2l-vin-d-8th-digit-opt-l61-exhaust-manifold-is-not-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -2862,20 +2034,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2004",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-saturn-vue-2.2l-vin-d-8th-digit-opt-l61-exhaust-manifold-is-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -2893,20 +2056,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2004",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-saturn-vue-2.2l-vin-d-8th-digit-opt-l61-exhaust-manifold-is-not-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -2924,20 +2078,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2004",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-saturn-vue-3.5l-vin-4-8th-digit-opt-l66.jpg",
@@ -2955,20 +2100,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2005",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2005-saturn-vue-2.2l-vin-d-8th-digit-opt-l61-exhaust-manifold-is-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -2986,20 +2122,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2005",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2005-saturn-vue-2.2l-vin-d-8th-digit-opt-l61-exhaust-manifold-is-not-drilled-and-tapped-for-air-check-valve-w/o-egr-port-in-head.jpg",
@@ -3017,20 +2144,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2005",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2005-saturn-vue-3.5l-vin-4-8th-digit-opt-l66.jpg",
@@ -3048,20 +2166,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2006",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-vue-3.5l-vin-4-8th-digit-opt-l66.jpg",
@@ -3079,20 +2188,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2006",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-vue-2.2l-vin-d-8th-digit-opt-l61-exhaust-manifold-is-drilled-and-tapped-for-air-check-valve.jpg",
@@ -3110,20 +2210,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2006",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-saturn-vue-2.2l-vin-d-8th-digit-opt-l61-exhaust-manifold-is-not-drilled-and-tapped-for-air-check-valve.jpg",
@@ -3141,20 +2232,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2007",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-vue-3.5l-vin-4-8th-digit-opt-l66.jpg",
@@ -3172,20 +2254,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2007",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-vue-2.2l-vin-d-8th-digit-opt-l61.jpg",
@@ -3203,20 +2276,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2007",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-saturn-vue-2.4l-vin-z-8th-digit-opt-lat-hybrid.jpg",
@@ -3234,20 +2298,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2008",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-vue-2.4l-vin-p-8th-digit-opt-le5.jpg",
@@ -3265,20 +2320,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2008",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-vue-2.4l-vin-z-8th-digit-opt-lat-hybrid.jpg",
@@ -3296,20 +2342,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "2008",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-vue-3.6l-vin-7-8th-digit-opt-ly7.jpg",
@@ -3327,20 +2364,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2008",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-saturn-vue-3.5l-vin-n-8th-digit-opt-lz4.jpg",
@@ -3358,20 +2386,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2009",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-vue-3.5l-vin-n-8th-digit-opt-lz4.jpg",
@@ -3389,20 +2408,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2009",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-vue-2.4l-vin-p-8th-digit-opt-le5.jpg",
@@ -3420,20 +2430,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2009",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-vue-2.4l-vin-z-8th-digit-opt-lat-hybrid.jpg",
@@ -3451,20 +2452,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "2009",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-vue-3.6l-vin-7-8th-digit-opt-ly7.jpg",
@@ -3482,20 +2474,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 3202.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3779.25
-        },
-        {
-          "mileage": "Medium",
-          "price": 3202.75
-        },
-        {
-          "mileage": "High",
-          "price": 2690.31
-        }
-      ],
+      "tiers": {
+        "low": 3779.25,
+        "medium": 3202.75,
+        "high": 2690.31
+      },
       "year": "2009",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-saturn-vue-3.6l-vin-b-8th-digit-opt-lcs.jpg",
@@ -3513,20 +2496,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2010",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2010-saturn-vue-2.4l-vin-1-8th-digit-opt-le5.jpg",
@@ -3544,20 +2518,11 @@
       "brand": "Saturn",
       "category": "engine",
       "price": 3501.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 4132.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 3501.75
-        },
-        {
-          "mileage": "High",
-          "price": 2941.47
-        }
-      ],
+      "tiers": {
+        "low": 4132.06,
+        "medium": 3501.75,
+        "high": 2941.47
+      },
       "year": "2010",
       "model": "Vue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2010-saturn-vue-3.6l-vin-7-8th-digit-opt-ly7.jpg",
@@ -3575,20 +2540,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2008",
       "model": "Astra Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-astra-at.jpg",
@@ -3606,20 +2562,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2008",
       "model": "Astra Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-astra-mt.jpg",
@@ -3637,20 +2584,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2009",
       "model": "Astra Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-astra-at.jpg",
@@ -3668,20 +2606,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2009",
       "model": "Astra Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-astra-mt.jpg",
@@ -3699,20 +2628,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2007",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-aura-at-2.4l.jpg",
@@ -3730,20 +2650,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2007",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-aura-at-3.5l.jpg",
@@ -3761,20 +2672,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2007",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-aura-at-3.6l.jpg",
@@ -3792,20 +2694,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2008",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-aura-at-2.4l-exc.-hybrid;-from-1/07/08.jpg",
@@ -3823,20 +2716,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2008",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-aura-at-2.4l-exc.-hybrid;-thru-1/06/08.jpg",
@@ -3854,20 +2738,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2008",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-aura-at-2.4l-hybrid-from-1/07/08.jpg",
@@ -3885,20 +2760,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2008",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-aura-at-2.4l-hybrid-thru-1/06/08.jpg",
@@ -3916,20 +2782,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2008",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-aura-at-3.5l-from-1/07/08.jpg",
@@ -3947,20 +2804,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2008",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-aura-at-3.5l-thru-1/06/08.jpg",
@@ -3978,20 +2826,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2008",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-aura-at-3.6l-id-pak.jpg",
@@ -4009,20 +2848,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1520.87,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1794.63
-        },
-        {
-          "mileage": "Medium",
-          "price": 1520.87
-        },
-        {
-          "mileage": "High",
-          "price": 1277.53
-        }
-      ],
+      "tiers": {
+        "low": 1794.63,
+        "medium": 1520.87,
+        "high": 1277.53
+      },
       "year": "2008",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-aura-at-3.6l-id-pfk.jpg",
@@ -4040,20 +2870,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1707.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2015.15
-        },
-        {
-          "mileage": "Medium",
-          "price": 1707.75
-        },
-        {
-          "mileage": "High",
-          "price": 1434.51
-        }
-      ],
+      "tiers": {
+        "low": 2015.15,
+        "medium": 1707.75,
+        "high": 1434.51
+      },
       "year": "2009",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-aura-at-2.4l-exc.-hybrid.jpg",
@@ -4071,20 +2892,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2009",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-aura-at-2.4l-hybrid-id-bbj.jpg",
@@ -4102,20 +2914,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2009",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-aura-at-2.4l-hybrid-id-daj.jpg",
@@ -4133,20 +2936,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2009",
       "model": "Aura Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-aura-at-3.6l.jpg",
@@ -4164,20 +2958,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2003",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-ion-at-opt-m43.jpg",
@@ -4195,20 +2980,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2380.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2808.99
-        },
-        {
-          "mileage": "Medium",
-          "price": 2380.5
-        },
-        {
-          "mileage": "High",
-          "price": 1999.62
-        }
-      ],
+      "tiers": {
+        "low": 2808.99,
+        "medium": 2380.5,
+        "high": 1999.62
+      },
       "year": "2003",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-ion-at-opt-m75-cvt.jpg",
@@ -4226,20 +3002,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2003",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-ion-mt-opt-m86.jpg",
@@ -4257,20 +3024,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2004",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-ion-at-2.2l-opt-l61-opt-m43.jpg",
@@ -4288,20 +3046,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "2004",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-ion-at-2.2l-opt-l61-opt-m75-cvt.jpg",
@@ -4319,20 +3068,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1625.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1918.11
-        },
-        {
-          "mileage": "Medium",
-          "price": 1625.52
-        },
-        {
-          "mileage": "High",
-          "price": 1365.44
-        }
-      ],
+      "tiers": {
+        "low": 1918.11,
+        "medium": 1625.52,
+        "high": 1365.44
+      },
       "year": "2004",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-ion-mt-2.0l-red-line-package-opt-mu3.jpg",
@@ -4350,20 +3090,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2004",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-ion-mt-2.2l-opt-l61.jpg",
@@ -4381,20 +3112,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2004",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-ion-mt-2.2l-opt-m86.jpg",
@@ -4412,20 +3134,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2005",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-ion-at-2.2l-opt-l61-opt-mn5.jpg",
@@ -4443,20 +3156,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2006.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2367.96
-        },
-        {
-          "mileage": "Medium",
-          "price": 2006.75
-        },
-        {
-          "mileage": "High",
-          "price": 1685.67
-        }
-      ],
+      "tiers": {
+        "low": 2367.96,
+        "medium": 2006.75,
+        "high": 1685.67
+      },
       "year": "2005",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-ion-mt-2.0l-5-speed-opt-mu3-limited-slip-differential-opt-g85.jpg",
@@ -4474,20 +3178,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1926.94
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1371.72
-        }
-      ],
+      "tiers": {
+        "low": 1926.94,
+        "medium": 1633,
+        "high": 1371.72
+      },
       "year": "2005",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-ion-mt-2.0l-5-speed-opt-mu3-w/o-limited-slip-differential.jpg",
@@ -4505,20 +3200,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2005",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-ion-mt-2.2l-5-speed-opt-m86.jpg",
@@ -4536,20 +3222,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2006",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-ion-at-2.2l.jpg",
@@ -4567,20 +3244,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 878.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1036.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 878.02
-        },
-        {
-          "mileage": "High",
-          "price": 737.54
-        }
-      ],
+      "tiers": {
+        "low": 1036.06,
+        "medium": 878.02,
+        "high": 737.54
+      },
       "year": "2006",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-ion-at-2.4l.jpg",
@@ -4598,20 +3266,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2006.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2367.96
-        },
-        {
-          "mileage": "Medium",
-          "price": 2006.75
-        },
-        {
-          "mileage": "High",
-          "price": 1685.67
-        }
-      ],
+      "tiers": {
+        "low": 2367.96,
+        "medium": 2006.75,
+        "high": 1685.67
+      },
       "year": "2006",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-ion-mt-2.0l-5-speed-opt-mu3-limited-slip-differential-opt-g85.jpg",
@@ -4629,20 +3288,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1926.94
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1371.72
-        }
-      ],
+      "tiers": {
+        "low": 1926.94,
+        "medium": 1633,
+        "high": 1371.72
+      },
       "year": "2006",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-ion-mt-2.0l-5-speed-opt-mu3-w/o-limited-slip-differential.jpg",
@@ -4660,20 +3310,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2006",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-ion-mt-2.2l-5-speed-opt-m86.jpg",
@@ -4691,20 +3332,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2006",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-ion-mt-2.4l-5-speed-opt-m86.jpg",
@@ -4722,20 +3354,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 878.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1036.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 878.02
-        },
-        {
-          "mileage": "High",
-          "price": 737.54
-        }
-      ],
+      "tiers": {
+        "low": 1036.06,
+        "medium": 878.02,
+        "high": 737.54
+      },
       "year": "2007",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-ion-at-2.4l.jpg",
@@ -4753,20 +3376,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2006.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2367.96
-        },
-        {
-          "mileage": "Medium",
-          "price": 2006.75
-        },
-        {
-          "mileage": "High",
-          "price": 1685.67
-        }
-      ],
+      "tiers": {
+        "low": 2367.96,
+        "medium": 2006.75,
+        "high": 1685.67
+      },
       "year": "2007",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-ion-mt-2.0l-5-speed-opt-mu3-limited-slip-differential-opt-g85.jpg",
@@ -4784,20 +3398,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1926.94
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1371.72
-        }
-      ],
+      "tiers": {
+        "low": 1926.94,
+        "medium": 1633,
+        "high": 1371.72
+      },
       "year": "2007",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-ion-mt-2.0l-5-speed-opt-mu3-w/o-limited-slip-differential.jpg",
@@ -4815,20 +3420,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2007",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-ion-mt-2.2l-5-speed-opt-m86.jpg",
@@ -4846,20 +3442,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2007",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-ion-mt-2.4l-5-speed-opt-m86.jpg",
@@ -4877,20 +3464,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2007",
       "model": "Ion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-ion-at-2.2l.jpg",
@@ -4908,20 +3486,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2000",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-saturn-l-series-at-4-cylinder-2.2l.jpg",
@@ -4939,20 +3508,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2000",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-saturn-l-series-at-6-cylinder-3.0l.jpg",
@@ -4970,20 +3530,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2000",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-saturn-l-series-mt.jpg",
@@ -5001,20 +3552,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2001",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-saturn-l-series-at-4-cylinder-2.2l.jpg",
@@ -5032,20 +3574,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2001",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-saturn-l-series-at-6-cylinder-3.0l.jpg",
@@ -5063,20 +3596,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2001",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-saturn-l-series-mt.jpg",
@@ -5094,20 +3618,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2002",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-l-series-mt.jpg",
@@ -5125,20 +3640,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2002",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-l-series-at-4-cylinder-2.2l.jpg",
@@ -5156,20 +3662,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2002",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-l-series-at-6-cylinder-3.0l.jpg",
@@ -5187,20 +3684,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2003",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-l-series-mt.jpg",
@@ -5218,20 +3706,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2003",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-l-series-at-4-cylinder-2.2l.jpg",
@@ -5249,20 +3728,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2003",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-l-series-at-6-cylinder-3.0l.jpg",
@@ -5280,20 +3750,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2004",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-l-series-at-4-cylinder-2.2l.jpg",
@@ -5311,20 +3772,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2004",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-l-series-at-6-cylinder-3.0l.jpg",
@@ -5342,20 +3794,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2005",
       "model": "L Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-l-series-at-6-cylinder-3.0l.jpg",
@@ -5373,20 +3816,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1707.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2015.15
-        },
-        {
-          "mileage": "Medium",
-          "price": 1707.75
-        },
-        {
-          "mileage": "High",
-          "price": 1434.51
-        }
-      ],
+      "tiers": {
+        "low": 2015.15,
+        "medium": 1707.75,
+        "high": 1434.51
+      },
       "year": "2007",
       "model": "Outlook Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-outlook-at-awd.jpg",
@@ -5404,20 +3838,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2007",
       "model": "Outlook Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-outlook-at-fwd.jpg",
@@ -5435,20 +3860,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1707.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2015.15
-        },
-        {
-          "mileage": "Medium",
-          "price": 1707.75
-        },
-        {
-          "mileage": "High",
-          "price": 1434.51
-        }
-      ],
+      "tiers": {
+        "low": 2015.15,
+        "medium": 1707.75,
+        "high": 1434.51
+      },
       "year": "2008",
       "model": "Outlook Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-outlook-at-awd.jpg",
@@ -5466,20 +3882,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2008",
       "model": "Outlook Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-outlook-at-fwd.jpg",
@@ -5497,20 +3904,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1707.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2015.15
-        },
-        {
-          "mileage": "Medium",
-          "price": 1707.75
-        },
-        {
-          "mileage": "High",
-          "price": 1434.51
-        }
-      ],
+      "tiers": {
+        "low": 2015.15,
+        "medium": 1707.75,
+        "high": 1434.51
+      },
       "year": "2009",
       "model": "Outlook Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-outlook-at-awd.jpg",
@@ -5528,20 +3926,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2009",
       "model": "Outlook Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-outlook-at-fwd.jpg",
@@ -5559,20 +3948,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1707.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2015.15
-        },
-        {
-          "mileage": "Medium",
-          "price": 1707.75
-        },
-        {
-          "mileage": "High",
-          "price": 1434.51
-        }
-      ],
+      "tiers": {
+        "low": 2015.15,
+        "medium": 1707.75,
+        "high": 1434.51
+      },
       "year": "2010",
       "model": "Outlook Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-saturn-outlook-at-awd.jpg",
@@ -5590,20 +3970,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2010",
       "model": "Outlook Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-saturn-outlook-at-fwd.jpg",
@@ -5621,20 +3992,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2005",
       "model": "Relay Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-relay-at-internal-neutral-sw-awd.jpg",
@@ -5652,20 +4014,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2005",
       "model": "Relay Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-relay-at-internal-neutral-sw-fwd.jpg",
@@ -5683,20 +4036,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1707.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2015.15
-        },
-        {
-          "mileage": "Medium",
-          "price": 1707.75
-        },
-        {
-          "mileage": "High",
-          "price": 1434.51
-        }
-      ],
+      "tiers": {
+        "low": 2015.15,
+        "medium": 1707.75,
+        "high": 1434.51
+      },
       "year": "2006",
       "model": "Relay Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-relay-at-awd.jpg",
@@ -5714,20 +4058,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2006",
       "model": "Relay Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-relay-at-fwd-3.5l.jpg",
@@ -5745,20 +4080,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 3202.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3779.25
-        },
-        {
-          "mileage": "Medium",
-          "price": 3202.75
-        },
-        {
-          "mileage": "High",
-          "price": 2690.31
-        }
-      ],
+      "tiers": {
+        "low": 3779.25,
+        "medium": 3202.75,
+        "high": 2690.31
+      },
       "year": "2006",
       "model": "Relay Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-relay-at-fwd-3.9l.jpg",
@@ -5776,20 +4102,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2007",
       "model": "Relay Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-relay-at-fwd.jpg",
@@ -5807,20 +4124,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1995",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-saturn-s-series-mt-dohc.jpg",
@@ -5838,20 +4146,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1995",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-saturn-s-series-mt-sohc.jpg",
@@ -5869,20 +4168,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "1995",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-saturn-s-series-at-dohc.jpg",
@@ -5900,20 +4190,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "1995",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-saturn-s-series-at-sohc.jpg",
@@ -5931,20 +4212,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1996",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-saturn-s-series-mt-dohc.jpg",
@@ -5962,20 +4234,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1996",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-saturn-s-series-mt-sohc.jpg",
@@ -5993,20 +4256,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "1996",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-saturn-s-series-at-dohc.jpg",
@@ -6024,20 +4278,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "1996",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-saturn-s-series-at-sohc.jpg",
@@ -6055,20 +4300,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1997",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-saturn-s-series-mt-dohc.jpg",
@@ -6086,20 +4322,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1997",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-saturn-s-series-mt-sohc.jpg",
@@ -6117,20 +4344,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "1997",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-saturn-s-series-at-dohc.jpg",
@@ -6148,20 +4366,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "1997",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-saturn-s-series-at-sohc.jpg",
@@ -6179,20 +4388,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "1998",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-saturn-s-series-at-dohc.jpg",
@@ -6210,20 +4410,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "1998",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-saturn-s-series-at-sohc.jpg",
@@ -6241,20 +4432,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1998",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-saturn-s-series-mt-dohc.jpg",
@@ -6272,20 +4454,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1998",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-saturn-s-series-mt-sohc.jpg",
@@ -6303,20 +4476,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "1999",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-saturn-s-series-at-dohc.jpg",
@@ -6334,20 +4498,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "1999",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-saturn-s-series-at-sohc.jpg",
@@ -6365,20 +4520,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1999",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-saturn-s-series-mt-dohc.jpg",
@@ -6396,20 +4542,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1999",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-saturn-s-series-mt-sohc.jpg",
@@ -6427,20 +4564,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2000",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-saturn-s-series-at-dohc.jpg",
@@ -6458,20 +4586,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2000",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-saturn-s-series-at-sohc.jpg",
@@ -6489,20 +4608,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "2000",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-saturn-s-series-mt-dohc.jpg",
@@ -6520,20 +4630,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2000",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-saturn-s-series-mt-sohc.jpg",
@@ -6551,20 +4652,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2001",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-saturn-s-series-at-dohc.jpg",
@@ -6582,20 +4674,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2001",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-saturn-s-series-at-sohc.jpg",
@@ -6613,20 +4696,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "2001",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-saturn-s-series-mt-dohc.jpg",
@@ -6644,20 +4718,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2001",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-saturn-s-series-mt-sohc.jpg",
@@ -6675,20 +4740,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2002",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-s-series-at-dohc.jpg",
@@ -6706,20 +4762,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2002",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-s-series-at-sohc.jpg",
@@ -6737,20 +4784,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "2002",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-s-series-mt-dohc.jpg",
@@ -6768,20 +4806,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2002",
       "model": "S Series",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-s-series-mt-sohc.jpg",
@@ -6799,20 +4828,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1707.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2015.15
-        },
-        {
-          "mileage": "Medium",
-          "price": 1707.75
-        },
-        {
-          "mileage": "High",
-          "price": 1434.51
-        }
-      ],
+      "tiers": {
+        "low": 2015.15,
+        "medium": 1707.75,
+        "high": 1434.51
+      },
       "year": "2007",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-sky-mt-beam-from-tail-housing-to-rear-differential.jpg",
@@ -6830,20 +4850,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "2007",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-sky-mt-tail-housing-mounted-to-frame-crossmember.jpg",
@@ -6861,20 +4872,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2007",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-sky-at-2.0l.jpg",
@@ -6892,20 +4894,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2007",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-sky-at-2.4l.jpg",
@@ -6923,20 +4916,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2008",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-sky-at-2.0l.jpg",
@@ -6954,20 +4938,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2008",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-sky-at-2.4l.jpg",
@@ -6985,20 +4960,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2008",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-sky-mt.jpg",
@@ -7016,20 +4982,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2009",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-sky-at-2.0l.jpg",
@@ -7047,20 +5004,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2009",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-sky-at-2.4l.jpg",
@@ -7078,20 +5026,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2009",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-sky-mt.jpg",
@@ -7109,20 +5048,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2010",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-saturn-sky-at-2.0l.jpg",
@@ -7140,20 +5070,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2010",
       "model": "Sky Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-saturn-sky-at-2.4l.jpg",
@@ -7171,20 +5092,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 3277.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3867.45
-        },
-        {
-          "mileage": "Medium",
-          "price": 3277.5
-        },
-        {
-          "mileage": "High",
-          "price": 2753.1
-        }
-      ],
+      "tiers": {
+        "low": 3867.45,
+        "medium": 3277.5,
+        "high": 2753.1
+      },
       "year": "2002",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-vue-at-2.2l-opt-l61-awd.jpg",
@@ -7202,20 +5114,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 3128,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3691.04
-        },
-        {
-          "mileage": "Medium",
-          "price": 3128
-        },
-        {
-          "mileage": "High",
-          "price": 2627.52
-        }
-      ],
+      "tiers": {
+        "low": 3691.04,
+        "medium": 3128,
+        "high": 2627.52
+      },
       "year": "2002",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-vue-at-2.2l-opt-l61-fwd.jpg",
@@ -7233,20 +5136,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2002",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-vue-mt-4-cylinder.jpg",
@@ -7264,20 +5158,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2002",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-vue-at-3.0l-opt-l81-awd-m45.jpg",
@@ -7295,20 +5180,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2002",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-saturn-vue-at-3.0l-opt-l81-fwd-m09.jpg",
@@ -7326,20 +5202,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2003",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-vue-at-3.0l-opt-l81-awd-m45.jpg",
@@ -7357,20 +5224,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2003",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-vue-at-3.0l-opt-l81-fwd-m09.jpg",
@@ -7388,20 +5246,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2003",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-vue-at-2.2l-opt-l61-awd-opt-m16.jpg",
@@ -7419,20 +5268,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2821.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3329.39
-        },
-        {
-          "mileage": "Medium",
-          "price": 2821.52
-        },
-        {
-          "mileage": "High",
-          "price": 2370.08
-        }
-      ],
+      "tiers": {
+        "low": 3329.39,
+        "medium": 2821.52,
+        "high": 2370.08
+      },
       "year": "2003",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-vue-at-2.2l-opt-l61-fwd-m75.jpg",
@@ -7450,20 +5290,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2003",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-vue-mt-4-cylinder-from-vin-3s903336.jpg",
@@ -7481,20 +5312,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2003",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-saturn-vue-mt-4-cylinder-thru-vin-3s903335.jpg",
@@ -7512,20 +5334,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2604.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3073.61
-        },
-        {
-          "mileage": "Medium",
-          "price": 2604.75
-        },
-        {
-          "mileage": "High",
-          "price": 2187.99
-        }
-      ],
+      "tiers": {
+        "low": 3073.61,
+        "medium": 2604.75,
+        "high": 2187.99
+      },
       "year": "2004",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-vue-at-2.2l-opt-l61-awd-opt-m16.jpg",
@@ -7543,20 +5356,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2821.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3329.39
-        },
-        {
-          "mileage": "Medium",
-          "price": 2821.52
-        },
-        {
-          "mileage": "High",
-          "price": 2370.08
-        }
-      ],
+      "tiers": {
+        "low": 3329.39,
+        "medium": 2821.52,
+        "high": 2370.08
+      },
       "year": "2004",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-vue-at-2.2l-opt-l61-fwd-m75.jpg",
@@ -7574,20 +5378,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2004",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-vue-at-3.5l-opt-l66-awd-mj8.jpg",
@@ -7605,20 +5400,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2004",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-vue-at-3.5l-opt-l66-fwd-mj7.jpg",
@@ -7636,20 +5422,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2004",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-saturn-vue-mt-4-cylinder.jpg",
@@ -7667,20 +5444,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2005",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-vue-at-3.5l-opt-l66-fwd-mj7.jpg",
@@ -7698,20 +5466,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2005",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-vue-mt-4-cylinder.jpg",
@@ -7729,20 +5488,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 3128,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3691.04
-        },
-        {
-          "mileage": "Medium",
-          "price": 3128
-        },
-        {
-          "mileage": "High",
-          "price": 2627.52
-        }
-      ],
+      "tiers": {
+        "low": 3691.04,
+        "medium": 3128,
+        "high": 2627.52
+      },
       "year": "2005",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-vue-at-2.2l-opt-l61-awd-opt-m16.jpg",
@@ -7760,20 +5510,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2005",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-vue-at-2.2l-opt-l61-fwd-mn5.jpg",
@@ -7791,20 +5532,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2005",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-saturn-vue-at-3.5l-opt-l66-awd-mj8.jpg",
@@ -7822,20 +5554,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2006",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-vue-mt-4-cylinder.jpg",
@@ -7853,20 +5576,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2006",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-vue-at-3.5l-opt-l66-awd-mj8.jpg",
@@ -7884,20 +5598,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2006",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-vue-at-3.5l-opt-l66-fwd-mj7.jpg",
@@ -7915,20 +5620,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2006",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-saturn-vue-at-2.2l-opt-l61.jpg",
@@ -7946,20 +5642,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2007",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-vue-mt-4-cylinder.jpg",
@@ -7977,20 +5664,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2007",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-vue-at-2.2l-opt-l61.jpg",
@@ -8008,20 +5686,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2007",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-vue-at-2.4l-opt-lat.jpg",
@@ -8039,20 +5708,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1177.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1388.88
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177.02
-        },
-        {
-          "mileage": "High",
-          "price": 988.7
-        }
-      ],
+      "tiers": {
+        "low": 1388.88,
+        "medium": 1177.02,
+        "high": 988.7
+      },
       "year": "2007",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-vue-at-3.5l-awd-mj8.jpg",
@@ -8070,20 +5730,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2007",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2007-saturn-vue-at-3.5l-fwd-mj7.jpg",
@@ -8101,20 +5752,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-green-line-hybrid-from-1/07/08.jpg",
@@ -8132,20 +5774,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-green-line-hybrid-thru-1/06/08.jpg",
@@ -8163,20 +5796,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2829,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3338.22
-        },
-        {
-          "mileage": "Medium",
-          "price": 2829
-        },
-        {
-          "mileage": "High",
-          "price": 2376.36
-        }
-      ],
+      "tiers": {
+        "low": 3338.22,
+        "medium": 2829,
+        "high": 2376.36
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-red-line-awd-opt-mh4-from-10/08/08.jpg",
@@ -8194,20 +5818,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-red-line-awd-opt-mh4-thru-10/07/08.jpg",
@@ -8225,20 +5840,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-red-line-fwd-opt-mh2-from-10/08/08.jpg",
@@ -8256,20 +5862,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1926.94
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1371.72
-        }
-      ],
+      "tiers": {
+        "low": 1926.94,
+        "medium": 1633,
+        "high": 1371.72
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-red-line-fwd-opt-mh2-thru-10/07/08.jpg",
@@ -8287,20 +5884,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-xe-awd-opt-mh4-from-10/08/08.jpg",
@@ -8318,20 +5906,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 3053.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3602.84
-        },
-        {
-          "mileage": "Medium",
-          "price": 3053.25
-        },
-        {
-          "mileage": "High",
-          "price": 2564.73
-        }
-      ],
+      "tiers": {
+        "low": 3602.84,
+        "medium": 3053.25,
+        "high": 2564.73
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-xe-awd-opt-mh4-thru-10/07/08.jpg",
@@ -8349,20 +5928,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1147.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1353.6
-        },
-        {
-          "mileage": "Medium",
-          "price": 1147.12
-        },
-        {
-          "mileage": "High",
-          "price": 963.58
-        }
-      ],
+      "tiers": {
+        "low": 1353.6,
+        "medium": 1147.12,
+        "high": 963.58
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-xe-fwd-mn5-from-1/07-08-id-8emj.jpg",
@@ -8380,20 +5950,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-xe-fwd-mn5-thru-1/06/08-id-8elj.jpg",
@@ -8411,20 +5972,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 5445.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 6425.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 5445.25
-        },
-        {
-          "mileage": "High",
-          "price": 4574.01
-        }
-      ],
+      "tiers": {
+        "low": 6425.4,
+        "medium": 5445.25,
+        "high": 4574.01
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-xr-awd-opt-mh4-from-10/08/08.jpg",
@@ -8442,20 +5994,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1926.94
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1371.72
-        }
-      ],
+      "tiers": {
+        "low": 1926.94,
+        "medium": 1633,
+        "high": 1371.72
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-xr-awd-opt-mh4-thru-10/07/08.jpg",
@@ -8473,20 +6016,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-xr-fwd-opt-mh2-from-10/08/08.jpg",
@@ -8504,20 +6038,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1926.94
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1371.72
-        }
-      ],
+      "tiers": {
+        "low": 1926.94,
+        "medium": 1633,
+        "high": 1371.72
+      },
       "year": "2008",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-saturn-vue-at-xr-fwd-opt-mh2-thru-10/07/08.jpg",
@@ -8535,20 +6060,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1087.32,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1283.04
-        },
-        {
-          "mileage": "Medium",
-          "price": 1087.32
-        },
-        {
-          "mileage": "High",
-          "price": 913.35
-        }
-      ],
+      "tiers": {
+        "low": 1283.04,
+        "medium": 1087.32,
+        "high": 913.35
+      },
       "year": "2009",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-vue-at-2.4l-vin-p-8th-digit-opt-le5.jpg",
@@ -8566,20 +6082,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1535.82,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1812.27
-        },
-        {
-          "mileage": "Medium",
-          "price": 1535.82
-        },
-        {
-          "mileage": "High",
-          "price": 1290.09
-        }
-      ],
+      "tiers": {
+        "low": 1812.27,
+        "medium": 1535.82,
+        "high": 1290.09
+      },
       "year": "2009",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-vue-at-2.4l-vin-z-8th-digit-opt-lat.jpg",
@@ -8597,20 +6104,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "2009",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-vue-at-3.5l.jpg",
@@ -8628,20 +6126,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2009",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-vue-at-3.6l-vin-7-8th-digit-opt-ly7-awd.jpg",
@@ -8659,20 +6148,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2009",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-vue-at-3.6l-vin-7-8th-digit-opt-ly7-fwd.jpg",
@@ -8690,20 +6170,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2009",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-saturn-vue-at-3.6l-vin-b-8th-digit-opt-lcs.jpg",
@@ -8721,20 +6192,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1087.32,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1283.04
-        },
-        {
-          "mileage": "Medium",
-          "price": 1087.32
-        },
-        {
-          "mileage": "High",
-          "price": 913.35
-        }
-      ],
+      "tiers": {
+        "low": 1283.04,
+        "medium": 1087.32,
+        "high": 913.35
+      },
       "year": "2010",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-saturn-vue-at-2.4l.jpg",
@@ -8752,20 +6214,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2010",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-saturn-vue-at-3.5l.jpg",
@@ -8783,20 +6236,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 1932,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2279.76
-        },
-        {
-          "mileage": "Medium",
-          "price": 1932
-        },
-        {
-          "mileage": "High",
-          "price": 1622.88
-        }
-      ],
+      "tiers": {
+        "low": 2279.76,
+        "medium": 1932,
+        "high": 1622.88
+      },
       "year": "2010",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-saturn-vue-at-3.6l-awd.jpg",
@@ -8814,20 +6258,11 @@
       "brand": "Saturn",
       "category": "transmission",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "2010",
       "model": "Vue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-saturn-vue-at-3.6l-fwd.jpg",

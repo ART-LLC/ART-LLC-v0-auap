@@ -9,20 +9,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1988",
       "model": "Charade Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1988-daihatsu-charade-engine-side.jpg",
@@ -41,20 +32,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1989",
       "model": "Charade Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1989-daihatsu-charade-engine-side.jpg",
@@ -73,20 +55,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "1989",
       "model": "Charade Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1989-daihatsu-charade-engine-side.jpg",
@@ -105,20 +78,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1990",
       "model": "Charade Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1990-daihatsu-charade-engine-side.jpg",
@@ -137,20 +101,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "1990",
       "model": "Charade Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1990-daihatsu-charade-engine-side.jpg",
@@ -169,20 +124,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1991",
       "model": "Charade Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1991-daihatsu-charade-engine-side.jpg",
@@ -201,20 +147,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "1991",
       "model": "Charade Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1991-daihatsu-charade-engine-side.jpg",
@@ -233,20 +170,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1992",
       "model": "Charade Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-daihatsu-charade-engine-side.jpg",
@@ -265,20 +193,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "1992",
       "model": "Charade Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-daihatsu-charade-engine-side.jpg",
@@ -297,20 +216,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1783,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1925
-        },
-        {
-          "mileage": "Medium",
-          "price": 1783
-        },
-        {
-          "mileage": "High",
-          "price": 1479
-        }
-      ],
+      "tiers": {
+        "low": 1925,
+        "medium": 1783,
+        "high": 1479
+      },
       "year": "1990",
       "model": "Rocky Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1990-daihatsu-rocky-engine-side.jpg",
@@ -329,20 +239,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1783,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1925
-        },
-        {
-          "mileage": "Medium",
-          "price": 1783
-        },
-        {
-          "mileage": "High",
-          "price": 1479
-        }
-      ],
+      "tiers": {
+        "low": 1925,
+        "medium": 1783,
+        "high": 1479
+      },
       "year": "1991",
       "model": "Rocky Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1991-daihatsu-rocky-engine-side.jpg",
@@ -361,20 +262,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1783,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1925
-        },
-        {
-          "mileage": "Medium",
-          "price": 1783
-        },
-        {
-          "mileage": "High",
-          "price": 1479
-        }
-      ],
+      "tiers": {
+        "low": 1925,
+        "medium": 1783,
+        "high": 1479
+      },
       "year": "1992",
       "model": "Rocky Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-daihatsu-rocky-engine-side.jpg",
@@ -393,20 +285,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "1988",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1988-daihatsu-charade-transmission-side.jpg",
@@ -425,20 +308,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1989",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1989-daihatsu-charade-transmission-side.jpg",
@@ -457,20 +331,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "1989",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1989-daihatsu-charade-transmission-side.jpg",
@@ -489,20 +354,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1989",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1989-daihatsu-charade-transmission-side.jpg",
@@ -521,20 +377,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1990",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1990-daihatsu-charade-transmission-side.jpg",
@@ -553,20 +400,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "1990",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1990-daihatsu-charade-transmission-side.jpg",
@@ -585,20 +423,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1990",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1990-daihatsu-charade-transmission-side.jpg",
@@ -617,20 +446,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1991",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-daihatsu-charade-transmission-side.jpg",
@@ -649,20 +469,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "1991",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-daihatsu-charade-transmission-side.jpg",
@@ -681,20 +492,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1991",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-daihatsu-charade-transmission-side.jpg",
@@ -713,20 +515,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1992",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-daihatsu-charade-transmission-side.jpg",
@@ -745,20 +538,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "1992",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-daihatsu-charade-transmission-side.jpg",
@@ -777,20 +561,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1992",
       "model": "Charade Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-daihatsu-charade-transmission-side.jpg",
@@ -809,20 +584,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "year": "1990",
       "model": "Rocky Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1990-daihatsu-rocky-transmission-side.jpg",
@@ -841,20 +607,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1764
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1355
-        }
-      ],
+      "tiers": {
+        "low": 1764,
+        "medium": 1633,
+        "high": 1355
+      },
       "year": "1991",
       "model": "Rocky Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-daihatsu-rocky-transmission-side.jpg",
@@ -873,20 +630,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "1991",
       "model": "Rocky Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-daihatsu-rocky-transmission-side.jpg",
@@ -905,20 +653,11 @@
       "brand": "Daihatsu",
       "category": "part",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "year": "1992",
       "model": "Rocky Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-daihatsu-rocky-transmission-side.jpg",
