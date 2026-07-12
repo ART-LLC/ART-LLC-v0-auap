@@ -78,10 +78,10 @@ export function getBrandProductBySlug(brand: string, slug: string): BrandProduct
     slugIndexCache.set(brand, index)
   }
 
-  // The unsuffixed URL is the base 2003 CL engine listing (P-1).
-  // Type-S automatic and manual configurations keep their explicit P-2/P-3 URLs.
+  // The unsuffixed URL highlights the 2003 CL Type-S automatic listing (P-2).
+  // Base and Type-S manual configurations keep their explicit P-1/P-3 URLs.
   if (brand === "acura" && slug === "2003-acura-cl-engine") {
-    return index.get("2003-acura-cl-engine-p-1")
+    return index.get("2003-acura-cl-engine-p-2")
   }
 
   return index.get(slug)
