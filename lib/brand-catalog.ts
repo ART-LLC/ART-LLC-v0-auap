@@ -78,9 +78,12 @@ export function getBrandProductBySlug(brand: string, slug: string): BrandProduct
     slugIndexCache.set(brand, index)
   }
 
-  // The unsuffixed URL highlights the 2003 CL Type-S automatic listing (P-2).
-  // Base and Type-S manual configurations keep their explicit P-1/P-3 URLs.
-  if (brand === "acura" && slug === "2003-acura-cl-engine") {
+  // The primary and previously shared 2003 CL engine URLs highlight the
+  // selected Type-S automatic listing (P-2) at the correct $900 medium price.
+  if (
+    brand === "acura" &&
+    (slug === "2003-acura-cl-engine" || slug === "2003-acura-cl-engine-p-3")
+  ) {
     return index.get("2003-acura-cl-engine-p-2")
   }
 
