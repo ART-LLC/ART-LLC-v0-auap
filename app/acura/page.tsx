@@ -1,7 +1,12 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, type FormEvent } from 'react'
+import { useRouter } from 'next/navigation'
+import { SearchIcon } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Field, FieldDescription, FieldLabel } from '@/components/ui/field'
+import { Input } from '@/components/ui/input'
 import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
@@ -18,6 +23,10 @@ function baseModelName(key: string): string {
 }
 
 export default function AcuraProductsPage() {
+  const router = useRouter()
+  const [searchQuery, setSearchQuery] = useState('')
+  const [searchFocused, setSearchFocused] = useState(false)
+
   // Consolidate year-model groups into unique base models (CL, MDX, TL...),
   // while preserving each unique canonical inventory record.
   const { modelsList, byModel } = useMemo(() => {
@@ -33,8 +42,51 @@ export default function AcuraProductsPage() {
   }, [])
 
   const [selectedModel, setSelectedModel] = useState(modelsList[0] || 'Acura')
-  const currentModelData = useMemo(() => byModel[selectedModel] || {}, [selectedModel, byModel])
+  const normalizedQuery = searchQuery.trim().toLowerCase()
+  const suggestions = useMemo(() => {
+    if (normalizedQuery.length < 2) return []
+
+    return acuraProducts
+      .filter((product) =>
+        [product.name, product.model, product.year, product.category, product.compatibility, product.description]
+          .filter(Boolean)
+          .join(' ')
+          .toLowerCase()
+          .includes(normalizedQuery),
+      )
+      .slice(0, 6)
+  }, [normalizedQuery])
+
+  const currentModelData = useMemo(() => {
+    const modelData = byModel[selectedModel] || {}
+    if (!normalizedQuery) return modelData
+
+    return Object.fromEntries(
+      Object.entries(modelData)
+        .map(([category, products]) => [
+          category,
+          products.filter((product) =>
+            [product.name, product.model, product.year, product.category, product.compatibility, product.description]
+              .filter(Boolean)
+              .join(' ')
+              .toLowerCase()
+              .includes(normalizedQuery),
+          ),
+        ])
+        .filter(([, products]) => (products as AcuraProduct[]).length > 0),
+    )
+  }, [selectedModel, byModel, normalizedQuery])
   const categories = Object.keys(currentModelData)
+
+  function selectSuggestion(product: AcuraProduct) {
+    setSearchFocused(false)
+    router.push(getAcuraProductUrl(product))
+  }
+
+  function handleSearch(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    if (suggestions[0]) selectSuggestion(suggestions[0])
+  }
 
   return (
     <>
@@ -50,6 +102,85 @@ export default function AcuraProductsPage() {
             Premium quality used Acura parts from our 2,000+ yard network. Browse {acuraProducts.length} products across {modelsList.length} vehicle models with verified pricing and warranty.
           </p>
         </div>
+
+        <form onSubmit={handleSearch} role="search" className="mx-auto mb-10 max-w-3xl">
+          <Field>
+            <FieldLabel htmlFor="acura-parts-search">Search Acura parts inventory</FieldLabel>
+            <div className="relative">
+              <div className="flex flex-col gap-2 sm:flex-row">
+                <div className="relative flex-1">
+                  <SearchIcon aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 size-5 -translate-y-1/2 text-muted-foreground" />
+                  <Input
+                    id="acura-parts-search"
+                    type="search"
+                    role="combobox"
+                    value={searchQuery}
+                    onChange={(event) => setSearchQuery(event.target.value)}
+                    onFocus={() => setSearchFocused(true)}
+                    onBlur={() => window.setTimeout(() => setSearchFocused(false), 150)}
+                    onKeyDown={(event) => {
+                      if (event.nativeEvent.isComposing || event.keyCode === 229) return
+                      if (event.key === 'Escape') setSearchFocused(false)
+                    }}
+                    placeholder="Try “2012 MDX engine” or “TL transmission”"
+                    aria-autocomplete="list"
+                    aria-controls="acura-search-suggestions"
+                    aria-expanded={searchFocused && normalizedQuery.length >= 2}
+                    autoComplete="off"
+                    className="h-12 pl-10 pr-10"
+                  />
+                </div>
+                <Button type="submit" size="lg" disabled={!suggestions.length}>
+                  <SearchIcon data-icon="inline-start" />
+                  Search Acura Parts
+                </Button>
+              </div>
+
+              {searchFocused && normalizedQuery.length >= 2 && (
+                <div
+                  id="acura-search-suggestions"
+                  role="listbox"
+                  aria-label="Acura part suggestions"
+                  className="absolute inset-x-0 top-full z-20 mt-2 overflow-hidden rounded-lg border border-border bg-popover text-popover-foreground shadow-lg sm:right-48"
+                >
+                  {suggestions.length > 0 ? (
+                    <div className="flex flex-col p-2">
+                      <p className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                        Acura inventory suggestions
+                      </p>
+                      {suggestions.map((product) => (
+                        <button
+                          key={product.id}
+                          type="button"
+                          role="option"
+                          aria-selected="false"
+                          onMouseDown={(event) => event.preventDefault()}
+                          onClick={() => selectSuggestion(product)}
+                          className="flex items-center justify-between gap-4 rounded-md px-3 py-3 text-left transition-colors hover:bg-accent focus-visible:bg-accent focus-visible:outline-none"
+                        >
+                          <span className="min-w-0">
+                            <span className="block truncate text-sm font-semibold">{product.name}</span>
+                            <span className="block truncate text-xs text-muted-foreground">
+                              {product.year} Acura {product.model} · {product.category}
+                            </span>
+                          </span>
+                          <span className="shrink-0 text-sm font-bold text-primary">${product.price}</span>
+                        </button>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="p-4 text-sm text-muted-foreground">
+                      No Acura parts match that search. Try a model, year, engine, or transmission.
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
+            <FieldDescription>
+              Suggestions are limited to the Acura inventory on this page. Select a suggestion to open its exact listing.
+            </FieldDescription>
+          </Field>
+        </form>
 
         {/* Model Selection */}
         <div className="mb-8">
