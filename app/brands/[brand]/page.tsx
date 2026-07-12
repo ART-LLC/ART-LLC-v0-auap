@@ -159,11 +159,17 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
                     href={getBrandProductUrl(brand, product)}
                     className="group flex flex-col overflow-hidden rounded-xl border border-border/40 bg-card transition-all hover:border-primary/50 hover:shadow-lg"
                   >
-                    <div className="relative h-40 w-full bg-muted">
+                    <div className="relative aspect-[4/3] w-full bg-muted">
                       <BrandProductImage
                         src={product.imageUrl}
                         fallbackSrc={resolveBrandPartImage(product)}
                         alt={product.name}
+                        sku={product.mpn || product.id}
+                        brand={label}
+                        year={product.year}
+                        model={product.model}
+                        category={product.category}
+                        compact
                       />
                       <Badge className="absolute top-3 left-3 capitalize">{product.category || 'Part'}</Badge>
                     </div>

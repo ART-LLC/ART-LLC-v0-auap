@@ -128,31 +128,26 @@ export default async function BrandProductPage({ params }: PageProps) {
         {/* Product Hero */}
         <section className="py-12 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-12">
               {/* Image */}
-              <div className="relative w-full aspect-square bg-muted rounded-xl overflow-hidden border border-border/40">
+              <div className="relative w-full aspect-[4/3] bg-muted rounded-2xl overflow-hidden border border-border/40 shadow-lg lg:sticky lg:top-28">
                 <BrandProductImage
                   src={product.imageUrl}
                   fallbackSrc={fallbackImage}
                   alt={product.name}
+                  sku={product.mpn || product.id}
+                  brand={label}
+                  year={product.year}
+                  model={product.model}
+                  category={product.category}
                   priority
                 />
                 <Badge className="absolute top-4 left-4 capitalize">{product.category || 'Part'}</Badge>
                 <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">In Stock</Badge>
-                <div className="absolute inset-x-0 bottom-0 bg-card/90 px-4 py-2 flex items-center justify-between gap-2">
-                  <p className="text-xs font-medium text-muted-foreground line-clamp-1">
-                    Representative image — verify VIN/fitment before purchase
-                  </p>
-                  <a
-                    href={imageSearchUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold text-primary hover:underline"
-                  >
-                    <ImageIcon className="w-3.5 h-3.5" />
-                    View real photos
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
+                <div className="absolute inset-x-4 top-14 flex justify-end">
+                  <span className="rounded-full bg-card/95 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-card-foreground shadow-sm">
+                    Representative photo
+                  </span>
                 </div>
               </div>
 
@@ -276,6 +271,12 @@ export default async function BrandProductPage({ params }: PageProps) {
                           src={rp.imageUrl}
                           fallbackSrc={resolveBrandPartImage(rp)}
                           alt={rp.name}
+                          sku={rp.mpn || rp.id}
+                          brand={label}
+                          year={rp.year}
+                          model={rp.model}
+                          category={rp.category}
+                          compact
                         />
                       </div>
                       <CardHeader className="pb-2">
