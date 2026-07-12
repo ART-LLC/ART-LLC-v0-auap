@@ -15,6 +15,7 @@ import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
 import { MileagePriceSelector } from '@/components/acura/mileage-price-selector'
+import { SeoBacklinks } from '@/components/seo-backlinks'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRight, Star, Shield, Truck, MapPin, Phone, MessageSquare } from 'lucide-react'
@@ -398,6 +399,9 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
 
         {/* FAQ */}
         <ProductFAQ productType={product.category} />
+
+        {/* Keyword-rich internal backlinks for Google indexing */}
+        <SeoBacklinks make={product.make} partType={product.category} />
       </main>
       <Footer />
     </>

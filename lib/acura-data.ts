@@ -73,26 +73,22 @@ export function getCanonicalAcuraSlug(product: Pick<RawAcuraProduct, "slug" | "i
   return `${base}-${product.id.toLowerCase()}`
 }
 
-// Displayed prices carry a 15% markup over the reference sheet values.
-const PRICE_MARKUP = 1.15
-
-function clampPrice(price: number | undefined): number | undefined {
-  if (typeof price !== "number" || !Number.isFinite(price)) return undefined
-  // Clamp to the display range first, then apply the 15% markup.
-  const clamped = Math.min(1400, Math.max(40, price))
-  return Math.round(clamped * PRICE_MARKUP)
+// Prices come directly from the Acura pricing sheet — no markup or clamping.
+function sanitizePrice(price: number | undefined): number | undefined {
+  if (typeof price !== "number" || !Number.isFinite(price) || price <= 0) return undefined
+  return Math.round(price)
 }
 
 function normalizeProduct(product: RawAcuraProduct): AcuraProduct {
   const { model, year } = parseAcuraModelYear(product)
   return {
     ...product,
-    price: clampPrice(product.price) ?? 40,
+    price: sanitizePrice(product.price) ?? 0,
     pricingTiers: product.pricingTiers
       ? {
-          low: clampPrice(product.pricingTiers.low),
-          medium: clampPrice(product.pricingTiers.medium),
-          high: clampPrice(product.pricingTiers.high),
+          low: sanitizePrice(product.pricingTiers.low),
+          medium: sanitizePrice(product.pricingTiers.medium),
+          high: sanitizePrice(product.pricingTiers.high),
         }
       : undefined,
     canonicalSlug: getCanonicalAcuraSlug(product),

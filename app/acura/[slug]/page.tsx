@@ -18,6 +18,7 @@ import { getAcuraProductBySlug, getAcuraProductUrl, getRelatedAcuraProducts, res
 import { getAcuraPartSpecs } from '@/lib/acura-part-specs'
 import { AcuraPartsSearch } from '@/components/acura/acura-parts-search'
 import { MileagePriceSelector } from '@/components/acura/mileage-price-selector'
+import { SeoBacklinks } from '@/components/seo-backlinks'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight, ImageIcon, ExternalLink } from 'lucide-react'
 
 export default function AcuraProductPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -289,6 +290,9 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
 
         {/* FAQ */}
         <ProductFAQ productType={product.category} />
+
+        {/* Keyword-rich internal backlinks for Google indexing */}
+        <SeoBacklinks make="Acura" partType={product.category} />
       </main>
       <Footer />
     </>

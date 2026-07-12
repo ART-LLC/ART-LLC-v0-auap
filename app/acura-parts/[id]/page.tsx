@@ -15,6 +15,7 @@ import { useRouter } from 'next/navigation'
 import { ProductCardActions } from '@/components/products/product-card-actions'
 import { MileagePriceSelector } from '@/components/acura/mileage-price-selector'
 import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
+import { SeoBacklinks } from '@/components/seo-backlinks'
 
 export default function AcuraPartDetailPage() {
   const params = useParams()
@@ -336,6 +337,10 @@ export default function AcuraPartDetailPage() {
           )}
         </div>
       </div>
+
+      {/* Keyword-rich internal backlinks for Google indexing */}
+      <SeoBacklinks make="Acura" partType={part.partType} />
+
       <Footer />
     </main>
   )

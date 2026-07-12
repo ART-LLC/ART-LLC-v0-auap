@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { PART_CATEGORIES, CAR_MAKES } from '@/lib/data'
+import { acuraProducts, getAcuraProductUrl } from '@/lib/acura-data'
 
 function slugify(text: string) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
@@ -58,6 +59,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Make pages
   const makePages = CAR_MAKES.map((make) => `/makes/${slugify(make)}`)
 
+  // All Acura product pages from the pricing sheet (used engines, used
+  // transmissions, and other parts) so Google indexes every product URL.
+  const acuraProductPages = acuraProducts.map((product) => getAcuraProductUrl(product))
+
   // Combine all URLs
   const allUrls = [
     ...mainPages,
@@ -65,12 +70,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...categoryPages,
     ...partPages,
     ...makePages,
+    ...acuraProductPages,
   ]
 
   return allUrls.map((url) => ({
     url: `${baseUrl}${url}`,
     lastModified: new Date(),
-    changeFrequency: url === '' ? 'daily' : url.includes('/parts/') ? 'weekly' : 'monthly',
-    priority: url === '' ? 1 : url.includes('/parts/') ? 0.8 : 0.6,
+    changeFrequency:
+      url === '' ? 'daily' : url.includes('/parts/') || url.startsWith('/acura/') ? 'weekly' : 'monthly',
+    priority: url === '' ? 1 : url.includes('/parts/') || url.startsWith('/acura/') ? 0.8 : 0.6,
   }))
 }
