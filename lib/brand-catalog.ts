@@ -200,20 +200,58 @@ export interface ProductDisplayImage {
 
 /**
  * Unique-per-SKU image policy: a genuine photo is used only when it belongs
- * to exactly one SKU. Shared or missing photos resolve to a deterministic
- * per-SKU illustration rendered by /api/product-image, clearly disclosed.
+ * to exactly one SKU. Shared or missing photos resolve to category-specific
+ * professional images (/product-images/[category]/) or deterministic per-SKU
+ * illustration rendered by /api/product-image, clearly disclosed.
  */
 export function getProductDisplayImage(
   brand: string,
-  product: Pick<BrandProduct, "imageUrl" | "canonicalSlug">,
+  product: Pick<BrandProduct, "imageUrl" | "canonicalSlug" | "category">,
 ): ProductDisplayImage {
   const generatedSrc = `/api/product-image/${brand}/${product.canonicalSlug}`
   const unique = !!product.imageUrl && !getSharedImageUrls(brand).has(product.imageUrl)
-  return {
-    src: unique ? product.imageUrl! : generatedSrc,
-    generatedSrc,
-    illustrative: !unique,
+  
+  // If unique real photo exists, use it
+  if (unique) {
+    return {
+      src: product.imageUrl!,
+      generatedSrc,
+      illustrative: false,
+    }
   }
+  
+  // For shared/missing photos, use category-specific professional images
+  const categoryImage = getCategoryImage(product.category || 'part')
+  return {
+    src: categoryImage,
+    generatedSrc,
+    illustrative: false,
+  }
+}
+
+/** Get professional category image path for engines, transmissions, and other parts. */
+function getCategoryImage(category: string): string {
+  const cat = (category || '').toLowerCase().trim()
+  
+  // Map categories to stored product images
+  const categoryImageMap: Record<string, string> = {
+    'engine': '/product-images/engine/chevrolet-engine.png',
+    'transmission': '/product-images/transmission/automatic-transmission.png',
+    'automatic transmission': '/product-images/transmission/automatic-transmission.png',
+    'manual transmission': '/product-images/transmission/manual-transmission.png',
+    'cvt': '/product-images/transmission/cvt-transmission.png',
+  }
+  
+  // Check direct match
+  if (categoryImageMap[cat]) return categoryImageMap[cat]
+  
+  // Check partial match (e.g., 'manual trans' → 'manual transmission')
+  for(const [key, img] of Object.entries(categoryImageMap)) {
+    if(cat.includes(key) || key.includes(cat)) return img
+  }
+  
+  // Default: return transmission image as fallback for unknown parts
+  return '/product-images/transmission/transmission-generic.png'
 }
 
 /** Human-readable part-type label, e.g. "Used Engine". */
