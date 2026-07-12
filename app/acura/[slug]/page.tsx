@@ -87,9 +87,13 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground flex-wrap">
               <Link href="/" className="hover:text-primary transition-colors">Home</Link>
               <ChevronRight className="w-3 h-3" />
-              <Link href="/acura" className="hover:text-primary transition-colors">Acura Parts</Link>
+              <Link href="/acura" className="hover:text-primary transition-colors">Acura</Link>
               <ChevronRight className="w-3 h-3" />
-              <span className="text-foreground font-medium line-clamp-1">{product.name}</span>
+              <Link href="/parts" className="hover:text-primary transition-colors">Parts</Link>
+              <ChevronRight className="w-3 h-3" />
+              <Link href={`/parts?category=${encodeURIComponent(product.category)}`} className="hover:text-primary transition-colors capitalize">{product.category}</Link>
+              <ChevronRight className="w-3 h-3" />
+              <span className="text-foreground font-medium line-clamp-2">{product.name}</span>
             </nav>
           </div>
         </div>
