@@ -39,15 +39,6 @@ export default function BrandsDirectoryPage() {
               {totalParts.toLocaleString()}+ used OEM engines, transmissions, and parts priced directly
               from our live inventory sheets. Pick your brand to see exact mileage-based pricing.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Link
-                href="/shop"
-                className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
-              >
-                Shop Quality Auto Parts
-                <ChevronRight className="w-4 h-4" />
-              </Link>
-            </div>
           </div>
         </section>
 
