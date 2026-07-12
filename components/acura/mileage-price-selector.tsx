@@ -26,6 +26,20 @@ export function MileagePriceSelector({ basePrice, tiers, onTierChange }: Mileage
   const priceFor = (tier: TierKey): number => tiers?.[tier] ?? basePrice
   const selectedPrice = priceFor(selected)
 
+  // Only render the tier picker when real (sheet-provided) tier pricing exists.
+  // Without it we show a single price — never duplicated placeholder tiers.
+  const hasRealTiers =
+    typeof tiers?.low === 'number' && typeof tiers?.medium === 'number' && typeof tiers?.high === 'number'
+
+  if (!hasRealTiers) {
+    return (
+      <div className="flex items-baseline gap-3">
+        <span className="text-4xl font-black text-primary">${basePrice.toLocaleString()}</span>
+        <span className="text-sm text-muted-foreground">+ free shipping</span>
+      </div>
+    )
+  }
+
   function pick(tier: TierKey) {
     setSelected(tier)
     onTierChange?.(tier, priceFor(tier))

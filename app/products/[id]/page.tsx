@@ -75,13 +75,6 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
     tags: ['Engine', 'Honda', 'Civic', '2015', 'Used', 'Complete'],
   }
 
-  // Three-tier mileage pricing derived from the sheet's ratios (low ≈ +8.3%, high ≈ −16.7%).
-  const pricingTiers = {
-    low: Math.round(product.price * 1.083),
-    medium: Math.round(product.price),
-    high: Math.round(product.price * 0.833),
-  }
-
   const relatedProducts = [
     { id: 1, name: 'Transmission Assembly', price: 849.99, image: '/images/product-transmission-1.png' },
     { id: 2, name: 'Radiator Cooling System', price: 199.99, image: '/images/product-radiator-1.png' },
@@ -182,11 +175,10 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                   </div>
                 </div>
 
-                {/* Interactive pricing by mileage — click a tier to change the price */}
+                {/* Price — tier picker renders only when real sheet tiers exist */}
                 <div className="space-y-3">
                   <MileagePriceSelector
                     basePrice={product.price}
-                    tiers={pricingTiers}
                     onTierChange={(_, price) => setSelectedPrice(price)}
                   />
 
@@ -211,7 +203,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                   <ProductCardActions
                     productId={product.id}
                     productName={product.name}
-                    productPrice={selectedPrice ?? pricingTiers.medium}
+                    productPrice={selectedPrice ?? product.price}
                     productImage={product.image}
                     productType={product.category}
                     make={product.make}
