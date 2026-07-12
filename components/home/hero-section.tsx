@@ -33,8 +33,7 @@ export function HeroSection() {
               {/* Ultra wordmark */}
               <BrandWordmark 
                 size="hero-5xl" 
-                className="text-center items-center on-dark" 
-                style={{ fontWeight: 700, fontFamily: "inherit", fontSize: "14px", gap: "4px" }}
+                className="text-center items-center on-dark"
               />
             </div>
 

@@ -9,6 +9,7 @@ export interface CartItem {
   image?: string
   make?: string
   partType?: string
+  shippingCost?: number
 }
 
 interface CartStore {

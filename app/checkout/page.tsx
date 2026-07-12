@@ -36,8 +36,9 @@ export default function CheckoutPage() {
   const [isProcessing, setIsProcessing] = useState(false)
 
   const totalPrice = getTotalPrice()
+  const shipping = items.reduce((total, item) => total + (item.shippingCost ?? 0) * item.quantity, 0)
   const tax = totalPrice * 0.08
-  const finalTotal = totalPrice + tax
+  const finalTotal = totalPrice + shipping + tax
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -127,7 +128,7 @@ export default function CheckoutPage() {
                   {/* Shipping Info */}
                   <div className="p-6 border border-white/10 rounded-lg bg-white/5">
                     <div className="flex items-center gap-3 mb-6">
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${step === 'shipping' || step === 'payment' || step === 'confirmation' ? 'bg-blue-500 text-white' : 'bg-white/10 text-foreground/60'}`}>
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${step === 'shipping' || step === 'payment' ? 'bg-blue-500 text-white' : 'bg-white/10 text-foreground/60'}`}>
                         1
                       </div>
                       <h2 className="text-xl font-bold">Shipping Information</h2>
@@ -194,7 +195,7 @@ export default function CheckoutPage() {
                       </div>
                     )}
 
-                    {(step === 'payment' || step === 'confirmation' as const) && (
+                    {step === 'payment' && (
                       <div className="text-sm text-foreground/60 space-y-1">
                         <p>{formData.firstName} {formData.lastName}</p>
                         <p>{formData.address}</p>
@@ -245,9 +246,6 @@ export default function CheckoutPage() {
                       </div>
                     )}
 
-                    {step === 'confirmation' && (
-                      <p className="text-sm text-foreground/60">Payment confirmed</p>
-                    )}
                   </div>
                 </div>
               </div>
@@ -275,7 +273,7 @@ export default function CheckoutPage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-foreground/60">Shipping</span>
-                      <span className="text-green-400">FREE</span>
+                      <span className={shipping > 0 ? '' : 'text-green-400'}>${shipping.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-foreground/60">Tax (8%)</span>

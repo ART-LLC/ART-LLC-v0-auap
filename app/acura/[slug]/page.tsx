@@ -14,7 +14,7 @@ import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 import { PartRecommendations } from '@/components/ai/part-recommendations'
-import { getAcuraProductBySlug, getRelatedAcuraProducts, resolveAcuraImage } from '@/lib/acura-data'
+import { getAcuraProductBySlug, getAcuraProductUrl, getRelatedAcuraProducts, resolveAcuraImage } from '@/lib/acura-data'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight } from 'lucide-react'
 
 export default function AcuraProductPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -62,8 +62,11 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                 />
                 <Badge className="absolute top-4 left-4 capitalize">{product.category}</Badge>
                 {product.availability && (
-                  <Badge className="absolute top-4 right-4 bg-green-600 text-white capitalize">{product.availability}</Badge>
+                  <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground capitalize">{product.availability}</Badge>
                 )}
+                <p className="absolute inset-x-0 bottom-0 bg-card/90 px-4 py-2 text-center text-xs font-medium text-muted-foreground">
+                  {product.imageLabel}
+                </p>
               </div>
 
               {/* Details */}
@@ -94,7 +97,7 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                   </div>
                   <div className="bg-card rounded-lg p-3 border border-border/40">
                     <div className="text-xs text-muted-foreground">Shipping</div>
-                    <div className="font-semibold text-foreground">{product.shipping || 'Free Shipping'}</div>
+                    <div className="font-semibold text-foreground">{product.shipping}</div>
                   </div>
                   <div className="bg-card rounded-lg p-3 border border-border/40">
                     <div className="text-xs text-muted-foreground">Fits</div>
@@ -124,7 +127,7 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                 {/* Price */}
                 <div className="flex items-baseline gap-3">
                   <span className="text-4xl font-black text-primary">{priceDisplay}</span>
-                  <span className="text-sm text-muted-foreground">+ free shipping</span>
+                  <span className="text-sm text-muted-foreground">+ {product.shipping} shipping</span>
                 </div>
 
                 {/* Actions */}
@@ -146,7 +149,7 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Truck className="w-5 h-5 text-primary shrink-0" />
-                    <span>Free shipping</span>
+                    <span>{product.shipping} shipping</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <BadgeCheck className="w-5 h-5 text-primary shrink-0" />
@@ -172,7 +175,7 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
               <h2 className="text-2xl font-black text-foreground mb-6">Related Acura Parts</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {related.map((rp) => (
-                  <Link key={rp.id} href={`/acura/${rp.slug}`}>
+                  <Link key={rp.id} href={getAcuraProductUrl(rp)}>
                     <Card className="hover:shadow-lg hover:border-primary/50 transition-all overflow-hidden h-full">
                       <div className="relative w-full h-40 bg-muted">
                         <Image src={resolveAcuraImage(rp)} alt={rp.name} fill unoptimized className="object-cover" />

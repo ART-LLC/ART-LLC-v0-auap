@@ -2,6 +2,8 @@ import {
   acuraProducts,
   resolveAcuraImage,
   getRelatedAcuraProducts,
+  getAcuraProductUrl,
+  parseAcuraModelYear,
   type AcuraProduct,
 } from "@/lib/acura-data"
 
@@ -25,18 +27,8 @@ export interface CatalogHit {
   url: string
 }
 
-/** Pull the model + year out of a product name like "2003 Acura CL Engine - ...". */
-function parseModelYear(product: AcuraProduct): { model: string; year: string } {
-  const name = product.name || ""
-  const yearMatch = name.match(/\b(19|20)\d{2}\b/)
-  const year = yearMatch ? yearMatch[0] : ""
-  const modelMatch = name.match(/acura\s+([a-z0-9-]+)/i)
-  const model = modelMatch ? modelMatch[1].toUpperCase() : ""
-  return { model, year }
-}
-
 export function toCatalogHit(product: AcuraProduct): CatalogHit {
-  const { model, year } = parseModelYear(product)
+  const { model, year } = parseAcuraModelYear(product)
   return {
     id: product.id,
     name: product.name,
@@ -53,7 +45,7 @@ export function toCatalogHit(product: AcuraProduct): CatalogHit {
     condition: product.condition,
     availability: product.availability,
     image: resolveAcuraImage(product),
-    url: `/acura/${product.slug}`,
+    url: getAcuraProductUrl(product),
   }
 }
 
@@ -134,7 +126,7 @@ export function getCatalogFacets(): { models: string[]; categories: string[] } {
   const models = new Set<string>()
   const categories = new Set<string>()
   for (const product of acuraProducts) {
-    const { model } = parseModelYear(product)
+    const { model } = parseAcuraModelYear(product)
     if (model) models.add(model)
     if (product.category) categories.add(product.category)
   }
@@ -160,7 +152,7 @@ export function recommendParts(productId: string, limit = 4): CatalogHit[] {
   const related = getRelatedAcuraProducts(product, limit * 2).map(toCatalogHit)
 
   // Pull in complementary categories for the same model when available.
-  const { model } = parseModelYear(product)
+  const { model } = parseAcuraModelYear(product)
   const categoryKey = Object.keys(COMPLEMENTARY_CATEGORIES).find((k) =>
     product.category.toLowerCase().includes(k),
   )
@@ -169,7 +161,7 @@ export function recommendParts(productId: string, limit = 4): CatalogHit[] {
   const complementary = acuraProducts
     .filter((p) => {
       if (p.id === product.id) return false
-      const { model: m } = parseModelYear(p)
+      const { model: m } = parseAcuraModelYear(p)
       const catMatch = complementaryCats.some((c) => p.category.toLowerCase().includes(c))
       return catMatch && m === model
     })
