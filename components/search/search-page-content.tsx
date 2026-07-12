@@ -227,10 +227,9 @@ export function SearchPageContent() {
             <div className="mb-6">
               <Search className="w-20 h-20 mx-auto text-muted-foreground/30" />
             </div>
-            <h3 className="text-2xl font-bold text-foreground mb-3">No Parts Matched Your Search</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-3">No parts matched your search.</h3>
             <p className="text-base text-muted-foreground max-w-[520px] mx-auto mb-8 leading-relaxed">
-              We searched across 2,000+ salvage yards nationwide but couldn&apos;t find what you&apos;re looking for. 
-              Our team can source from additional inventory or specialty yards.
+              Try a different keyword, or request a free quote and we&apos;ll locate it for you.
             </p>
             <div className="flex gap-4 justify-center flex-wrap mb-8">
               <a href="tel:8888185001" className="btn-led inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold tracking-wide uppercase rounded-lg">
