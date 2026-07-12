@@ -68,6 +68,8 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground mb-4 flex-wrap">
               <Link href="/" className="hover:text-primary transition-colors">Home</Link>
               <ChevronRight className="w-3 h-3" />
+              <Link href="/brands" className="hover:text-primary transition-colors">Shop</Link>
+              <ChevronRight className="w-3 h-3" />
               <Link href="/brands" className="hover:text-primary transition-colors">Brands</Link>
               <ChevronRight className="w-3 h-3" />
               <span className="text-foreground font-medium">{label} Parts</span>
