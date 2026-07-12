@@ -204,42 +204,42 @@ export function SearchPageContent() {
       {/* Results Area */}
       <div className="mx-auto max-w-[1100px] px-4 sm:px-6 py-8 sm:py-10">
         {!searched && !loading && (
-          <div className="text-center py-16">
-            <div className="text-4xl mb-4 text-muted-foreground">
-              <Search className="w-12 h-12 mx-auto opacity-30" />
+          <div className="text-center py-12 sm:py-16">
+            <div className="text-4xl mb-3 sm:mb-4 text-muted-foreground">
+              <Search className="w-10 sm:w-12 h-10 sm:h-12 mx-auto opacity-25" />
             </div>
-            <h3 className="text-lg font-bold text-foreground mb-2">Search Our Nationwide Inventory</h3>
-            <p className="text-sm text-muted-foreground max-w-[400px] mx-auto">
+            <h3 className="text-base sm:text-lg font-bold text-foreground mb-2">Search Our Nationwide Inventory</h3>
+            <p className="text-xs sm:text-sm text-muted-foreground max-w-[400px] mx-auto px-4">
               Select your vehicle year, make, model and the part you need above, then click Search to see pricing from verified yards.
             </p>
           </div>
         )}
 
         {loading && (
-          <div className="text-center py-16">
-            <div className="w-8 h-8 border-3 border-foreground/20 border-t-foreground/70 rounded-full animate-spin mx-auto mb-4" />
-            <p className="text-sm text-muted-foreground">Searching 2,000+ verified yards...</p>
+          <div className="text-center py-12 sm:py-16">
+            <div className="w-8 h-8 border-3 border-foreground/20 border-t-foreground/70 rounded-full animate-spin mx-auto mb-3 sm:mb-4" />
+            <p className="text-xs sm:text-sm text-muted-foreground px-4">Searching 2,000+ verified yards...</p>
           </div>
         )}
 
         {searched && !loading && results.length === 0 && (
-          <div className="text-center py-20">
-            <div className="mb-6">
-              <Search className="w-20 h-20 mx-auto text-muted-foreground/30" />
+          <div className="text-center py-12 sm:py-20">
+            <div className="mb-4 sm:mb-6">
+              <Search className="w-16 sm:w-20 h-16 sm:h-20 mx-auto text-muted-foreground/20" />
             </div>
-            <h3 className="text-2xl font-bold text-foreground mb-3">No parts matched your search.</h3>
-            <p className="text-base text-muted-foreground max-w-[520px] mx-auto mb-8 leading-relaxed">
+            <h3 className="text-xl sm:text-3xl font-bold text-foreground mb-2 sm:mb-4">No parts matched your search.</h3>
+            <p className="text-sm sm:text-base text-muted-foreground max-w-[520px] mx-auto mb-6 sm:mb-8 leading-relaxed px-4">
               Try a different keyword, or request a free quote and we&apos;ll locate it for you.
             </p>
-            <div className="flex gap-4 justify-center flex-wrap mb-8">
-              <a href="tel:8888185001" className="btn-led inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold tracking-wide uppercase rounded-lg">
+            <div className="flex gap-3 sm:gap-4 justify-center flex-col sm:flex-row flex-wrap mb-6 sm:mb-8 px-4">
+              <a href="tel:8888185001" className="btn-led w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 text-xs sm:text-sm font-bold tracking-wide uppercase rounded-lg hover:shadow-lg transition-all">
                 <Phone className="w-4 h-4" /> Call (888) 818-5001
               </a>
-              <Link href="/quote" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground text-sm font-bold tracking-wide uppercase rounded-lg hover:opacity-90 transition-opacity">
-                Request Free Quote
+              <Link href="/quote" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 bg-primary text-primary-foreground text-xs sm:text-sm font-bold tracking-wide uppercase rounded-lg hover:opacity-90 hover:shadow-lg transition-all">
+                <MessageSquare className="w-4 h-4" /> Request Free Quote
               </Link>
             </div>
-            <p className="text-xs text-muted-foreground/60">Response time: Usually within 1 hour during business hours</p>
+            <p className="text-[11px] sm:text-xs text-muted-foreground/60 px-4">Response time: Usually within 1 hour during business hours</p>
           </div>
         )}
 
