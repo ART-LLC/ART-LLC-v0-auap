@@ -8,6 +8,7 @@ import { ContentSection } from "@/components/home/content-section"
 import { BrandValuesSection } from "@/components/home/brand-values-section"
 import { CategoriesSection } from "@/components/home/categories-section"
 import { FeaturedProductsSection } from "@/components/home/featured-products-section"
+import { AppleStylePartsSearch } from "@/components/apple-style-parts-search"
 
 export default function HomePage() {
   return (
@@ -17,6 +18,10 @@ export default function HomePage() {
         <HeroSection />
         <HeroGallery />
         <PartsShowcase />
+        <AppleStylePartsSearch 
+          title="Find Your Parts"
+          subtitle="Search across 2,000+ salvage yards nationwide"
+        />
         <ContentSection />
         <BrandValuesSection />
         <CategoriesSection />
