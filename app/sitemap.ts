@@ -80,13 +80,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...makePages,
     ...acuraModelPages,
     ...acuraProductPages,
+    ...brandPages,
   ])]
 
   return allUrls.map((url) => ({
     url: `${baseUrl}${url}`,
     lastModified: new Date(),
     changeFrequency:
-      url === '' ? 'daily' : url.includes('/parts/') || url.startsWith('/acura/') ? 'weekly' : 'monthly',
-    priority: url === '' ? 1 : url.includes('/parts/') || url.startsWith('/acura/') ? 0.8 : 0.6,
+      url === ''
+        ? 'daily'
+        : url.includes('/parts/') || url.startsWith('/acura/') || url.startsWith('/brands')
+          ? 'weekly'
+          : 'monthly',
+    priority:
+      url === ''
+        ? 1
+        : url.includes('/parts/') || url.startsWith('/acura/') || url.startsWith('/brands')
+          ? 0.8
+          : 0.6,
   }))
 }
