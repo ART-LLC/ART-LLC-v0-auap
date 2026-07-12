@@ -1,0 +1,1431 @@
+{
+  "brand": "peugeot",
+  "products": [
+    {
+      "id": "AUAPW-ENG-1989-Peugeot-405",
+      "mpn": "AUAPW-ENG-1989-Peugeot-405",
+      "name": "1989 Peugeot 405 Engine - DOHC (VIN 2, 6th digit)",
+      "slug": "1989-peugeot-405-engine-dohc-vin-2-6th-digit-0",
+      "canonicalSlug": "1989-peugeot-405-engine-dohc-vin-2-6th-digit-0",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1989",
+      "model": "405 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-405-dohc-vin-2-6th-digit.jpg",
+      "description": "Quality used engine for 1989 Peugeot 405. Trim/details: DOHC (VIN 2, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1989-Peugeot-405",
+      "mpn": "AUAPW-ENG-1989-Peugeot-405",
+      "name": "1989 Peugeot 405 Engine - SOHC (VIN 1, 6th digit)",
+      "slug": "1989-peugeot-405-engine-sohc-vin-1-6th-digit-1",
+      "canonicalSlug": "1989-peugeot-405-engine-sohc-vin-1-6th-digit-1",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1989",
+      "model": "405 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-405-sohc-vin-1-6th-digit.jpg",
+      "description": "Quality used engine for 1989 Peugeot 405. Trim/details: SOHC (VIN 1, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1990-Peugeot-405",
+      "mpn": "AUAPW-ENG-1990-Peugeot-405",
+      "name": "1990 Peugeot 405 Engine - (SOHC), VIN A (5th digit)",
+      "slug": "1990-peugeot-405-engine-sohc-vin-a-5th-digit-2",
+      "canonicalSlug": "1990-peugeot-405-engine-sohc-vin-a-5th-digit-2",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1990",
+      "model": "405 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1990-peugeot-405-sohc-vin-a-5th-digit.jpg",
+      "description": "Quality used engine for 1990 Peugeot 405. Trim/details: (SOHC), VIN A (5th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1990-Peugeot-405",
+      "mpn": "AUAPW-ENG-1990-Peugeot-405",
+      "name": "1990 Peugeot 405 Engine - (SOHC), VIN C (5th digit)",
+      "slug": "1990-peugeot-405-engine-sohc-vin-c-5th-digit-3",
+      "canonicalSlug": "1990-peugeot-405-engine-sohc-vin-c-5th-digit-3",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1990",
+      "model": "405 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1990-peugeot-405-sohc-vin-c-5th-digit.jpg",
+      "description": "Quality used engine for 1990 Peugeot 405. Trim/details: (SOHC), VIN C (5th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1991-Peugeot-405",
+      "mpn": "AUAPW-ENG-1991-Peugeot-405",
+      "name": "1991 Peugeot 405 Engine - DOHC, VIN B (5th digit)",
+      "slug": "1991-peugeot-405-engine-dohc-vin-b-5th-digit-4",
+      "canonicalSlug": "1991-peugeot-405-engine-dohc-vin-b-5th-digit-4",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1991",
+      "model": "405 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1991-peugeot-405-dohc-vin-b-5th-digit.jpg",
+      "description": "Quality used engine for 1991 Peugeot 405. Trim/details: DOHC, VIN B (5th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1991-Peugeot-405",
+      "mpn": "AUAPW-ENG-1991-Peugeot-405",
+      "name": "1991 Peugeot 405 Engine - DOHC, VIN D (5th digit)",
+      "slug": "1991-peugeot-405-engine-dohc-vin-d-5th-digit-5",
+      "canonicalSlug": "1991-peugeot-405-engine-dohc-vin-d-5th-digit-5",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1991",
+      "model": "405 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1991-peugeot-405-dohc-vin-d-5th-digit.jpg",
+      "description": "Quality used engine for 1991 Peugeot 405. Trim/details: DOHC, VIN D (5th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1991-Peugeot-405",
+      "mpn": "AUAPW-ENG-1991-Peugeot-405",
+      "name": "1991 Peugeot 405 Engine - SOHC, VIN A (5th digit)",
+      "slug": "1991-peugeot-405-engine-sohc-vin-a-5th-digit-6",
+      "canonicalSlug": "1991-peugeot-405-engine-sohc-vin-a-5th-digit-6",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1991",
+      "model": "405 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1991-peugeot-405-sohc-vin-a-5th-digit.jpg",
+      "description": "Quality used engine for 1991 Peugeot 405. Trim/details: SOHC, VIN A (5th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1991-Peugeot-405",
+      "mpn": "AUAPW-ENG-1991-Peugeot-405",
+      "name": "1991 Peugeot 405 Engine - SOHC, VIN C (5th digit)",
+      "slug": "1991-peugeot-405-engine-sohc-vin-c-5th-digit-7",
+      "canonicalSlug": "1991-peugeot-405-engine-sohc-vin-c-5th-digit-7",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1991",
+      "model": "405 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1991-peugeot-405-sohc-vin-c-5th-digit.jpg",
+      "description": "Quality used engine for 1991 Peugeot 405. Trim/details: SOHC, VIN C (5th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1974-Peugeot-504",
+      "mpn": "AUAPW-ENG-1974-Peugeot-504",
+      "name": "1974 Peugeot 504 Engine - diesel",
+      "slug": "1974-peugeot-504-engine-diesel-8",
+      "canonicalSlug": "1974-peugeot-504-engine-diesel-8",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1974",
+      "model": "504 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1974-peugeot-504-diesel.jpg",
+      "description": "Quality used engine for 1974 Peugeot 504. Trim/details: diesel. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1975-Peugeot-504",
+      "mpn": "AUAPW-ENG-1975-Peugeot-504",
+      "name": "1975 Peugeot 504 Engine - diesel",
+      "slug": "1975-peugeot-504-engine-diesel-9",
+      "canonicalSlug": "1975-peugeot-504-engine-diesel-9",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1975",
+      "model": "504 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1975-peugeot-504-diesel.jpg",
+      "description": "Quality used engine for 1975 Peugeot 504. Trim/details: diesel. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1976-Peugeot-504",
+      "mpn": "AUAPW-ENG-1976-Peugeot-504",
+      "name": "1976 Peugeot 504 Engine - diesel",
+      "slug": "1976-peugeot-504-engine-diesel-10",
+      "canonicalSlug": "1976-peugeot-504-engine-diesel-10",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1976",
+      "model": "504 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1976-peugeot-504-diesel.jpg",
+      "description": "Quality used engine for 1976 Peugeot 504. Trim/details: diesel. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1977-Peugeot-504",
+      "mpn": "AUAPW-ENG-1977-Peugeot-504",
+      "name": "1977 Peugeot 504 Engine - diesel",
+      "slug": "1977-peugeot-504-engine-diesel-11",
+      "canonicalSlug": "1977-peugeot-504-engine-diesel-11",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1977",
+      "model": "504 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1977-peugeot-504-diesel.jpg",
+      "description": "Quality used engine for 1977 Peugeot 504. Trim/details: diesel. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1978-Peugeot-504",
+      "mpn": "AUAPW-ENG-1978-Peugeot-504",
+      "name": "1978 Peugeot 504 Engine - diesel",
+      "slug": "1978-peugeot-504-engine-diesel-12",
+      "canonicalSlug": "1978-peugeot-504-engine-diesel-12",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1978",
+      "model": "504 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1978-peugeot-504-diesel.jpg",
+      "description": "Quality used engine for 1978 Peugeot 504. Trim/details: diesel. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1979-Peugeot-504",
+      "mpn": "AUAPW-ENG-1979-Peugeot-504",
+      "name": "1979 Peugeot 504 Engine - diesel",
+      "slug": "1979-peugeot-504-engine-diesel-13",
+      "canonicalSlug": "1979-peugeot-504-engine-diesel-13",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1979",
+      "model": "504 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1979-peugeot-504-diesel.jpg",
+      "description": "Quality used engine for 1979 Peugeot 504. Trim/details: diesel. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1980-Peugeot-504",
+      "mpn": "AUAPW-ENG-1980-Peugeot-504",
+      "name": "1980 Peugeot 504 Engine - Direct",
+      "slug": "1980-peugeot-504-engine-direct-14",
+      "canonicalSlug": "1980-peugeot-504-engine-direct-14",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1980",
+      "model": "504 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1980-peugeot-504-direct.jpg",
+      "description": "Quality used engine for 1980 Peugeot 504. Trim/details: Direct. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1981-Peugeot-504",
+      "mpn": "AUAPW-ENG-1981-Peugeot-504",
+      "name": "1981 Peugeot 504 Engine - (diesel, VIN 2, 6th digit)",
+      "slug": "1981-peugeot-504-engine-diesel-vin-2-6th-digit-15",
+      "canonicalSlug": "1981-peugeot-504-engine-diesel-vin-2-6th-digit-15",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1981",
+      "model": "504 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1981-peugeot-504-diesel-vin-2-6th-digit.jpg",
+      "description": "Quality used engine for 1981 Peugeot 504. Trim/details: (diesel, VIN 2, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1982-Peugeot-504",
+      "mpn": "AUAPW-ENG-1982-Peugeot-504",
+      "name": "1982 Peugeot 504 Engine - (diesel, VIN 2, 6th digit)",
+      "slug": "1982-peugeot-504-engine-diesel-vin-2-6th-digit-16",
+      "canonicalSlug": "1982-peugeot-504-engine-diesel-vin-2-6th-digit-16",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1982",
+      "model": "504 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1982-peugeot-504-diesel-vin-2-6th-digit.jpg",
+      "description": "Quality used engine for 1982 Peugeot 504. Trim/details: (diesel, VIN 2, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1983-Peugeot-504",
+      "mpn": "AUAPW-ENG-1983-Peugeot-504",
+      "name": "1983 Peugeot 504 Engine - (diesel, VIN 2, 6th digit)",
+      "slug": "1983-peugeot-504-engine-diesel-vin-2-6th-digit-17",
+      "canonicalSlug": "1983-peugeot-504-engine-diesel-vin-2-6th-digit-17",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1983",
+      "model": "504 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1983-peugeot-504-diesel-vin-2-6th-digit.jpg",
+      "description": "Quality used engine for 1983 Peugeot 504. Trim/details: (diesel, VIN 2, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1980-Peugeot-505",
+      "mpn": "AUAPW-ENG-1980-Peugeot-505",
+      "name": "1980 Peugeot 505 Engine - diesel",
+      "slug": "1980-peugeot-505-engine-diesel-18",
+      "canonicalSlug": "1980-peugeot-505-engine-diesel-18",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1980",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1980-peugeot-505-diesel.jpg",
+      "description": "Quality used engine for 1980 Peugeot 505. Trim/details: diesel. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1980-Peugeot-505",
+      "mpn": "AUAPW-ENG-1980-Peugeot-505",
+      "name": "1980 Peugeot 505 Engine - gasoline, US (fuel injected)",
+      "slug": "1980-peugeot-505-engine-gasoline-us-fuel-injected-19",
+      "canonicalSlug": "1980-peugeot-505-engine-gasoline-us-fuel-injected-19",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1980",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1980-peugeot-505-gasoline-us-fuel-injected.jpg",
+      "description": "Quality used engine for 1980 Peugeot 505. Trim/details: gasoline, US (fuel injected). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1981-Peugeot-505",
+      "mpn": "AUAPW-ENG-1981-Peugeot-505",
+      "name": "1981 Peugeot 505 Engine - diesel (VIN 2, 6th digit)",
+      "slug": "1981-peugeot-505-engine-diesel-vin-2-6th-digit-20",
+      "canonicalSlug": "1981-peugeot-505-engine-diesel-vin-2-6th-digit-20",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1981",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1981-peugeot-505-diesel-vin-2-6th-digit.jpg",
+      "description": "Quality used engine for 1981 Peugeot 505. Trim/details: diesel (VIN 2, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1981-Peugeot-505",
+      "mpn": "AUAPW-ENG-1981-Peugeot-505",
+      "name": "1981 Peugeot 505 Engine - gasoline, US (fuel injected, VIN 1, 6th digit)",
+      "slug": "1981-peugeot-505-engine-gasoline-us-fuel-injected-vin-1-6th-digit-21",
+      "canonicalSlug": "1981-peugeot-505-engine-gasoline-us-fuel-injected-vin-1-6th-digit-21",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1981",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1981-peugeot-505-gasoline-us-fuel-injected-vin-1-6th-digit.jpg",
+      "description": "Quality used engine for 1981 Peugeot 505. Trim/details: gasoline, US (fuel injected, VIN 1, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1982-Peugeot-505",
+      "mpn": "AUAPW-ENG-1982-Peugeot-505",
+      "name": "1982 Peugeot 505 Engine - diesel (VIN 2, 6th digit)",
+      "slug": "1982-peugeot-505-engine-diesel-vin-2-6th-digit-22",
+      "canonicalSlug": "1982-peugeot-505-engine-diesel-vin-2-6th-digit-22",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1982",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1982-peugeot-505-diesel-vin-2-6th-digit.jpg",
+      "description": "Quality used engine for 1982 Peugeot 505. Trim/details: diesel (VIN 2, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1982-Peugeot-505",
+      "mpn": "AUAPW-ENG-1982-Peugeot-505",
+      "name": "1982 Peugeot 505 Engine - gasoline, US (fuel injected, VIN 1, 6th digit)",
+      "slug": "1982-peugeot-505-engine-gasoline-us-fuel-injected-vin-1-6th-digit-23",
+      "canonicalSlug": "1982-peugeot-505-engine-gasoline-us-fuel-injected-vin-1-6th-digit-23",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1982",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1982-peugeot-505-gasoline-us-fuel-injected-vin-1-6th-digit.jpg",
+      "description": "Quality used engine for 1982 Peugeot 505. Trim/details: gasoline, US (fuel injected, VIN 1, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1983-Peugeot-505",
+      "mpn": "AUAPW-ENG-1983-Peugeot-505",
+      "name": "1983 Peugeot 505 Engine - diesel (VIN 2, 6th digit)",
+      "slug": "1983-peugeot-505-engine-diesel-vin-2-6th-digit-24",
+      "canonicalSlug": "1983-peugeot-505-engine-diesel-vin-2-6th-digit-24",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1983",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1983-peugeot-505-diesel-vin-2-6th-digit.jpg",
+      "description": "Quality used engine for 1983 Peugeot 505. Trim/details: diesel (VIN 2, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1983-Peugeot-505",
+      "mpn": "AUAPW-ENG-1983-Peugeot-505",
+      "name": "1983 Peugeot 505 Engine - gasoline, US (fuel injected, VIN 1, 6th digit)",
+      "slug": "1983-peugeot-505-engine-gasoline-us-fuel-injected-vin-1-6th-digit-25",
+      "canonicalSlug": "1983-peugeot-505-engine-gasoline-us-fuel-injected-vin-1-6th-digit-25",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1983",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1983-peugeot-505-gasoline-us-fuel-injected-vin-1-6th-digit.jpg",
+      "description": "Quality used engine for 1983 Peugeot 505. Trim/details: gasoline, US (fuel injected, VIN 1, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1984-Peugeot-505",
+      "mpn": "AUAPW-ENG-1984-Peugeot-505",
+      "name": "1984 Peugeot 505 Engine - gasoline (VIN 1, 6th digit)",
+      "slug": "1984-peugeot-505-engine-gasoline-vin-1-6th-digit-26",
+      "canonicalSlug": "1984-peugeot-505-engine-gasoline-vin-1-6th-digit-26",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1984",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1984-peugeot-505-gasoline-vin-1-6th-digit.jpg",
+      "description": "Quality used engine for 1984 Peugeot 505. Trim/details: gasoline (VIN 1, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1985-Peugeot-505",
+      "mpn": "AUAPW-ENG-1985-Peugeot-505",
+      "name": "1985 Peugeot 505 Engine - gasoline (VIN 1, 6th digit)",
+      "slug": "1985-peugeot-505-engine-gasoline-vin-1-6th-digit-27",
+      "canonicalSlug": "1985-peugeot-505-engine-gasoline-vin-1-6th-digit-27",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1985",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1985-peugeot-505-gasoline-vin-1-6th-digit.jpg",
+      "description": "Quality used engine for 1985 Peugeot 505. Trim/details: gasoline (VIN 1, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1985-Peugeot-505",
+      "mpn": "AUAPW-ENG-1985-Peugeot-505",
+      "name": "1985 Peugeot 505 Engine - turbo gasoline, VIN 5 (6th digit)",
+      "slug": "1985-peugeot-505-engine-turbo-gasoline-vin-5-6th-digit-28",
+      "canonicalSlug": "1985-peugeot-505-engine-turbo-gasoline-vin-5-6th-digit-28",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1985",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1985-peugeot-505-turbo-gasoline-vin-5-6th-digit.jpg",
+      "description": "Quality used engine for 1985 Peugeot 505. Trim/details: turbo gasoline, VIN 5 (6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1985-Peugeot-505",
+      "mpn": "AUAPW-ENG-1985-Peugeot-505",
+      "name": "1985 Peugeot 505 Engine - turbo gasoline, VIN 7 (6th digit)",
+      "slug": "1985-peugeot-505-engine-turbo-gasoline-vin-7-6th-digit-29",
+      "canonicalSlug": "1985-peugeot-505-engine-turbo-gasoline-vin-7-6th-digit-29",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1985",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1985-peugeot-505-turbo-gasoline-vin-7-6th-digit.jpg",
+      "description": "Quality used engine for 1985 Peugeot 505. Trim/details: turbo gasoline, VIN 7 (6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1986-Peugeot-505",
+      "mpn": "AUAPW-ENG-1986-Peugeot-505",
+      "name": "1986 Peugeot 505 Engine - gasoline (VIN 1, 6th digit)",
+      "slug": "1986-peugeot-505-engine-gasoline-vin-1-6th-digit-30",
+      "canonicalSlug": "1986-peugeot-505-engine-gasoline-vin-1-6th-digit-30",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1986",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1986-peugeot-505-gasoline-vin-1-6th-digit.jpg",
+      "description": "Quality used engine for 1986 Peugeot 505. Trim/details: gasoline (VIN 1, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1986-Peugeot-505",
+      "mpn": "AUAPW-ENG-1986-Peugeot-505",
+      "name": "1986 Peugeot 505 Engine - turbo gasoline, VIN 5 (6th digit)",
+      "slug": "1986-peugeot-505-engine-turbo-gasoline-vin-5-6th-digit-31",
+      "canonicalSlug": "1986-peugeot-505-engine-turbo-gasoline-vin-5-6th-digit-31",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1986",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1986-peugeot-505-turbo-gasoline-vin-5-6th-digit.jpg",
+      "description": "Quality used engine for 1986 Peugeot 505. Trim/details: turbo gasoline, VIN 5 (6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1986-Peugeot-505",
+      "mpn": "AUAPW-ENG-1986-Peugeot-505",
+      "name": "1986 Peugeot 505 Engine - turbo gasoline, VIN 7 (6th digit)",
+      "slug": "1986-peugeot-505-engine-turbo-gasoline-vin-7-6th-digit-32",
+      "canonicalSlug": "1986-peugeot-505-engine-turbo-gasoline-vin-7-6th-digit-32",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1986",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1986-peugeot-505-turbo-gasoline-vin-7-6th-digit.jpg",
+      "description": "Quality used engine for 1986 Peugeot 505. Trim/details: turbo gasoline, VIN 7 (6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1987-Peugeot-505",
+      "mpn": "AUAPW-ENG-1987-Peugeot-505",
+      "name": "1987 Peugeot 505 Engine - turbo gasoline, VIN 5 (6th digit)",
+      "slug": "1987-peugeot-505-engine-turbo-gasoline-vin-5-6th-digit-33",
+      "canonicalSlug": "1987-peugeot-505-engine-turbo-gasoline-vin-5-6th-digit-33",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1987",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1987-peugeot-505-turbo-gasoline-vin-5-6th-digit.jpg",
+      "description": "Quality used engine for 1987 Peugeot 505. Trim/details: turbo gasoline, VIN 5 (6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1987-Peugeot-505",
+      "mpn": "AUAPW-ENG-1987-Peugeot-505",
+      "name": "1987 Peugeot 505 Engine - turbo gasoline, VIN 7 (6th digit)",
+      "slug": "1987-peugeot-505-engine-turbo-gasoline-vin-7-6th-digit-34",
+      "canonicalSlug": "1987-peugeot-505-engine-turbo-gasoline-vin-7-6th-digit-34",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1987",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1987-peugeot-505-turbo-gasoline-vin-7-6th-digit.jpg",
+      "description": "Quality used engine for 1987 Peugeot 505. Trim/details: turbo gasoline, VIN 7 (6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1987-Peugeot-505",
+      "mpn": "AUAPW-ENG-1987-Peugeot-505",
+      "name": "1987 Peugeot 505 Engine - gasoline, 4 cylinder, 2.0L (VIN 1, 6th digit)",
+      "slug": "1987-peugeot-505-engine-gasoline-4-cylinder-20l-vin-1-6th-digit-35",
+      "canonicalSlug": "1987-peugeot-505-engine-gasoline-4-cylinder-20l-vin-1-6th-digit-35",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1987",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1987-peugeot-505-gasoline-4-cylinder-2.0l-vin-1-6th-digit.jpg",
+      "description": "Quality used engine for 1987 Peugeot 505. Trim/details: gasoline, 4 cylinder, 2.0L (VIN 1, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1987-Peugeot-505",
+      "mpn": "AUAPW-ENG-1987-Peugeot-505",
+      "name": "1987 Peugeot 505 Engine - gasoline, 6 cylinder (VIN 9, 6th digit)",
+      "slug": "1987-peugeot-505-engine-gasoline-6-cylinder-vin-9-6th-digit-36",
+      "canonicalSlug": "1987-peugeot-505-engine-gasoline-6-cylinder-vin-9-6th-digit-36",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 2081.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2456.17
+        },
+        {
+          "mileage": "Medium",
+          "price": 2081.5
+        },
+        {
+          "mileage": "High",
+          "price": 1748.46
+        }
+      ],
+      "year": "1987",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1987-peugeot-505-gasoline-6-cylinder-vin-9-6th-digit.jpg",
+      "description": "Quality used engine for 1987 Peugeot 505. Trim/details: gasoline, 6 cylinder (VIN 9, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1988-Peugeot-505",
+      "mpn": "AUAPW-ENG-1988-Peugeot-505",
+      "name": "1988 Peugeot 505 Engine - turbo gasoline, VIN 5 (6th digit)",
+      "slug": "1988-peugeot-505-engine-turbo-gasoline-vin-5-6th-digit-37",
+      "canonicalSlug": "1988-peugeot-505-engine-turbo-gasoline-vin-5-6th-digit-37",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1988",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1988-peugeot-505-turbo-gasoline-vin-5-6th-digit.jpg",
+      "description": "Quality used engine for 1988 Peugeot 505. Trim/details: turbo gasoline, VIN 5 (6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1988-Peugeot-505",
+      "mpn": "AUAPW-ENG-1988-Peugeot-505",
+      "name": "1988 Peugeot 505 Engine - turbo gasoline, VIN 7 (6th digit)",
+      "slug": "1988-peugeot-505-engine-turbo-gasoline-vin-7-6th-digit-38",
+      "canonicalSlug": "1988-peugeot-505-engine-turbo-gasoline-vin-7-6th-digit-38",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1988",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1988-peugeot-505-turbo-gasoline-vin-7-6th-digit.jpg",
+      "description": "Quality used engine for 1988 Peugeot 505. Trim/details: turbo gasoline, VIN 7 (6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1988-Peugeot-505",
+      "mpn": "AUAPW-ENG-1988-Peugeot-505",
+      "name": "1988 Peugeot 505 Engine - gasoline, 4 cylinder, 2.0L (VIN 1, 6th digit)",
+      "slug": "1988-peugeot-505-engine-gasoline-4-cylinder-20l-vin-1-6th-digit-39",
+      "canonicalSlug": "1988-peugeot-505-engine-gasoline-4-cylinder-20l-vin-1-6th-digit-39",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1988",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1988-peugeot-505-gasoline-4-cylinder-2.0l-vin-1-6th-digit.jpg",
+      "description": "Quality used engine for 1988 Peugeot 505. Trim/details: gasoline, 4 cylinder, 2.0L (VIN 1, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1988-Peugeot-505",
+      "mpn": "AUAPW-ENG-1988-Peugeot-505",
+      "name": "1988 Peugeot 505 Engine - gasoline, 6 cylinder (VIN 9, 6th digit)",
+      "slug": "1988-peugeot-505-engine-gasoline-6-cylinder-vin-9-6th-digit-40",
+      "canonicalSlug": "1988-peugeot-505-engine-gasoline-6-cylinder-vin-9-6th-digit-40",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 2081.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2456.17
+        },
+        {
+          "mileage": "Medium",
+          "price": 2081.5
+        },
+        {
+          "mileage": "High",
+          "price": 1748.46
+        }
+      ],
+      "year": "1988",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1988-peugeot-505-gasoline-6-cylinder-vin-9-6th-digit.jpg",
+      "description": "Quality used engine for 1988 Peugeot 505. Trim/details: gasoline, 6 cylinder (VIN 9, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1989-Peugeot-505",
+      "mpn": "AUAPW-ENG-1989-Peugeot-505",
+      "name": "1989 Peugeot 505 Engine - turbo gasoline, VIN 5 (6th digit)",
+      "slug": "1989-peugeot-505-engine-turbo-gasoline-vin-5-6th-digit-41",
+      "canonicalSlug": "1989-peugeot-505-engine-turbo-gasoline-vin-5-6th-digit-41",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1989",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-505-turbo-gasoline-vin-5-6th-digit.jpg",
+      "description": "Quality used engine for 1989 Peugeot 505. Trim/details: turbo gasoline, VIN 5 (6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1989-Peugeot-505",
+      "mpn": "AUAPW-ENG-1989-Peugeot-505",
+      "name": "1989 Peugeot 505 Engine - turbo gasoline, VIN 7 (6th digit)",
+      "slug": "1989-peugeot-505-engine-turbo-gasoline-vin-7-6th-digit-42",
+      "canonicalSlug": "1989-peugeot-505-engine-turbo-gasoline-vin-7-6th-digit-42",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1989",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-505-turbo-gasoline-vin-7-6th-digit.jpg",
+      "description": "Quality used engine for 1989 Peugeot 505. Trim/details: turbo gasoline, VIN 7 (6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1989-Peugeot-505",
+      "mpn": "AUAPW-ENG-1989-Peugeot-505",
+      "name": "1989 Peugeot 505 Engine - gasoline, 4 cylinder, 2.0L (VIN 1, 6th digit)",
+      "slug": "1989-peugeot-505-engine-gasoline-4-cylinder-20l-vin-1-6th-digit-43",
+      "canonicalSlug": "1989-peugeot-505-engine-gasoline-4-cylinder-20l-vin-1-6th-digit-43",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 1782.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2103.35
+        },
+        {
+          "mileage": "Medium",
+          "price": 1782.5
+        },
+        {
+          "mileage": "High",
+          "price": 1497.3
+        }
+      ],
+      "year": "1989",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-505-gasoline-4-cylinder-2.0l-vin-1-6th-digit.jpg",
+      "description": "Quality used engine for 1989 Peugeot 505. Trim/details: gasoline, 4 cylinder, 2.0L (VIN 1, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1989-Peugeot-505",
+      "mpn": "AUAPW-ENG-1989-Peugeot-505",
+      "name": "1989 Peugeot 505 Engine - gasoline, 6 cylinder (VIN 9, 6th digit)",
+      "slug": "1989-peugeot-505-engine-gasoline-6-cylinder-vin-9-6th-digit-44",
+      "canonicalSlug": "1989-peugeot-505-engine-gasoline-6-cylinder-vin-9-6th-digit-44",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 2081.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2456.17
+        },
+        {
+          "mileage": "Medium",
+          "price": 2081.5
+        },
+        {
+          "mileage": "High",
+          "price": 1748.46
+        }
+      ],
+      "year": "1989",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-505-gasoline-6-cylinder-vin-9-6th-digit.jpg",
+      "description": "Quality used engine for 1989 Peugeot 505. Trim/details: gasoline, 6 cylinder (VIN 9, 6th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1990-Peugeot-505",
+      "mpn": "AUAPW-ENG-1990-Peugeot-505",
+      "name": "1990 Peugeot 505 Engine - gasoline, 6 cylinder (VIN 9, 5th digit)",
+      "slug": "1990-peugeot-505-engine-gasoline-6-cylinder-vin-9-5th-digit-45",
+      "canonicalSlug": "1990-peugeot-505-engine-gasoline-6-cylinder-vin-9-5th-digit-45",
+      "brand": "Peugeot",
+      "category": "engine",
+      "price": 2081.5,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2456.17
+        },
+        {
+          "mileage": "Medium",
+          "price": 2081.5
+        },
+        {
+          "mileage": "High",
+          "price": 1748.46
+        }
+      ],
+      "year": "1990",
+      "model": "505 Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1990-peugeot-505-gasoline-6-cylinder-vin-9-5th-digit.jpg",
+      "description": "Quality used engine for 1990 Peugeot 505. Trim/details: gasoline, 6 cylinder (VIN 9, 5th digit). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    }
+  ]
+}

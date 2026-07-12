@@ -1,0 +1,1803 @@
+{
+  "brand": "opel",
+  "products": [
+    {
+      "id": "AUAPW-ENG-1966-Opel-Opel",
+      "mpn": "AUAPW-ENG-1966-Opel-Opel",
+      "name": "1966 Opel Opel Engine - (1.1L), base (low compression)",
+      "slug": "1966-opel-opel-engine-11l-base-low-compression-0",
+      "canonicalSlug": "1966-opel-opel-engine-11l-base-low-compression-0",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1274.2,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1503.56
+        },
+        {
+          "mileage": "Medium",
+          "price": 1274.2
+        },
+        {
+          "mileage": "High",
+          "price": 1070.33
+        }
+      ],
+      "year": "1966",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1966-opel-opel-1.1l-base-low-compression.jpg",
+      "description": "Quality used engine for 1966 Opel Opel. Trim/details: (1.1L), base (low compression). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1967-Opel-Opel",
+      "mpn": "AUAPW-ENG-1967-Opel-Opel",
+      "name": "1967 Opel Opel Engine - (1.1L), base (low compression)",
+      "slug": "1967-opel-opel-engine-11l-base-low-compression-1",
+      "canonicalSlug": "1967-opel-opel-engine-11l-base-low-compression-1",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1274.2,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1503.56
+        },
+        {
+          "mileage": "Medium",
+          "price": 1274.2
+        },
+        {
+          "mileage": "High",
+          "price": 1070.33
+        }
+      ],
+      "year": "1967",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1967-opel-opel-1.1l-base-low-compression.jpg",
+      "description": "Quality used engine for 1967 Opel Opel. Trim/details: (1.1L), base (low compression). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1968-Opel-Opel",
+      "mpn": "AUAPW-ENG-1968-Opel-Opel",
+      "name": "1968 Opel Opel Engine - 1.1L",
+      "slug": "1968-opel-opel-engine-11l-2",
+      "canonicalSlug": "1968-opel-opel-engine-11l-2",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1408.75,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1662.32
+        },
+        {
+          "mileage": "Medium",
+          "price": 1408.75
+        },
+        {
+          "mileage": "High",
+          "price": 1183.35
+        }
+      ],
+      "year": "1968",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1968-opel-opel-1.1l.jpg",
+      "description": "Quality used engine for 1968 Opel Opel. Trim/details: 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1968-Opel-Opel",
+      "mpn": "AUAPW-ENG-1968-Opel-Opel",
+      "name": "1968 Opel Opel Engine - 1.9L",
+      "slug": "1968-opel-opel-engine-19l-3",
+      "canonicalSlug": "1968-opel-opel-engine-19l-3",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1550.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1829.91
+        },
+        {
+          "mileage": "Medium",
+          "price": 1550.77
+        },
+        {
+          "mileage": "High",
+          "price": 1302.65
+        }
+      ],
+      "year": "1968",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1968-opel-opel-1.9l.jpg",
+      "description": "Quality used engine for 1968 Opel Opel. Trim/details: 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1969-Opel-Opel",
+      "mpn": "AUAPW-ENG-1969-Opel-Opel",
+      "name": "1969 Opel Opel Engine - 1.1L",
+      "slug": "1969-opel-opel-engine-11l-4",
+      "canonicalSlug": "1969-opel-opel-engine-11l-4",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1408.75,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1662.32
+        },
+        {
+          "mileage": "Medium",
+          "price": 1408.75
+        },
+        {
+          "mileage": "High",
+          "price": 1183.35
+        }
+      ],
+      "year": "1969",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1969-opel-opel-1.1l.jpg",
+      "description": "Quality used engine for 1969 Opel Opel. Trim/details: 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1969-Opel-Opel",
+      "mpn": "AUAPW-ENG-1969-Opel-Opel",
+      "name": "1969 Opel Opel Engine - 1.9L",
+      "slug": "1969-opel-opel-engine-19l-5",
+      "canonicalSlug": "1969-opel-opel-engine-19l-5",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1550.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1829.91
+        },
+        {
+          "mileage": "Medium",
+          "price": 1550.77
+        },
+        {
+          "mileage": "High",
+          "price": 1302.65
+        }
+      ],
+      "year": "1969",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1969-opel-opel-1.9l.jpg",
+      "description": "Quality used engine for 1969 Opel Opel. Trim/details: 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1970-Opel-Opel",
+      "mpn": "AUAPW-ENG-1970-Opel-Opel",
+      "name": "1970 Opel Opel Engine - 1.1L",
+      "slug": "1970-opel-opel-engine-11l-6",
+      "canonicalSlug": "1970-opel-opel-engine-11l-6",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1408.75,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1662.32
+        },
+        {
+          "mileage": "Medium",
+          "price": 1408.75
+        },
+        {
+          "mileage": "High",
+          "price": 1183.35
+        }
+      ],
+      "year": "1970",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1970-opel-opel-1.1l.jpg",
+      "description": "Quality used engine for 1970 Opel Opel. Trim/details: 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1970-Opel-Opel",
+      "mpn": "AUAPW-ENG-1970-Opel-Opel",
+      "name": "1970 Opel Opel Engine - 1.9L",
+      "slug": "1970-opel-opel-engine-19l-7",
+      "canonicalSlug": "1970-opel-opel-engine-19l-7",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1550.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1829.91
+        },
+        {
+          "mileage": "Medium",
+          "price": 1550.77
+        },
+        {
+          "mileage": "High",
+          "price": 1302.65
+        }
+      ],
+      "year": "1970",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1970-opel-opel-1.9l.jpg",
+      "description": "Quality used engine for 1970 Opel Opel. Trim/details: 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1971-Opel-Opel",
+      "mpn": "AUAPW-ENG-1971-Opel-Opel",
+      "name": "1971 Opel Opel Engine - 1.1L",
+      "slug": "1971-opel-opel-engine-11l-8",
+      "canonicalSlug": "1971-opel-opel-engine-11l-8",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1408.75,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1662.32
+        },
+        {
+          "mileage": "Medium",
+          "price": 1408.75
+        },
+        {
+          "mileage": "High",
+          "price": 1183.35
+        }
+      ],
+      "year": "1971",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1971-opel-opel-1.1l.jpg",
+      "description": "Quality used engine for 1971 Opel Opel. Trim/details: 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1971-Opel-Opel",
+      "mpn": "AUAPW-ENG-1971-Opel-Opel",
+      "name": "1971 Opel Opel Engine - 1.9L",
+      "slug": "1971-opel-opel-engine-19l-9",
+      "canonicalSlug": "1971-opel-opel-engine-19l-9",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1550.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1829.91
+        },
+        {
+          "mileage": "Medium",
+          "price": 1550.77
+        },
+        {
+          "mileage": "High",
+          "price": 1302.65
+        }
+      ],
+      "year": "1971",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1971-opel-opel-1.9l.jpg",
+      "description": "Quality used engine for 1971 Opel Opel. Trim/details: 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1972-Opel-Opel",
+      "mpn": "AUAPW-ENG-1972-Opel-Opel",
+      "name": "1972 Opel Opel Engine - (1.9L)",
+      "slug": "1972-opel-opel-engine-19l-10",
+      "canonicalSlug": "1972-opel-opel-engine-19l-10",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1550.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1829.91
+        },
+        {
+          "mileage": "Medium",
+          "price": 1550.77
+        },
+        {
+          "mileage": "High",
+          "price": 1302.65
+        }
+      ],
+      "year": "1972",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1972-opel-opel-1.9l.jpg",
+      "description": "Quality used engine for 1972 Opel Opel. Trim/details: (1.9L). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1973-Opel-Opel",
+      "mpn": "AUAPW-ENG-1973-Opel-Opel",
+      "name": "1973 Opel Opel Engine - (1.9L)",
+      "slug": "1973-opel-opel-engine-19l-11",
+      "canonicalSlug": "1973-opel-opel-engine-19l-11",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1550.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1829.91
+        },
+        {
+          "mileage": "Medium",
+          "price": 1550.77
+        },
+        {
+          "mileage": "High",
+          "price": 1302.65
+        }
+      ],
+      "year": "1973",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1973-opel-opel-1.9l.jpg",
+      "description": "Quality used engine for 1973 Opel Opel. Trim/details: (1.9L). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1974-Opel-Opel",
+      "mpn": "AUAPW-ENG-1974-Opel-Opel",
+      "name": "1974 Opel Opel Engine - (1.9L)",
+      "slug": "1974-opel-opel-engine-19l-12",
+      "canonicalSlug": "1974-opel-opel-engine-19l-12",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1550.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1829.91
+        },
+        {
+          "mileage": "Medium",
+          "price": 1550.77
+        },
+        {
+          "mileage": "High",
+          "price": 1302.65
+        }
+      ],
+      "year": "1974",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1974-opel-opel-1.9l.jpg",
+      "description": "Quality used engine for 1974 Opel Opel. Trim/details: (1.9L). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-ENG-1975-Opel-Opel",
+      "mpn": "AUAPW-ENG-1975-Opel-Opel",
+      "name": "1975 Opel Opel Engine - (1.9L)",
+      "slug": "1975-opel-opel-engine-19l-13",
+      "canonicalSlug": "1975-opel-opel-engine-19l-13",
+      "brand": "Opel",
+      "category": "engine",
+      "price": 1550.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1829.91
+        },
+        {
+          "mileage": "Medium",
+          "price": 1550.77
+        },
+        {
+          "mileage": "High",
+          "price": 1302.65
+        }
+      ],
+      "year": "1975",
+      "model": "Opel Engine",
+      "imageUrl": "https://www.auapw.org/images/parts/engine-1975-opel-opel-1.9l.jpg",
+      "description": "Quality used engine for 1975 Opel Opel. Trim/details: (1.9L). Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1964-Opel-Opel",
+      "mpn": "AUAPW-TRA-1964-Opel-Opel",
+      "name": "1964 Opel Opel Transmission - MT",
+      "slug": "1964-opel-opel-transmission-mt-14",
+      "canonicalSlug": "1964-opel-opel-transmission-mt-14",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 960.25,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1133.1
+        },
+        {
+          "mileage": "Medium",
+          "price": 960.25
+        },
+        {
+          "mileage": "High",
+          "price": 806.61
+        }
+      ],
+      "year": "1964",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1964-opel-opel-mt.jpg",
+      "description": "Quality used transmission for 1964 Opel Opel. Trim/details: MT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1965-Opel-Opel",
+      "mpn": "AUAPW-TRA-1965-Opel-Opel",
+      "name": "1965 Opel Opel Transmission - MT",
+      "slug": "1965-opel-opel-transmission-mt-15",
+      "canonicalSlug": "1965-opel-opel-transmission-mt-15",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 960.25,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1133.1
+        },
+        {
+          "mileage": "Medium",
+          "price": 960.25
+        },
+        {
+          "mileage": "High",
+          "price": 806.61
+        }
+      ],
+      "year": "1965",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1965-opel-opel-mt.jpg",
+      "description": "Quality used transmission for 1965 Opel Opel. Trim/details: MT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1966-Opel-Opel",
+      "mpn": "AUAPW-TRA-1966-Opel-Opel",
+      "name": "1966 Opel Opel Transmission - MT",
+      "slug": "1966-opel-opel-transmission-mt-16",
+      "canonicalSlug": "1966-opel-opel-transmission-mt-16",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 960.25,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1133.1
+        },
+        {
+          "mileage": "Medium",
+          "price": 960.25
+        },
+        {
+          "mileage": "High",
+          "price": 806.61
+        }
+      ],
+      "year": "1966",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1966-opel-opel-mt.jpg",
+      "description": "Quality used transmission for 1966 Opel Opel. Trim/details: MT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1967-Opel-Opel",
+      "mpn": "AUAPW-TRA-1967-Opel-Opel",
+      "name": "1967 Opel Opel Transmission - MT",
+      "slug": "1967-opel-opel-transmission-mt-17",
+      "canonicalSlug": "1967-opel-opel-transmission-mt-17",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 960.25,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1133.1
+        },
+        {
+          "mileage": "Medium",
+          "price": 960.25
+        },
+        {
+          "mileage": "High",
+          "price": 806.61
+        }
+      ],
+      "year": "1967",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1967-opel-opel-mt.jpg",
+      "description": "Quality used transmission for 1967 Opel Opel. Trim/details: MT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1968-Opel-Opel",
+      "mpn": "AUAPW-TRA-1968-Opel-Opel",
+      "name": "1968 Opel Opel Transmission - MT, 1.5L",
+      "slug": "1968-opel-opel-transmission-mt-15l-18",
+      "canonicalSlug": "1968-opel-opel-transmission-mt-15l-18",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 997.62,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1177.19
+        },
+        {
+          "mileage": "Medium",
+          "price": 997.62
+        },
+        {
+          "mileage": "High",
+          "price": 838
+        }
+      ],
+      "year": "1968",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1968-opel-opel-mt-1.5l.jpg",
+      "description": "Quality used transmission for 1968 Opel Opel. Trim/details: MT, 1.5L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1968-Opel-Opel",
+      "mpn": "AUAPW-TRA-1968-Opel-Opel",
+      "name": "1968 Opel Opel Transmission - AT, 1.1L",
+      "slug": "1968-opel-opel-transmission-at-11l-19",
+      "canonicalSlug": "1968-opel-opel-transmission-at-11l-19",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 997.62,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1177.19
+        },
+        {
+          "mileage": "Medium",
+          "price": 997.62
+        },
+        {
+          "mileage": "High",
+          "price": 838
+        }
+      ],
+      "year": "1968",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1968-opel-opel-at-1.1l.jpg",
+      "description": "Quality used transmission for 1968 Opel Opel. Trim/details: AT, 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1968-Opel-Opel",
+      "mpn": "AUAPW-TRA-1968-Opel-Opel",
+      "name": "1968 Opel Opel Transmission - AT, 1.9L",
+      "slug": "1968-opel-opel-transmission-at-19l-20",
+      "canonicalSlug": "1968-opel-opel-transmission-at-19l-20",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1035,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1221.3
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 869.4
+        }
+      ],
+      "year": "1968",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1968-opel-opel-at-1.9l.jpg",
+      "description": "Quality used transmission for 1968 Opel Opel. Trim/details: AT, 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1968-Opel-Opel",
+      "mpn": "AUAPW-TRA-1968-Opel-Opel",
+      "name": "1968 Opel Opel Transmission - MT, 1.1L",
+      "slug": "1968-opel-opel-transmission-mt-11l-21",
+      "canonicalSlug": "1968-opel-opel-transmission-mt-11l-21",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 952.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1124.27
+        },
+        {
+          "mileage": "Medium",
+          "price": 952.77
+        },
+        {
+          "mileage": "High",
+          "price": 800.33
+        }
+      ],
+      "year": "1968",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1968-opel-opel-mt-1.1l.jpg",
+      "description": "Quality used transmission for 1968 Opel Opel. Trim/details: MT, 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1968-Opel-Opel",
+      "mpn": "AUAPW-TRA-1968-Opel-Opel",
+      "name": "1968 Opel Opel Transmission - MT, 1.9L",
+      "slug": "1968-opel-opel-transmission-mt-19l-22",
+      "canonicalSlug": "1968-opel-opel-transmission-mt-19l-22",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1012.57,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1194.83
+        },
+        {
+          "mileage": "Medium",
+          "price": 1012.57
+        },
+        {
+          "mileage": "High",
+          "price": 850.56
+        }
+      ],
+      "year": "1968",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1968-opel-opel-mt-1.9l.jpg",
+      "description": "Quality used transmission for 1968 Opel Opel. Trim/details: MT, 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1969-Opel-Opel",
+      "mpn": "AUAPW-TRA-1969-Opel-Opel",
+      "name": "1969 Opel Opel Transmission - AT, 1.1L",
+      "slug": "1969-opel-opel-transmission-at-11l-23",
+      "canonicalSlug": "1969-opel-opel-transmission-at-11l-23",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 997.62,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1177.19
+        },
+        {
+          "mileage": "Medium",
+          "price": 997.62
+        },
+        {
+          "mileage": "High",
+          "price": 838
+        }
+      ],
+      "year": "1969",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1969-opel-opel-at-1.1l.jpg",
+      "description": "Quality used transmission for 1969 Opel Opel. Trim/details: AT, 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1969-Opel-Opel",
+      "mpn": "AUAPW-TRA-1969-Opel-Opel",
+      "name": "1969 Opel Opel Transmission - AT, 1.9L",
+      "slug": "1969-opel-opel-transmission-at-19l-24",
+      "canonicalSlug": "1969-opel-opel-transmission-at-19l-24",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1035,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1221.3
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 869.4
+        }
+      ],
+      "year": "1969",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1969-opel-opel-at-1.9l.jpg",
+      "description": "Quality used transmission for 1969 Opel Opel. Trim/details: AT, 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1969-Opel-Opel",
+      "mpn": "AUAPW-TRA-1969-Opel-Opel",
+      "name": "1969 Opel Opel Transmission - MT, 1.1L",
+      "slug": "1969-opel-opel-transmission-mt-11l-25",
+      "canonicalSlug": "1969-opel-opel-transmission-mt-11l-25",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 952.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1124.27
+        },
+        {
+          "mileage": "Medium",
+          "price": 952.77
+        },
+        {
+          "mileage": "High",
+          "price": 800.33
+        }
+      ],
+      "year": "1969",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1969-opel-opel-mt-1.1l.jpg",
+      "description": "Quality used transmission for 1969 Opel Opel. Trim/details: MT, 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1969-Opel-Opel",
+      "mpn": "AUAPW-TRA-1969-Opel-Opel",
+      "name": "1969 Opel Opel Transmission - MT, 1.9L",
+      "slug": "1969-opel-opel-transmission-mt-19l-26",
+      "canonicalSlug": "1969-opel-opel-transmission-mt-19l-26",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1012.57,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1194.83
+        },
+        {
+          "mileage": "Medium",
+          "price": 1012.57
+        },
+        {
+          "mileage": "High",
+          "price": 850.56
+        }
+      ],
+      "year": "1969",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1969-opel-opel-mt-1.9l.jpg",
+      "description": "Quality used transmission for 1969 Opel Opel. Trim/details: MT, 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1970-Opel-Opel",
+      "mpn": "AUAPW-TRA-1970-Opel-Opel",
+      "name": "1970 Opel Opel Transmission - AT, 1.1L",
+      "slug": "1970-opel-opel-transmission-at-11l-27",
+      "canonicalSlug": "1970-opel-opel-transmission-at-11l-27",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 997.62,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1177.19
+        },
+        {
+          "mileage": "Medium",
+          "price": 997.62
+        },
+        {
+          "mileage": "High",
+          "price": 838
+        }
+      ],
+      "year": "1970",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1970-opel-opel-at-1.1l.jpg",
+      "description": "Quality used transmission for 1970 Opel Opel. Trim/details: AT, 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1970-Opel-Opel",
+      "mpn": "AUAPW-TRA-1970-Opel-Opel",
+      "name": "1970 Opel Opel Transmission - AT, 1.9L",
+      "slug": "1970-opel-opel-transmission-at-19l-28",
+      "canonicalSlug": "1970-opel-opel-transmission-at-19l-28",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1035,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1221.3
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 869.4
+        }
+      ],
+      "year": "1970",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1970-opel-opel-at-1.9l.jpg",
+      "description": "Quality used transmission for 1970 Opel Opel. Trim/details: AT, 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1970-Opel-Opel",
+      "mpn": "AUAPW-TRA-1970-Opel-Opel",
+      "name": "1970 Opel Opel Transmission - MT, 1.1L",
+      "slug": "1970-opel-opel-transmission-mt-11l-29",
+      "canonicalSlug": "1970-opel-opel-transmission-mt-11l-29",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 952.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1124.27
+        },
+        {
+          "mileage": "Medium",
+          "price": 952.77
+        },
+        {
+          "mileage": "High",
+          "price": 800.33
+        }
+      ],
+      "year": "1970",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1970-opel-opel-mt-1.1l.jpg",
+      "description": "Quality used transmission for 1970 Opel Opel. Trim/details: MT, 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1970-Opel-Opel",
+      "mpn": "AUAPW-TRA-1970-Opel-Opel",
+      "name": "1970 Opel Opel Transmission - MT, 1.9L",
+      "slug": "1970-opel-opel-transmission-mt-19l-30",
+      "canonicalSlug": "1970-opel-opel-transmission-mt-19l-30",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1012.57,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1194.83
+        },
+        {
+          "mileage": "Medium",
+          "price": 1012.57
+        },
+        {
+          "mileage": "High",
+          "price": 850.56
+        }
+      ],
+      "year": "1970",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1970-opel-opel-mt-1.9l.jpg",
+      "description": "Quality used transmission for 1970 Opel Opel. Trim/details: MT, 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1971-Opel-Opel",
+      "mpn": "AUAPW-TRA-1971-Opel-Opel",
+      "name": "1971 Opel Opel Transmission - AT, 1.1L",
+      "slug": "1971-opel-opel-transmission-at-11l-31",
+      "canonicalSlug": "1971-opel-opel-transmission-at-11l-31",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 997.62,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1177.19
+        },
+        {
+          "mileage": "Medium",
+          "price": 997.62
+        },
+        {
+          "mileage": "High",
+          "price": 838
+        }
+      ],
+      "year": "1971",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1971-opel-opel-at-1.1l.jpg",
+      "description": "Quality used transmission for 1971 Opel Opel. Trim/details: AT, 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1971-Opel-Opel",
+      "mpn": "AUAPW-TRA-1971-Opel-Opel",
+      "name": "1971 Opel Opel Transmission - AT, 1.9L",
+      "slug": "1971-opel-opel-transmission-at-19l-32",
+      "canonicalSlug": "1971-opel-opel-transmission-at-19l-32",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1035,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1221.3
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 869.4
+        }
+      ],
+      "year": "1971",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1971-opel-opel-at-1.9l.jpg",
+      "description": "Quality used transmission for 1971 Opel Opel. Trim/details: AT, 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1971-Opel-Opel",
+      "mpn": "AUAPW-TRA-1971-Opel-Opel",
+      "name": "1971 Opel Opel Transmission - MT, 1.1L",
+      "slug": "1971-opel-opel-transmission-mt-11l-33",
+      "canonicalSlug": "1971-opel-opel-transmission-mt-11l-33",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 952.77,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1124.27
+        },
+        {
+          "mileage": "Medium",
+          "price": 952.77
+        },
+        {
+          "mileage": "High",
+          "price": 800.33
+        }
+      ],
+      "year": "1971",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1971-opel-opel-mt-1.1l.jpg",
+      "description": "Quality used transmission for 1971 Opel Opel. Trim/details: MT, 1.1L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1971-Opel-Opel",
+      "mpn": "AUAPW-TRA-1971-Opel-Opel",
+      "name": "1971 Opel Opel Transmission - MT, 1.9L",
+      "slug": "1971-opel-opel-transmission-mt-19l-34",
+      "canonicalSlug": "1971-opel-opel-transmission-mt-19l-34",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1012.57,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1194.83
+        },
+        {
+          "mileage": "Medium",
+          "price": 1012.57
+        },
+        {
+          "mileage": "High",
+          "price": 850.56
+        }
+      ],
+      "year": "1971",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1971-opel-opel-mt-1.9l.jpg",
+      "description": "Quality used transmission for 1971 Opel Opel. Trim/details: MT, 1.9L. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1972-Opel-Opel",
+      "mpn": "AUAPW-TRA-1972-Opel-Opel",
+      "name": "1972 Opel Opel Transmission - AT",
+      "slug": "1972-opel-opel-transmission-at-35",
+      "canonicalSlug": "1972-opel-opel-transmission-at-35",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 878.02,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1036.06
+        },
+        {
+          "mileage": "Medium",
+          "price": 878.02
+        },
+        {
+          "mileage": "High",
+          "price": 737.54
+        }
+      ],
+      "year": "1972",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1972-opel-opel-at.jpg",
+      "description": "Quality used transmission for 1972 Opel Opel. Trim/details: AT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1972-Opel-Opel",
+      "mpn": "AUAPW-TRA-1972-Opel-Opel",
+      "name": "1972 Opel Opel Transmission - MT",
+      "slug": "1972-opel-opel-transmission-mt-36",
+      "canonicalSlug": "1972-opel-opel-transmission-mt-36",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1027.52,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1212.47
+        },
+        {
+          "mileage": "Medium",
+          "price": 1027.52
+        },
+        {
+          "mileage": "High",
+          "price": 863.12
+        }
+      ],
+      "year": "1972",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1972-opel-opel-mt.jpg",
+      "description": "Quality used transmission for 1972 Opel Opel. Trim/details: MT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1973-Opel-Opel",
+      "mpn": "AUAPW-TRA-1973-Opel-Opel",
+      "name": "1973 Opel Opel Transmission - AT",
+      "slug": "1973-opel-opel-transmission-at-37",
+      "canonicalSlug": "1973-opel-opel-transmission-at-37",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 878.02,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1036.06
+        },
+        {
+          "mileage": "Medium",
+          "price": 878.02
+        },
+        {
+          "mileage": "High",
+          "price": 737.54
+        }
+      ],
+      "year": "1973",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1973-opel-opel-at.jpg",
+      "description": "Quality used transmission for 1973 Opel Opel. Trim/details: AT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1973-Opel-Opel",
+      "mpn": "AUAPW-TRA-1973-Opel-Opel",
+      "name": "1973 Opel Opel Transmission - MT",
+      "slug": "1973-opel-opel-transmission-mt-38",
+      "canonicalSlug": "1973-opel-opel-transmission-mt-38",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1027.52,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1212.47
+        },
+        {
+          "mileage": "Medium",
+          "price": 1027.52
+        },
+        {
+          "mileage": "High",
+          "price": 863.12
+        }
+      ],
+      "year": "1973",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1973-opel-opel-mt.jpg",
+      "description": "Quality used transmission for 1973 Opel Opel. Trim/details: MT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1974-Opel-Opel",
+      "mpn": "AUAPW-TRA-1974-Opel-Opel",
+      "name": "1974 Opel Opel Transmission - AT",
+      "slug": "1974-opel-opel-transmission-at-39",
+      "canonicalSlug": "1974-opel-opel-transmission-at-39",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 878.02,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1036.06
+        },
+        {
+          "mileage": "Medium",
+          "price": 878.02
+        },
+        {
+          "mileage": "High",
+          "price": 737.54
+        }
+      ],
+      "year": "1974",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1974-opel-opel-at.jpg",
+      "description": "Quality used transmission for 1974 Opel Opel. Trim/details: AT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1974-Opel-Opel",
+      "mpn": "AUAPW-TRA-1974-Opel-Opel",
+      "name": "1974 Opel Opel Transmission - MT",
+      "slug": "1974-opel-opel-transmission-mt-40",
+      "canonicalSlug": "1974-opel-opel-transmission-mt-40",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1027.52,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1212.47
+        },
+        {
+          "mileage": "Medium",
+          "price": 1027.52
+        },
+        {
+          "mileage": "High",
+          "price": 863.12
+        }
+      ],
+      "year": "1974",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1974-opel-opel-mt.jpg",
+      "description": "Quality used transmission for 1974 Opel Opel. Trim/details: MT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1975-Opel-Opel",
+      "mpn": "AUAPW-TRA-1975-Opel-Opel",
+      "name": "1975 Opel Opel Transmission - AT",
+      "slug": "1975-opel-opel-transmission-at-41",
+      "canonicalSlug": "1975-opel-opel-transmission-at-41",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 878.02,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1036.06
+        },
+        {
+          "mileage": "Medium",
+          "price": 878.02
+        },
+        {
+          "mileage": "High",
+          "price": 737.54
+        }
+      ],
+      "year": "1975",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1975-opel-opel-at.jpg",
+      "description": "Quality used transmission for 1975 Opel Opel. Trim/details: AT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1975-Opel-Opel",
+      "mpn": "AUAPW-TRA-1975-Opel-Opel",
+      "name": "1975 Opel Opel Transmission - MT",
+      "slug": "1975-opel-opel-transmission-mt-42",
+      "canonicalSlug": "1975-opel-opel-transmission-mt-42",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 1027.52,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1212.47
+        },
+        {
+          "mileage": "Medium",
+          "price": 1027.52
+        },
+        {
+          "mileage": "High",
+          "price": 863.12
+        }
+      ],
+      "year": "1975",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1975-opel-opel-mt.jpg",
+      "description": "Quality used transmission for 1975 Opel Opel. Trim/details: MT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1976-Opel-Opel",
+      "mpn": "AUAPW-TRA-1976-Opel-Opel",
+      "name": "1976 Opel Opel Transmission - MT, (4 speed), Canada emissions",
+      "slug": "1976-opel-opel-transmission-mt-4-speed-canada-emissions-43",
+      "canonicalSlug": "1976-opel-opel-transmission-mt-4-speed-canada-emissions-43",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1976",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1976-opel-opel-mt-4-speed-canada-emissions.jpg",
+      "description": "Quality used transmission for 1976 Opel Opel. Trim/details: MT, (4 speed), Canada emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1976-Opel-Opel",
+      "mpn": "AUAPW-TRA-1976-Opel-Opel",
+      "name": "1976 Opel Opel Transmission - MT, (4 speed), Federal emissions",
+      "slug": "1976-opel-opel-transmission-mt-4-speed-federal-emissions-44",
+      "canonicalSlug": "1976-opel-opel-transmission-mt-4-speed-federal-emissions-44",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1976",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1976-opel-opel-mt-4-speed-federal-emissions.jpg",
+      "description": "Quality used transmission for 1976 Opel Opel. Trim/details: MT, (4 speed), Federal emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1976-Opel-Opel",
+      "mpn": "AUAPW-TRA-1976-Opel-Opel",
+      "name": "1976 Opel Opel Transmission - AT",
+      "slug": "1976-opel-opel-transmission-at-45",
+      "canonicalSlug": "1976-opel-opel-transmission-at-45",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 997.62,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1177.19
+        },
+        {
+          "mileage": "Medium",
+          "price": 997.62
+        },
+        {
+          "mileage": "High",
+          "price": 838
+        }
+      ],
+      "year": "1976",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1976-opel-opel-at.jpg",
+      "description": "Quality used transmission for 1976 Opel Opel. Trim/details: AT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1977-Opel-Opel",
+      "mpn": "AUAPW-TRA-1977-Opel-Opel",
+      "name": "1977 Opel Opel Transmission - AT",
+      "slug": "1977-opel-opel-transmission-at-46",
+      "canonicalSlug": "1977-opel-opel-transmission-at-46",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 997.62,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1177.19
+        },
+        {
+          "mileage": "Medium",
+          "price": 997.62
+        },
+        {
+          "mileage": "High",
+          "price": 838
+        }
+      ],
+      "year": "1977",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-opel-opel-at.jpg",
+      "description": "Quality used transmission for 1977 Opel Opel. Trim/details: AT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1977-Opel-Opel",
+      "mpn": "AUAPW-TRA-1977-Opel-Opel",
+      "name": "1977 Opel Opel Transmission - MT, 4 speed, Canada emissions",
+      "slug": "1977-opel-opel-transmission-mt-4-speed-canada-emissions-47",
+      "canonicalSlug": "1977-opel-opel-transmission-mt-4-speed-canada-emissions-47",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1977",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-opel-opel-mt-4-speed-canada-emissions.jpg",
+      "description": "Quality used transmission for 1977 Opel Opel. Trim/details: MT, 4 speed, Canada emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1977-Opel-Opel",
+      "mpn": "AUAPW-TRA-1977-Opel-Opel",
+      "name": "1977 Opel Opel Transmission - MT, 4 speed, Federal emissions",
+      "slug": "1977-opel-opel-transmission-mt-4-speed-federal-emissions-48",
+      "canonicalSlug": "1977-opel-opel-transmission-mt-4-speed-federal-emissions-48",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1977",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-opel-opel-mt-4-speed-federal-emissions.jpg",
+      "description": "Quality used transmission for 1977 Opel Opel. Trim/details: MT, 4 speed, Federal emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1977-Opel-Opel",
+      "mpn": "AUAPW-TRA-1977-Opel-Opel",
+      "name": "1977 Opel Opel Transmission - MT, 4 speed, High Altitude emissions",
+      "slug": "1977-opel-opel-transmission-mt-4-speed-high-altitude-emissions-49",
+      "canonicalSlug": "1977-opel-opel-transmission-mt-4-speed-high-altitude-emissions-49",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1977",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-opel-opel-mt-4-speed-high-altitude-emissions.jpg",
+      "description": "Quality used transmission for 1977 Opel Opel. Trim/details: MT, 4 speed, High Altitude emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1977-Opel-Opel",
+      "mpn": "AUAPW-TRA-1977-Opel-Opel",
+      "name": "1977 Opel Opel Transmission - MT, 5 speed, Federal emissions",
+      "slug": "1977-opel-opel-transmission-mt-5-speed-federal-emissions-50",
+      "canonicalSlug": "1977-opel-opel-transmission-mt-5-speed-federal-emissions-50",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1977",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-opel-opel-mt-5-speed-federal-emissions.jpg",
+      "description": "Quality used transmission for 1977 Opel Opel. Trim/details: MT, 5 speed, Federal emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1978-Opel-Opel",
+      "mpn": "AUAPW-TRA-1978-Opel-Opel",
+      "name": "1978 Opel Opel Transmission - AT",
+      "slug": "1978-opel-opel-transmission-at-51",
+      "canonicalSlug": "1978-opel-opel-transmission-at-51",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 997.62,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1177.19
+        },
+        {
+          "mileage": "Medium",
+          "price": 997.62
+        },
+        {
+          "mileage": "High",
+          "price": 838
+        }
+      ],
+      "year": "1978",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1978-opel-opel-at.jpg",
+      "description": "Quality used transmission for 1978 Opel Opel. Trim/details: AT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1978-Opel-Opel",
+      "mpn": "AUAPW-TRA-1978-Opel-Opel",
+      "name": "1978 Opel Opel Transmission - MT, 4 speed, Canada emissions",
+      "slug": "1978-opel-opel-transmission-mt-4-speed-canada-emissions-52",
+      "canonicalSlug": "1978-opel-opel-transmission-mt-4-speed-canada-emissions-52",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1978",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1978-opel-opel-mt-4-speed-canada-emissions.jpg",
+      "description": "Quality used transmission for 1978 Opel Opel. Trim/details: MT, 4 speed, Canada emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1978-Opel-Opel",
+      "mpn": "AUAPW-TRA-1978-Opel-Opel",
+      "name": "1978 Opel Opel Transmission - MT, 4 speed, Federal emissions",
+      "slug": "1978-opel-opel-transmission-mt-4-speed-federal-emissions-53",
+      "canonicalSlug": "1978-opel-opel-transmission-mt-4-speed-federal-emissions-53",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1978",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1978-opel-opel-mt-4-speed-federal-emissions.jpg",
+      "description": "Quality used transmission for 1978 Opel Opel. Trim/details: MT, 4 speed, Federal emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1978-Opel-Opel",
+      "mpn": "AUAPW-TRA-1978-Opel-Opel",
+      "name": "1978 Opel Opel Transmission - MT, 5 speed, Federal emissions",
+      "slug": "1978-opel-opel-transmission-mt-5-speed-federal-emissions-54",
+      "canonicalSlug": "1978-opel-opel-transmission-mt-5-speed-federal-emissions-54",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1978",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1978-opel-opel-mt-5-speed-federal-emissions.jpg",
+      "description": "Quality used transmission for 1978 Opel Opel. Trim/details: MT, 5 speed, Federal emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1979-Opel-Opel",
+      "mpn": "AUAPW-TRA-1979-Opel-Opel",
+      "name": "1979 Opel Opel Transmission - AT",
+      "slug": "1979-opel-opel-transmission-at-55",
+      "canonicalSlug": "1979-opel-opel-transmission-at-55",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 997.62,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1177.19
+        },
+        {
+          "mileage": "Medium",
+          "price": 997.62
+        },
+        {
+          "mileage": "High",
+          "price": 838
+        }
+      ],
+      "year": "1979",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1979-opel-opel-at.jpg",
+      "description": "Quality used transmission for 1979 Opel Opel. Trim/details: AT. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1979-Opel-Opel",
+      "mpn": "AUAPW-TRA-1979-Opel-Opel",
+      "name": "1979 Opel Opel Transmission - MT, 4 speed, Federal emissions",
+      "slug": "1979-opel-opel-transmission-mt-4-speed-federal-emissions-56",
+      "canonicalSlug": "1979-opel-opel-transmission-mt-4-speed-federal-emissions-56",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1979",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1979-opel-opel-mt-4-speed-federal-emissions.jpg",
+      "description": "Quality used transmission for 1979 Opel Opel. Trim/details: MT, 4 speed, Federal emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    },
+    {
+      "id": "AUAPW-TRA-1979-Opel-Opel",
+      "mpn": "AUAPW-TRA-1979-Opel-Opel",
+      "name": "1979 Opel Opel Transmission - MT, 5 speed, Federal emissions",
+      "slug": "1979-opel-opel-transmission-mt-5-speed-federal-emissions-57",
+      "canonicalSlug": "1979-opel-opel-transmission-mt-5-speed-federal-emissions-57",
+      "brand": "Opel",
+      "category": "transmission",
+      "price": 848.12,
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1000.78
+        },
+        {
+          "mileage": "Medium",
+          "price": 848.12
+        },
+        {
+          "mileage": "High",
+          "price": 712.42
+        }
+      ],
+      "year": "1979",
+      "model": "Opel Transmission",
+      "imageUrl": "https://www.auapw.org/images/parts/transmission-1979-opel-opel-mt-5-speed-federal-emissions.jpg",
+      "description": "Quality used transmission for 1979 Opel Opel. Trim/details: MT, 5 speed, Federal emissions. Price includes part listing details; verify fitment before purchase.",
+      "warranty": "90-day",
+      "condition": "used",
+      "availability": "in_stock"
+    }
+  ]
+}
