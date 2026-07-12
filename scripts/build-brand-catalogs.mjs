@@ -21,6 +21,7 @@ const OUT_DIR = path.join(DATA_DIR, 'brands')
 
 /** brand slug -> { label, file, feedBrand? (filter for feed-format files) } */
 const BRAND_SHEETS = {
+  acura: { label: 'Acura', isPrebuilt: true },
   honda: { label: 'Honda', file: 'HONDA-bb5ba1.xlsx' },
   infiniti: { label: 'INFINITI', file: 'INFINITI-fc83dd.xlsx' },
   hummer: { label: 'HUMMER', file: 'HUMMER-4fc954.xlsx' },
@@ -144,6 +145,16 @@ const summary = []
 const manifest = []
 
 for (const [brandSlug, cfg] of Object.entries(BRAND_SHEETS)) {
+  // Prebuilt brands (like Acura) are already in data/brands, just add to manifest
+  if (cfg.isPrebuilt) {
+    const catalogPath = path.join(OUT_DIR, `${brandSlug}.json`)
+    if (fs.existsSync(catalogPath)) {
+      const cat = JSON.parse(fs.readFileSync(catalogPath, 'utf8'))
+      summary.push(`${brandSlug}: ${cat.count} products (prebuilt)`)
+      manifest.push({ slug: brandSlug, label: cfg.label, count: cat.count })
+    }
+    continue
+  }
   const filePath = path.join(DATA_DIR, cfg.file)
   if (!fs.existsSync(filePath)) {
     console.log(`SKIP ${brandSlug}: missing ${cfg.file}`)
