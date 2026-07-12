@@ -12,6 +12,7 @@ import { PartsHistory } from '@/components/products/parts-history'
 import { SeoBacklinks } from '@/components/seo-backlinks'
 import { BrandPurchasePanel } from '@/components/brands/brand-purchase-panel'
 import { BrandProductImage } from '@/components/brands/brand-product-image'
+import { BrandProductSearch } from '@/components/brands/brand-product-search'
 import {
   getBrandLabel,
   getBrandPartTypeLabel,
@@ -21,7 +22,7 @@ import {
   isValidBrand,
   resolveBrandPartImage,
 } from '@/lib/brand-catalog'
-import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight, ImageIcon, ExternalLink, Search } from 'lucide-react'
+import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight, ImageIcon, ExternalLink } from 'lucide-react'
 
 interface PageProps {
   params: Promise<{ brand: string; slug: string }>
@@ -244,46 +245,22 @@ export default async function BrandProductPage({ params }: PageProps) {
           </div>
         </section>
 
-        {/* Search another part — plain GET form, no JS required */}
-        <section className="py-6 border-y border-border/50 bg-card/20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-              <div className="min-w-0">
-                <h2 className="text-lg font-bold text-foreground">Looking for another {label} part?</h2>
-                <p className="text-sm text-muted-foreground">
-                  Search our full {label} catalog, or{' '}
-                  <Link href="/quote" className="font-medium text-primary hover:underline">
-                    request a free quote
-                  </Link>{' '}
-                  if you can&apos;t find it.
-                </p>
-              </div>
-              <form
-                method="get"
-                action={`/brands/${brand}`}
-                className="flex w-full gap-2 md:max-w-md"
-                role="search"
-                aria-label={`Search ${label} parts`}
-              >
-                <div className="relative flex-1">
-                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                  <input
-                    type="search"
-                    name="q"
-                    placeholder={`Search another ${label} part…`}
-                    className="w-full rounded-lg border border-border/40 bg-card py-2 pl-9 pr-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90 transition-colors"
-                >
-                  Search
-                </button>
-              </form>
-            </div>
-          </div>
-        </section>
+  {/* Search another part */}
+  <section className="border-y border-border/50 bg-card/20 py-10">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <div className="mb-6 text-center">
+  <h2 className="text-2xl font-black text-foreground">Looking for another {label} part?</h2>
+  <p className="mt-2 text-sm text-muted-foreground">
+  Search by vehicle and part type, or{' '}
+  <Link href="/quote" className="font-medium text-primary hover:underline">
+  request a free quote
+  </Link>{' '}
+  if you can&apos;t find it.
+  </p>
+  </div>
+  <BrandProductSearch defaultMake={label} />
+  </div>
+  </section>
 
         {/* Related Products */}
         {related.length > 0 && (
