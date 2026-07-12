@@ -1,12 +1,10 @@
 {
+  "brand": "daewoo",
   "products": [
     {
-      "id": "DAE-1",
-      "mpn": "DAE-1",
+      "id": "P-1",
+      "mpn": "P-1",
       "name": "1998 Daewoo Lanos Engine - Canada market, 1.5L (4 cylinder, VIN Y, 8th digit)",
-      "slug": "1998-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
-      "canonicalSlug": "1998-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
-      "category": "used engine",
       "price": 1484,
       "tiers": {
         "low": 1602,
@@ -14,35 +12,41 @@
         "high": 1231
       },
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.5L (4 cylinder, VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-1998-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit",
+      "category": "engine",
+      "year": "1998",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.5L (4 cylinder, VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-1",
+      "compatibility": "",
+      "canonicalSlug": "1998-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
+      "slug": "1998-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit"
     },
     {
-      "id": "DAE-2",
-      "mpn": "DAE-2",
+      "id": "P-2",
+      "mpn": "P-2",
       "name": "1998 Daewoo Lanos Engine - Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT",
-      "slug": "1998-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at",
+      "price": 1110,
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1998-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at",
+      "category": "engine",
+      "year": "1998",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-2",
+      "compatibility": "",
       "canonicalSlug": "1998-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "category": "used engine",
-      "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1998-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at"
     },
     {
-      "id": "DAE-3",
-      "mpn": "DAE-3",
+      "id": "P-3",
+      "mpn": "P-3",
       "name": "1998 Daewoo Lanos Engine - Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT",
-      "slug": "1998-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "canonicalSlug": "1998-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "category": "used engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -50,17 +54,20 @@
         "high": 921
       },
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-1998-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt",
+      "category": "engine",
+      "year": "1998",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-3",
+      "compatibility": "",
+      "canonicalSlug": "1998-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
+      "slug": "1998-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt"
     },
     {
-      "id": "DAE-4",
-      "mpn": "DAE-4",
+      "id": "P-4",
+      "mpn": "P-4",
       "name": "1998 Daewoo Lanos Engine - US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT",
-      "slug": "1998-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "canonicalSlug": "1998-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "category": "used engine",
       "price": 960,
       "tiers": {
         "low": 1037,
@@ -68,17 +75,20 @@
         "high": 797
       },
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-1998-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at",
+      "category": "engine",
+      "year": "1998",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-4",
+      "compatibility": "",
+      "canonicalSlug": "1998-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
+      "slug": "1998-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at"
     },
     {
-      "id": "DAE-5",
-      "mpn": "DAE-5",
+      "id": "P-5",
+      "mpn": "P-5",
       "name": "1998 Daewoo Lanos Engine - US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT",
-      "slug": "1998-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "canonicalSlug": "1998-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "category": "used engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -86,89 +96,104 @@
         "high": 921
       },
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-1998-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt",
+      "category": "engine",
+      "year": "1998",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-5",
+      "compatibility": "",
+      "canonicalSlug": "1998-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
+      "slug": "1998-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt"
     },
     {
-      "id": "DAE-6",
-      "mpn": "DAE-6",
+      "id": "P-6",
+      "mpn": "P-6",
       "name": "1999 Daewoo Lanos Engine - Canada market, 1.5L (4 cylinder, VIN Y, 8th digit)",
-      "slug": "1999-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
+      "price": 1484,
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1999-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit",
+      "category": "engine",
+      "year": "1999",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.5L (4 cylinder, VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-6",
+      "compatibility": "",
       "canonicalSlug": "1999-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
-      "category": "used engine",
-      "price": 1484,
-      "tiers": {
-        "low": 1602,
-        "medium": 1484,
-        "high": 1231
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.5L (4 cylinder, VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1999-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit"
     },
     {
-      "id": "DAE-7",
-      "mpn": "DAE-7",
+      "id": "P-7",
+      "mpn": "P-7",
       "name": "1999 Daewoo Lanos Engine - Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT",
-      "slug": "1999-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at",
+      "price": 1110,
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1999-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at",
+      "category": "engine",
+      "year": "1999",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-7",
+      "compatibility": "",
       "canonicalSlug": "1999-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "category": "used engine",
-      "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1999-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at"
     },
     {
-      "id": "DAE-8",
-      "mpn": "DAE-8",
+      "id": "P-8",
+      "mpn": "P-8",
       "name": "1999 Daewoo Lanos Engine - Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT",
-      "slug": "1999-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
+      "price": 1185,
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1999-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt",
+      "category": "engine",
+      "year": "1999",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-8",
+      "compatibility": "",
       "canonicalSlug": "1999-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "category": "used engine",
-      "price": 1185,
-      "tiers": {
-        "low": 1279,
-        "medium": 1185,
-        "high": 983
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1999-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt"
     },
     {
-      "id": "DAE-9",
-      "mpn": "DAE-9",
+      "id": "P-9",
+      "mpn": "P-9",
       "name": "1999 Daewoo Lanos Engine - US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT",
-      "slug": "1999-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
+      "price": 1110,
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1999-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at",
+      "category": "engine",
+      "year": "1999",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-9",
+      "compatibility": "",
       "canonicalSlug": "1999-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "category": "used engine",
-      "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1999-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at"
     },
     {
-      "id": "DAE-10",
-      "mpn": "DAE-10",
+      "id": "P-10",
+      "mpn": "P-10",
       "name": "1999 Daewoo Lanos Engine - US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT",
-      "slug": "1999-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "canonicalSlug": "1999-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "category": "used engine",
       "price": 1185,
       "tiers": {
         "low": 1279,
@@ -176,89 +201,104 @@
         "high": 983
       },
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-1999-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt",
+      "category": "engine",
+      "year": "1999",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-10",
+      "compatibility": "",
+      "canonicalSlug": "1999-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
+      "slug": "1999-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt"
     },
     {
-      "id": "DAE-11",
-      "mpn": "DAE-11",
+      "id": "P-11",
+      "mpn": "P-11",
       "name": "2000 Daewoo Lanos Engine - Canada market, 1.5L (4 cylinder, VIN Y, 8th digit)",
-      "slug": "2000-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
+      "price": 1484,
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2000-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit",
+      "category": "engine",
+      "year": "2000",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.5L (4 cylinder, VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-11",
+      "compatibility": "",
       "canonicalSlug": "2000-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
-      "category": "used engine",
-      "price": 1484,
-      "tiers": {
-        "low": 1602,
-        "medium": 1484,
-        "high": 1231
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.5L (4 cylinder, VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2000-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit"
     },
     {
-      "id": "DAE-12",
-      "mpn": "DAE-12",
+      "id": "P-12",
+      "mpn": "P-12",
       "name": "2000 Daewoo Lanos Engine - Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT",
-      "slug": "2000-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at",
+      "price": 1110,
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2000-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at",
+      "category": "engine",
+      "year": "2000",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-12",
+      "compatibility": "",
       "canonicalSlug": "2000-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "category": "used engine",
-      "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2000-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at"
     },
     {
-      "id": "DAE-13",
-      "mpn": "DAE-13",
+      "id": "P-13",
+      "mpn": "P-13",
       "name": "2000 Daewoo Lanos Engine - Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT",
-      "slug": "2000-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
+      "price": 1185,
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2000-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt",
+      "category": "engine",
+      "year": "2000",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-13",
+      "compatibility": "",
       "canonicalSlug": "2000-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "category": "used engine",
-      "price": 1185,
-      "tiers": {
-        "low": 1279,
-        "medium": 1185,
-        "high": 983
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2000-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt"
     },
     {
-      "id": "DAE-14",
-      "mpn": "DAE-14",
+      "id": "P-14",
+      "mpn": "P-14",
       "name": "2000 Daewoo Lanos Engine - US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT",
-      "slug": "2000-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
+      "price": 1110,
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2000-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at",
+      "category": "engine",
+      "year": "2000",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-14",
+      "compatibility": "",
       "canonicalSlug": "2000-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "category": "used engine",
-      "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2000-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at"
     },
     {
-      "id": "DAE-15",
-      "mpn": "DAE-15",
+      "id": "P-15",
+      "mpn": "P-15",
       "name": "2000 Daewoo Lanos Engine - US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT",
-      "slug": "2000-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "canonicalSlug": "2000-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "category": "used engine",
       "price": 1185,
       "tiers": {
         "low": 1279,
@@ -266,53 +306,62 @@
         "high": 983
       },
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2000-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt",
+      "category": "engine",
+      "year": "2000",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-15",
+      "compatibility": "",
+      "canonicalSlug": "2000-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
+      "slug": "2000-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt"
     },
     {
-      "id": "DAE-16",
-      "mpn": "DAE-16",
+      "id": "P-16",
+      "mpn": "P-16",
       "name": "2001 Daewoo Lanos Engine - Canada market, 1.5L (4 cylinder, VIN Y, 8th digit)",
-      "slug": "2001-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
+      "price": 1484,
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2001-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit",
+      "category": "engine",
+      "year": "2001",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.5L (4 cylinder, VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-16",
+      "compatibility": "",
       "canonicalSlug": "2001-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
-      "category": "used engine",
-      "price": 1484,
-      "tiers": {
-        "low": 1602,
-        "medium": 1484,
-        "high": 1231
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.5L (4 cylinder, VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2001-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit"
     },
     {
-      "id": "DAE-17",
-      "mpn": "DAE-17",
+      "id": "P-17",
+      "mpn": "P-17",
       "name": "2001 Daewoo Lanos Engine - Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT",
-      "slug": "2001-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at",
+      "price": 1110,
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2001-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at",
+      "category": "engine",
+      "year": "2001",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-17",
+      "compatibility": "",
       "canonicalSlug": "2001-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "category": "used engine",
-      "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2001-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at"
     },
     {
-      "id": "DAE-18",
-      "mpn": "DAE-18",
+      "id": "P-18",
+      "mpn": "P-18",
       "name": "2001 Daewoo Lanos Engine - Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT",
-      "slug": "2001-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "canonicalSlug": "2001-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "category": "used engine",
       "price": 1185,
       "tiers": {
         "low": 1279,
@@ -320,17 +369,20 @@
         "high": 983
       },
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2001-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt",
+      "category": "engine",
+      "year": "2001",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-18",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
+      "slug": "2001-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt"
     },
     {
-      "id": "DAE-19",
-      "mpn": "DAE-19",
+      "id": "P-19",
+      "mpn": "P-19",
       "name": "2001 Daewoo Lanos Engine - US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT",
-      "slug": "2001-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "canonicalSlug": "2001-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "category": "used engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -338,17 +390,20 @@
         "high": 921
       },
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2001-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at",
+      "category": "engine",
+      "year": "2001",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-19",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
+      "slug": "2001-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at"
     },
     {
-      "id": "DAE-20",
-      "mpn": "DAE-20",
+      "id": "P-20",
+      "mpn": "P-20",
       "name": "2001 Daewoo Lanos Engine - US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT",
-      "slug": "2001-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "canonicalSlug": "2001-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "category": "used engine",
       "price": 1185,
       "tiers": {
         "low": 1279,
@@ -356,17 +411,20 @@
         "high": 983
       },
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2001-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt",
+      "category": "engine",
+      "year": "2001",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-20",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
+      "slug": "2001-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt"
     },
     {
-      "id": "DAE-21",
-      "mpn": "DAE-21",
+      "id": "P-21",
+      "mpn": "P-21",
       "name": "2002 Daewoo Lanos Engine - Canada market, 1.5L (4 cylinder, VIN Y, 8th digit)",
-      "slug": "2002-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
-      "canonicalSlug": "2002-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
-      "category": "used engine",
       "price": 1484,
       "tiers": {
         "low": 1602,
@@ -374,35 +432,41 @@
         "high": 1231
       },
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.5L (4 cylinder, VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2002-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit",
+      "category": "engine",
+      "year": "2002",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.5L (4 cylinder, VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-lanos-canada-market-1.5l-4-cylinder-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-21",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit",
+      "slug": "2002-daewoo-lanos-engine-canada-market-1-5l-4-cylinder-vin-y-8th-digit"
     },
     {
-      "id": "DAE-22",
-      "mpn": "DAE-22",
+      "id": "P-22",
+      "mpn": "P-22",
       "name": "2002 Daewoo Lanos Engine - Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT",
-      "slug": "2002-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at",
+      "price": 1110,
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2002-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at",
+      "category": "engine",
+      "year": "2002",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-22",
+      "compatibility": "",
       "canonicalSlug": "2002-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "category": "used engine",
-      "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2002-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-at"
     },
     {
-      "id": "DAE-23",
-      "mpn": "DAE-23",
+      "id": "P-23",
+      "mpn": "P-23",
       "name": "2002 Daewoo Lanos Engine - Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT",
-      "slug": "2002-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "canonicalSlug": "2002-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "category": "used engine",
       "price": 1185,
       "tiers": {
         "low": 1279,
@@ -410,17 +474,20 @@
         "high": 983
       },
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2002-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt",
+      "category": "engine",
+      "year": "2002",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: Canada market, 1.6L (4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-lanos-canada-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-23",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
+      "slug": "2002-daewoo-lanos-engine-canada-market-1-6l-4-cylinder-vin-6-8th-digit-mt"
     },
     {
-      "id": "DAE-24",
-      "mpn": "DAE-24",
+      "id": "P-24",
+      "mpn": "P-24",
       "name": "2002 Daewoo Lanos Engine - US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT",
-      "slug": "2002-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "canonicalSlug": "2002-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
-      "category": "used engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -428,17 +495,20 @@
         "high": 921
       },
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2002-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at",
+      "category": "engine",
+      "year": "2002",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-24",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at",
+      "slug": "2002-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-at"
     },
     {
-      "id": "DAE-25",
-      "mpn": "DAE-25",
+      "id": "P-25",
+      "mpn": "P-25",
       "name": "2002 Daewoo Lanos Engine - US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT",
-      "slug": "2002-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "canonicalSlug": "2002-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
-      "category": "used engine",
       "price": 1185,
       "tiers": {
         "low": 1279,
@@ -446,17 +516,20 @@
         "high": 983
       },
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2002-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt",
+      "category": "engine",
+      "year": "2002",
+      "model": "Lanos Engine",
+      "description": "Premium quality used engine for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: US market, (1.6L, 4 cylinder, VIN 6, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-lanos-us-market-1.6l-4-cylinder-vin-6-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-25",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt",
+      "slug": "2002-daewoo-lanos-engine-us-market-1-6l-4-cylinder-vin-6-8th-digit-mt"
     },
     {
-      "id": "DAE-26",
-      "mpn": "DAE-26",
+      "id": "P-26",
+      "mpn": "P-26",
       "name": "1997 Daewoo Leganza Engine - (2.2L, 4 cylinder, VIN 2, 8th digit)",
-      "slug": "1997-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "canonicalSlug": "1997-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "category": "used engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -464,17 +537,20 @@
         "high": 1169
       },
       "imageUrl": "https://www.auapw.org/images/engines/1997-daewoo-leganza-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1997 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1997-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-1997-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit",
+      "category": "engine",
+      "year": "1997",
+      "model": "Leganza Engine",
+      "description": "Premium quality used engine for 1997 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1997-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-26",
+      "compatibility": "",
+      "canonicalSlug": "1997-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
+      "slug": "1997-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit"
     },
     {
-      "id": "DAE-27",
-      "mpn": "DAE-27",
+      "id": "P-27",
+      "mpn": "P-27",
       "name": "1998 Daewoo Leganza Engine - (2.2L, 4 cylinder, VIN 2, 8th digit)",
-      "slug": "1998-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "canonicalSlug": "1998-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "category": "used engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -482,17 +558,20 @@
         "high": 1169
       },
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-leganza-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1998 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-1998-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit",
+      "category": "engine",
+      "year": "1998",
+      "model": "Leganza Engine",
+      "description": "Premium quality used engine for 1998 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-27",
+      "compatibility": "",
+      "canonicalSlug": "1998-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
+      "slug": "1998-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit"
     },
     {
-      "id": "DAE-28",
-      "mpn": "DAE-28",
+      "id": "P-28",
+      "mpn": "P-28",
       "name": "1999 Daewoo Leganza Engine - (2.2L, 4 cylinder, VIN 2, 8th digit)",
-      "slug": "1999-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "canonicalSlug": "1999-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "category": "used engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -500,17 +579,20 @@
         "high": 1169
       },
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-leganza-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1999 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-1999-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit",
+      "category": "engine",
+      "year": "1999",
+      "model": "Leganza Engine",
+      "description": "Premium quality used engine for 1999 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-28",
+      "compatibility": "",
+      "canonicalSlug": "1999-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
+      "slug": "1999-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit"
     },
     {
-      "id": "DAE-29",
-      "mpn": "DAE-29",
+      "id": "P-29",
+      "mpn": "P-29",
       "name": "2000 Daewoo Leganza Engine - (2.2L, 4 cylinder, VIN 2, 8th digit)",
-      "slug": "2000-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "canonicalSlug": "2000-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "category": "used engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -518,17 +600,20 @@
         "high": 1169
       },
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-leganza-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2000 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2000-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit",
+      "category": "engine",
+      "year": "2000",
+      "model": "Leganza Engine",
+      "description": "Premium quality used engine for 2000 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-29",
+      "compatibility": "",
+      "canonicalSlug": "2000-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
+      "slug": "2000-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit"
     },
     {
-      "id": "DAE-30",
-      "mpn": "DAE-30",
+      "id": "P-30",
+      "mpn": "P-30",
       "name": "2001 Daewoo Leganza Engine - (2.2L, 4 cylinder, VIN 2, 8th digit)",
-      "slug": "2001-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "canonicalSlug": "2001-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "category": "used engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -536,17 +621,20 @@
         "high": 1169
       },
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-leganza-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2001 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2001-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit",
+      "category": "engine",
+      "year": "2001",
+      "model": "Leganza Engine",
+      "description": "Premium quality used engine for 2001 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-30",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
+      "slug": "2001-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit"
     },
     {
-      "id": "DAE-31",
-      "mpn": "DAE-31",
+      "id": "P-31",
+      "mpn": "P-31",
       "name": "2002 Daewoo Leganza Engine - (2.2L, 4 cylinder, VIN 2, 8th digit)",
-      "slug": "2002-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "canonicalSlug": "2002-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
-      "category": "used engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -554,35 +642,41 @@
         "high": 1169
       },
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-leganza-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2002 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2002-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit",
+      "category": "engine",
+      "year": "2002",
+      "model": "Leganza Engine",
+      "description": "Premium quality used engine for 2002 Daewoo Leganza. Complete assembly ready for installation. Configuration: (2.2L, 4 cylinder, VIN 2, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-leganza-2.2l-4-cylinder-vin-2-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-31",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit",
+      "slug": "2002-daewoo-leganza-engine-2-2l-4-cylinder-vin-2-8th-digit"
     },
     {
-      "id": "DAE-32",
-      "mpn": "DAE-32",
+      "id": "P-32",
+      "mpn": "P-32",
       "name": "1998 Daewoo Nubira Engine - (2.0L, 4 cylinder, VIN Z, 8th digit), AT",
-      "slug": "1998-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
+      "price": 1035,
+      "tiers": {
+        "low": 1118,
+        "medium": 1035,
+        "high": 859
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-nubira-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1998-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at",
+      "category": "engine",
+      "year": "1998",
+      "model": "Nubira Engine",
+      "description": "Premium quality used engine for 1998 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-32",
+      "compatibility": "",
       "canonicalSlug": "1998-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
-      "category": "used engine",
-      "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-nubira-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1998 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1998-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at"
     },
     {
-      "id": "DAE-33",
-      "mpn": "DAE-33",
+      "id": "P-33",
+      "mpn": "P-33",
       "name": "1998 Daewoo Nubira Engine - (2.0L, 4 cylinder, VIN Z, 8th digit), MT",
-      "slug": "1998-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
-      "canonicalSlug": "1998-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
-      "category": "used engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -590,35 +684,41 @@
         "high": 1045
       },
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-nubira-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1998 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-1998-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt",
+      "category": "engine",
+      "year": "1998",
+      "model": "Nubira Engine",
+      "description": "Premium quality used engine for 1998 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1998-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-33",
+      "compatibility": "",
+      "canonicalSlug": "1998-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
+      "slug": "1998-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt"
     },
     {
-      "id": "DAE-34",
-      "mpn": "DAE-34",
+      "id": "P-34",
+      "mpn": "P-34",
       "name": "1999 Daewoo Nubira Engine - (2.0L, 4 cylinder, VIN Z, 8th digit), AT",
-      "slug": "1999-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
+      "price": 1035,
+      "tiers": {
+        "low": 1118,
+        "medium": 1035,
+        "high": 859
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-nubira-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1999-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at",
+      "category": "engine",
+      "year": "1999",
+      "model": "Nubira Engine",
+      "description": "Premium quality used engine for 1999 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-34",
+      "compatibility": "",
       "canonicalSlug": "1999-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
-      "category": "used engine",
-      "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-nubira-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1999 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1999-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at"
     },
     {
-      "id": "DAE-35",
-      "mpn": "DAE-35",
+      "id": "P-35",
+      "mpn": "P-35",
       "name": "1999 Daewoo Nubira Engine - (2.0L, 4 cylinder, VIN Z, 8th digit), MT",
-      "slug": "1999-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
-      "canonicalSlug": "1999-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
-      "category": "used engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -626,35 +726,41 @@
         "high": 1045
       },
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-nubira-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 1999 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-1999-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt",
+      "category": "engine",
+      "year": "1999",
+      "model": "Nubira Engine",
+      "description": "Premium quality used engine for 1999 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1999-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-35",
+      "compatibility": "",
+      "canonicalSlug": "1999-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
+      "slug": "1999-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt"
     },
     {
-      "id": "DAE-36",
-      "mpn": "DAE-36",
+      "id": "P-36",
+      "mpn": "P-36",
       "name": "2000 Daewoo Nubira Engine - (2.0L, 4 cylinder, VIN Z, 8th digit), AT",
-      "slug": "2000-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
+      "price": 1035,
+      "tiers": {
+        "low": 1118,
+        "medium": 1035,
+        "high": 859
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-nubira-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2000-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at",
+      "category": "engine",
+      "year": "2000",
+      "model": "Nubira Engine",
+      "description": "Premium quality used engine for 2000 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-36",
+      "compatibility": "",
       "canonicalSlug": "2000-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
-      "category": "used engine",
-      "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-nubira-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2000 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2000-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at"
     },
     {
-      "id": "DAE-37",
-      "mpn": "DAE-37",
+      "id": "P-37",
+      "mpn": "P-37",
       "name": "2000 Daewoo Nubira Engine - (2.0L, 4 cylinder, VIN Z, 8th digit), MT",
-      "slug": "2000-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
-      "canonicalSlug": "2000-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
-      "category": "used engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -662,35 +768,41 @@
         "high": 1045
       },
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-nubira-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2000 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2000-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt",
+      "category": "engine",
+      "year": "2000",
+      "model": "Nubira Engine",
+      "description": "Premium quality used engine for 2000 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2000-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-37",
+      "compatibility": "",
+      "canonicalSlug": "2000-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
+      "slug": "2000-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt"
     },
     {
-      "id": "DAE-38",
-      "mpn": "DAE-38",
+      "id": "P-38",
+      "mpn": "P-38",
       "name": "2001 Daewoo Nubira Engine - (2.0L, 4 cylinder, VIN Z, 8th digit), AT",
-      "slug": "2001-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
+      "price": 1035,
+      "tiers": {
+        "low": 1118,
+        "medium": 1035,
+        "high": 859
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-nubira-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2001-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at",
+      "category": "engine",
+      "year": "2001",
+      "model": "Nubira Engine",
+      "description": "Premium quality used engine for 2001 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-38",
+      "compatibility": "",
       "canonicalSlug": "2001-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
-      "category": "used engine",
-      "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
-      "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-nubira-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2001 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2001-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at"
     },
     {
-      "id": "DAE-39",
-      "mpn": "DAE-39",
+      "id": "P-39",
+      "mpn": "P-39",
       "name": "2001 Daewoo Nubira Engine - (2.0L, 4 cylinder, VIN Z, 8th digit), MT",
-      "slug": "2001-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
-      "canonicalSlug": "2001-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
-      "category": "used engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -698,17 +810,20 @@
         "high": 1045
       },
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-nubira-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2001 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2001-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt",
+      "category": "engine",
+      "year": "2001",
+      "model": "Nubira Engine",
+      "description": "Premium quality used engine for 2001 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2001-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-39",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
+      "slug": "2001-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt"
     },
     {
-      "id": "DAE-40",
-      "mpn": "DAE-40",
+      "id": "P-40",
+      "mpn": "P-40",
       "name": "2002 Daewoo Nubira Engine - (2.0L, 4 cylinder, VIN Z, 8th digit), AT",
-      "slug": "2002-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
-      "canonicalSlug": "2002-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
-      "category": "used engine",
       "price": 1035,
       "tiers": {
         "low": 1118,
@@ -716,17 +831,20 @@
         "high": 859
       },
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-nubira-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2002 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2002-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at",
+      "category": "engine",
+      "year": "2002",
+      "model": "Nubira Engine",
+      "description": "Premium quality used engine for 2002 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-40",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at",
+      "slug": "2002-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-at"
     },
     {
-      "id": "DAE-41",
-      "mpn": "DAE-41",
+      "id": "P-41",
+      "mpn": "P-41",
       "name": "2002 Daewoo Nubira Engine - (2.0L, 4 cylinder, VIN Z, 8th digit), MT",
-      "slug": "2002-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
-      "canonicalSlug": "2002-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
-      "category": "used engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -734,71 +852,83 @@
         "high": 1045
       },
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-nubira-engine-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used engine for 2002 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/engine-2002-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt",
+      "category": "engine",
+      "year": "2002",
+      "model": "Nubira Engine",
+      "description": "Premium quality used engine for 2002 Daewoo Nubira. Complete assembly ready for installation. Configuration: (2.0L, 4 cylinder, VIN Z, 8th digit), MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2002-daewoo-nubira-2.0l-4-cylinder-vin-z-8th-digit-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-41",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt",
+      "slug": "2002-daewoo-nubira-engine-2-0l-4-cylinder-vin-z-8th-digit-mt"
     },
     {
-      "id": "DAE-42",
-      "mpn": "DAE-42",
+      "id": "P-42",
+      "mpn": "P-42",
       "name": "1998 Daewoo Lanos Transmission - AT",
-      "slug": "1998-daewoo-lanos-transmission-at",
+      "price": 512,
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1998-daewoo-lanos-at",
+      "category": "transmission",
+      "year": "1998",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-lanos-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-42",
+      "compatibility": "",
       "canonicalSlug": "1998-daewoo-lanos-transmission-at",
-      "category": "used transmission",
-      "price": 512,
-      "tiers": {
-        "low": 553,
-        "medium": 512,
-        "high": 425
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-lanos-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1998-daewoo-lanos-transmission-at"
     },
     {
-      "id": "DAE-43",
-      "mpn": "DAE-43",
+      "id": "P-43",
+      "mpn": "P-43",
       "name": "1998 Daewoo Lanos Transmission - MT, Canada market, 1.5L (VIN Y, 8th digit)",
-      "slug": "1998-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
+      "price": 1259,
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1998-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit",
+      "category": "transmission",
+      "year": "1998",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.5L (VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-43",
+      "compatibility": "",
       "canonicalSlug": "1998-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
-      "category": "used transmission",
-      "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.5L (VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1998-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit"
     },
     {
-      "id": "DAE-44",
-      "mpn": "DAE-44",
+      "id": "P-44",
+      "mpn": "P-44",
       "name": "1998 Daewoo Lanos Transmission - MT, Canada market, 1.6L (VIN 6, 8th digit)",
-      "slug": "1998-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
+      "price": 661,
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1998-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit",
+      "category": "transmission",
+      "year": "1998",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.6L (VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-44",
+      "compatibility": "",
       "canonicalSlug": "1998-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
-      "category": "used transmission",
-      "price": 661,
-      "tiers": {
-        "low": 714,
-        "medium": 661,
-        "high": 549
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.6L (VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1998-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit"
     },
     {
-      "id": "DAE-45",
-      "mpn": "DAE-45",
+      "id": "P-45",
+      "mpn": "P-45",
       "name": "1998 Daewoo Lanos Transmission - MT, US market, (1.6L, VIN 6, 8th digit)",
-      "slug": "1998-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
-      "canonicalSlug": "1998-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
-      "category": "used transmission",
       "price": 587,
       "tiers": {
         "low": 633,
@@ -806,71 +936,83 @@
         "high": 487
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, US market, (1.6L, VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-1998-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit",
+      "category": "transmission",
+      "year": "1998",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 1998 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, US market, (1.6L, VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-45",
+      "compatibility": "",
+      "canonicalSlug": "1998-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
+      "slug": "1998-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit"
     },
     {
-      "id": "DAE-46",
-      "mpn": "DAE-46",
+      "id": "P-46",
+      "mpn": "P-46",
       "name": "1999 Daewoo Lanos Transmission - AT",
-      "slug": "1999-daewoo-lanos-transmission-at",
+      "price": 512,
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1999-daewoo-lanos-at",
+      "category": "transmission",
+      "year": "1999",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-lanos-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-46",
+      "compatibility": "",
       "canonicalSlug": "1999-daewoo-lanos-transmission-at",
-      "category": "used transmission",
-      "price": 512,
-      "tiers": {
-        "low": 553,
-        "medium": 512,
-        "high": 425
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-lanos-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1999-daewoo-lanos-transmission-at"
     },
     {
-      "id": "DAE-47",
-      "mpn": "DAE-47",
+      "id": "P-47",
+      "mpn": "P-47",
       "name": "1999 Daewoo Lanos Transmission - MT, Canada market, 1.5L (VIN Y, 8th digit)",
-      "slug": "1999-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
+      "price": 1259,
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1999-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit",
+      "category": "transmission",
+      "year": "1999",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.5L (VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-47",
+      "compatibility": "",
       "canonicalSlug": "1999-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
-      "category": "used transmission",
-      "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.5L (VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1999-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit"
     },
     {
-      "id": "DAE-48",
-      "mpn": "DAE-48",
+      "id": "P-48",
+      "mpn": "P-48",
       "name": "1999 Daewoo Lanos Transmission - MT, Canada market, 1.6L (VIN 6, 8th digit)",
-      "slug": "1999-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
+      "price": 661,
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1999-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit",
+      "category": "transmission",
+      "year": "1999",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.6L (VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-48",
+      "compatibility": "",
       "canonicalSlug": "1999-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
-      "category": "used transmission",
-      "price": 661,
-      "tiers": {
-        "low": 714,
-        "medium": 661,
-        "high": 549
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.6L (VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1999-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit"
     },
     {
-      "id": "DAE-49",
-      "mpn": "DAE-49",
+      "id": "P-49",
+      "mpn": "P-49",
       "name": "1999 Daewoo Lanos Transmission - MT, US market, (1.6L, VIN 6, 8th digit)",
-      "slug": "1999-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
-      "canonicalSlug": "1999-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
-      "category": "used transmission",
       "price": 587,
       "tiers": {
         "low": 633,
@@ -878,71 +1020,83 @@
         "high": 487
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, US market, (1.6L, VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-1999-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit",
+      "category": "transmission",
+      "year": "1999",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 1999 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, US market, (1.6L, VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-49",
+      "compatibility": "",
+      "canonicalSlug": "1999-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
+      "slug": "1999-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit"
     },
     {
-      "id": "DAE-50",
-      "mpn": "DAE-50",
+      "id": "P-50",
+      "mpn": "P-50",
       "name": "2000 Daewoo Lanos Transmission - AT",
-      "slug": "2000-daewoo-lanos-transmission-at",
+      "price": 512,
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-2000-daewoo-lanos-at",
+      "category": "transmission",
+      "year": "2000",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-lanos-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-50",
+      "compatibility": "",
       "canonicalSlug": "2000-daewoo-lanos-transmission-at",
-      "category": "used transmission",
-      "price": 512,
-      "tiers": {
-        "low": 553,
-        "medium": 512,
-        "high": 425
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-lanos-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2000-daewoo-lanos-transmission-at"
     },
     {
-      "id": "DAE-51",
-      "mpn": "DAE-51",
+      "id": "P-51",
+      "mpn": "P-51",
       "name": "2000 Daewoo Lanos Transmission - MT, Canada market, 1.5L (VIN Y, 8th digit)",
-      "slug": "2000-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
+      "price": 1259,
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-2000-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit",
+      "category": "transmission",
+      "year": "2000",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.5L (VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-51",
+      "compatibility": "",
       "canonicalSlug": "2000-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
-      "category": "used transmission",
-      "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.5L (VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2000-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit"
     },
     {
-      "id": "DAE-52",
-      "mpn": "DAE-52",
+      "id": "P-52",
+      "mpn": "P-52",
       "name": "2000 Daewoo Lanos Transmission - MT, Canada market, 1.6L (VIN 6, 8th digit)",
-      "slug": "2000-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
+      "price": 661,
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-2000-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit",
+      "category": "transmission",
+      "year": "2000",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.6L (VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-52",
+      "compatibility": "",
       "canonicalSlug": "2000-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
-      "category": "used transmission",
-      "price": 661,
-      "tiers": {
-        "low": 714,
-        "medium": 661,
-        "high": 549
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.6L (VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2000-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit"
     },
     {
-      "id": "DAE-53",
-      "mpn": "DAE-53",
+      "id": "P-53",
+      "mpn": "P-53",
       "name": "2000 Daewoo Lanos Transmission - MT, US market, (1.6L, VIN 6, 8th digit)",
-      "slug": "2000-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
-      "canonicalSlug": "2000-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
-      "category": "used transmission",
       "price": 587,
       "tiers": {
         "low": 633,
@@ -950,35 +1104,41 @@
         "high": 487
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, US market, (1.6L, VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2000-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit",
+      "category": "transmission",
+      "year": "2000",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2000 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, US market, (1.6L, VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-53",
+      "compatibility": "",
+      "canonicalSlug": "2000-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
+      "slug": "2000-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit"
     },
     {
-      "id": "DAE-54",
-      "mpn": "DAE-54",
+      "id": "P-54",
+      "mpn": "P-54",
       "name": "2001 Daewoo Lanos Transmission - AT",
-      "slug": "2001-daewoo-lanos-transmission-at",
+      "price": 512,
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-lanos-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-2001-daewoo-lanos-at",
+      "category": "transmission",
+      "year": "2001",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-lanos-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-54",
+      "compatibility": "",
       "canonicalSlug": "2001-daewoo-lanos-transmission-at",
-      "category": "used transmission",
-      "price": 512,
-      "tiers": {
-        "low": 553,
-        "medium": 512,
-        "high": 425
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-lanos-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2001-daewoo-lanos-transmission-at"
     },
     {
-      "id": "DAE-55",
-      "mpn": "DAE-55",
+      "id": "P-55",
+      "mpn": "P-55",
       "name": "2001 Daewoo Lanos Transmission - MT, Canada market, 1.5L (VIN Y, 8th digit)",
-      "slug": "2001-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
-      "canonicalSlug": "2001-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
-      "category": "used transmission",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -986,17 +1146,20 @@
         "high": 1045
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.5L (VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2001-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit",
+      "category": "transmission",
+      "year": "2001",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.5L (VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-55",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
+      "slug": "2001-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit"
     },
     {
-      "id": "DAE-56",
-      "mpn": "DAE-56",
+      "id": "P-56",
+      "mpn": "P-56",
       "name": "2001 Daewoo Lanos Transmission - MT, Canada market, 1.6L (VIN 6, 8th digit)",
-      "slug": "2001-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
-      "canonicalSlug": "2001-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
-      "category": "used transmission",
       "price": 661,
       "tiers": {
         "low": 714,
@@ -1004,17 +1167,20 @@
         "high": 549
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.6L (VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2001-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit",
+      "category": "transmission",
+      "year": "2001",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.6L (VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-56",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
+      "slug": "2001-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit"
     },
     {
-      "id": "DAE-57",
-      "mpn": "DAE-57",
+      "id": "P-57",
+      "mpn": "P-57",
       "name": "2001 Daewoo Lanos Transmission - MT, US market, (1.6L, VIN 6, 8th digit)",
-      "slug": "2001-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
-      "canonicalSlug": "2001-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
-      "category": "used transmission",
       "price": 587,
       "tiers": {
         "low": 633,
@@ -1022,17 +1188,20 @@
         "high": 487
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, US market, (1.6L, VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2001-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit",
+      "category": "transmission",
+      "year": "2001",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2001 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, US market, (1.6L, VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-57",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
+      "slug": "2001-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit"
     },
     {
-      "id": "DAE-58",
-      "mpn": "DAE-58",
+      "id": "P-58",
+      "mpn": "P-58",
       "name": "2002 Daewoo Lanos Transmission - AT",
-      "slug": "2002-daewoo-lanos-transmission-at",
-      "canonicalSlug": "2002-daewoo-lanos-transmission-at",
-      "category": "used transmission",
       "price": 512,
       "tiers": {
         "low": 553,
@@ -1040,17 +1209,20 @@
         "high": 425
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-lanos-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2002-daewoo-lanos-at",
+      "category": "transmission",
+      "year": "2002",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-lanos-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-58",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-lanos-transmission-at",
+      "slug": "2002-daewoo-lanos-transmission-at"
     },
     {
-      "id": "DAE-59",
-      "mpn": "DAE-59",
+      "id": "P-59",
+      "mpn": "P-59",
       "name": "2002 Daewoo Lanos Transmission - MT, Canada market, 1.5L (VIN Y, 8th digit)",
-      "slug": "2002-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
-      "canonicalSlug": "2002-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
-      "category": "used transmission",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -1058,17 +1230,20 @@
         "high": 1045
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.5L (VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2002-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit",
+      "category": "transmission",
+      "year": "2002",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.5L (VIN Y, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-lanos-mt-canada-market-1.5l-vin-y-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-59",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit",
+      "slug": "2002-daewoo-lanos-transmission-mt-canada-market-1-5l-vin-y-8th-digit"
     },
     {
-      "id": "DAE-60",
-      "mpn": "DAE-60",
+      "id": "P-60",
+      "mpn": "P-60",
       "name": "2002 Daewoo Lanos Transmission - MT, Canada market, 1.6L (VIN 6, 8th digit)",
-      "slug": "2002-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
-      "canonicalSlug": "2002-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
-      "category": "used transmission",
       "price": 661,
       "tiers": {
         "low": 714,
@@ -1076,17 +1251,20 @@
         "high": 549
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.6L (VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2002-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit",
+      "category": "transmission",
+      "year": "2002",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, Canada market, 1.6L (VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-lanos-mt-canada-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-60",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit",
+      "slug": "2002-daewoo-lanos-transmission-mt-canada-market-1-6l-vin-6-8th-digit"
     },
     {
-      "id": "DAE-61",
-      "mpn": "DAE-61",
+      "id": "P-61",
+      "mpn": "P-61",
       "name": "2002 Daewoo Lanos Transmission - MT, US market, (1.6L, VIN 6, 8th digit)",
-      "slug": "2002-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
-      "canonicalSlug": "2002-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
-      "category": "used transmission",
       "price": 587,
       "tiers": {
         "low": 633,
@@ -1094,35 +1272,41 @@
         "high": 487
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-lanos-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, US market, (1.6L, VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2002-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit",
+      "category": "transmission",
+      "year": "2002",
+      "model": "Lanos Transmission",
+      "description": "Premium quality used transmission for 2002 Daewoo Lanos. Complete assembly ready for installation. Configuration: MT, US market, (1.6L, VIN 6, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-lanos-mt-us-market-1.6l-vin-6-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-61",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit",
+      "slug": "2002-daewoo-lanos-transmission-mt-us-market-1-6l-vin-6-8th-digit"
     },
     {
-      "id": "DAE-62",
-      "mpn": "DAE-62",
+      "id": "P-62",
+      "mpn": "P-62",
       "name": "1997 Daewoo Leganza Transmission - AT",
-      "slug": "1997-daewoo-leganza-transmission-at",
+      "price": 437,
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1997-daewoo-leganza-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1997-daewoo-leganza-at",
+      "category": "transmission",
+      "year": "1997",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 1997 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1997-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-62",
+      "compatibility": "",
       "canonicalSlug": "1997-daewoo-leganza-transmission-at",
-      "category": "used transmission",
-      "price": 437,
-      "tiers": {
-        "low": 472,
-        "medium": 437,
-        "high": 363
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1997-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1997 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1997-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1997-daewoo-leganza-transmission-at"
     },
     {
-      "id": "DAE-63",
-      "mpn": "DAE-63",
+      "id": "P-63",
+      "mpn": "P-63",
       "name": "1997 Daewoo Leganza Transmission - MT",
-      "slug": "1997-daewoo-leganza-transmission-mt",
-      "canonicalSlug": "1997-daewoo-leganza-transmission-mt",
-      "category": "used transmission",
       "price": 886,
       "tiers": {
         "low": 956,
@@ -1130,35 +1314,41 @@
         "high": 735
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/1997-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1997 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1997-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-1997-daewoo-leganza-mt",
+      "category": "transmission",
+      "year": "1997",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 1997 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1997-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-63",
+      "compatibility": "",
+      "canonicalSlug": "1997-daewoo-leganza-transmission-mt",
+      "slug": "1997-daewoo-leganza-transmission-mt"
     },
     {
-      "id": "DAE-64",
-      "mpn": "DAE-64",
+      "id": "P-64",
+      "mpn": "P-64",
       "name": "1998 Daewoo Leganza Transmission - AT",
-      "slug": "1998-daewoo-leganza-transmission-at",
+      "price": 437,
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-leganza-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1998-daewoo-leganza-at",
+      "category": "transmission",
+      "year": "1998",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 1998 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-64",
+      "compatibility": "",
       "canonicalSlug": "1998-daewoo-leganza-transmission-at",
-      "category": "used transmission",
-      "price": 437,
-      "tiers": {
-        "low": 472,
-        "medium": 437,
-        "high": 363
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1998 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1998-daewoo-leganza-transmission-at"
     },
     {
-      "id": "DAE-65",
-      "mpn": "DAE-65",
+      "id": "P-65",
+      "mpn": "P-65",
       "name": "1998 Daewoo Leganza Transmission - MT",
-      "slug": "1998-daewoo-leganza-transmission-mt",
-      "canonicalSlug": "1998-daewoo-leganza-transmission-mt",
-      "category": "used transmission",
       "price": 886,
       "tiers": {
         "low": 956,
@@ -1166,35 +1356,41 @@
         "high": 735
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1998 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-1998-daewoo-leganza-mt",
+      "category": "transmission",
+      "year": "1998",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 1998 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-65",
+      "compatibility": "",
+      "canonicalSlug": "1998-daewoo-leganza-transmission-mt",
+      "slug": "1998-daewoo-leganza-transmission-mt"
     },
     {
-      "id": "DAE-66",
-      "mpn": "DAE-66",
+      "id": "P-66",
+      "mpn": "P-66",
       "name": "1999 Daewoo Leganza Transmission - AT",
-      "slug": "1999-daewoo-leganza-transmission-at",
+      "price": 437,
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-leganza-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1999-daewoo-leganza-at",
+      "category": "transmission",
+      "year": "1999",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 1999 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-66",
+      "compatibility": "",
       "canonicalSlug": "1999-daewoo-leganza-transmission-at",
-      "category": "used transmission",
-      "price": 437,
-      "tiers": {
-        "low": 472,
-        "medium": 437,
-        "high": 363
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1999 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1999-daewoo-leganza-transmission-at"
     },
     {
-      "id": "DAE-67",
-      "mpn": "DAE-67",
+      "id": "P-67",
+      "mpn": "P-67",
       "name": "1999 Daewoo Leganza Transmission - MT",
-      "slug": "1999-daewoo-leganza-transmission-mt",
-      "canonicalSlug": "1999-daewoo-leganza-transmission-mt",
-      "category": "used transmission",
       "price": 886,
       "tiers": {
         "low": 956,
@@ -1202,35 +1398,41 @@
         "high": 735
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1999 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-1999-daewoo-leganza-mt",
+      "category": "transmission",
+      "year": "1999",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 1999 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-67",
+      "compatibility": "",
+      "canonicalSlug": "1999-daewoo-leganza-transmission-mt",
+      "slug": "1999-daewoo-leganza-transmission-mt"
     },
     {
-      "id": "DAE-68",
-      "mpn": "DAE-68",
+      "id": "P-68",
+      "mpn": "P-68",
       "name": "2000 Daewoo Leganza Transmission - AT",
-      "slug": "2000-daewoo-leganza-transmission-at",
+      "price": 437,
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-leganza-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-2000-daewoo-leganza-at",
+      "category": "transmission",
+      "year": "2000",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 2000 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-68",
+      "compatibility": "",
       "canonicalSlug": "2000-daewoo-leganza-transmission-at",
-      "category": "used transmission",
-      "price": 437,
-      "tiers": {
-        "low": 472,
-        "medium": 437,
-        "high": 363
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2000 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2000-daewoo-leganza-transmission-at"
     },
     {
-      "id": "DAE-69",
-      "mpn": "DAE-69",
+      "id": "P-69",
+      "mpn": "P-69",
       "name": "2000 Daewoo Leganza Transmission - MT",
-      "slug": "2000-daewoo-leganza-transmission-mt",
-      "canonicalSlug": "2000-daewoo-leganza-transmission-mt",
-      "category": "used transmission",
       "price": 886,
       "tiers": {
         "low": 956,
@@ -1238,35 +1440,41 @@
         "high": 735
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2000 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2000-daewoo-leganza-mt",
+      "category": "transmission",
+      "year": "2000",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 2000 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-69",
+      "compatibility": "",
+      "canonicalSlug": "2000-daewoo-leganza-transmission-mt",
+      "slug": "2000-daewoo-leganza-transmission-mt"
     },
     {
-      "id": "DAE-70",
-      "mpn": "DAE-70",
+      "id": "P-70",
+      "mpn": "P-70",
       "name": "2001 Daewoo Leganza Transmission - AT",
-      "slug": "2001-daewoo-leganza-transmission-at",
+      "price": 437,
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-leganza-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-2001-daewoo-leganza-at",
+      "category": "transmission",
+      "year": "2001",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 2001 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-70",
+      "compatibility": "",
       "canonicalSlug": "2001-daewoo-leganza-transmission-at",
-      "category": "used transmission",
-      "price": 437,
-      "tiers": {
-        "low": 472,
-        "medium": 437,
-        "high": 363
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2001 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2001-daewoo-leganza-transmission-at"
     },
     {
-      "id": "DAE-71",
-      "mpn": "DAE-71",
+      "id": "P-71",
+      "mpn": "P-71",
       "name": "2001 Daewoo Leganza Transmission - MT",
-      "slug": "2001-daewoo-leganza-transmission-mt",
-      "canonicalSlug": "2001-daewoo-leganza-transmission-mt",
-      "category": "used transmission",
       "price": 886,
       "tiers": {
         "low": 956,
@@ -1274,17 +1482,20 @@
         "high": 735
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2001 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2001-daewoo-leganza-mt",
+      "category": "transmission",
+      "year": "2001",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 2001 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-71",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-leganza-transmission-mt",
+      "slug": "2001-daewoo-leganza-transmission-mt"
     },
     {
-      "id": "DAE-72",
-      "mpn": "DAE-72",
+      "id": "P-72",
+      "mpn": "P-72",
       "name": "2002 Daewoo Leganza Transmission - AT",
-      "slug": "2002-daewoo-leganza-transmission-at",
-      "canonicalSlug": "2002-daewoo-leganza-transmission-at",
-      "category": "used transmission",
       "price": 437,
       "tiers": {
         "low": 472,
@@ -1292,17 +1503,20 @@
         "high": 363
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2002 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2002-daewoo-leganza-at",
+      "category": "transmission",
+      "year": "2002",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 2002 Daewoo Leganza. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-leganza-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-72",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-leganza-transmission-at",
+      "slug": "2002-daewoo-leganza-transmission-at"
     },
     {
-      "id": "DAE-73",
-      "mpn": "DAE-73",
+      "id": "P-73",
+      "mpn": "P-73",
       "name": "2002 Daewoo Leganza Transmission - MT",
-      "slug": "2002-daewoo-leganza-transmission-mt",
-      "canonicalSlug": "2002-daewoo-leganza-transmission-mt",
-      "category": "used transmission",
       "price": 886,
       "tiers": {
         "low": 956,
@@ -1310,35 +1524,41 @@
         "high": 735
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-leganza-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2002 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2002-daewoo-leganza-mt",
+      "category": "transmission",
+      "year": "2002",
+      "model": "Leganza Transmission",
+      "description": "Premium quality used transmission for 2002 Daewoo Leganza. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-leganza-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-73",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-leganza-transmission-mt",
+      "slug": "2002-daewoo-leganza-transmission-mt"
     },
     {
-      "id": "DAE-74",
-      "mpn": "DAE-74",
+      "id": "P-74",
+      "mpn": "P-74",
       "name": "1998 Daewoo Nubira Transmission - AT, (GM manufacturer)",
-      "slug": "1998-daewoo-nubira-transmission-at-gm-manufacturer",
+      "price": 474,
+      "tiers": {
+        "low": 512,
+        "medium": 474,
+        "high": 394
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-nubira-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1998-daewoo-nubira-at-gm-manufacturer",
+      "category": "transmission",
+      "year": "1998",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 1998 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, (GM manufacturer). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-nubira-at-gm-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-74",
+      "compatibility": "",
       "canonicalSlug": "1998-daewoo-nubira-transmission-at-gm-manufacturer",
-      "category": "used transmission",
-      "price": 474,
-      "tiers": {
-        "low": 512,
-        "medium": 474,
-        "high": 394
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1998 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, (GM manufacturer). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-nubira-at-gm-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1998-daewoo-nubira-transmission-at-gm-manufacturer"
     },
     {
-      "id": "DAE-75",
-      "mpn": "DAE-75",
+      "id": "P-75",
+      "mpn": "P-75",
       "name": "1998 Daewoo Nubira Transmission - MT",
-      "slug": "1998-daewoo-nubira-transmission-mt",
-      "canonicalSlug": "1998-daewoo-nubira-transmission-mt",
-      "category": "used transmission",
       "price": 661,
       "tiers": {
         "low": 714,
@@ -1346,35 +1566,41 @@
         "high": 549
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1998 Daewoo Nubira. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-nubira-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-1998-daewoo-nubira-mt",
+      "category": "transmission",
+      "year": "1998",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 1998 Daewoo Nubira. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1998-daewoo-nubira-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-75",
+      "compatibility": "",
+      "canonicalSlug": "1998-daewoo-nubira-transmission-mt",
+      "slug": "1998-daewoo-nubira-transmission-mt"
     },
     {
-      "id": "DAE-76",
-      "mpn": "DAE-76",
+      "id": "P-76",
+      "mpn": "P-76",
       "name": "1999 Daewoo Nubira Transmission - AT, (GM manufacturer)",
-      "slug": "1999-daewoo-nubira-transmission-at-gm-manufacturer",
+      "price": 474,
+      "tiers": {
+        "low": 512,
+        "medium": 474,
+        "high": 394
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-nubira-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1999-daewoo-nubira-at-gm-manufacturer",
+      "category": "transmission",
+      "year": "1999",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 1999 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, (GM manufacturer). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-nubira-at-gm-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-76",
+      "compatibility": "",
       "canonicalSlug": "1999-daewoo-nubira-transmission-at-gm-manufacturer",
-      "category": "used transmission",
-      "price": 474,
-      "tiers": {
-        "low": 512,
-        "medium": 474,
-        "high": 394
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1999 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, (GM manufacturer). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-nubira-at-gm-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "1999-daewoo-nubira-transmission-at-gm-manufacturer"
     },
     {
-      "id": "DAE-77",
-      "mpn": "DAE-77",
+      "id": "P-77",
+      "mpn": "P-77",
       "name": "1999 Daewoo Nubira Transmission - MT",
-      "slug": "1999-daewoo-nubira-transmission-mt",
-      "canonicalSlug": "1999-daewoo-nubira-transmission-mt",
-      "category": "used transmission",
       "price": 661,
       "tiers": {
         "low": 714,
@@ -1382,35 +1608,41 @@
         "high": 549
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 1999 Daewoo Nubira. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-nubira-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-1999-daewoo-nubira-mt",
+      "category": "transmission",
+      "year": "1999",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 1999 Daewoo Nubira. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1999-daewoo-nubira-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-77",
+      "compatibility": "",
+      "canonicalSlug": "1999-daewoo-nubira-transmission-mt",
+      "slug": "1999-daewoo-nubira-transmission-mt"
     },
     {
-      "id": "DAE-78",
-      "mpn": "DAE-78",
+      "id": "P-78",
+      "mpn": "P-78",
       "name": "2000 Daewoo Nubira Transmission - AT, (GM manufacturer)",
-      "slug": "2000-daewoo-nubira-transmission-at-gm-manufacturer",
+      "price": 474,
+      "tiers": {
+        "low": 512,
+        "medium": 474,
+        "high": 394
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-nubira-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-2000-daewoo-nubira-at-gm-manufacturer",
+      "category": "transmission",
+      "year": "2000",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 2000 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, (GM manufacturer). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-nubira-at-gm-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-78",
+      "compatibility": "",
       "canonicalSlug": "2000-daewoo-nubira-transmission-at-gm-manufacturer",
-      "category": "used transmission",
-      "price": 474,
-      "tiers": {
-        "low": 512,
-        "medium": 474,
-        "high": 394
-      },
-      "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2000 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, (GM manufacturer). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-nubira-at-gm-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "slug": "2000-daewoo-nubira-transmission-at-gm-manufacturer"
     },
     {
-      "id": "DAE-79",
-      "mpn": "DAE-79",
+      "id": "P-79",
+      "mpn": "P-79",
       "name": "2000 Daewoo Nubira Transmission - MT",
-      "slug": "2000-daewoo-nubira-transmission-mt",
-      "canonicalSlug": "2000-daewoo-nubira-transmission-mt",
-      "category": "used transmission",
       "price": 661,
       "tiers": {
         "low": 714,
@@ -1418,17 +1650,20 @@
         "high": 549
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2000 Daewoo Nubira. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-nubira-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2000-daewoo-nubira-mt",
+      "category": "transmission",
+      "year": "2000",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 2000 Daewoo Nubira. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2000-daewoo-nubira-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-79",
+      "compatibility": "",
+      "canonicalSlug": "2000-daewoo-nubira-transmission-mt",
+      "slug": "2000-daewoo-nubira-transmission-mt"
     },
     {
-      "id": "DAE-80",
-      "mpn": "DAE-80",
+      "id": "P-80",
+      "mpn": "P-80",
       "name": "2001 Daewoo Nubira Transmission - AT, (GM manufacturer)",
-      "slug": "2001-daewoo-nubira-transmission-at-gm-manufacturer",
-      "canonicalSlug": "2001-daewoo-nubira-transmission-at-gm-manufacturer",
-      "category": "used transmission",
       "price": 474,
       "tiers": {
         "low": 512,
@@ -1436,17 +1671,20 @@
         "high": 394
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2001 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, (GM manufacturer). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-nubira-at-gm-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2001-daewoo-nubira-at-gm-manufacturer",
+      "category": "transmission",
+      "year": "2001",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 2001 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, (GM manufacturer). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-nubira-at-gm-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-80",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-nubira-transmission-at-gm-manufacturer",
+      "slug": "2001-daewoo-nubira-transmission-at-gm-manufacturer"
     },
     {
-      "id": "DAE-81",
-      "mpn": "DAE-81",
+      "id": "P-81",
+      "mpn": "P-81",
       "name": "2001 Daewoo Nubira Transmission - MT",
-      "slug": "2001-daewoo-nubira-transmission-mt",
-      "canonicalSlug": "2001-daewoo-nubira-transmission-mt",
-      "category": "used transmission",
       "price": 661,
       "tiers": {
         "low": 714,
@@ -1454,17 +1692,20 @@
         "high": 549
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2001 Daewoo Nubira. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-nubira-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2001-daewoo-nubira-mt",
+      "category": "transmission",
+      "year": "2001",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 2001 Daewoo Nubira. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2001-daewoo-nubira-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-81",
+      "compatibility": "",
+      "canonicalSlug": "2001-daewoo-nubira-transmission-mt",
+      "slug": "2001-daewoo-nubira-transmission-mt"
     },
     {
-      "id": "DAE-82",
-      "mpn": "DAE-82",
+      "id": "P-82",
+      "mpn": "P-82",
       "name": "2002 Daewoo Nubira Transmission - MT",
-      "slug": "2002-daewoo-nubira-transmission-mt",
-      "canonicalSlug": "2002-daewoo-nubira-transmission-mt",
-      "category": "used transmission",
       "price": 512,
       "tiers": {
         "low": 553,
@@ -1472,17 +1713,20 @@
         "high": 425
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2002 Daewoo Nubira. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-nubira-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2002-daewoo-nubira-mt",
+      "category": "transmission",
+      "year": "2002",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 2002 Daewoo Nubira. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-nubira-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-82",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-nubira-transmission-mt",
+      "slug": "2002-daewoo-nubira-transmission-mt"
     },
     {
-      "id": "DAE-83",
-      "mpn": "DAE-83",
+      "id": "P-83",
+      "mpn": "P-83",
       "name": "2002 Daewoo Nubira Transmission - AT, Daewoo manufacturer",
-      "slug": "2002-daewoo-nubira-transmission-at-daewoo-manufacturer",
-      "canonicalSlug": "2002-daewoo-nubira-transmission-at-daewoo-manufacturer",
-      "category": "used transmission",
       "price": 736,
       "tiers": {
         "low": 795,
@@ -1490,17 +1734,20 @@
         "high": 611
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2002 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, Daewoo manufacturer. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-nubira-at-daewoo-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2002-daewoo-nubira-at-daewoo-manufacturer",
+      "category": "transmission",
+      "year": "2002",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 2002 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, Daewoo manufacturer. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-nubira-at-daewoo-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-83",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-nubira-transmission-at-daewoo-manufacturer",
+      "slug": "2002-daewoo-nubira-transmission-at-daewoo-manufacturer"
     },
     {
-      "id": "DAE-84",
-      "mpn": "DAE-84",
+      "id": "P-84",
+      "mpn": "P-84",
       "name": "2002 Daewoo Nubira Transmission - AT, GM manufacturer",
-      "slug": "2002-daewoo-nubira-transmission-at-gm-manufacturer",
-      "canonicalSlug": "2002-daewoo-nubira-transmission-at-gm-manufacturer",
-      "category": "used transmission",
       "price": 512,
       "tiers": {
         "low": 553,
@@ -1508,10 +1755,15 @@
         "high": 425
       },
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-nubira-transmission-side.jpg",
-      "year": null,
-      "model": "",
-      "description": "Premium quality used transmission for 2002 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, GM manufacturer. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-nubira-at-gm-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability."
+      "productUrl": "https://www.auapw.org/parts/transmission-2002-daewoo-nubira-at-gm-manufacturer",
+      "category": "transmission",
+      "year": "2002",
+      "model": "Nubira Transmission",
+      "description": "Premium quality used transmission for 2002 Daewoo Nubira. Complete assembly ready for installation. Configuration: AT, GM manufacturer. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2002-daewoo-nubira-at-gm-manufacturer Price is a reference estimate only and may vary based on mileage, condition, and availability.",
+      "partNumber": "P-84",
+      "compatibility": "",
+      "canonicalSlug": "2002-daewoo-nubira-transmission-at-gm-manufacturer",
+      "slug": "2002-daewoo-nubira-transmission-at-gm-manufacturer"
     }
-  ],
-  "total": 84
+  ]
 }
