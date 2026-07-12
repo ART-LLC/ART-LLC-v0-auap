@@ -40,6 +40,21 @@ const BRAND_SHEETS = {
   geo: { label: 'Geo', file: 'GEO-288f17.xlsx' },
   gmc: { label: 'GMC', file: 'GMC-bbd6e9.xlsx', feedBrand: 'GMC' },
   ford: { label: 'Ford', file: 'FORD-SHEET-935674.xlsx' },
+  'mercedes-benz': { label: 'Mercedes-Benz', nameBrand: 'Mercedes', file: 'MERCEDES-eb21da.xlsx' },
+  mazda: { label: 'Mazda', file: 'MAZDA-ebc766.xlsx' },
+  lincoln: { label: 'Lincoln', file: 'LINCON-5eb798.xlsx' },
+  nissan: { label: 'Nissan', file: 'NISSAN-178640.xlsx' },
+  triumph: { label: 'Triumph', file: 'TRIUMPH-da9b1b.xlsx' },
+  lexus: { label: 'Lexus', file: 'LEXUS-cc66bf.xlsx' },
+  jeep: { label: 'Jeep', file: 'JEEP-bf1d68.xlsx' },
+  mitsubishi: { label: 'Mitsubishi', file: 'MITSUBISHI-df9f4f.xlsx' },
+  volvo: { label: 'Volvo', file: 'VOLVO-9d847f.xlsx' },
+  kia: { label: 'Kia', file: 'KIA-9f2c4e.xlsx' },
+  isuzu: { label: 'Isuzu', file: 'ISUZU-20571d.xlsx' },
+  jaguar: { label: 'Jaguar', file: 'JAGUR-f2c8c6.xlsx' },
+  'land-rover': { label: 'Land Rover', nameBrand: 'LandRover', file: 'LAND-ROVER-ea5573.xlsx' },
+  suzuki: { label: 'Suzuki', file: 'SUZUKI-4d0453.xlsx' },
+  toyota: { label: 'Toyota', file: 'TOYOTA-6e1e4a.xlsx' },
 }
 
 const slugify = (s) =>
@@ -126,6 +141,7 @@ function guessCategory(name) {
 
 fs.mkdirSync(OUT_DIR, { recursive: true })
 const summary = []
+const manifest = []
 
 for (const [brandSlug, cfg] of Object.entries(BRAND_SHEETS)) {
   const filePath = path.join(DATA_DIR, cfg.file)
@@ -146,8 +162,11 @@ for (const [brandSlug, cfg] of Object.entries(BRAND_SHEETS)) {
   const seen = new Set()
   const slugCount = new Map()
   const products = []
+  // Some sheets write the brand differently in product names (e.g. "Mercedes",
+  // "LandRover") — use that variant for model extraction.
+  const parseBrand = cfg.nameBrand ?? cfg.label
   for (const row of rows) {
-    const p = isFeed ? normalizeFeedRow(row, cfg.label) : normalizeStandardRow(row, cfg.label)
+    const p = isFeed ? normalizeFeedRow(row, parseBrand) : normalizeStandardRow(row, parseBrand)
     if (!p) continue
     const dedupeKey = p.id || p.slug
     if (seen.has(dedupeKey)) continue
@@ -166,6 +185,13 @@ for (const [brandSlug, cfg] of Object.entries(BRAND_SHEETS)) {
   fs.writeFileSync(path.join(OUT_DIR, `${brandSlug}.json`), JSON.stringify(out))
   const size = (fs.statSync(path.join(OUT_DIR, `${brandSlug}.json`)).size / 1e6).toFixed(1)
   summary.push(`${brandSlug}: ${products.length} products (${size} MB)`)
+  manifest.push({ slug: brandSlug, label: cfg.label, count: products.length })
 }
 
+// Manifest drives BRAND_DIRECTORY in lib/brand-catalog.ts — new sheets only
+// need an entry in BRAND_SHEETS above, no app-code changes.
+manifest.sort((a, b) => a.label.localeCompare(b.label))
+fs.writeFileSync(path.join(OUT_DIR, 'manifest.json'), JSON.stringify(manifest, null, 2))
+
 console.log(summary.join('\n'))
+console.log(`manifest: ${manifest.length} brands`)
