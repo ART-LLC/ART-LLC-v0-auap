@@ -300,7 +300,12 @@ export default function BrandPage() {
 
         {/* Parts Categories */}
         <section className="mx-auto max-w-7xl px-6 pb-12">
-          <h2 className="text-2xl font-bold mb-6">{brand} Parts by Category</h2>
+          <div className="flex items-center gap-4 mb-2">
+            <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/50" />
+            <span className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-primary">{brand} Parts by Category</span>
+          </div>
+          <h2 className="text-2xl font-bold mb-2">{brand} Available Part Categories</h2>
+          <p className="text-sm text-muted-foreground mb-8 max-w-xl">Browse every part category we carry for {brand} vehicles. Click a category to explore or request a free quote instantly.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {PART_CATEGORIES.map((cat) => (
               <div key={cat.id} className="p-5 rounded-xl border border-border/50 bg-card hover:bg-card/80 transition-all flex flex-col gap-3">
@@ -318,8 +323,7 @@ export default function BrandPage() {
                 <div className="flex items-center gap-2 mt-auto pt-1">
                   <Link
                     href={`/quote?make=${encodeURIComponent(brand)}&category=${encodeURIComponent(cat.label)}`}
-                    className="auapw-btn auapw-btn-amber flex-1 justify-center text-xs py-2 px-3"
-                    style={{ padding: '0.5rem 0.75rem', fontSize: '0.7rem', letterSpacing: '0.06em' }}
+                    className="auapw-btn auapw-btn-amber auapw-btn-sm flex-1 justify-center"
                   >
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 flex-shrink-0">
                       <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -329,14 +333,11 @@ export default function BrandPage() {
                   </Link>
                   <a
                     href={`tel:${PHONE_SALES.replace(/-/g, "")}`}
-                    className="brand-chrome-call-btn"
-                    style={{ width: '2.25rem', height: '2.25rem', borderRadius: '0.5rem' }}
-                    title={`Call ${PHONE_DISPLAY}`}
-                    aria-label="Call us"
+                    className="auapw-btn auapw-btn-green auapw-btn-sm flex-1 justify-center"
+                    aria-label={`Call ${PHONE_DISPLAY}`}
                   >
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4">
-                      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
-                    </svg>
+                    <Phone className="w-3.5 h-3.5 flex-shrink-0" />
+                    {PHONE_DISPLAY}
                   </a>
                 </div>
               </div>
