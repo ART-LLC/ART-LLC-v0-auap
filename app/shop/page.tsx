@@ -4,8 +4,10 @@ import { useState } from 'react'
 import { Search, Filter, Grid, List, ChevronDown } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
 
 const SHOP_PRODUCTS = [
   {
@@ -59,12 +61,22 @@ const SHOP_PRODUCTS = [
 ]
 
 export default function ShopPage() {
+  const router = useRouter()
   const [viewType, setViewType] = useState<'grid' | 'list'>('grid')
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [priceRange, setPriceRange] = useState([0, 2000])
   const [searchTerm, setSearchTerm] = useState('')
 
   const categories = ['Engines', 'Transmissions', 'Electrical', 'Cooling', 'Drivetrain']
+
+  const handleSearch = (filters: SearchFilters) => {
+    const params = new URLSearchParams()
+    if (filters.make) params.append('make', filters.make)
+    if (filters.model) params.append('model', filters.model)
+    if (filters.year) params.append('year', filters.year)
+    if (filters.partType) params.append('part', filters.partType)
+    router.push(`/search?${params.toString()}`)
+  }
 
   const filteredProducts = SHOP_PRODUCTS.filter(product => {
     const matchesCategory = !selectedCategory || product.category === selectedCategory
@@ -79,12 +91,19 @@ export default function ShopPage() {
       <Navbar />
       <main className="bg-background">
         {/* Header */}
-        <div className="bg-gradient-to-b from-card/50 to-background border-b border-border/20 py-12">
+        <div className="bg-gradient-to-b from-card/50 to-background border-b border-border/20 py-8">
           <div className="mx-auto max-w-[1280px] px-6">
             <h1 className="text-4xl font-black text-foreground text-3d-section mb-2">Shop Quality Auto Parts</h1>
             <p className="text-muted-foreground">Browse our selection of premium used auto parts with warranty</p>
           </div>
         </div>
+
+        {/* Apple-style search form */}
+        <AppleStylePartsSearch
+          onSearch={handleSearch}
+          title="Find Your Parts"
+          subtitle="Search across 2,000+ salvage yards nationwide"
+        />
 
         <div className="mx-auto max-w-[1280px] px-6 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
