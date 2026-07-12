@@ -82,7 +82,7 @@ export default function AcuraProductsPage() {
                       </h2>
                       
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        {(currentModelData[category] as any[] || []).map((product: any) => {
+                        {(currentModelData[category] as AcuraProduct[] || []).slice(0, 12).map((product) => {
                           const resolvedImage = resolveAcuraImage(product)
                           return (
                           <Card 
