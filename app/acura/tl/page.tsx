@@ -68,7 +68,7 @@ export default function AcuraTlPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {viewMode === 'grid' ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {filteredProducts.slice(0, 48).map(product => (
+                {filteredProducts.slice(0, 12).map(product => (
                   <Card key={product.id} className="overflow-hidden">
                     {resolveAcuraImage(product) && (
                       <div className="relative w-full h-48 bg-muted">
@@ -98,7 +98,7 @@ export default function AcuraTlPage() {
               </div>
             ) : (
               <div className="space-y-4">
-                {filteredProducts.slice(0, 48).map(product => (
+                {filteredProducts.slice(0, 12).map(product => (
                   <Card key={product.id} className="overflow-hidden">
                     <div className="flex gap-6 p-6">
                       {resolveAcuraImage(product) && (
