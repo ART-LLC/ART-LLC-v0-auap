@@ -1,4 +1,5 @@
 {
+  "brand": "eagle",
   "products": [
     {
       "id": "EAG-1",
@@ -9,11 +10,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1989",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1989-eagle-2000-gtx-engine-side.jpg",
@@ -32,11 +42,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1989",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1989-eagle-2000-gtx-engine-side.jpg",
@@ -55,11 +74,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1989",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1989-eagle-2000-gtx-engine-side.jpg",
@@ -78,11 +106,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1990",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1990-eagle-2000-gtx-engine-side.jpg",
@@ -101,11 +138,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1990",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1990-eagle-2000-gtx-engine-side.jpg",
@@ -124,11 +170,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1990",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1990-eagle-2000-gtx-engine-side.jpg",
@@ -147,11 +202,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1991",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1991-eagle-2000-gtx-engine-side.jpg",
@@ -170,11 +234,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1991",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1991-eagle-2000-gtx-engine-side.jpg",
@@ -193,11 +266,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1991",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1991-eagle-2000-gtx-engine-side.jpg",
@@ -216,11 +298,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1992",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-2000-gtx-engine-side.jpg",
@@ -239,11 +330,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1992",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-2000-gtx-engine-side.jpg",
@@ -262,11 +362,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1992",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-2000-gtx-engine-side.jpg",
@@ -285,11 +394,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1992",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-2000-gtx-engine-side.jpg",
@@ -308,11 +426,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1993",
       "model": "2000 GTX",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-2000-gtx-engine-side.jpg",
@@ -331,11 +458,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1708,
-      "tiers": {
-        "low": 1844,
-        "medium": 1708,
-        "high": 1417
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1844
+        },
+        {
+          "mileage": "Medium",
+          "price": 1708
+        },
+        {
+          "mileage": "High",
+          "price": 1417
+        }
+      ],
       "year": "1988",
       "model": "Premier Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1988-eagle-premier-engine-side.jpg",
@@ -354,11 +490,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1988",
       "model": "Premier Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1988-eagle-premier-engine-side.jpg",
@@ -377,11 +522,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1708,
-      "tiers": {
-        "low": 1844,
-        "medium": 1708,
-        "high": 1417
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1844
+        },
+        {
+          "mileage": "Medium",
+          "price": 1708
+        },
+        {
+          "mileage": "High",
+          "price": 1417
+        }
+      ],
       "year": "1989",
       "model": "Premier Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1989-eagle-premier-engine-side.jpg",
@@ -400,11 +554,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1989",
       "model": "Premier Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1989-eagle-premier-engine-side.jpg",
@@ -423,11 +586,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1990",
       "model": "Premier Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1990-eagle-premier-engine-side.jpg",
@@ -446,11 +618,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1991",
       "model": "Premier Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1991-eagle-premier-engine-side.jpg",
@@ -469,11 +650,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1992",
       "model": "Premier Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-premier-engine-side.jpg",
@@ -492,11 +682,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1199
+        },
+        {
+          "mileage": "Medium",
+          "price": 1110
+        },
+        {
+          "mileage": "High",
+          "price": 921
+        }
+      ],
       "year": "1989",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1989-eagle-summit-engine-side.jpg",
@@ -515,11 +714,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1199
+        },
+        {
+          "mileage": "Medium",
+          "price": 1110
+        },
+        {
+          "mileage": "High",
+          "price": 921
+        }
+      ],
       "year": "1989",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1989-eagle-summit-engine-side.jpg",
@@ -538,11 +746,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1989",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1989-eagle-summit-engine-side.jpg",
@@ -561,11 +778,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1199
+        },
+        {
+          "mileage": "Medium",
+          "price": 1110
+        },
+        {
+          "mileage": "High",
+          "price": 921
+        }
+      ],
       "year": "1990",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1990-eagle-summit-engine-side.jpg",
@@ -584,11 +810,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1199
+        },
+        {
+          "mileage": "Medium",
+          "price": 1110
+        },
+        {
+          "mileage": "High",
+          "price": 921
+        }
+      ],
       "year": "1990",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1990-eagle-summit-engine-side.jpg",
@@ -607,11 +842,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1990",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1990-eagle-summit-engine-side.jpg",
@@ -630,11 +874,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1118
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 859
+        }
+      ],
       "year": "1991",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1991-eagle-summit-engine-side.jpg",
@@ -653,11 +906,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1118
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 859
+        }
+      ],
       "year": "1991",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1991-eagle-summit-engine-side.jpg",
@@ -676,11 +938,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1118
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 859
+        }
+      ],
       "year": "1992",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-summit-engine-side.jpg",
@@ -699,11 +970,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1118
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 859
+        }
+      ],
       "year": "1992",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-summit-engine-side.jpg",
@@ -722,11 +1002,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1992",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-summit-engine-side.jpg",
@@ -745,11 +1034,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1992",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-summit-engine-side.jpg",
@@ -768,11 +1066,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1118
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 859
+        }
+      ],
       "year": "1992",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-summit-engine-side.jpg",
@@ -791,11 +1098,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1185,
-      "tiers": {
-        "low": 1279,
-        "medium": 1185,
-        "high": 983
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1279
+        },
+        {
+          "mileage": "Medium",
+          "price": 1185
+        },
+        {
+          "mileage": "High",
+          "price": 983
+        }
+      ],
       "year": "1992",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-summit-engine-side.jpg",
@@ -814,11 +1130,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1992",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-summit-engine-side.jpg",
@@ -837,11 +1162,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1185,
-      "tiers": {
-        "low": 1279,
-        "medium": 1185,
-        "high": 983
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1279
+        },
+        {
+          "mileage": "Medium",
+          "price": 1185
+        },
+        {
+          "mileage": "High",
+          "price": 983
+        }
+      ],
       "year": "1993",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-summit-engine-side.jpg",
@@ -860,11 +1194,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1185,
-      "tiers": {
-        "low": 1279,
-        "medium": 1185,
-        "high": 983
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1279
+        },
+        {
+          "mileage": "Medium",
+          "price": 1185
+        },
+        {
+          "mileage": "High",
+          "price": 983
+        }
+      ],
       "year": "1993",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-summit-engine-side.jpg",
@@ -883,11 +1226,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 960,
-      "tiers": {
-        "low": 1037,
-        "medium": 960,
-        "high": 797
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1037
+        },
+        {
+          "mileage": "Medium",
+          "price": 960
+        },
+        {
+          "mileage": "High",
+          "price": 797
+        }
+      ],
       "year": "1993",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-summit-engine-side.jpg",
@@ -906,11 +1258,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1993",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-summit-engine-side.jpg",
@@ -929,11 +1290,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1118
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 859
+        }
+      ],
       "year": "1993",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-summit-engine-side.jpg",
@@ -952,11 +1322,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 4698,
-      "tiers": {
-        "low": 5074,
-        "medium": 4698,
-        "high": 3899
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 5074
+        },
+        {
+          "mileage": "Medium",
+          "price": 4698
+        },
+        {
+          "mileage": "High",
+          "price": 3899
+        }
+      ],
       "year": "1993",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-summit-engine-side.jpg",
@@ -975,11 +1354,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 4698,
-      "tiers": {
-        "low": 5074,
-        "medium": 4698,
-        "high": 3899
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 5074
+        },
+        {
+          "mileage": "Medium",
+          "price": 4698
+        },
+        {
+          "mileage": "High",
+          "price": 3899
+        }
+      ],
       "year": "1993",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-summit-engine-side.jpg",
@@ -998,11 +1386,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1993",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-summit-engine-side.jpg",
@@ -1021,11 +1418,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1993",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-summit-engine-side.jpg",
@@ -1044,11 +1450,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1708,
-      "tiers": {
-        "low": 1844,
-        "medium": 1708,
-        "high": 1417
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1844
+        },
+        {
+          "mileage": "Medium",
+          "price": 1708
+        },
+        {
+          "mileage": "High",
+          "price": 1417
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1067,11 +1482,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1199
+        },
+        {
+          "mileage": "Medium",
+          "price": 1110
+        },
+        {
+          "mileage": "High",
+          "price": 921
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1090,11 +1514,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 4698,
-      "tiers": {
-        "low": 5074,
-        "medium": 4698,
-        "high": 3899
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 5074
+        },
+        {
+          "mileage": "Medium",
+          "price": 4698
+        },
+        {
+          "mileage": "High",
+          "price": 3899
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1113,11 +1546,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 4698,
-      "tiers": {
-        "low": 5074,
-        "medium": 4698,
-        "high": 3899
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 5074
+        },
+        {
+          "mileage": "Medium",
+          "price": 4698
+        },
+        {
+          "mileage": "High",
+          "price": 3899
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1136,11 +1578,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1159,11 +1610,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1182,11 +1642,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1205,11 +1674,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 4698,
-      "tiers": {
-        "low": 5074,
-        "medium": 4698,
-        "high": 3899
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 5074
+        },
+        {
+          "mileage": "Medium",
+          "price": 4698
+        },
+        {
+          "mileage": "High",
+          "price": 3899
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1228,11 +1706,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1118
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 859
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1251,11 +1738,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1199
+        },
+        {
+          "mileage": "Medium",
+          "price": 1110
+        },
+        {
+          "mileage": "High",
+          "price": 921
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1274,11 +1770,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1185,
-      "tiers": {
-        "low": 1279,
-        "medium": 1185,
-        "high": 983
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1279
+        },
+        {
+          "mileage": "Medium",
+          "price": 1185
+        },
+        {
+          "mileage": "High",
+          "price": 983
+        }
+      ],
       "year": "1994",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-summit-engine-side.jpg",
@@ -1297,11 +1802,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1995",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-summit-engine-side.jpg",
@@ -1320,11 +1834,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1995",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-summit-engine-side.jpg",
@@ -1343,11 +1866,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1995",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-summit-engine-side.jpg",
@@ -1366,11 +1898,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1995",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-summit-engine-side.jpg",
@@ -1389,11 +1930,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1995",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-summit-engine-side.jpg",
@@ -1412,11 +1962,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1995",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-summit-engine-side.jpg",
@@ -1435,11 +1994,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1996",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1996-eagle-summit-engine-side.jpg",
@@ -1458,11 +2026,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1297,
-      "tiers": {
-        "low": 1400,
-        "medium": 1297,
-        "high": 1076
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1400
+        },
+        {
+          "mileage": "Medium",
+          "price": 1297
+        },
+        {
+          "mileage": "High",
+          "price": 1076
+        }
+      ],
       "year": "1996",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1996-eagle-summit-engine-side.jpg",
@@ -1481,11 +2058,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1996",
       "model": "Summit Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1996-eagle-summit-engine-side.jpg",
@@ -1504,11 +2090,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 2156,
-      "tiers": {
-        "low": 2329,
-        "medium": 2156,
-        "high": 1790
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2329
+        },
+        {
+          "mileage": "Medium",
+          "price": 2156
+        },
+        {
+          "mileage": "High",
+          "price": 1790
+        }
+      ],
       "year": "1990",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1990-eagle-talon-engine-side.jpg",
@@ -1527,11 +2122,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 2156,
-      "tiers": {
-        "low": 2329,
-        "medium": 2156,
-        "high": 1790
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2329
+        },
+        {
+          "mileage": "Medium",
+          "price": 2156
+        },
+        {
+          "mileage": "High",
+          "price": 1790
+        }
+      ],
       "year": "1990",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1990-eagle-talon-engine-side.jpg",
@@ -1550,11 +2154,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 2156,
-      "tiers": {
-        "low": 2329,
-        "medium": 2156,
-        "high": 1790
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2329
+        },
+        {
+          "mileage": "Medium",
+          "price": 2156
+        },
+        {
+          "mileage": "High",
+          "price": 1790
+        }
+      ],
       "year": "1991",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1991-eagle-talon-engine-side.jpg",
@@ -1573,11 +2186,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 2156,
-      "tiers": {
-        "low": 2329,
-        "medium": 2156,
-        "high": 1790
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2329
+        },
+        {
+          "mileage": "Medium",
+          "price": 2156
+        },
+        {
+          "mileage": "High",
+          "price": 1790
+        }
+      ],
       "year": "1991",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1991-eagle-talon-engine-side.jpg",
@@ -1596,11 +2218,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1708,
-      "tiers": {
-        "low": 1844,
-        "medium": 1708,
-        "high": 1417
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1844
+        },
+        {
+          "mileage": "Medium",
+          "price": 1708
+        },
+        {
+          "mileage": "High",
+          "price": 1417
+        }
+      ],
       "year": "1992",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-talon-engine-side.jpg",
@@ -1619,11 +2250,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 2381,
-      "tiers": {
-        "low": 2571,
-        "medium": 2381,
-        "high": 1976
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2571
+        },
+        {
+          "mileage": "Medium",
+          "price": 2381
+        },
+        {
+          "mileage": "High",
+          "price": 1976
+        }
+      ],
       "year": "1992",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-talon-engine-side.jpg",
@@ -1642,11 +2282,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1992",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-talon-engine-side.jpg",
@@ -1665,11 +2314,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1992",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-eagle-talon-engine-side.jpg",
@@ -1688,11 +2346,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1993",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-talon-engine-side.jpg",
@@ -1711,11 +2378,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1993",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-talon-engine-side.jpg",
@@ -1734,11 +2410,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1993",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-talon-engine-side.jpg",
@@ -1757,11 +2442,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1993",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-talon-engine-side.jpg",
@@ -1780,11 +2474,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1993",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-talon-engine-side.jpg",
@@ -1803,11 +2506,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1994",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-talon-engine-side.jpg",
@@ -1826,11 +2538,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1994",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-talon-engine-side.jpg",
@@ -1849,11 +2570,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1994",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-talon-engine-side.jpg",
@@ -1872,11 +2602,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1994",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-talon-engine-side.jpg",
@@ -1895,11 +2634,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1994",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-talon-engine-side.jpg",
@@ -1918,11 +2666,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 2530,
-      "tiers": {
-        "low": 2732,
-        "medium": 2530,
-        "high": 2100
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2732
+        },
+        {
+          "mileage": "Medium",
+          "price": 2530
+        },
+        {
+          "mileage": "High",
+          "price": 2100
+        }
+      ],
       "year": "1995",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-talon-engine-side.jpg",
@@ -1941,11 +2698,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1334,
-      "tiers": {
-        "low": 1441,
-        "medium": 1334,
-        "high": 1107
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1441
+        },
+        {
+          "mileage": "Medium",
+          "price": 1334
+        },
+        {
+          "mileage": "High",
+          "price": 1107
+        }
+      ],
       "year": "1995",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-talon-engine-side.jpg",
@@ -1964,11 +2730,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 2530,
-      "tiers": {
-        "low": 2732,
-        "medium": 2530,
-        "high": 2100
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2732
+        },
+        {
+          "mileage": "Medium",
+          "price": 2530
+        },
+        {
+          "mileage": "High",
+          "price": 2100
+        }
+      ],
       "year": "1996",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1996-eagle-talon-engine-side.jpg",
@@ -1987,11 +2762,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1334,
-      "tiers": {
-        "low": 1441,
-        "medium": 1334,
-        "high": 1107
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1441
+        },
+        {
+          "mileage": "Medium",
+          "price": 1334
+        },
+        {
+          "mileage": "High",
+          "price": 1107
+        }
+      ],
       "year": "1996",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1996-eagle-talon-engine-side.jpg",
@@ -2010,11 +2794,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 3278,
-      "tiers": {
-        "low": 3540,
-        "medium": 3278,
-        "high": 2720
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 3540
+        },
+        {
+          "mileage": "Medium",
+          "price": 3278
+        },
+        {
+          "mileage": "High",
+          "price": 2720
+        }
+      ],
       "year": "1997",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1997-eagle-talon-engine-side.jpg",
@@ -2033,11 +2826,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1783,
-      "tiers": {
-        "low": 1925,
-        "medium": 1783,
-        "high": 1479
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1925
+        },
+        {
+          "mileage": "Medium",
+          "price": 1783
+        },
+        {
+          "mileage": "High",
+          "price": 1479
+        }
+      ],
       "year": "1997",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1997-eagle-talon-engine-side.jpg",
@@ -2056,11 +2858,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1997",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1997-eagle-talon-engine-side.jpg",
@@ -2079,11 +2890,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1998",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1998-eagle-talon-engine-side.jpg",
@@ -2102,11 +2922,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 3278,
-      "tiers": {
-        "low": 3540,
-        "medium": 3278,
-        "high": 2720
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 3540
+        },
+        {
+          "mileage": "Medium",
+          "price": 3278
+        },
+        {
+          "mileage": "High",
+          "price": 2720
+        }
+      ],
       "year": "1998",
       "model": "Talon Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1998-eagle-talon-engine-side.jpg",
@@ -2125,11 +2954,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 736,
-      "tiers": {
-        "low": 795,
-        "medium": 736,
-        "high": 611
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 795
+        },
+        {
+          "mileage": "Medium",
+          "price": 736
+        },
+        {
+          "mileage": "High",
+          "price": 611
+        }
+      ],
       "year": "1993",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-vision-engine-side.jpg",
@@ -2148,11 +2986,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1558,
-      "tiers": {
-        "low": 1683,
-        "medium": 1558,
-        "high": 1293
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1683
+        },
+        {
+          "mileage": "Medium",
+          "price": 1558
+        },
+        {
+          "mileage": "High",
+          "price": 1293
+        }
+      ],
       "year": "1993",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-eagle-vision-engine-side.jpg",
@@ -2171,11 +3018,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1118
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 859
+        }
+      ],
       "year": "1994",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-vision-engine-side.jpg",
@@ -2194,11 +3050,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 2156,
-      "tiers": {
-        "low": 2329,
-        "medium": 2156,
-        "high": 1790
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2329
+        },
+        {
+          "mileage": "Medium",
+          "price": 2156
+        },
+        {
+          "mileage": "High",
+          "price": 1790
+        }
+      ],
       "year": "1994",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-vision-engine-side.jpg",
@@ -2217,11 +3082,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 661,
-      "tiers": {
-        "low": 714,
-        "medium": 661,
-        "high": 549
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 714
+        },
+        {
+          "mileage": "Medium",
+          "price": 661
+        },
+        {
+          "mileage": "High",
+          "price": 549
+        }
+      ],
       "year": "1994",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1994-eagle-vision-engine-side.jpg",
@@ -2240,11 +3114,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 2156,
-      "tiers": {
-        "low": 2329,
-        "medium": 2156,
-        "high": 1790
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2329
+        },
+        {
+          "mileage": "Medium",
+          "price": 2156
+        },
+        {
+          "mileage": "High",
+          "price": 1790
+        }
+      ],
       "year": "1995",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-vision-engine-side.jpg",
@@ -2263,11 +3146,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 661,
-      "tiers": {
-        "low": 714,
-        "medium": 661,
-        "high": 549
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 714
+        },
+        {
+          "mileage": "Medium",
+          "price": 661
+        },
+        {
+          "mileage": "High",
+          "price": 549
+        }
+      ],
       "year": "1995",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-vision-engine-side.jpg",
@@ -2286,11 +3178,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 736,
-      "tiers": {
-        "low": 795,
-        "medium": 736,
-        "high": 611
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 795
+        },
+        {
+          "mileage": "Medium",
+          "price": 736
+        },
+        {
+          "mileage": "High",
+          "price": 611
+        }
+      ],
       "year": "1995",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1995-eagle-vision-engine-side.jpg",
@@ -2309,11 +3210,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1996",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1996-eagle-vision-engine-side.jpg",
@@ -2332,11 +3242,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 736,
-      "tiers": {
-        "low": 795,
-        "medium": 736,
-        "high": 611
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 795
+        },
+        {
+          "mileage": "Medium",
+          "price": 736
+        },
+        {
+          "mileage": "High",
+          "price": 611
+        }
+      ],
       "year": "1996",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1996-eagle-vision-engine-side.jpg",
@@ -2355,11 +3274,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1997",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1997-eagle-vision-engine-side.jpg",
@@ -2378,11 +3306,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 736,
-      "tiers": {
-        "low": 795,
-        "medium": 736,
-        "high": 611
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 795
+        },
+        {
+          "mileage": "Medium",
+          "price": 736
+        },
+        {
+          "mileage": "High",
+          "price": 611
+        }
+      ],
       "year": "1997",
       "model": "Vision Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1997-eagle-vision-engine-side.jpg",
@@ -2401,11 +3338,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1036,
-      "tiers": {
-        "low": 1119,
-        "medium": 1036,
-        "high": 860
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1119
+        },
+        {
+          "mileage": "Medium",
+          "price": 1036
+        },
+        {
+          "mileage": "High",
+          "price": 860
+        }
+      ],
       "year": "1992",
       "model": "Summit Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-eagle-summit-transmission-side.jpg",
@@ -2424,11 +3370,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1035,
-      "tiers": {
-        "low": 1118,
-        "medium": 1035,
-        "high": 859
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1118
+        },
+        {
+          "mileage": "Medium",
+          "price": 1035
+        },
+        {
+          "mileage": "High",
+          "price": 859
+        }
+      ],
       "year": "1996",
       "model": "Summit Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1996-eagle-summit-transmission-side.jpg",
@@ -2447,11 +3402,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1996",
       "model": "Summit Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1996-eagle-summit-transmission-side.jpg",
@@ -2470,11 +3434,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1996",
       "model": "Summit Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1996-eagle-summit-transmission-side.jpg",
@@ -2493,11 +3466,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1185,
-      "tiers": {
-        "low": 1279,
-        "medium": 1185,
-        "high": 983
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1279
+        },
+        {
+          "mileage": "Medium",
+          "price": 1185
+        },
+        {
+          "mileage": "High",
+          "price": 983
+        }
+      ],
       "year": "1996",
       "model": "Talon Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1996-eagle-talon-transmission-side.jpg",
@@ -2516,11 +3498,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1996",
       "model": "Talon Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1996-eagle-talon-transmission-side.jpg",
@@ -2539,11 +3530,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1996",
       "model": "Talon Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1996-eagle-talon-transmission-side.jpg",
@@ -2562,11 +3562,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1997",
       "model": "Talon Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1997-eagle-talon-transmission-side.jpg",
@@ -2585,11 +3594,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1185,
-      "tiers": {
-        "low": 1279,
-        "medium": 1185,
-        "high": 983
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1279
+        },
+        {
+          "mileage": "Medium",
+          "price": 1185
+        },
+        {
+          "mileage": "High",
+          "price": 983
+        }
+      ],
       "year": "1997",
       "model": "Talon Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1997-eagle-talon-transmission-side.jpg",
@@ -2608,11 +3626,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1998",
       "model": "Talon Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-eagle-talon-transmission-side.jpg",
@@ -2631,11 +3658,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 811,
-      "tiers": {
-        "low": 876,
-        "medium": 811,
-        "high": 673
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 876
+        },
+        {
+          "mileage": "Medium",
+          "price": 811
+        },
+        {
+          "mileage": "High",
+          "price": 673
+        }
+      ],
       "year": "1998",
       "model": "Talon Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-eagle-talon-transmission-side.jpg",
@@ -2654,11 +3690,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1998",
       "model": "Talon Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-eagle-talon-transmission-side.jpg",
@@ -2677,11 +3722,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 736,
-      "tiers": {
-        "low": 795,
-        "medium": 736,
-        "high": 611
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 795
+        },
+        {
+          "mileage": "Medium",
+          "price": 736
+        },
+        {
+          "mileage": "High",
+          "price": 611
+        }
+      ],
       "year": "1996",
       "model": "Vision Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1996-eagle-vision-transmission-side.jpg",
@@ -2700,11 +3754,20 @@
       "brand": "Eagle",
       "category": "part",
       "price": 736,
-      "tiers": {
-        "low": 795,
-        "medium": 736,
-        "high": 611
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 795
+        },
+        {
+          "mileage": "Medium",
+          "price": 736
+        },
+        {
+          "mileage": "High",
+          "price": 611
+        }
+      ],
       "year": "1997",
       "model": "Vision Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1997-eagle-vision-transmission-side.jpg",

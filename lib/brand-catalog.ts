@@ -27,10 +27,9 @@ export interface BrandProduct {
 }
 
 export interface BrandCatalog {
-  brand?: string
-  slug?: string
-  count?: number
-  total?: number
+  brand: string
+  slug: string
+  count: number
   products: BrandProduct[]
 }
 
