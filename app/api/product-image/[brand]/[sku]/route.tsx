@@ -59,14 +59,30 @@ export async function GET(
   const skuLabel = (product.mpn || product.id || sku).toUpperCase()
   const vehicle = [product.year, label, product.model].filter(Boolean).join(' ')
   const category = inferredCategory.replace(/\b\w/g, (c) => c.toUpperCase())
+  // Professional transmission images by type
   const transmissionPhoto = productName.includes('cvt')
     ? '/product-images/transmission/cvt-transmission-branded.png'
     : productName.includes('manual') || /\bmt\b/.test(productName)
       ? '/product-images/transmission/manual-transmission-branded.png'
       : '/product-images/transmission/automatic-transmission-branded.png'
+  
+  // Professional engine image mapping - brand-specific professional photos with fallback
+  const brandEngineImageMap: Record<string, string> = {
+    'acura': '/product-images/engine/acura-engine-professional.png',
+    'bmw': '/product-images/engine/bmw-engine-professional.png',
+    'mercedes-benz': '/product-images/engine/mercedes-benz-engine-professional.png',
+    'porsche': '/product-images/engine/porsche-engine-professional.png',
+    'lexus': '/product-images/engine/lexus-engine-professional.png',
+    'ford': '/product-images/engine/ford-engine-professional.png',
+  }
+  
+  const enginePhoto = brandEngineImageMap[brand] || '/product-images/engine/chevrolet-engine-branded.png'
+  
   const mechanicalPhotoUrl = inferredCategory === 'transmission'
     ? new URL(transmissionPhoto, _req.url).toString()
-    : null
+    : inferredCategory === 'engine'
+      ? new URL(enginePhoto, _req.url).toString()
+      : null
   // Deterministic fingerprint for products that do not have a category photograph.
   const bars = Array.from({ length: 6 }, (_, i) => 36 + ((seed >> (i * 4)) % 96))
 

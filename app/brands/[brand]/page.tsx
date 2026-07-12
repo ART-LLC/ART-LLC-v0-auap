@@ -18,6 +18,7 @@ import {
   searchBrandProducts,
 } from '@/lib/brand-catalog'
 import { ChevronRight, ChevronLeft, Search } from 'lucide-react'
+import { LuxuryBrandLanding } from '@/components/luxury-brand-landing'
 
 interface PageProps {
   params: Promise<{ brand: string }>
@@ -62,6 +63,14 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
     <>
       <Navbar />
       <main className="pt-24 lg:pt-28">
+        {/* Luxury Brand Landing */}
+        <LuxuryBrandLanding
+          brand={brand}
+          label={label}
+          productCount={catalog?.products?.length || 0}
+          description={`Discover our premium collection of ${(catalog?.products?.length || 0).toLocaleString()} authentic ${label} engines, transmissions, and OEM parts with exact mileage-based pricing.`}
+        />
+
         {/* Breadcrumb + hero */}
         <section className="py-10 bg-background border-b border-border/20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -139,7 +148,7 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
         )}
 
         {/* Product grid */}
-        <section className="py-10">
+        <section id={`${brand}-products`} className="py-10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <p className="mb-6 text-sm text-muted-foreground">
               {result.total.toLocaleString()} parts{sp.model ? ` for ${label} ${sp.model}` : ''}
