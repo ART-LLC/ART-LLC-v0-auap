@@ -210,11 +210,8 @@ export default function QuotePage() {
                         <label className="block text-[0.62rem] font-bold tracking-[0.2em] uppercase text-muted-foreground mb-2">Part Needed</label>
                         <select className={selectClass} value={part} onChange={(e) => { setPart(e.target.value); setOption("") }}>
                           <option value="">Select Part</option>
-                          {PART_CATEGORIES.map((cat) => (
-                            <optgroup key={cat.id} label={cat.label}>
-                              {cat.parts.map((p) => <option key={p} value={p}>{p}</option>)}
-                            </optgroup>
-                          ))}
+                          <option value="Engine">Engine</option>
+                          <option value="Transmission">Transmission</option>
                         </select>
                       </div>
                       <div>

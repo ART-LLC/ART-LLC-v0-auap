@@ -45,15 +45,29 @@ export async function GET(
 
   const label = getBrandLabel(brand)
   const seed = hashCode(`${brand}:${product.canonicalSlug}`)
-  const hue = categoryHue(product.category || '', seed % 360)
+  const productName = product.name.toLowerCase()
+  const inferredCategory = productName.includes('engine')
+    ? 'engine'
+    : productName.includes('transmission') || productName.includes('transaxle')
+      ? 'transmission'
+      : product.category || 'Used OEM Part'
+  const hue = categoryHue(inferredCategory, seed % 360)
   const accent = `hsl(${hue} 72% 52%)`
   const accentSoft = `hsl(${hue} 60% 22%)`
   const bg = `hsl(${(hue + 210) % 360} 18% 10%)`
   const panel = `hsl(${(hue + 210) % 360} 16% 14%)`
   const skuLabel = (product.mpn || product.id || sku).toUpperCase()
   const vehicle = [product.year, label, product.model].filter(Boolean).join(' ')
-  const category = (product.category || 'Used OEM Part').replace(/\b\w/g, (c) => c.toUpperCase())
-  // Deterministic geometric fingerprint: 6 bars whose heights derive from the hash
+  const category = inferredCategory.replace(/\b\w/g, (c) => c.toUpperCase())
+  const transmissionPhoto = productName.includes('cvt')
+    ? '/product-images/transmission/cvt-transmission-branded.png'
+    : productName.includes('manual') || /\bmt\b/.test(productName)
+      ? '/product-images/transmission/manual-transmission-branded.png'
+      : '/product-images/transmission/automatic-transmission-branded.png'
+  const mechanicalPhotoUrl = inferredCategory === 'transmission'
+    ? new URL(transmissionPhoto, _req.url).toString()
+    : null
+  // Deterministic fingerprint for products that do not have a category photograph.
   const bars = Array.from({ length: 6 }, (_, i) => 36 + ((seed >> (i * 4)) % 96))
 
   return new ImageResponse(
@@ -104,15 +118,27 @@ export async function GET(
         <div style={{ display: 'flex', alignItems: 'center', gap: 48 }}>
           <div
             style={{
+              width: 370,
+              height: 280,
               display: 'flex',
-              alignItems: 'flex-end',
+              alignItems: 'center',
+              justifyContent: 'center',
               gap: 14,
+              overflow: 'hidden',
               backgroundColor: panel,
               borderRadius: 24,
-              padding: '36px 32px',
+              padding: mechanicalPhotoUrl ? 0 : '36px 32px',
             }}
           >
-            {bars.map((h, i) => (
+            {mechanicalPhotoUrl ? (
+              <img
+                src={mechanicalPhotoUrl}
+                alt=""
+                width={370}
+                height={280}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            ) : bars.map((h, i) => (
               <div
                 key={i}
                 style={{
