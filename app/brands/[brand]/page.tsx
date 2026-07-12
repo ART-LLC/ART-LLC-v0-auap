@@ -29,9 +29,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!isValidBrand(brand)) return {}
   const label = getBrandLabel(brand)
   const catalog = loadBrandCatalog(brand)
+  const count = catalog?.products?.length ?? catalog?.total ?? 0
   return {
     title: `Used ${label} Engines, Transmissions & Parts | Exact Mileage Pricing`,
-    description: `Shop ${catalog?.count.toLocaleString() ?? ''} used OEM ${label} engines, transmissions, and parts. Exact low/medium/high mileage pricing, tested parts, 90-day warranty, nationwide shipping.`,
+    description: `Shop ${count > 0 ? count.toLocaleString() : ''} used OEM ${label} engines, transmissions, and parts. Exact low/medium/high mileage pricing, tested parts, 90-day warranty, nationwide shipping.`,
   }
 }
 
@@ -75,7 +76,7 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
               Used {label} Engines, Transmissions &amp; Parts
             </h1>
             <p className="mt-2 max-w-2xl text-muted-foreground leading-relaxed">
-              {catalog.count.toLocaleString()} tested used OEM {label} parts with exact mileage-based
+              {(catalog.products?.length ?? catalog.total ?? 0).toLocaleString()} tested used OEM {label} parts with exact mileage-based
               pricing from our live inventory. 90-day warranty and nationwide shipping included.
             </p>
 
