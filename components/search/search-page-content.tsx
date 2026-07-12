@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import { CAR_MAKES, CAR_MODELS, PART_CATEGORIES, YEARS, US_STATES, generateResults, type SearchResult } from "@/lib/data"
+import { getPartsSearchUrl } from "@/lib/parts-search-routing"
 import { Search, Phone, MessageSquare, Shield, MapPin, Star, Check, Clock } from "lucide-react"
 import Link from "next/link"
 
@@ -45,16 +46,23 @@ export function SearchPageContent() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (!make) return
-    const params = new URLSearchParams()
-    if (year) params.set("year", year)
-    if (make) params.set("make", make)
-    if (model) params.set("model", model)
-    if (part) params.set("part", part)
-    if (state) params.set("state", state)
-    if (city) params.set("city", city)
-    if (zip) params.set("zip", zip)
-    router.replace(`/search?${params.toString()}`)
-    doSearch()
+
+    // Use the shared routing rule: engine/transmission get their own pages, everything else stays on /search
+    const destination = getPartsSearchUrl({
+      partType: part || "",
+      make,
+      model,
+      year,
+      location: state && city ? `${city}, ${state}` : state || "",
+      zipCode: zip
+    })
+    
+    router.replace(destination)
+    
+    // If staying on /search, refresh results
+    if (destination.startsWith("/search")) {
+      doSearch()
+    }
   }
 
   const selectClass = "w-full font-sans text-sm px-3 py-2.5 bg-[rgba(13,15,22,0.75)] border border-border/50 rounded-lg text-foreground appearance-none focus:border-primary/55 focus:ring-1 focus:ring-primary/20 outline-none transition-all"
