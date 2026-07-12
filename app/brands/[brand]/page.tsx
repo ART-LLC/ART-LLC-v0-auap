@@ -19,6 +19,7 @@ import {
 } from '@/lib/brand-catalog'
 import { ChevronRight, ChevronLeft, Search } from 'lucide-react'
 import { LuxuryBrandLanding } from '@/components/luxury-brand-landing'
+import { AcuraDrivetrainReport } from '@/components/acura-drivetrain-report'
 
 interface PageProps {
   params: Promise<{ brand: string }>
@@ -263,6 +264,8 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
         </section>
 
         {/* Keyword-rich internal backlinks for Google indexing */}
+        {brand === 'acura' && <AcuraDrivetrainReport />}
+
         <SeoBacklinks make={label} partType="Engine" />
       </main>
       <Footer />
