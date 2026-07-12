@@ -43,26 +43,26 @@ section.bg-background,
 }
 
 :root {
-  /* ── Dark Blue Premium Theme with Bright Blue CTAs ── */
-  --background: #1e3a8a;
-  --history-panel: #0f1e3d;
+  /* ── Grey Background with Bright Blue CTAs ── */
+  --background: #6b7280;
+  --history-panel: #4b5563;
   --foreground: #ffffff;
-  --card: #1e3a8a;
+  --card: #5a6370;
   --card-foreground: #ffffff;
-  --popover: #1e3a8a;
+  --popover: #5a6370;
   --popover-foreground: #ffffff;
   --primary: #3b82f6;
   --primary-foreground: #ffffff;
-  --secondary: #1e3a8a;
+  --secondary: #5a6370;
   --secondary-foreground: #3b82f6;
-  --muted: #1e3a8a;
-  --muted-foreground: #90caf9;
+  --muted: #4b5563;
+  --muted-foreground: #e5e7eb;
   --accent: #3b82f6;
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #2563eb;
-  --input: #1e3a8a;
+  --border: #4b5563;
+  --input: #5a6370;
   --ring: #3b82f6;
   --chart-1: #3b82f6;
   --chart-2: #60a5fa;
@@ -70,42 +70,42 @@ section.bg-background,
   --chart-4: #bfdbfe;
   --chart-5: #dbeafe;
   --radius: 0.5rem;
-  --sidebar: #0f1e3d;
+  --sidebar: #4b5563;
   --sidebar-foreground: #ffffff;
   --sidebar-primary: #3b82f6;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #2563eb;
+  --sidebar-accent: #5a6370;
   --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #2563eb;
+  --sidebar-border: #4b5563;
   --sidebar-ring: #3b82f6;
 }
 
 /* ── Light mode overrides ────────────────────────────── */
-/* Light blue theme with bright blue accents */
+/* Light grey theme with bright blue accents */
 .light {
-  --background: #f0f4f8;
-  --history-panel: #e8ecf1;
-  --foreground: #1e3a8a;
+  --background: #f3f4f6;
+  --history-panel: #e5e7eb;
+  --foreground: #1f2937;
   --card: #ffffff;
-  --card-foreground: #1e3a8a;
+  --card-foreground: #1f2937;
   --popover: #ffffff;
-  --popover-foreground: #1e3a8a;
+  --popover-foreground: #1f2937;
   --primary: #3b82f6;
   --primary-foreground: #ffffff;
-  --secondary: #dbeafe;
-  --secondary-foreground: #1e3a8a;
-  --muted: #e8ecf1;
-  --muted-foreground: #2563eb;
+  --secondary: #e5e7eb;
+  --secondary-foreground: #1f2937;
+  --muted: #e5e7eb;
+  --muted-foreground: #3b82f6;
   --accent: #3b82f6;
   --accent-foreground: #ffffff;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --border: #bfdbfe;
+  --border: #d1d5db;
   --input: #ffffff;
   --ring: #3b82f6;
-  --sidebar: #e8ecf1;
-  --sidebar-foreground: #1e3a8a;
-  --sidebar-border: #bfdbfe;
+  --sidebar: #e5e7eb;
+  --sidebar-foreground: #1f2937;
+  --sidebar-border: #d1d5db;
 }
 
 @theme inline {
@@ -2863,7 +2863,7 @@ footer .wordmark-3d {
   background: rgba(255,255,255,0.06);
 }
 
-/* ═══════════════════════════════════════════════════════
+/* ════════════════════════════════════════════════════���══
    BOSS HEADER — Premium Typography + Embossing + Dynamic Effects
    ═══════════════════════════════════════════════════════ */
 
