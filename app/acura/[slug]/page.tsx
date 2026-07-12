@@ -208,7 +208,6 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                   productType={product.category}
                   make={product.compatibility || 'Acura'}
                   shipping={product.shipping}
-                  detailsHref={getAcuraProductUrl(product)}
                 />
 
                 {/* Trust Badges */}
@@ -234,63 +233,19 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
         {/* Search another part + free quote */}
         <section className="py-6 border-y border-border/50 bg-card/20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Search for another part */}
-              <div>
-                <h2 className="text-lg font-bold text-foreground mb-2">Looking for another Acura part?</h2>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Search our full Acura catalog with live suggestions as you type.
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div className="min-w-0">
+                <h2 className="text-lg font-bold text-foreground">Looking for another Acura part?</h2>
+                <p className="text-sm text-muted-foreground">
+                  Search our full Acura catalog, or{' '}
+                  <Link href="/acura#free-quote" className="font-medium text-primary hover:underline">
+                    request a free quote
+                  </Link>{' '}
+                  if you can&apos;t find it.
                 </p>
-                <AcuraPartsSearch size="sm" placeholder="Search another Acura part…" />
               </div>
-
-              {/* Quick quote for this part */}
-              <div>
-                <h2 className="text-lg font-bold text-foreground mb-2">Get a Quote on This Part</h2>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Answer a few quick questions for verified pricing and availability.
-                </p>
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault()
-                    const formData = new FormData(e.currentTarget)
-                    const params = new URLSearchParams({
-                      part: product.name,
-                      name: String(formData.get('name')) || '',
-                      email: String(formData.get('email')) || '',
-                      phone: String(formData.get('phone')) || '',
-                    })
-                    window.location.href = `/quote?${params.toString()}`
-                  }}
-                  className="space-y-3"
-                >
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your name"
-                    required
-                    className="w-full px-3 py-2 text-sm rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/30 outline-none transition-colors"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your email"
-                    required
-                    className="w-full px-3 py-2 text-sm rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/30 outline-none transition-colors"
-                  />
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Your phone (optional)"
-                    className="w-full px-3 py-2 text-sm rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/30 outline-none transition-colors"
-                  />
-                  <button
-                    type="submit"
-                    className="w-full px-4 py-2 text-sm font-bold text-white bg-primary hover:bg-primary/90 rounded-lg transition-colors"
-                  >
-                    Get Free Quote
-                  </button>
-                </form>
+              <div className="w-full md:max-w-md">
+                <AcuraPartsSearch size="sm" placeholder="Search another Acura part…" />
               </div>
             </div>
           </div>
