@@ -207,7 +207,8 @@ export function getProductDisplayImage(
   brand: string,
   product: Pick<BrandProduct, "imageUrl" | "canonicalSlug">,
 ): ProductDisplayImage {
-  const generatedSrc = `/api/product-image/${brand}/${product.canonicalSlug}`
+  // v=ai1 busts caches from the pre-AI illustration-only era of this route.
+  const generatedSrc = `/api/product-image/${brand}/${product.canonicalSlug}?v=ai1`
   const unique = !!product.imageUrl && !getSharedImageUrls(brand).has(product.imageUrl)
   return {
     src: unique ? product.imageUrl! : generatedSrc,
