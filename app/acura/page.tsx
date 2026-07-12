@@ -9,6 +9,7 @@ import { acuraGrouped, acuraProducts, getAcuraProductUrl, resolveAcuraImage, get
 import { ImageIcon, ExternalLink, BadgeCheck } from 'lucide-react'
 import { ProductCardActions } from '@/components/products/product-card-actions'
 import { AcuraPartsSearch } from '@/components/acura/acura-parts-search'
+import { AppleStyleSearch } from '@/components/acura/acura-apple-search'
 import { QuoteForm } from '@/components/quote-form'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
@@ -174,8 +175,8 @@ export default function AcuraProductsPage() {
             Premium quality used Acura parts from our 2,000+ yard network. Browse {acuraProducts.length} products across {modelsList.length} vehicle models with verified pricing and warranty.
           </p>
 
-          {/* Acura-only search with live suggestions */}
-          <AcuraPartsSearch onSearch={setSearchQuery} activeQuery={searchQuery} />
+          {/* Apple-style search form */}
+          <AppleStyleSearch onSearch={setSearchQuery} activeQuery={searchQuery} />
         </div>
 
         {isSearching ? (
