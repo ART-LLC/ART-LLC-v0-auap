@@ -5,8 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
-import acuraData from '@/lib/acura-products.json'
-import { resolveAcuraImage } from '@/lib/acura-data'
+import { acuraGrouped, acuraProducts, getAcuraProductUrl, resolveAcuraImage, type AcuraProduct } from '@/lib/acura-data'
 import { ProductCardActions } from '@/components/products/product-card-actions'
 
 // Extract the base model name (e.g. "CL") from a full year-model key
@@ -17,23 +16,19 @@ function baseModelName(key: string): string {
 }
 
 export default function AcuraProductsPage() {
-  const acuraProducts = useMemo(() => acuraData as any, [])
-
-  // Consolidate the 173 year-model keys into unique base models (CL, MDX, TL...),
-  // merging each model's products by category across all years.
+  // Consolidate year-model groups into unique base models (CL, MDX, TL...),
+  // while preserving each unique canonical inventory record.
   const { modelsList, byModel } = useMemo(() => {
-    const grouped = (acuraProducts.grouped as any) || {}
-    const byModel: Record<string, Record<string, any[]>> = {}
-    for (const fullKey of Object.keys(grouped)) {
+    const byModel: Record<string, Record<string, AcuraProduct[]>> = {}
+    for (const [fullKey, categories] of Object.entries(acuraGrouped)) {
       const model = baseModelName(fullKey)
       byModel[model] = byModel[model] || {}
-      const cats = grouped[fullKey] || {}
-      for (const cat of Object.keys(cats)) {
-        byModel[model][cat] = (byModel[model][cat] || []).concat(cats[cat] || [])
+      for (const [category, products] of Object.entries(categories)) {
+        byModel[model][category] = (byModel[model][category] || []).concat(products)
       }
     }
     return { modelsList: Object.keys(byModel).sort(), byModel }
-  }, [acuraProducts])
+  }, [])
 
   const [selectedModel, setSelectedModel] = useState(modelsList[0] || 'Acura')
   const currentModelData = useMemo(() => byModel[selectedModel] || {}, [selectedModel, byModel])
@@ -48,7 +43,7 @@ export default function AcuraProductsPage() {
             𝐀𝐂𝐔𝐑𝐀 Used Auto Parts
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Premium quality used Acura parts from our 2,000+ yard network. Browse {acuraProducts.products?.length || 0} products across {modelsList.length} vehicle models with verified pricing and warranty.
+            Premium quality used Acura parts from our 2,000+ yard network. Browse {acuraProducts.length} products across {modelsList.length} vehicle models with verified pricing and warranty.
           </p>
         </div>
 
@@ -91,7 +86,7 @@ export default function AcuraProductsPage() {
                             className="hover:shadow-lg hover:border-primary/50 transition-all overflow-hidden flex flex-col"
                           >
                             {/* Product Image */}
-                            <Link href={`/acura/${product.slug}`} className="relative h-48 w-full bg-muted overflow-hidden block">
+                            <Link href={getAcuraProductUrl(product)} className="relative h-48 w-full bg-muted overflow-hidden block">
                               <Image
                                 src={resolvedImage}
                                 alt={product.name}
@@ -100,6 +95,9 @@ export default function AcuraProductsPage() {
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                                 className="object-cover hover:scale-105 transition-transform"
                               />
+                              <span className="absolute inset-x-0 bottom-0 bg-card/90 px-2 py-1 text-center text-[10px] font-medium text-muted-foreground">
+                                Representative image — verify VIN/fitment
+                              </span>
                             </Link>
                             
                             <CardHeader className="pb-3">
@@ -111,7 +109,7 @@ export default function AcuraProductsPage() {
                                   {product.availability || 'In Stock'}
                                 </Badge>
                               </div>
-                              <Link href={`/acura/${product.slug}`}>
+                              <Link href={getAcuraProductUrl(product)}>
                                 <CardTitle className="text-base line-clamp-2 hover:text-primary transition-colors">
                                   {product.name}
                                 </CardTitle>
@@ -163,11 +161,11 @@ export default function AcuraProductsPage() {
                                 productId={String(product.id)}
                                 productName={product.name}
                                 productPrice={Number(product.price) || 0}
-                                productImage={product.image}
+                                productImage={resolvedImage}
                                 productType={category}
                                 make="Acura"
                                 shipping={product.shipping}
-                                detailsHref={`/acura/${product.slug}`}
+                                detailsHref={getAcuraProductUrl(product)}
                               />
                             </div>
                           </Card>

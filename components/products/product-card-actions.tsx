@@ -38,6 +38,7 @@ export function ProductCardActions({
   const addItem = useCartStore((state) => state.addItem)
 
   const handleAddToCart = () => {
+    const shippingCost = Number.parseFloat(shipping?.replace(/[^0-9.]/g, '') || '0')
     addItem({
       id: productId,
       name: productName,
@@ -46,6 +47,7 @@ export function ProductCardActions({
       image: productImage,
       make,
       partType: productType,
+      shippingCost,
     })
     setAddedToCart(true)
     setTimeout(() => setAddedToCart(false), 2000)

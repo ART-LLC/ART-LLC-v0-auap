@@ -18,7 +18,7 @@ export default function CartPage() {
   const [promoCode, setPromoCode] = useState('')
 
   const totalPrice = getTotalPrice()
-  const shipping = items.length > 0 ? 0 : 0
+  const shipping = items.reduce((total, item) => total + (item.shippingCost ?? 0) * item.quantity, 0)
   const tax = totalPrice * 0.08
   const finalTotal = totalPrice + tax + shipping
 
@@ -101,7 +101,7 @@ export default function CartPage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-foreground/60">Shipping</span>
-                      <span className="text-green-400">FREE</span>
+                      <span className={shipping > 0 ? '' : 'text-green-400'}>${shipping.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-foreground/60">Tax (8%)</span>

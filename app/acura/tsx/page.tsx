@@ -13,14 +13,14 @@ import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 import Image from 'next/image'
 import { Search, Grid3x3, List } from 'lucide-react'
-import acuraData from '@/lib/acura-products.json'
+import { acuraProducts, resolveAcuraImage } from '@/lib/acura-data'
 
 export default function AcuraTsxPage() {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
   const [searchTerm, setSearchTerm] = useState('')
 
   const tsxProducts = useMemo(() => {
-    return acuraData.products.filter(p => p.name.includes('TSX'))
+    return acuraProducts.filter(p => p.name.includes('TSX'))
   }, [])
 
   const filteredProducts = useMemo(() => {
@@ -70,9 +70,10 @@ export default function AcuraTsxPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {filteredProducts.map(product => (
                   <Card key={product.id} className="overflow-hidden">
-                    {product.image && (
+                    {resolveAcuraImage(product) && (
                       <div className="relative w-full h-48 bg-muted">
-                        <Image src={product.image} alt={product.name} fill className="object-cover" />
+                        <Image src={resolveAcuraImage(product)} alt={`${product.name} representative inventory image`} fill unoptimized className="object-cover" />
+                        <span className="absolute inset-x-0 bottom-0 bg-card/90 px-2 py-1 text-center text-[10px] text-muted-foreground">{product.imageLabel}</span>
                       </div>
                     )}
                     <CardHeader className="pb-2">
@@ -80,12 +81,12 @@ export default function AcuraTsxPage() {
                       <CardTitle className="text-base">{product.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <div className="text-2xl font-bold text-primary">${product.avgPrice}</div>
+                      <div className="text-2xl font-bold text-primary">${product.price}</div>
                       <ProductCardActions
                         productId={product.id}
                         productName={product.name}
-                        productPrice={product.avgPrice}
-                        productImage={product.image}
+                        productPrice={product.price}
+                        productImage={resolveAcuraImage(product)}
                         productType={product.category}
                         make="Acura TSX"
                       />
@@ -98,21 +99,21 @@ export default function AcuraTsxPage() {
                 {filteredProducts.map(product => (
                   <Card key={product.id} className="overflow-hidden">
                     <div className="flex gap-6 p-6">
-                      {product.image && (
+                      {resolveAcuraImage(product) && (
                         <div className="relative w-32 h-32 bg-muted flex-shrink-0 rounded-lg">
-                          <Image src={product.image} alt={product.name} fill className="object-cover rounded-lg" />
+                          <Image src={resolveAcuraImage(product)} alt={product.name} fill className="object-cover rounded-lg" />
                         </div>
                       )}
                       <div className="flex-1">
                         <Badge className="mb-2">{product.category}</Badge>
                         <h3 className="font-semibold text-lg">{product.name}</h3>
-                        <div className="text-2xl font-bold text-primary mt-4">${product.avgPrice}</div>
+                        <div className="text-2xl font-bold text-primary mt-4">${product.price}</div>
                         <div className="mt-4">
                           <ProductCardActions
                             productId={product.id}
                             productName={product.name}
-                            productPrice={product.avgPrice}
-                            productImage={product.image}
+                            productPrice={product.price}
+                            productImage={resolveAcuraImage(product)}
                             productType={product.category}
                             make="Acura TSX"
                           />
