@@ -241,9 +241,9 @@ export function LuxuryBrandLanding({
   ]
 
   const featured = [
-    { label: 'Engine', note: 'Tested & compression-checked' },
-    { label: 'Transmission', note: 'Complete assembly, ready to fit' },
-    { label: 'Assembly', note: 'Genuine OEM component' },
+    { label: 'Engine', note: 'Tested & compression-checked', image: '/product-images/showcase/featured-engine.png' },
+    { label: 'Transmission', note: 'Complete assembly, ready to fit', image: '/product-images/showcase/featured-transmission.png' },
+    { label: 'Assembly', note: 'Genuine OEM component', image: '/product-images/showcase/featured-assembly.png' },
   ]
 
   return (
@@ -538,22 +538,43 @@ export function LuxuryBrandLanding({
               >
                 <div className="space-y-4 bg-slate-900/60 p-6">
                   <div
-                    className="flex aspect-video items-center justify-center rounded-lg border transition-transform group-hover:scale-[1.02]"
+                    className="relative flex aspect-video items-center justify-center rounded-lg border overflow-hidden transition-transform group-hover:scale-[1.02]"
                     style={{
                       borderColor: cardBorder,
-                      background: `linear-gradient(135deg, rgba(${rgb}, 0.2) 0%, rgba(${rgb}, 0.06) 100%)`,
                     }}
                   >
-                    {logoSrc ? (
+                    {item.image ? (
                       <Image
-                        src={logoSrc || "/placeholder.svg"}
-                        alt={`${label} logo`}
-                        width={120}
-                        height={64}
-                        className="h-16 w-auto object-contain drop-shadow-[0_2px_8px_rgba(255,255,255,0.25)]"
+                        src={item.image}
+                        alt={`${label} ${item.label}`}
+                        fill
+                        className="object-cover object-center"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
+                    ) : logoSrc ? (
+                      <div
+                        className="absolute inset-0 flex items-center justify-center"
+                        style={{
+                          background: `linear-gradient(135deg, rgba(${rgb}, 0.2) 0%, rgba(${rgb}, 0.06) 100%)`,
+                        }}
+                      >
+                        <Image
+                          src={logoSrc}
+                          alt={`${label} logo`}
+                          width={120}
+                          height={64}
+                          className="h-16 w-auto object-contain drop-shadow-[0_2px_8px_rgba(255,255,255,0.25)]"
+                        />
+                      </div>
                     ) : (
-                      <span className="text-2xl font-black text-white/80">{label}</span>
+                      <div
+                        className="absolute inset-0 flex items-center justify-center"
+                        style={{
+                          background: `linear-gradient(135deg, rgba(${rgb}, 0.2) 0%, rgba(${rgb}, 0.06) 100%)`,
+                        }}
+                      >
+                        <span className="text-2xl font-black text-white/80">{label}</span>
+                      </div>
                     )}
                   </div>
                   <div className="space-y-2">
