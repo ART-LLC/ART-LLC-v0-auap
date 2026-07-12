@@ -45,6 +45,7 @@ section.bg-background,
 :root {
   /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic ── */
   --background: #3a3d44;
+  --history-panel: #080a0c;
   --foreground: #eef1f8;
   --card: #0f1117;
   --card-foreground: #dce1f0;
@@ -83,6 +84,7 @@ section.bg-background,
 /* Metallic silver on light background — maintain brand aesthetic */
 .light {
   --background: #f8f9fa;
+  --history-panel: #f0f2f6;
   --foreground: #1a1f2e;
   --card: #ffffff;
   --card-foreground: #1a1f2e;
@@ -111,6 +113,7 @@ section.bg-background,
   --font-serif: 'Georgia', 'Times New Roman', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
   --color-background: var(--background);
+  --color-history-panel: var(--history-panel);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);

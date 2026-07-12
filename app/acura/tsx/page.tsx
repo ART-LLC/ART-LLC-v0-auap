@@ -10,7 +10,7 @@ import { ProductCardActions } from '@/components/products/product-card-actions'
 import { ProductFAQ } from '@/components/products/product-faq'
 import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
-import { PartsHistory } from '@/components/products/parts-history'
+import { AcuraModelHistoryIndex } from '@/components/acura/model-history-index'
 import Image from 'next/image'
 import { Search, Grid3x3, List } from 'lucide-react'
 import { acuraProducts, getAcuraProductUrl, resolveAcuraImage } from '@/lib/acura-data'
@@ -132,7 +132,7 @@ export default function AcuraTsxPage() {
         </section>
 
         <PartsDetails partType="Acura TSX" yearRange="2004-2014" mileageRange="0-150,000 miles" />
-        <PartsHistory partType="Acura TSX Part" />
+        <AcuraModelHistoryIndex modelSlug="tsx" products={tsxProducts} />
         <ShippingInfo />
         <ProductFAQ productType="Acura TSX Parts" />
       </main>
