@@ -30,70 +30,6 @@ function categoryHue(category: string, fallback: number): number {
   return fallback
 }
 
-const IMMUTABLE_CACHE = 'public, max-age=31536000, s-maxage=31536000, immutable'
-
-/** Photo subject per category so the AI renders the right kind of part. */
-function categorySubject(category: string): string {
-  const c = category.toLowerCase()
-  if (c.includes('engine')) return 'complete used car engine block with intake manifold and wiring harness'
-  if (c.includes('transmission')) return 'complete used automatic transmission with torque converter and bell housing'
-  if (c.includes('electrical')) return 'used automotive electrical part such as an alternator or starter motor'
-  if (c.includes('cooling')) return 'used automotive radiator and cooling assembly'
-  if (c.includes('suspension')) return 'used automotive suspension strut and control arm assembly'
-  if (c.includes('brake')) return 'used automotive brake caliper and rotor assembly'
-  if (c.includes('body')) return 'used automotive body panel part'
-  if (c.includes('exhaust')) return 'used automotive exhaust manifold and pipe section'
-  if (c.includes('drivetrain')) return 'used automotive differential and drive shaft assembly'
-  return 'used OEM automotive replacement part'
-}
-
-/**
- * Generate a photorealistic per-SKU part image with Deep Infra FLUX.
- * The hash seed makes each SKU's image deterministic AND unique.
- * Returns null on any failure so the caller can fall back to the illustration.
- */
-async function generateAiPhoto(
-  seed: number,
-  vehicle: string,
-  category: string,
-): Promise<Response | null> {
-  const apiKey = process.env.DEEPINFRA_API_KEY
-  if (!apiKey) return null
-  try {
-    const prompt = `Professional product photography of a ${categorySubject(category)} for a ${vehicle}, placed on a clean light-gray studio background, soft even lighting, high detail, realistic OEM salvage part with mild signs of use, centered composition, no people, no text, no watermark`
-    const res = await fetch('https://api.deepinfra.com/v1/inference/black-forest-labs/FLUX-1-schnell', {
-      method: 'POST',
-      headers: {
-        Authorization: `bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        prompt,
-        width: 1024,
-        height: 768,
-        num_images: 1,
-        num_inference_steps: 4,
-        seed,
-      }),
-      signal: AbortSignal.timeout(25000),
-    })
-    if (!res.ok) return null
-    const data = (await res.json()) as { images?: string[] }
-    const dataUrl = data.images?.[0]
-    if (!dataUrl?.startsWith('data:image/')) return null
-    const base64 = dataUrl.slice(dataUrl.indexOf(',') + 1)
-    const bytes = Buffer.from(base64, 'base64')
-    return new Response(bytes, {
-      headers: {
-        'Content-Type': dataUrl.slice(5, dataUrl.indexOf(';')),
-        'Cache-Control': IMMUTABLE_CACHE,
-      },
-    })
-  } catch {
-    return null
-  }
-}
-
 export async function GET(
   _req: Request,
   { params }: { params: Promise<{ brand: string; sku: string }> },
@@ -109,13 +45,6 @@ export async function GET(
 
   const label = getBrandLabel(brand)
   const seed = hashCode(`${brand}:${product.canonicalSlug}`)
-
-  // Prefer a photorealistic AI-generated part photo (deterministic per SKU).
-  const aiVehicle = [product.year, label, product.model].filter(Boolean).join(' ') || label
-  const aiPhoto = await generateAiPhoto(seed, aiVehicle, product.category || '')
-  if (aiPhoto) return aiPhoto
-
-  // Fallback: deterministic illustration card.
   const hue = categoryHue(product.category || '', seed % 360)
   const accent = `hsl(${hue} 72% 52%)`
   const accentSoft = `hsl(${hue} 60% 22%)`
@@ -219,7 +148,7 @@ export async function GET(
       width: 1200,
       height: 900,
       headers: {
-        'Cache-Control': IMMUTABLE_CACHE,
+        'Cache-Control': 'public, max-age=31536000, s-maxage=31536000, immutable',
       },
     },
   )
