@@ -10,20 +10,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1989",
       "model": "405 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-405-dohc-vin-2-6th-digit.jpg",
@@ -41,20 +32,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1989",
       "model": "405 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-405-sohc-vin-1-6th-digit.jpg",
@@ -72,20 +54,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1990",
       "model": "405 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1990-peugeot-405-sohc-vin-a-5th-digit.jpg",
@@ -103,20 +76,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1990",
       "model": "405 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1990-peugeot-405-sohc-vin-c-5th-digit.jpg",
@@ -134,20 +98,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1991",
       "model": "405 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1991-peugeot-405-dohc-vin-b-5th-digit.jpg",
@@ -165,20 +120,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1991",
       "model": "405 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1991-peugeot-405-dohc-vin-d-5th-digit.jpg",
@@ -196,20 +142,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1991",
       "model": "405 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1991-peugeot-405-sohc-vin-a-5th-digit.jpg",
@@ -227,20 +164,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1991",
       "model": "405 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1991-peugeot-405-sohc-vin-c-5th-digit.jpg",
@@ -258,20 +186,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1974",
       "model": "504 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1974-peugeot-504-diesel.jpg",
@@ -289,20 +208,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1975",
       "model": "504 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1975-peugeot-504-diesel.jpg",
@@ -320,20 +230,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1976",
       "model": "504 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1976-peugeot-504-diesel.jpg",
@@ -351,20 +252,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1977",
       "model": "504 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1977-peugeot-504-diesel.jpg",
@@ -382,20 +274,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1978",
       "model": "504 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1978-peugeot-504-diesel.jpg",
@@ -413,20 +296,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1979",
       "model": "504 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1979-peugeot-504-diesel.jpg",
@@ -444,20 +318,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1980",
       "model": "504 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1980-peugeot-504-direct.jpg",
@@ -475,20 +340,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1981",
       "model": "504 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1981-peugeot-504-diesel-vin-2-6th-digit.jpg",
@@ -506,20 +362,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1982",
       "model": "504 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1982-peugeot-504-diesel-vin-2-6th-digit.jpg",
@@ -537,20 +384,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1983",
       "model": "504 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1983-peugeot-504-diesel-vin-2-6th-digit.jpg",
@@ -568,20 +406,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1980",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1980-peugeot-505-diesel.jpg",
@@ -599,20 +428,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1980",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1980-peugeot-505-gasoline-us-fuel-injected.jpg",
@@ -630,20 +450,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1981",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1981-peugeot-505-diesel-vin-2-6th-digit.jpg",
@@ -661,20 +472,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1981",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1981-peugeot-505-gasoline-us-fuel-injected-vin-1-6th-digit.jpg",
@@ -692,20 +494,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1982",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1982-peugeot-505-diesel-vin-2-6th-digit.jpg",
@@ -723,20 +516,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1982",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1982-peugeot-505-gasoline-us-fuel-injected-vin-1-6th-digit.jpg",
@@ -754,20 +538,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1983",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1983-peugeot-505-diesel-vin-2-6th-digit.jpg",
@@ -785,20 +560,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1983",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1983-peugeot-505-gasoline-us-fuel-injected-vin-1-6th-digit.jpg",
@@ -816,20 +582,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1984",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1984-peugeot-505-gasoline-vin-1-6th-digit.jpg",
@@ -847,20 +604,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1985",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1985-peugeot-505-gasoline-vin-1-6th-digit.jpg",
@@ -878,20 +626,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1985",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1985-peugeot-505-turbo-gasoline-vin-5-6th-digit.jpg",
@@ -909,20 +648,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1985",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1985-peugeot-505-turbo-gasoline-vin-7-6th-digit.jpg",
@@ -940,20 +670,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1986",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1986-peugeot-505-gasoline-vin-1-6th-digit.jpg",
@@ -971,20 +692,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1986",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1986-peugeot-505-turbo-gasoline-vin-5-6th-digit.jpg",
@@ -1002,20 +714,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1986",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1986-peugeot-505-turbo-gasoline-vin-7-6th-digit.jpg",
@@ -1033,20 +736,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1987",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1987-peugeot-505-turbo-gasoline-vin-5-6th-digit.jpg",
@@ -1064,20 +758,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1987",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1987-peugeot-505-turbo-gasoline-vin-7-6th-digit.jpg",
@@ -1095,20 +780,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1987",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1987-peugeot-505-gasoline-4-cylinder-2.0l-vin-1-6th-digit.jpg",
@@ -1126,20 +802,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "1987",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1987-peugeot-505-gasoline-6-cylinder-vin-9-6th-digit.jpg",
@@ -1157,20 +824,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1988",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1988-peugeot-505-turbo-gasoline-vin-5-6th-digit.jpg",
@@ -1188,20 +846,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1988",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1988-peugeot-505-turbo-gasoline-vin-7-6th-digit.jpg",
@@ -1219,20 +868,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1988",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1988-peugeot-505-gasoline-4-cylinder-2.0l-vin-1-6th-digit.jpg",
@@ -1250,20 +890,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "1988",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1988-peugeot-505-gasoline-6-cylinder-vin-9-6th-digit.jpg",
@@ -1281,20 +912,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1989",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-505-turbo-gasoline-vin-5-6th-digit.jpg",
@@ -1312,20 +934,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1989",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-505-turbo-gasoline-vin-7-6th-digit.jpg",
@@ -1343,20 +956,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1989",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-505-gasoline-4-cylinder-2.0l-vin-1-6th-digit.jpg",
@@ -1374,20 +978,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "1989",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1989-peugeot-505-gasoline-6-cylinder-vin-9-6th-digit.jpg",
@@ -1405,20 +1000,11 @@
       "brand": "Peugeot",
       "category": "engine",
       "price": 2081.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2456.17
-        },
-        {
-          "mileage": "Medium",
-          "price": 2081.5
-        },
-        {
-          "mileage": "High",
-          "price": 1748.46
-        }
-      ],
+      "tiers": {
+        "low": 2456.17,
+        "medium": 2081.5,
+        "high": 1748.46
+      },
       "year": "1990",
       "model": "505 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1990-peugeot-505-gasoline-6-cylinder-vin-9-5th-digit.jpg",

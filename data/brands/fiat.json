@@ -9,20 +9,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1970",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1970-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -41,20 +32,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1970",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1970-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -73,20 +55,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1970",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1970-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -105,20 +78,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1970",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1970-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -137,20 +101,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1970",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1970-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -169,20 +124,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1970",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1970-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -201,20 +147,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1971",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1971-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -233,20 +170,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1971",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1971-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -265,20 +193,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1971",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1971-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -297,20 +216,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1971",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1971-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -329,20 +239,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1971",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1971-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -361,20 +262,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "1971",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/engines/1971-fiat-124-1983-down-includes-spider-engine-side.jpg",
@@ -393,20 +285,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2732
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2100
-        }
-      ],
+      "tiers": {
+        "low": 2732,
+        "medium": 2530,
+        "high": 2100
+      },
       "year": "2012",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2012-fiat-500-engine-side.jpg",
@@ -425,20 +308,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1708,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1844
-        },
-        {
-          "mileage": "Medium",
-          "price": 1708
-        },
-        {
-          "mileage": "High",
-          "price": 1417
-        }
-      ],
+      "tiers": {
+        "low": 1844,
+        "medium": 1708,
+        "high": 1417
+      },
       "year": "2012",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2012-fiat-500-engine-side.jpg",
@@ -457,20 +331,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1441
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1107
-        }
-      ],
+      "tiers": {
+        "low": 1441,
+        "medium": 1334,
+        "high": 1107
+      },
       "year": "2012",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2012-fiat-500-engine-side.jpg",
@@ -489,20 +354,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2012",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2012-fiat-500-engine-side.jpg",
@@ -521,20 +377,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2732
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2100
-        }
-      ],
+      "tiers": {
+        "low": 2732,
+        "medium": 2530,
+        "high": 2100
+      },
       "year": "2013",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2013-fiat-500-engine-side.jpg",
@@ -553,20 +400,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1708,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1844
-        },
-        {
-          "mileage": "Medium",
-          "price": 1708
-        },
-        {
-          "mileage": "High",
-          "price": 1417
-        }
-      ],
+      "tiers": {
+        "low": 1844,
+        "medium": 1708,
+        "high": 1417
+      },
       "year": "2013",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2013-fiat-500-engine-side.jpg",
@@ -585,20 +423,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1441
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1107
-        }
-      ],
+      "tiers": {
+        "low": 1441,
+        "medium": 1334,
+        "high": 1107
+      },
       "year": "2013",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2013-fiat-500-engine-side.jpg",
@@ -617,20 +446,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2013",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2013-fiat-500-engine-side.jpg",
@@ -649,20 +469,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2013",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2013-fiat-500-engine-side.jpg",
@@ -681,20 +492,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1708,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1844
-        },
-        {
-          "mileage": "Medium",
-          "price": 1708
-        },
-        {
-          "mileage": "High",
-          "price": 1417
-        }
-      ],
+      "tiers": {
+        "low": 1844,
+        "medium": 1708,
+        "high": 1417
+      },
       "year": "2014",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2014-fiat-500-engine-side.jpg",
@@ -713,20 +515,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1441
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1107
-        }
-      ],
+      "tiers": {
+        "low": 1441,
+        "medium": 1334,
+        "high": 1107
+      },
       "year": "2014",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2014-fiat-500-engine-side.jpg",
@@ -745,20 +538,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2014",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2014-fiat-500-engine-side.jpg",
@@ -777,20 +561,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2014",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2014-fiat-500-engine-side.jpg",
@@ -809,20 +584,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1050,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1134
-        },
-        {
-          "mileage": "Medium",
-          "price": 1050
-        },
-        {
-          "mileage": "High",
-          "price": 871
-        }
-      ],
+      "tiers": {
+        "low": 1134,
+        "medium": 1050,
+        "high": 871
+      },
       "year": "2014",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2014-fiat-500-engine-side.jpg",
@@ -841,20 +607,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 2082,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2248
-        },
-        {
-          "mileage": "Medium",
-          "price": 2082
-        },
-        {
-          "mileage": "High",
-          "price": 1728
-        }
-      ],
+      "tiers": {
+        "low": 2248,
+        "medium": 2082,
+        "high": 1728
+      },
       "year": "2014",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2014-fiat-500-engine-side.jpg",
@@ -873,20 +630,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1484,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1602
-        },
-        {
-          "mileage": "Medium",
-          "price": 1484
-        },
-        {
-          "mileage": "High",
-          "price": 1231
-        }
-      ],
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
       "year": "2014",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2014-fiat-500-engine-side.jpg",
@@ -905,20 +653,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2015",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2015-fiat-500-engine-side.jpg",
@@ -937,20 +676,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 2082,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2248
-        },
-        {
-          "mileage": "Medium",
-          "price": 2082
-        },
-        {
-          "mileage": "High",
-          "price": 1728
-        }
-      ],
+      "tiers": {
+        "low": 2248,
+        "medium": 2082,
+        "high": 1728
+      },
       "year": "2015",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2015-fiat-500-engine-side.jpg",
@@ -969,20 +699,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1484,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1602
-        },
-        {
-          "mileage": "Medium",
-          "price": 1484
-        },
-        {
-          "mileage": "High",
-          "price": 1231
-        }
-      ],
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
       "year": "2015",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2015-fiat-500-engine-side.jpg",
@@ -1001,20 +722,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1065,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1150
-        },
-        {
-          "mileage": "Medium",
-          "price": 1065
-        },
-        {
-          "mileage": "High",
-          "price": 884
-        }
-      ],
+      "tiers": {
+        "low": 1150,
+        "medium": 1065,
+        "high": 884
+      },
       "year": "2015",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2015-fiat-500-engine-side.jpg",
@@ -1033,20 +745,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 2082,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2248
-        },
-        {
-          "mileage": "Medium",
-          "price": 2082
-        },
-        {
-          "mileage": "High",
-          "price": 1728
-        }
-      ],
+      "tiers": {
+        "low": 2248,
+        "medium": 2082,
+        "high": 1728
+      },
       "year": "2015",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2015-fiat-500-engine-side.jpg",
@@ -1065,20 +768,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1708,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1844
-        },
-        {
-          "mileage": "Medium",
-          "price": 1708
-        },
-        {
-          "mileage": "High",
-          "price": 1417
-        }
-      ],
+      "tiers": {
+        "low": 1844,
+        "medium": 1708,
+        "high": 1417
+      },
       "year": "2015",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2015-fiat-500-engine-side.jpg",
@@ -1097,20 +791,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2016",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2016-fiat-500-engine-side.jpg",
@@ -1129,20 +814,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 2082,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2248
-        },
-        {
-          "mileage": "Medium",
-          "price": 2082
-        },
-        {
-          "mileage": "High",
-          "price": 1728
-        }
-      ],
+      "tiers": {
+        "low": 2248,
+        "medium": 2082,
+        "high": 1728
+      },
       "year": "2016",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2016-fiat-500-engine-side.jpg",
@@ -1161,20 +837,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1065,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1150
-        },
-        {
-          "mileage": "Medium",
-          "price": 1065
-        },
-        {
-          "mileage": "High",
-          "price": 884
-        }
-      ],
+      "tiers": {
+        "low": 1150,
+        "medium": 1065,
+        "high": 884
+      },
       "year": "2016",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2016-fiat-500-engine-side.jpg",
@@ -1193,20 +860,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 2082,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2248
-        },
-        {
-          "mileage": "Medium",
-          "price": 2082
-        },
-        {
-          "mileage": "High",
-          "price": 1728
-        }
-      ],
+      "tiers": {
+        "low": 2248,
+        "medium": 2082,
+        "high": 1728
+      },
       "year": "2016",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2016-fiat-500-engine-side.jpg",
@@ -1225,20 +883,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1484,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1602
-        },
-        {
-          "mileage": "Medium",
-          "price": 1484
-        },
-        {
-          "mileage": "High",
-          "price": 1231
-        }
-      ],
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
       "year": "2016",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2016-fiat-500-engine-side.jpg",
@@ -1257,20 +906,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1708,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1844
-        },
-        {
-          "mileage": "Medium",
-          "price": 1708
-        },
-        {
-          "mileage": "High",
-          "price": 1417
-        }
-      ],
+      "tiers": {
+        "low": 1844,
+        "medium": 1708,
+        "high": 1417
+      },
       "year": "2016",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2016-fiat-500-engine-side.jpg",
@@ -1289,20 +929,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1783,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1925
-        },
-        {
-          "mileage": "Medium",
-          "price": 1783
-        },
-        {
-          "mileage": "High",
-          "price": 1479
-        }
-      ],
+      "tiers": {
+        "low": 1925,
+        "medium": 1783,
+        "high": 1479
+      },
       "year": "2016",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2016-fiat-500-engine-side.jpg",
@@ -1321,20 +952,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1441
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1107
-        }
-      ],
+      "tiers": {
+        "low": 1441,
+        "medium": 1334,
+        "high": 1107
+      },
       "year": "2016",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2016-fiat-500-engine-side.jpg",
@@ -1353,20 +975,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 2082,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2248
-        },
-        {
-          "mileage": "Medium",
-          "price": 2082
-        },
-        {
-          "mileage": "High",
-          "price": 1728
-        }
-      ],
+      "tiers": {
+        "low": 2248,
+        "medium": 2082,
+        "high": 1728
+      },
       "year": "2017",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-fiat-500-engine-side.jpg",
@@ -1385,20 +998,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2017",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-fiat-500-engine-side.jpg",
@@ -1417,20 +1021,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1558,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1683
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558
-        },
-        {
-          "mileage": "High",
-          "price": 1293
-        }
-      ],
+      "tiers": {
+        "low": 1683,
+        "medium": 1558,
+        "high": 1293
+      },
       "year": "2017",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-fiat-500-engine-side.jpg",
@@ -1449,20 +1044,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1764
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1355
-        }
-      ],
+      "tiers": {
+        "low": 1764,
+        "medium": 1633,
+        "high": 1355
+      },
       "year": "2017",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-fiat-500-engine-side.jpg",
@@ -1481,20 +1067,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 2082,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2248
-        },
-        {
-          "mileage": "Medium",
-          "price": 2082
-        },
-        {
-          "mileage": "High",
-          "price": 1728
-        }
-      ],
+      "tiers": {
+        "low": 2248,
+        "medium": 2082,
+        "high": 1728
+      },
       "year": "2017",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-fiat-500-engine-side.jpg",
@@ -1513,20 +1090,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1484,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1602
-        },
-        {
-          "mileage": "Medium",
-          "price": 1484
-        },
-        {
-          "mileage": "High",
-          "price": 1231
-        }
-      ],
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
       "year": "2017",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-fiat-500-engine-side.jpg",
@@ -1545,20 +1113,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1118
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 859
-        }
-      ],
+      "tiers": {
+        "low": 1118,
+        "medium": 1035,
+        "high": 859
+      },
       "year": "2017",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-fiat-500-engine-side.jpg",
@@ -1577,20 +1136,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1484,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1602
-        },
-        {
-          "mileage": "Medium",
-          "price": 1484
-        },
-        {
-          "mileage": "High",
-          "price": 1231
-        }
-      ],
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
       "year": "2017",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-fiat-500-engine-side.jpg",
@@ -1609,20 +1159,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1441
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1107
-        }
-      ],
+      "tiers": {
+        "low": 1441,
+        "medium": 1334,
+        "high": 1107
+      },
       "year": "2017",
       "model": "500 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-fiat-500-engine-side.jpg",
@@ -1641,20 +1182,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1966",
       "model": "1100R Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1966-fiat-1100r-transmission-side.jpg",
@@ -1673,20 +1205,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1967",
       "model": "1100R Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1967-fiat-1100r-transmission-side.jpg",
@@ -1705,20 +1228,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1968",
       "model": "1100R Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1968-fiat-1100r-transmission-side.jpg",
@@ -1737,20 +1251,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1968",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1968-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -1769,20 +1274,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1969",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1969-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -1801,20 +1297,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1970",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1970-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -1833,20 +1320,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1971",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1971-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -1865,20 +1343,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1971",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1971-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -1897,20 +1366,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1972",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1972-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -1929,20 +1389,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1972",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1972-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -1961,20 +1412,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1973",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1973-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -1993,20 +1435,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1973",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1973-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2025,20 +1458,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1974",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1974-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2057,20 +1481,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1975",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1975-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2089,20 +1504,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1976",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1976-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2121,20 +1527,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1977",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1977-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2153,20 +1550,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1978",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1978-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2185,20 +1573,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1979",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1979-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2217,20 +1596,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1979",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1979-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2249,20 +1619,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1980",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1980-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2281,20 +1642,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1980",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1980-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2313,20 +1665,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1981",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1981-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2345,20 +1688,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1981",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1981-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2377,20 +1711,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1982",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1982-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2409,20 +1734,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1982",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1982-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2441,20 +1757,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1983",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1983-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2473,20 +1780,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1983",
       "model": "124 (1983",
       "imageUrl": "https://www.auapw.org/images/transmissions/1983-fiat-124-1983-down-includes-spider-transmission-side.jpg",
@@ -2505,20 +1803,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1626,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1756
-        },
-        {
-          "mileage": "Medium",
-          "price": 1626
-        },
-        {
-          "mileage": "High",
-          "price": 1349
-        }
-      ],
+      "tiers": {
+        "low": 1756,
+        "medium": 1626,
+        "high": 1349
+      },
       "year": "2017",
       "model": "124 Spider",
       "imageUrl": "https://www.auapw.org/images/transmissions/2017-fiat-124-spider-2016-up-transmission-side.jpg",
@@ -2537,20 +1826,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1558,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1683
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558
-        },
-        {
-          "mileage": "High",
-          "price": 1293
-        }
-      ],
+      "tiers": {
+        "low": 1683,
+        "medium": 1558,
+        "high": 1293
+      },
       "year": "2017",
       "model": "124 Spider",
       "imageUrl": "https://www.auapw.org/images/transmissions/2017-fiat-124-spider-2016-up-transmission-side.jpg",
@@ -2569,20 +1849,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1971",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1971-fiat-128-transmission-side.jpg",
@@ -2601,20 +1872,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1972",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1972-fiat-128-transmission-side.jpg",
@@ -2633,20 +1895,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1973",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1973-fiat-128-transmission-side.jpg",
@@ -2665,20 +1918,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1974",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1974-fiat-128-transmission-side.jpg",
@@ -2697,20 +1941,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1975",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1975-fiat-128-transmission-side.jpg",
@@ -2729,20 +1964,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
       "year": "1976",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1976-fiat-128-transmission-side.jpg",
@@ -2761,20 +1987,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 848,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 916
-        },
-        {
-          "mileage": "Medium",
-          "price": 848
-        },
-        {
-          "mileage": "High",
-          "price": 704
-        }
-      ],
+      "tiers": {
+        "low": 916,
+        "medium": 848,
+        "high": 704
+      },
       "year": "1977",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1977-fiat-128-transmission-side.jpg",
@@ -2793,20 +2010,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 878,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 948
-        },
-        {
-          "mileage": "Medium",
-          "price": 878
-        },
-        {
-          "mileage": "High",
-          "price": 729
-        }
-      ],
+      "tiers": {
+        "low": 948,
+        "medium": 878,
+        "high": 729
+      },
       "year": "1977",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1977-fiat-128-transmission-side.jpg",
@@ -2825,20 +2033,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 848,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 916
-        },
-        {
-          "mileage": "Medium",
-          "price": 848
-        },
-        {
-          "mileage": "High",
-          "price": 704
-        }
-      ],
+      "tiers": {
+        "low": 916,
+        "medium": 848,
+        "high": 704
+      },
       "year": "1978",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1978-fiat-128-transmission-side.jpg",
@@ -2857,20 +2056,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 878,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 948
-        },
-        {
-          "mileage": "Medium",
-          "price": 878
-        },
-        {
-          "mileage": "High",
-          "price": 729
-        }
-      ],
+      "tiers": {
+        "low": 948,
+        "medium": 878,
+        "high": 729
+      },
       "year": "1978",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1978-fiat-128-transmission-side.jpg",
@@ -2889,20 +2079,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 848,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 916
-        },
-        {
-          "mileage": "Medium",
-          "price": 848
-        },
-        {
-          "mileage": "High",
-          "price": 704
-        }
-      ],
+      "tiers": {
+        "low": 916,
+        "medium": 848,
+        "high": 704
+      },
       "year": "1979",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1979-fiat-128-transmission-side.jpg",
@@ -2921,20 +2102,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 878,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 948
-        },
-        {
-          "mileage": "Medium",
-          "price": 878
-        },
-        {
-          "mileage": "High",
-          "price": 729
-        }
-      ],
+      "tiers": {
+        "low": 948,
+        "medium": 878,
+        "high": 729
+      },
       "year": "1979",
       "model": "128 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1979-fiat-128-transmission-side.jpg",
@@ -2953,20 +2125,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1975",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1975-fiat-131-brava-transmission-side.jpg",
@@ -2985,20 +2148,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 960,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1037
-        },
-        {
-          "mileage": "Medium",
-          "price": 960
-        },
-        {
-          "mileage": "High",
-          "price": 797
-        }
-      ],
+      "tiers": {
+        "low": 1037,
+        "medium": 960,
+        "high": 797
+      },
       "year": "1975",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1975-fiat-131-brava-transmission-side.jpg",
@@ -3017,20 +2171,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1976",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1976-fiat-131-brava-transmission-side.jpg",
@@ -3049,20 +2194,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 960,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1037
-        },
-        {
-          "mileage": "Medium",
-          "price": 960
-        },
-        {
-          "mileage": "High",
-          "price": 797
-        }
-      ],
+      "tiers": {
+        "low": 1037,
+        "medium": 960,
+        "high": 797
+      },
       "year": "1976",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1976-fiat-131-brava-transmission-side.jpg",
@@ -3081,20 +2217,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1977",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1977-fiat-131-brava-transmission-side.jpg",
@@ -3113,20 +2240,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 960,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1037
-        },
-        {
-          "mileage": "Medium",
-          "price": 960
-        },
-        {
-          "mileage": "High",
-          "price": 797
-        }
-      ],
+      "tiers": {
+        "low": 1037,
+        "medium": 960,
+        "high": 797
+      },
       "year": "1977",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1977-fiat-131-brava-transmission-side.jpg",
@@ -3145,20 +2263,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1978",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1978-fiat-131-brava-transmission-side.jpg",
@@ -3177,20 +2286,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 960,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1037
-        },
-        {
-          "mileage": "Medium",
-          "price": 960
-        },
-        {
-          "mileage": "High",
-          "price": 797
-        }
-      ],
+      "tiers": {
+        "low": 1037,
+        "medium": 960,
+        "high": 797
+      },
       "year": "1978",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1978-fiat-131-brava-transmission-side.jpg",
@@ -3209,20 +2309,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1979",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1979-fiat-131-brava-transmission-side.jpg",
@@ -3241,20 +2332,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 960,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1037
-        },
-        {
-          "mileage": "Medium",
-          "price": 960
-        },
-        {
-          "mileage": "High",
-          "price": 797
-        }
-      ],
+      "tiers": {
+        "low": 1037,
+        "medium": 960,
+        "high": 797
+      },
       "year": "1979",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1979-fiat-131-brava-transmission-side.jpg",
@@ -3273,20 +2355,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1980",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1980-fiat-131-brava-transmission-side.jpg",
@@ -3305,20 +2378,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 960,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1037
-        },
-        {
-          "mileage": "Medium",
-          "price": 960
-        },
-        {
-          "mileage": "High",
-          "price": 797
-        }
-      ],
+      "tiers": {
+        "low": 1037,
+        "medium": 960,
+        "high": 797
+      },
       "year": "1980",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1980-fiat-131-brava-transmission-side.jpg",
@@ -3337,20 +2401,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1981",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1981-fiat-131-brava-transmission-side.jpg",
@@ -3369,20 +2424,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 960,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1037
-        },
-        {
-          "mileage": "Medium",
-          "price": 960
-        },
-        {
-          "mileage": "High",
-          "price": 797
-        }
-      ],
+      "tiers": {
+        "low": 1037,
+        "medium": 960,
+        "high": 797
+      },
       "year": "1981",
       "model": "131/Brava Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1981-fiat-131-brava-transmission-side.jpg",
@@ -3401,20 +2447,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1966",
       "model": "850 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1966-fiat-850-transmission-side.jpg",
@@ -3433,20 +2470,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1967",
       "model": "850 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1967-fiat-850-transmission-side.jpg",
@@ -3465,20 +2493,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1968",
       "model": "850 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1968-fiat-850-transmission-side.jpg",
@@ -3497,20 +2516,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1969",
       "model": "850 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1969-fiat-850-transmission-side.jpg",
@@ -3529,20 +2539,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1970",
       "model": "850 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1970-fiat-850-transmission-side.jpg",
@@ -3561,20 +2562,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1971",
       "model": "850 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1971-fiat-850-transmission-side.jpg",
@@ -3593,20 +2585,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1972",
       "model": "850 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1972-fiat-850-transmission-side.jpg",
@@ -3625,20 +2608,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1973",
       "model": "850 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1973-fiat-850-transmission-side.jpg",
@@ -3657,20 +2631,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
       "year": "1968",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1968-fiat-spider-includes-2000-transmission-side.jpg",
@@ -3689,20 +2654,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
       "year": "1969",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1969-fiat-spider-includes-2000-transmission-side.jpg",
@@ -3721,20 +2677,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
       "year": "1970",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1970-fiat-spider-includes-2000-transmission-side.jpg",
@@ -3753,20 +2700,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
       "year": "1971",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1971-fiat-spider-includes-2000-transmission-side.jpg",
@@ -3785,20 +2723,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
       "year": "1971",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1971-fiat-spider-includes-2000-transmission-side.jpg",
@@ -3817,20 +2746,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
       "year": "1972",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1972-fiat-spider-includes-2000-transmission-side.jpg",
@@ -3849,20 +2769,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
       "year": "1972",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1972-fiat-spider-includes-2000-transmission-side.jpg",
@@ -3881,20 +2792,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
       "year": "1973",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1973-fiat-spider-includes-2000-transmission-side.jpg",
@@ -3913,20 +2815,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
       "year": "1973",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1973-fiat-spider-includes-2000-transmission-side.jpg",
@@ -3945,20 +2838,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1975",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1975-fiat-spider-includes-2000-transmission-side.jpg",
@@ -3977,20 +2861,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1976",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1976-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4009,20 +2884,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1977",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1977-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4041,20 +2907,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1978",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1978-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4073,20 +2930,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1979",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1979-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4105,20 +2953,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1979",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1979-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4137,20 +2976,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1980",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1980-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4169,20 +2999,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1980",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1980-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4201,20 +3022,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1981",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1981-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4233,20 +3045,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1981",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1981-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4265,20 +3068,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1982",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1982-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4297,20 +3091,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1982",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1982-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4329,20 +3114,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
       "year": "1983",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1983-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4361,20 +3137,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
       "year": "1983",
       "model": "Spider (includes",
       "imageUrl": "https://www.auapw.org/images/transmissions/1983-fiat-spider-includes-2000-transmission-side.jpg",
@@ -4393,20 +3160,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1974",
       "model": "X 1/9",
       "imageUrl": "https://www.auapw.org/images/transmissions/1974-fiat-x-1-9-transmission-side.jpg",
@@ -4425,20 +3183,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1975",
       "model": "X 1/9",
       "imageUrl": "https://www.auapw.org/images/transmissions/1975-fiat-x-1-9-transmission-side.jpg",
@@ -4457,20 +3206,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1976",
       "model": "X 1/9",
       "imageUrl": "https://www.auapw.org/images/transmissions/1976-fiat-x-1-9-transmission-side.jpg",
@@ -4489,20 +3229,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1977",
       "model": "X 1/9",
       "imageUrl": "https://www.auapw.org/images/transmissions/1977-fiat-x-1-9-transmission-side.jpg",
@@ -4521,20 +3252,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1978",
       "model": "X 1/9",
       "imageUrl": "https://www.auapw.org/images/transmissions/1978-fiat-x-1-9-transmission-side.jpg",
@@ -4553,20 +3275,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1979",
       "model": "X 1/9",
       "imageUrl": "https://www.auapw.org/images/transmissions/1979-fiat-x-1-9-transmission-side.jpg",
@@ -4585,20 +3298,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1980",
       "model": "X 1/9",
       "imageUrl": "https://www.auapw.org/images/transmissions/1980-fiat-x-1-9-transmission-side.jpg",
@@ -4617,20 +3321,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1981",
       "model": "X 1/9",
       "imageUrl": "https://www.auapw.org/images/transmissions/1981-fiat-x-1-9-transmission-side.jpg",
@@ -4649,20 +3344,11 @@
       "brand": "Fiat",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1982",
       "model": "X 1/9",
       "imageUrl": "https://www.auapw.org/images/transmissions/1982-fiat-x-1-9-transmission-side.jpg",

@@ -9,20 +9,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1484,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1602
-        },
-        {
-          "mileage": "Medium",
-          "price": 1484
-        },
-        {
-          "mileage": "High",
-          "price": 1231
-        }
-      ],
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
       "year": "1998",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
@@ -41,20 +32,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1998",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
@@ -73,20 +55,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1998",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
@@ -105,20 +78,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 960,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1037
-        },
-        {
-          "mileage": "Medium",
-          "price": 960
-        },
-        {
-          "mileage": "High",
-          "price": 797
-        }
-      ],
+      "tiers": {
+        "low": 1037,
+        "medium": 960,
+        "high": 797
+      },
       "year": "1998",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
@@ -137,20 +101,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1998",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-lanos-engine-side.jpg",
@@ -169,20 +124,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1484,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1602
-        },
-        {
-          "mileage": "Medium",
-          "price": 1484
-        },
-        {
-          "mileage": "High",
-          "price": 1231
-        }
-      ],
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
       "year": "1999",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
@@ -201,20 +147,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1999",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
@@ -233,20 +170,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "year": "1999",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
@@ -265,20 +193,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "1999",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
@@ -297,20 +216,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "year": "1999",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-lanos-engine-side.jpg",
@@ -329,20 +239,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1484,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1602
-        },
-        {
-          "mileage": "Medium",
-          "price": 1484
-        },
-        {
-          "mileage": "High",
-          "price": 1231
-        }
-      ],
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
       "year": "2000",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
@@ -361,20 +262,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "2000",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
@@ -393,20 +285,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "year": "2000",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
@@ -425,20 +308,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "2000",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
@@ -457,20 +331,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "year": "2000",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-lanos-engine-side.jpg",
@@ -489,20 +354,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1484,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1602
-        },
-        {
-          "mileage": "Medium",
-          "price": 1484
-        },
-        {
-          "mileage": "High",
-          "price": 1231
-        }
-      ],
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
       "year": "2001",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
@@ -521,20 +377,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "2001",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
@@ -553,20 +400,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "year": "2001",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
@@ -585,20 +423,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "2001",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
@@ -617,20 +446,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "year": "2001",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-lanos-engine-side.jpg",
@@ -649,20 +469,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1484,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1602
-        },
-        {
-          "mileage": "Medium",
-          "price": 1484
-        },
-        {
-          "mileage": "High",
-          "price": 1231
-        }
-      ],
+      "tiers": {
+        "low": 1602,
+        "medium": 1484,
+        "high": 1231
+      },
       "year": "2002",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
@@ -681,20 +492,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "2002",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
@@ -713,20 +515,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "year": "2002",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
@@ -745,20 +538,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
       "year": "2002",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
@@ -777,20 +561,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "year": "2002",
       "model": "Lanos Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-lanos-engine-side.jpg",
@@ -809,20 +584,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "1997",
       "model": "Leganza Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1997-daewoo-leganza-engine-side.jpg",
@@ -841,20 +607,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "1998",
       "model": "Leganza Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-leganza-engine-side.jpg",
@@ -873,20 +630,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "1999",
       "model": "Leganza Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-leganza-engine-side.jpg",
@@ -905,20 +653,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2000",
       "model": "Leganza Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-leganza-engine-side.jpg",
@@ -937,20 +676,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2001",
       "model": "Leganza Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-leganza-engine-side.jpg",
@@ -969,20 +699,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "year": "2002",
       "model": "Leganza Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-leganza-engine-side.jpg",
@@ -1001,20 +722,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1118
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 859
-        }
-      ],
+      "tiers": {
+        "low": 1118,
+        "medium": 1035,
+        "high": 859
+      },
       "year": "1998",
       "model": "Nubira Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-nubira-engine-side.jpg",
@@ -1033,20 +745,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1998",
       "model": "Nubira Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1998-daewoo-nubira-engine-side.jpg",
@@ -1065,20 +768,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1118
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 859
-        }
-      ],
+      "tiers": {
+        "low": 1118,
+        "medium": 1035,
+        "high": 859
+      },
       "year": "1999",
       "model": "Nubira Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-nubira-engine-side.jpg",
@@ -1097,20 +791,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1999",
       "model": "Nubira Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1999-daewoo-nubira-engine-side.jpg",
@@ -1129,20 +814,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1118
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 859
-        }
-      ],
+      "tiers": {
+        "low": 1118,
+        "medium": 1035,
+        "high": 859
+      },
       "year": "2000",
       "model": "Nubira Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-nubira-engine-side.jpg",
@@ -1161,20 +837,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "2000",
       "model": "Nubira Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2000-daewoo-nubira-engine-side.jpg",
@@ -1193,20 +860,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1118
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 859
-        }
-      ],
+      "tiers": {
+        "low": 1118,
+        "medium": 1035,
+        "high": 859
+      },
       "year": "2001",
       "model": "Nubira Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-nubira-engine-side.jpg",
@@ -1225,20 +883,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "2001",
       "model": "Nubira Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2001-daewoo-nubira-engine-side.jpg",
@@ -1257,20 +906,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1118
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 859
-        }
-      ],
+      "tiers": {
+        "low": 1118,
+        "medium": 1035,
+        "high": 859
+      },
       "year": "2002",
       "model": "Nubira Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-nubira-engine-side.jpg",
@@ -1289,20 +929,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "2002",
       "model": "Nubira Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2002-daewoo-nubira-engine-side.jpg",
@@ -1321,20 +952,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 512,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 553
-        },
-        {
-          "mileage": "Medium",
-          "price": 512
-        },
-        {
-          "mileage": "High",
-          "price": 425
-        }
-      ],
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
       "year": "1998",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
@@ -1353,20 +975,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1998",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
@@ -1385,20 +998,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "1998",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
@@ -1417,20 +1021,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 587,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 633
-        },
-        {
-          "mileage": "Medium",
-          "price": 587
-        },
-        {
-          "mileage": "High",
-          "price": 487
-        }
-      ],
+      "tiers": {
+        "low": 633,
+        "medium": 587,
+        "high": 487
+      },
       "year": "1998",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-lanos-transmission-side.jpg",
@@ -1449,20 +1044,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 512,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 553
-        },
-        {
-          "mileage": "Medium",
-          "price": 512
-        },
-        {
-          "mileage": "High",
-          "price": 425
-        }
-      ],
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
       "year": "1999",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
@@ -1481,20 +1067,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "1999",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
@@ -1513,20 +1090,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "1999",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
@@ -1545,20 +1113,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 587,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 633
-        },
-        {
-          "mileage": "Medium",
-          "price": 587
-        },
-        {
-          "mileage": "High",
-          "price": 487
-        }
-      ],
+      "tiers": {
+        "low": 633,
+        "medium": 587,
+        "high": 487
+      },
       "year": "1999",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-lanos-transmission-side.jpg",
@@ -1577,20 +1136,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 512,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 553
-        },
-        {
-          "mileage": "Medium",
-          "price": 512
-        },
-        {
-          "mileage": "High",
-          "price": 425
-        }
-      ],
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
       "year": "2000",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
@@ -1609,20 +1159,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "2000",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
@@ -1641,20 +1182,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "2000",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
@@ -1673,20 +1205,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 587,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 633
-        },
-        {
-          "mileage": "Medium",
-          "price": 587
-        },
-        {
-          "mileage": "High",
-          "price": 487
-        }
-      ],
+      "tiers": {
+        "low": 633,
+        "medium": 587,
+        "high": 487
+      },
       "year": "2000",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-lanos-transmission-side.jpg",
@@ -1705,20 +1228,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 512,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 553
-        },
-        {
-          "mileage": "Medium",
-          "price": 512
-        },
-        {
-          "mileage": "High",
-          "price": 425
-        }
-      ],
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
       "year": "2001",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-lanos-transmission-side.jpg",
@@ -1737,20 +1251,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "2001",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-lanos-transmission-side.jpg",
@@ -1769,20 +1274,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "2001",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-lanos-transmission-side.jpg",
@@ -1801,20 +1297,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 587,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 633
-        },
-        {
-          "mileage": "Medium",
-          "price": 587
-        },
-        {
-          "mileage": "High",
-          "price": 487
-        }
-      ],
+      "tiers": {
+        "low": 633,
+        "medium": 587,
+        "high": 487
+      },
       "year": "2001",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-lanos-transmission-side.jpg",
@@ -1833,20 +1320,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 512,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 553
-        },
-        {
-          "mileage": "Medium",
-          "price": 512
-        },
-        {
-          "mileage": "High",
-          "price": 425
-        }
-      ],
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
       "year": "2002",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-lanos-transmission-side.jpg",
@@ -1865,20 +1343,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "year": "2002",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-lanos-transmission-side.jpg",
@@ -1897,20 +1366,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "2002",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-lanos-transmission-side.jpg",
@@ -1929,20 +1389,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 587,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 633
-        },
-        {
-          "mileage": "Medium",
-          "price": 587
-        },
-        {
-          "mileage": "High",
-          "price": 487
-        }
-      ],
+      "tiers": {
+        "low": 633,
+        "medium": 587,
+        "high": 487
+      },
       "year": "2002",
       "model": "Lanos Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-lanos-transmission-side.jpg",
@@ -1961,20 +1412,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 437,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 472
-        },
-        {
-          "mileage": "Medium",
-          "price": 437
-        },
-        {
-          "mileage": "High",
-          "price": 363
-        }
-      ],
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
       "year": "1997",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1997-daewoo-leganza-transmission-side.jpg",
@@ -1993,20 +1435,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1997",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1997-daewoo-leganza-transmission-side.jpg",
@@ -2025,20 +1458,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 437,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 472
-        },
-        {
-          "mileage": "Medium",
-          "price": 437
-        },
-        {
-          "mileage": "High",
-          "price": 363
-        }
-      ],
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
       "year": "1998",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-leganza-transmission-side.jpg",
@@ -2057,20 +1481,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1998",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-leganza-transmission-side.jpg",
@@ -2089,20 +1504,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 437,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 472
-        },
-        {
-          "mileage": "Medium",
-          "price": 437
-        },
-        {
-          "mileage": "High",
-          "price": 363
-        }
-      ],
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
       "year": "1999",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-leganza-transmission-side.jpg",
@@ -2121,20 +1527,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "1999",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-leganza-transmission-side.jpg",
@@ -2153,20 +1550,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 437,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 472
-        },
-        {
-          "mileage": "Medium",
-          "price": 437
-        },
-        {
-          "mileage": "High",
-          "price": 363
-        }
-      ],
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
       "year": "2000",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-leganza-transmission-side.jpg",
@@ -2185,20 +1573,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "2000",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-leganza-transmission-side.jpg",
@@ -2217,20 +1596,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 437,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 472
-        },
-        {
-          "mileage": "Medium",
-          "price": 437
-        },
-        {
-          "mileage": "High",
-          "price": 363
-        }
-      ],
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
       "year": "2001",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-leganza-transmission-side.jpg",
@@ -2249,20 +1619,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "2001",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-leganza-transmission-side.jpg",
@@ -2281,20 +1642,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 437,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 472
-        },
-        {
-          "mileage": "Medium",
-          "price": 437
-        },
-        {
-          "mileage": "High",
-          "price": 363
-        }
-      ],
+      "tiers": {
+        "low": 472,
+        "medium": 437,
+        "high": 363
+      },
       "year": "2002",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-leganza-transmission-side.jpg",
@@ -2313,20 +1665,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "year": "2002",
       "model": "Leganza Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-leganza-transmission-side.jpg",
@@ -2345,20 +1688,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 474,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 512
-        },
-        {
-          "mileage": "Medium",
-          "price": 474
-        },
-        {
-          "mileage": "High",
-          "price": 394
-        }
-      ],
+      "tiers": {
+        "low": 512,
+        "medium": 474,
+        "high": 394
+      },
       "year": "1998",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-nubira-transmission-side.jpg",
@@ -2377,20 +1711,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "1998",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1998-daewoo-nubira-transmission-side.jpg",
@@ -2409,20 +1734,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 474,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 512
-        },
-        {
-          "mileage": "Medium",
-          "price": 474
-        },
-        {
-          "mileage": "High",
-          "price": 394
-        }
-      ],
+      "tiers": {
+        "low": 512,
+        "medium": 474,
+        "high": 394
+      },
       "year": "1999",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-nubira-transmission-side.jpg",
@@ -2441,20 +1757,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "1999",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1999-daewoo-nubira-transmission-side.jpg",
@@ -2473,20 +1780,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 474,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 512
-        },
-        {
-          "mileage": "Medium",
-          "price": 474
-        },
-        {
-          "mileage": "High",
-          "price": 394
-        }
-      ],
+      "tiers": {
+        "low": 512,
+        "medium": 474,
+        "high": 394
+      },
       "year": "2000",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-nubira-transmission-side.jpg",
@@ -2505,20 +1803,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "2000",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2000-daewoo-nubira-transmission-side.jpg",
@@ -2537,20 +1826,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 474,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 512
-        },
-        {
-          "mileage": "Medium",
-          "price": 474
-        },
-        {
-          "mileage": "High",
-          "price": 394
-        }
-      ],
+      "tiers": {
+        "low": 512,
+        "medium": 474,
+        "high": 394
+      },
       "year": "2001",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-nubira-transmission-side.jpg",
@@ -2569,20 +1849,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "year": "2001",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2001-daewoo-nubira-transmission-side.jpg",
@@ -2601,20 +1872,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 512,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 553
-        },
-        {
-          "mileage": "Medium",
-          "price": 512
-        },
-        {
-          "mileage": "High",
-          "price": 425
-        }
-      ],
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
       "year": "2002",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-nubira-transmission-side.jpg",
@@ -2633,20 +1895,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 795
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 611
-        }
-      ],
+      "tiers": {
+        "low": 795,
+        "medium": 736,
+        "high": 611
+      },
       "year": "2002",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-nubira-transmission-side.jpg",
@@ -2665,20 +1918,11 @@
       "brand": "Daewoo",
       "category": "part",
       "price": 512,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 553
-        },
-        {
-          "mileage": "Medium",
-          "price": 512
-        },
-        {
-          "mileage": "High",
-          "price": 425
-        }
-      ],
+      "tiers": {
+        "low": 553,
+        "medium": 512,
+        "high": 425
+      },
       "year": "2002",
       "model": "Nubira Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2002-daewoo-nubira-transmission-side.jpg",

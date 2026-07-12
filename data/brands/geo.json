@@ -10,20 +10,11 @@
       "brand": "Geo",
       "category": "engine",
       "price": 1033.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1219.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1033.5
-        },
-        {
-          "mileage": "High",
-          "price": 868.14
-        }
-      ],
+      "tiers": {
+        "low": 1219.53,
+        "medium": 1033.5,
+        "high": 868.14
+      },
       "year": "1993",
       "model": "Storm Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1993-geo-storm-dohc-vin-8-8th-digit.jpg",
@@ -41,20 +32,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1990",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1990-geo-storm-at-overdrive.jpg",
@@ -72,20 +54,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1990",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1990-geo-storm-at-w/o-overdrive.jpg",
@@ -103,20 +76,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "1990",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1990-geo-storm-mt-dohc.jpg",
@@ -134,20 +98,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1990",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1990-geo-storm-mt-sohc.jpg",
@@ -165,20 +120,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1991",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1991-geo-storm-at-overdrive.jpg",
@@ -196,20 +142,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1991",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1991-geo-storm-at-w/o-overdrive.jpg",
@@ -227,20 +164,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "1991",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1991-geo-storm-mt-dohc.jpg",
@@ -258,20 +186,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1991",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1991-geo-storm-mt-sohc.jpg",
@@ -289,20 +208,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1992",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1992-geo-storm-mt-sohc.jpg",
@@ -320,20 +230,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1992",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1992-geo-storm-at-21-bolt-pan-dohc.jpg",
@@ -351,20 +252,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "1992",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1992-geo-storm-at-16-bolt-pan-sohc.jpg",
@@ -382,20 +274,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1992",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1992-geo-storm-mt-dohc.jpg",
@@ -413,20 +296,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1993",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1993-geo-storm-mt-sohc.jpg",
@@ -444,20 +318,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "1993",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1993-geo-storm-at-16-bolt-pan-sohc.jpg",
@@ -475,20 +340,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1993",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1993-geo-storm-mt-dohc.jpg",
@@ -506,20 +362,11 @@
       "brand": "Geo",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1993",
       "model": "Storm Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1993-geo-storm-at-21-bolt-pan-dohc.jpg",

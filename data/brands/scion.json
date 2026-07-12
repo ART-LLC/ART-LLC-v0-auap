@@ -10,20 +10,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 6865.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 8101.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 6865.5
-        },
-        {
-          "mileage": "High",
-          "price": 5767.02
-        }
-      ],
+      "tiers": {
+        "low": 8101.29,
+        "medium": 6865.5,
+        "high": 5767.02
+      },
       "year": "2013",
       "model": "FRS Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2013-scion-frs-2.0l-vin-a-6th-digit-at.jpg",
@@ -41,20 +32,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 7015,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 8277.7
-        },
-        {
-          "mileage": "Medium",
-          "price": 7015
-        },
-        {
-          "mileage": "High",
-          "price": 5892.6
-        }
-      ],
+      "tiers": {
+        "low": 8277.7,
+        "medium": 7015,
+        "high": 5892.6
+      },
       "year": "2013",
       "model": "FRS Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2013-scion-frs-2.0l-vin-a-6th-digit-mt.jpg",
@@ -72,20 +54,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 7762.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 9159.75
-        },
-        {
-          "mileage": "Medium",
-          "price": 7762.5
-        },
-        {
-          "mileage": "High",
-          "price": 6520.5
-        }
-      ],
+      "tiers": {
+        "low": 9159.75,
+        "medium": 7762.5,
+        "high": 6520.5
+      },
       "year": "2014",
       "model": "FRS Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2014-scion-frs-2.0l-vin-a-6th-digit-at.jpg",
@@ -103,20 +76,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 6865.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 8101.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 6865.5
-        },
-        {
-          "mileage": "High",
-          "price": 5767.02
-        }
-      ],
+      "tiers": {
+        "low": 8101.29,
+        "medium": 6865.5,
+        "high": 5767.02
+      },
       "year": "2014",
       "model": "FRS Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2014-scion-frs-2.0l-vin-a-6th-digit-mt.jpg",
@@ -134,20 +98,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 7762.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 9159.75
-        },
-        {
-          "mileage": "Medium",
-          "price": 7762.5
-        },
-        {
-          "mileage": "High",
-          "price": 6520.5
-        }
-      ],
+      "tiers": {
+        "low": 9159.75,
+        "medium": 7762.5,
+        "high": 6520.5
+      },
       "year": "2015",
       "model": "FRS Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2015-scion-frs-2.0l-vin-n-5th-digit-at.jpg",
@@ -165,20 +120,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 6865.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 8101.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 6865.5
-        },
-        {
-          "mileage": "High",
-          "price": 5767.02
-        }
-      ],
+      "tiers": {
+        "low": 8101.29,
+        "medium": 6865.5,
+        "high": 5767.02
+      },
       "year": "2015",
       "model": "FRS Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2015-scion-frs-2.0l-vin-n-5th-digit-mt.jpg",
@@ -196,20 +142,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 7762.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 9159.75
-        },
-        {
-          "mileage": "Medium",
-          "price": 7762.5
-        },
-        {
-          "mileage": "High",
-          "price": 6520.5
-        }
-      ],
+      "tiers": {
+        "low": 9159.75,
+        "medium": 7762.5,
+        "high": 6520.5
+      },
       "year": "2016",
       "model": "FRS Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2016-scion-frs-2.0l-vin-n-5th-digit-at.jpg",
@@ -227,20 +164,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 6865.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 8101.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 6865.5
-        },
-        {
-          "mileage": "High",
-          "price": 5767.02
-        }
-      ],
+      "tiers": {
+        "low": 8101.29,
+        "medium": 6865.5,
+        "high": 5767.02
+      },
       "year": "2016",
       "model": "FRS Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2016-scion-frs-2.0l-vin-n-5th-digit-mt.jpg",
@@ -258,20 +186,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2016",
       "model": "iA Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2016-scion-ia-1.5l-vin-l-5th-digit-p5-engine.jpg",
@@ -289,20 +208,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2016",
       "model": "iM Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2016-scion-im-1.8l-vin-a-5th-digit-2zrfae-engine.jpg",
@@ -320,20 +230,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2011",
       "model": "iQ Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2011-scion-iq-1.3l-vin-j-5th-digit-1nrfe-engine.jpg",
@@ -351,20 +252,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2012",
       "model": "iQ Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2012-scion-iq-1.3l-vin-j-5th-digit-1nrfe-engine.jpg",
@@ -382,20 +274,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2013",
       "model": "iQ Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2013-scion-iq-1.3l-vin-j-5th-digit-1nrfe-engine.jpg",
@@ -413,20 +296,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2014",
       "model": "iQ Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2014-scion-iq-1.3l-vin-j-5th-digit-1nrfe-engine.jpg",
@@ -444,20 +318,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2015",
       "model": "iQ Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2015-scion-iq-1.3l-vin-j-5th-digit-1nrfe-engine.jpg",
@@ -475,20 +340,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1932,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2279.76
-        },
-        {
-          "mileage": "Medium",
-          "price": 1932
-        },
-        {
-          "mileage": "High",
-          "price": 1622.88
-        }
-      ],
+      "tiers": {
+        "low": 2279.76,
+        "medium": 1932,
+        "high": 1622.88
+      },
       "year": "2005",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2005-scion-tc-2.4l-vin-e-5th-digit-2azfe-engine.jpg",
@@ -506,20 +362,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2006",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-scion-tc-2.4l-vin-e-5th-digit-2azfe-engine-from-5/06.jpg",
@@ -537,20 +384,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2006",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-scion-tc-2.4l-vin-e-5th-digit-2azfe-engine-thru-4/06.jpg",
@@ -568,20 +406,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2007",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2007-scion-tc-2.4l-vin-e-5th-digit-2azfe-engine.jpg",
@@ -599,20 +428,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2008",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-scion-tc-2.4l-vin-e-5th-digit-2azfe-engine.jpg",
@@ -630,20 +450,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2009",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-scion-tc-2.4l-vin-e-5th-digit-2azfe-engine.jpg",
@@ -661,20 +472,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2010",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2010-scion-tc-2.4l-vin-e-5th-digit-2azfe-engine.jpg",
@@ -692,20 +494,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2011",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2011-scion-tc-2.5l-vin-f-5th-digit-2arfe-engine.jpg",
@@ -723,20 +516,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2012",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2012-scion-tc-2.5l-vin-f-5th-digit-2arfe-engine.jpg",
@@ -754,20 +538,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2013",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2013-scion-tc-2.5l-vin-f-5th-digit-2arfe-engine.jpg",
@@ -785,20 +560,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2014",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2014-scion-tc-2.5l-vin-f-5th-digit-2arfe-engine.jpg",
@@ -816,20 +582,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2015",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2015-scion-tc-2.5l-vin-f-5th-digit-2arfe-engine.jpg",
@@ -847,20 +604,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1334,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1574.12
-        },
-        {
-          "mileage": "Medium",
-          "price": 1334
-        },
-        {
-          "mileage": "High",
-          "price": 1120.56
-        }
-      ],
+      "tiers": {
+        "low": 1574.12,
+        "medium": 1334,
+        "high": 1120.56
+      },
       "year": "2016",
       "model": "TC Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2016-scion-tc-2.5l-vin-f-5th-digit-2arfe-engine.jpg",
@@ -878,20 +626,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2004",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-scion-xb-1.5l-vin-t-5th-digit-1nzfe-engine.jpg",
@@ -909,20 +648,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2005",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2005-scion-xb-1.5l-vin-t-5th-digit-1nzfe-engine.jpg",
@@ -940,20 +670,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2006",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2006-scion-xb-1.5l-vin-t-5th-digit-1nzfe-engine.jpg",
@@ -971,20 +692,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2008",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-scion-xb-2.4l-vin-e-5th-digit-2azfe-engine.jpg",
@@ -1002,20 +714,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2009",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-scion-xb-2.4l-vin-e-5th-digit-2azfe-engine.jpg",
@@ -1033,20 +736,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2010",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2010-scion-xb-2.4l-vin-e-5th-digit-2azfe-engine.jpg",
@@ -1064,20 +758,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1707.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2015.15
-        },
-        {
-          "mileage": "Medium",
-          "price": 1707.75
-        },
-        {
-          "mileage": "High",
-          "price": 1434.51
-        }
-      ],
+      "tiers": {
+        "low": 2015.15,
+        "medium": 1707.75,
+        "high": 1434.51
+      },
       "year": "2011",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2011-scion-xb-2.4l-vin-e-5th-digit-2azfe-engine-from-11/10-vin-1-11th-digit.jpg",
@@ -1095,20 +780,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 2305.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2720.79
-        },
-        {
-          "mileage": "Medium",
-          "price": 2305.75
-        },
-        {
-          "mileage": "High",
-          "price": 1936.83
-        }
-      ],
+      "tiers": {
+        "low": 2720.79,
+        "medium": 2305.75,
+        "high": 1936.83
+      },
       "year": "2011",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2011-scion-xb-2.4l-vin-e-5th-digit-2azfe-engine-from-11/10-vin-j-11th-digit.jpg",
@@ -1126,20 +802,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2011",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2011-scion-xb-2.4l-vin-e-5th-digit-2azfe-engine-thru-10/10.jpg",
@@ -1157,20 +824,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2012",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2012-scion-xb-2.4l-2azfe-engine-vin-1-11th-digit.jpg",
@@ -1188,20 +846,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 2305.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2720.79
-        },
-        {
-          "mileage": "Medium",
-          "price": 2305.75
-        },
-        {
-          "mileage": "High",
-          "price": 1936.83
-        }
-      ],
+      "tiers": {
+        "low": 2720.79,
+        "medium": 2305.75,
+        "high": 1936.83
+      },
       "year": "2012",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2012-scion-xb-2.4l-2azfe-engine-vin-j-11th-digit.jpg",
@@ -1219,20 +868,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2013",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2013-scion-xb-2.4l-2azfe-engine-vin-1-11th-digit.jpg",
@@ -1250,20 +890,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 2305.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2720.79
-        },
-        {
-          "mileage": "Medium",
-          "price": 2305.75
-        },
-        {
-          "mileage": "High",
-          "price": 1936.83
-        }
-      ],
+      "tiers": {
+        "low": 2720.79,
+        "medium": 2305.75,
+        "high": 1936.83
+      },
       "year": "2013",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2013-scion-xb-2.4l-2azfe-engine-vin-j-11th-digit.jpg",
@@ -1281,20 +912,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2014",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2014-scion-xb-2.4l-2azfe-engine-vin-1-11th-digit.jpg",
@@ -1312,20 +934,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 2305.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2720.79
-        },
-        {
-          "mileage": "Medium",
-          "price": 2305.75
-        },
-        {
-          "mileage": "High",
-          "price": 1936.83
-        }
-      ],
+      "tiers": {
+        "low": 2720.79,
+        "medium": 2305.75,
+        "high": 1936.83
+      },
       "year": "2014",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2014-scion-xb-2.4l-2azfe-engine-vin-j-11th-digit.jpg",
@@ -1343,20 +956,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2015",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2015-scion-xb-2.4l-2azfe-engine-vin-1-11th-digit.jpg",
@@ -1374,20 +978,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 2305.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2720.79
-        },
-        {
-          "mileage": "Medium",
-          "price": 2305.75
-        },
-        {
-          "mileage": "High",
-          "price": 1936.83
-        }
-      ],
+      "tiers": {
+        "low": 2720.79,
+        "medium": 2305.75,
+        "high": 1936.83
+      },
       "year": "2015",
       "model": "xB Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2015-scion-xb-2.4l-2azfe-engine-vin-j-11th-digit.jpg",
@@ -1405,20 +1000,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1926.94
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1371.72
-        }
-      ],
+      "tiers": {
+        "low": 1926.94,
+        "medium": 1633,
+        "high": 1371.72
+      },
       "year": "2008",
       "model": "xD Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2008-scion-xd-1.8l-vin-u-5th-digit-2zrfe-engine.jpg",
@@ -1436,20 +1022,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1926.94
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1371.72
-        }
-      ],
+      "tiers": {
+        "low": 1926.94,
+        "medium": 1633,
+        "high": 1371.72
+      },
       "year": "2009",
       "model": "xD Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2009-scion-xd-1.8l-vin-u-5th-digit-2zrfe-engine.jpg",
@@ -1467,20 +1044,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2010",
       "model": "xD Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2010-scion-xd-1.8l-vin-u-5th-digit-2zrfe-engine-from-10/10.jpg",
@@ -1498,20 +1066,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1926.94
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1371.72
-        }
-      ],
+      "tiers": {
+        "low": 1926.94,
+        "medium": 1633,
+        "high": 1371.72
+      },
       "year": "2010",
       "model": "xD Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2010-scion-xd-1.8l-vin-u-5th-digit-2zrfe-engine-thru-9/10.jpg",
@@ -1529,20 +1088,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2011",
       "model": "xD Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2011-scion-xd-1.8l-vin-u-5th-digit-2zrfe-engine.jpg",
@@ -1560,20 +1110,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1483.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1750.53
-        },
-        {
-          "mileage": "Medium",
-          "price": 1483.5
-        },
-        {
-          "mileage": "High",
-          "price": 1246.14
-        }
-      ],
+      "tiers": {
+        "low": 1750.53,
+        "medium": 1483.5,
+        "high": 1246.14
+      },
       "year": "2012",
       "model": "xD Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2012-scion-xd-1.8l-vin-u-5th-digit-2zrfe-engine.jpg",
@@ -1591,20 +1132,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2013",
       "model": "xD Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2013-scion-xd-1.8l-vin-u-5th-digit-2zrfe-engine.jpg",
@@ -1622,20 +1154,11 @@
       "brand": "Scion",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "2014",
       "model": "xD Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2014-scion-xd-1.8l-vin-u-5th-digit-2zrfe-engine.jpg",
@@ -1653,20 +1176,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "2013",
       "model": "FRS Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2013-scion-frs-at.jpg",
@@ -1684,20 +1198,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "2013",
       "model": "FRS Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2013-scion-frs-mt.jpg",
@@ -1715,20 +1220,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "2014",
       "model": "FRS Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2014-scion-frs-at.jpg",
@@ -1746,20 +1242,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "2014",
       "model": "FRS Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2014-scion-frs-mt.jpg",
@@ -1777,20 +1264,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "2015",
       "model": "FRS Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2015-scion-frs-at.jpg",
@@ -1808,20 +1286,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "2015",
       "model": "FRS Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2015-scion-frs-mt.jpg",
@@ -1839,20 +1308,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "2016",
       "model": "FRS Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2016-scion-frs-at.jpg",
@@ -1870,20 +1330,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "2016",
       "model": "FRS Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2016-scion-frs-mt.jpg",
@@ -1901,20 +1352,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 586.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 692.07
-        },
-        {
-          "mileage": "Medium",
-          "price": 586.5
-        },
-        {
-          "mileage": "High",
-          "price": 492.66
-        }
-      ],
+      "tiers": {
+        "low": 692.07,
+        "medium": 586.5,
+        "high": 492.66
+      },
       "year": "2016",
       "model": "iA Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2016-scion-ia-at-6-speed.jpg",
@@ -1932,20 +1374,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2016",
       "model": "iA Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2016-scion-ia-mt-6-speed.jpg",
@@ -1963,20 +1396,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2016",
       "model": "iM Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2016-scion-im-at-cvt.jpg",
@@ -1994,20 +1418,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "2016",
       "model": "iM Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2016-scion-im-mt-6-speed.jpg",
@@ -2025,20 +1440,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2011",
       "model": "iQ Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2011-scion-iq-at-cvt.jpg",
@@ -2056,20 +1462,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2012",
       "model": "iQ Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2012-scion-iq-at-cvt.jpg",
@@ -2087,20 +1484,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2013",
       "model": "iQ Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2013-scion-iq-at-cvt.jpg",
@@ -2118,20 +1506,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2014",
       "model": "iQ Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2014-scion-iq-at-cvt.jpg",
@@ -2149,20 +1528,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "2015",
       "model": "iQ Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2015-scion-iq-at-cvt.jpg",
@@ -2180,20 +1550,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 549.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 647.96
-        },
-        {
-          "mileage": "Medium",
-          "price": 549.12
-        },
-        {
-          "mileage": "High",
-          "price": 461.26
-        }
-      ],
+      "tiers": {
+        "low": 647.96,
+        "medium": 549.12,
+        "high": 461.26
+      },
       "year": "2004",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-scion-xb-at.jpg",
@@ -2211,20 +1572,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2004",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-scion-xb-mt.jpg",
@@ -2242,20 +1594,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 549.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 647.96
-        },
-        {
-          "mileage": "Medium",
-          "price": 549.12
-        },
-        {
-          "mileage": "High",
-          "price": 461.26
-        }
-      ],
+      "tiers": {
+        "low": 647.96,
+        "medium": 549.12,
+        "high": 461.26
+      },
       "year": "2005",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-scion-xb-at.jpg",
@@ -2273,20 +1616,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2005",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2005-scion-xb-mt.jpg",
@@ -2304,20 +1638,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 549.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 647.96
-        },
-        {
-          "mileage": "Medium",
-          "price": 549.12
-        },
-        {
-          "mileage": "High",
-          "price": 461.26
-        }
-      ],
+      "tiers": {
+        "low": 647.96,
+        "medium": 549.12,
+        "high": 461.26
+      },
       "year": "2006",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-scion-xb-at.jpg",
@@ -2335,20 +1660,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2006",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2006-scion-xb-mt.jpg",
@@ -2366,20 +1682,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 549.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 647.96
-        },
-        {
-          "mileage": "Medium",
-          "price": 549.12
-        },
-        {
-          "mileage": "High",
-          "price": 461.26
-        }
-      ],
+      "tiers": {
+        "low": 647.96,
+        "medium": 549.12,
+        "high": 461.26
+      },
       "year": "2008",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-scion-xb-at.jpg",
@@ -2397,20 +1704,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2008",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-scion-xb-mt.jpg",
@@ -2428,20 +1726,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2009",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-scion-xb-at.jpg",
@@ -2459,20 +1748,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2009",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-scion-xb-mt.jpg",
@@ -2490,20 +1770,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2010",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-scion-xb-at.jpg",
@@ -2521,20 +1792,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2010",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-scion-xb-mt.jpg",
@@ -2552,20 +1814,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2011",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2011-scion-xb-at.jpg",
@@ -2583,20 +1836,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2011",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2011-scion-xb-mt.jpg",
@@ -2614,20 +1858,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2012",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2012-scion-xb-at.jpg",
@@ -2645,20 +1880,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2012",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2012-scion-xb-mt.jpg",
@@ -2676,20 +1902,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2013",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2013-scion-xb-at.jpg",
@@ -2707,20 +1924,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2013",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2013-scion-xb-mt.jpg",
@@ -2738,20 +1946,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2014",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2014-scion-xb-at.jpg",
@@ -2769,20 +1968,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2014",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2014-scion-xb-mt.jpg",
@@ -2800,20 +1990,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2015",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2015-scion-xb-at.jpg",
@@ -2831,20 +2012,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2015",
       "model": "xB Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2015-scion-xb-mt.jpg",
@@ -2862,20 +2034,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2008",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-scion-xd-at.jpg",
@@ -2893,20 +2056,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 2530,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2985.4
-        },
-        {
-          "mileage": "Medium",
-          "price": 2530
-        },
-        {
-          "mileage": "High",
-          "price": 2125.2
-        }
-      ],
+      "tiers": {
+        "low": 2985.4,
+        "medium": 2530,
+        "high": 2125.2
+      },
       "year": "2008",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2008-scion-xd-mt.jpg",
@@ -2924,20 +2078,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2009",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-scion-xd-at.jpg",
@@ -2955,20 +2100,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 2679.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3161.81
-        },
-        {
-          "mileage": "Medium",
-          "price": 2679.5
-        },
-        {
-          "mileage": "High",
-          "price": 2250.78
-        }
-      ],
+      "tiers": {
+        "low": 3161.81,
+        "medium": 2679.5,
+        "high": 2250.78
+      },
       "year": "2009",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2009-scion-xd-mt.jpg",
@@ -2986,20 +2122,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 2679.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3161.81
-        },
-        {
-          "mileage": "Medium",
-          "price": 2679.5
-        },
-        {
-          "mileage": "High",
-          "price": 2250.78
-        }
-      ],
+      "tiers": {
+        "low": 3161.81,
+        "medium": 2679.5,
+        "high": 2250.78
+      },
       "year": "2010",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-scion-xd-mt.jpg",
@@ -3017,20 +2144,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2010",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2010-scion-xd-at.jpg",
@@ -3048,20 +2166,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 2679.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3161.81
-        },
-        {
-          "mileage": "Medium",
-          "price": 2679.5
-        },
-        {
-          "mileage": "High",
-          "price": 2250.78
-        }
-      ],
+      "tiers": {
+        "low": 3161.81,
+        "medium": 2679.5,
+        "high": 2250.78
+      },
       "year": "2011",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2011-scion-xd-mt.jpg",
@@ -3079,20 +2188,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2011",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2011-scion-xd-at.jpg",
@@ -3110,20 +2210,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 2679.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3161.81
-        },
-        {
-          "mileage": "Medium",
-          "price": 2679.5
-        },
-        {
-          "mileage": "High",
-          "price": 2250.78
-        }
-      ],
+      "tiers": {
+        "low": 3161.81,
+        "medium": 2679.5,
+        "high": 2250.78
+      },
       "year": "2012",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2012-scion-xd-mt.jpg",
@@ -3141,20 +2232,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2012",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2012-scion-xd-at.jpg",
@@ -3172,20 +2254,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 2679.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3161.81
-        },
-        {
-          "mileage": "Medium",
-          "price": 2679.5
-        },
-        {
-          "mileage": "High",
-          "price": 2250.78
-        }
-      ],
+      "tiers": {
+        "low": 3161.81,
+        "medium": 2679.5,
+        "high": 2250.78
+      },
       "year": "2013",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2013-scion-xd-mt.jpg",
@@ -3203,20 +2276,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2013",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2013-scion-xd-at.jpg",
@@ -3234,20 +2298,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 2679.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3161.81
-        },
-        {
-          "mileage": "Medium",
-          "price": 2679.5
-        },
-        {
-          "mileage": "High",
-          "price": 2250.78
-        }
-      ],
+      "tiers": {
+        "low": 3161.81,
+        "medium": 2679.5,
+        "high": 2250.78
+      },
       "year": "2014",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2014-scion-xd-mt.jpg",
@@ -3265,20 +2320,11 @@
       "brand": "Scion",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2014",
       "model": "xD Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2014-scion-xd-at.jpg",

@@ -10,20 +10,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1274.2,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1503.56
-        },
-        {
-          "mileage": "Medium",
-          "price": 1274.2
-        },
-        {
-          "mileage": "High",
-          "price": 1070.33
-        }
-      ],
+      "tiers": {
+        "low": 1503.56,
+        "medium": 1274.2,
+        "high": 1070.33
+      },
       "year": "1966",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1966-opel-opel-1.1l-base-low-compression.jpg",
@@ -41,20 +32,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1274.2,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1503.56
-        },
-        {
-          "mileage": "Medium",
-          "price": 1274.2
-        },
-        {
-          "mileage": "High",
-          "price": 1070.33
-        }
-      ],
+      "tiers": {
+        "low": 1503.56,
+        "medium": 1274.2,
+        "high": 1070.33
+      },
       "year": "1967",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1967-opel-opel-1.1l-base-low-compression.jpg",
@@ -72,20 +54,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "1968",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1968-opel-opel-1.1l.jpg",
@@ -103,20 +76,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1550.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1829.91
-        },
-        {
-          "mileage": "Medium",
-          "price": 1550.77
-        },
-        {
-          "mileage": "High",
-          "price": 1302.65
-        }
-      ],
+      "tiers": {
+        "low": 1829.91,
+        "medium": 1550.77,
+        "high": 1302.65
+      },
       "year": "1968",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1968-opel-opel-1.9l.jpg",
@@ -134,20 +98,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "1969",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1969-opel-opel-1.1l.jpg",
@@ -165,20 +120,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1550.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1829.91
-        },
-        {
-          "mileage": "Medium",
-          "price": 1550.77
-        },
-        {
-          "mileage": "High",
-          "price": 1302.65
-        }
-      ],
+      "tiers": {
+        "low": 1829.91,
+        "medium": 1550.77,
+        "high": 1302.65
+      },
       "year": "1969",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1969-opel-opel-1.9l.jpg",
@@ -196,20 +142,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "1970",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1970-opel-opel-1.1l.jpg",
@@ -227,20 +164,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1550.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1829.91
-        },
-        {
-          "mileage": "Medium",
-          "price": 1550.77
-        },
-        {
-          "mileage": "High",
-          "price": 1302.65
-        }
-      ],
+      "tiers": {
+        "low": 1829.91,
+        "medium": 1550.77,
+        "high": 1302.65
+      },
       "year": "1970",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1970-opel-opel-1.9l.jpg",
@@ -258,20 +186,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "1971",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1971-opel-opel-1.1l.jpg",
@@ -289,20 +208,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1550.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1829.91
-        },
-        {
-          "mileage": "Medium",
-          "price": 1550.77
-        },
-        {
-          "mileage": "High",
-          "price": 1302.65
-        }
-      ],
+      "tiers": {
+        "low": 1829.91,
+        "medium": 1550.77,
+        "high": 1302.65
+      },
       "year": "1971",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1971-opel-opel-1.9l.jpg",
@@ -320,20 +230,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1550.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1829.91
-        },
-        {
-          "mileage": "Medium",
-          "price": 1550.77
-        },
-        {
-          "mileage": "High",
-          "price": 1302.65
-        }
-      ],
+      "tiers": {
+        "low": 1829.91,
+        "medium": 1550.77,
+        "high": 1302.65
+      },
       "year": "1972",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1972-opel-opel-1.9l.jpg",
@@ -351,20 +252,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1550.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1829.91
-        },
-        {
-          "mileage": "Medium",
-          "price": 1550.77
-        },
-        {
-          "mileage": "High",
-          "price": 1302.65
-        }
-      ],
+      "tiers": {
+        "low": 1829.91,
+        "medium": 1550.77,
+        "high": 1302.65
+      },
       "year": "1973",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1973-opel-opel-1.9l.jpg",
@@ -382,20 +274,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1550.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1829.91
-        },
-        {
-          "mileage": "Medium",
-          "price": 1550.77
-        },
-        {
-          "mileage": "High",
-          "price": 1302.65
-        }
-      ],
+      "tiers": {
+        "low": 1829.91,
+        "medium": 1550.77,
+        "high": 1302.65
+      },
       "year": "1974",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1974-opel-opel-1.9l.jpg",
@@ -413,20 +296,11 @@
       "brand": "Opel",
       "category": "engine",
       "price": 1550.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1829.91
-        },
-        {
-          "mileage": "Medium",
-          "price": 1550.77
-        },
-        {
-          "mileage": "High",
-          "price": 1302.65
-        }
-      ],
+      "tiers": {
+        "low": 1829.91,
+        "medium": 1550.77,
+        "high": 1302.65
+      },
       "year": "1975",
       "model": "Opel Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1975-opel-opel-1.9l.jpg",
@@ -444,20 +318,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1964",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1964-opel-opel-mt.jpg",
@@ -475,20 +340,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1965",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1965-opel-opel-mt.jpg",
@@ -506,20 +362,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1966",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1966-opel-opel-mt.jpg",
@@ -537,20 +384,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1967",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1967-opel-opel-mt.jpg",
@@ -568,20 +406,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1968",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1968-opel-opel-mt-1.5l.jpg",
@@ -599,20 +428,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1968",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1968-opel-opel-at-1.1l.jpg",
@@ -630,20 +450,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1968",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1968-opel-opel-at-1.9l.jpg",
@@ -661,20 +472,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 952.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1124.27
-        },
-        {
-          "mileage": "Medium",
-          "price": 952.77
-        },
-        {
-          "mileage": "High",
-          "price": 800.33
-        }
-      ],
+      "tiers": {
+        "low": 1124.27,
+        "medium": 952.77,
+        "high": 800.33
+      },
       "year": "1968",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1968-opel-opel-mt-1.1l.jpg",
@@ -692,20 +494,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1012.57,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1194.83
-        },
-        {
-          "mileage": "Medium",
-          "price": 1012.57
-        },
-        {
-          "mileage": "High",
-          "price": 850.56
-        }
-      ],
+      "tiers": {
+        "low": 1194.83,
+        "medium": 1012.57,
+        "high": 850.56
+      },
       "year": "1968",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1968-opel-opel-mt-1.9l.jpg",
@@ -723,20 +516,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1969",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1969-opel-opel-at-1.1l.jpg",
@@ -754,20 +538,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1969",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1969-opel-opel-at-1.9l.jpg",
@@ -785,20 +560,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 952.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1124.27
-        },
-        {
-          "mileage": "Medium",
-          "price": 952.77
-        },
-        {
-          "mileage": "High",
-          "price": 800.33
-        }
-      ],
+      "tiers": {
+        "low": 1124.27,
+        "medium": 952.77,
+        "high": 800.33
+      },
       "year": "1969",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1969-opel-opel-mt-1.1l.jpg",
@@ -816,20 +582,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1012.57,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1194.83
-        },
-        {
-          "mileage": "Medium",
-          "price": 1012.57
-        },
-        {
-          "mileage": "High",
-          "price": 850.56
-        }
-      ],
+      "tiers": {
+        "low": 1194.83,
+        "medium": 1012.57,
+        "high": 850.56
+      },
       "year": "1969",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1969-opel-opel-mt-1.9l.jpg",
@@ -847,20 +604,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1970",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1970-opel-opel-at-1.1l.jpg",
@@ -878,20 +626,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1970",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1970-opel-opel-at-1.9l.jpg",
@@ -909,20 +648,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 952.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1124.27
-        },
-        {
-          "mileage": "Medium",
-          "price": 952.77
-        },
-        {
-          "mileage": "High",
-          "price": 800.33
-        }
-      ],
+      "tiers": {
+        "low": 1124.27,
+        "medium": 952.77,
+        "high": 800.33
+      },
       "year": "1970",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1970-opel-opel-mt-1.1l.jpg",
@@ -940,20 +670,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1012.57,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1194.83
-        },
-        {
-          "mileage": "Medium",
-          "price": 1012.57
-        },
-        {
-          "mileage": "High",
-          "price": 850.56
-        }
-      ],
+      "tiers": {
+        "low": 1194.83,
+        "medium": 1012.57,
+        "high": 850.56
+      },
       "year": "1970",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1970-opel-opel-mt-1.9l.jpg",
@@ -971,20 +692,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1971",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1971-opel-opel-at-1.1l.jpg",
@@ -1002,20 +714,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1971",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1971-opel-opel-at-1.9l.jpg",
@@ -1033,20 +736,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 952.77,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1124.27
-        },
-        {
-          "mileage": "Medium",
-          "price": 952.77
-        },
-        {
-          "mileage": "High",
-          "price": 800.33
-        }
-      ],
+      "tiers": {
+        "low": 1124.27,
+        "medium": 952.77,
+        "high": 800.33
+      },
       "year": "1971",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1971-opel-opel-mt-1.1l.jpg",
@@ -1064,20 +758,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1012.57,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1194.83
-        },
-        {
-          "mileage": "Medium",
-          "price": 1012.57
-        },
-        {
-          "mileage": "High",
-          "price": 850.56
-        }
-      ],
+      "tiers": {
+        "low": 1194.83,
+        "medium": 1012.57,
+        "high": 850.56
+      },
       "year": "1971",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1971-opel-opel-mt-1.9l.jpg",
@@ -1095,20 +780,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 878.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1036.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 878.02
-        },
-        {
-          "mileage": "High",
-          "price": 737.54
-        }
-      ],
+      "tiers": {
+        "low": 1036.06,
+        "medium": 878.02,
+        "high": 737.54
+      },
       "year": "1972",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1972-opel-opel-at.jpg",
@@ -1126,20 +802,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1972",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1972-opel-opel-mt.jpg",
@@ -1157,20 +824,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 878.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1036.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 878.02
-        },
-        {
-          "mileage": "High",
-          "price": 737.54
-        }
-      ],
+      "tiers": {
+        "low": 1036.06,
+        "medium": 878.02,
+        "high": 737.54
+      },
       "year": "1973",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1973-opel-opel-at.jpg",
@@ -1188,20 +846,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1973",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1973-opel-opel-mt.jpg",
@@ -1219,20 +868,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 878.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1036.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 878.02
-        },
-        {
-          "mileage": "High",
-          "price": 737.54
-        }
-      ],
+      "tiers": {
+        "low": 1036.06,
+        "medium": 878.02,
+        "high": 737.54
+      },
       "year": "1974",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1974-opel-opel-at.jpg",
@@ -1250,20 +890,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1974",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1974-opel-opel-mt.jpg",
@@ -1281,20 +912,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 878.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1036.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 878.02
-        },
-        {
-          "mileage": "High",
-          "price": 737.54
-        }
-      ],
+      "tiers": {
+        "low": 1036.06,
+        "medium": 878.02,
+        "high": 737.54
+      },
       "year": "1975",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1975-opel-opel-at.jpg",
@@ -1312,20 +934,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1975",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1975-opel-opel-mt.jpg",
@@ -1343,20 +956,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1976",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1976-opel-opel-mt-4-speed-canada-emissions.jpg",
@@ -1374,20 +978,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1976",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1976-opel-opel-mt-4-speed-federal-emissions.jpg",
@@ -1405,20 +1000,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1976",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1976-opel-opel-at.jpg",
@@ -1436,20 +1022,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1977",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-opel-opel-at.jpg",
@@ -1467,20 +1044,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1977",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-opel-opel-mt-4-speed-canada-emissions.jpg",
@@ -1498,20 +1066,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1977",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-opel-opel-mt-4-speed-federal-emissions.jpg",
@@ -1529,20 +1088,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1977",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-opel-opel-mt-4-speed-high-altitude-emissions.jpg",
@@ -1560,20 +1110,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1977",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-opel-opel-mt-5-speed-federal-emissions.jpg",
@@ -1591,20 +1132,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1978",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1978-opel-opel-at.jpg",
@@ -1622,20 +1154,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1978",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1978-opel-opel-mt-4-speed-canada-emissions.jpg",
@@ -1653,20 +1176,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1978",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1978-opel-opel-mt-4-speed-federal-emissions.jpg",
@@ -1684,20 +1198,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1978",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1978-opel-opel-mt-5-speed-federal-emissions.jpg",
@@ -1715,20 +1220,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1979",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1979-opel-opel-at.jpg",
@@ -1746,20 +1242,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1979",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1979-opel-opel-mt-4-speed-federal-emissions.jpg",
@@ -1777,20 +1264,11 @@
       "brand": "Opel",
       "category": "transmission",
       "price": 848.12,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1000.78
-        },
-        {
-          "mileage": "Medium",
-          "price": 848.12
-        },
-        {
-          "mileage": "High",
-          "price": 712.42
-        }
-      ],
+      "tiers": {
+        "low": 1000.78,
+        "medium": 848.12,
+        "high": 712.42
+      },
       "year": "1979",
       "model": "Opel Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1979-opel-opel-mt-5-speed-federal-emissions.jpg",

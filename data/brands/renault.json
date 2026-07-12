@@ -10,20 +10,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1980",
       "model": "18I Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1980-renault-18i-direct.jpg",
@@ -41,20 +32,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1981",
       "model": "18I Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1981-renault-18i-vin-b-4th-digit.jpg",
@@ -72,20 +54,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1982",
       "model": "18I Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1982-renault-18i-vin-b-4th-digit.jpg",
@@ -103,20 +76,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1983",
       "model": "18I Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1983-renault-18i-vin-b-4th-digit.jpg",
@@ -134,20 +98,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1984",
       "model": "18I Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1984-renault-18i-vin-f-4th-digit.jpg",
@@ -165,20 +120,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1985",
       "model": "18I Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1985-renault-18i-vin-f-4th-digit.jpg",
@@ -196,20 +142,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1986",
       "model": "18I Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1986-renault-18i-vin-f-4th-digit.jpg",
@@ -227,20 +164,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "1983",
       "model": "Alliance Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1983-renault-alliance-tbi-vin-d-4th-digit.jpg",
@@ -258,20 +186,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "1984",
       "model": "Alliance Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1984-renault-alliance-tbi-vin-d-4th-digit.jpg",
@@ -289,20 +208,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "1985",
       "model": "Alliance Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1985-renault-alliance-1.4l-tbi-vin-d-4th-digit.jpg",
@@ -320,20 +230,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1985",
       "model": "Alliance Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1985-renault-alliance-1.7l-vin-a-4th-digit.jpg",
@@ -351,20 +252,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "1986",
       "model": "Alliance Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1986-renault-alliance-1.4l-tbi-vin-d-4th-digit.jpg",
@@ -382,20 +274,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1986",
       "model": "Alliance Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1986-renault-alliance-1.7l-vin-a-4th-digit.jpg",
@@ -413,20 +296,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1987",
       "model": "Alliance Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1987-renault-alliance-1.7l-vin-a-4th-digit.jpg",
@@ -444,20 +318,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1987",
       "model": "Alliance Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1987-renault-alliance-1.4l-vin-d-4th-digit.jpg",
@@ -475,20 +340,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "1984",
       "model": "Encore Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1984-renault-encore-tbi-vin-d.jpg",
@@ -506,20 +362,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "1985",
       "model": "Encore Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1985-renault-encore-1.4l-tbi-vin-d.jpg",
@@ -537,20 +384,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1985",
       "model": "Encore Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1985-renault-encore-1.7l-vin-a.jpg",
@@ -568,20 +406,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "1986",
       "model": "Encore Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1986-renault-encore-1.4l-tbi-vin-d.jpg",
@@ -599,20 +428,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1986",
       "model": "Encore Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1986-renault-encore-1.7l-vin-a.jpg",
@@ -630,20 +450,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1982",
       "model": "Fuego Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1982-renault-fuego-1.6l-w/o-turbo;-vin-b-4th-digit.jpg",
@@ -661,20 +472,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1983",
       "model": "Fuego Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1983-renault-fuego-1.6l-w/o-turbo;-vin-b-4th-digit.jpg",
@@ -692,20 +494,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1984",
       "model": "Fuego Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1984-renault-fuego-2.2l-vin-f-4th-digit.jpg",
@@ -723,20 +516,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1985",
       "model": "Fuego Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1985-renault-fuego-2.2l-vin-f-4th-digit.jpg",
@@ -754,20 +538,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1980",
       "model": "Lecar/R5 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1980-renault-lecarr5-direct.jpg",
@@ -785,20 +560,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1981",
       "model": "Lecar/R5 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1981-renault-lecarr5-vin-a-4th-digit.jpg",
@@ -816,20 +582,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1982",
       "model": "Lecar/R5 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1982-renault-lecarr5-vin-a-4th-digit.jpg",
@@ -847,20 +604,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1782.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2103.35
-        },
-        {
-          "mileage": "Medium",
-          "price": 1782.5
-        },
-        {
-          "mileage": "High",
-          "price": 1497.3
-        }
-      ],
+      "tiers": {
+        "low": 2103.35,
+        "medium": 1782.5,
+        "high": 1497.3
+      },
       "year": "1983",
       "model": "Lecar/R5 Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1983-renault-lecarr5-vin-a-4th-digit.jpg",
@@ -878,20 +626,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1988",
       "model": "Medallion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1988-renault-medallion-vin-f-4th-digit.jpg",
@@ -909,20 +648,11 @@
       "brand": "Renault",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1989",
       "model": "Medallion Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1989-renault-medallion-vin-f-4th-digit.jpg",
@@ -940,20 +670,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1980",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1980-renault-18i-at.jpg",
@@ -971,20 +692,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1177.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1388.88
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177.02
-        },
-        {
-          "mileage": "High",
-          "price": 988.7
-        }
-      ],
+      "tiers": {
+        "low": 1388.88,
+        "medium": 1177.02,
+        "high": 988.7
+      },
       "year": "1980",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1980-renault-18i-mt-4-speed.jpg",
@@ -1002,20 +714,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1980",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1980-renault-18i-mt-5-speed.jpg",
@@ -1033,20 +736,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1981",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1981-renault-18i-at.jpg",
@@ -1064,20 +758,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1177.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1388.88
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177.02
-        },
-        {
-          "mileage": "High",
-          "price": 988.7
-        }
-      ],
+      "tiers": {
+        "low": 1388.88,
+        "medium": 1177.02,
+        "high": 988.7
+      },
       "year": "1981",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1981-renault-18i-mt-4-speed.jpg",
@@ -1095,20 +780,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1981",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1981-renault-18i-mt-5-speed.jpg",
@@ -1126,20 +802,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1982",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1982-renault-18i-at.jpg",
@@ -1157,20 +824,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1177.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1388.88
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177.02
-        },
-        {
-          "mileage": "High",
-          "price": 988.7
-        }
-      ],
+      "tiers": {
+        "low": 1388.88,
+        "medium": 1177.02,
+        "high": 988.7
+      },
       "year": "1982",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1982-renault-18i-mt-4-speed.jpg",
@@ -1188,20 +846,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1982",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1982-renault-18i-mt-5-speed.jpg",
@@ -1219,20 +868,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1983",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1983-renault-18i-at.jpg",
@@ -1250,20 +890,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1177.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1388.88
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177.02
-        },
-        {
-          "mileage": "High",
-          "price": 988.7
-        }
-      ],
+      "tiers": {
+        "low": 1388.88,
+        "medium": 1177.02,
+        "high": 988.7
+      },
       "year": "1983",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1983-renault-18i-mt-4-speed.jpg",
@@ -1281,20 +912,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1983",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1983-renault-18i-mt-5-speed.jpg",
@@ -1312,20 +934,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1984",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-18i-at.jpg",
@@ -1343,20 +956,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1984",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-18i-mt.jpg",
@@ -1374,20 +978,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1985",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-18i-at.jpg",
@@ -1405,20 +1000,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1985",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-18i-mt.jpg",
@@ -1436,20 +1022,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1986",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-18i-at.jpg",
@@ -1467,20 +1044,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 997.62,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1177.19
-        },
-        {
-          "mileage": "Medium",
-          "price": 997.62
-        },
-        {
-          "mileage": "High",
-          "price": 838
-        }
-      ],
+      "tiers": {
+        "low": 1177.19,
+        "medium": 997.62,
+        "high": 838
+      },
       "year": "1986",
       "model": "18I Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-18i-mt.jpg",
@@ -1498,20 +1066,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1983",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1983-renault-alliance-at-id-mb1-101.jpg",
@@ -1529,20 +1088,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1983",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1983-renault-alliance-mt-4-speed-id-jb0-001.jpg",
@@ -1560,20 +1110,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1983",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1983-renault-alliance-mt-5-speed-id-jb1-003.jpg",
@@ -1591,20 +1132,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-at-1.4l-id-mb1-101.jpg",
@@ -1622,20 +1154,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-at-1.4l-id-mb1-102.jpg",
@@ -1653,20 +1176,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 878.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1036.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 878.02
-        },
-        {
-          "mileage": "High",
-          "price": 737.54
-        }
-      ],
+      "tiers": {
+        "low": 1036.06,
+        "medium": 878.02,
+        "high": 737.54
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-at-1.4l-id-mb1-103.jpg",
@@ -1684,20 +1198,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-at-1.4l-id-mb1-104.jpg",
@@ -1715,20 +1220,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-at-1.4l-id-mb1-106.jpg",
@@ -1746,20 +1242,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-at-1.7l-id-mb3-100.jpg",
@@ -1777,20 +1264,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-at-1.7l-id-mb3-102.jpg",
@@ -1808,20 +1286,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-at-1.7l-id-mb3-103.jpg",
@@ -1839,20 +1308,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-at-1.7l-id-mb3-107.jpg",
@@ -1870,20 +1330,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-at-1.7l-id-mb3-108.jpg",
@@ -1901,20 +1352,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-mt-4-speed-id-jb0-001.jpg",
@@ -1932,20 +1374,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-mt-4-speed-id-jb0-007.jpg",
@@ -1963,20 +1396,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1177.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1388.88
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177.02
-        },
-        {
-          "mileage": "High",
-          "price": 988.7
-        }
-      ],
+      "tiers": {
+        "low": 1388.88,
+        "medium": 1177.02,
+        "high": 988.7
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-mt-5-speed-1.4l-id-jb1-003.jpg",
@@ -1994,20 +1418,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1005.1,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1186.02
-        },
-        {
-          "mileage": "Medium",
-          "price": 1005.1
-        },
-        {
-          "mileage": "High",
-          "price": 844.28
-        }
-      ],
+      "tiers": {
+        "low": 1186.02,
+        "medium": 1005.1,
+        "high": 844.28
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-mt-5-speed-1.4l-id-jb1-010.jpg",
@@ -2025,20 +1440,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-mt-5-speed-1.7l-id-jb3-005.jpg",
@@ -2056,20 +1462,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1984",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-alliance-mt-5-speed-1.7l-id-jb3-015.jpg",
@@ -2087,20 +1484,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-at-1.4l-id-mb1-101.jpg",
@@ -2118,20 +1506,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-at-1.4l-id-mb1-102.jpg",
@@ -2149,20 +1528,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 878.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1036.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 878.02
-        },
-        {
-          "mileage": "High",
-          "price": 737.54
-        }
-      ],
+      "tiers": {
+        "low": 1036.06,
+        "medium": 878.02,
+        "high": 737.54
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-at-1.4l-id-mb1-103.jpg",
@@ -2180,20 +1550,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-at-1.4l-id-mb1-104.jpg",
@@ -2211,20 +1572,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-at-1.4l-id-mb1-106.jpg",
@@ -2242,20 +1594,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-at-1.7l-id-mb3-100.jpg",
@@ -2273,20 +1616,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-at-1.7l-id-mb3-102.jpg",
@@ -2304,20 +1638,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-at-1.7l-id-mb3-103.jpg",
@@ -2335,20 +1660,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-at-1.7l-id-mb3-107.jpg",
@@ -2366,20 +1682,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-at-1.7l-id-mb3-108.jpg",
@@ -2397,20 +1704,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-mt-4-speed-id-jb0-001.jpg",
@@ -2428,20 +1726,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-mt-4-speed-id-jb0-007.jpg",
@@ -2459,20 +1748,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1177.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1388.88
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177.02
-        },
-        {
-          "mileage": "High",
-          "price": 988.7
-        }
-      ],
+      "tiers": {
+        "low": 1388.88,
+        "medium": 1177.02,
+        "high": 988.7
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-mt-5-speed-1.4l-id-jb1-003.jpg",
@@ -2490,20 +1770,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1005.1,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1186.02
-        },
-        {
-          "mileage": "Medium",
-          "price": 1005.1
-        },
-        {
-          "mileage": "High",
-          "price": 844.28
-        }
-      ],
+      "tiers": {
+        "low": 1186.02,
+        "medium": 1005.1,
+        "high": 844.28
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-mt-5-speed-1.4l-id-jb1-010.jpg",
@@ -2521,20 +1792,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-mt-5-speed-1.7l-id-jb3-005.jpg",
@@ -2552,20 +1814,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1985",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-alliance-mt-5-speed-1.7l-id-jb3-015.jpg",
@@ -2583,20 +1836,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-at-1.4l-id-mb1-101.jpg",
@@ -2614,20 +1858,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-at-1.4l-id-mb1-102.jpg",
@@ -2645,20 +1880,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 878.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1036.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 878.02
-        },
-        {
-          "mileage": "High",
-          "price": 737.54
-        }
-      ],
+      "tiers": {
+        "low": 1036.06,
+        "medium": 878.02,
+        "high": 737.54
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-at-1.4l-id-mb1-103.jpg",
@@ -2676,20 +1902,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-at-1.4l-id-mb1-104.jpg",
@@ -2707,20 +1924,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-at-1.4l-id-mb1-106.jpg",
@@ -2738,20 +1946,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-at-1.7l-id-mb3-100.jpg",
@@ -2769,20 +1968,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-at-1.7l-id-mb3-102.jpg",
@@ -2800,20 +1990,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-at-1.7l-id-mb3-103.jpg",
@@ -2831,20 +2012,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-at-1.7l-id-mb3-107.jpg",
@@ -2862,20 +2034,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-at-1.7l-id-mb3-108.jpg",
@@ -2893,20 +2056,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-mt-4-speed-id-jb0-001.jpg",
@@ -2924,20 +2078,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-mt-4-speed-id-jb0-007.jpg",
@@ -2955,20 +2100,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1177.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1388.88
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177.02
-        },
-        {
-          "mileage": "High",
-          "price": 988.7
-        }
-      ],
+      "tiers": {
+        "low": 1388.88,
+        "medium": 1177.02,
+        "high": 988.7
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-mt-5-speed-1.4l-id-jb1-003.jpg",
@@ -2986,20 +2122,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1005.1,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1186.02
-        },
-        {
-          "mileage": "Medium",
-          "price": 1005.1
-        },
-        {
-          "mileage": "High",
-          "price": 844.28
-        }
-      ],
+      "tiers": {
+        "low": 1186.02,
+        "medium": 1005.1,
+        "high": 844.28
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-mt-5-speed-1.4l-id-jb1-010.jpg",
@@ -3017,20 +2144,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-mt-5-speed-1.7l-id-jb3-005.jpg",
@@ -3048,20 +2166,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1986",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1986-renault-alliance-mt-5-speed-1.7l-id-jb3-015.jpg",
@@ -3079,20 +2188,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-at-1.4l-id-mb1-101.jpg",
@@ -3110,20 +2210,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-at-1.4l-id-mb1-102.jpg",
@@ -3141,20 +2232,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 878.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1036.06
-        },
-        {
-          "mileage": "Medium",
-          "price": 878.02
-        },
-        {
-          "mileage": "High",
-          "price": 737.54
-        }
-      ],
+      "tiers": {
+        "low": 1036.06,
+        "medium": 878.02,
+        "high": 737.54
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-at-1.4l-id-mb1-103.jpg",
@@ -3172,20 +2254,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-at-1.4l-id-mb1-104.jpg",
@@ -3203,20 +2276,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-at-1.4l-id-mb1-106.jpg",
@@ -3234,20 +2298,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-at-1.7l-id-mb3-100.jpg",
@@ -3265,20 +2320,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-at-1.7l-id-mb3-102.jpg",
@@ -3296,20 +2342,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-at-1.7l-id-mb3-103.jpg",
@@ -3327,20 +2364,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-at-1.7l-id-mb3-107.jpg",
@@ -3358,20 +2386,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-at-1.7l-id-mb3-108.jpg",
@@ -3389,20 +2408,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1027.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1212.47
-        },
-        {
-          "mileage": "Medium",
-          "price": 1027.52
-        },
-        {
-          "mileage": "High",
-          "price": 863.12
-        }
-      ],
+      "tiers": {
+        "low": 1212.47,
+        "medium": 1027.52,
+        "high": 863.12
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-mt-4-speed-id-jb0-001.jpg",
@@ -3420,20 +2430,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-mt-4-speed-id-jb0-007.jpg",
@@ -3451,20 +2452,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1177.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1388.88
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177.02
-        },
-        {
-          "mileage": "High",
-          "price": 988.7
-        }
-      ],
+      "tiers": {
+        "low": 1388.88,
+        "medium": 1177.02,
+        "high": 988.7
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-mt-5-speed-1.4l-id-jb1-003.jpg",
@@ -3482,20 +2474,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1005.1,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1186.02
-        },
-        {
-          "mileage": "Medium",
-          "price": 1005.1
-        },
-        {
-          "mileage": "High",
-          "price": 844.28
-        }
-      ],
+      "tiers": {
+        "low": 1186.02,
+        "medium": 1005.1,
+        "high": 844.28
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-mt-5-speed-1.4l-id-jb1-010.jpg",
@@ -3513,20 +2496,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-mt-5-speed-1.7l-id-jb3-005.jpg",
@@ -3544,20 +2518,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1326.52,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1565.29
-        },
-        {
-          "mileage": "Medium",
-          "price": 1326.52
-        },
-        {
-          "mileage": "High",
-          "price": 1114.28
-        }
-      ],
+      "tiers": {
+        "low": 1565.29,
+        "medium": 1326.52,
+        "high": 1114.28
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-mt-5-speed-1.7l-id-jb3-015.jpg",
@@ -3575,20 +2540,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "1987",
       "model": "Alliance Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1987-renault-alliance-mt-5-speed-2.0l-id-jb3-020.jpg",
@@ -3606,20 +2562,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1982",
       "model": "Fuego Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1982-renault-fuego-mt.jpg",
@@ -3637,20 +2584,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1982",
       "model": "Fuego Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1982-renault-fuego-at.jpg",
@@ -3668,20 +2606,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1983",
       "model": "Fuego Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1983-renault-fuego-mt.jpg",
@@ -3699,20 +2628,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1983",
       "model": "Fuego Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1983-renault-fuego-at.jpg",
@@ -3730,20 +2650,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1984",
       "model": "Fuego Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-fuego-at.jpg",
@@ -3761,20 +2672,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1984",
       "model": "Fuego Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1984-renault-fuego-mt-2.2l-thru-vin-7847.jpg",
@@ -3792,20 +2694,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1985",
       "model": "Fuego Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-fuego-at.jpg",
@@ -3823,20 +2716,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1985",
       "model": "Fuego Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1985-renault-fuego-mt-2.2l.jpg",
@@ -3854,20 +2738,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1976",
       "model": "Lecar/R5 Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1976-renault-lecarr5-mt.jpg",
@@ -3885,20 +2760,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1977",
       "model": "Lecar/R5 Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1977-renault-lecarr5-mt.jpg",
@@ -3916,20 +2782,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1978",
       "model": "Lecar/R5 Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1978-renault-lecarr5-mt.jpg",
@@ -3947,20 +2804,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1979",
       "model": "Lecar/R5 Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1979-renault-lecarr5-mt.jpg",
@@ -3978,20 +2826,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1980",
       "model": "Lecar/R5 Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1980-renault-lecarr5-mt.jpg",
@@ -4009,20 +2848,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1981",
       "model": "Lecar/R5 Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1981-renault-lecarr5-mt.jpg",
@@ -4040,20 +2870,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1982",
       "model": "Lecar/R5 Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1982-renault-lecarr5-mt.jpg",
@@ -4071,20 +2892,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1983",
       "model": "Lecar/R5 Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1983-renault-lecarr5-mt.jpg",
@@ -4102,20 +2914,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1476.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1741.7
-        },
-        {
-          "mileage": "Medium",
-          "price": 1476.02
-        },
-        {
-          "mileage": "High",
-          "price": 1239.86
-        }
-      ],
+      "tiers": {
+        "low": 1741.7,
+        "medium": 1476.02,
+        "high": 1239.86
+      },
       "year": "1988",
       "model": "Medallion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1988-renault-medallion-at.jpg",
@@ -4133,20 +2936,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1988",
       "model": "Medallion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1988-renault-medallion-mt.jpg",
@@ -4164,20 +2958,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1476.02,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1741.7
-        },
-        {
-          "mileage": "Medium",
-          "price": 1476.02
-        },
-        {
-          "mileage": "High",
-          "price": 1239.86
-        }
-      ],
+      "tiers": {
+        "low": 1741.7,
+        "medium": 1476.02,
+        "high": 1239.86
+      },
       "year": "1989",
       "model": "Medallion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1989-renault-medallion-at.jpg",
@@ -4195,20 +2980,11 @@
       "brand": "Renault",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1989",
       "model": "Medallion Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1989-renault-medallion-mt.jpg",

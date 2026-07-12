@@ -10,20 +10,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 2455.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2897.2
-        },
-        {
-          "mileage": "Medium",
-          "price": 2455.25
-        },
-        {
-          "mileage": "High",
-          "price": 2062.41
-        }
-      ],
+      "tiers": {
+        "low": 2897.2,
+        "medium": 2455.25,
+        "high": 2062.41
+      },
       "year": "1975",
       "model": "88 (1979",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1975-oldsmobile-88-(1979-down)-8-455.jpg",
@@ -41,20 +32,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 2455.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2897.2
-        },
-        {
-          "mileage": "Medium",
-          "price": 2455.25
-        },
-        {
-          "mileage": "High",
-          "price": 2062.41
-        }
-      ],
+      "tiers": {
+        "low": 2897.2,
+        "medium": 2455.25,
+        "high": 2062.41
+      },
       "year": "1974",
       "model": "98 (1979",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1974-oldsmobile-98-(1979-down)-8-455.jpg",
@@ -72,20 +54,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1995",
       "model": "Achieva Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-oldsmobile-achieva-6-191-3.1l-vin-m-8th-digit.jpg",
@@ -103,20 +76,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1995",
       "model": "Achieva Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-oldsmobile-achieva-4-138-2.3l-vin-d-8th-digit.jpg",
@@ -134,20 +98,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1996",
       "model": "Achieva Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-achieva-4-146-2.4l-vin-t-8th-digit.jpg",
@@ -165,20 +120,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1996",
       "model": "Achieva Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-achieva-6-191-3.1l-vin-m-8th-digit.jpg",
@@ -196,20 +142,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1997",
       "model": "Achieva Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-oldsmobile-achieva-6-191-3.1l-vin-m-8th-digit.jpg",
@@ -227,20 +164,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1997",
       "model": "Achieva Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-oldsmobile-achieva-4-146-2.4l-vin-t-8th-digit.jpg",
@@ -258,20 +186,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1998",
       "model": "Achieva Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-oldsmobile-achieva-4-146-2.4l-vin-t-8th-digit.jpg",
@@ -289,20 +208,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1998",
       "model": "Achieva Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-oldsmobile-achieva-6-191-3.1l-vin-m-8th-digit.jpg",
@@ -320,20 +230,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1999",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-alero-2.4l-vin-t-8th-digit-4-146.jpg",
@@ -351,20 +252,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1999",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-alero-3.4l-vin-e-8th-digit-6-207.jpg",
@@ -382,20 +274,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2000",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-oldsmobile-alero-3.4l-vin-e-8th-digit-california-opt-nc1.jpg",
@@ -413,20 +296,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2000",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-oldsmobile-alero-3.4l-vin-e-8th-digit-federal-opt-nf2.jpg",
@@ -444,20 +318,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2000",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-oldsmobile-alero-2.4l-vin-t-8th-digit.jpg",
@@ -475,20 +340,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2001",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-oldsmobile-alero-2.4l-vin-t-8th-digit.jpg",
@@ -506,20 +362,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2001",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-oldsmobile-alero-3.4l-vin-e-8th-digit.jpg",
@@ -537,20 +384,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2002",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-oldsmobile-alero-3.4l-vin-e-8th-digit.jpg",
@@ -568,20 +406,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2002",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-oldsmobile-alero-2.2l-vin-f-8th-digit-egr-port-in-head.jpg",
@@ -599,20 +428,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2002",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-oldsmobile-alero-2.2l-vin-f-8th-digit-w/o-egr-port-in-head.jpg",
@@ -630,20 +450,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2003",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-oldsmobile-alero-2.2l-vin-f-8th-digit-egr-port-in-head.jpg",
@@ -661,20 +472,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2003",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-oldsmobile-alero-2.2l-vin-f-8th-digit-w/o-egr-port-in-head.jpg",
@@ -692,20 +494,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2003",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-oldsmobile-alero-3.4l-vin-e-8th-digit.jpg",
@@ -723,20 +516,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2004",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-oldsmobile-alero-2.2l-vin-f-8th-digit-egr-port-in-head.jpg",
@@ -754,20 +538,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2004",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-oldsmobile-alero-2.2l-vin-f-8th-digit-w/o-egr-port-in-head.jpg",
@@ -785,20 +560,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2004",
       "model": "Alero Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-oldsmobile-alero-3.4l-vin-e-8th-digit.jpg",
@@ -816,20 +582,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1995",
       "model": "Aurora Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-oldsmobile-aurora-4.0l-vin-c-8th-digit-8-244.jpg",
@@ -847,20 +604,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1996",
       "model": "Aurora Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-aurora-4.0l-vin-c-8th-digit-8-244.jpg",
@@ -878,20 +626,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1997",
       "model": "Aurora Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-oldsmobile-aurora-4.0l-vin-c-8th-digit-8-244.jpg",
@@ -909,20 +648,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1998",
       "model": "Aurora Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-oldsmobile-aurora-4.0l-vin-c-8th-digit-8-244.jpg",
@@ -940,20 +670,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "1999",
       "model": "Aurora Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-aurora-4.0l-vin-c-8th-digit-8-244.jpg",
@@ -971,20 +692,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Aurora Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-oldsmobile-aurora-3.5l-vin-h-8th-digit.jpg",
@@ -1002,20 +714,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2001",
       "model": "Aurora Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-oldsmobile-aurora-4.0l-vin-c-8th-digit.jpg",
@@ -1033,20 +736,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2002",
       "model": "Aurora Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-oldsmobile-aurora-3.5l-vin-h-8th-digit.jpg",
@@ -1064,20 +758,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2002",
       "model": "Aurora Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-oldsmobile-aurora-4.0l-vin-c-8th-digit.jpg",
@@ -1095,20 +780,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2003",
       "model": "Aurora Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-oldsmobile-aurora-4.0l-vin-c-8th-digit.jpg",
@@ -1126,20 +802,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1996",
       "model": "Bravada Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-bravada-4.3l-vin-w-8th-digit-6-262.jpg",
@@ -1157,20 +824,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1997",
       "model": "Bravada Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-oldsmobile-bravada-4.3l-vin-w-8th-digit-6-262.jpg",
@@ -1188,20 +846,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1998",
       "model": "Bravada Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-oldsmobile-bravada-4.3l-vin-w-8th-digit-6-262-build-date-opt-zn4.jpg",
@@ -1219,20 +868,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1998",
       "model": "Bravada Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-oldsmobile-bravada-4.3l-vin-w-8th-digit-6-262-w/o-build-date-opt-zn4.jpg",
@@ -1250,20 +890,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1999",
       "model": "Bravada Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-bravada-4.3l-vin-w-8th-digit-6-262.jpg",
@@ -1281,20 +912,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2000",
       "model": "Bravada Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-oldsmobile-bravada-4.3l-vin-w-8th-digit.jpg",
@@ -1312,20 +934,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Bravada Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-oldsmobile-bravada-4.3l-vin-w-8th-digit.jpg",
@@ -1343,20 +956,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2002",
       "model": "Bravada Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-oldsmobile-bravada-4.2l-vin-s-8th-digit.jpg",
@@ -1374,20 +978,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2003",
       "model": "Bravada Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-oldsmobile-bravada-4.2l-vin-s-8th-digit.jpg",
@@ -1405,20 +1000,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2004",
       "model": "Bravada Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-oldsmobile-bravada-4.2l-vin-s-8th-digit.jpg",
@@ -1436,20 +1022,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1995",
       "model": "Ciera Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-oldsmobile-ciera-4-134-2.2l-vin-4-8th-digit.jpg",
@@ -1467,20 +1044,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "1995",
       "model": "Ciera Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-oldsmobile-ciera-6-191-3.1l-vin-m-8th-digit.jpg",
@@ -1498,20 +1066,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "Ciera Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-ciera-4-134-2.2l-vin-4-8th-digit.jpg",
@@ -1529,20 +1088,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "1996",
       "model": "Ciera Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-ciera-6-191-3.1l-vin-m-8th-digit.jpg",
@@ -1560,20 +1110,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1995",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-oldsmobile-cutlass-(1973-up)-6-207-3.4l-vin-x-8th-digit.jpg",
@@ -1591,20 +1132,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "1996",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-cutlass-(1973-up)-6-191-3.1l-vin-m-8th-digit.jpg",
@@ -1622,20 +1154,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-cutlass-(1973-up)-6-207-3.4l-vin-x-8th-digit.jpg",
@@ -1653,20 +1176,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1997",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-oldsmobile-cutlass-(1973-up)-6-191-3.1l-vin-m-8th-digit-supreme.jpg",
@@ -1684,20 +1198,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1997",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-oldsmobile-cutlass-(1973-up)-6-191-3.1l-vin-m-8th-digit-exc.-supreme.jpg",
@@ -1715,20 +1220,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1998",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-oldsmobile-cutlass-(1973-up)-6-191-3.1l-vin-m-8th-digit.jpg",
@@ -1746,20 +1242,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1999",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-cutlass-(1973-up)-6-191-3.1l-vin-j-8th-digit-california.jpg",
@@ -1777,20 +1264,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1999",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-cutlass-(1973-up)-6-191-3.1l-vin-m-8th-digit-federal.jpg",
@@ -1808,20 +1286,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "1998",
       "model": "Intrigue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-oldsmobile-intrigue-6-231-3.8l-vin-k-8th-digit.jpg",
@@ -1839,20 +1308,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1999",
       "model": "Intrigue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-intrigue-3.5l-vin-h-8th-digit-6-214.jpg",
@@ -1870,20 +1330,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "1999",
       "model": "Intrigue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-intrigue-3.8l-vin-k-8th-digit-6-231.jpg",
@@ -1901,20 +1352,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2000",
       "model": "Intrigue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-oldsmobile-intrigue-3.5l-vin-h-8th-digit-california-opt-nc1.jpg",
@@ -1932,20 +1374,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2000",
       "model": "Intrigue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-oldsmobile-intrigue-3.5l-vin-h-8th-digit-federal-opt-nf2.jpg",
@@ -1963,20 +1396,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Intrigue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-oldsmobile-intrigue-3.5l-vin-h-8th-digit.jpg",
@@ -1994,20 +1418,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2002",
       "model": "Intrigue Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-oldsmobile-intrigue-3.5l-vin-h-8th-digit.jpg",
@@ -2025,20 +1440,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1995",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-oldsmobile-silhouette-6-191-3.1l-vin-d-8th-digit.jpg",
@@ -2056,20 +1462,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1995",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-oldsmobile-silhouette-6-231-3.8l-vin-l-8th-digit.jpg",
@@ -2087,20 +1484,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit.jpg",
@@ -2118,20 +1506,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1997",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit.jpg",
@@ -2149,20 +1528,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1998",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit.jpg",
@@ -2180,20 +1550,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1999",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit.jpg",
@@ -2211,20 +1572,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2000",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit-california-opt-nc1.jpg",
@@ -2242,20 +1594,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2000",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2000-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit-federal-opt-nf2.jpg",
@@ -2273,20 +1616,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2001",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit-california-opt-nc8.jpg",
@@ -2304,20 +1638,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit-federal-opt-nf4.jpg",
@@ -2335,20 +1660,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2001",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2001-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit-federal-opt-nf7.jpg",
@@ -2366,20 +1682,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "2002",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit-california-opt-nc8.jpg",
@@ -2397,20 +1704,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2002",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit-federal-opt-nf4.jpg",
@@ -2428,20 +1726,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2002",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2002-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit-federal-opt-nf7.jpg",
@@ -2459,20 +1748,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2003",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2003-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit.jpg",
@@ -2490,20 +1770,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2004",
       "model": "Silhouette Engine",
       "imageUrl": "https://www.auapw.org/images/parts/engine-2004-oldsmobile-silhouette-6-207-3.4l-vin-e-8th-digit.jpg",
@@ -2521,20 +1792,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1995",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-oldsmobile-supreme-cutlass-(1988-up)-6-191-3.1l-vin-m-8th-digit-upper-center-ac-mounting-on-block-is-not-drilled-and-tapped.jpg",
@@ -2552,20 +1814,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1995",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1995-oldsmobile-supreme-cutlass-(1988-up)-6-207-3.4l-vin-x-8th-digit.jpg",
@@ -2583,20 +1836,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1996",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-supreme-cutlass-(1988-up)-6-191-3.1l-vin-m-8th-digit.jpg",
@@ -2614,20 +1858,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1996-oldsmobile-supreme-cutlass-(1988-up)-6-207-3.4l-vin-x-8th-digit.jpg",
@@ -2645,20 +1880,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1997",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-oldsmobile-supreme-cutlass-(1988-up)-6-191-3.1l-vin-m-8th-digit-supreme.jpg",
@@ -2676,20 +1902,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1997",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1997-oldsmobile-supreme-cutlass-(1988-up)-6-191-3.1l-vin-m-8th-digit-exc.-supreme.jpg",
@@ -2707,20 +1924,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1998",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1998-oldsmobile-supreme-cutlass-(1988-up)-6-191-3.1l-vin-m-8th-digit.jpg",
@@ -2738,20 +1946,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1184.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1397.71
-        },
-        {
-          "mileage": "Medium",
-          "price": 1184.5
-        },
-        {
-          "mileage": "High",
-          "price": 994.98
-        }
-      ],
+      "tiers": {
+        "low": 1397.71,
+        "medium": 1184.5,
+        "high": 994.98
+      },
       "year": "1999",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-supreme-cutlass-(1988-up)-6-191-3.1l-vin-j-8th-digit-california.jpg",
@@ -2769,20 +1968,11 @@
       "brand": "Oldsmobile",
       "category": "engine",
       "price": 1072.38,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1265.41
-        },
-        {
-          "mileage": "Medium",
-          "price": 1072.38
-        },
-        {
-          "mileage": "High",
-          "price": 900.8
-        }
-      ],
+      "tiers": {
+        "low": 1265.41,
+        "medium": 1072.38,
+        "high": 900.8
+      },
       "year": "1999",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/engine-1999-oldsmobile-supreme-cutlass-(1988-up)-6-191-3.1l-vin-m-8th-digit-federal.jpg",
@@ -2800,20 +1990,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1558.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1838.74
-        },
-        {
-          "mileage": "Medium",
-          "price": 1558.25
-        },
-        {
-          "mileage": "High",
-          "price": 1308.93
-        }
-      ],
+      "tiers": {
+        "low": 1838.74,
+        "medium": 1558.25,
+        "high": 1308.93
+      },
       "year": "1995",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-88-(1980-up)-at-fwd-supercharged-option.jpg",
@@ -2831,20 +2012,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1995",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-2.84-axle-ratio-opt-f17-id-asw.jpg",
@@ -2862,20 +2034,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1995",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-2.84-axle-ratio-opt-f17-id-ymw.jpg",
@@ -2893,20 +2056,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1995",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-3.06-axle-ratio-opt-fw2.jpg",
@@ -2924,20 +2078,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-88-(1980-up)-at-fwd-supercharged-option.jpg",
@@ -2955,20 +2100,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-2.84-axle-ratio-opt-f17.jpg",
@@ -2986,20 +2122,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-3.06-axle-ratio-opt-fw2.jpg",
@@ -3017,20 +2144,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1997",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-88-(1980-up)-at-fwd-supercharged-option.jpg",
@@ -3048,20 +2166,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1997",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-2.84-axle-ratio-opt-f17.jpg",
@@ -3079,20 +2188,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1997",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-3.06-axle-ratio-opt-fw2.jpg",
@@ -3110,20 +2210,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1998",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-88-(1980-up)-at-fwd-supercharged-option.jpg",
@@ -3141,20 +2232,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1998",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-opt-m15.jpg",
@@ -3172,20 +2254,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 736,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 868.48
-        },
-        {
-          "mileage": "Medium",
-          "price": 736
-        },
-        {
-          "mileage": "High",
-          "price": 618.24
-        }
-      ],
+      "tiers": {
+        "low": 868.48,
+        "medium": 736,
+        "high": 618.24
+      },
       "year": "1998",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-opt-mn3.jpg",
@@ -3203,20 +2276,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1999",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-88-(1980-up)-at-fwd-supercharged-option.jpg",
@@ -3234,20 +2298,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1999",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-opt-m15.jpg",
@@ -3265,20 +2320,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1999",
       "model": "88 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-88-(1980-up)-at-fwd-w/o-supercharged-option;-opt-mn3.jpg",
@@ -3296,20 +2342,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1408.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1662.32
-        },
-        {
-          "mileage": "Medium",
-          "price": 1408.75
-        },
-        {
-          "mileage": "High",
-          "price": 1183.35
-        }
-      ],
+      "tiers": {
+        "low": 1662.32,
+        "medium": 1408.75,
+        "high": 1183.35
+      },
       "year": "1995",
       "model": "98 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-98-(1980-up)-at-fwd-supercharged-option.jpg",
@@ -3327,20 +2364,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1995",
       "model": "98 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-98-(1980-up)-at-fwd-w/o-supercharged-option;-2.84-ratio-opt-f17.jpg",
@@ -3358,20 +2386,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1995",
       "model": "98 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-98-(1980-up)-at-fwd-w/o-supercharged-option;-3.06-ratio-opt-fw2.jpg",
@@ -3389,20 +2408,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "98 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-98-(1980-up)-at-fwd-2.84-axle-ratio-opt-f17.jpg",
@@ -3420,20 +2430,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1996",
       "model": "98 (1980",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-98-(1980-up)-at-fwd-3.06-axle-ratio-opt-fw2.jpg",
@@ -3451,20 +2452,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1995",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-achieva-at-4-138-2.3l-4t60e.jpg",
@@ -3482,20 +2474,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "1995",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-achieva-at-6-191-3.1l.jpg",
@@ -3513,20 +2496,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "1995",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-achieva-at-4-138-2.3l-th125-clutch-pressure-switch-with-2-wire-plug.jpg",
@@ -3544,20 +2518,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "1995",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-achieva-at-4-138-2.3l-th125-clutch-pressure-switch-with-4-wire-plug.jpg",
@@ -3575,20 +2540,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1995",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-achieva-mt.jpg",
@@ -3606,20 +2562,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1996",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-achieva-at-4-146-2.4l.jpg",
@@ -3637,20 +2584,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "1996",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-achieva-at-6-191-3.1l.jpg",
@@ -3668,20 +2606,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-achieva-mt.jpg",
@@ -3699,20 +2628,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1997",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-achieva-at-4-146-2.4l.jpg",
@@ -3730,20 +2650,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "1997",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-achieva-at-6-191-3.1l.jpg",
@@ -3761,20 +2672,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1997",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-achieva-mt.jpg",
@@ -3792,20 +2694,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1998",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-achieva-at-4-146-2.4l.jpg",
@@ -3823,20 +2716,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "1998",
       "model": "Achieva Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-achieva-at-6-191-3.1l.jpg",
@@ -3854,20 +2738,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1999",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-alero-at-3.4l.jpg",
@@ -3885,20 +2760,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1999",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-alero-at-2.4l.jpg",
@@ -3916,20 +2782,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2000",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-oldsmobile-alero-at-3.4l.jpg",
@@ -3947,20 +2804,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2000",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-oldsmobile-alero-at-2.4l.jpg",
@@ -3978,20 +2826,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2000",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-oldsmobile-alero-mt.jpg",
@@ -4009,20 +2848,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2001",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-alero-at-2.4l.jpg",
@@ -4040,20 +2870,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-alero-mt.jpg",
@@ -4071,20 +2892,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "2001",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-alero-at-3.4l.jpg",
@@ -4102,20 +2914,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2002",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-alero-at-2.2l.jpg",
@@ -4133,20 +2936,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2002",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-alero-at-3.4l.jpg",
@@ -4164,20 +2958,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2002",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-alero-mt.jpg",
@@ -4195,20 +2980,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2003",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-oldsmobile-alero-mt.jpg",
@@ -4226,20 +3002,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2003",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-oldsmobile-alero-at-2.2l.jpg",
@@ -4257,20 +3024,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2003",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-oldsmobile-alero-at-3.4l.jpg",
@@ -4288,20 +3046,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2004",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-oldsmobile-alero-mt.jpg",
@@ -4319,20 +3068,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2004",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-oldsmobile-alero-at-2.2l.jpg",
@@ -4350,20 +3090,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "2004",
       "model": "Alero Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-oldsmobile-alero-at-3.4l.jpg",
@@ -4381,20 +3112,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1995",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-aurora-at-3.48-ratio-opt-fq2.jpg",
@@ -4412,20 +3134,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1995",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-aurora-at-3.71-ratio-opt-fv4.jpg",
@@ -4443,20 +3156,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1996",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-aurora-at-3.48-ratio-opt-fq2.jpg",
@@ -4474,20 +3178,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1996",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-aurora-at-3.71-ratio-opt-fv4.jpg",
@@ -4505,20 +3200,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1997",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-aurora-at-3.48-ratio-opt-fq2.jpg",
@@ -4536,20 +3222,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1997",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-aurora-at-3.71-ratio-opt-fv4.jpg",
@@ -4567,20 +3244,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1998",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-aurora-at-3.48-ratio-opt-fq2.jpg",
@@ -4598,20 +3266,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1998",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-aurora-at-3.71-ratio-opt-fv4-from-02/16/98.jpg",
@@ -4629,20 +3288,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1998",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-aurora-at-3.71-ratio-opt-fv4-thru-02/15/98.jpg",
@@ -4660,20 +3310,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1999",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-aurora-at-3.48-ratio-opt-fq2.jpg",
@@ -4691,20 +3332,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1999",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-aurora-at-3.71-ratio-opt-fv4.jpg",
@@ -4722,20 +3354,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-aurora-at-3.5l-id-dcb.jpg",
@@ -4753,20 +3376,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-aurora-at-3.5l-id-ddb.jpg",
@@ -4784,20 +3398,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-aurora-at-3.5l-id-dgb.jpg",
@@ -4815,20 +3420,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-aurora-at-4.0l.jpg",
@@ -4846,20 +3442,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2002",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-aurora-at-3.5l.jpg",
@@ -4877,20 +3464,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2002",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-aurora-at-4.0l.jpg",
@@ -4908,20 +3486,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2003",
       "model": "Aurora Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-oldsmobile-aurora-at-4.0l.jpg",
@@ -4939,20 +3508,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1996",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-bravada-at.jpg",
@@ -4970,20 +3530,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1997",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-bravada-at.jpg",
@@ -5001,20 +3552,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1998",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-bravada-at.jpg",
@@ -5032,20 +3574,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1999",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-bravada-at.jpg",
@@ -5063,20 +3596,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2000",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-oldsmobile-bravada-at.jpg",
@@ -5094,20 +3618,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-bravada-at.jpg",
@@ -5125,20 +3640,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2002",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-bravada-at-4x2.jpg",
@@ -5156,20 +3662,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2002",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-bravada-at-4x4.jpg",
@@ -5187,20 +3684,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2003",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-oldsmobile-bravada-at-4x2.jpg",
@@ -5218,20 +3706,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2003",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-oldsmobile-bravada-at-4x4.jpg",
@@ -5249,20 +3728,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2004",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-oldsmobile-bravada-at-4x2.jpg",
@@ -5280,20 +3750,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "2004",
       "model": "Bravada Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-oldsmobile-bravada-at-4x4.jpg",
@@ -5311,20 +3772,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1995",
       "model": "Ciera Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-ciera-at-4t60e.jpg",
@@ -5342,20 +3794,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1995",
       "model": "Ciera Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-ciera-at-th125.jpg",
@@ -5373,20 +3816,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1996",
       "model": "Ciera Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-ciera-at-4t60e.jpg",
@@ -5404,20 +3838,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1996",
       "model": "Ciera Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-ciera-at-th125.jpg",
@@ -5435,20 +3860,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1995",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-cutlass-(1973-up)-at-6-191-3.1l.jpg",
@@ -5466,20 +3882,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1995",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-cutlass-(1973-up)-at-6-207-3.4l.jpg",
@@ -5497,20 +3904,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1996",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-cutlass-(1973-up)-at-6-191-3.1l.jpg",
@@ -5528,20 +3926,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1109.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1309.5
-        },
-        {
-          "mileage": "Medium",
-          "price": 1109.75
-        },
-        {
-          "mileage": "High",
-          "price": 932.19
-        }
-      ],
+      "tiers": {
+        "low": 1309.5,
+        "medium": 1109.75,
+        "high": 932.19
+      },
       "year": "1996",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-cutlass-(1973-up)-at-6-207-3.4l.jpg",
@@ -5559,20 +3948,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 661.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 780.28
-        },
-        {
-          "mileage": "Medium",
-          "price": 661.25
-        },
-        {
-          "mileage": "High",
-          "price": 555.45
-        }
-      ],
+      "tiers": {
+        "low": 780.28,
+        "medium": 661.25,
+        "high": 555.45
+      },
       "year": "1997",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-cutlass-(1973-up)-at-supreme.jpg",
@@ -5590,20 +3970,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1997",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-cutlass-(1973-up)-at-exc.-supreme.jpg",
@@ -5621,20 +3992,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1998",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-cutlass-(1973-up)-at.jpg",
@@ -5652,20 +4014,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1999",
       "model": "Cutlass (1973",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-cutlass-(1973-up)-at.jpg",
@@ -5683,20 +4036,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1998",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-intrigue-at.jpg",
@@ -5714,20 +4058,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1999",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-intrigue-at-3.5l-vin-h-8th-digit.jpg",
@@ -5745,20 +4080,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1999",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-intrigue-at-3.8l-vin-k-8th-digit.jpg",
@@ -5776,20 +4102,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2000",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-oldsmobile-intrigue-at-3.5l-3.05-ratio-opt-f83-id-ymb.jpg",
@@ -5807,20 +4124,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2000",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-oldsmobile-intrigue-at-3.5l-3.05-ratio-opt-f83-id-yrb.jpg",
@@ -5838,20 +4146,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2000",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-oldsmobile-intrigue-at-3.5l-3.29-ratio-opt-fr9-id-ycb.jpg",
@@ -5869,20 +4168,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1035,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1221.3
-        },
-        {
-          "mileage": "Medium",
-          "price": 1035
-        },
-        {
-          "mileage": "High",
-          "price": 869.4
-        }
-      ],
+      "tiers": {
+        "low": 1221.3,
+        "medium": 1035,
+        "high": 869.4
+      },
       "year": "2000",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-oldsmobile-intrigue-at-3.5l-3.29-ratio-opt-fr9-id-yhb.jpg",
@@ -5900,20 +4190,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2001",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-intrigue-at-3.5l-3.05-ratio-opt-f83.jpg",
@@ -5931,20 +4212,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-intrigue-at-3.5l-3.29-ratio-opt-fr9.jpg",
@@ -5962,20 +4234,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 885.5,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1044.89
-        },
-        {
-          "mileage": "Medium",
-          "price": 885.5
-        },
-        {
-          "mileage": "High",
-          "price": 743.82
-        }
-      ],
+      "tiers": {
+        "low": 1044.89,
+        "medium": 885.5,
+        "high": 743.82
+      },
       "year": "2002",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-intrigue-at-3.5l-3.05-ratio-opt-f83.jpg",
@@ -5993,20 +4256,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2002",
       "model": "Intrigue Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-intrigue-at-3.5l-3.29-ratio-opt-fr9.jpg",
@@ -6024,20 +4278,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1995",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-silhouette-at.jpg",
@@ -6055,20 +4300,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "1996",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-silhouette-at.jpg",
@@ -6086,20 +4322,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1997",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-silhouette-at.jpg",
@@ -6117,20 +4344,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1998",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-silhouette-at.jpg",
@@ -6148,20 +4366,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1999",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-silhouette-at.jpg",
@@ -6179,20 +4388,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2000",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-oldsmobile-silhouette-at-id-bcb.jpg",
@@ -6210,20 +4410,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2000",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2000-oldsmobile-silhouette-at-id-brb.jpg",
@@ -6241,20 +4432,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2001",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2001-oldsmobile-silhouette-at.jpg",
@@ -6272,20 +4454,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2002",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-silhouette-at-awd.jpg",
@@ -6303,20 +4476,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2002",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2002-oldsmobile-silhouette-at-fwd.jpg",
@@ -6334,20 +4498,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 1259.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1485.92
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259.25
-        },
-        {
-          "mileage": "High",
-          "price": 1057.77
-        }
-      ],
+      "tiers": {
+        "low": 1485.92,
+        "medium": 1259.25,
+        "high": 1057.77
+      },
       "year": "2003",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-oldsmobile-silhouette-at-awd.jpg",
@@ -6365,20 +4520,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "2003",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2003-oldsmobile-silhouette-at-fwd.jpg",
@@ -6396,20 +4542,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2004",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-oldsmobile-silhouette-at-awd-3.69-ratio-opt-fr3.jpg",
@@ -6427,20 +4564,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "2004",
       "model": "Silhouette Transmission",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-2004-oldsmobile-silhouette-at-fwd-3.29-ratio-opt-fr9.jpg",
@@ -6458,20 +4586,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1995",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-supreme-cutlass-(1988-up)-at-6-191-3.1l.jpg",
@@ -6489,20 +4608,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1995",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1995-oldsmobile-supreme-cutlass-(1988-up)-at-6-207-3.4l.jpg",
@@ -6520,20 +4630,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1996",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-supreme-cutlass-(1988-up)-at-6-191-3.1l.jpg",
@@ -6551,20 +4652,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 960.25,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1133.1
-        },
-        {
-          "mileage": "Medium",
-          "price": 960.25
-        },
-        {
-          "mileage": "High",
-          "price": 806.61
-        }
-      ],
+      "tiers": {
+        "low": 1133.1,
+        "medium": 960.25,
+        "high": 806.61
+      },
       "year": "1996",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1996-oldsmobile-supreme-cutlass-(1988-up)-at-6-207-3.4l.jpg",
@@ -6582,20 +4674,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 810.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956.69
-        },
-        {
-          "mileage": "Medium",
-          "price": 810.75
-        },
-        {
-          "mileage": "High",
-          "price": 681.03
-        }
-      ],
+      "tiers": {
+        "low": 956.69,
+        "medium": 810.75,
+        "high": 681.03
+      },
       "year": "1997",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-supreme-cutlass-(1988-up)-at-supreme.jpg",
@@ -6613,20 +4696,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1997",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1997-oldsmobile-supreme-cutlass-(1988-up)-at-exc.-supreme.jpg",
@@ -6644,20 +4718,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1998",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1998-oldsmobile-supreme-cutlass-(1988-up)-at.jpg",
@@ -6675,20 +4740,11 @@
       "brand": "Oldsmobile",
       "category": "transmission",
       "price": 511.75,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 603.87
-        },
-        {
-          "mileage": "Medium",
-          "price": 511.75
-        },
-        {
-          "mileage": "High",
-          "price": 429.87
-        }
-      ],
+      "tiers": {
+        "low": 603.87,
+        "medium": 511.75,
+        "high": 429.87
+      },
       "year": "1999",
       "model": "Supreme-Cutlass (1988",
       "imageUrl": "https://www.auapw.org/images/parts/transmission-1999-oldsmobile-supreme-cutlass-(1988-up)-at.jpg",
