@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { PART_CATEGORIES, CAR_MAKES } from '@/lib/data'
 import { acuraProducts, getAcuraProductUrl } from '@/lib/acura-data'
 import { ACURA_MODEL_DIRECTORY } from '@/lib/acura-model-history'
+import { BRAND_DIRECTORY } from '@/lib/brand-catalog'
 
 function slugify(text: string) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
@@ -64,6 +65,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // can crawl every history hub, model index, engine, transmission, and part URL.
   const acuraModelPages = ACURA_MODEL_DIRECTORY.map((model) => model.href)
   const acuraProductPages = acuraProducts.map((product) => getAcuraProductUrl(product))
+
+  // Brand directory + per-brand catalog pages. Individual brand product URLs
+  // (50k+) live in dedicated per-brand XML sitemaps at /sitemaps/<brand>,
+  // referenced from robots.txt so they stay under the 50k-per-file limit.
+  const brandPages = ['/brands', ...BRAND_DIRECTORY.map((b) => `/brands/${b.slug}`)]
 
   // De-duplicate the final route set so every canonical URL appears once.
   const allUrls = [...new Set([

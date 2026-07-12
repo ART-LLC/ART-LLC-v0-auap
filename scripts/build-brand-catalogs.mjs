@@ -1,0 +1,171 @@
+/**
+ * Build per-brand product catalogs from the uploaded pricing sheets in /data.
+ *
+ * - Standard sheets share the Acura schema (name, slug, price, 3 mileage tiers,
+ *   image_url, product_url, mpn, ...).
+ * - Feed-format sheets (Google Merchant: id, title, link, image_link, price
+ *   "123.45 USD") are also supported; the GMC file is a multi-brand feed, so
+ *   it is filtered to rows whose brand matches.
+ *
+ * Prices are taken EXACTLY from the sheets — no markup, no clamping.
+ * Output: data/brands/<brand-slug>.json  (read server-side only)
+ *
+ * Usage: node scripts/build-brand-catalogs.mjs
+ */
+import { read, utils } from 'xlsx'
+import fs from 'node:fs'
+import path from 'node:path'
+
+const DATA_DIR = 'data'
+const OUT_DIR = path.join(DATA_DIR, 'brands')
+
+/** brand slug -> { label, file, feedBrand? (filter for feed-format files) } */
+const BRAND_SHEETS = {
+  honda: { label: 'Honda', file: 'HONDA-bb5ba1.xlsx' },
+  infiniti: { label: 'INFINITI', file: 'INFINITI-fc83dd.xlsx' },
+  hummer: { label: 'HUMMER', file: 'HUMMER-4fc954.xlsx' },
+  'alfa-romeo': { label: 'Alfa Romeo', file: 'ALFA-PRICING-SHEET-28ba0b.xlsx' },
+  buick: { label: 'Buick', file: 'BUICK-SHEET-5044ed.xlsx' },
+  eagle: { label: 'Eagle', file: 'EAGLE-DHEET-12de39.xlsx' },
+  daewoo: { label: 'Daewoo', file: 'DAEWOO-SHEET-c76c36.xlsx' },
+  audi: { label: 'Audi', file: 'AUDI-PRICING-SHEET-ff7af4.xlsx' },
+  fiat: { label: 'Fiat', file: 'FLAT-SHEET-152fa3.xlsx' },
+  hyundai: { label: 'Hyundai', file: 'HYUNDAI-7ad0cf.xlsx' },
+  bmw: { label: 'BMW', file: 'BMW-PRICING-SHEET-227494.xlsx' },
+  chrysler: { label: 'Chrysler', file: 'CHRYSLER-SHEET-b86fcf.xlsx' },
+  dodge: { label: 'Dodge', file: 'DODGE-SHEET-3d0668.xlsx' },
+  daihatsu: { label: 'Daihatsu', file: 'DAIHATSU-SHEET-5e24d7.xlsx' },
+  cadillac: { label: 'Cadillac', file: 'CADILAC-SHEET-6f574b.xlsx' },
+  chevrolet: { label: 'Chevrolet', file: 'CHEVY-SHEET-39e694.xlsx' },
+  geo: { label: 'Geo', file: 'GEO-288f17.xlsx' },
+  gmc: { label: 'GMC', file: 'GMC-bbd6e9.xlsx', feedBrand: 'GMC' },
+  ford: { label: 'Ford', file: 'FORD-SHEET-935674.xlsx' },
+}
+
+const slugify = (s) =>
+  String(s)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 90)
+
+const roundPrice = (v) => {
+  const n = typeof v === 'string' ? Number.parseFloat(v.replace(/[^0-9.]/g, '')) : Number(v)
+  return Number.isFinite(n) && n > 0 ? Math.round(n) : undefined
+}
+
+function parseModelYear(name, brandLabel, compatibility = '') {
+  const source = `${name || ''} ${compatibility || ''}`
+  const year = source.match(/\b(?:19|20)\d{2}\b/)?.[0] || ''
+  const re = new RegExp(`${brandLabel.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s+([A-Za-z0-9][A-Za-z0-9. -]{0,24}?)(?=\\s+(?:Engine|Transmission|Used|[0-9.]+L|-)|\\s*$)`, 'i')
+  const model = source.match(re)?.[1]?.trim().replace(/\s{2,}/g, ' ') || ''
+  return { model, year }
+}
+
+function normalizeStandardRow(row, brandLabel) {
+  const price = roundPrice(row.price)
+  const low = roundPrice(row.low_mileage_reference_price)
+  const medium = roundPrice(row.medium_mileage_reference_price)
+  const high = roundPrice(row.high_mileage_reference_price)
+  if (!row.name || (!price && !medium)) return null
+  const { model, year } = parseModelYear(row.name, brandLabel, row.compatibility)
+  const mpn = String(row.mpn ?? row.part_number ?? '').trim()
+  const baseSlug = (row.slug ? String(row.slug) : slugify(row.name)).replace(/-+$/g, '')
+  return {
+    id: mpn || baseSlug,
+    name: String(row.name).trim(),
+    slug: baseSlug,
+    price: medium ?? price,
+    tiers: low && medium && high ? { low, medium, high } : undefined,
+    imageUrl: row.image_url || undefined,
+    productUrl: row.product_url || undefined,
+    category: String(row.category_id || row.image_specification || '').trim() || guessCategory(row.name),
+    partNumber: String(row.part_number ?? mpn ?? ''),
+    mpn,
+    compatibility: row.compatibility ? String(row.compatibility).slice(0, 300) : undefined,
+    description: row.description ? String(row.description).slice(0, 400) : undefined,
+    model,
+    year,
+  }
+}
+
+function normalizeFeedRow(row, brandLabel) {
+  const price = roundPrice(row.price)
+  if (!row.title || !price) return null
+  const { model, year } = parseModelYear(row.title, brandLabel)
+  const id = String(row.id || '').trim() || slugify(row.title)
+  let baseSlug = ''
+  try {
+    baseSlug = new URL(row.link).pathname.split('/').filter(Boolean).pop() || ''
+  } catch {}
+  if (!baseSlug) baseSlug = slugify(row.title)
+  return {
+    id,
+    name: String(row.title).trim(),
+    slug: slugify(baseSlug),
+    price,
+    tiers: undefined,
+    imageUrl: row.image_link || undefined,
+    productUrl: row.link || undefined,
+    category: String(row.custom_label_0 || row.product_type || '').trim() || guessCategory(row.title),
+    partNumber: id,
+    mpn: id,
+    compatibility: undefined,
+    description: row.description ? String(row.description).slice(0, 400) : undefined,
+    model,
+    year,
+  }
+}
+
+function guessCategory(name) {
+  const n = String(name).toLowerCase()
+  if (n.includes('transmission')) return 'Transmission'
+  if (n.includes('engine')) return 'Engine'
+  return 'Part'
+}
+
+fs.mkdirSync(OUT_DIR, { recursive: true })
+const summary = []
+
+for (const [brandSlug, cfg] of Object.entries(BRAND_SHEETS)) {
+  const filePath = path.join(DATA_DIR, cfg.file)
+  if (!fs.existsSync(filePath)) {
+    console.log(`SKIP ${brandSlug}: missing ${cfg.file}`)
+    continue
+  }
+  const wb = read(fs.readFileSync(filePath))
+  let rows = []
+  for (const name of wb.SheetNames) {
+    rows = rows.concat(utils.sheet_to_json(wb.Sheets[name], { defval: null }))
+  }
+  const isFeed = rows[0] && 'title' in rows[0] && 'link' in rows[0]
+  if (cfg.feedBrand && isFeed) {
+    rows = rows.filter((r) => String(r.brand || '').toLowerCase() === cfg.feedBrand.toLowerCase())
+  }
+
+  const seen = new Set()
+  const slugCount = new Map()
+  const products = []
+  for (const row of rows) {
+    const p = isFeed ? normalizeFeedRow(row, cfg.label) : normalizeStandardRow(row, cfg.label)
+    if (!p) continue
+    const dedupeKey = p.id || p.slug
+    if (seen.has(dedupeKey)) continue
+    seen.add(dedupeKey)
+    // Canonical slug must be unique within the brand.
+    const idSuffix = slugify(p.id)
+    let canonical = p.slug.endsWith(idSuffix) ? p.slug : `${p.slug}-${idSuffix}`
+    const n = slugCount.get(canonical) || 0
+    slugCount.set(canonical, n + 1)
+    if (n > 0) canonical = `${canonical}-${n + 1}`
+    p.canonicalSlug = canonical
+    products.push(p)
+  }
+
+  const out = { brand: cfg.label, slug: brandSlug, count: products.length, products }
+  fs.writeFileSync(path.join(OUT_DIR, `${brandSlug}.json`), JSON.stringify(out))
+  const size = (fs.statSync(path.join(OUT_DIR, `${brandSlug}.json`)).size / 1e6).toFixed(1)
+  summary.push(`${brandSlug}: ${products.length} products (${size} MB)`)
+}
+
+console.log(summary.join('\n'))
