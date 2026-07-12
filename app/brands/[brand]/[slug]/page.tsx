@@ -218,6 +218,7 @@ export default async function BrandProductPage({ params }: PageProps) {
                   productName={product.name}
                   basePrice={product.price}
                   tiers={product.tiers}
+                  mileageOptions={product.mileageOptions}
                   productImage={product.imageUrl || fallbackImage}
                   productType={product.category || 'Part'}
                   make={product.compatibility || label}
