@@ -1,933 +1,527 @@
 {
-  "brand": "daihatsu",
   "products": [
     {
       "id": "DAI-1",
       "mpn": "DAI-1",
       "name": "1988 Daihatsu Charade Engine - (1.0L, 3 cylinder, VIN 0, 8th digit)",
-      "slug": "1988-daihatsu-charade-engine-10l-3-cylinder-vin-0-8th-digit-0",
-      "canonicalSlug": "1988-daihatsu-charade-engine-10l-3-cylinder-vin-0-8th-digit-0",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1988-daihatsu-charade-engine-1-0l-3-cylinder-vin-0-8th-digit",
+      "canonicalSlug": "1988-daihatsu-charade-engine-1-0l-3-cylinder-vin-0-8th-digit",
+      "category": "used engine",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
-      "year": "1988",
-      "model": "Charade Engine",
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1988-daihatsu-charade-engine-side.jpg",
-      "description": "Premium quality used engine for 1988 Daihatsu Charade. Complete assembly ready for installation. Configuration: (1.0L, 3 cylinder, VIN 0, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1988-daihatsu-charade-1.0l-3-cylinder-vin-0-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-1",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1988 Daihatsu Charade. Complete assembly ready for installation. Configuration: (1.0L, 3 cylinder, VIN 0, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1988-daihatsu-charade-1.0l-3-cylinder-vin-0-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-2",
       "mpn": "DAI-2",
       "name": "1989 Daihatsu Charade Engine - 1.0L (VIN 0, 8th digit, 3 cylinder)",
-      "slug": "1989-daihatsu-charade-engine-10l-vin-0-8th-digit-3-cylinder-1",
-      "canonicalSlug": "1989-daihatsu-charade-engine-10l-vin-0-8th-digit-3-cylinder-1",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1989-daihatsu-charade-engine-1-0l-vin-0-8th-digit-3-cylinder",
+      "canonicalSlug": "1989-daihatsu-charade-engine-1-0l-vin-0-8th-digit-3-cylinder",
+      "category": "used engine",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
-      "year": "1989",
-      "model": "Charade Engine",
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1989-daihatsu-charade-engine-side.jpg",
-      "description": "Premium quality used engine for 1989 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.0L (VIN 0, 8th digit, 3 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1989-daihatsu-charade-1.0l-vin-0-8th-digit-3-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-2",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1989 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.0L (VIN 0, 8th digit, 3 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1989-daihatsu-charade-1.0l-vin-0-8th-digit-3-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-3",
       "mpn": "DAI-3",
       "name": "1989 Daihatsu Charade Engine - 1.3L (VIN 2, 8th digit, 4 cylinder)",
-      "slug": "1989-daihatsu-charade-engine-13l-vin-2-8th-digit-4-cylinder-2",
-      "canonicalSlug": "1989-daihatsu-charade-engine-13l-vin-2-8th-digit-4-cylinder-2",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1989-daihatsu-charade-engine-1-3l-vin-2-8th-digit-4-cylinder",
+      "canonicalSlug": "1989-daihatsu-charade-engine-1-3l-vin-2-8th-digit-4-cylinder",
+      "category": "used engine",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
-      "year": "1989",
-      "model": "Charade Engine",
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1989-daihatsu-charade-engine-side.jpg",
-      "description": "Premium quality used engine for 1989 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.3L (VIN 2, 8th digit, 4 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1989-daihatsu-charade-1.3l-vin-2-8th-digit-4-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-3",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1989 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.3L (VIN 2, 8th digit, 4 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1989-daihatsu-charade-1.3l-vin-2-8th-digit-4-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-4",
       "mpn": "DAI-4",
       "name": "1990 Daihatsu Charade Engine - 1.0L (VIN 0, 8th digit, 3 cylinder)",
-      "slug": "1990-daihatsu-charade-engine-10l-vin-0-8th-digit-3-cylinder-3",
-      "canonicalSlug": "1990-daihatsu-charade-engine-10l-vin-0-8th-digit-3-cylinder-3",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1990-daihatsu-charade-engine-1-0l-vin-0-8th-digit-3-cylinder",
+      "canonicalSlug": "1990-daihatsu-charade-engine-1-0l-vin-0-8th-digit-3-cylinder",
+      "category": "used engine",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
-      "year": "1990",
-      "model": "Charade Engine",
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1990-daihatsu-charade-engine-side.jpg",
-      "description": "Premium quality used engine for 1990 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.0L (VIN 0, 8th digit, 3 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1990-daihatsu-charade-1.0l-vin-0-8th-digit-3-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-4",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1990 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.0L (VIN 0, 8th digit, 3 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1990-daihatsu-charade-1.0l-vin-0-8th-digit-3-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-5",
       "mpn": "DAI-5",
       "name": "1990 Daihatsu Charade Engine - 1.3L (VIN 2, 8th digit, 4 cylinder)",
-      "slug": "1990-daihatsu-charade-engine-13l-vin-2-8th-digit-4-cylinder-4",
-      "canonicalSlug": "1990-daihatsu-charade-engine-13l-vin-2-8th-digit-4-cylinder-4",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1990-daihatsu-charade-engine-1-3l-vin-2-8th-digit-4-cylinder",
+      "canonicalSlug": "1990-daihatsu-charade-engine-1-3l-vin-2-8th-digit-4-cylinder",
+      "category": "used engine",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
-      "year": "1990",
-      "model": "Charade Engine",
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1990-daihatsu-charade-engine-side.jpg",
-      "description": "Premium quality used engine for 1990 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.3L (VIN 2, 8th digit, 4 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1990-daihatsu-charade-1.3l-vin-2-8th-digit-4-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-5",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1990 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.3L (VIN 2, 8th digit, 4 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1990-daihatsu-charade-1.3l-vin-2-8th-digit-4-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-6",
       "mpn": "DAI-6",
       "name": "1991 Daihatsu Charade Engine - 1.0L (VIN 0, 8th digit, 3 cylinder)",
-      "slug": "1991-daihatsu-charade-engine-10l-vin-0-8th-digit-3-cylinder-5",
-      "canonicalSlug": "1991-daihatsu-charade-engine-10l-vin-0-8th-digit-3-cylinder-5",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1991-daihatsu-charade-engine-1-0l-vin-0-8th-digit-3-cylinder",
+      "canonicalSlug": "1991-daihatsu-charade-engine-1-0l-vin-0-8th-digit-3-cylinder",
+      "category": "used engine",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
-      "year": "1991",
-      "model": "Charade Engine",
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1991-daihatsu-charade-engine-side.jpg",
-      "description": "Premium quality used engine for 1991 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.0L (VIN 0, 8th digit, 3 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-daihatsu-charade-1.0l-vin-0-8th-digit-3-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-6",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1991 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.0L (VIN 0, 8th digit, 3 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-daihatsu-charade-1.0l-vin-0-8th-digit-3-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-7",
       "mpn": "DAI-7",
       "name": "1991 Daihatsu Charade Engine - 1.3L (VIN 2, 8th digit, 4 cylinder)",
-      "slug": "1991-daihatsu-charade-engine-13l-vin-2-8th-digit-4-cylinder-6",
-      "canonicalSlug": "1991-daihatsu-charade-engine-13l-vin-2-8th-digit-4-cylinder-6",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1991-daihatsu-charade-engine-1-3l-vin-2-8th-digit-4-cylinder",
+      "canonicalSlug": "1991-daihatsu-charade-engine-1-3l-vin-2-8th-digit-4-cylinder",
+      "category": "used engine",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
-      "year": "1991",
-      "model": "Charade Engine",
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1991-daihatsu-charade-engine-side.jpg",
-      "description": "Premium quality used engine for 1991 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.3L (VIN 2, 8th digit, 4 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-daihatsu-charade-1.3l-vin-2-8th-digit-4-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-7",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1991 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.3L (VIN 2, 8th digit, 4 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-daihatsu-charade-1.3l-vin-2-8th-digit-4-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-8",
       "mpn": "DAI-8",
       "name": "1992 Daihatsu Charade Engine - 1.0L (VIN 0, 8th digit, 3 cylinder)",
-      "slug": "1992-daihatsu-charade-engine-10l-vin-0-8th-digit-3-cylinder-7",
-      "canonicalSlug": "1992-daihatsu-charade-engine-10l-vin-0-8th-digit-3-cylinder-7",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1992-daihatsu-charade-engine-1-0l-vin-0-8th-digit-3-cylinder",
+      "canonicalSlug": "1992-daihatsu-charade-engine-1-0l-vin-0-8th-digit-3-cylinder",
+      "category": "used engine",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
-      "year": "1992",
-      "model": "Charade Engine",
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1992-daihatsu-charade-engine-side.jpg",
-      "description": "Premium quality used engine for 1992 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.0L (VIN 0, 8th digit, 3 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-daihatsu-charade-1.0l-vin-0-8th-digit-3-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-8",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1992 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.0L (VIN 0, 8th digit, 3 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-daihatsu-charade-1.0l-vin-0-8th-digit-3-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-9",
       "mpn": "DAI-9",
       "name": "1992 Daihatsu Charade Engine - 1.3L (VIN 2, 8th digit, 4 cylinder)",
-      "slug": "1992-daihatsu-charade-engine-13l-vin-2-8th-digit-4-cylinder-8",
-      "canonicalSlug": "1992-daihatsu-charade-engine-13l-vin-2-8th-digit-4-cylinder-8",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1992-daihatsu-charade-engine-1-3l-vin-2-8th-digit-4-cylinder",
+      "canonicalSlug": "1992-daihatsu-charade-engine-1-3l-vin-2-8th-digit-4-cylinder",
+      "category": "used engine",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
-      "year": "1992",
-      "model": "Charade Engine",
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1992-daihatsu-charade-engine-side.jpg",
-      "description": "Premium quality used engine for 1992 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.3L (VIN 2, 8th digit, 4 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-daihatsu-charade-1.3l-vin-2-8th-digit-4-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-9",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1992 Daihatsu Charade. Complete assembly ready for installation. Configuration: 1.3L (VIN 2, 8th digit, 4 cylinder). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-daihatsu-charade-1.3l-vin-2-8th-digit-4-cylinder Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-10",
       "mpn": "DAI-10",
       "name": "1990 Daihatsu Rocky Engine - (1.6L, VIN 0, 8th digit)",
-      "slug": "1990-daihatsu-rocky-engine-16l-vin-0-8th-digit-9",
-      "canonicalSlug": "1990-daihatsu-rocky-engine-16l-vin-0-8th-digit-9",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1990-daihatsu-rocky-engine-1-6l-vin-0-8th-digit",
+      "canonicalSlug": "1990-daihatsu-rocky-engine-1-6l-vin-0-8th-digit",
+      "category": "used engine",
       "price": 1783,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1925
-        },
-        {
-          "mileage": "Medium",
-          "price": 1783
-        },
-        {
-          "mileage": "High",
-          "price": 1479
-        }
-      ],
-      "year": "1990",
-      "model": "Rocky Engine",
+      "tiers": {
+        "low": 1925,
+        "medium": 1783,
+        "high": 1479
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1990-daihatsu-rocky-engine-side.jpg",
-      "description": "Premium quality used engine for 1990 Daihatsu Rocky. Complete assembly ready for installation. Configuration: (1.6L, VIN 0, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1990-daihatsu-rocky-1.6l-vin-0-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-10",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1990 Daihatsu Rocky. Complete assembly ready for installation. Configuration: (1.6L, VIN 0, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1990-daihatsu-rocky-1.6l-vin-0-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-11",
       "mpn": "DAI-11",
       "name": "1991 Daihatsu Rocky Engine - (1.6L, VIN 0, 8th digit)",
-      "slug": "1991-daihatsu-rocky-engine-16l-vin-0-8th-digit-10",
-      "canonicalSlug": "1991-daihatsu-rocky-engine-16l-vin-0-8th-digit-10",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1991-daihatsu-rocky-engine-1-6l-vin-0-8th-digit",
+      "canonicalSlug": "1991-daihatsu-rocky-engine-1-6l-vin-0-8th-digit",
+      "category": "used engine",
       "price": 1783,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1925
-        },
-        {
-          "mileage": "Medium",
-          "price": 1783
-        },
-        {
-          "mileage": "High",
-          "price": 1479
-        }
-      ],
-      "year": "1991",
-      "model": "Rocky Engine",
+      "tiers": {
+        "low": 1925,
+        "medium": 1783,
+        "high": 1479
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1991-daihatsu-rocky-engine-side.jpg",
-      "description": "Premium quality used engine for 1991 Daihatsu Rocky. Complete assembly ready for installation. Configuration: (1.6L, VIN 0, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-daihatsu-rocky-1.6l-vin-0-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-11",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1991 Daihatsu Rocky. Complete assembly ready for installation. Configuration: (1.6L, VIN 0, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-daihatsu-rocky-1.6l-vin-0-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-12",
       "mpn": "DAI-12",
       "name": "1992 Daihatsu Rocky Engine - (1.6L, VIN 0, 8th digit)",
-      "slug": "1992-daihatsu-rocky-engine-16l-vin-0-8th-digit-11",
-      "canonicalSlug": "1992-daihatsu-rocky-engine-16l-vin-0-8th-digit-11",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1992-daihatsu-rocky-engine-1-6l-vin-0-8th-digit",
+      "canonicalSlug": "1992-daihatsu-rocky-engine-1-6l-vin-0-8th-digit",
+      "category": "used engine",
       "price": 1783,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1925
-        },
-        {
-          "mileage": "Medium",
-          "price": 1783
-        },
-        {
-          "mileage": "High",
-          "price": 1479
-        }
-      ],
-      "year": "1992",
-      "model": "Rocky Engine",
+      "tiers": {
+        "low": 1925,
+        "medium": 1783,
+        "high": 1479
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1992-daihatsu-rocky-engine-side.jpg",
-      "description": "Premium quality used engine for 1992 Daihatsu Rocky. Complete assembly ready for installation. Configuration: (1.6L, VIN 0, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-daihatsu-rocky-1.6l-vin-0-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-12",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used engine for 1992 Daihatsu Rocky. Complete assembly ready for installation. Configuration: (1.6L, VIN 0, 8th digit). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-daihatsu-rocky-1.6l-vin-0-8th-digit Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-13",
       "mpn": "DAI-13",
       "name": "1988 Daihatsu Charade Transmission - MT",
-      "slug": "1988-daihatsu-charade-transmission-mt-12",
-      "canonicalSlug": "1988-daihatsu-charade-transmission-mt-12",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1988-daihatsu-charade-transmission-mt",
+      "canonicalSlug": "1988-daihatsu-charade-transmission-mt",
+      "category": "used transmission",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
-      "year": "1988",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1988-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1988 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1988-daihatsu-charade-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-13",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1988 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1988-daihatsu-charade-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-14",
       "mpn": "DAI-14",
       "name": "1989 Daihatsu Charade Transmission - AT",
-      "slug": "1989-daihatsu-charade-transmission-at-13",
-      "canonicalSlug": "1989-daihatsu-charade-transmission-at-13",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1989-daihatsu-charade-transmission-at",
+      "canonicalSlug": "1989-daihatsu-charade-transmission-at",
+      "category": "used transmission",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
-      "year": "1989",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1989-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1989 Daihatsu Charade. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1989-daihatsu-charade-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-14",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1989 Daihatsu Charade. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1989-daihatsu-charade-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-15",
       "mpn": "DAI-15",
       "name": "1989 Daihatsu Charade Transmission - MT, 1.0L",
-      "slug": "1989-daihatsu-charade-transmission-mt-10l-14",
-      "canonicalSlug": "1989-daihatsu-charade-transmission-mt-10l-14",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1989-daihatsu-charade-transmission-mt-1-0l",
+      "canonicalSlug": "1989-daihatsu-charade-transmission-mt-1-0l",
+      "category": "used transmission",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
-      "year": "1989",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1989-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1989 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.0L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1989-daihatsu-charade-mt-1.0l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-15",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1989 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.0L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1989-daihatsu-charade-mt-1.0l Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-16",
       "mpn": "DAI-16",
       "name": "1989 Daihatsu Charade Transmission - MT, 1.3L",
-      "slug": "1989-daihatsu-charade-transmission-mt-13l-15",
-      "canonicalSlug": "1989-daihatsu-charade-transmission-mt-13l-15",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1989-daihatsu-charade-transmission-mt-1-3l",
+      "canonicalSlug": "1989-daihatsu-charade-transmission-mt-1-3l",
+      "category": "used transmission",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
-      "year": "1989",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1989-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1989 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.3L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1989-daihatsu-charade-mt-1.3l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-16",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1989 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.3L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1989-daihatsu-charade-mt-1.3l Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-17",
       "mpn": "DAI-17",
       "name": "1990 Daihatsu Charade Transmission - AT",
-      "slug": "1990-daihatsu-charade-transmission-at-16",
-      "canonicalSlug": "1990-daihatsu-charade-transmission-at-16",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1990-daihatsu-charade-transmission-at",
+      "canonicalSlug": "1990-daihatsu-charade-transmission-at",
+      "category": "used transmission",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
-      "year": "1990",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1990-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1990 Daihatsu Charade. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1990-daihatsu-charade-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-17",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1990 Daihatsu Charade. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1990-daihatsu-charade-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-18",
       "mpn": "DAI-18",
       "name": "1990 Daihatsu Charade Transmission - MT, 1.0L",
-      "slug": "1990-daihatsu-charade-transmission-mt-10l-17",
-      "canonicalSlug": "1990-daihatsu-charade-transmission-mt-10l-17",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1990-daihatsu-charade-transmission-mt-1-0l",
+      "canonicalSlug": "1990-daihatsu-charade-transmission-mt-1-0l",
+      "category": "used transmission",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
-      "year": "1990",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1990-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1990 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.0L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1990-daihatsu-charade-mt-1.0l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-18",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1990 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.0L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1990-daihatsu-charade-mt-1.0l Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-19",
       "mpn": "DAI-19",
       "name": "1990 Daihatsu Charade Transmission - MT, 1.3L",
-      "slug": "1990-daihatsu-charade-transmission-mt-13l-18",
-      "canonicalSlug": "1990-daihatsu-charade-transmission-mt-13l-18",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1990-daihatsu-charade-transmission-mt-1-3l",
+      "canonicalSlug": "1990-daihatsu-charade-transmission-mt-1-3l",
+      "category": "used transmission",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
-      "year": "1990",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1990-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1990 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.3L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1990-daihatsu-charade-mt-1.3l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-19",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1990 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.3L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1990-daihatsu-charade-mt-1.3l Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-20",
       "mpn": "DAI-20",
       "name": "1991 Daihatsu Charade Transmission - AT",
-      "slug": "1991-daihatsu-charade-transmission-at-19",
-      "canonicalSlug": "1991-daihatsu-charade-transmission-at-19",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1991-daihatsu-charade-transmission-at",
+      "canonicalSlug": "1991-daihatsu-charade-transmission-at",
+      "category": "used transmission",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
-      "year": "1991",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1991 Daihatsu Charade. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-daihatsu-charade-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-20",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1991 Daihatsu Charade. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-daihatsu-charade-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-21",
       "mpn": "DAI-21",
       "name": "1991 Daihatsu Charade Transmission - MT, 1.0L",
-      "slug": "1991-daihatsu-charade-transmission-mt-10l-20",
-      "canonicalSlug": "1991-daihatsu-charade-transmission-mt-10l-20",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1991-daihatsu-charade-transmission-mt-1-0l",
+      "canonicalSlug": "1991-daihatsu-charade-transmission-mt-1-0l",
+      "category": "used transmission",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
-      "year": "1991",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1991 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.0L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-daihatsu-charade-mt-1.0l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-21",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1991 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.0L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-daihatsu-charade-mt-1.0l Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-22",
       "mpn": "DAI-22",
       "name": "1991 Daihatsu Charade Transmission - MT, 1.3L",
-      "slug": "1991-daihatsu-charade-transmission-mt-13l-21",
-      "canonicalSlug": "1991-daihatsu-charade-transmission-mt-13l-21",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1991-daihatsu-charade-transmission-mt-1-3l",
+      "canonicalSlug": "1991-daihatsu-charade-transmission-mt-1-3l",
+      "category": "used transmission",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
-      "year": "1991",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1991 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.3L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-daihatsu-charade-mt-1.3l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-22",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1991 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.3L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-daihatsu-charade-mt-1.3l Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-23",
       "mpn": "DAI-23",
       "name": "1992 Daihatsu Charade Transmission - AT",
-      "slug": "1992-daihatsu-charade-transmission-at-22",
-      "canonicalSlug": "1992-daihatsu-charade-transmission-at-22",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1992-daihatsu-charade-transmission-at",
+      "canonicalSlug": "1992-daihatsu-charade-transmission-at",
+      "category": "used transmission",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
-      "year": "1992",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1992 Daihatsu Charade. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-daihatsu-charade-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-23",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1992 Daihatsu Charade. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-daihatsu-charade-at Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-24",
       "mpn": "DAI-24",
       "name": "1992 Daihatsu Charade Transmission - MT, 1.0L",
-      "slug": "1992-daihatsu-charade-transmission-mt-10l-23",
-      "canonicalSlug": "1992-daihatsu-charade-transmission-mt-10l-23",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1992-daihatsu-charade-transmission-mt-1-0l",
+      "canonicalSlug": "1992-daihatsu-charade-transmission-mt-1-0l",
+      "category": "used transmission",
       "price": 661,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 714
-        },
-        {
-          "mileage": "Medium",
-          "price": 661
-        },
-        {
-          "mileage": "High",
-          "price": 549
-        }
-      ],
-      "year": "1992",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 714,
+        "medium": 661,
+        "high": 549
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1992 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.0L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-daihatsu-charade-mt-1.0l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-24",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1992 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.0L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-daihatsu-charade-mt-1.0l Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-25",
       "mpn": "DAI-25",
       "name": "1992 Daihatsu Charade Transmission - MT, 1.3L",
-      "slug": "1992-daihatsu-charade-transmission-mt-13l-24",
-      "canonicalSlug": "1992-daihatsu-charade-transmission-mt-13l-24",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1992-daihatsu-charade-transmission-mt-1-3l",
+      "canonicalSlug": "1992-daihatsu-charade-transmission-mt-1-3l",
+      "category": "used transmission",
       "price": 886,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 956
-        },
-        {
-          "mileage": "Medium",
-          "price": 886
-        },
-        {
-          "mileage": "High",
-          "price": 735
-        }
-      ],
-      "year": "1992",
-      "model": "Charade Transmission",
+      "tiers": {
+        "low": 956,
+        "medium": 886,
+        "high": 735
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-daihatsu-charade-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1992 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.3L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-daihatsu-charade-mt-1.3l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-25",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1992 Daihatsu Charade. Complete assembly ready for installation. Configuration: MT, 1.3L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-daihatsu-charade-mt-1.3l Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-26",
       "mpn": "DAI-26",
       "name": "1990 Daihatsu Rocky Transmission - MT",
-      "slug": "1990-daihatsu-rocky-transmission-mt-25",
-      "canonicalSlug": "1990-daihatsu-rocky-transmission-mt-25",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1990-daihatsu-rocky-transmission-mt",
+      "canonicalSlug": "1990-daihatsu-rocky-transmission-mt",
+      "category": "used transmission",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
-      "year": "1990",
-      "model": "Rocky Transmission",
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1990-daihatsu-rocky-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1990 Daihatsu Rocky. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1990-daihatsu-rocky-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-26",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1990 Daihatsu Rocky. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1990-daihatsu-rocky-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-27",
       "mpn": "DAI-27",
       "name": "1991 Daihatsu Rocky Transmission - MT, full time 4WD",
-      "slug": "1991-daihatsu-rocky-transmission-mt-full-time-4wd-26",
-      "canonicalSlug": "1991-daihatsu-rocky-transmission-mt-full-time-4wd-26",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1991-daihatsu-rocky-transmission-mt-full-time-4wd",
+      "canonicalSlug": "1991-daihatsu-rocky-transmission-mt-full-time-4wd",
+      "category": "used transmission",
       "price": 1633,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1764
-        },
-        {
-          "mileage": "Medium",
-          "price": 1633
-        },
-        {
-          "mileage": "High",
-          "price": 1355
-        }
-      ],
-      "year": "1991",
-      "model": "Rocky Transmission",
+      "tiers": {
+        "low": 1764,
+        "medium": 1633,
+        "high": 1355
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-daihatsu-rocky-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1991 Daihatsu Rocky. Complete assembly ready for installation. Configuration: MT, full time 4WD. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-daihatsu-rocky-mt-full-time-4wd Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-27",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1991 Daihatsu Rocky. Complete assembly ready for installation. Configuration: MT, full time 4WD. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-daihatsu-rocky-mt-full-time-4wd Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-28",
       "mpn": "DAI-28",
       "name": "1991 Daihatsu Rocky Transmission - MT, part-time 4WD",
-      "slug": "1991-daihatsu-rocky-transmission-mt-part-time-4wd-27",
-      "canonicalSlug": "1991-daihatsu-rocky-transmission-mt-part-time-4wd-27",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1991-daihatsu-rocky-transmission-mt-part-time-4wd",
+      "canonicalSlug": "1991-daihatsu-rocky-transmission-mt-part-time-4wd",
+      "category": "used transmission",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
-      "year": "1991",
-      "model": "Rocky Transmission",
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-daihatsu-rocky-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1991 Daihatsu Rocky. Complete assembly ready for installation. Configuration: MT, part-time 4WD. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-daihatsu-rocky-mt-part-time-4wd Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-28",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1991 Daihatsu Rocky. Complete assembly ready for installation. Configuration: MT, part-time 4WD. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-daihatsu-rocky-mt-part-time-4wd Price is a reference estimate only and may vary based on mileage, condition, and availability."
     },
     {
       "id": "DAI-29",
       "mpn": "DAI-29",
       "name": "1992 Daihatsu Rocky Transmission - MT",
-      "slug": "1992-daihatsu-rocky-transmission-mt-28",
-      "canonicalSlug": "1992-daihatsu-rocky-transmission-mt-28",
-      "brand": "Daihatsu",
-      "category": "part",
+      "slug": "1992-daihatsu-rocky-transmission-mt",
+      "canonicalSlug": "1992-daihatsu-rocky-transmission-mt",
+      "category": "used transmission",
       "price": 1185,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1279
-        },
-        {
-          "mileage": "Medium",
-          "price": 1185
-        },
-        {
-          "mileage": "High",
-          "price": 983
-        }
-      ],
-      "year": "1992",
-      "model": "Rocky Transmission",
+      "tiers": {
+        "low": 1279,
+        "medium": 1185,
+        "high": 983
+      },
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-daihatsu-rocky-transmission-side.jpg",
-      "description": "Premium quality used transmission for 1992 Daihatsu Rocky. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-daihatsu-rocky-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "DAI-29",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "year": null,
+      "model": "",
+      "description": "Premium quality used transmission for 1992 Daihatsu Rocky. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-daihatsu-rocky-mt Price is a reference estimate only and may vary based on mileage, condition, and availability."
     }
-  ]
+  ],
+  "total": 29
 }

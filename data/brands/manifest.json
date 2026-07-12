@@ -1,58 +1,148 @@
 [
   {
-    "slug": "acura",
-    "label": "Acura",
-    "count": 795
+    "slug": "mercedes-benz",
+    "label": "Mercedes-Benz",
+    "count": 3889
   },
   {
-    "slug": "alfa-romeo",
-    "label": "Alfa Romeo",
-    "count": 105
+    "slug": "toyota",
+    "label": "Toyota",
+    "count": 3683
   },
   {
-    "slug": "audi",
-    "label": "Audi",
-    "count": 2317
-  },
-  {
-    "slug": "bmw",
-    "label": "BMW",
-    "count": 3733
-  },
-  {
-    "slug": "buick",
-    "label": "Buick",
-    "count": 2794
-  },
-  {
-    "slug": "cadillac",
-    "label": "Cadillac",
-    "count": 1387
+    "slug": "nissan",
+    "label": "Nissan",
+    "count": 3168
   },
   {
     "slug": "chevrolet",
     "label": "Chevrolet",
-    "count": 13738
+    "count": 2611
   },
   {
-    "slug": "chrysler",
-    "label": "Chrysler",
-    "count": 1648
+    "slug": "jeep",
+    "label": "Jeep",
+    "count": 2400
   },
   {
-    "slug": "daewoo",
-    "label": "Daewoo",
-    "count": 84
+    "slug": "honda",
+    "label": "Honda",
+    "count": 2195
   },
   {
-    "slug": "daihatsu",
-    "label": "Daihatsu",
-    "count": 29
+    "slug": "ford",
+    "label": "Ford",
+    "count": 2134
+  },
+  {
+    "slug": "mazda",
+    "label": "Mazda",
+    "count": 2080
+  },
+  {
+    "slug": "volvo",
+    "label": "Volvo",
+    "count": 1857
+  },
+  {
+    "slug": "triumph",
+    "label": "Triumph",
+    "count": 1600
   },
   {
     "slug": "dodge",
     "label": "Dodge",
-    "count": 8685
+    "count": 1558
+  },
+  {
+    "slug": "jaguar",
+    "label": "Jaguar",
+    "count": 1530
+  },
+  {
+    "slug": "bmw",
+    "label": "BMW",
+    "count": 1423
+  },
+  {
+    "slug": "hyundai",
+    "label": "Hyundai",
+    "count": 1417
+  },
+  {
+    "slug": "mitsubishi",
+    "label": "Mitsubishi",
+    "count": 1206
+  },
+  {
+    "slug": "infiniti",
+    "label": "Infiniti",
+    "count": 885
+  },
+  {
+    "slug": "buick",
+    "label": "Buick",
+    "count": 851
+  },
+  {
+    "slug": "kia",
+    "label": "Kia",
+    "count": 814
+  },
+  {
+    "slug": "suzuki",
+    "label": "Suzuki",
+    "count": 657
+  },
+  {
+    "slug": "audi",
+    "label": "Audi",
+    "count": 644
+  },
+  {
+    "slug": "cadillac",
+    "label": "Cadillac",
+    "count": 586
+  },
+  {
+    "slug": "lincoln",
+    "label": "Lincoln",
+    "count": 571
+  },
+  {
+    "slug": "chrysler",
+    "label": "Chrysler",
+    "count": 514
+  },
+  {
+    "slug": "gmc",
+    "label": "GMC",
+    "count": 457
+  },
+  {
+    "slug": "land-rover",
+    "label": "Land Rover",
+    "count": 394
+  },
+  {
+    "slug": "isuzu",
+    "label": "Isuzu",
+    "count": 385
+  },
+  {
+    "slug": "acura",
+    "label": "Acura",
+    "count": 345
+  },
+  {
+    "slug": "lexus",
+    "label": "Lexus",
+    "count": 328
+  },
+  {
+    "slug": "fiat",
+    "label": "Fiat",
+    "count": 146
   },
   {
     "slug": "eagle",
@@ -60,8 +150,33 @@
     "count": 118
   },
   {
-    "slug": "fiat",
-    "label": "Fiat",
-    "count": 146
+    "slug": "alfa-romeo",
+    "label": "Alfa Romeo",
+    "count": 105
+  },
+  {
+    "slug": "alfa",
+    "label": "Alfa Romeo",
+    "count": 105
+  },
+  {
+    "slug": "daewoo",
+    "label": "Daewoo",
+    "count": 84
+  },
+  {
+    "slug": "hummer",
+    "label": "Hummer",
+    "count": 35
+  },
+  {
+    "slug": "daihatsu",
+    "label": "Daihatsu",
+    "count": 29
+  },
+  {
+    "slug": "geo",
+    "label": "Geo",
+    "count": 17
   }
 ]
