@@ -140,6 +140,34 @@ function guessCategory(name) {
   return 'Part'
 }
 
+function validateProduct(product, brandSlug) {
+  const errors = []
+  if (!product.id) errors.push('missing SKU/id')
+  if (!product.name) errors.push('missing product name')
+  if (!Number.isFinite(product.price) || product.price <= 0) errors.push('invalid price')
+  if (!product.canonicalSlug) errors.push('missing canonical slug')
+  if (product.tiers) {
+    for (const [tier, price] of Object.entries(product.tiers)) {
+      if (!Number.isFinite(price) || price <= 0) errors.push(`invalid ${tier} mileage price`)
+    }
+  }
+  if (errors.length) {
+    throw new Error(`${brandSlug}/${product.id || product.slug}: ${errors.join(', ')}`)
+  }
+}
+
+function validateCatalog(products, brandSlug) {
+  const ids = new Set()
+  const slugs = new Set()
+  for (const product of products) {
+    validateProduct(product, brandSlug)
+    if (ids.has(product.id)) throw new Error(`${brandSlug}: duplicate SKU/id ${product.id}`)
+    if (slugs.has(product.canonicalSlug)) throw new Error(`${brandSlug}: duplicate canonical slug ${product.canonicalSlug}`)
+    ids.add(product.id)
+    slugs.add(product.canonicalSlug)
+  }
+}
+
 fs.mkdirSync(OUT_DIR, { recursive: true })
 const summary = []
 const manifest = []
@@ -192,6 +220,7 @@ for (const [brandSlug, cfg] of Object.entries(BRAND_SHEETS)) {
     products.push(p)
   }
 
+  validateCatalog(products, brandSlug)
   const out = { brand: cfg.label, slug: brandSlug, count: products.length, products }
   fs.writeFileSync(path.join(OUT_DIR, `${brandSlug}.json`), JSON.stringify(out))
   const size = (fs.statSync(path.join(OUT_DIR, `${brandSlug}.json`)).size / 1e6).toFixed(1)
