@@ -78,11 +78,10 @@ export function getBrandProductBySlug(brand: string, slug: string): BrandProduct
     slugIndexCache.set(brand, index)
   }
 
-  // The legacy unsuffixed URL identifies the Type-S manual engine (P-3).
-  // Acura has three 2003 CL engine configurations, so an explicit alias
-  // prevents the page from displaying the lower-priced Base configuration.
+  // The unsuffixed URL is the base 2003 CL engine listing (P-1).
+  // Type-S automatic and manual configurations keep their explicit P-2/P-3 URLs.
   if (brand === "acura" && slug === "2003-acura-cl-engine") {
-    return index.get("2003-acura-cl-engine-p-3")
+    return index.get("2003-acura-cl-engine-p-1")
   }
 
   return index.get(slug)
