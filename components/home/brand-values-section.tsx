@@ -26,7 +26,7 @@ const values = [
 
 export function BrandValuesSection() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-background via-background/95 to-background relative">
+    <section className="py-12 sm:py-16 lg:py-20 bg-[#3a3d44] relative">
       {/* Vivid background */}
       <div className="absolute inset-0 z-0">
         <Image src="/images/section-network.png" alt="" fill className="object-cover opacity-12" />

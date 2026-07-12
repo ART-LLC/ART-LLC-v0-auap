@@ -36,7 +36,7 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
     setError(null)
   }
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setError(null)
 
@@ -46,40 +46,39 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
 
     setLoading(true)
 
-    // Build subject + body
-    const subject = `Quote Request: ${year || ""} ${make} ${model || ""} — ${part || "Auto Part"}`.trim()
+    // Build the email subject and body from the form fields.
+    const subject = `Quote Request: ${[year, make, model].filter(Boolean).join(" ")} - ${part || "Auto Part"}`
+      .replace(/\s+/g, " ")
+      .trim()
+
     const body = [
-      "New Quote Request — AUAPW LLC",
+      "Hi AUAPW LLC team,",
+      "",
+      "I'd like a free quote for the following part:",
       "",
       "--- Vehicle Details ---",
-      `Part:    ${part    || "Not specified"}`,
+      `Part:    ${part || "Not specified"}`,
       `Make:    ${make}`,
-      `Model:   ${model   || "Not specified"}`,
-      `Year:    ${year    || "Not specified"}`,
-      `Option:  ${option  || "Not specified"}`,
+      `Model:   ${model || "Not specified"}`,
+      `Year:    ${year || "Not specified"}`,
+      `Option:  ${option || "Not specified"}`,
       "",
-      "--- Customer Details ---",
+      "--- My Contact Details ---",
       `Name:    ${name}`,
       `Phone:   ${phone}`,
-      `Email:   ${email   || "Not provided"}`,
-      `ZIP:     ${zip     || "Not provided"}`,
+      `Email:   ${email || "Not provided"}`,
+      `ZIP:     ${zip || "Not provided"}`,
       "",
       "--- Message ---",
       message || "(no additional details)",
+      "",
+      "Thank you!",
     ].join("\n")
 
-    const mailtoUrl =
-      `mailto:${CONTACT_EMAIL}` +
-      `?subject=${encodeURIComponent(subject)}` +
-      `&body=${encodeURIComponent(body)}`
-
-    const link = document.createElement("a")
-    link.href = mailtoUrl
-    link.target = "_blank"
-    link.rel = "noopener noreferrer"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+    // Open the customer's own email client with everything pre-filled,
+    // so the quote request is sent from their mailbox to AUAPW LLC.
+    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.location.href = mailto
 
     setLoading(false)
     setSuccess(true)
@@ -92,12 +91,12 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
     return (
       <div className="glass-card rounded-xl p-8 flex flex-col items-center text-center gap-4">
         <CheckCircle2 className="w-14 h-14 text-green-400" />
-        <h3 className="text-xl font-bold text-foreground">Email Client Opened!</h3>
+        <h3 className="text-xl font-bold text-foreground">Your Email Is Ready to Send!</h3>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Your email client should now be open with all quote details pre-filled. Just hit <strong>Send</strong> to reach us at <strong>{CONTACT_EMAIL}</strong>.
+          We&apos;ve opened your email app with your quote request pre-filled. Just press <strong>Send</strong> to deliver it to us, and we&apos;ll reply within <strong>24 hours</strong>. If your email app didn&apos;t open, contact us directly below.
         </p>
         <div className="w-full bg-card/50 border border-border/30 rounded-lg p-4 flex flex-col sm:flex-row gap-3 justify-center">
-          <p className="text-xs text-muted-foreground w-full text-center mb-1 sm:hidden">Email did not open? Contact us directly:</p>
+          <p className="text-xs text-muted-foreground w-full text-center mb-1 sm:hidden">Need it faster? Contact us directly:</p>
           <a href="tel:8888185001" className="auapw-btn auapw-btn-green auapw-btn-sm">
             <Phone className="w-4 h-4" />
             {PHONE_DISPLAY}

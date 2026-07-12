@@ -40,33 +40,13 @@ export function Logo({
     className
   )
 
-  const ringStyles = cn(
-    baseContainerStyles,
-    "rounded-full border border-[rgba(255,255,255,0.15)] bg-[#0a0c12]"
-  )
-
-  const medallionStyles = cn(
-    baseContainerStyles,
-    "rounded-full border-2 border-[rgba(255,255,255,0.18)] bg-[rgba(13,15,22,0.70)]"
-  )
-
-  const containerStyles =
-    variant === "ring"
-      ? ringStyles
-      : variant === "medallion"
-        ? medallionStyles
-        : baseContainerStyles
-
-  const boxShadow =
-    variant === "medallion"
-      ? "0 0 0 1px rgba(255,255,255,0.06), 0 8px 40px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.10)"
-      : variant === "ring"
-        ? "0 3px 10px rgba(0,0,0,.5)"
-        : undefined
+  // The logo PNG is transparent, so no variant adds a background fill,
+  // border, or container box — the mark is shown on its own.
+  const containerStyles = baseContainerStyles
 
   return (
     <div className="relative">
-      <div className={containerStyles} style={boxShadow ? { boxShadow } : undefined}>
+      <div className={containerStyles}>
         <Image
           src="/auapw-logo.png"
           alt="AUAPW LLC - Quality Used Auto Parts"

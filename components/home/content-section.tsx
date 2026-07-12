@@ -4,14 +4,7 @@ import { Search, Truck, Shield, RotateCcw, Clock, ThumbsUp, DollarSign, Grid3X3 
 
 export function ContentSection() {
   return (
-    <section className="py-20 bg-background ghost-scan-section relative" style={{ paddingTop: '9px' }}>
-      {/* Vivid background section */}
-      <div className="absolute inset-0 z-0">
-        <Image src="/images/section-content-banner.png" alt="" fill className="object-cover opacity-15" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background/90" />
-      </div>
-      {/* Content wrapper */}
-      <div className="absolute inset-0 z-0" />
+    <section className="py-20 bg-[#3a3d44] relative" style={{ paddingTop: '9px' }}>
       <div className="mx-auto max-w-[1000px] px-6 relative z-10" style={{ fontFamily: 'system-ui' }}>
         {/* Banner Image */}
         <div className="relative w-full h-56 sm:h-72 rounded-xl overflow-hidden mb-10">
@@ -26,7 +19,7 @@ export function ContentSection() {
         {/* Main intro */}
         <div className="mb-16">
           <h2 className="small-caps font-sans text-[clamp(1.75rem,4vw,2.75rem)] font-black mercury-heading text-3d-section mb-6" style={{ fontFamily: 'system-ui', fontSize: '29px', textTransform: 'uppercase', marginBottom: '0px' }}>
-            𝐀𝐔𝐀𝐏𝐖.𝑶𝑹𝑮<br />
+            𝐀𝐔𝐀𝐏𝐖 LLC<br />
             All Used Auto Parts Warehouse<br />
             Trusted Partner for Automotive Services and Solutions<br />
           </h2>

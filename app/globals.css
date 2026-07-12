@@ -8,75 +8,102 @@
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
 }
 
-/* Dull matte black — industrial automotive body */
+/* Page background — light theme base, texture applied to visible surfaces */
 body {
   background-color: var(--background);
-  background-attachment: fixed;
-  background-size: cover;
+  color: var(--foreground);
+}
+
+/* Brushed-metal spray texture applied GLOBALLY to every page-level surface:
+   the home #3a3d44 sections plus the full-page main/section wrappers used on
+   /acura, /catalog, /analytics, etc. Targets only large page surfaces
+   (main, section, .min-h-screen) so inputs, cards, and small boxes are
+   left untouched. Adds a fine vertical pinstripe plus a soft horizontal sheen. */
+.bg-\[\#3a3d44\],
+main.bg-background,
+section.bg-background,
+.min-h-screen.bg-background {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.022) 0px,
+      rgba(255, 255, 255, 0.022) 1px,
+      rgba(0, 0, 0, 0.06) 1px,
+      rgba(0, 0, 0, 0.06) 3px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.20) 0%,
+      rgba(255, 255, 255, 0.035) 48%,
+      rgba(255, 255, 255, 0.045) 52%,
+      rgba(0, 0, 0, 0.20) 100%
+    ) !important;
+  background-size: 3px 100%, 100% 100% !important;
+  background-repeat: repeat, no-repeat !important;
 }
 
 :root {
-  /* ── Dull Matte Black — true industrial dark theme ── */
-  --background: #080808;
-  --foreground: #e8eaf0;
-  --card: #111216;
-  --card-foreground: #e8eaf0;
-  --popover: #161820;
-  --popover-foreground: #e8eaf0;
-  --primary: #d0d4e0;
-  --primary-foreground: #0a0a0c;
-  --secondary: #1c1e26;
-  --secondary-foreground: #c8ccd8;
-  --muted: #181a22;
-  --muted-foreground: #7a7f90;
-  --accent: #4a5568;
-  --accent-foreground: #ffffff;
+  /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic ── */
+  --background: #3a3d44;
+  --foreground: #eef1f8;
+  --card: #0f1117;
+  --card-foreground: #dce1f0;
+  --popover: #141820;
+  --popover-foreground: #dce1f0;
+  --primary: #b4bddc;
+  --primary-foreground: #080808;
+  --secondary: #1a1f2e;
+  --secondary-foreground: #b4bddc;
+  --muted: #16181f;
+  --muted-foreground: #6a7080;
+  --accent: #3a4555;
+  --accent-foreground: #dce1f0;
   --destructive: #c84040;
   --destructive-foreground: #ffffff;
-  --border: #22252f;
-  --input: #161820;
-  --ring: #d0d4e0;
-  --chart-1: #4a5568;
-  --chart-2: #7a7f90;
-  --chart-3: #e8eaf0;
-  --chart-4: #4a4f60;
-  --chart-5: #22252f;
+  --border: #1f2230;
+  --input: #141820;
+  --ring: #b4bddc;
+  --chart-1: #3a4555;
+  --chart-2: #6a7080;
+  --chart-3: #dce1f0;
+  --chart-4: #4a5568;
+  --chart-5: #1f2230;
   --radius: 0.5rem;
   --sidebar: #080a0c;
-  --sidebar-foreground: #e8eaf0;
-  --sidebar-primary: #4a5568;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #181a22;
-  --sidebar-accent-foreground: #e8eaf0;
-  --sidebar-border: #22252f;
-  --sidebar-ring: #4a5568;
+  --sidebar-foreground: #dce1f0;
+  --sidebar-primary: #3a4555;
+  --sidebar-primary-foreground: #dce1f0;
+  --sidebar-accent: #16181f;
+  --sidebar-accent-foreground: #dce1f0;
+  --sidebar-border: #1f2230;
+  --sidebar-ring: #3a4555;
 }
 
 /* ── Light mode overrides ────────────────────────────── */
-/* Clean bright white — maximum readability */
+/* Metallic silver on light background — maintain brand aesthetic */
 .light {
-  --background: #f4f5f7;
-  --foreground: #0f1117;
+  --background: #f8f9fa;
+  --foreground: #1a1f2e;
   --card: #ffffff;
-  --card-foreground: #0f1117;
+  --card-foreground: #1a1f2e;
   --popover: #ffffff;
-  --popover-foreground: #0f1117;
-  --primary: #2a3a5c;
+  --popover-foreground: #1a1f2e;
+  --primary: #3a4555;
   --primary-foreground: #ffffff;
-  --secondary: #e8eaf0;
+  --secondary: #e0e4f0;
   --secondary-foreground: #1a1f2e;
-  --muted: #eceef4;
-  --muted-foreground: #3a4055;
-  --accent: #2a3a5c;
+  --muted: #f0f2f6;
+  --muted-foreground: #5a6575;
+  --accent: #3a4555;
   --accent-foreground: #ffffff;
   --destructive: #b83025;
   --destructive-foreground: #ffffff;
-  --border: #c8cad4;
+  --border: #d0d4e0;
   --input: #ffffff;
-  --ring: #2a3a5c;
+  --ring: #3a4555;
   --sidebar: #f0f2f6;
-  --sidebar-foreground: #0f1117;
-  --sidebar-border: #c8cad4;
+  --sidebar-foreground: #1a1f2e;
+  --sidebar-border: #d0d4e0;
 }
 
 @theme inline {
@@ -136,8 +163,25 @@ body {
     min-height: 100vh;
     font-weight: 500; /* Make all body text slightly bolder */
     background-image:
+      repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.022) 0px,
+        rgba(255, 255, 255, 0.022) 1px,
+        rgba(0, 0, 0, 0.06) 1px,
+        rgba(0, 0, 0, 0.06) 3px
+      ),
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.20) 0%,
+        rgba(255, 255, 255, 0.035) 48%,
+        rgba(255, 255, 255, 0.045) 52%,
+        rgba(0, 0, 0, 0.20) 100%
+      ),
       radial-gradient(ellipse 80% 50% at 20% 0%, rgba(74,85,104,0.04) 0%, transparent 60%),
       radial-gradient(ellipse 60% 40% at 80% 100%, rgba(40,60,120,0.06) 0%, transparent 60%);
+    background-size: 3px 100%, 100% 100%, cover, cover;
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed;
   }
   
   /* Global bold fonts */
@@ -220,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0f1117 !important;
 }
 
-/* Primary color in light mode — deep navy for contrast */
+/* Primary color in light mode ��� deep navy for contrast */
 .light .text-primary,
 .light [class*="text-primary"]:not([class*="bg-primary"]) {
   color: #1e3a6e !important;
@@ -481,7 +525,7 @@ h1, h2, h3, h4, h5, h6 {
   100% { transform: translateX(500%) skewX(-20deg); }
 }
 
-/* ── LIQUID MERCURY CHROME ──���───────────────────────── */
+/* ── LIQUID MERCURY CHROME ──���───────��───────────────── */
 
 .shimmer-text {
   background: linear-gradient(
@@ -918,6 +962,33 @@ footer .wordmark-3d {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   filter: drop-shadow(0 1px 0 rgba(255,255,255,0.8)) drop-shadow(0 -1px 0 rgba(0,0,0,0.08));
+}
+
+/* Hero sits on a dark grey background even in light theme, so force the
+   bright metallic gradient for its heading and lift muted text contrast. */
+.light .hero-on-dark .mercury-heading,
+.hero-on-dark .mercury-heading {
+  background: linear-gradient(
+    90deg,
+    #707585 0%,
+    #b0b8c8 18%,
+    #e0e4f0 32%,
+    #ffffff 42%,
+    #f0f4ff 50%,
+    #ffffff 58%,
+    #e0e4f0 68%,
+    #b0b8c8 82%,
+    #707585 100%
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.35));
+}
+
+.hero-on-dark .text-muted-foreground {
+  color: rgba(255, 255, 255, 0.72) !important;
 }
 
 .light .shimmer-text {
@@ -1870,7 +1941,7 @@ footer .wordmark-3d {
 .footer-gear-backdrop .gear-2 { animation: gear-ccw 25s linear infinite; }
 .footer-gear-backdrop .gear-3 { animation: gear-cw 35s linear infinite; }
 
-/* ────────────────────────────────────────────────────
+/* ─���──────────────────────────────────────────────────
    ADVANCED CONTACT STYLING — Phone & Email
    ──────────────────────────────────────────────────── */
 
@@ -2047,7 +2118,7 @@ footer .wordmark-3d {
 
 /* ────────────────────────────────────────────────────
    END PREMIUM 3D EMBLEM EFFECTS
-   ──────────────────────────────────────────────────── */
+   ──────────────────────────────������───────────────────── */
 
 @keyframes phone-pulse {
   0%, 100% {
@@ -2311,7 +2382,7 @@ footer .wordmark-3d {
   z-index: 10;
 }
 
-/* ═══════════════════════════════════════════════════════
+/* ════════════════════════════════════���══════════════════
    PROCESS SECTION — Diamond LED Flash Typography
    ═══════════════════════════════════════════════════════ */
 
@@ -2892,39 +2963,34 @@ footer .wordmark-3d {
   height: clamp(44px, 10vw, 56px);
   min-width: 44px;
   min-height: 44px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.18), rgba(0,0,0,0.7));
-  border: 1.5px solid rgba(255,255,255,0.24);
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,0.08),
-    inset 0 2px 4px rgba(255,255,255,0.16),
-    0 8px 24px rgba(0,0,0,0.7);
+  background: transparent;
+  border: none;
+  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
   flex-shrink: 0;
   transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
-}
+  }
 
 .header-boss-logo-glow {
   position: absolute;
   inset: 0;
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px rgba(255,255,255,0.06), 0 0 24px rgba(255,255,255,0.05);
+  box-shadow: none;
   pointer-events: none;
   transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
-}
+  }
 
 .header-boss-logo-group:hover .header-boss-logo-ring {
-  border-color: rgba(255,255,255,0.34);
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.12), inset 0 2px 4px rgba(255,255,255,0.22), 0 8px 32px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.08);
+  border: none;
+  box-shadow: none;
   transform: scale(1.06);
-}
+  }
 
 .header-boss-logo-group:hover .header-boss-logo-glow {
-  box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 32px rgba(255,255,255,0.1), 0 0 48px rgba(255,255,255,0.05);
-}
+  box-shadow: none;
+  }
 
 /* ── EMBOSSED NAVIGATION TEXT — Main boss aesthetic ── */
 .header-boss-nav-text {
@@ -3181,7 +3247,7 @@ footer .wordmark-3d {
 
 /* ═══════════════════════════════════════════════════════
    PREMIUM HEADER — Apple Glassmorphism + LED Animations
-   ════════════════��══════════════════════════════════════ */
+   ════════════════��═══════════════���══════════════════════ */
 
 /* Animated promotional banner — scrolling text */
 .header-premium-banner {
@@ -4203,19 +4269,6 @@ footer .wordmark-3d {
     padding-right: 0.75rem !important;
   }
   
-  /* Grid collapse to single column */
-  .grid-cols-2, .grid-cols-3, .grid-cols-4, .grid-cols-5 {
-    grid-template-columns: 1fr !important;
-  }
-  
-  /* Flex direction for small screens */
-  .flex-col, .flex-row {
-    flex-direction: column;
-  }
-  
-  .flex-row {
-    flex-direction: column;
-  }
   
   /* Image sizing on mobile */
   img {
@@ -4263,9 +4316,15 @@ footer .wordmark-3d {
   }
   
   /* Ensure buttons are touchable */
-  button, a[role="button"], [role="button"] {
+  button:not(.slider-dot), a[role="button"], [role="button"] {
     min-height: 44px;
     min-width: 44px;
+  }
+
+  /* Decorative carousel indicators must stay small pills, not 44px circles */
+  .slider-dot {
+    min-height: 3px;
+    min-width: 12px;
   }
   
   /* Typography scaling */

@@ -563,6 +563,13 @@ export const BRAND_LOGO_URLS: Record<string, string> = {
   "Toyota":        "/logos/toyota.jpg",
   "Volkswagen":    "/logos/volkswagen.jpg",
   "Volvo":         "/logos/volvo.jpg",
+  "Daihatsu":      "/logos/daihatsu.png",
+  "Mini":          "/logos/mini.png",
+  "Opel":          "/logos/opel.png",
+  "Peugeot":       "/logos/peugeot.png",
+  "Porsche":       "/logos/porsche.png",
+  "Renault":       "/logos/renault.png",
+  "Triumph":       "/logos/triumph.png",
 }
 
 export function getBrandLogoUrl(brand: string): string {

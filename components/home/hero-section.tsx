@@ -9,10 +9,13 @@ import { Search, MessageSquare, Phone, Mail, Cog, Settings2, Calendar } from "lu
 
 export function HeroSection() {
   return (
-    <section className="relative pt-[58px] overflow-hidden ghost-scan-section" style={{ paddingTop: "45px" }}>
-      {/* Background — auto-sliding image carousel */}
-      <div className="absolute inset-0 bg-[#080808]">
-        <HeroSlider />
+    <section className="relative pt-[58px] overflow-hidden ghost-scan-section hero-on-dark" style={{ paddingTop: "45px" }}>
+      {/* Background — grey base; photo carousel constrained to the top hero band */}
+      <div className="absolute inset-0 bg-[#3a3d44]">
+        <div className="absolute top-0 inset-x-0 h-[820px] overflow-hidden">
+          <HeroSlider />
+          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-[#3a3d44]" />
+        </div>
         <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: "radial-gradient(circle, #e8e8e8 0%, transparent 70%)" }} />
         <GearBackground />
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E\")", backgroundSize: "100px" }} />
@@ -22,25 +25,36 @@ export function HeroSection() {
         <div className="flex flex-col items-center py-10 sm:py-16 lg:py-24 gap-8 sm:gap-10">
 
           {/* Brand column — full width, centered */}
-          <div className="fade-up w-full flex flex-col items-center gap-5 sm:gap-7 rounded-xl sm:rounded-2xl p-6 sm:p-10 lg:p-14 backdrop-blur-sm text-center"
-            style={{
-              background: "rgba(8,8,8,0.55)",
-              border: "1px solid rgba(255,255,255,0.07)",
-              boxShadow: "0 8px 48px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.08)"
-            }}
-          >
+          <div className="fade-up w-full flex flex-col items-center gap-5 sm:gap-7 rounded-xl sm:rounded-2xl p-6 sm:p-10 lg:p-14 text-center">
             {/* Logo + Wordmark — ULTRA brand block */}
-            <div className="flex flex-col items-center gap-16 sm:gap-20 w-full py-14">
+            <div className="flex flex-col items-center gap-16 sm:gap-20 w-full py-14 pb-0">
               {/* Ultra-massive logo */}
-              <Logo size="7xl" variant="medallion" priority showGlow />
+              <Logo size="4xl" variant="medallion" priority showGlow />
               {/* Ultra wordmark */}
-              <BrandWordmark size="hero-5xl" className="text-center items-center on-dark" />
+              <BrandWordmark 
+                size="hero-5xl" 
+                className="text-center items-center on-dark" 
+                style={{ fontWeight: 700, fontFamily: "inherit", fontSize: "14px", gap: "4px" }}
+              />
             </div>
 
             {/* Headline */}
             <h1 className="font-sans leading-tight text-balance max-w-4xl" style={{ fontFamily: "system-ui" }}>
-              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-muted-foreground mb-3" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
-              <span className="block mercury-heading text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black" style={{ fontFamily: "system-ui" }}>Premium Quality Used Auto Parts</span>
+              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
+              <span
+                className="block text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black"
+                style={{
+                  fontFamily: "system-ui",
+                  backgroundImage:
+                    "linear-gradient(90deg,#c8cdda 0%,#eef1f8 30%,#ffffff 50%,#eef1f8 70%,#c8cdda 100%)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.4))",
+                }}
+              >
+                Premium Quality Used Auto Parts
+              </span>
             </h1>
 
             {/* Key stats */}
@@ -52,8 +66,8 @@ export function HeroSection() {
                 { value: "50", label: "States Covered" },
               ].map(({ value, label }) => (
                 <div key={label} className="flex flex-col items-center gap-0.5">
-                  <span className="text-[1.4rem] sm:text-[1.8rem] font-black mercury-heading text-foreground">{value}</span>
-                  <span className="text-[0.6rem] sm:text-[0.65rem] font-bold tracking-[0.18em] uppercase text-muted-foreground">{label}</span>
+                  <span className="text-[1.4rem] sm:text-[1.8rem] font-black text-white">{value}</span>
+                  <span className="text-[0.6rem] sm:text-[0.65rem] font-bold tracking-[0.18em] uppercase text-white/70">{label}</span>
                 </div>
               ))}
             </div>

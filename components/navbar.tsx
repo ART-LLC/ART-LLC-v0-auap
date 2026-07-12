@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone } from "lucide-react"
+import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, Sparkles } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
@@ -49,6 +49,7 @@ export function Navbar() {
 
   const navItems = [
     { label: "Home", href: "/", icon: Home },
+    { label: "Shop", href: "/shop" },
     { label: "Used Parts", href: "/parts" },
     { label: "Engines", href: "/used-engines" },
     { label: "Transmissions", href: "/used-transmissions" },
@@ -57,6 +58,7 @@ export function Navbar() {
   const allPages = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
+    { label: "Acura Parts", href: "/acura" },
     { label: "Used Parts", href: "/parts" },
     { label: "Used Engines", href: "/used-engines" },
     { label: "Used Transmissions", href: "/used-transmissions" },
@@ -71,15 +73,15 @@ export function Navbar() {
   ]
 
   const partsCategories = [
-    { label: "Engine Parts", href: "/used-engines-parts" },
-    { label: "Transmission Parts", href: "/used-transmissions-parts" },
-    { label: "Drivetrain Parts", href: "/used-drivetrain-parts" },
-    { label: "Electrical Parts", href: "/used-electrical-parts" },
-    { label: "Cooling & Climate", href: "/used-cooling-parts" },
-    { label: "Brakes & Safety", href: "/used-brakes-parts" },
-    { label: "Suspension & Steering", href: "/used-suspension-parts" },
-    { label: "Body & Interior", href: "/used-body-parts" },
-    { label: "Exhaust System", href: "/used-exhaust-parts" },
+    { label: "Engine Parts", href: "/parts/engines" },
+    { label: "Transmission Parts", href: "/parts/transmissions" },
+    { label: "Drivetrain Parts", href: "/parts/drivetrain" },
+    { label: "Electrical Parts", href: "/parts/electrical" },
+    { label: "Cooling & Climate", href: "/parts/cooling" },
+    { label: "Brakes & Safety", href: "/parts/brakes" },
+    { label: "Suspension & Steering", href: "/parts/suspension" },
+    { label: "Body & Interior", href: "/parts/body" },
+    { label: "Exhaust System", href: "/parts/exhaust" },
   ]
 
   return (
@@ -182,6 +184,16 @@ export function Navbar() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+
+            {/* AI Smart Search */}
+            <Link
+              href="/ai-search"
+              className="header-boss-nav-text group relative flex items-center gap-1.5"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-primary" />
+              <span className="header-boss-nav-label">AI Search</span>
+              <span className="header-boss-nav-glow" />
+            </Link>
 
             {/* Review All Website Dropdown */}
             <DropdownMenu>

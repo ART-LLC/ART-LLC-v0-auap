@@ -87,8 +87,7 @@ export function BrandLogosSection() {
   return (
     <section
       aria-label="Shop by vehicle brand"
-      className="border-t border-b border-border/20 py-14 relative overflow-hidden"
-      style={{ background: "linear-gradient(180deg, rgba(10,12,20,0.95) 0%, rgba(12,14,22,1) 100%)" }}
+      className="border-t border-b border-border/20 py-14 relative overflow-hidden bg-[#3a3d44]"
     >
       <div className="mx-auto max-w-[1100px] px-6">
 
