@@ -15,6 +15,7 @@ import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 import { PartRecommendations } from '@/components/ai/part-recommendations'
 import { getAcuraProductBySlug, getAcuraProductUrl, getRelatedAcuraProducts, resolveAcuraImage } from '@/lib/acura-data'
+import { getAcuraPartSpecs } from '@/lib/acura-part-specs'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight } from 'lucide-react'
 
 export default function AcuraProductPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -28,6 +29,10 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
   const related = getRelatedAcuraProducts(product)
   const productImage = resolveAcuraImage(product)
   const priceDisplay = `$${product.price.toLocaleString()}`
+  // Part-specific specifications for engines/transmissions (null for other parts).
+  const partSpecs = getAcuraPartSpecs(product)
+  const partTypeLabel = product.category.replace(/^used\s+/i, '')
+  const fitmentYear = product.year || '1990-Present'
 
   return (
     <>
@@ -196,7 +201,13 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
         )}
 
         {/* Parts Details */}
-        <PartsDetails partType={product.category} yearRange="1990-Present" mileageRange="0-200,000 miles" />
+        <PartsDetails
+          partType={partTypeLabel}
+          specifications={partSpecs ?? undefined}
+          condition={product.condition ? `Used - ${product.condition}` : 'Used - Good Condition'}
+          yearRange={fitmentYear}
+          mileageRange="0-200,000 miles"
+        />
 
         {/* Parts History */}
         <PartsHistory partType={product.category} />
