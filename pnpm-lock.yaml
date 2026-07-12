@@ -152,6 +152,9 @@ importers:
       resend:
         specifier: ^6.17.2
         version: 6.17.2
+      server-only:
+        specifier: ^0.0.1
+        version: 0.0.1
       sharp:
         specifier: ^0.35.3
         version: 0.35.3(@types/node@22.19.11)
