@@ -56,9 +56,9 @@ export function AppleStylePartsSearch({
     return YEARS
   }, [selectedMake])
 
-  // Get available part types
+  // Get available part types - only Engine and Transmission
   const partTypes = useMemo(() => {
-    return PART_CATEGORIES.map((c) => c.label).sort()
+    return ['Engine', 'Transmission']
   }, [])
 
   function handleSearch() {
@@ -207,23 +207,23 @@ export function AppleStylePartsSearch({
             </div>
           </div>
 
-          {/* Search Button */}
-          <button
-            onClick={handleSearch}
-            className="w-full px-6 py-3.5 sm:py-4 bg-primary text-primary-foreground font-bold text-base rounded-xl hover:bg-primary/90 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
-          >
-            <Search className="w-5 h-5" />
-            Search Parts
-          </button>
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <button
+              onClick={handleSearch}
+              className="flex-1 px-6 py-3.5 sm:py-4 bg-primary text-primary-foreground font-bold text-base rounded-xl hover:bg-primary/90 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+            >
+              <Search className="w-5 h-5" />
+              Search Parts
+            </button>
+            <a
+              href="/quote"
+              className="flex-1 px-6 py-3.5 sm:py-4 bg-secondary text-secondary-foreground font-bold text-base rounded-xl hover:bg-secondary/90 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+            >
+              Request a Free Quote
+            </a>
+          </div>
         </div>
-
-        {/* Help text */}
-        <p className="text-center text-xs sm:text-sm text-muted-foreground mt-6">
-          Can&apos;t find what you&apos;re looking for?{' '}
-          <a href="/acura#free-quote" className="font-medium text-primary hover:underline">
-            Request a free quote
-          </a>
-        </p>
       </div>
     </div>
   )
