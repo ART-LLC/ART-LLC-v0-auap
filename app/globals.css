@@ -43,69 +43,69 @@ section.bg-background,
 }
 
 :root {
-  /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic ── */
-  --background: #3a3d44;
-  --history-panel: #080a0c;
-  --foreground: #eef1f8;
-  --card: #0f1117;
-  --card-foreground: #dce1f0;
-  --popover: #141820;
-  --popover-foreground: #dce1f0;
-  --primary: #b4bddc;
-  --primary-foreground: #080808;
-  --secondary: #1a1f2e;
-  --secondary-foreground: #b4bddc;
-  --muted: #16181f;
-  --muted-foreground: #6a7080;
-  --accent: #3a4555;
-  --accent-foreground: #dce1f0;
-  --destructive: #c84040;
+  /* ── Dark Blue Premium Theme with Bright Blue CTAs ── */
+  --background: #1e3a8a;
+  --history-panel: #0f1e3d;
+  --foreground: #ffffff;
+  --card: #1e3a8a;
+  --card-foreground: #ffffff;
+  --popover: #1e3a8a;
+  --popover-foreground: #ffffff;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #1e3a8a;
+  --secondary-foreground: #3b82f6;
+  --muted: #1e3a8a;
+  --muted-foreground: #90caf9;
+  --accent: #3b82f6;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #1f2230;
-  --input: #141820;
-  --ring: #b4bddc;
-  --chart-1: #3a4555;
-  --chart-2: #6a7080;
-  --chart-3: #dce1f0;
-  --chart-4: #4a5568;
-  --chart-5: #1f2230;
+  --border: #2563eb;
+  --input: #1e3a8a;
+  --ring: #3b82f6;
+  --chart-1: #3b82f6;
+  --chart-2: #60a5fa;
+  --chart-3: #93c5fd;
+  --chart-4: #bfdbfe;
+  --chart-5: #dbeafe;
   --radius: 0.5rem;
-  --sidebar: #080a0c;
-  --sidebar-foreground: #dce1f0;
-  --sidebar-primary: #3a4555;
-  --sidebar-primary-foreground: #dce1f0;
-  --sidebar-accent: #16181f;
-  --sidebar-accent-foreground: #dce1f0;
-  --sidebar-border: #1f2230;
-  --sidebar-ring: #3a4555;
+  --sidebar: #0f1e3d;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #3b82f6;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #2563eb;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #2563eb;
+  --sidebar-ring: #3b82f6;
 }
 
 /* ── Light mode overrides ────────────────────────────── */
-/* Metallic silver on light background — maintain brand aesthetic */
+/* Light blue theme with bright blue accents */
 .light {
-  --background: #f8f9fa;
-  --history-panel: #f0f2f6;
-  --foreground: #1a1f2e;
+  --background: #f0f4f8;
+  --history-panel: #e8ecf1;
+  --foreground: #1e3a8a;
   --card: #ffffff;
-  --card-foreground: #1a1f2e;
+  --card-foreground: #1e3a8a;
   --popover: #ffffff;
-  --popover-foreground: #1a1f2e;
-  --primary: #3a4555;
+  --popover-foreground: #1e3a8a;
+  --primary: #3b82f6;
   --primary-foreground: #ffffff;
-  --secondary: #e0e4f0;
-  --secondary-foreground: #1a1f2e;
-  --muted: #f0f2f6;
-  --muted-foreground: #5a6575;
-  --accent: #3a4555;
+  --secondary: #dbeafe;
+  --secondary-foreground: #1e3a8a;
+  --muted: #e8ecf1;
+  --muted-foreground: #2563eb;
+  --accent: #3b82f6;
   --accent-foreground: #ffffff;
-  --destructive: #b83025;
+  --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --border: #d0d4e0;
+  --border: #bfdbfe;
   --input: #ffffff;
-  --ring: #3a4555;
-  --sidebar: #f0f2f6;
-  --sidebar-foreground: #1a1f2e;
-  --sidebar-border: #d0d4e0;
+  --ring: #3b82f6;
+  --sidebar: #e8ecf1;
+  --sidebar-foreground: #1e3a8a;
+  --sidebar-border: #bfdbfe;
 }
 
 @theme inline {
@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─────────────────────────────────────────────────────────
    LIGHT MODE — GLOBAL BODY & PARAGRAPH READABILITY
    Ensures ALL text is dark and clearly legible on white/light bg
-   ──────────────────────────────────────────────────────── */
+   ─────────────────────────────────────��────────────────── */
 .light body {
   color: #0f1117;
 }

@@ -10,11 +10,11 @@ import { Search, MessageSquare, Phone, Mail, Cog, Settings2, Calendar } from "lu
 export function HeroSection() {
   return (
     <section className="relative pt-[58px] overflow-hidden ghost-scan-section hero-on-dark" style={{ paddingTop: "45px" }}>
-      {/* Background — grey base; photo carousel constrained to the top hero band */}
-      <div className="absolute inset-0 bg-[#3a3d44]">
+      {/* Background — dark blue base; photo carousel constrained to the top hero band */}
+      <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%)" }}>
         <div className="absolute top-0 inset-x-0 h-[820px] overflow-hidden">
           <HeroSlider />
-          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-[#3a3d44]" />
+          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent" style={{ backgroundColor: "transparent", backgroundImage: "linear-gradient(to bottom, transparent, #1e3a8a)" }} />
         </div>
         <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: "radial-gradient(circle, #e8e8e8 0%, transparent 70%)" }} />
         <GearBackground />
