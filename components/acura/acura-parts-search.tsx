@@ -7,10 +7,17 @@ import { Search, X, CornerDownLeft } from 'lucide-react'
 import { acuraProducts, getAcuraProductUrl, resolveAcuraImage, type AcuraProduct } from '@/lib/acura-data'
 
 interface AcuraPartsSearchProps {
-  /** Called with the committed search term (Enter or suggestion pick). Empty string clears search. */
-  onSearch: (query: string) => void
+  /**
+   * Called with the committed search term (Enter or suggestion pick). Empty string clears search.
+   * When omitted (e.g. on a product detail page), committing navigates to /acura?q=<query>.
+   */
+  onSearch?: (query: string) => void
   /** The currently committed query, controlled by the parent. */
-  activeQuery: string
+  activeQuery?: string
+  /** Visual size — "lg" for the hero search, "sm" for compact placement on detail pages. */
+  size?: 'lg' | 'sm'
+  /** Optional placeholder override. */
+  placeholder?: string
 }
 
 /** Build a lowercase haystack for a product so we can match name, model, category and fitment. */
@@ -21,9 +28,10 @@ function haystack(product: AcuraProduct): string {
     .toLowerCase()
 }
 
-export function AcuraPartsSearch({ onSearch, activeQuery }: AcuraPartsSearchProps) {
+export function AcuraPartsSearch({ onSearch, activeQuery = '', size = 'lg', placeholder }: AcuraPartsSearchProps) {
   const router = useRouter()
   const [input, setInput] = useState(activeQuery)
+  const isCompact = size === 'sm'
   const [open, setOpen] = useState(false)
   const [highlight, setHighlight] = useState(0)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -78,8 +86,14 @@ export function AcuraPartsSearch({ onSearch, activeQuery }: AcuraPartsSearchProp
   }, [trimmed])
 
   function commit(query: string) {
-    onSearch(query.trim())
+    const trimmedQuery = query.trim()
     setOpen(false)
+    if (onSearch) {
+      onSearch(trimmedQuery)
+    } else if (trimmedQuery) {
+      // No parent handler (detail page) — navigate to the Acura page results.
+      router.push(`/acura?q=${encodeURIComponent(trimmedQuery)}`)
+    }
   }
 
   function handleKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
@@ -125,19 +139,23 @@ export function AcuraPartsSearch({ onSearch, activeQuery }: AcuraPartsSearchProp
           }}
           onFocus={() => setOpen(true)}
           onKeyDown={handleKeyDown}
-          placeholder="Search Acura parts — try &quot;TL engine&quot; or &quot;MDX transmission&quot;"
-          className="h-14 w-full rounded-full border border-border bg-card pl-12 pr-28 text-base text-foreground shadow-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/30"
+          placeholder={placeholder ?? 'Search Acura parts — try "TL engine" or "MDX transmission"'}
+          className={`w-full rounded-full border border-border bg-card pl-12 text-foreground shadow-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/30 ${
+            isCompact ? 'h-11 pr-24 text-sm' : 'h-14 pr-28 text-base'
+          }`}
         />
         {input && (
           <button
             type="button"
             onClick={() => {
               setInput('')
-              onSearch('')
+              onSearch?.('')
               setOpen(false)
             }}
             aria-label="Clear search"
-            className="absolute right-24 flex h-8 w-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+            className={`absolute flex h-8 w-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground ${
+              isCompact ? 'right-[5.5rem]' : 'right-24'
+            }`}
           >
             <X className="h-4 w-4" />
           </button>

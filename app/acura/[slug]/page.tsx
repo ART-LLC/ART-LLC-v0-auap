@@ -16,6 +16,7 @@ import { PartsHistory } from '@/components/products/parts-history'
 import { PartRecommendations } from '@/components/ai/part-recommendations'
 import { getAcuraProductBySlug, getAcuraProductUrl, getRelatedAcuraProducts, resolveAcuraImage, getAcuraPartTypeLabel, getAcuraPartImageSearchUrl } from '@/lib/acura-data'
 import { getAcuraPartSpecs } from '@/lib/acura-part-specs'
+import { AcuraPartsSearch } from '@/components/acura/acura-parts-search'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight, ImageIcon, ExternalLink } from 'lucide-react'
 
 export default function AcuraProductPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -36,8 +37,42 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
   const imageSearchUrl = getAcuraPartImageSearchUrl(product)
   const fitmentYear = product.year || '1990-Present'
 
+  // Structured data so the part URL, image, and three mileage-based price tiers
+  // are indexed by search engines (Google Merchant / rich results).
+  const siteUrl = 'https://www.auapw.org'
+  const canonicalUrl = `${siteUrl}${getAcuraProductUrl(product)}`
+  const tiers = product.pricingTiers
+  const lowPrice = tiers ? Math.min(tiers.low ?? product.price, tiers.medium ?? product.price, tiers.high ?? product.price) : product.price
+  const highPrice = tiers ? Math.max(tiers.low ?? product.price, tiers.medium ?? product.price, tiers.high ?? product.price) : product.price
+  const structuredData = {
+    '@context': 'https://schema.org/',
+    '@type': 'Product',
+    name: product.name,
+    image: [productImage, imageSearchUrl],
+    description: product.description,
+    sku: product.mpn || product.id,
+    mpn: product.mpn || product.id,
+    brand: { '@type': 'Brand', name: product.brand || 'Acura' },
+    category: partTypeHeading,
+    url: canonicalUrl,
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      lowPrice,
+      highPrice,
+      offerCount: 3,
+      availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/UsedCondition',
+      url: canonicalUrl,
+    },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Navbar />
       <main>
         {/* Breadcrumb */}
@@ -190,6 +225,27 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                     <span>Fully tested</span>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Search another part + free quote */}
+        <section className="py-6 border-y border-border/50 bg-card/20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div className="min-w-0">
+                <h2 className="text-lg font-bold text-foreground">Looking for another Acura part?</h2>
+                <p className="text-sm text-muted-foreground">
+                  Search our full Acura catalog, or{' '}
+                  <Link href="/acura#free-quote" className="font-medium text-primary hover:underline">
+                    request a free quote
+                  </Link>{' '}
+                  if you can&apos;t find it.
+                </p>
+              </div>
+              <div className="w-full md:max-w-md">
+                <AcuraPartsSearch size="sm" placeholder="Search another Acura part…" />
               </div>
             </div>
           </div>

@@ -1,14 +1,15 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
 import { acuraGrouped, acuraProducts, getAcuraProductUrl, resolveAcuraImage, getAcuraPartTypeLabel, getAcuraPartImageSearchUrl, type AcuraProduct } from '@/lib/acura-data'
-import { ImageIcon, ExternalLink } from 'lucide-react'
+import { ImageIcon, ExternalLink, BadgeCheck } from 'lucide-react'
 import { ProductCardActions } from '@/components/products/product-card-actions'
 import { AcuraPartsSearch } from '@/components/acura/acura-parts-search'
+import { QuoteForm } from '@/components/quote-form'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 
@@ -40,6 +41,12 @@ export default function AcuraProductsPage() {
 
   // Search scoped strictly to the Acura catalog.
   const [searchQuery, setSearchQuery] = useState('')
+
+  // Seed the search from a ?q= param so detail-page searches land on results here.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get('q')
+    if (q) setSearchQuery(q)
+  }, [])
   const searchResults = useMemo(() => {
     const trimmed = searchQuery.trim().toLowerCase()
     if (!trimmed) return [] as AcuraProduct[]
@@ -248,6 +255,37 @@ export default function AcuraProductsPage() {
           </div>
         </div>
         )}
+
+        {/* Free quote request */}
+        <section id="free-quote" className="mt-16 scroll-mt-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <div>
+              <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-primary mb-4">
+                100% Free Quote
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-black text-foreground text-balance mb-4">
+                Can&apos;t find your exact Acura part? Get a free quote.
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Tell us the part, model, and year you need. Our team searches our 2,000+ yard
+                network and replies within 24 hours with verified pricing and availability —
+                no obligation, completely free.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-center gap-2">
+                  <BadgeCheck className="h-4 w-4 text-primary" /> Response within 24 hours
+                </li>
+                <li className="flex items-center gap-2">
+                  <BadgeCheck className="h-4 w-4 text-primary" /> Verified fitment &amp; mileage-based pricing
+                </li>
+                <li className="flex items-center gap-2">
+                  <BadgeCheck className="h-4 w-4 text-primary" /> 90-day warranty on every part
+                </li>
+              </ul>
+            </div>
+            <QuoteForm />
+          </div>
+        </section>
       </div>
       </main>
       <Footer />
