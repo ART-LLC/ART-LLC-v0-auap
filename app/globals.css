@@ -54,9 +54,9 @@ section.bg-background,
   --primary: #3b82f6;
   --primary-foreground: #ffffff;
   --secondary: #5a6370;
-  --secondary-foreground: #3b82f6;
+  --secondary-foreground: #ffffff;
   --muted: #4b5563;
-  --muted-foreground: #e5e7eb;
+  --muted-foreground: #d1d5db;
   --accent: #3b82f6;
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
@@ -95,7 +95,7 @@ section.bg-background,
   --secondary: #e5e7eb;
   --secondary-foreground: #1f2937;
   --muted: #e5e7eb;
-  --muted-foreground: #3b82f6;
+  --muted-foreground: #6b7280;
   --accent: #3b82f6;
   --accent-foreground: #ffffff;
   --destructive: #dc2626;
@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─────────────────────────────────────────────────────────
    LIGHT MODE — GLOBAL BODY & PARAGRAPH READABILITY
    Ensures ALL text is dark and clearly legible on white/light bg
-   ─────────────────────────────────────��─────────────��──── */
+   ─────────────────────────────────────��─────────────���──── */
 .light body {
   color: #0f1117;
 }
