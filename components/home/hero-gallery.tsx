@@ -23,6 +23,26 @@ export function HeroGallery() {
       image: '/images/hero-gallery/quality-testing.png',
       title: 'Quality Assured',
       description: 'Professional testing and verification ensure peak performance'
+    },
+    {
+      image: '/images/hero-gallery/parts-warehouse.png',
+      title: 'Organized Inventory',
+      description: 'Professionally managed warehouse with verified parts from trusted suppliers'
+    },
+    {
+      image: '/images/hero-gallery/customer-support.png',
+      title: '24/7 Customer Support',
+      description: 'Dedicated team ready to help with quotes, shipping, and technical questions'
+    },
+    {
+      image: '/images/hero-gallery/certified-inspection.png',
+      title: 'Certified Testing',
+      description: 'All parts meet quality standards with compression and functional verification'
+    },
+    {
+      image: '/images/hero-gallery/installation-support.png',
+      title: 'Professional Installation',
+      description: 'Expert guidance and technical support throughout your installation process'
     }
   ]
 
@@ -39,7 +59,7 @@ export function HeroGallery() {
           </p>
         </div>
 
-        {/* Gallery Grid */}
+        {/* Gallery Grid — Two rows of 4 items */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {galleryItems.map((item, index) => (
             <div
