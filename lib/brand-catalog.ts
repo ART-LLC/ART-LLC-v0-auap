@@ -212,7 +212,11 @@ export function getProductDisplayImage(
   brand: string,
   product: Pick<BrandProduct, "imageUrl" | "canonicalSlug" | "category">,
 ): ProductDisplayImage {
-  const generatedSrc = `/api/product-image/${brand}/${product.canonicalSlug}`
+  const apiIllustration = `/api/product-image/${brand}/${product.canonicalSlug}`
+  const categoryImage = getCategoryImage(brand, product)
+  // On-error fallback: prefer the branded studio photo over the abstract card
+  // so external photos that fail to load still show a real part image.
+  const generatedSrc = categoryImage ?? apiIllustration
   const unique = !!product.imageUrl && !getSharedImageUrls(brand).has(product.imageUrl)
 
   // Genuine one-of-a-kind photo: use it as-is.
@@ -221,30 +225,63 @@ export function getProductDisplayImage(
   }
 
   // Brand+category-matched professional photo, if one is accurate for this SKU.
-  const categoryImage = getCategoryImage(brand, product)
   return {
-    src: categoryImage ?? generatedSrc,
-    generatedSrc,
+    src: categoryImage ?? apiIllustration,
+    generatedSrc: apiIllustration,
     illustrative: true,
   }
 }
 
-/** Brands with a dedicated professional engine studio photo. */
+/** Brands with a dedicated professional engine studio photo (brand name shown in-image). */
 const ENGINE_IMAGE_FILES: Record<string, string> = {
   acura: "acura-engine.png",
+  audi: "audi-engine.png",
   bmw: "bmw-engine.png",
+  buick: "buick-engine.png",
+  cadillac: "cadillac-engine.png",
   chevrolet: "chevrolet-engine.png",
+  chrysler: "chrysler-engine.png",
+  dodge: "dodge-engine.png",
+  fiat: "fiat-engine.png",
   ford: "ford-engine.png",
   honda: "honda-engine.png",
+  isuzu: "isuzu-engine.png",
+  jaguar: "jaguar-engine.png",
+  jeep: "jeep-engine.png",
+  kia: "kia-engine.png",
+  "land-rover": "land-rover-engine.png",
+  lexus: "lexus-engine.png",
+  lincoln: "lincoln-engine.png",
+  mazda: "mazda-engine.png",
   "mercedes-benz": "mercedes-engine.png",
+  mitsubishi: "mitsubishi-engine.png",
   nissan: "nissan-engine.png",
+  suzuki: "suzuki-engine.png",
   toyota: "toyota-engine.png",
+  volvo: "volvo-engine.png",
+}
+
+/** Brands with a dedicated professional transmission studio photo (brand name shown in-image). */
+const TRANSMISSION_IMAGE_FILES: Record<string, string> = {
+  acura: "acura-transmission.png",
+  audi: "audi-transmission.png",
+  bmw: "bmw-transmission.png",
+  buick: "buick-transmission.png",
+  chevrolet: "chevrolet-transmission.png",
+  dodge: "dodge-transmission.png",
+  ford: "ford-transmission.png",
+  honda: "honda-transmission.png",
+  jeep: "jeep-transmission.png",
+  "mercedes-benz": "mercedes-benz-transmission.png",
+  nissan: "nissan-transmission.png",
+  toyota: "toyota-transmission.png",
 }
 
 /**
  * Professional studio photo matched to this SKU's brand and category.
- * Returns null when no accurate photo exists (never shows a wrong-brand
- * engine or an unrelated part photo).
+ * Brand-specific photos (with the brand name visible in the image) are
+ * preferred; otherwise a brand-neutral engine/transmission photo is used
+ * and the BrandProductImage overlay displays the brand name on every card.
  */
 function getCategoryImage(
   brand: string,
@@ -253,16 +290,23 @@ function getCategoryImage(
   const cat = (product.category || "").toLowerCase()
   const slug = (product.canonicalSlug || "").toLowerCase()
 
-  if (cat.includes("engine")) {
-    const file = ENGINE_IMAGE_FILES[brand]
-    return file ? `/product-images/engine/${file}` : null
-  }
+  // Transmission first: slugs like "...transmission - MT, EFI engine" mention
+  // the donor engine, so the transmission check must win over engine matching.
+  const isTransmission = cat.includes("transmission") || slug.includes("transmission")
+  const isEngine = !isTransmission && (cat.includes("engine") || slug.includes("engine"))
 
-  if (cat.includes("transmission") || slug.includes("transmission")) {
+  if (isTransmission) {
+    const brandFile = TRANSMISSION_IMAGE_FILES[brand]
+    if (brandFile) return `/product-images/transmission/${brandFile}`
     if (slug.includes("manual")) return "/product-images/transmission/manual-transmission.png"
     if (slug.includes("cvt")) return "/product-images/transmission/cvt-transmission.png"
     if (slug.includes("automatic")) return "/product-images/transmission/automatic-transmission.png"
     return "/product-images/transmission/transmission-generic.png"
+  }
+
+  if (isEngine) {
+    const file = ENGINE_IMAGE_FILES[brand]
+    return `/product-images/engine/${file || "generic-engine.png"}`
   }
 
   // Other categories: no accurate studio photo — use per-SKU illustration.
