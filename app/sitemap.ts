@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { PART_CATEGORIES, CAR_MAKES } from '@/lib/data'
 import { acuraProducts, getAcuraProductUrl } from '@/lib/acura-data'
+import { ACURA_MODEL_DIRECTORY } from '@/lib/acura-model-history'
 
 function slugify(text: string) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
@@ -59,19 +60,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Make pages
   const makePages = CAR_MAKES.map((make) => `/makes/${slugify(make)}`)
 
-  // All Acura product pages from the pricing sheet (used engines, used
-  // transmissions, and other parts) so Google indexes every product URL.
+  // Acura model guides and all product pages from the pricing sheet so Google
+  // can crawl every history hub, model index, engine, transmission, and part URL.
+  const acuraModelPages = ACURA_MODEL_DIRECTORY.map((model) => model.href)
   const acuraProductPages = acuraProducts.map((product) => getAcuraProductUrl(product))
 
-  // Combine all URLs
-  const allUrls = [
+  // De-duplicate the final route set so every canonical URL appears once.
+  const allUrls = [...new Set([
     ...mainPages,
     ...partsCategories,
     ...categoryPages,
     ...partPages,
     ...makePages,
+    ...acuraModelPages,
     ...acuraProductPages,
-  ]
+  ])]
 
   return allUrls.map((url) => ({
     url: `${baseUrl}${url}`,

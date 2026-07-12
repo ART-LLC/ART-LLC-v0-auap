@@ -10,7 +10,7 @@ import { ProductCardActions } from '@/components/products/product-card-actions'
 import { ProductFAQ } from '@/components/products/product-faq'
 import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
-import { PartsHistory } from '@/components/products/parts-history'
+import { AcuraModelHistoryIndex } from '@/components/acura/model-history-index'
 import Image from 'next/image'
 import { Search, Grid3x3, List } from 'lucide-react'
 import { acuraProducts, getAcuraProductUrl, resolveAcuraImage } from '@/lib/acura-data'
@@ -132,7 +132,7 @@ export default function AcuraRdxPage() {
         </section>
 
         <PartsDetails partType="Acura RDX" yearRange="2007-Present" mileageRange="0-200,000 miles" />
-        <PartsHistory partType="Acura RDX Part" />
+        <AcuraModelHistoryIndex modelSlug="rdx" products={rdxProducts} />
         <ShippingInfo />
         <ProductFAQ productType="Acura RDX Parts" />
       </main>
