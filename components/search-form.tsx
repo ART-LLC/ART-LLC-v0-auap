@@ -23,6 +23,7 @@ export function SearchForm({ compact = false }: SearchFormProps) {
   const [zip,   setZip]   = useState("")
 
   const [makeError, setMakeError] = useState<string | null>(null)
+  const [partError, setPartError] = useState<string | null>(null)
   const [zipError,  setZipError]  = useState<string | null>(null)
   const [submitted, setSubmitted] = useState(false)
 
@@ -37,6 +38,12 @@ export function SearchForm({ compact = false }: SearchFormProps) {
       return
     }
     setMakeError(null)
+
+    if (!part) {
+      setPartError("Please select a part type (Engine or Transmission).")
+      return
+    }
+    setPartError(null)
 
     const zipErr = zip && !ZIP_RE.test(zip) ? "ZIP code must be exactly 5 digits." : null
     setZipError(zipErr)
@@ -143,16 +150,30 @@ export function SearchForm({ compact = false }: SearchFormProps) {
             {/* Part Type */}
             <div className="flex flex-col gap-1.5">
               <label htmlFor="sf-part" className="text-[0.6rem] font-black tracking-[0.2em] uppercase text-muted-foreground">
-                Part Type
+                Part Type <span className="text-red-400" aria-hidden="true">*</span>
               </label>
-              <select id="sf-part" className={cls(false)} value={part} onChange={(e) => setPart(e.target.value)}>
-                <option value="">Select Part</option>
+              <select 
+                id="sf-part" 
+                className={cls(!!partError && submitted)}
+                value={part} 
+                onChange={(e) => { setPart(e.target.value); setPartError(null) }}
+                aria-required="true"
+                aria-invalid={!!partError}
+                aria-describedby={partError ? "sf-part-err" : undefined}
+              >
+                <option value="">Select Part Type</option>
                 {PART_CATEGORIES.map((cat) => (
                   <optgroup key={cat.id} label={cat.label}>
                     {cat.parts.map((p) => <option key={p} value={p}>{p}</option>)}
                   </optgroup>
                 ))}
               </select>
+              {partError && submitted && (
+                <p id="sf-part-err" role="alert" className="flex items-center gap-1 text-[11px] text-red-400">
+                  <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                  {partError}
+                </p>
+              )}
             </div>
 
           </div>
