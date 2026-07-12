@@ -30,10 +30,10 @@ export default function BrandsDirectoryPage() {
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
               <Link href="/" className="hover:text-primary transition-colors">Home</Link>
               <ChevronRight className="w-3 h-3" />
-              <span className="text-foreground font-medium">Brands</span>
+              <span className="text-foreground font-medium">Car Brands</span>
             </nav>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground text-balance">
-              Shop Used Parts by Brand
+              Shop Quality Auto Parts
             </h1>
             <p className="mt-3 max-w-2xl text-muted-foreground leading-relaxed">
               {totalParts.toLocaleString()}+ used OEM engines, transmissions, and parts priced directly
