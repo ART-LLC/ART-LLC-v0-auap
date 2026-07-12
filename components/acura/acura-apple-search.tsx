@@ -1,48 +1,51 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import { acuraProducts, type AcuraProduct } from '@/lib/acura-data'
+import { acuraProducts } from '@/lib/acura-data'
 
 interface AppleSearchProps {
   onSearch?: (query: string) => void
   activeQuery?: string
 }
 
-export function AppleStyleSearch({ onSearch, activeQuery = '' }: AppleSearchProps) {
-  const [make, setMake] = useState('')
+const selectClasses =
+  'w-full rounded-lg border border-border/50 bg-card px-4 py-3 text-base font-semibold text-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 disabled:opacity-50'
+
+/**
+ * Guided finder for the Acura catalog. Every part here is Acura, so the
+ * cascade is Model -> Year -> Part Type (no redundant "Make" step).
+ */
+export function AppleStyleSearch({ onSearch }: AppleSearchProps) {
   const [model, setModel] = useState('')
   const [year, setYear] = useState('')
   const [partType, setPartType] = useState('')
 
-  // Extract unique values for dropdowns
-  const makes = useMemo(() => {
-    const set = new Set(acuraProducts.map((p) => p.model?.split(' ')[0] || 'Acura').filter(Boolean))
-    return Array.from(set).sort()
-  }, [])
-
+  // Unique Acura models from the pricing sheet.
   const models = useMemo(() => {
-    if (!make) return []
-    const set = new Set(
-      acuraProducts
-        .filter((p) => p.model?.includes(make))
-        .map((p) => p.model)
-        .filter(Boolean),
-    )
+    const set = new Set(acuraProducts.map((p) => p.model).filter(Boolean))
     return Array.from(set).sort()
-  }, [make])
+  }, [])
 
+  // Years narrowed by the selected model so impossible combos never show.
   const years = useMemo(() => {
-    const set = new Set(acuraProducts.map((p) => p.year).filter(Boolean))
+    const source = model ? acuraProducts.filter((p) => p.model === model) : acuraProducts
+    const set = new Set(source.map((p) => p.year).filter(Boolean))
     return Array.from(set).sort((a, b) => Number(b) - Number(a))
-  }, [])
+  }, [model])
 
+  // Part types narrowed by model + year.
   const partTypes = useMemo(() => {
-    const set = new Set(acuraProducts.map((p: AcuraProduct) => p.category).filter(Boolean))
+    const source = acuraProducts.filter(
+      (p) => (!model || p.model === model) && (!year || String(p.year) === year),
+    )
+    const set = new Set(source.map((p) => p.category).filter(Boolean))
     return Array.from(set).sort()
-  }, [])
+  }, [model, year])
+
+  const canSearch = Boolean(model || year || partType)
 
   function handleSearch() {
-    const query = [make, model, year, partType].filter(Boolean).join(' ')
+    const query = [year, model, partType].filter(Boolean).join(' ')
     if (query.trim() && onSearch) {
       onSearch(query)
     }
@@ -57,42 +60,27 @@ export function AppleStyleSearch({ onSearch, activeQuery = '' }: AppleSearchProp
   return (
     <div className="w-full">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        {/* Grid layout with 2 rows and responsive columns */}
-        <div className="space-y-4">
-          {/* Row 1: Make and Model */}
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="flex flex-col gap-4">
+          {/* Model / Year / Part Needed */}
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <div>
-              <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                Make *
-              </label>
-              <select
-                value={make}
-                onChange={(e) => {
-                  setMake(e.target.value)
-                  setModel('')
-                }}
-                className="w-full rounded-lg border border-border/50 bg-card px-4 py-3 text-base font-semibold text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+              <label
+                htmlFor="acura-finder-model"
+                className="mb-2 block text-xs font-semibold uppercase tracking-wide text-muted-foreground"
               >
-                <option value="">Select Make</option>
-                {makes.map((m) => (
-                  <option key={m} value={m}>
-                    {m}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div>
-              <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                Model
+                Model *
               </label>
               <select
+                id="acura-finder-model"
                 value={model}
-                onChange={(e) => setModel(e.target.value)}
-                disabled={!make}
-                className="w-full rounded-lg border border-border/50 bg-card px-4 py-3 text-base font-semibold text-foreground placeholder:text-muted-foreground disabled:opacity-50 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+                onChange={(e) => {
+                  setModel(e.target.value)
+                  setYear('')
+                  setPartType('')
+                }}
+                className={selectClasses}
               >
-                <option value="">{make ? 'Select Model' : 'Select Make First'}</option>
+                <option value="">Select Model</option>
                 {models.map((m) => (
                   <option key={m} value={m}>
                     {m}
@@ -100,21 +88,22 @@ export function AppleStyleSearch({ onSearch, activeQuery = '' }: AppleSearchProp
                 ))}
               </select>
             </div>
-          </div>
 
-          {/* Row 2: Year and Part Needed */}
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div>
-              <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              <label
+                htmlFor="acura-finder-year"
+                className="mb-2 block text-xs font-semibold uppercase tracking-wide text-muted-foreground"
+              >
                 Year
               </label>
               <select
+                id="acura-finder-year"
                 value={year}
                 onChange={(e) => setYear(e.target.value)}
                 onKeyDown={handleKeyDown}
-                className="w-full rounded-lg border border-border/50 bg-card px-4 py-3 text-base font-semibold text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+                className={selectClasses}
               >
-                <option value="">Select Year</option>
+                <option value="">All Years</option>
                 {years.map((y) => (
                   <option key={y} value={y}>
                     {y}
@@ -124,16 +113,20 @@ export function AppleStyleSearch({ onSearch, activeQuery = '' }: AppleSearchProp
             </div>
 
             <div>
-              <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              <label
+                htmlFor="acura-finder-part"
+                className="mb-2 block text-xs font-semibold uppercase tracking-wide text-muted-foreground"
+              >
                 Part Needed
               </label>
               <select
+                id="acura-finder-part"
                 value={partType}
                 onChange={(e) => setPartType(e.target.value)}
                 onKeyDown={handleKeyDown}
-                className="w-full rounded-lg border border-border/50 bg-card px-4 py-3 text-base font-semibold text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+                className={selectClasses}
               >
-                <option value="">Select Part Type</option>
+                <option value="">All Part Types</option>
                 {partTypes.map((p) => (
                   <option key={p} value={p}>
                     {p}
@@ -147,7 +140,7 @@ export function AppleStyleSearch({ onSearch, activeQuery = '' }: AppleSearchProp
           <div className="flex justify-center pt-2">
             <button
               onClick={handleSearch}
-              disabled={!make}
+              disabled={!canSearch}
               className="rounded-lg bg-primary px-8 py-3 text-sm font-bold uppercase tracking-wide text-primary-foreground transition-opacity disabled:opacity-50 hover:opacity-90"
             >
               Search Parts
