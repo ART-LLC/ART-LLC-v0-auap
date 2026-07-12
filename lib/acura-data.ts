@@ -69,9 +69,14 @@ export function getCanonicalAcuraSlug(product: Pick<RawAcuraProduct, "slug" | "i
   return `${base}-${product.id.toLowerCase()}`
 }
 
+// Displayed prices carry a 15% markup over the reference sheet values.
+const PRICE_MARKUP = 1.15
+
 function clampPrice(price: number | undefined): number | undefined {
   if (typeof price !== "number" || !Number.isFinite(price)) return undefined
-  return Math.min(1400, Math.max(40, Math.round(price)))
+  // Clamp to the display range first, then apply the 15% markup.
+  const clamped = Math.min(1400, Math.max(40, price))
+  return Math.round(clamped * PRICE_MARKUP)
 }
 
 function normalizeProduct(product: RawAcuraProduct): AcuraProduct {
