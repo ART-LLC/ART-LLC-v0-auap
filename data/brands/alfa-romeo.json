@@ -2,3364 +2,2209 @@
   "brand": "alfa-romeo",
   "products": [
     {
-      "id": "ALF-1",
-      "mpn": "ALF-1",
+      "id": "P-1",
+      "mpn": "P-1",
       "name": "1991 Alfa 164 Sedan Engine - Sport, model VIN 3E (7th and 8th digits)",
-      "slug": "1991-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits-0",
-      "canonicalSlug": "1991-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits-0",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1991-alfa-164-sedan-sport-model-vin-3e-7th-and-8th-digits",
+      "category": "engine",
       "year": "1991",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1991 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: Sport, model VIN 3E (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-alfa-164-sedan-sport-model-vin-3e-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-1",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-1",
+      "compatibility": "",
+      "canonicalSlug": "1991-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits",
+      "slug": "1991-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits"
     },
     {
-      "id": "ALF-2",
-      "mpn": "ALF-2",
+      "id": "P-2",
+      "mpn": "P-2",
       "name": "1991 Alfa 164 Sedan Engine - Sport, model VIN 3R (7th and 8th digits)",
-      "slug": "1991-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits-1",
-      "canonicalSlug": "1991-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits-1",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1991-alfa-164-sedan-sport-model-vin-3r-7th-and-8th-digits",
+      "category": "engine",
       "year": "1991",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1991 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: Sport, model VIN 3R (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-alfa-164-sedan-sport-model-vin-3r-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-2",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-2",
+      "compatibility": "",
+      "canonicalSlug": "1991-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits",
+      "slug": "1991-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits"
     },
     {
-      "id": "ALF-3",
-      "mpn": "ALF-3",
+      "id": "P-3",
+      "mpn": "P-3",
       "name": "1991 Alfa 164 Sedan Engine - exc. Sport; model VIN 3A (7th and 8th digits)",
-      "slug": "1991-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits-2",
-      "canonicalSlug": "1991-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits-2",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1991-alfa-164-sedan-exc.-sport;-model-vin-3a-7th-and-8th-digits",
+      "category": "engine",
       "year": "1991",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1991 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: exc. Sport; model VIN 3A (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-alfa-164-sedan-exc.-sport;-model-vin-3a-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-3",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-3",
+      "compatibility": "",
+      "canonicalSlug": "1991-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits",
+      "slug": "1991-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits"
     },
     {
-      "id": "ALF-4",
-      "mpn": "ALF-4",
+      "id": "P-4",
+      "mpn": "P-4",
       "name": "1991 Alfa 164 Sedan Engine - exc. Sport; model VIN 3L (7th and 8th digits)",
-      "slug": "1991-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits-3",
-      "canonicalSlug": "1991-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits-3",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1222,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1320
-        },
-        {
-          "mileage": "Medium",
-          "price": 1222
-        },
-        {
-          "mileage": "High",
-          "price": 1014
-        }
-      ],
+      "tiers": {
+        "low": 1320,
+        "medium": 1222,
+        "high": 1014
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1991-alfa-164-sedan-exc.-sport;-model-vin-3l-7th-and-8th-digits",
+      "category": "engine",
       "year": "1991",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1991 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: exc. Sport; model VIN 3L (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-alfa-164-sedan-exc.-sport;-model-vin-3l-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-4",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-4",
+      "compatibility": "",
+      "canonicalSlug": "1991-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits",
+      "slug": "1991-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits"
     },
     {
-      "id": "ALF-5",
-      "mpn": "ALF-5",
+      "id": "P-5",
+      "mpn": "P-5",
       "name": "1992 Alfa 164 Sedan Engine - Sport, model VIN 3E (7th and 8th digits)",
-      "slug": "1992-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits-4",
-      "canonicalSlug": "1992-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits-4",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1992-alfa-164-sedan-sport-model-vin-3e-7th-and-8th-digits",
+      "category": "engine",
       "year": "1992",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1992 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: Sport, model VIN 3E (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-alfa-164-sedan-sport-model-vin-3e-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-5",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-5",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits",
+      "slug": "1992-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits"
     },
     {
-      "id": "ALF-6",
-      "mpn": "ALF-6",
+      "id": "P-6",
+      "mpn": "P-6",
       "name": "1992 Alfa 164 Sedan Engine - Sport, model VIN 3R (7th and 8th digits)",
-      "slug": "1992-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits-5",
-      "canonicalSlug": "1992-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits-5",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1992-alfa-164-sedan-sport-model-vin-3r-7th-and-8th-digits",
+      "category": "engine",
       "year": "1992",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1992 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: Sport, model VIN 3R (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-alfa-164-sedan-sport-model-vin-3r-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-6",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-6",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits",
+      "slug": "1992-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits"
     },
     {
-      "id": "ALF-7",
-      "mpn": "ALF-7",
+      "id": "P-7",
+      "mpn": "P-7",
       "name": "1992 Alfa 164 Sedan Engine - exc. Sport; model VIN 3A (7th and 8th digits)",
-      "slug": "1992-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits-6",
-      "canonicalSlug": "1992-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits-6",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1992-alfa-164-sedan-exc.-sport;-model-vin-3a-7th-and-8th-digits",
+      "category": "engine",
       "year": "1992",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1992 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: exc. Sport; model VIN 3A (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-alfa-164-sedan-exc.-sport;-model-vin-3a-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-7",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-7",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits",
+      "slug": "1992-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits"
     },
     {
-      "id": "ALF-8",
-      "mpn": "ALF-8",
+      "id": "P-8",
+      "mpn": "P-8",
       "name": "1992 Alfa 164 Sedan Engine - exc. Sport; model VIN 3L (7th and 8th digits)",
-      "slug": "1992-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits-7",
-      "canonicalSlug": "1992-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits-7",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1222,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1320
-        },
-        {
-          "mileage": "Medium",
-          "price": 1222
-        },
-        {
-          "mileage": "High",
-          "price": 1014
-        }
-      ],
+      "tiers": {
+        "low": 1320,
+        "medium": 1222,
+        "high": 1014
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1992-alfa-164-sedan-exc.-sport;-model-vin-3l-7th-and-8th-digits",
+      "category": "engine",
       "year": "1992",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1992 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: exc. Sport; model VIN 3L (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-alfa-164-sedan-exc.-sport;-model-vin-3l-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-8",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-8",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits",
+      "slug": "1992-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits"
     },
     {
-      "id": "ALF-9",
-      "mpn": "ALF-9",
+      "id": "P-9",
+      "mpn": "P-9",
       "name": "1993 Alfa 164 Sedan Engine - Sport, model VIN 3E (7th and 8th digits)",
-      "slug": "1993-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits-8",
-      "canonicalSlug": "1993-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits-8",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1993-alfa-164-sedan-sport-model-vin-3e-7th-and-8th-digits",
+      "category": "engine",
       "year": "1993",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1993 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: Sport, model VIN 3E (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1993-alfa-164-sedan-sport-model-vin-3e-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-9",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-9",
+      "compatibility": "",
+      "canonicalSlug": "1993-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits",
+      "slug": "1993-alfa-164-sedan-engine-sport-model-vin-3e-7th-and-8th-digits"
     },
     {
-      "id": "ALF-10",
-      "mpn": "ALF-10",
+      "id": "P-10",
+      "mpn": "P-10",
       "name": "1993 Alfa 164 Sedan Engine - Sport, model VIN 3R (7th and 8th digits)",
-      "slug": "1993-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits-9",
-      "canonicalSlug": "1993-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits-9",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1327,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1433
-        },
-        {
-          "mileage": "Medium",
-          "price": 1327
-        },
-        {
-          "mileage": "High",
-          "price": 1101
-        }
-      ],
+      "tiers": {
+        "low": 1433,
+        "medium": 1327,
+        "high": 1101
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1993-alfa-164-sedan-sport-model-vin-3r-7th-and-8th-digits",
+      "category": "engine",
       "year": "1993",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1993 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: Sport, model VIN 3R (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1993-alfa-164-sedan-sport-model-vin-3r-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-10",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-10",
+      "compatibility": "",
+      "canonicalSlug": "1993-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits",
+      "slug": "1993-alfa-164-sedan-engine-sport-model-vin-3r-7th-and-8th-digits"
     },
     {
-      "id": "ALF-11",
-      "mpn": "ALF-11",
+      "id": "P-11",
+      "mpn": "P-11",
       "name": "1993 Alfa 164 Sedan Engine - exc. Sport; model VIN 3A (7th and 8th digits)",
-      "slug": "1993-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits-10",
-      "canonicalSlug": "1993-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits-10",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1993-alfa-164-sedan-exc.-sport;-model-vin-3a-7th-and-8th-digits",
+      "category": "engine",
       "year": "1993",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1993 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: exc. Sport; model VIN 3A (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1993-alfa-164-sedan-exc.-sport;-model-vin-3a-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-11",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-11",
+      "compatibility": "",
+      "canonicalSlug": "1993-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits",
+      "slug": "1993-alfa-164-sedan-engine-exc-sport-model-vin-3a-7th-and-8th-digits"
     },
     {
-      "id": "ALF-12",
-      "mpn": "ALF-12",
+      "id": "P-12",
+      "mpn": "P-12",
       "name": "1993 Alfa 164 Sedan Engine - exc. Sport; model VIN 3L (7th and 8th digits)",
-      "slug": "1993-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits-11",
-      "canonicalSlug": "1993-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits-11",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1222,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1320
-        },
-        {
-          "mileage": "Medium",
-          "price": 1222
-        },
-        {
-          "mileage": "High",
-          "price": 1014
-        }
-      ],
+      "tiers": {
+        "low": 1320,
+        "medium": 1222,
+        "high": 1014
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1993-alfa-164-sedan-exc.-sport;-model-vin-3l-7th-and-8th-digits",
+      "category": "engine",
       "year": "1993",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1993 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: exc. Sport; model VIN 3L (7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1993-alfa-164-sedan-exc.-sport;-model-vin-3l-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-12",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-12",
+      "compatibility": "",
+      "canonicalSlug": "1993-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits",
+      "slug": "1993-alfa-164-sedan-engine-exc-sport-model-vin-3l-7th-and-8th-digits"
     },
     {
-      "id": "ALF-13",
-      "mpn": "ALF-13",
+      "id": "P-13",
+      "mpn": "P-13",
       "name": "1994 Alfa 164 Sedan Engine - LS (VIN 3E, 7th and 8th digits)",
-      "slug": "1994-alfa-164-sedan-engine-ls-vin-3e-7th-and-8th-digits-12",
-      "canonicalSlug": "1994-alfa-164-sedan-engine-ls-vin-3e-7th-and-8th-digits-12",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1994-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1994-alfa-164-sedan-ls-vin-3e-7th-and-8th-digits",
+      "category": "engine",
       "year": "1994",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1994-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1994 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: LS (VIN 3E, 7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1994-alfa-164-sedan-ls-vin-3e-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-13",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-13",
+      "compatibility": "",
+      "canonicalSlug": "1994-alfa-164-sedan-engine-ls-vin-3e-7th-and-8th-digits",
+      "slug": "1994-alfa-164-sedan-engine-ls-vin-3e-7th-and-8th-digits"
     },
     {
-      "id": "ALF-14",
-      "mpn": "ALF-14",
+      "id": "P-14",
+      "mpn": "P-14",
       "name": "1995 Alfa 164 Sedan Engine - LS (VIN 3E, 7th and 8th digits)",
-      "slug": "1995-alfa-164-sedan-engine-ls-vin-3e-7th-and-8th-digits-13",
-      "canonicalSlug": "1995-alfa-164-sedan-engine-ls-vin-3e-7th-and-8th-digits-13",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1259,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1360
-        },
-        {
-          "mileage": "Medium",
-          "price": 1259
-        },
-        {
-          "mileage": "High",
-          "price": 1045
-        }
-      ],
+      "tiers": {
+        "low": 1360,
+        "medium": 1259,
+        "high": 1045
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1995-alfa-164-sedan-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1995-alfa-164-sedan-ls-vin-3e-7th-and-8th-digits",
+      "category": "engine",
       "year": "1995",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/engines/1995-alfa-164-sedan-engine-side.jpg",
       "description": "Premium quality used engine for 1995 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: LS (VIN 3E, 7th and 8th digits). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1995-alfa-164-sedan-ls-vin-3e-7th-and-8th-digits Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-14",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-14",
+      "compatibility": "",
+      "canonicalSlug": "1995-alfa-164-sedan-engine-ls-vin-3e-7th-and-8th-digits",
+      "slug": "1995-alfa-164-sedan-engine-ls-vin-3e-7th-and-8th-digits"
     },
     {
-      "id": "ALF-15",
-      "mpn": "ALF-15",
+      "id": "P-15",
+      "mpn": "P-15",
       "name": "1975 Alfa Alfetta Engine - (4 Dr, Sdn)",
-      "slug": "1975-alfa-alfetta-engine-4-dr-sdn-14",
-      "canonicalSlug": "1975-alfa-alfetta-engine-4-dr-sdn-14",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1975-alfa-alfetta-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1975-alfa-alfetta-4-dr-sdn",
+      "category": "engine",
       "year": "1975",
       "model": "Alfetta Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1975-alfa-alfetta-engine-side.jpg",
       "description": "Premium quality used engine for 1975 Alfa Alfetta. Complete assembly ready for installation. Configuration: (4 Dr, Sdn). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1975-alfa-alfetta-4-dr-sdn Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-15",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-15",
+      "compatibility": "",
+      "canonicalSlug": "1975-alfa-alfetta-engine-4-dr-sdn",
+      "slug": "1975-alfa-alfetta-engine-4-dr-sdn"
     },
     {
-      "id": "ALF-16",
-      "mpn": "ALF-16",
+      "id": "P-16",
+      "mpn": "P-16",
       "name": "1976 Alfa Alfetta Engine - (4 Dr, Sdn)",
-      "slug": "1976-alfa-alfetta-engine-4-dr-sdn-15",
-      "canonicalSlug": "1976-alfa-alfetta-engine-4-dr-sdn-15",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1976-alfa-alfetta-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1976-alfa-alfetta-4-dr-sdn",
+      "category": "engine",
       "year": "1976",
       "model": "Alfetta Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1976-alfa-alfetta-engine-side.jpg",
       "description": "Premium quality used engine for 1976 Alfa Alfetta. Complete assembly ready for installation. Configuration: (4 Dr, Sdn). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1976-alfa-alfetta-4-dr-sdn Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-16",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-16",
+      "compatibility": "",
+      "canonicalSlug": "1976-alfa-alfetta-engine-4-dr-sdn",
+      "slug": "1976-alfa-alfetta-engine-4-dr-sdn"
     },
     {
-      "id": "ALF-17",
-      "mpn": "ALF-17",
+      "id": "P-17",
+      "mpn": "P-17",
       "name": "1977 Alfa Alfetta Engine - (4 Dr, Sdn)",
-      "slug": "1977-alfa-alfetta-engine-4-dr-sdn-16",
-      "canonicalSlug": "1977-alfa-alfetta-engine-4-dr-sdn-16",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1977-alfa-alfetta-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1977-alfa-alfetta-4-dr-sdn",
+      "category": "engine",
       "year": "1977",
       "model": "Alfetta Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1977-alfa-alfetta-engine-side.jpg",
       "description": "Premium quality used engine for 1977 Alfa Alfetta. Complete assembly ready for installation. Configuration: (4 Dr, Sdn). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1977-alfa-alfetta-4-dr-sdn Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-17",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-17",
+      "compatibility": "",
+      "canonicalSlug": "1977-alfa-alfetta-engine-4-dr-sdn",
+      "slug": "1977-alfa-alfetta-engine-4-dr-sdn"
     },
     {
-      "id": "ALF-18",
-      "mpn": "ALF-18",
+      "id": "P-18",
+      "mpn": "P-18",
       "name": "1978 Alfa Alfetta Engine - (4 Dr, Sdn)",
-      "slug": "1978-alfa-alfetta-engine-4-dr-sdn-17",
-      "canonicalSlug": "1978-alfa-alfetta-engine-4-dr-sdn-17",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1978-alfa-alfetta-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1978-alfa-alfetta-4-dr-sdn",
+      "category": "engine",
       "year": "1978",
       "model": "Alfetta Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1978-alfa-alfetta-engine-side.jpg",
       "description": "Premium quality used engine for 1978 Alfa Alfetta. Complete assembly ready for installation. Configuration: (4 Dr, Sdn). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1978-alfa-alfetta-4-dr-sdn Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-18",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-18",
+      "compatibility": "",
+      "canonicalSlug": "1978-alfa-alfetta-engine-4-dr-sdn",
+      "slug": "1978-alfa-alfetta-engine-4-dr-sdn"
     },
     {
-      "id": "ALF-19",
-      "mpn": "ALF-19",
+      "id": "P-19",
+      "mpn": "P-19",
       "name": "1979 Alfa Alfetta Engine - (4 Dr, Sdn)",
-      "slug": "1979-alfa-alfetta-engine-4-dr-sdn-18",
-      "canonicalSlug": "1979-alfa-alfetta-engine-4-dr-sdn-18",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1979-alfa-alfetta-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1979-alfa-alfetta-4-dr-sdn",
+      "category": "engine",
       "year": "1979",
       "model": "Alfetta Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1979-alfa-alfetta-engine-side.jpg",
       "description": "Premium quality used engine for 1979 Alfa Alfetta. Complete assembly ready for installation. Configuration: (4 Dr, Sdn). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1979-alfa-alfetta-4-dr-sdn Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-19",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-19",
+      "compatibility": "",
+      "canonicalSlug": "1979-alfa-alfetta-engine-4-dr-sdn",
+      "slug": "1979-alfa-alfetta-engine-4-dr-sdn"
     },
     {
-      "id": "ALF-20",
-      "mpn": "ALF-20",
+      "id": "P-20",
+      "mpn": "P-20",
       "name": "2017 Alfa Giulia Engine - 2.0L, (VIN N, 8th digit, turbo)",
-      "slug": "2017-alfa-giulia-engine-20l-vin-n-8th-digit-turbo-19",
-      "canonicalSlug": "2017-alfa-giulia-engine-20l-vin-n-8th-digit-turbo-19",
-      "brand": "Alfa",
-      "category": "part",
       "price": 4249,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 4589
-        },
-        {
-          "mileage": "Medium",
-          "price": 4249
-        },
-        {
-          "mileage": "High",
-          "price": 3527
-        }
-      ],
+      "tiers": {
+        "low": 4589,
+        "medium": 4249,
+        "high": 3527
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2017-alfa-giulia-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2017-alfa-giulia-2.0l-vin-n-8th-digit-turbo",
+      "category": "engine",
       "year": "2017",
       "model": "Giulia Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/2017-alfa-giulia-engine-side.jpg",
       "description": "Premium quality used engine for 2017 Alfa Giulia. Complete assembly ready for installation. Configuration: 2.0L, (VIN N, 8th digit, turbo). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2017-alfa-giulia-2.0l-vin-n-8th-digit-turbo Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-20",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-20",
+      "compatibility": "",
+      "canonicalSlug": "2017-alfa-giulia-engine-2-0l-vin-n-8th-digit-turbo",
+      "slug": "2017-alfa-giulia-engine-2-0l-vin-n-8th-digit-turbo"
     },
     {
-      "id": "ALF-21",
-      "mpn": "ALF-21",
+      "id": "P-21",
+      "mpn": "P-21",
       "name": "2017 Alfa Giulia Engine - 2.9L, (VIN V, 8th digit, turbo)",
-      "slug": "2017-alfa-giulia-engine-29l-vin-v-8th-digit-turbo-20",
-      "canonicalSlug": "2017-alfa-giulia-engine-29l-vin-v-8th-digit-turbo-20",
-      "brand": "Alfa",
-      "category": "part",
       "price": 10745,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 11605
-        },
-        {
-          "mileage": "Medium",
-          "price": 10745
-        },
-        {
-          "mileage": "High",
-          "price": 8918
-        }
-      ],
+      "tiers": {
+        "low": 11605,
+        "medium": 10745,
+        "high": 8918
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/2017-alfa-giulia-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-2017-alfa-giulia-2.9l-vin-v-8th-digit-turbo",
+      "category": "engine",
       "year": "2017",
       "model": "Giulia Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/2017-alfa-giulia-engine-side.jpg",
       "description": "Premium quality used engine for 2017 Alfa Giulia. Complete assembly ready for installation. Configuration: 2.9L, (VIN V, 8th digit, turbo). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-2017-alfa-giulia-2.9l-vin-v-8th-digit-turbo Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-21",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-21",
+      "compatibility": "",
+      "canonicalSlug": "2017-alfa-giulia-engine-2-9l-vin-v-8th-digit-turbo",
+      "slug": "2017-alfa-giulia-engine-2-9l-vin-v-8th-digit-turbo"
     },
     {
-      "id": "ALF-22",
-      "mpn": "ALF-22",
+      "id": "P-22",
+      "mpn": "P-22",
       "name": "1981 Alfa GTV6 Engine - Direct",
-      "slug": "1981-alfa-gtv6-engine-direct-21",
-      "canonicalSlug": "1981-alfa-gtv6-engine-direct-21",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2224,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2401
-        },
-        {
-          "mileage": "Medium",
-          "price": 2224
-        },
-        {
-          "mileage": "High",
-          "price": 1846
-        }
-      ],
+      "tiers": {
+        "low": 2401,
+        "medium": 2224,
+        "high": 1846
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1981-alfa-gtv6-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1981-alfa-gtv6-direct",
+      "category": "engine",
       "year": "1981",
       "model": "GTV6 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1981-alfa-gtv6-engine-side.jpg",
       "description": "Premium quality used engine for 1981 Alfa GTV6. Complete assembly ready for installation. Configuration: Direct. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1981-alfa-gtv6-direct Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-22",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-22",
+      "compatibility": "",
+      "canonicalSlug": "1981-alfa-gtv6-engine-direct",
+      "slug": "1981-alfa-gtv6-engine-direct"
     },
     {
-      "id": "ALF-23",
-      "mpn": "ALF-23",
+      "id": "P-23",
+      "mpn": "P-23",
       "name": "1982 Alfa GTV6 Engine - Direct",
-      "slug": "1982-alfa-gtv6-engine-direct-22",
-      "canonicalSlug": "1982-alfa-gtv6-engine-direct-22",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2224,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2401
-        },
-        {
-          "mileage": "Medium",
-          "price": 2224
-        },
-        {
-          "mileage": "High",
-          "price": 1846
-        }
-      ],
+      "tiers": {
+        "low": 2401,
+        "medium": 2224,
+        "high": 1846
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1982-alfa-gtv6-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1982-alfa-gtv6-direct",
+      "category": "engine",
       "year": "1982",
       "model": "GTV6 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1982-alfa-gtv6-engine-side.jpg",
       "description": "Premium quality used engine for 1982 Alfa GTV6. Complete assembly ready for installation. Configuration: Direct. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1982-alfa-gtv6-direct Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-23",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-23",
+      "compatibility": "",
+      "canonicalSlug": "1982-alfa-gtv6-engine-direct",
+      "slug": "1982-alfa-gtv6-engine-direct"
     },
     {
-      "id": "ALF-24",
-      "mpn": "ALF-24",
+      "id": "P-24",
+      "mpn": "P-24",
       "name": "1983 Alfa GTV6 Engine - Direct",
-      "slug": "1983-alfa-gtv6-engine-direct-23",
-      "canonicalSlug": "1983-alfa-gtv6-engine-direct-23",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2224,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2401
-        },
-        {
-          "mileage": "Medium",
-          "price": 2224
-        },
-        {
-          "mileage": "High",
-          "price": 1846
-        }
-      ],
+      "tiers": {
+        "low": 2401,
+        "medium": 2224,
+        "high": 1846
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1983-alfa-gtv6-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1983-alfa-gtv6-direct",
+      "category": "engine",
       "year": "1983",
       "model": "GTV6 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1983-alfa-gtv6-engine-side.jpg",
       "description": "Premium quality used engine for 1983 Alfa GTV6. Complete assembly ready for installation. Configuration: Direct. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1983-alfa-gtv6-direct Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-24",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-24",
+      "compatibility": "",
+      "canonicalSlug": "1983-alfa-gtv6-engine-direct",
+      "slug": "1983-alfa-gtv6-engine-direct"
     },
     {
-      "id": "ALF-25",
-      "mpn": "ALF-25",
+      "id": "P-25",
+      "mpn": "P-25",
       "name": "1984 Alfa GTV6 Engine - Direct",
-      "slug": "1984-alfa-gtv6-engine-direct-24",
-      "canonicalSlug": "1984-alfa-gtv6-engine-direct-24",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2224,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2401
-        },
-        {
-          "mileage": "Medium",
-          "price": 2224
-        },
-        {
-          "mileage": "High",
-          "price": 1846
-        }
-      ],
+      "tiers": {
+        "low": 2401,
+        "medium": 2224,
+        "high": 1846
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1984-alfa-gtv6-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1984-alfa-gtv6-direct",
+      "category": "engine",
       "year": "1984",
       "model": "GTV6 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1984-alfa-gtv6-engine-side.jpg",
       "description": "Premium quality used engine for 1984 Alfa GTV6. Complete assembly ready for installation. Configuration: Direct. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1984-alfa-gtv6-direct Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-25",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-25",
+      "compatibility": "",
+      "canonicalSlug": "1984-alfa-gtv6-engine-direct",
+      "slug": "1984-alfa-gtv6-engine-direct"
     },
     {
-      "id": "ALF-26",
-      "mpn": "ALF-26",
+      "id": "P-26",
+      "mpn": "P-26",
       "name": "1985 Alfa GTV6 Engine - Direct",
-      "slug": "1985-alfa-gtv6-engine-direct-25",
-      "canonicalSlug": "1985-alfa-gtv6-engine-direct-25",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2224,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2401
-        },
-        {
-          "mileage": "Medium",
-          "price": 2224
-        },
-        {
-          "mileage": "High",
-          "price": 1846
-        }
-      ],
+      "tiers": {
+        "low": 2401,
+        "medium": 2224,
+        "high": 1846
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1985-alfa-gtv6-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1985-alfa-gtv6-direct",
+      "category": "engine",
       "year": "1985",
       "model": "GTV6 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1985-alfa-gtv6-engine-side.jpg",
       "description": "Premium quality used engine for 1985 Alfa GTV6. Complete assembly ready for installation. Configuration: Direct. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1985-alfa-gtv6-direct Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-26",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-26",
+      "compatibility": "",
+      "canonicalSlug": "1985-alfa-gtv6-engine-direct",
+      "slug": "1985-alfa-gtv6-engine-direct"
     },
     {
-      "id": "ALF-27",
-      "mpn": "ALF-27",
+      "id": "P-27",
+      "mpn": "P-27",
       "name": "1986 Alfa GTV6 Engine - Direct",
-      "slug": "1986-alfa-gtv6-engine-direct-26",
-      "canonicalSlug": "1986-alfa-gtv6-engine-direct-26",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2224,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2401
-        },
-        {
-          "mileage": "Medium",
-          "price": 2224
-        },
-        {
-          "mileage": "High",
-          "price": 1846
-        }
-      ],
+      "tiers": {
+        "low": 2401,
+        "medium": 2224,
+        "high": 1846
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1986-alfa-gtv6-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1986-alfa-gtv6-direct",
+      "category": "engine",
       "year": "1986",
       "model": "GTV6 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1986-alfa-gtv6-engine-side.jpg",
       "description": "Premium quality used engine for 1986 Alfa GTV6. Complete assembly ready for installation. Configuration: Direct. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1986-alfa-gtv6-direct Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-27",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-27",
+      "compatibility": "",
+      "canonicalSlug": "1986-alfa-gtv6-engine-direct",
+      "slug": "1986-alfa-gtv6-engine-direct"
     },
     {
-      "id": "ALF-28",
-      "mpn": "ALF-28",
+      "id": "P-28",
+      "mpn": "P-28",
       "name": "1987 Alfa Milano Engine - 2.5L",
-      "slug": "1987-alfa-milano-engine-25l-27",
-      "canonicalSlug": "1987-alfa-milano-engine-25l-27",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2194,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2369
-        },
-        {
-          "mileage": "Medium",
-          "price": 2194
-        },
-        {
-          "mileage": "High",
-          "price": 1821
-        }
-      ],
+      "tiers": {
+        "low": 2369,
+        "medium": 2194,
+        "high": 1821
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1987-alfa-milano-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1987-alfa-milano-2.5l",
+      "category": "engine",
       "year": "1987",
       "model": "Milano Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1987-alfa-milano-engine-side.jpg",
       "description": "Premium quality used engine for 1987 Alfa Milano. Complete assembly ready for installation. Configuration: 2.5L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1987-alfa-milano-2.5l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-28",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-28",
+      "compatibility": "",
+      "canonicalSlug": "1987-alfa-milano-engine-2-5l",
+      "slug": "1987-alfa-milano-engine-2-5l"
     },
     {
-      "id": "ALF-29",
-      "mpn": "ALF-29",
+      "id": "P-29",
+      "mpn": "P-29",
       "name": "1988 Alfa Milano Engine - 2.5L",
-      "slug": "1988-alfa-milano-engine-25l-28",
-      "canonicalSlug": "1988-alfa-milano-engine-25l-28",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2194,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2369
-        },
-        {
-          "mileage": "Medium",
-          "price": 2194
-        },
-        {
-          "mileage": "High",
-          "price": 1821
-        }
-      ],
+      "tiers": {
+        "low": 2369,
+        "medium": 2194,
+        "high": 1821
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1988-alfa-milano-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1988-alfa-milano-2.5l",
+      "category": "engine",
       "year": "1988",
       "model": "Milano Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1988-alfa-milano-engine-side.jpg",
       "description": "Premium quality used engine for 1988 Alfa Milano. Complete assembly ready for installation. Configuration: 2.5L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1988-alfa-milano-2.5l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-29",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-29",
+      "compatibility": "",
+      "canonicalSlug": "1988-alfa-milano-engine-2-5l",
+      "slug": "1988-alfa-milano-engine-2-5l"
     },
     {
-      "id": "ALF-30",
-      "mpn": "ALF-30",
+      "id": "P-30",
+      "mpn": "P-30",
       "name": "1989 Alfa Milano Engine - 2.5L",
-      "slug": "1989-alfa-milano-engine-25l-29",
-      "canonicalSlug": "1989-alfa-milano-engine-25l-29",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2194,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2369
-        },
-        {
-          "mileage": "Medium",
-          "price": 2194
-        },
-        {
-          "mileage": "High",
-          "price": 1821
-        }
-      ],
+      "tiers": {
+        "low": 2369,
+        "medium": 2194,
+        "high": 1821
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1989-alfa-milano-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1989-alfa-milano-2.5l",
+      "category": "engine",
       "year": "1989",
       "model": "Milano Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1989-alfa-milano-engine-side.jpg",
       "description": "Premium quality used engine for 1989 Alfa Milano. Complete assembly ready for installation. Configuration: 2.5L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1989-alfa-milano-2.5l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-30",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-30",
+      "compatibility": "",
+      "canonicalSlug": "1989-alfa-milano-engine-2-5l",
+      "slug": "1989-alfa-milano-engine-2-5l"
     },
     {
-      "id": "ALF-31",
-      "mpn": "ALF-31",
+      "id": "P-31",
+      "mpn": "P-31",
       "name": "1972 Alfa Spider-2000 Engine - (2 Dr), Conv",
-      "slug": "1972-alfa-spider-2000-engine-2-dr-conv-30",
-      "canonicalSlug": "1972-alfa-spider-2000-engine-2-dr-conv-30",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1972-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1972-alfa-spider-2000-2-dr-conv",
+      "category": "engine",
       "year": "1972",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1972-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1972 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Conv. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1972-alfa-spider-2000-2-dr-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-31",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-31",
+      "compatibility": "",
+      "canonicalSlug": "1972-alfa-spider-2000-engine-2-dr-conv",
+      "slug": "1972-alfa-spider-2000-engine-2-dr-conv"
     },
     {
-      "id": "ALF-32",
-      "mpn": "ALF-32",
+      "id": "P-32",
+      "mpn": "P-32",
       "name": "1972 Alfa Spider-2000 Engine - (2 Dr), Cpe",
-      "slug": "1972-alfa-spider-2000-engine-2-dr-cpe-31",
-      "canonicalSlug": "1972-alfa-spider-2000-engine-2-dr-cpe-31",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1969,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2127
-        },
-        {
-          "mileage": "Medium",
-          "price": 1969
-        },
-        {
-          "mileage": "High",
-          "price": 1635
-        }
-      ],
+      "tiers": {
+        "low": 2127,
+        "medium": 1969,
+        "high": 1635
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1972-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1972-alfa-spider-2000-2-dr-cpe",
+      "category": "engine",
       "year": "1972",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1972-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1972 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Cpe. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1972-alfa-spider-2000-2-dr-cpe Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-32",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-32",
+      "compatibility": "",
+      "canonicalSlug": "1972-alfa-spider-2000-engine-2-dr-cpe",
+      "slug": "1972-alfa-spider-2000-engine-2-dr-cpe"
     },
     {
-      "id": "ALF-33",
-      "mpn": "ALF-33",
+      "id": "P-33",
+      "mpn": "P-33",
       "name": "1973 Alfa Spider-2000 Engine - (2 Dr), Conv",
-      "slug": "1973-alfa-spider-2000-engine-2-dr-conv-32",
-      "canonicalSlug": "1973-alfa-spider-2000-engine-2-dr-conv-32",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1973-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1973-alfa-spider-2000-2-dr-conv",
+      "category": "engine",
       "year": "1973",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1973-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1973 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Conv. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1973-alfa-spider-2000-2-dr-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-33",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-33",
+      "compatibility": "",
+      "canonicalSlug": "1973-alfa-spider-2000-engine-2-dr-conv",
+      "slug": "1973-alfa-spider-2000-engine-2-dr-conv"
     },
     {
-      "id": "ALF-34",
-      "mpn": "ALF-34",
+      "id": "P-34",
+      "mpn": "P-34",
       "name": "1973 Alfa Spider-2000 Engine - (2 Dr), Cpe",
-      "slug": "1973-alfa-spider-2000-engine-2-dr-cpe-33",
-      "canonicalSlug": "1973-alfa-spider-2000-engine-2-dr-cpe-33",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1969,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2127
-        },
-        {
-          "mileage": "Medium",
-          "price": 1969
-        },
-        {
-          "mileage": "High",
-          "price": 1635
-        }
-      ],
+      "tiers": {
+        "low": 2127,
+        "medium": 1969,
+        "high": 1635
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1973-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1973-alfa-spider-2000-2-dr-cpe",
+      "category": "engine",
       "year": "1973",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1973-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1973 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Cpe. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1973-alfa-spider-2000-2-dr-cpe Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-34",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-34",
+      "compatibility": "",
+      "canonicalSlug": "1973-alfa-spider-2000-engine-2-dr-cpe",
+      "slug": "1973-alfa-spider-2000-engine-2-dr-cpe"
     },
     {
-      "id": "ALF-35",
-      "mpn": "ALF-35",
+      "id": "P-35",
+      "mpn": "P-35",
       "name": "1974 Alfa Spider-2000 Engine - (2 Dr), Conv",
-      "slug": "1974-alfa-spider-2000-engine-2-dr-conv-34",
-      "canonicalSlug": "1974-alfa-spider-2000-engine-2-dr-conv-34",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1974-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1974-alfa-spider-2000-2-dr-conv",
+      "category": "engine",
       "year": "1974",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1974-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1974 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Conv. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1974-alfa-spider-2000-2-dr-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-35",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-35",
+      "compatibility": "",
+      "canonicalSlug": "1974-alfa-spider-2000-engine-2-dr-conv",
+      "slug": "1974-alfa-spider-2000-engine-2-dr-conv"
     },
     {
-      "id": "ALF-36",
-      "mpn": "ALF-36",
+      "id": "P-36",
+      "mpn": "P-36",
       "name": "1974 Alfa Spider-2000 Engine - (2 Dr), Cpe",
-      "slug": "1974-alfa-spider-2000-engine-2-dr-cpe-35",
-      "canonicalSlug": "1974-alfa-spider-2000-engine-2-dr-cpe-35",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1969,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2127
-        },
-        {
-          "mileage": "Medium",
-          "price": 1969
-        },
-        {
-          "mileage": "High",
-          "price": 1635
-        }
-      ],
+      "tiers": {
+        "low": 2127,
+        "medium": 1969,
+        "high": 1635
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1974-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1974-alfa-spider-2000-2-dr-cpe",
+      "category": "engine",
       "year": "1974",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1974-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1974 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Cpe. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1974-alfa-spider-2000-2-dr-cpe Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-36",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-36",
+      "compatibility": "",
+      "canonicalSlug": "1974-alfa-spider-2000-engine-2-dr-cpe",
+      "slug": "1974-alfa-spider-2000-engine-2-dr-cpe"
     },
     {
-      "id": "ALF-37",
-      "mpn": "ALF-37",
+      "id": "P-37",
+      "mpn": "P-37",
       "name": "1975 Alfa Spider-2000 Engine - (2 Dr), Conv",
-      "slug": "1975-alfa-spider-2000-engine-2-dr-conv-36",
-      "canonicalSlug": "1975-alfa-spider-2000-engine-2-dr-conv-36",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1975-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1975-alfa-spider-2000-2-dr-conv",
+      "category": "engine",
       "year": "1975",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1975-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1975 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Conv. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1975-alfa-spider-2000-2-dr-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-37",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-37",
+      "compatibility": "",
+      "canonicalSlug": "1975-alfa-spider-2000-engine-2-dr-conv",
+      "slug": "1975-alfa-spider-2000-engine-2-dr-conv"
     },
     {
-      "id": "ALF-38",
-      "mpn": "ALF-38",
+      "id": "P-38",
+      "mpn": "P-38",
       "name": "1975 Alfa Spider-2000 Engine - (2 Dr), Cpe",
-      "slug": "1975-alfa-spider-2000-engine-2-dr-cpe-37",
-      "canonicalSlug": "1975-alfa-spider-2000-engine-2-dr-cpe-37",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1969,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2127
-        },
-        {
-          "mileage": "Medium",
-          "price": 1969
-        },
-        {
-          "mileage": "High",
-          "price": 1635
-        }
-      ],
+      "tiers": {
+        "low": 2127,
+        "medium": 1969,
+        "high": 1635
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1975-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1975-alfa-spider-2000-2-dr-cpe",
+      "category": "engine",
       "year": "1975",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1975-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1975 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Cpe. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1975-alfa-spider-2000-2-dr-cpe Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-38",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-38",
+      "compatibility": "",
+      "canonicalSlug": "1975-alfa-spider-2000-engine-2-dr-cpe",
+      "slug": "1975-alfa-spider-2000-engine-2-dr-cpe"
     },
     {
-      "id": "ALF-39",
-      "mpn": "ALF-39",
+      "id": "P-39",
+      "mpn": "P-39",
       "name": "1976 Alfa Spider-2000 Engine - (2 Dr), Conv",
-      "slug": "1976-alfa-spider-2000-engine-2-dr-conv-38",
-      "canonicalSlug": "1976-alfa-spider-2000-engine-2-dr-conv-38",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1976-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1976-alfa-spider-2000-2-dr-conv",
+      "category": "engine",
       "year": "1976",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1976-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1976 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Conv. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1976-alfa-spider-2000-2-dr-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-39",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-39",
+      "compatibility": "",
+      "canonicalSlug": "1976-alfa-spider-2000-engine-2-dr-conv",
+      "slug": "1976-alfa-spider-2000-engine-2-dr-conv"
     },
     {
-      "id": "ALF-40",
-      "mpn": "ALF-40",
+      "id": "P-40",
+      "mpn": "P-40",
       "name": "1976 Alfa Spider-2000 Engine - (2 Dr), Cpe",
-      "slug": "1976-alfa-spider-2000-engine-2-dr-cpe-39",
-      "canonicalSlug": "1976-alfa-spider-2000-engine-2-dr-cpe-39",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1969,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2127
-        },
-        {
-          "mileage": "Medium",
-          "price": 1969
-        },
-        {
-          "mileage": "High",
-          "price": 1635
-        }
-      ],
+      "tiers": {
+        "low": 2127,
+        "medium": 1969,
+        "high": 1635
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1976-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1976-alfa-spider-2000-2-dr-cpe",
+      "category": "engine",
       "year": "1976",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1976-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1976 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Cpe. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1976-alfa-spider-2000-2-dr-cpe Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-40",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-40",
+      "compatibility": "",
+      "canonicalSlug": "1976-alfa-spider-2000-engine-2-dr-cpe",
+      "slug": "1976-alfa-spider-2000-engine-2-dr-cpe"
     },
     {
-      "id": "ALF-41",
-      "mpn": "ALF-41",
+      "id": "P-41",
+      "mpn": "P-41",
       "name": "1977 Alfa Spider-2000 Engine - (2 Dr), Conv",
-      "slug": "1977-alfa-spider-2000-engine-2-dr-conv-40",
-      "canonicalSlug": "1977-alfa-spider-2000-engine-2-dr-conv-40",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1977-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1977-alfa-spider-2000-2-dr-conv",
+      "category": "engine",
       "year": "1977",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1977-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1977 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Conv. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1977-alfa-spider-2000-2-dr-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-41",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-41",
+      "compatibility": "",
+      "canonicalSlug": "1977-alfa-spider-2000-engine-2-dr-conv",
+      "slug": "1977-alfa-spider-2000-engine-2-dr-conv"
     },
     {
-      "id": "ALF-42",
-      "mpn": "ALF-42",
+      "id": "P-42",
+      "mpn": "P-42",
       "name": "1977 Alfa Spider-2000 Engine - (2 Dr), Cpe",
-      "slug": "1977-alfa-spider-2000-engine-2-dr-cpe-41",
-      "canonicalSlug": "1977-alfa-spider-2000-engine-2-dr-cpe-41",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1969,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2127
-        },
-        {
-          "mileage": "Medium",
-          "price": 1969
-        },
-        {
-          "mileage": "High",
-          "price": 1635
-        }
-      ],
+      "tiers": {
+        "low": 2127,
+        "medium": 1969,
+        "high": 1635
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1977-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1977-alfa-spider-2000-2-dr-cpe",
+      "category": "engine",
       "year": "1977",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1977-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1977 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Cpe. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1977-alfa-spider-2000-2-dr-cpe Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-42",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-42",
+      "compatibility": "",
+      "canonicalSlug": "1977-alfa-spider-2000-engine-2-dr-cpe",
+      "slug": "1977-alfa-spider-2000-engine-2-dr-cpe"
     },
     {
-      "id": "ALF-43",
-      "mpn": "ALF-43",
+      "id": "P-43",
+      "mpn": "P-43",
       "name": "1978 Alfa Spider-2000 Engine - (2 Dr), Conv",
-      "slug": "1978-alfa-spider-2000-engine-2-dr-conv-42",
-      "canonicalSlug": "1978-alfa-spider-2000-engine-2-dr-conv-42",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1978-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1978-alfa-spider-2000-2-dr-conv",
+      "category": "engine",
       "year": "1978",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1978-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1978 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Conv. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1978-alfa-spider-2000-2-dr-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-43",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-43",
+      "compatibility": "",
+      "canonicalSlug": "1978-alfa-spider-2000-engine-2-dr-conv",
+      "slug": "1978-alfa-spider-2000-engine-2-dr-conv"
     },
     {
-      "id": "ALF-44",
-      "mpn": "ALF-44",
+      "id": "P-44",
+      "mpn": "P-44",
       "name": "1978 Alfa Spider-2000 Engine - (2 Dr), Cpe",
-      "slug": "1978-alfa-spider-2000-engine-2-dr-cpe-43",
-      "canonicalSlug": "1978-alfa-spider-2000-engine-2-dr-cpe-43",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1969,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2127
-        },
-        {
-          "mileage": "Medium",
-          "price": 1969
-        },
-        {
-          "mileage": "High",
-          "price": 1635
-        }
-      ],
+      "tiers": {
+        "low": 2127,
+        "medium": 1969,
+        "high": 1635
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1978-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1978-alfa-spider-2000-2-dr-cpe",
+      "category": "engine",
       "year": "1978",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1978-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1978 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Cpe. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1978-alfa-spider-2000-2-dr-cpe Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-44",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-44",
+      "compatibility": "",
+      "canonicalSlug": "1978-alfa-spider-2000-engine-2-dr-cpe",
+      "slug": "1978-alfa-spider-2000-engine-2-dr-cpe"
     },
     {
-      "id": "ALF-45",
-      "mpn": "ALF-45",
+      "id": "P-45",
+      "mpn": "P-45",
       "name": "1979 Alfa Spider-2000 Engine - (2 Dr), Conv",
-      "slug": "1979-alfa-spider-2000-engine-2-dr-conv-44",
-      "canonicalSlug": "1979-alfa-spider-2000-engine-2-dr-conv-44",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1979-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1979-alfa-spider-2000-2-dr-conv",
+      "category": "engine",
       "year": "1979",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1979-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1979 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Conv. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1979-alfa-spider-2000-2-dr-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-45",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-45",
+      "compatibility": "",
+      "canonicalSlug": "1979-alfa-spider-2000-engine-2-dr-conv",
+      "slug": "1979-alfa-spider-2000-engine-2-dr-conv"
     },
     {
-      "id": "ALF-46",
-      "mpn": "ALF-46",
+      "id": "P-46",
+      "mpn": "P-46",
       "name": "1979 Alfa Spider-2000 Engine - (2 Dr), Cpe",
-      "slug": "1979-alfa-spider-2000-engine-2-dr-cpe-45",
-      "canonicalSlug": "1979-alfa-spider-2000-engine-2-dr-cpe-45",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1969,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2127
-        },
-        {
-          "mileage": "Medium",
-          "price": 1969
-        },
-        {
-          "mileage": "High",
-          "price": 1635
-        }
-      ],
+      "tiers": {
+        "low": 2127,
+        "medium": 1969,
+        "high": 1635
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1979-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1979-alfa-spider-2000-2-dr-cpe",
+      "category": "engine",
       "year": "1979",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1979-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1979 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2 Dr), Cpe. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1979-alfa-spider-2000-2-dr-cpe Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-46",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-46",
+      "compatibility": "",
+      "canonicalSlug": "1979-alfa-spider-2000-engine-2-dr-cpe",
+      "slug": "1979-alfa-spider-2000-engine-2-dr-cpe"
     },
     {
-      "id": "ALF-47",
-      "mpn": "ALF-47",
+      "id": "P-47",
+      "mpn": "P-47",
       "name": "1980 Alfa Spider-2000 Engine - (2.0L, Conv)",
-      "slug": "1980-alfa-spider-2000-engine-20l-conv-46",
-      "canonicalSlug": "1980-alfa-spider-2000-engine-20l-conv-46",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1980-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1980-alfa-spider-2000-2.0l-conv",
+      "category": "engine",
       "year": "1980",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1980-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1980 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1980-alfa-spider-2000-2.0l-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-47",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-47",
+      "compatibility": "",
+      "canonicalSlug": "1980-alfa-spider-2000-engine-2-0l-conv",
+      "slug": "1980-alfa-spider-2000-engine-2-0l-conv"
     },
     {
-      "id": "ALF-48",
-      "mpn": "ALF-48",
+      "id": "P-48",
+      "mpn": "P-48",
       "name": "1981 Alfa Spider-2000 Engine - (2.0L, VIN 2, 7th digit, Conv)",
-      "slug": "1981-alfa-spider-2000-engine-20l-vin-2-7th-digit-conv-47",
-      "canonicalSlug": "1981-alfa-spider-2000-engine-20l-vin-2-7th-digit-conv-47",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2074,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2240
-        },
-        {
-          "mileage": "Medium",
-          "price": 2074
-        },
-        {
-          "mileage": "High",
-          "price": 1721
-        }
-      ],
+      "tiers": {
+        "low": 2240,
+        "medium": 2074,
+        "high": 1721
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1981-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1981-alfa-spider-2000-2.0l-vin-2-7th-digit-conv",
+      "category": "engine",
       "year": "1981",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1981-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1981 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, VIN 2, 7th digit, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1981-alfa-spider-2000-2.0l-vin-2-7th-digit-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-48",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-48",
+      "compatibility": "",
+      "canonicalSlug": "1981-alfa-spider-2000-engine-2-0l-vin-2-7th-digit-conv",
+      "slug": "1981-alfa-spider-2000-engine-2-0l-vin-2-7th-digit-conv"
     },
     {
-      "id": "ALF-49",
-      "mpn": "ALF-49",
+      "id": "P-49",
+      "mpn": "P-49",
       "name": "1982 Alfa Spider-2000 Engine - (2.0L, Conv)",
-      "slug": "1982-alfa-spider-2000-engine-20l-conv-48",
-      "canonicalSlug": "1982-alfa-spider-2000-engine-20l-conv-48",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1982-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1982-alfa-spider-2000-2.0l-conv",
+      "category": "engine",
       "year": "1982",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1982-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1982 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1982-alfa-spider-2000-2.0l-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-49",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-49",
+      "compatibility": "",
+      "canonicalSlug": "1982-alfa-spider-2000-engine-2-0l-conv",
+      "slug": "1982-alfa-spider-2000-engine-2-0l-conv"
     },
     {
-      "id": "ALF-50",
-      "mpn": "ALF-50",
+      "id": "P-50",
+      "mpn": "P-50",
       "name": "1983 Alfa Spider-2000 Engine - (2.0L, Conv)",
-      "slug": "1983-alfa-spider-2000-engine-20l-conv-49",
-      "canonicalSlug": "1983-alfa-spider-2000-engine-20l-conv-49",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1983-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1983-alfa-spider-2000-2.0l-conv",
+      "category": "engine",
       "year": "1983",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1983-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1983 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1983-alfa-spider-2000-2.0l-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-50",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-50",
+      "compatibility": "",
+      "canonicalSlug": "1983-alfa-spider-2000-engine-2-0l-conv",
+      "slug": "1983-alfa-spider-2000-engine-2-0l-conv"
     },
     {
-      "id": "ALF-51",
-      "mpn": "ALF-51",
+      "id": "P-51",
+      "mpn": "P-51",
       "name": "1984 Alfa Spider-2000 Engine - (2.0L, Conv)",
-      "slug": "1984-alfa-spider-2000-engine-20l-conv-50",
-      "canonicalSlug": "1984-alfa-spider-2000-engine-20l-conv-50",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1984-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1984-alfa-spider-2000-2.0l-conv",
+      "category": "engine",
       "year": "1984",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1984-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1984 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1984-alfa-spider-2000-2.0l-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-51",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-51",
+      "compatibility": "",
+      "canonicalSlug": "1984-alfa-spider-2000-engine-2-0l-conv",
+      "slug": "1984-alfa-spider-2000-engine-2-0l-conv"
     },
     {
-      "id": "ALF-52",
-      "mpn": "ALF-52",
+      "id": "P-52",
+      "mpn": "P-52",
       "name": "1985 Alfa Spider-2000 Engine - (2.0L, Conv)",
-      "slug": "1985-alfa-spider-2000-engine-20l-conv-51",
-      "canonicalSlug": "1985-alfa-spider-2000-engine-20l-conv-51",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1985-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1985-alfa-spider-2000-2.0l-conv",
+      "category": "engine",
       "year": "1985",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1985-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1985 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1985-alfa-spider-2000-2.0l-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-52",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-52",
+      "compatibility": "",
+      "canonicalSlug": "1985-alfa-spider-2000-engine-2-0l-conv",
+      "slug": "1985-alfa-spider-2000-engine-2-0l-conv"
     },
     {
-      "id": "ALF-53",
-      "mpn": "ALF-53",
+      "id": "P-53",
+      "mpn": "P-53",
       "name": "1986 Alfa Spider-2000 Engine - (2.0L, Conv)",
-      "slug": "1986-alfa-spider-2000-engine-20l-conv-52",
-      "canonicalSlug": "1986-alfa-spider-2000-engine-20l-conv-52",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1986-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1986-alfa-spider-2000-2.0l-conv",
+      "category": "engine",
       "year": "1986",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1986-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1986 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1986-alfa-spider-2000-2.0l-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-53",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-53",
+      "compatibility": "",
+      "canonicalSlug": "1986-alfa-spider-2000-engine-2-0l-conv",
+      "slug": "1986-alfa-spider-2000-engine-2-0l-conv"
     },
     {
-      "id": "ALF-54",
-      "mpn": "ALF-54",
+      "id": "P-54",
+      "mpn": "P-54",
       "name": "1987 Alfa Spider-2000 Engine - (2.0L, Conv)",
-      "slug": "1987-alfa-spider-2000-engine-20l-conv-53",
-      "canonicalSlug": "1987-alfa-spider-2000-engine-20l-conv-53",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1987-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1987-alfa-spider-2000-2.0l-conv",
+      "category": "engine",
       "year": "1987",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1987-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1987 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1987-alfa-spider-2000-2.0l-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-54",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-54",
+      "compatibility": "",
+      "canonicalSlug": "1987-alfa-spider-2000-engine-2-0l-conv",
+      "slug": "1987-alfa-spider-2000-engine-2-0l-conv"
     },
     {
-      "id": "ALF-55",
-      "mpn": "ALF-55",
+      "id": "P-55",
+      "mpn": "P-55",
       "name": "1988 Alfa Spider-2000 Engine - (2.0L, Conv)",
-      "slug": "1988-alfa-spider-2000-engine-20l-conv-54",
-      "canonicalSlug": "1988-alfa-spider-2000-engine-20l-conv-54",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1988-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1988-alfa-spider-2000-2.0l-conv",
+      "category": "engine",
       "year": "1988",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1988-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1988 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1988-alfa-spider-2000-2.0l-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-55",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-55",
+      "compatibility": "",
+      "canonicalSlug": "1988-alfa-spider-2000-engine-2-0l-conv",
+      "slug": "1988-alfa-spider-2000-engine-2-0l-conv"
     },
     {
-      "id": "ALF-56",
-      "mpn": "ALF-56",
+      "id": "P-56",
+      "mpn": "P-56",
       "name": "1989 Alfa Spider-2000 Engine - (2.0L, Conv)",
-      "slug": "1989-alfa-spider-2000-engine-20l-conv-55",
-      "canonicalSlug": "1989-alfa-spider-2000-engine-20l-conv-55",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1775,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1917
-        },
-        {
-          "mileage": "Medium",
-          "price": 1775
-        },
-        {
-          "mileage": "High",
-          "price": 1473
-        }
-      ],
+      "tiers": {
+        "low": 1917,
+        "medium": 1775,
+        "high": 1473
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1989-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1989-alfa-spider-2000-2.0l-conv",
+      "category": "engine",
       "year": "1989",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1989-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1989 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1989-alfa-spider-2000-2.0l-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-56",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-56",
+      "compatibility": "",
+      "canonicalSlug": "1989-alfa-spider-2000-engine-2-0l-conv",
+      "slug": "1989-alfa-spider-2000-engine-2-0l-conv"
     },
     {
-      "id": "ALF-57",
-      "mpn": "ALF-57",
+      "id": "P-57",
+      "mpn": "P-57",
       "name": "1990 Alfa Spider-2000 Engine - (2.0L, VIN 2, 7th digit, Conv)",
-      "slug": "1990-alfa-spider-2000-engine-20l-vin-2-7th-digit-conv-56",
-      "canonicalSlug": "1990-alfa-spider-2000-engine-20l-vin-2-7th-digit-conv-56",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2074,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2240
-        },
-        {
-          "mileage": "Medium",
-          "price": 2074
-        },
-        {
-          "mileage": "High",
-          "price": 1721
-        }
-      ],
+      "tiers": {
+        "low": 2240,
+        "medium": 2074,
+        "high": 1721
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1990-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1990-alfa-spider-2000-2.0l-vin-2-7th-digit-conv",
+      "category": "engine",
       "year": "1990",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1990-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1990 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, VIN 2, 7th digit, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1990-alfa-spider-2000-2.0l-vin-2-7th-digit-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-57",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-57",
+      "compatibility": "",
+      "canonicalSlug": "1990-alfa-spider-2000-engine-2-0l-vin-2-7th-digit-conv",
+      "slug": "1990-alfa-spider-2000-engine-2-0l-vin-2-7th-digit-conv"
     },
     {
-      "id": "ALF-58",
-      "mpn": "ALF-58",
+      "id": "P-58",
+      "mpn": "P-58",
       "name": "1991 Alfa Spider-2000 Engine - (2.0L, VIN 2, 7th digit, Conv)",
-      "slug": "1991-alfa-spider-2000-engine-20l-vin-2-7th-digit-conv-57",
-      "canonicalSlug": "1991-alfa-spider-2000-engine-20l-vin-2-7th-digit-conv-57",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2074,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2240
-        },
-        {
-          "mileage": "Medium",
-          "price": 2074
-        },
-        {
-          "mileage": "High",
-          "price": 1721
-        }
-      ],
-      "year": "1991",
-      "model": "Spider-2000 Engine",
+      "tiers": {
+        "low": 2240,
+        "medium": 2074,
+        "high": 1721
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1991-alfa-spider-2000-2.0l-vin-2-7th-digit-conv",
+      "category": "engine",
+      "year": "1991",
+      "model": "Spider-2000 Engine",
       "description": "Premium quality used engine for 1991 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, VIN 2, 7th digit, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1991-alfa-spider-2000-2.0l-vin-2-7th-digit-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-58",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-58",
+      "compatibility": "",
+      "canonicalSlug": "1991-alfa-spider-2000-engine-2-0l-vin-2-7th-digit-conv",
+      "slug": "1991-alfa-spider-2000-engine-2-0l-vin-2-7th-digit-conv"
     },
     {
-      "id": "ALF-59",
-      "mpn": "ALF-59",
+      "id": "P-59",
+      "mpn": "P-59",
       "name": "1992 Alfa Spider-2000 Engine - (2.0L, VIN 2, 7th digit, Conv)",
-      "slug": "1992-alfa-spider-2000-engine-20l-vin-2-7th-digit-conv-58",
-      "canonicalSlug": "1992-alfa-spider-2000-engine-20l-vin-2-7th-digit-conv-58",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2074,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2240
-        },
-        {
-          "mileage": "Medium",
-          "price": 2074
-        },
-        {
-          "mileage": "High",
-          "price": 1721
-        }
-      ],
-      "year": "1992",
-      "model": "Spider-2000 Engine",
+      "tiers": {
+        "low": 2240,
+        "medium": 2074,
+        "high": 1721
+      },
       "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1992-alfa-spider-2000-2.0l-vin-2-7th-digit-conv",
+      "category": "engine",
+      "year": "1992",
+      "model": "Spider-2000 Engine",
       "description": "Premium quality used engine for 1992 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, VIN 2, 7th digit, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1992-alfa-spider-2000-2.0l-vin-2-7th-digit-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-59",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-59",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-spider-2000-engine-2-0l-vin-2-7th-digit-conv",
+      "slug": "1992-alfa-spider-2000-engine-2-0l-vin-2-7th-digit-conv"
     },
     {
-      "id": "ALF-60",
-      "mpn": "ALF-60",
+      "id": "P-60",
+      "mpn": "P-60",
       "name": "1993 Alfa Spider-2000 Engine - (2.0L, VIN 2, 7th digit, Conv)",
-      "slug": "1993-alfa-spider-2000-engine-20l-vin-2-7th-digit-conv-59",
-      "canonicalSlug": "1993-alfa-spider-2000-engine-20l-vin-2-7th-digit-conv-59",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2074,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2240
-        },
-        {
-          "mileage": "Medium",
-          "price": 2074
-        },
-        {
-          "mileage": "High",
-          "price": 1721
-        }
-      ],
+      "tiers": {
+        "low": 2240,
+        "medium": 2074,
+        "high": 1721
+      },
+      "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-spider-2000-engine-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/engine-1993-alfa-spider-2000-2.0l-vin-2-7th-digit-conv",
+      "category": "engine",
       "year": "1993",
       "model": "Spider-2000 Engine",
-      "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-spider-2000-engine-side.jpg",
       "description": "Premium quality used engine for 1993 Alfa Spider-2000. Complete assembly ready for installation. Configuration: (2.0L, VIN 2, 7th digit, Conv). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/engine-1993-alfa-spider-2000-2.0l-vin-2-7th-digit-conv Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-60",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-60",
+      "compatibility": "",
+      "canonicalSlug": "1993-alfa-spider-2000-engine-2-0l-vin-2-7th-digit-conv",
+      "slug": "1993-alfa-spider-2000-engine-2-0l-vin-2-7th-digit-conv"
     },
     {
-      "id": "ALF-61",
-      "mpn": "ALF-61",
+      "id": "P-61",
+      "mpn": "P-61",
       "name": "1991 Alfa 164 Sedan Transmission - AT",
-      "slug": "1991-alfa-164-sedan-transmission-at-60",
-      "canonicalSlug": "1991-alfa-164-sedan-transmission-at-60",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1072,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1158
-        },
-        {
-          "mileage": "Medium",
-          "price": 1072
-        },
-        {
-          "mileage": "High",
-          "price": 890
-        }
-      ],
+      "tiers": {
+        "low": 1158,
+        "medium": 1072,
+        "high": 890
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1991-alfa-164-sedan-at",
+      "category": "transmission",
       "year": "1991",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1991 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-alfa-164-sedan-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-61",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-61",
+      "compatibility": "",
+      "canonicalSlug": "1991-alfa-164-sedan-transmission-at",
+      "slug": "1991-alfa-164-sedan-transmission-at"
     },
     {
-      "id": "ALF-62",
-      "mpn": "ALF-62",
+      "id": "P-62",
+      "mpn": "P-62",
       "name": "1991 Alfa 164 Sedan Transmission - MT, Sport model",
-      "slug": "1991-alfa-164-sedan-transmission-mt-sport-model-61",
-      "canonicalSlug": "1991-alfa-164-sedan-transmission-mt-sport-model-61",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1371,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1481
-        },
-        {
-          "mileage": "Medium",
-          "price": 1371
-        },
-        {
-          "mileage": "High",
-          "price": 1138
-        }
-      ],
+      "tiers": {
+        "low": 1481,
+        "medium": 1371,
+        "high": 1138
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1991-alfa-164-sedan-mt-sport-model",
+      "category": "transmission",
       "year": "1991",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1991 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: MT, Sport model. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-alfa-164-sedan-mt-sport-model Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-62",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-62",
+      "compatibility": "",
+      "canonicalSlug": "1991-alfa-164-sedan-transmission-mt-sport-model",
+      "slug": "1991-alfa-164-sedan-transmission-mt-sport-model"
     },
     {
-      "id": "ALF-63",
-      "mpn": "ALF-63",
+      "id": "P-63",
+      "mpn": "P-63",
       "name": "1991 Alfa 164 Sedan Transmission - MT, exc. Sport model",
-      "slug": "1991-alfa-164-sedan-transmission-mt-exc-sport-model-62",
-      "canonicalSlug": "1991-alfa-164-sedan-transmission-mt-exc-sport-model-62",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2904,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3136
-        },
-        {
-          "mileage": "Medium",
-          "price": 2904
-        },
-        {
-          "mileage": "High",
-          "price": 2410
-        }
-      ],
+      "tiers": {
+        "low": 3136,
+        "medium": 2904,
+        "high": 2410
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1991-alfa-164-sedan-mt-exc.-sport-model",
+      "category": "transmission",
       "year": "1991",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1991 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: MT, exc. Sport model. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-alfa-164-sedan-mt-exc.-sport-model Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-63",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-63",
+      "compatibility": "",
+      "canonicalSlug": "1991-alfa-164-sedan-transmission-mt-exc-sport-model",
+      "slug": "1991-alfa-164-sedan-transmission-mt-exc-sport-model"
     },
     {
-      "id": "ALF-64",
-      "mpn": "ALF-64",
+      "id": "P-64",
+      "mpn": "P-64",
       "name": "1992 Alfa 164 Sedan Transmission - MT, Sport model",
-      "slug": "1992-alfa-164-sedan-transmission-mt-sport-model-63",
-      "canonicalSlug": "1992-alfa-164-sedan-transmission-mt-sport-model-63",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1371,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1481
-        },
-        {
-          "mileage": "Medium",
-          "price": 1371
-        },
-        {
-          "mileage": "High",
-          "price": 1138
-        }
-      ],
+      "tiers": {
+        "low": 1481,
+        "medium": 1371,
+        "high": 1138
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1992-alfa-164-sedan-mt-sport-model",
+      "category": "transmission",
       "year": "1992",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1992 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: MT, Sport model. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-alfa-164-sedan-mt-sport-model Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-64",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-64",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-164-sedan-transmission-mt-sport-model",
+      "slug": "1992-alfa-164-sedan-transmission-mt-sport-model"
     },
     {
-      "id": "ALF-65",
-      "mpn": "ALF-65",
+      "id": "P-65",
+      "mpn": "P-65",
       "name": "1992 Alfa 164 Sedan Transmission - MT, exc. Sport model",
-      "slug": "1992-alfa-164-sedan-transmission-mt-exc-sport-model-64",
-      "canonicalSlug": "1992-alfa-164-sedan-transmission-mt-exc-sport-model-64",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2904,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3136
-        },
-        {
-          "mileage": "Medium",
-          "price": 2904
-        },
-        {
-          "mileage": "High",
-          "price": 2410
-        }
-      ],
+      "tiers": {
+        "low": 3136,
+        "medium": 2904,
+        "high": 2410
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1992-alfa-164-sedan-mt-exc.-sport-model",
+      "category": "transmission",
       "year": "1992",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1992 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: MT, exc. Sport model. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-alfa-164-sedan-mt-exc.-sport-model Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-65",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-65",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-164-sedan-transmission-mt-exc-sport-model",
+      "slug": "1992-alfa-164-sedan-transmission-mt-exc-sport-model"
     },
     {
-      "id": "ALF-66",
-      "mpn": "ALF-66",
+      "id": "P-66",
+      "mpn": "P-66",
       "name": "1992 Alfa 164 Sedan Transmission - AT, from VIN 6220500",
-      "slug": "1992-alfa-164-sedan-transmission-at-from-vin-6220500-65",
-      "canonicalSlug": "1992-alfa-164-sedan-transmission-at-from-vin-6220500-65",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1162,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1255
-        },
-        {
-          "mileage": "Medium",
-          "price": 1162
-        },
-        {
-          "mileage": "High",
-          "price": 965
-        }
-      ],
+      "tiers": {
+        "low": 1255,
+        "medium": 1162,
+        "high": 965
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1992-alfa-164-sedan-at-from-vin-6220500",
+      "category": "transmission",
       "year": "1992",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1992 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: AT, from VIN 6220500. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-alfa-164-sedan-at-from-vin-6220500 Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-66",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-66",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-164-sedan-transmission-at-from-vin-6220500",
+      "slug": "1992-alfa-164-sedan-transmission-at-from-vin-6220500"
     },
     {
-      "id": "ALF-67",
-      "mpn": "ALF-67",
+      "id": "P-67",
+      "mpn": "P-67",
       "name": "1992 Alfa 164 Sedan Transmission - AT, thru VIN 6220499",
-      "slug": "1992-alfa-164-sedan-transmission-at-thru-vin-6220499-66",
-      "canonicalSlug": "1992-alfa-164-sedan-transmission-at-thru-vin-6220499-66",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1147,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1239
-        },
-        {
-          "mileage": "Medium",
-          "price": 1147
-        },
-        {
-          "mileage": "High",
-          "price": 952
-        }
-      ],
+      "tiers": {
+        "low": 1239,
+        "medium": 1147,
+        "high": 952
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1992-alfa-164-sedan-at-thru-vin-6220499",
+      "category": "transmission",
       "year": "1992",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1992 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: AT, thru VIN 6220499. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-alfa-164-sedan-at-thru-vin-6220499 Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-67",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-67",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-164-sedan-transmission-at-thru-vin-6220499",
+      "slug": "1992-alfa-164-sedan-transmission-at-thru-vin-6220499"
     },
     {
-      "id": "ALF-68",
-      "mpn": "ALF-68",
+      "id": "P-68",
+      "mpn": "P-68",
       "name": "1993 Alfa 164 Sedan Transmission - MT, Sport model",
-      "slug": "1993-alfa-164-sedan-transmission-mt-sport-model-67",
-      "canonicalSlug": "1993-alfa-164-sedan-transmission-mt-sport-model-67",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1409,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1521
-        },
-        {
-          "mileage": "Medium",
-          "price": 1409
-        },
-        {
-          "mileage": "High",
-          "price": 1169
-        }
-      ],
+      "tiers": {
+        "low": 1521,
+        "medium": 1409,
+        "high": 1169
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1993-alfa-164-sedan-mt-sport-model",
+      "category": "transmission",
       "year": "1993",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1993 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: MT, Sport model. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1993-alfa-164-sedan-mt-sport-model Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-68",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-68",
+      "compatibility": "",
+      "canonicalSlug": "1993-alfa-164-sedan-transmission-mt-sport-model",
+      "slug": "1993-alfa-164-sedan-transmission-mt-sport-model"
     },
     {
-      "id": "ALF-69",
-      "mpn": "ALF-69",
+      "id": "P-69",
+      "mpn": "P-69",
       "name": "1993 Alfa 164 Sedan Transmission - MT, exc. Sport model",
-      "slug": "1993-alfa-164-sedan-transmission-mt-exc-sport-model-68",
-      "canonicalSlug": "1993-alfa-164-sedan-transmission-mt-exc-sport-model-68",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2904,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 3136
-        },
-        {
-          "mileage": "Medium",
-          "price": 2904
-        },
-        {
-          "mileage": "High",
-          "price": 2410
-        }
-      ],
+      "tiers": {
+        "low": 3136,
+        "medium": 2904,
+        "high": 2410
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1993-alfa-164-sedan-mt-exc.-sport-model",
+      "category": "transmission",
       "year": "1993",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1993 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: MT, exc. Sport model. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1993-alfa-164-sedan-mt-exc.-sport-model Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-69",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-69",
+      "compatibility": "",
+      "canonicalSlug": "1993-alfa-164-sedan-transmission-mt-exc-sport-model",
+      "slug": "1993-alfa-164-sedan-transmission-mt-exc-sport-model"
     },
     {
-      "id": "ALF-70",
-      "mpn": "ALF-70",
+      "id": "P-70",
+      "mpn": "P-70",
       "name": "1993 Alfa 164 Sedan Transmission - AT",
-      "slug": "1993-alfa-164-sedan-transmission-at-69",
-      "canonicalSlug": "1993-alfa-164-sedan-transmission-at-69",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1993-alfa-164-sedan-at",
+      "category": "transmission",
       "year": "1993",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1993 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1993-alfa-164-sedan-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-70",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-70",
+      "compatibility": "",
+      "canonicalSlug": "1993-alfa-164-sedan-transmission-at",
+      "slug": "1993-alfa-164-sedan-transmission-at"
     },
     {
-      "id": "ALF-71",
-      "mpn": "ALF-71",
+      "id": "P-71",
+      "mpn": "P-71",
       "name": "1994 Alfa 164 Sedan Transmission - AT",
-      "slug": "1994-alfa-164-sedan-transmission-at-70",
-      "canonicalSlug": "1994-alfa-164-sedan-transmission-at-70",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1102,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1190
-        },
-        {
-          "mileage": "Medium",
-          "price": 1102
-        },
-        {
-          "mileage": "High",
-          "price": 915
-        }
-      ],
+      "tiers": {
+        "low": 1190,
+        "medium": 1102,
+        "high": 915
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1994-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1994-alfa-164-sedan-at",
+      "category": "transmission",
       "year": "1994",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1994-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1994 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1994-alfa-164-sedan-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-71",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-71",
+      "compatibility": "",
+      "canonicalSlug": "1994-alfa-164-sedan-transmission-at",
+      "slug": "1994-alfa-164-sedan-transmission-at"
     },
     {
-      "id": "ALF-72",
-      "mpn": "ALF-72",
+      "id": "P-72",
+      "mpn": "P-72",
       "name": "1994 Alfa 164 Sedan Transmission - MT, LS",
-      "slug": "1994-alfa-164-sedan-transmission-mt-ls-71",
-      "canonicalSlug": "1994-alfa-164-sedan-transmission-mt-ls-71",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1177,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1271
-        },
-        {
-          "mileage": "Medium",
-          "price": 1177
-        },
-        {
-          "mileage": "High",
-          "price": 977
-        }
-      ],
+      "tiers": {
+        "low": 1271,
+        "medium": 1177,
+        "high": 977
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1994-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1994-alfa-164-sedan-mt-ls",
+      "category": "transmission",
       "year": "1994",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1994-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1994 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: MT, LS. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1994-alfa-164-sedan-mt-ls Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-72",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-72",
+      "compatibility": "",
+      "canonicalSlug": "1994-alfa-164-sedan-transmission-mt-ls",
+      "slug": "1994-alfa-164-sedan-transmission-mt-ls"
     },
     {
-      "id": "ALF-73",
-      "mpn": "ALF-73",
+      "id": "P-73",
+      "mpn": "P-73",
       "name": "1995 Alfa 164 Sedan Transmission - AT",
-      "slug": "1995-alfa-164-sedan-transmission-at-72",
-      "canonicalSlug": "1995-alfa-164-sedan-transmission-at-72",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1072,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1158
-        },
-        {
-          "mileage": "Medium",
-          "price": 1072
-        },
-        {
-          "mileage": "High",
-          "price": 890
-        }
-      ],
+      "tiers": {
+        "low": 1158,
+        "medium": 1072,
+        "high": 890
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1995-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1995-alfa-164-sedan-at",
+      "category": "transmission",
       "year": "1995",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1995-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1995 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1995-alfa-164-sedan-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-73",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-73",
+      "compatibility": "",
+      "canonicalSlug": "1995-alfa-164-sedan-transmission-at",
+      "slug": "1995-alfa-164-sedan-transmission-at"
     },
     {
-      "id": "ALF-74",
-      "mpn": "ALF-74",
+      "id": "P-74",
+      "mpn": "P-74",
       "name": "1995 Alfa 164 Sedan Transmission - MT, LS",
-      "slug": "1995-alfa-164-sedan-transmission-mt-ls-73",
-      "canonicalSlug": "1995-alfa-164-sedan-transmission-mt-ls-73",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1995-alfa-164-sedan-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1995-alfa-164-sedan-mt-ls",
+      "category": "transmission",
       "year": "1995",
       "model": "164 Sedan",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1995-alfa-164-sedan-transmission-side.jpg",
       "description": "Premium quality used transmission for 1995 Alfa 164 Sedan. Complete assembly ready for installation. Configuration: MT, LS. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1995-alfa-164-sedan-mt-ls Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-74",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-74",
+      "compatibility": "",
+      "canonicalSlug": "1995-alfa-164-sedan-transmission-mt-ls",
+      "slug": "1995-alfa-164-sedan-transmission-mt-ls"
     },
     {
-      "id": "ALF-75",
-      "mpn": "ALF-75",
+      "id": "P-75",
+      "mpn": "P-75",
       "name": "1969 Alfa 1750 Transmission - MT",
-      "slug": "1969-alfa-1750-transmission-mt-74",
-      "canonicalSlug": "1969-alfa-1750-transmission-mt-74",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1969-alfa-1750-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1969-alfa-1750-mt",
+      "category": "transmission",
       "year": "1969",
       "model": "1750 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1969-alfa-1750-transmission-side.jpg",
       "description": "Premium quality used transmission for 1969 Alfa 1750. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1969-alfa-1750-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-75",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-75",
+      "compatibility": "",
+      "canonicalSlug": "1969-alfa-1750-transmission-mt",
+      "slug": "1969-alfa-1750-transmission-mt"
     },
     {
-      "id": "ALF-76",
-      "mpn": "ALF-76",
+      "id": "P-76",
+      "mpn": "P-76",
       "name": "1970 Alfa 1750 Transmission - MT",
-      "slug": "1970-alfa-1750-transmission-mt-75",
-      "canonicalSlug": "1970-alfa-1750-transmission-mt-75",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1970-alfa-1750-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1970-alfa-1750-mt",
+      "category": "transmission",
       "year": "1970",
       "model": "1750 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1970-alfa-1750-transmission-side.jpg",
       "description": "Premium quality used transmission for 1970 Alfa 1750. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1970-alfa-1750-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-76",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-76",
+      "compatibility": "",
+      "canonicalSlug": "1970-alfa-1750-transmission-mt",
+      "slug": "1970-alfa-1750-transmission-mt"
     },
     {
-      "id": "ALF-77",
-      "mpn": "ALF-77",
+      "id": "P-77",
+      "mpn": "P-77",
       "name": "1971 Alfa 1750 Transmission - MT",
-      "slug": "1971-alfa-1750-transmission-mt-76",
-      "canonicalSlug": "1971-alfa-1750-transmission-mt-76",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1110,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1199
-        },
-        {
-          "mileage": "Medium",
-          "price": 1110
-        },
-        {
-          "mileage": "High",
-          "price": 921
-        }
-      ],
+      "tiers": {
+        "low": 1199,
+        "medium": 1110,
+        "high": 921
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1971-alfa-1750-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1971-alfa-1750-mt",
+      "category": "transmission",
       "year": "1971",
       "model": "1750 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1971-alfa-1750-transmission-side.jpg",
       "description": "Premium quality used transmission for 1971 Alfa 1750. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1971-alfa-1750-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-77",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-77",
+      "compatibility": "",
+      "canonicalSlug": "1971-alfa-1750-transmission-mt",
+      "slug": "1971-alfa-1750-transmission-mt"
     },
     {
-      "id": "ALF-78",
-      "mpn": "ALF-78",
+      "id": "P-78",
+      "mpn": "P-78",
       "name": "1975 Alfa Alfetta Transmission - MT, (5 speed)",
-      "slug": "1975-alfa-alfetta-transmission-mt-5-speed-77",
-      "canonicalSlug": "1975-alfa-alfetta-transmission-mt-5-speed-77",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1072,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1158
-        },
-        {
-          "mileage": "Medium",
-          "price": 1072
-        },
-        {
-          "mileage": "High",
-          "price": 890
-        }
-      ],
+      "tiers": {
+        "low": 1158,
+        "medium": 1072,
+        "high": 890
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1975-alfa-alfetta-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1975-alfa-alfetta-mt-5-speed",
+      "category": "transmission",
       "year": "1975",
       "model": "Alfetta Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1975-alfa-alfetta-transmission-side.jpg",
       "description": "Premium quality used transmission for 1975 Alfa Alfetta. Complete assembly ready for installation. Configuration: MT, (5 speed). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1975-alfa-alfetta-mt-5-speed Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-78",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-78",
+      "compatibility": "",
+      "canonicalSlug": "1975-alfa-alfetta-transmission-mt-5-speed",
+      "slug": "1975-alfa-alfetta-transmission-mt-5-speed"
     },
     {
-      "id": "ALF-79",
-      "mpn": "ALF-79",
+      "id": "P-79",
+      "mpn": "P-79",
       "name": "1976 Alfa Alfetta Transmission - MT, (5 speed)",
-      "slug": "1976-alfa-alfetta-transmission-mt-5-speed-78",
-      "canonicalSlug": "1976-alfa-alfetta-transmission-mt-5-speed-78",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1102,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1190
-        },
-        {
-          "mileage": "Medium",
-          "price": 1102
-        },
-        {
-          "mileage": "High",
-          "price": 915
-        }
-      ],
+      "tiers": {
+        "low": 1190,
+        "medium": 1102,
+        "high": 915
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1976-alfa-alfetta-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1976-alfa-alfetta-mt-5-speed",
+      "category": "transmission",
       "year": "1976",
       "model": "Alfetta Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1976-alfa-alfetta-transmission-side.jpg",
       "description": "Premium quality used transmission for 1976 Alfa Alfetta. Complete assembly ready for installation. Configuration: MT, (5 speed). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1976-alfa-alfetta-mt-5-speed Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-79",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-79",
+      "compatibility": "",
+      "canonicalSlug": "1976-alfa-alfetta-transmission-mt-5-speed",
+      "slug": "1976-alfa-alfetta-transmission-mt-5-speed"
     },
     {
-      "id": "ALF-80",
-      "mpn": "ALF-80",
+      "id": "P-80",
+      "mpn": "P-80",
       "name": "2017 Alfa Giulia Transmission - (AT), 2.0L",
-      "slug": "2017-alfa-giulia-transmission-at-20l-79",
-      "canonicalSlug": "2017-alfa-giulia-transmission-at-20l-79",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2156,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2329
-        },
-        {
-          "mileage": "Medium",
-          "price": 2156
-        },
-        {
-          "mileage": "High",
-          "price": 1790
-        }
-      ],
+      "tiers": {
+        "low": 2329,
+        "medium": 2156,
+        "high": 1790
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/2017-alfa-giulia-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-2017-alfa-giulia-at-2.0l",
+      "category": "transmission",
       "year": "2017",
       "model": "Giulia Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/2017-alfa-giulia-transmission-side.jpg",
       "description": "Premium quality used transmission for 2017 Alfa Giulia. Complete assembly ready for installation. Configuration: (AT), 2.0L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2017-alfa-giulia-at-2.0l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-80",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-80",
+      "compatibility": "",
+      "canonicalSlug": "2017-alfa-giulia-transmission-at-2-0l",
+      "slug": "2017-alfa-giulia-transmission-at-2-0l"
     },
     {
-      "id": "ALF-81",
-      "mpn": "ALF-81",
+      "id": "P-81",
+      "mpn": "P-81",
       "name": "2017 Alfa Giulia Transmission - (AT), 2.9L",
-      "slug": "2017-alfa-giulia-transmission-at-29l-80",
-      "canonicalSlug": "2017-alfa-giulia-transmission-at-29l-80",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2493,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2692
-        },
-        {
-          "mileage": "Medium",
-          "price": 2493
-        },
-        {
-          "mileage": "High",
-          "price": 2069
-        }
-      ],
+      "tiers": {
+        "low": 2692,
+        "medium": 2493,
+        "high": 2069
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/2017-alfa-giulia-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-2017-alfa-giulia-at-2.9l",
+      "category": "transmission",
       "year": "2017",
       "model": "Giulia Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/2017-alfa-giulia-transmission-side.jpg",
       "description": "Premium quality used transmission for 2017 Alfa Giulia. Complete assembly ready for installation. Configuration: (AT), 2.9L. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-2017-alfa-giulia-at-2.9l Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-81",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-81",
+      "compatibility": "",
+      "canonicalSlug": "2017-alfa-giulia-transmission-at-2-9l",
+      "slug": "2017-alfa-giulia-transmission-at-2-9l"
     },
     {
-      "id": "ALF-82",
-      "mpn": "ALF-82",
+      "id": "P-82",
+      "mpn": "P-82",
       "name": "1986 Alfa GTV6 Transmission - MT",
-      "slug": "1986-alfa-gtv6-transmission-mt-81",
-      "canonicalSlug": "1986-alfa-gtv6-transmission-mt-81",
-      "brand": "Alfa",
-      "category": "part",
       "price": 923,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 997
-        },
-        {
-          "mileage": "Medium",
-          "price": 923
-        },
-        {
-          "mileage": "High",
-          "price": 766
-        }
-      ],
+      "tiers": {
+        "low": 997,
+        "medium": 923,
+        "high": 766
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1986-alfa-gtv6-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1986-alfa-gtv6-mt",
+      "category": "transmission",
       "year": "1986",
       "model": "GTV6 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1986-alfa-gtv6-transmission-side.jpg",
       "description": "Premium quality used transmission for 1986 Alfa GTV6. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1986-alfa-gtv6-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-82",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-82",
+      "compatibility": "",
+      "canonicalSlug": "1986-alfa-gtv6-transmission-mt",
+      "slug": "1986-alfa-gtv6-transmission-mt"
     },
     {
-      "id": "ALF-83",
-      "mpn": "ALF-83",
+      "id": "P-83",
+      "mpn": "P-83",
       "name": "1987 Alfa Milano Transmission - MT",
-      "slug": "1987-alfa-milano-transmission-mt-82",
-      "canonicalSlug": "1987-alfa-milano-transmission-mt-82",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2044,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2208
-        },
-        {
-          "mileage": "Medium",
-          "price": 2044
-        },
-        {
-          "mileage": "High",
-          "price": 1697
-        }
-      ],
+      "tiers": {
+        "low": 2208,
+        "medium": 2044,
+        "high": 1697
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1987-alfa-milano-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1987-alfa-milano-mt",
+      "category": "transmission",
       "year": "1987",
       "model": "Milano Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1987-alfa-milano-transmission-side.jpg",
       "description": "Premium quality used transmission for 1987 Alfa Milano. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1987-alfa-milano-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-83",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-83",
+      "compatibility": "",
+      "canonicalSlug": "1987-alfa-milano-transmission-mt",
+      "slug": "1987-alfa-milano-transmission-mt"
     },
     {
-      "id": "ALF-84",
-      "mpn": "ALF-84",
+      "id": "P-84",
+      "mpn": "P-84",
       "name": "1988 Alfa Milano Transmission - AT",
-      "slug": "1988-alfa-milano-transmission-at-83",
-      "canonicalSlug": "1988-alfa-milano-transmission-at-83",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2007,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2167
-        },
-        {
-          "mileage": "Medium",
-          "price": 2007
-        },
-        {
-          "mileage": "High",
-          "price": 1666
-        }
-      ],
+      "tiers": {
+        "low": 2167,
+        "medium": 2007,
+        "high": 1666
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1988-alfa-milano-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1988-alfa-milano-at",
+      "category": "transmission",
       "year": "1988",
       "model": "Milano Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1988-alfa-milano-transmission-side.jpg",
       "description": "Premium quality used transmission for 1988 Alfa Milano. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1988-alfa-milano-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-84",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-84",
+      "compatibility": "",
+      "canonicalSlug": "1988-alfa-milano-transmission-at",
+      "slug": "1988-alfa-milano-transmission-at"
     },
     {
-      "id": "ALF-85",
-      "mpn": "ALF-85",
+      "id": "P-85",
+      "mpn": "P-85",
       "name": "1988 Alfa Milano Transmission - MT, non-locking differential",
-      "slug": "1988-alfa-milano-transmission-mt-non-locking-differential-84",
-      "canonicalSlug": "1988-alfa-milano-transmission-mt-non-locking-differential-84",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2014,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2175
-        },
-        {
-          "mileage": "Medium",
-          "price": 2014
-        },
-        {
-          "mileage": "High",
-          "price": 1672
-        }
-      ],
+      "tiers": {
+        "low": 2175,
+        "medium": 2014,
+        "high": 1672
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1988-alfa-milano-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1988-alfa-milano-mt-non-locking-differential",
+      "category": "transmission",
       "year": "1988",
       "model": "Milano Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1988-alfa-milano-transmission-side.jpg",
       "description": "Premium quality used transmission for 1988 Alfa Milano. Complete assembly ready for installation. Configuration: MT, non-locking differential. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1988-alfa-milano-mt-non-locking-differential Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-85",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-85",
+      "compatibility": "",
+      "canonicalSlug": "1988-alfa-milano-transmission-mt-non-locking-differential",
+      "slug": "1988-alfa-milano-transmission-mt-non-locking-differential"
     },
     {
-      "id": "ALF-86",
-      "mpn": "ALF-86",
+      "id": "P-86",
+      "mpn": "P-86",
       "name": "1989 Alfa Milano Transmission - AT",
-      "slug": "1989-alfa-milano-transmission-at-85",
-      "canonicalSlug": "1989-alfa-milano-transmission-at-85",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2007,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2167
-        },
-        {
-          "mileage": "Medium",
-          "price": 2007
-        },
-        {
-          "mileage": "High",
-          "price": 1666
-        }
-      ],
+      "tiers": {
+        "low": 2167,
+        "medium": 2007,
+        "high": 1666
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1989-alfa-milano-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1989-alfa-milano-at",
+      "category": "transmission",
       "year": "1989",
       "model": "Milano Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1989-alfa-milano-transmission-side.jpg",
       "description": "Premium quality used transmission for 1989 Alfa Milano. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1989-alfa-milano-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-86",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-86",
+      "compatibility": "",
+      "canonicalSlug": "1989-alfa-milano-transmission-at",
+      "slug": "1989-alfa-milano-transmission-at"
     },
     {
-      "id": "ALF-87",
-      "mpn": "ALF-87",
+      "id": "P-87",
+      "mpn": "P-87",
       "name": "1989 Alfa Milano Transmission - MT, non-locking differential",
-      "slug": "1989-alfa-milano-transmission-mt-non-locking-differential-86",
-      "canonicalSlug": "1989-alfa-milano-transmission-mt-non-locking-differential-86",
-      "brand": "Alfa",
-      "category": "part",
       "price": 2007,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2167
-        },
-        {
-          "mileage": "Medium",
-          "price": 2007
-        },
-        {
-          "mileage": "High",
-          "price": 1666
-        }
-      ],
+      "tiers": {
+        "low": 2167,
+        "medium": 2007,
+        "high": 1666
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1989-alfa-milano-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1989-alfa-milano-mt-non-locking-differential",
+      "category": "transmission",
       "year": "1989",
       "model": "Milano Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1989-alfa-milano-transmission-side.jpg",
       "description": "Premium quality used transmission for 1989 Alfa Milano. Complete assembly ready for installation. Configuration: MT, non-locking differential. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1989-alfa-milano-mt-non-locking-differential Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-87",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-87",
+      "compatibility": "",
+      "canonicalSlug": "1989-alfa-milano-transmission-mt-non-locking-differential",
+      "slug": "1989-alfa-milano-transmission-mt-non-locking-differential"
     },
     {
-      "id": "ALF-88",
-      "mpn": "ALF-88",
+      "id": "P-88",
+      "mpn": "P-88",
       "name": "1972 Alfa Spider-2000 Transmission - MT, (5 speed)",
-      "slug": "1972-alfa-spider-2000-transmission-mt-5-speed-87",
-      "canonicalSlug": "1972-alfa-spider-2000-transmission-mt-5-speed-87",
-      "brand": "Alfa",
-      "category": "part",
       "price": 998,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1077
-        },
-        {
-          "mileage": "Medium",
-          "price": 998
-        },
-        {
-          "mileage": "High",
-          "price": 828
-        }
-      ],
+      "tiers": {
+        "low": 1077,
+        "medium": 998,
+        "high": 828
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1972-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1972-alfa-spider-2000-mt-5-speed",
+      "category": "transmission",
       "year": "1972",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1972-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1972 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT, (5 speed). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1972-alfa-spider-2000-mt-5-speed Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-88",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-88",
+      "compatibility": "",
+      "canonicalSlug": "1972-alfa-spider-2000-transmission-mt-5-speed",
+      "slug": "1972-alfa-spider-2000-transmission-mt-5-speed"
     },
     {
-      "id": "ALF-89",
-      "mpn": "ALF-89",
+      "id": "P-89",
+      "mpn": "P-89",
       "name": "1973 Alfa Spider-2000 Transmission - MT, (5 speed)",
-      "slug": "1973-alfa-spider-2000-transmission-mt-5-speed-88",
-      "canonicalSlug": "1973-alfa-spider-2000-transmission-mt-5-speed-88",
-      "brand": "Alfa",
-      "category": "part",
       "price": 998,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1077
-        },
-        {
-          "mileage": "Medium",
-          "price": 998
-        },
-        {
-          "mileage": "High",
-          "price": 828
-        }
-      ],
+      "tiers": {
+        "low": 1077,
+        "medium": 998,
+        "high": 828
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1973-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1973-alfa-spider-2000-mt-5-speed",
+      "category": "transmission",
       "year": "1973",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1973-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1973 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT, (5 speed). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1973-alfa-spider-2000-mt-5-speed Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-89",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-89",
+      "compatibility": "",
+      "canonicalSlug": "1973-alfa-spider-2000-transmission-mt-5-speed",
+      "slug": "1973-alfa-spider-2000-transmission-mt-5-speed"
     },
     {
-      "id": "ALF-90",
-      "mpn": "ALF-90",
+      "id": "P-90",
+      "mpn": "P-90",
       "name": "1974 Alfa Spider-2000 Transmission - MT, (5 speed)",
-      "slug": "1974-alfa-spider-2000-transmission-mt-5-speed-89",
-      "canonicalSlug": "1974-alfa-spider-2000-transmission-mt-5-speed-89",
-      "brand": "Alfa",
-      "category": "part",
       "price": 998,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1077
-        },
-        {
-          "mileage": "Medium",
-          "price": 998
-        },
-        {
-          "mileage": "High",
-          "price": 828
-        }
-      ],
+      "tiers": {
+        "low": 1077,
+        "medium": 998,
+        "high": 828
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1974-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1974-alfa-spider-2000-mt-5-speed",
+      "category": "transmission",
       "year": "1974",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1974-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1974 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT, (5 speed). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1974-alfa-spider-2000-mt-5-speed Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-90",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-90",
+      "compatibility": "",
+      "canonicalSlug": "1974-alfa-spider-2000-transmission-mt-5-speed",
+      "slug": "1974-alfa-spider-2000-transmission-mt-5-speed"
     },
     {
-      "id": "ALF-91",
-      "mpn": "ALF-91",
+      "id": "P-91",
+      "mpn": "P-91",
       "name": "1975 Alfa Spider-2000 Transmission - MT, (5 speed)",
-      "slug": "1975-alfa-spider-2000-transmission-mt-5-speed-90",
-      "canonicalSlug": "1975-alfa-spider-2000-transmission-mt-5-speed-90",
-      "brand": "Alfa",
-      "category": "part",
       "price": 998,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1077
-        },
-        {
-          "mileage": "Medium",
-          "price": 998
-        },
-        {
-          "mileage": "High",
-          "price": 828
-        }
-      ],
+      "tiers": {
+        "low": 1077,
+        "medium": 998,
+        "high": 828
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1975-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1975-alfa-spider-2000-mt-5-speed",
+      "category": "transmission",
       "year": "1975",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1975-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1975 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT, (5 speed). 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1975-alfa-spider-2000-mt-5-speed Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-91",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-91",
+      "compatibility": "",
+      "canonicalSlug": "1975-alfa-spider-2000-transmission-mt-5-speed",
+      "slug": "1975-alfa-spider-2000-transmission-mt-5-speed"
     },
     {
-      "id": "ALF-92",
-      "mpn": "ALF-92",
+      "id": "P-92",
+      "mpn": "P-92",
       "name": "1982 Alfa Spider-2000 Transmission - MT",
-      "slug": "1982-alfa-spider-2000-transmission-mt-91",
-      "canonicalSlug": "1982-alfa-spider-2000-transmission-mt-91",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1626,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1756
-        },
-        {
-          "mileage": "Medium",
-          "price": 1626
-        },
-        {
-          "mileage": "High",
-          "price": 1349
-        }
-      ],
+      "tiers": {
+        "low": 1756,
+        "medium": 1626,
+        "high": 1349
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1982-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1982-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1982",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1982-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1982 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1982-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-92",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-92",
+      "compatibility": "",
+      "canonicalSlug": "1982-alfa-spider-2000-transmission-mt",
+      "slug": "1982-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-93",
-      "mpn": "ALF-93",
+      "id": "P-93",
+      "mpn": "P-93",
       "name": "1983 Alfa Spider-2000 Transmission - MT",
-      "slug": "1983-alfa-spider-2000-transmission-mt-92",
-      "canonicalSlug": "1983-alfa-spider-2000-transmission-mt-92",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1626,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1756
-        },
-        {
-          "mileage": "Medium",
-          "price": 1626
-        },
-        {
-          "mileage": "High",
-          "price": 1349
-        }
-      ],
+      "tiers": {
+        "low": 1756,
+        "medium": 1626,
+        "high": 1349
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1983-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1983-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1983",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1983-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1983 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1983-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-93",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-93",
+      "compatibility": "",
+      "canonicalSlug": "1983-alfa-spider-2000-transmission-mt",
+      "slug": "1983-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-94",
-      "mpn": "ALF-94",
+      "id": "P-94",
+      "mpn": "P-94",
       "name": "1984 Alfa Spider-2000 Transmission - MT",
-      "slug": "1984-alfa-spider-2000-transmission-mt-93",
-      "canonicalSlug": "1984-alfa-spider-2000-transmission-mt-93",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1626,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1756
-        },
-        {
-          "mileage": "Medium",
-          "price": 1626
-        },
-        {
-          "mileage": "High",
-          "price": 1349
-        }
-      ],
+      "tiers": {
+        "low": 1756,
+        "medium": 1626,
+        "high": 1349
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1984-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1984-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1984",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1984-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1984 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1984-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-94",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-94",
+      "compatibility": "",
+      "canonicalSlug": "1984-alfa-spider-2000-transmission-mt",
+      "slug": "1984-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-95",
-      "mpn": "ALF-95",
+      "id": "P-95",
+      "mpn": "P-95",
       "name": "1985 Alfa Spider-2000 Transmission - MT",
-      "slug": "1985-alfa-spider-2000-transmission-mt-94",
-      "canonicalSlug": "1985-alfa-spider-2000-transmission-mt-94",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1626,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1756
-        },
-        {
-          "mileage": "Medium",
-          "price": 1626
-        },
-        {
-          "mileage": "High",
-          "price": 1349
-        }
-      ],
+      "tiers": {
+        "low": 1756,
+        "medium": 1626,
+        "high": 1349
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1985-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1985-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1985",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1985-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1985 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1985-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-95",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-95",
+      "compatibility": "",
+      "canonicalSlug": "1985-alfa-spider-2000-transmission-mt",
+      "slug": "1985-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-96",
-      "mpn": "ALF-96",
+      "id": "P-96",
+      "mpn": "P-96",
       "name": "1986 Alfa Spider-2000 Transmission - MT",
-      "slug": "1986-alfa-spider-2000-transmission-mt-95",
-      "canonicalSlug": "1986-alfa-spider-2000-transmission-mt-95",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1626,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1756
-        },
-        {
-          "mileage": "Medium",
-          "price": 1626
-        },
-        {
-          "mileage": "High",
-          "price": 1349
-        }
-      ],
+      "tiers": {
+        "low": 1756,
+        "medium": 1626,
+        "high": 1349
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1986-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1986-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1986",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1986-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1986 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1986-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-96",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-96",
+      "compatibility": "",
+      "canonicalSlug": "1986-alfa-spider-2000-transmission-mt",
+      "slug": "1986-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-97",
-      "mpn": "ALF-97",
+      "id": "P-97",
+      "mpn": "P-97",
       "name": "1987 Alfa Spider-2000 Transmission - MT",
-      "slug": "1987-alfa-spider-2000-transmission-mt-96",
-      "canonicalSlug": "1987-alfa-spider-2000-transmission-mt-96",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1626,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1756
-        },
-        {
-          "mileage": "Medium",
-          "price": 1626
-        },
-        {
-          "mileage": "High",
-          "price": 1349
-        }
-      ],
+      "tiers": {
+        "low": 1756,
+        "medium": 1626,
+        "high": 1349
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1987-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1987-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1987",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1987-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1987 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1987-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-97",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-97",
+      "compatibility": "",
+      "canonicalSlug": "1987-alfa-spider-2000-transmission-mt",
+      "slug": "1987-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-98",
-      "mpn": "ALF-98",
+      "id": "P-98",
+      "mpn": "P-98",
       "name": "1988 Alfa Spider-2000 Transmission - MT",
-      "slug": "1988-alfa-spider-2000-transmission-mt-97",
-      "canonicalSlug": "1988-alfa-spider-2000-transmission-mt-97",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1596,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1723
-        },
-        {
-          "mileage": "Medium",
-          "price": 1596
-        },
-        {
-          "mileage": "High",
-          "price": 1324
-        }
-      ],
+      "tiers": {
+        "low": 1723,
+        "medium": 1596,
+        "high": 1324
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1988-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1988-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1988",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1988-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1988 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1988-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-98",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-98",
+      "compatibility": "",
+      "canonicalSlug": "1988-alfa-spider-2000-transmission-mt",
+      "slug": "1988-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-99",
-      "mpn": "ALF-99",
+      "id": "P-99",
+      "mpn": "P-99",
       "name": "1989 Alfa Spider-2000 Transmission - MT",
-      "slug": "1989-alfa-spider-2000-transmission-mt-98",
-      "canonicalSlug": "1989-alfa-spider-2000-transmission-mt-98",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1596,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 1723
-        },
-        {
-          "mileage": "Medium",
-          "price": 1596
-        },
-        {
-          "mileage": "High",
-          "price": 1324
-        }
-      ],
+      "tiers": {
+        "low": 1723,
+        "medium": 1596,
+        "high": 1324
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1989-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1989-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1989",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1989-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1989 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1989-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-99",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-99",
+      "compatibility": "",
+      "canonicalSlug": "1989-alfa-spider-2000-transmission-mt",
+      "slug": "1989-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-100",
-      "mpn": "ALF-100",
+      "id": "P-100",
+      "mpn": "P-100",
       "name": "1990 Alfa Spider-2000 Transmission - MT",
-      "slug": "1990-alfa-spider-2000-transmission-mt-99",
-      "canonicalSlug": "1990-alfa-spider-2000-transmission-mt-99",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1990-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1990-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1990",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1990-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1990 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1990-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-100",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-100",
+      "compatibility": "",
+      "canonicalSlug": "1990-alfa-spider-2000-transmission-mt",
+      "slug": "1990-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-101",
-      "mpn": "ALF-101",
+      "id": "P-101",
+      "mpn": "P-101",
       "name": "1991 Alfa Spider-2000 Transmission - MT",
-      "slug": "1991-alfa-spider-2000-transmission-mt-100",
-      "canonicalSlug": "1991-alfa-spider-2000-transmission-mt-100",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1991-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1991",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1991 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1991-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-101",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-101",
+      "compatibility": "",
+      "canonicalSlug": "1991-alfa-spider-2000-transmission-mt",
+      "slug": "1991-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-102",
-      "mpn": "ALF-102",
+      "id": "P-102",
+      "mpn": "P-102",
       "name": "1992 Alfa Spider-2000 Transmission - MT",
-      "slug": "1992-alfa-spider-2000-transmission-mt-101",
-      "canonicalSlug": "1992-alfa-spider-2000-transmission-mt-101",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1992-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1992",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1992 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-102",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-102",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-spider-2000-transmission-mt",
+      "slug": "1992-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-103",
-      "mpn": "ALF-103",
+      "id": "P-103",
+      "mpn": "P-103",
       "name": "1992 Alfa Spider-2000 Transmission - AT",
-      "slug": "1992-alfa-spider-2000-transmission-at-102",
-      "canonicalSlug": "1992-alfa-spider-2000-transmission-at-102",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1992-alfa-spider-2000-at",
+      "category": "transmission",
       "year": "1992",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1992 Alfa Spider-2000. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1992-alfa-spider-2000-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-103",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-103",
+      "compatibility": "",
+      "canonicalSlug": "1992-alfa-spider-2000-transmission-at",
+      "slug": "1992-alfa-spider-2000-transmission-at"
     },
     {
-      "id": "ALF-104",
-      "mpn": "ALF-104",
+      "id": "P-104",
+      "mpn": "P-104",
       "name": "1993 Alfa Spider-2000 Transmission - MT",
-      "slug": "1993-alfa-spider-2000-transmission-mt-103",
-      "canonicalSlug": "1993-alfa-spider-2000-transmission-mt-103",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1925,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2078
-        },
-        {
-          "mileage": "Medium",
-          "price": 1925
-        },
-        {
-          "mileage": "High",
-          "price": 1597
-        }
-      ],
+      "tiers": {
+        "low": 2078,
+        "medium": 1925,
+        "high": 1597
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1993-alfa-spider-2000-mt",
+      "category": "transmission",
       "year": "1993",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1993 Alfa Spider-2000. Complete assembly ready for installation. Configuration: MT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1993-alfa-spider-2000-mt Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-104",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-104",
+      "compatibility": "",
+      "canonicalSlug": "1993-alfa-spider-2000-transmission-mt",
+      "slug": "1993-alfa-spider-2000-transmission-mt"
     },
     {
-      "id": "ALF-105",
-      "mpn": "ALF-105",
+      "id": "P-105",
+      "mpn": "P-105",
       "name": "1993 Alfa Spider-2000 Transmission - AT",
-      "slug": "1993-alfa-spider-2000-transmission-at-104",
-      "canonicalSlug": "1993-alfa-spider-2000-transmission-at-104",
-      "brand": "Alfa",
-      "category": "part",
       "price": 1857,
-      "tiers": [
-        {
-          "mileage": "Low",
-          "price": 2006
-        },
-        {
-          "mileage": "Medium",
-          "price": 1857
-        },
-        {
-          "mileage": "High",
-          "price": 1542
-        }
-      ],
+      "tiers": {
+        "low": 2006,
+        "medium": 1857,
+        "high": 1542
+      },
+      "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-spider-2000-transmission-side.jpg",
+      "productUrl": "https://www.auapw.org/parts/transmission-1993-alfa-spider-2000-at",
+      "category": "transmission",
       "year": "1993",
       "model": "Spider-2000 Transmission",
-      "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-spider-2000-transmission-side.jpg",
       "description": "Premium quality used transmission for 1993 Alfa Spider-2000. Complete assembly ready for installation. Configuration: AT. 90-day warranty included. Fast nationwide shipping. Order at: https://www.auapw.org/parts/transmission-1993-alfa-spider-2000-at Price is a reference estimate only and may vary based on mileage, condition, and availability.",
-      "partNumber": "ALF-105",
-      "warranty": "90 Days",
-      "condition": "used",
-      "availability": "in stock"
+      "partNumber": "P-105",
+      "compatibility": "",
+      "canonicalSlug": "1993-alfa-spider-2000-transmission-at",
+      "slug": "1993-alfa-spider-2000-transmission-at"
     }
   ]
 }
