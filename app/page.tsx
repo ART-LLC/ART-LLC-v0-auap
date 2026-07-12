@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 import { HeroSection } from "@/components/home/hero-section"
+import { HeroGallery } from "@/components/home/hero-gallery"
 import { ContentSection } from "@/components/home/content-section"
 import { BrandValuesSection } from "@/components/home/brand-values-section"
 import { CategoriesSection } from "@/components/home/categories-section"
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Navbar />
       <main className="bg-[#3a3d44]">
         <HeroSection />
+        <HeroGallery />
         <ContentSection />
         <BrandValuesSection />
         <CategoriesSection />
