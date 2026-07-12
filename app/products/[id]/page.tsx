@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import { useRouter } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -12,6 +13,7 @@ import { ProductFAQ } from '@/components/products/product-faq'
 import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
+import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRight, Star, Shield, Truck, MapPin, Phone, MessageSquare } from 'lucide-react'
@@ -23,8 +25,18 @@ interface ProductPageProps {
 }
 
 export default function ProductDetailPage({ params }: ProductPageProps) {
+  const router = useRouter()
   const [quantity, setQuantity] = useState(1)
   const [selectedTab, setSelectedTab] = useState('overview')
+
+  const handleSearch = (filters: SearchFilters) => {
+    const queryParams = new URLSearchParams()
+    if (filters.make) queryParams.append('make', filters.make)
+    if (filters.model) queryParams.append('model', filters.model)
+    if (filters.year) queryParams.append('year', filters.year)
+    if (filters.partType) queryParams.append('part', filters.partType)
+    router.push(`/search?${queryParams.toString()}`)
+  }
 
   // Mock product data - in production, fetch from API based on params.id
   const product = {
@@ -366,6 +378,13 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
 
         {/* Parts History */}
         <PartsHistory partType={product.category} />
+
+        {/* Apple-style search form */}
+        <AppleStylePartsSearch
+          onSearch={handleSearch}
+          title="Find Another Part"
+          subtitle="Browse our complete inventory of quality used auto parts"
+        />
 
         {/* FAQ */}
         <ProductFAQ productType={product.category} />

@@ -1,6 +1,7 @@
 'use client'
 
-import { use } from 'react'
+import { use, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,10 +14,12 @@ import { ProductFAQ } from '@/components/products/product-faq'
 import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
+import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
 import { getProductById, getRelatedProducts } from '@/lib/products-catalog'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight } from 'lucide-react'
 
 export default function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+  const router = useRouter()
   const { id } = use(params)
   const product = getProductById(Number(id))
 
@@ -25,6 +28,15 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
   }
 
   const related = getRelatedProducts(product)
+
+  const handleSearch = (filters: SearchFilters) => {
+    const queryParams = new URLSearchParams()
+    if (filters.make) queryParams.append('make', filters.make)
+    if (filters.model) queryParams.append('model', filters.model)
+    if (filters.year) queryParams.append('year', filters.year)
+    if (filters.partType) queryParams.append('part', filters.partType)
+    router.push(`/search?${queryParams.toString()}`)
+  }
 
   return (
     <>
@@ -133,6 +145,13 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
             </div>
           </div>
         </section>
+
+        {/* Apple-style search form */}
+        <AppleStylePartsSearch
+          onSearch={handleSearch}
+          title="Find Another Part"
+          subtitle="Browse our complete inventory of quality used auto parts"
+        />
 
         {/* Related Products */}
         <section className="py-12 bg-card/20">
