@@ -148,6 +148,24 @@ const BRANDS_WITH_IMAGE = new Set([
   'hyundai',
 ])
 
+// Brands that have a real hero car photograph in /public/brand-cars.
+const BRANDS_WITH_CAR = new Set([
+  'bmw',
+  'chevrolet',
+  'ford',
+  'mercedes-benz',
+  'porsche',
+  'toyota',
+  'honda',
+  'nissan',
+  'dodge',
+  'audi',
+  'jeep',
+  'volkswagen',
+  'lexus',
+  'hyundai',
+])
+
 const DEFAULT_IDENTITY: BrandIdentity = { rgb: '210, 170, 80' }
 
 function readableTextColor(rgb: string): string {
@@ -169,6 +187,8 @@ export function LuxuryBrandLanding({
   const onAccentText = readableTextColor(rgb)
   const hasImage = BRANDS_WITH_IMAGE.has(brand)
   const curveImage = `/brand-curves/${brand}-curves.png`
+  const hasCar = BRANDS_WITH_CAR.has(brand)
+  const carImage = `/brand-cars/${brand}-car.png`
   const logoSrc = BRAND_LOGO[brand]
 
   const heroBackground = `linear-gradient(135deg, #0f172a 0%, rgba(${rgb}, 0.22) 50%, #0f172a 100%)`
@@ -193,12 +213,12 @@ export function LuxuryBrandLanding({
     <div>
       {/* PRIMARY HERO BANNER */}
       <section className="relative overflow-hidden" style={{ background: heroBackground }}>
-        {/* Brand curve image (only when a real image exists) */}
-        {hasImage && (
-          <div className="absolute inset-0 opacity-30">
+        {/* Brand car photograph (preferred), falling back to the curve artwork */}
+        {(hasCar || hasImage) && (
+          <div className={hasCar ? 'absolute inset-0 opacity-50' : 'absolute inset-0 opacity-30'}>
             <Image
-              src={curveImage || "/placeholder.svg"}
-              alt={`${label} styling`}
+              src={hasCar ? carImage : curveImage}
+              alt={hasCar ? `${label} vehicle` : `${label} styling`}
               fill
               className="object-cover object-center"
               priority
@@ -207,7 +227,7 @@ export function LuxuryBrandLanding({
               className="absolute inset-0"
               style={{
                 background:
-                  'linear-gradient(90deg, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 60%, rgba(15,23,42,0.3) 100%)',
+                  'linear-gradient(90deg, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.7) 55%, rgba(15,23,42,0.25) 100%)',
               }}
             />
           </div>
@@ -331,56 +351,108 @@ export function LuxuryBrandLanding({
               </div>
             </div>
 
-            {/* Right: Logo showcase */}
+            {/* Right: Car photo showcase with logo badge */}
             <div className="relative hidden lg:block">
-              <div
-                className="relative aspect-square overflow-hidden rounded-2xl border p-8 backdrop-blur-sm"
-                style={{
-                  borderColor: softBorder,
-                  background: `linear-gradient(135deg, rgba(${rgb}, 0.18) 0%, rgba(${rgb}, 0.06) 100%)`,
-                }}
-              >
-                <div className="absolute inset-0 opacity-20">
-                  <div
-                    className="absolute right-8 top-8 h-32 w-32 rounded-full border-2"
-                    style={{ borderColor: accent }}
+              {hasCar ? (
+                <div
+                  className="relative aspect-[4/3] overflow-hidden rounded-2xl border shadow-2xl"
+                  style={{ borderColor: softBorder }}
+                >
+                  <Image
+                    src={carImage || "/placeholder.svg"}
+                    alt={`${label} vehicle`}
+                    fill
+                    className="object-cover object-center"
+                    priority
                   />
                   <div
-                    className="absolute bottom-12 left-12 h-40 w-40 rounded-full border-2"
-                    style={{ borderColor: softBorder }}
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        'linear-gradient(180deg, rgba(15,23,42,0) 40%, rgba(15,23,42,0.75) 100%)',
+                    }}
                   />
-                  <div
-                    className="absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full border-2"
-                    style={{ borderColor: cardBorder }}
-                  />
+                  {/* Logo badge over the car */}
+                  <div className="absolute bottom-4 left-4 flex items-center gap-3">
+                    {logoSrc ? (
+                      <div
+                        className="flex h-14 w-14 items-center justify-center rounded-xl border-2 bg-white p-1.5 shadow-lg"
+                        style={{ borderColor: accent }}
+                      >
+                        <Image
+                          src={logoSrc || "/placeholder.svg"}
+                          alt={`${label} logo`}
+                          width={48}
+                          height={48}
+                          className="h-full w-full object-contain"
+                        />
+                      </div>
+                    ) : (
+                      <div
+                        className="flex h-14 w-14 items-center justify-center rounded-xl border-2 shadow-lg"
+                        style={{ background: logoGradient, borderColor: accent }}
+                      >
+                        <span className="text-2xl font-black" style={{ color: onAccentText }}>
+                          {label.charAt(0)}
+                        </span>
+                      </div>
+                    )}
+                    <div>
+                      <p className="text-sm font-black text-white">{label}</p>
+                      <p className="text-xs text-slate-300/80">Genuine OEM Parts</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="relative flex h-full items-center justify-center">
-                  {logoSrc ? (
+              ) : (
+                <div
+                  className="relative aspect-square overflow-hidden rounded-2xl border p-8 backdrop-blur-sm"
+                  style={{
+                    borderColor: softBorder,
+                    background: `linear-gradient(135deg, rgba(${rgb}, 0.18) 0%, rgba(${rgb}, 0.06) 100%)`,
+                  }}
+                >
+                  <div className="absolute inset-0 opacity-20">
                     <div
-                      className="flex h-48 w-48 items-center justify-center rounded-2xl border-4 bg-white p-6 shadow-2xl"
+                      className="absolute right-8 top-8 h-32 w-32 rounded-full border-2"
                       style={{ borderColor: accent }}
-                    >
-                      <Image
-                        src={logoSrc || "/placeholder.svg"}
-                        alt={`${label} logo`}
-                        width={160}
-                        height={160}
-                        className="h-full w-full object-contain"
-                        priority
-                      />
-                    </div>
-                  ) : (
+                    />
                     <div
-                      className="flex h-40 w-40 items-center justify-center rounded-2xl border-4 shadow-2xl"
-                      style={{ background: logoGradient, borderColor: accent }}
-                    >
-                      <span className="text-8xl font-black" style={{ color: onAccentText }}>
-                        {label.charAt(0)}
-                      </span>
-                    </div>
-                  )}
+                      className="absolute bottom-12 left-12 h-40 w-40 rounded-full border-2"
+                      style={{ borderColor: softBorder }}
+                    />
+                    <div
+                      className="absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full border-2"
+                      style={{ borderColor: cardBorder }}
+                    />
+                  </div>
+                  <div className="relative flex h-full items-center justify-center">
+                    {logoSrc ? (
+                      <div
+                        className="flex h-48 w-48 items-center justify-center rounded-2xl border-4 bg-white p-6 shadow-2xl"
+                        style={{ borderColor: accent }}
+                      >
+                        <Image
+                          src={logoSrc || "/placeholder.svg"}
+                          alt={`${label} logo`}
+                          width={160}
+                          height={160}
+                          className="h-full w-full object-contain"
+                          priority
+                        />
+                      </div>
+                    ) : (
+                      <div
+                        className="flex h-40 w-40 items-center justify-center rounded-2xl border-4 shadow-2xl"
+                        style={{ background: logoGradient, borderColor: accent }}
+                      >
+                        <span className="text-8xl font-black" style={{ color: onAccentText }}>
+                          {label.charAt(0)}
+                        </span>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
