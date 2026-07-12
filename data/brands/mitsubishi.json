@@ -7,7 +7,7 @@
       "slug": "1991-mitsubishi-3000-engine-30l-turbo-vin-c-8th-digit-0",
       "canonicalSlug": "1991-mitsubishi-3000-engine-30l-turbo-vin-c-8th-digit-0",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -25,7 +25,7 @@
       "slug": "1991-mitsubishi-3000-engine-30l-wo-turbo-vin-b-8th-digit-1",
       "canonicalSlug": "1991-mitsubishi-3000-engine-30l-wo-turbo-vin-b-8th-digit-1",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -43,7 +43,7 @@
       "slug": "1992-mitsubishi-3000-engine-30l-turbo-vin-c-8th-digit-2",
       "canonicalSlug": "1992-mitsubishi-3000-engine-30l-turbo-vin-c-8th-digit-2",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -61,7 +61,7 @@
       "slug": "1992-mitsubishi-3000-engine-30l-wo-turbo-vin-b-8th-digit-3",
       "canonicalSlug": "1992-mitsubishi-3000-engine-30l-wo-turbo-vin-b-8th-digit-3",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -79,7 +79,7 @@
       "slug": "1993-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-4",
       "canonicalSlug": "1993-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-4",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -97,7 +97,7 @@
       "slug": "1993-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-5",
       "canonicalSlug": "1993-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-5",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -115,7 +115,7 @@
       "slug": "1994-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-6",
       "canonicalSlug": "1994-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-6",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -133,7 +133,7 @@
       "slug": "1994-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-7",
       "canonicalSlug": "1994-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-7",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -151,7 +151,7 @@
       "slug": "1995-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-8",
       "canonicalSlug": "1995-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-8",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -169,7 +169,7 @@
       "slug": "1995-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-9",
       "canonicalSlug": "1995-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-9",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -187,7 +187,7 @@
       "slug": "1996-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-10",
       "canonicalSlug": "1996-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-10",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3168,
       "tiers": {
         "low": 3432,
@@ -205,7 +205,7 @@
       "slug": "1996-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-11",
       "canonicalSlug": "1996-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-11",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -223,7 +223,7 @@
       "slug": "1997-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-12",
       "canonicalSlug": "1997-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-12",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2748,
       "tiers": {
         "low": 2977,
@@ -241,7 +241,7 @@
       "slug": "1997-mitsubishi-3000-engine-30l-wo-turbo-vin-h-8th-digit-13",
       "canonicalSlug": "1997-mitsubishi-3000-engine-30l-wo-turbo-vin-h-8th-digit-13",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -259,7 +259,7 @@
       "slug": "1997-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-dohc-14",
       "canonicalSlug": "1997-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-dohc-14",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3168,
       "tiers": {
         "low": 3432,
@@ -277,7 +277,7 @@
       "slug": "1997-mitsubishi-3000-engine-30l-wo-turbo-vin-s-8th-digit-sohc-15",
       "canonicalSlug": "1997-mitsubishi-3000-engine-30l-wo-turbo-vin-s-8th-digit-sohc-15",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2328,
       "tiers": {
         "low": 2522,
@@ -295,7 +295,7 @@
       "slug": "1998-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-16",
       "canonicalSlug": "1998-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-16",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2748,
       "tiers": {
         "low": 2977,
@@ -313,7 +313,7 @@
       "slug": "1998-mitsubishi-3000-engine-30l-wo-turbo-vin-h-8th-digit-17",
       "canonicalSlug": "1998-mitsubishi-3000-engine-30l-wo-turbo-vin-h-8th-digit-17",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -331,7 +331,7 @@
       "slug": "1998-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-dohc-18",
       "canonicalSlug": "1998-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-dohc-18",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3168,
       "tiers": {
         "low": 3432,
@@ -349,7 +349,7 @@
       "slug": "1998-mitsubishi-3000-engine-30l-wo-turbo-vin-s-8th-digit-sohc-19",
       "canonicalSlug": "1998-mitsubishi-3000-engine-30l-wo-turbo-vin-s-8th-digit-sohc-19",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2328,
       "tiers": {
         "low": 2522,
@@ -367,7 +367,7 @@
       "slug": "1999-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-20",
       "canonicalSlug": "1999-mitsubishi-3000-engine-30l-turbo-vin-k-8th-digit-20",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2748,
       "tiers": {
         "low": 2977,
@@ -385,7 +385,7 @@
       "slug": "1999-mitsubishi-3000-engine-30l-wo-turbo-vin-h-8th-digit-21",
       "canonicalSlug": "1999-mitsubishi-3000-engine-30l-wo-turbo-vin-h-8th-digit-21",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -403,7 +403,7 @@
       "slug": "1999-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-dohc-22",
       "canonicalSlug": "1999-mitsubishi-3000-engine-30l-wo-turbo-vin-j-8th-digit-dohc-22",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3168,
       "tiers": {
         "low": 3432,
@@ -421,7 +421,7 @@
       "slug": "1999-mitsubishi-3000-engine-30l-wo-turbo-vin-s-8th-digit-sohc-23",
       "canonicalSlug": "1999-mitsubishi-3000-engine-30l-wo-turbo-vin-s-8th-digit-sohc-23",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2328,
       "tiers": {
         "low": 2522,
@@ -439,7 +439,7 @@
       "slug": "1983-mitsubishi-cordia-engine-18l-vin-4-8th-digit-24",
       "canonicalSlug": "1983-mitsubishi-cordia-engine-18l-vin-4-8th-digit-24",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -457,7 +457,7 @@
       "slug": "1983-mitsubishi-cordia-engine-18l-vin-c-8th-digit-25",
       "canonicalSlug": "1983-mitsubishi-cordia-engine-18l-vin-c-8th-digit-25",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -475,7 +475,7 @@
       "slug": "1984-mitsubishi-cordia-engine-18l-vin-g-8th-digit-26",
       "canonicalSlug": "1984-mitsubishi-cordia-engine-18l-vin-g-8th-digit-26",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -493,7 +493,7 @@
       "slug": "1984-mitsubishi-cordia-engine-20l-vin-d-8th-digit-27",
       "canonicalSlug": "1984-mitsubishi-cordia-engine-20l-vin-d-8th-digit-27",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -511,7 +511,7 @@
       "slug": "1984-mitsubishi-cordia-engine-20l-vin-v-8th-digit-28",
       "canonicalSlug": "1984-mitsubishi-cordia-engine-20l-vin-v-8th-digit-28",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -529,7 +529,7 @@
       "slug": "1985-mitsubishi-cordia-engine-18l-vin-g-8th-digit-29",
       "canonicalSlug": "1985-mitsubishi-cordia-engine-18l-vin-g-8th-digit-29",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -547,7 +547,7 @@
       "slug": "1985-mitsubishi-cordia-engine-20l-vin-d-8th-digit-30",
       "canonicalSlug": "1985-mitsubishi-cordia-engine-20l-vin-d-8th-digit-30",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -565,7 +565,7 @@
       "slug": "1985-mitsubishi-cordia-engine-20l-vin-v-8th-digit-31",
       "canonicalSlug": "1985-mitsubishi-cordia-engine-20l-vin-v-8th-digit-31",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -583,7 +583,7 @@
       "slug": "1986-mitsubishi-cordia-engine-18l-vin-g-8th-digit-32",
       "canonicalSlug": "1986-mitsubishi-cordia-engine-18l-vin-g-8th-digit-32",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -601,7 +601,7 @@
       "slug": "1986-mitsubishi-cordia-engine-20l-vin-d-8th-digit-33",
       "canonicalSlug": "1986-mitsubishi-cordia-engine-20l-vin-d-8th-digit-33",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -619,7 +619,7 @@
       "slug": "1986-mitsubishi-cordia-engine-20l-vin-v-8th-digit-34",
       "canonicalSlug": "1986-mitsubishi-cordia-engine-20l-vin-v-8th-digit-34",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -637,7 +637,7 @@
       "slug": "1987-mitsubishi-cordia-engine-18l-vin-g-8th-digit-35",
       "canonicalSlug": "1987-mitsubishi-cordia-engine-18l-vin-g-8th-digit-35",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -655,7 +655,7 @@
       "slug": "1987-mitsubishi-cordia-engine-20l-vin-d-8th-digit-36",
       "canonicalSlug": "1987-mitsubishi-cordia-engine-20l-vin-d-8th-digit-36",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -673,7 +673,7 @@
       "slug": "1987-mitsubishi-cordia-engine-20l-vin-v-8th-digit-37",
       "canonicalSlug": "1987-mitsubishi-cordia-engine-20l-vin-v-8th-digit-37",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -691,7 +691,7 @@
       "slug": "1988-mitsubishi-cordia-engine-18l-vin-g-8th-digit-38",
       "canonicalSlug": "1988-mitsubishi-cordia-engine-18l-vin-g-8th-digit-38",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -709,7 +709,7 @@
       "slug": "1988-mitsubishi-cordia-engine-20l-vin-d-8th-digit-39",
       "canonicalSlug": "1988-mitsubishi-cordia-engine-20l-vin-d-8th-digit-39",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -727,7 +727,7 @@
       "slug": "1988-mitsubishi-cordia-engine-20l-vin-v-8th-digit-40",
       "canonicalSlug": "1988-mitsubishi-cordia-engine-20l-vin-v-8th-digit-40",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -745,7 +745,7 @@
       "slug": "1992-mitsubishi-diamante-engine-30l-vin-b-8th-digit-dohc-41",
       "canonicalSlug": "1992-mitsubishi-diamante-engine-30l-vin-b-8th-digit-dohc-41",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -763,7 +763,7 @@
       "slug": "1992-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-42",
       "canonicalSlug": "1992-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-42",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -781,7 +781,7 @@
       "slug": "1993-mitsubishi-diamante-engine-30l-vin-j-8th-digit-dohc-43",
       "canonicalSlug": "1993-mitsubishi-diamante-engine-30l-vin-j-8th-digit-dohc-43",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -799,7 +799,7 @@
       "slug": "1993-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sw-44",
       "canonicalSlug": "1993-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sw-44",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -817,7 +817,7 @@
       "slug": "1993-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sw-45",
       "canonicalSlug": "1993-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sw-45",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -835,7 +835,7 @@
       "slug": "1993-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sdn-46",
       "canonicalSlug": "1993-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sdn-46",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -853,7 +853,7 @@
       "slug": "1993-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sdn-47",
       "canonicalSlug": "1993-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sdn-47",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -871,7 +871,7 @@
       "slug": "1994-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sw-48",
       "canonicalSlug": "1994-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sw-48",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -889,7 +889,7 @@
       "slug": "1994-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sw-49",
       "canonicalSlug": "1994-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sw-49",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -907,7 +907,7 @@
       "slug": "1994-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sdn-50",
       "canonicalSlug": "1994-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sdn-50",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -925,7 +925,7 @@
       "slug": "1994-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sdn-51",
       "canonicalSlug": "1994-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sdn-51",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -943,7 +943,7 @@
       "slug": "1994-mitsubishi-diamante-engine-30l-vin-j-8th-digit-dohc-52",
       "canonicalSlug": "1994-mitsubishi-diamante-engine-30l-vin-j-8th-digit-dohc-52",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -961,7 +961,7 @@
       "slug": "1995-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sdn-53",
       "canonicalSlug": "1995-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sdn-53",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2076,
       "tiers": {
         "low": 2249,
@@ -979,7 +979,7 @@
       "slug": "1995-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sdn-54",
       "canonicalSlug": "1995-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sdn-54",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -997,7 +997,7 @@
       "slug": "1995-mitsubishi-diamante-engine-30l-vin-j-8th-digit-dohc-55",
       "canonicalSlug": "1995-mitsubishi-diamante-engine-30l-vin-j-8th-digit-dohc-55",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1015,7 +1015,7 @@
       "slug": "1995-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sw-56",
       "canonicalSlug": "1995-mitsubishi-diamante-engine-30l-vin-h-8th-digit-sw-56",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1033,7 +1033,7 @@
       "slug": "1995-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sw-57",
       "canonicalSlug": "1995-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-sw-57",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1051,7 +1051,7 @@
       "slug": "1996-mitsubishi-diamante-engine-30l-vin-j-8th-digit-dohc-58",
       "canonicalSlug": "1996-mitsubishi-diamante-engine-30l-vin-j-8th-digit-dohc-58",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3420,
       "tiers": {
         "low": 3705,
@@ -1069,7 +1069,7 @@
       "slug": "1996-mitsubishi-diamante-engine-30l-vin-h-8th-digit-59",
       "canonicalSlug": "1996-mitsubishi-diamante-engine-30l-vin-h-8th-digit-59",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1087,7 +1087,7 @@
       "slug": "1996-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-60",
       "canonicalSlug": "1996-mitsubishi-diamante-engine-30l-vin-s-8th-digit-sohc-60",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1105,7 +1105,7 @@
       "slug": "1997-mitsubishi-diamante-engine-35l-vin-p-8th-digit-61",
       "canonicalSlug": "1997-mitsubishi-diamante-engine-35l-vin-p-8th-digit-61",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1152,
       "tiers": {
         "low": 1248,
@@ -1123,7 +1123,7 @@
       "slug": "1997-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-62",
       "canonicalSlug": "1997-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-62",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1068,
       "tiers": {
         "low": 1157,
@@ -1141,7 +1141,7 @@
       "slug": "1998-mitsubishi-diamante-engine-35l-vin-p-8th-digit-63",
       "canonicalSlug": "1998-mitsubishi-diamante-engine-35l-vin-p-8th-digit-63",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1152,
       "tiers": {
         "low": 1248,
@@ -1159,7 +1159,7 @@
       "slug": "1998-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-64",
       "canonicalSlug": "1998-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-64",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1068,
       "tiers": {
         "low": 1157,
@@ -1177,7 +1177,7 @@
       "slug": "1999-mitsubishi-diamante-engine-35l-vin-p-8th-digit-65",
       "canonicalSlug": "1999-mitsubishi-diamante-engine-35l-vin-p-8th-digit-65",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1152,
       "tiers": {
         "low": 1248,
@@ -1195,7 +1195,7 @@
       "slug": "1999-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-66",
       "canonicalSlug": "1999-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-66",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1068,
       "tiers": {
         "low": 1157,
@@ -1213,7 +1213,7 @@
       "slug": "2000-mitsubishi-diamante-engine-35l-vin-p-8th-digit-67",
       "canonicalSlug": "2000-mitsubishi-diamante-engine-35l-vin-p-8th-digit-67",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1152,
       "tiers": {
         "low": 1248,
@@ -1231,7 +1231,7 @@
       "slug": "2000-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-68",
       "canonicalSlug": "2000-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-68",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1068,
       "tiers": {
         "low": 1157,
@@ -1249,7 +1249,7 @@
       "slug": "2001-mitsubishi-diamante-engine-35l-vin-p-8th-digit-69",
       "canonicalSlug": "2001-mitsubishi-diamante-engine-35l-vin-p-8th-digit-69",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1152,
       "tiers": {
         "low": 1248,
@@ -1267,7 +1267,7 @@
       "slug": "2001-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-70",
       "canonicalSlug": "2001-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-70",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1068,
       "tiers": {
         "low": 1157,
@@ -1285,7 +1285,7 @@
       "slug": "2002-mitsubishi-diamante-engine-35l-vin-p-8th-digit-71",
       "canonicalSlug": "2002-mitsubishi-diamante-engine-35l-vin-p-8th-digit-71",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1152,
       "tiers": {
         "low": 1248,
@@ -1303,7 +1303,7 @@
       "slug": "2002-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-72",
       "canonicalSlug": "2002-mitsubishi-diamante-engine-35l-vin-r-8th-digit-sohc-72",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1068,
       "tiers": {
         "low": 1157,
@@ -1321,7 +1321,7 @@
       "slug": "2003-mitsubishi-diamante-engine-35l-vin-p-8th-digit-sohc-73",
       "canonicalSlug": "2003-mitsubishi-diamante-engine-35l-vin-p-8th-digit-sohc-73",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1404,
       "tiers": {
         "low": 1521,
@@ -1339,7 +1339,7 @@
       "slug": "2004-mitsubishi-diamante-engine-35l-vin-p-8th-digit-sohc-74",
       "canonicalSlug": "2004-mitsubishi-diamante-engine-35l-vin-p-8th-digit-sohc-74",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1404,
       "tiers": {
         "low": 1521,
@@ -1357,7 +1357,7 @@
       "slug": "1990-mitsubishi-eclipse-engine-20l-turbo-vin-u-8th-digit-75",
       "canonicalSlug": "1990-mitsubishi-eclipse-engine-20l-turbo-vin-u-8th-digit-75",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1375,7 +1375,7 @@
       "slug": "1990-mitsubishi-eclipse-engine-20l-wo-turbo-vin-r-8th-digit-76",
       "canonicalSlug": "1990-mitsubishi-eclipse-engine-20l-wo-turbo-vin-r-8th-digit-76",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1393,7 +1393,7 @@
       "slug": "1990-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-at-77",
       "canonicalSlug": "1990-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-at-77",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1411,7 +1411,7 @@
       "slug": "1990-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-mt-78",
       "canonicalSlug": "1990-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-mt-78",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1429,7 +1429,7 @@
       "slug": "1990-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-at-79",
       "canonicalSlug": "1990-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-at-79",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1447,7 +1447,7 @@
       "slug": "1990-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-mt-80",
       "canonicalSlug": "1990-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-mt-80",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1465,7 +1465,7 @@
       "slug": "1990-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-at-81",
       "canonicalSlug": "1990-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-at-81",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1483,7 +1483,7 @@
       "slug": "1990-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-mt-82",
       "canonicalSlug": "1990-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-mt-82",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1501,7 +1501,7 @@
       "slug": "1991-mitsubishi-eclipse-engine-20l-wo-turbo-vin-r-8th-digit-83",
       "canonicalSlug": "1991-mitsubishi-eclipse-engine-20l-wo-turbo-vin-r-8th-digit-83",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1519,7 +1519,7 @@
       "slug": "1991-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-at-84",
       "canonicalSlug": "1991-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-at-84",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1537,7 +1537,7 @@
       "slug": "1991-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-mt-85",
       "canonicalSlug": "1991-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-mt-85",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1555,7 +1555,7 @@
       "slug": "1991-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-at-86",
       "canonicalSlug": "1991-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-at-86",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1573,7 +1573,7 @@
       "slug": "1991-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-mt-87",
       "canonicalSlug": "1991-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-mt-87",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1591,7 +1591,7 @@
       "slug": "1991-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-at-88",
       "canonicalSlug": "1991-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-at-88",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1609,7 +1609,7 @@
       "slug": "1991-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-mt-89",
       "canonicalSlug": "1991-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-mt-89",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1627,7 +1627,7 @@
       "slug": "1991-mitsubishi-eclipse-engine-20l-turbo-vin-u-8th-digit-90",
       "canonicalSlug": "1991-mitsubishi-eclipse-engine-20l-turbo-vin-u-8th-digit-90",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1645,7 +1645,7 @@
       "slug": "1992-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-at-91",
       "canonicalSlug": "1992-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-at-91",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1663,7 +1663,7 @@
       "slug": "1992-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-mt-92",
       "canonicalSlug": "1992-mitsubishi-eclipse-engine-18l-vin-c-8th-digit-mt-92",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1681,7 +1681,7 @@
       "slug": "1992-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-at-93",
       "canonicalSlug": "1992-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-at-93",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1699,7 +1699,7 @@
       "slug": "1992-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-mt-94",
       "canonicalSlug": "1992-mitsubishi-eclipse-engine-18l-vin-d-8th-digit-mt-94",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1717,7 +1717,7 @@
       "slug": "1992-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-at-95",
       "canonicalSlug": "1992-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-at-95",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1735,7 +1735,7 @@
       "slug": "1992-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-mt-96",
       "canonicalSlug": "1992-mitsubishi-eclipse-engine-18l-vin-t-8th-digit-mt-96",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1753,7 +1753,7 @@
       "slug": "1992-mitsubishi-eclipse-engine-20l-turbo-vin-u-8th-digit-6-bolt-crank-thru-97",
       "canonicalSlug": "1992-mitsubishi-eclipse-engine-20l-turbo-vin-u-8th-digit-6-bolt-crank-thru-97",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1771,7 +1771,7 @@
       "slug": "1992-mitsubishi-eclipse-engine-20l-turbo-vin-u-8th-digit-7-bolt-crank-from-98",
       "canonicalSlug": "1992-mitsubishi-eclipse-engine-20l-turbo-vin-u-8th-digit-7-bolt-crank-from-98",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1789,7 +1789,7 @@
       "slug": "1992-mitsubishi-eclipse-engine-20l-wo-turbo-vin-r-8th-digit-6-bolt-crank-99",
       "canonicalSlug": "1992-mitsubishi-eclipse-engine-20l-wo-turbo-vin-r-8th-digit-6-bolt-crank-99",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1807,7 +1807,7 @@
       "slug": "1992-mitsubishi-eclipse-engine-20l-wo-turbo-vin-r-8th-digit-7-bolt-crank-100",
       "canonicalSlug": "1992-mitsubishi-eclipse-engine-20l-wo-turbo-vin-r-8th-digit-7-bolt-crank-100",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1825,7 +1825,7 @@
       "slug": "1993-mitsubishi-eclipse-engine-18l-vin-b-8th-digit-at-101",
       "canonicalSlug": "1993-mitsubishi-eclipse-engine-18l-vin-b-8th-digit-at-101",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1843,7 +1843,7 @@
       "slug": "1993-mitsubishi-eclipse-engine-18l-vin-b-8th-digit-mt-102",
       "canonicalSlug": "1993-mitsubishi-eclipse-engine-18l-vin-b-8th-digit-mt-102",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1861,7 +1861,7 @@
       "slug": "1993-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-103",
       "canonicalSlug": "1993-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-103",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1879,7 +1879,7 @@
       "slug": "1993-mitsubishi-eclipse-engine-20l-wo-turbo-vin-e-8th-digit-104",
       "canonicalSlug": "1993-mitsubishi-eclipse-engine-20l-wo-turbo-vin-e-8th-digit-104",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1897,7 +1897,7 @@
       "slug": "1994-mitsubishi-eclipse-engine-18l-vin-b-8th-digit-at-105",
       "canonicalSlug": "1994-mitsubishi-eclipse-engine-18l-vin-b-8th-digit-at-105",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1915,7 +1915,7 @@
       "slug": "1994-mitsubishi-eclipse-engine-18l-vin-b-8th-digit-mt-106",
       "canonicalSlug": "1994-mitsubishi-eclipse-engine-18l-vin-b-8th-digit-mt-106",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1933,7 +1933,7 @@
       "slug": "1994-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-107",
       "canonicalSlug": "1994-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-107",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1951,7 +1951,7 @@
       "slug": "1994-mitsubishi-eclipse-engine-20l-wo-turbo-vin-e-8th-digit-108",
       "canonicalSlug": "1994-mitsubishi-eclipse-engine-20l-wo-turbo-vin-e-8th-digit-108",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1969,7 +1969,7 @@
       "slug": "1995-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-109",
       "canonicalSlug": "1995-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-109",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1987,7 +1987,7 @@
       "slug": "1995-mitsubishi-eclipse-engine-20l-wo-turbo-vin-y-8th-digit-110",
       "canonicalSlug": "1995-mitsubishi-eclipse-engine-20l-wo-turbo-vin-y-8th-digit-110",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2005,7 +2005,7 @@
       "slug": "1996-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-111",
       "canonicalSlug": "1996-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-111",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3168,
       "tiers": {
         "low": 3432,
@@ -2023,7 +2023,7 @@
       "slug": "1996-mitsubishi-eclipse-engine-20l-wo-turbo-vin-y-8th-digit-112",
       "canonicalSlug": "1996-mitsubishi-eclipse-engine-20l-wo-turbo-vin-y-8th-digit-112",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2041,7 +2041,7 @@
       "slug": "1996-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-113",
       "canonicalSlug": "1996-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-113",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2328,
       "tiers": {
         "low": 2522,
@@ -2059,7 +2059,7 @@
       "slug": "1997-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-from-3397-114",
       "canonicalSlug": "1997-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-from-3397-114",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3168,
       "tiers": {
         "low": 3432,
@@ -2077,7 +2077,7 @@
       "slug": "1997-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-thru-3297-115",
       "canonicalSlug": "1997-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-thru-3297-115",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2328,
       "tiers": {
         "low": 2522,
@@ -2095,7 +2095,7 @@
       "slug": "1997-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-116",
       "canonicalSlug": "1997-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-116",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -2113,7 +2113,7 @@
       "slug": "1997-mitsubishi-eclipse-engine-20l-wo-turbo-117",
       "canonicalSlug": "1997-mitsubishi-eclipse-engine-20l-wo-turbo-117",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1740,
       "tiers": {
         "low": 1885,
@@ -2131,7 +2131,7 @@
       "slug": "1998-mitsubishi-eclipse-engine-20l-wo-turbo-118",
       "canonicalSlug": "1998-mitsubishi-eclipse-engine-20l-wo-turbo-118",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1740,
       "tiers": {
         "low": 1885,
@@ -2149,7 +2149,7 @@
       "slug": "1998-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-119",
       "canonicalSlug": "1998-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-119",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3168,
       "tiers": {
         "low": 3432,
@@ -2167,7 +2167,7 @@
       "slug": "1998-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-120",
       "canonicalSlug": "1998-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-120",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -2185,7 +2185,7 @@
       "slug": "1999-mitsubishi-eclipse-engine-20l-wo-turbo-121",
       "canonicalSlug": "1999-mitsubishi-eclipse-engine-20l-wo-turbo-121",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1740,
       "tiers": {
         "low": 1885,
@@ -2203,7 +2203,7 @@
       "slug": "1999-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-122",
       "canonicalSlug": "1999-mitsubishi-eclipse-engine-20l-turbo-vin-f-8th-digit-122",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3168,
       "tiers": {
         "low": 3432,
@@ -2221,7 +2221,7 @@
       "slug": "1999-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-123",
       "canonicalSlug": "1999-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-123",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -2239,7 +2239,7 @@
       "slug": "2000-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-from-8199-124",
       "canonicalSlug": "2000-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-from-8199-124",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2257,7 +2257,7 @@
       "slug": "2000-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-from-8199-125",
       "canonicalSlug": "2000-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-from-8199-125",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -2275,7 +2275,7 @@
       "slug": "2000-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-thru-73199-126",
       "canonicalSlug": "2000-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-thru-73199-126",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -2293,7 +2293,7 @@
       "slug": "2000-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-thru-73199-127",
       "canonicalSlug": "2000-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-thru-73199-127",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1404,
       "tiers": {
         "low": 1521,
@@ -2311,7 +2311,7 @@
       "slug": "2000-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-at-128",
       "canonicalSlug": "2000-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-at-128",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2329,7 +2329,7 @@
       "slug": "2000-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-mt-129",
       "canonicalSlug": "2000-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-mt-129",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2347,7 +2347,7 @@
       "slug": "2000-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-at-130",
       "canonicalSlug": "2000-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-at-130",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2365,7 +2365,7 @@
       "slug": "2000-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-mt-131",
       "canonicalSlug": "2000-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-mt-131",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2383,7 +2383,7 @@
       "slug": "2001-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-at-132",
       "canonicalSlug": "2001-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-at-132",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2401,7 +2401,7 @@
       "slug": "2001-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-mt-133",
       "canonicalSlug": "2001-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-mt-133",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2419,7 +2419,7 @@
       "slug": "2001-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-at-134",
       "canonicalSlug": "2001-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-at-134",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2437,7 +2437,7 @@
       "slug": "2001-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-mt-135",
       "canonicalSlug": "2001-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-mt-135",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2455,7 +2455,7 @@
       "slug": "2001-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-at-136",
       "canonicalSlug": "2001-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-at-136",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2473,7 +2473,7 @@
       "slug": "2001-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-mt-137",
       "canonicalSlug": "2001-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-mt-137",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -2491,7 +2491,7 @@
       "slug": "2002-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-at-138",
       "canonicalSlug": "2002-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-at-138",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2509,7 +2509,7 @@
       "slug": "2002-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-mt-139",
       "canonicalSlug": "2002-mitsubishi-eclipse-engine-30l-6-cylinder-vin-h-8th-digit-mt-139",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2527,7 +2527,7 @@
       "slug": "2002-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-at-140",
       "canonicalSlug": "2002-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-at-140",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2545,7 +2545,7 @@
       "slug": "2002-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-mt-141",
       "canonicalSlug": "2002-mitsubishi-eclipse-engine-30l-6-cylinder-vin-l-8th-digit-mt-141",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2563,7 +2563,7 @@
       "slug": "2002-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-at-142",
       "canonicalSlug": "2002-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-at-142",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2581,7 +2581,7 @@
       "slug": "2002-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-mt-143",
       "canonicalSlug": "2002-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-mt-143",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -2599,7 +2599,7 @@
       "slug": "2003-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-at-144",
       "canonicalSlug": "2003-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-at-144",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2617,7 +2617,7 @@
       "slug": "2003-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-mt-145",
       "canonicalSlug": "2003-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-mt-145",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -2635,7 +2635,7 @@
       "slug": "2003-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-at-146",
       "canonicalSlug": "2003-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-at-146",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -2653,7 +2653,7 @@
       "slug": "2003-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-mt-147",
       "canonicalSlug": "2003-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-mt-147",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2671,7 +2671,7 @@
       "slug": "2003-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-at-148",
       "canonicalSlug": "2003-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-at-148",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1194,
       "tiers": {
         "low": 1294,
@@ -2689,7 +2689,7 @@
       "slug": "2003-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-mt-149",
       "canonicalSlug": "2003-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-mt-149",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2707,7 +2707,7 @@
       "slug": "2004-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-at-150",
       "canonicalSlug": "2004-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-at-150",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2725,7 +2725,7 @@
       "slug": "2004-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-mt-151",
       "canonicalSlug": "2004-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-mt-151",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -2743,7 +2743,7 @@
       "slug": "2004-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-at-152",
       "canonicalSlug": "2004-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-at-152",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -2761,7 +2761,7 @@
       "slug": "2004-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-mt-153",
       "canonicalSlug": "2004-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-mt-153",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2779,7 +2779,7 @@
       "slug": "2004-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-at-154",
       "canonicalSlug": "2004-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-at-154",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1194,
       "tiers": {
         "low": 1294,
@@ -2797,7 +2797,7 @@
       "slug": "2004-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-mt-155",
       "canonicalSlug": "2004-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-mt-155",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2815,7 +2815,7 @@
       "slug": "2005-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-at-156",
       "canonicalSlug": "2005-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-at-156",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -2833,7 +2833,7 @@
       "slug": "2005-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-mt-157",
       "canonicalSlug": "2005-mitsubishi-eclipse-engine-24l-vin-g-8th-digit-4-cylinder-mt-157",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -2851,7 +2851,7 @@
       "slug": "2005-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-at-158",
       "canonicalSlug": "2005-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-at-158",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -2869,7 +2869,7 @@
       "slug": "2005-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-mt-159",
       "canonicalSlug": "2005-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-gts-mt-159",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2887,7 +2887,7 @@
       "slug": "2005-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-at-160",
       "canonicalSlug": "2005-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-at-160",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1194,
       "tiers": {
         "low": 1294,
@@ -2905,7 +2905,7 @@
       "slug": "2005-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-mt-161",
       "canonicalSlug": "2005-mitsubishi-eclipse-engine-30l-vin-h-8th-digit-6-cylinder-exc-gts-mt-161",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -2923,7 +2923,7 @@
       "slug": "2006-mitsubishi-eclipse-engine-38l-6-cylinder-vin-s-8th-digit-162",
       "canonicalSlug": "2006-mitsubishi-eclipse-engine-38l-6-cylinder-vin-s-8th-digit-162",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -2941,7 +2941,7 @@
       "slug": "2006-mitsubishi-eclipse-engine-38l-6-cylinder-vin-t-8th-digit-163",
       "canonicalSlug": "2006-mitsubishi-eclipse-engine-38l-6-cylinder-vin-t-8th-digit-163",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -2959,7 +2959,7 @@
       "slug": "2006-mitsubishi-eclipse-engine-24l-vin-f-8th-digit-4-cylinder-164",
       "canonicalSlug": "2006-mitsubishi-eclipse-engine-24l-vin-f-8th-digit-4-cylinder-164",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -2977,7 +2977,7 @@
       "slug": "2007-mitsubishi-eclipse-engine-38l-6-cylinder-vin-s-8th-digit-165",
       "canonicalSlug": "2007-mitsubishi-eclipse-engine-38l-6-cylinder-vin-s-8th-digit-165",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -2995,7 +2995,7 @@
       "slug": "2007-mitsubishi-eclipse-engine-38l-6-cylinder-vin-t-8th-digit-166",
       "canonicalSlug": "2007-mitsubishi-eclipse-engine-38l-6-cylinder-vin-t-8th-digit-166",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -3013,7 +3013,7 @@
       "slug": "2007-mitsubishi-eclipse-engine-24l-vin-f-8th-digit-4-cylinder-167",
       "canonicalSlug": "2007-mitsubishi-eclipse-engine-24l-vin-f-8th-digit-4-cylinder-167",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -3031,7 +3031,7 @@
       "slug": "2008-mitsubishi-eclipse-engine-24l-vin-f-8th-digit-4-cylinder-168",
       "canonicalSlug": "2008-mitsubishi-eclipse-engine-24l-vin-f-8th-digit-4-cylinder-168",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -3049,7 +3049,7 @@
       "slug": "2008-mitsubishi-eclipse-engine-38l-6-cylinder-vin-s-8th-digit-169",
       "canonicalSlug": "2008-mitsubishi-eclipse-engine-38l-6-cylinder-vin-s-8th-digit-169",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -3067,7 +3067,7 @@
       "slug": "2008-mitsubishi-eclipse-engine-38l-6-cylinder-vin-t-8th-digit-170",
       "canonicalSlug": "2008-mitsubishi-eclipse-engine-38l-6-cylinder-vin-t-8th-digit-170",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -3085,7 +3085,7 @@
       "slug": "2004-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-2wd-171",
       "canonicalSlug": "2004-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-2wd-171",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -3103,7 +3103,7 @@
       "slug": "2004-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-4wd-172",
       "canonicalSlug": "2004-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-4wd-172",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -3121,7 +3121,7 @@
       "slug": "2005-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-2wd-173",
       "canonicalSlug": "2005-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-2wd-173",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -3139,7 +3139,7 @@
       "slug": "2005-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-4wd-174",
       "canonicalSlug": "2005-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-4wd-174",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -3157,7 +3157,7 @@
       "slug": "2006-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-2wd-175",
       "canonicalSlug": "2006-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-2wd-175",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -3175,7 +3175,7 @@
       "slug": "2006-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-4wd-176",
       "canonicalSlug": "2006-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-4wd-176",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -3193,7 +3193,7 @@
       "slug": "2007-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-2wd-177",
       "canonicalSlug": "2007-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-2wd-177",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -3211,7 +3211,7 @@
       "slug": "2007-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-4wd-178",
       "canonicalSlug": "2007-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-4wd-178",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -3229,7 +3229,7 @@
       "slug": "2008-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-2wd-179",
       "canonicalSlug": "2008-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-2wd-179",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -3247,7 +3247,7 @@
       "slug": "2008-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-4wd-180",
       "canonicalSlug": "2008-mitsubishi-endeavor-engine-38l-vin-s-8th-digit-6-cylinder-4wd-180",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -3265,7 +3265,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-c-8th-digit-awd-california-emissions-181",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-c-8th-digit-awd-california-emissions-181",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3283,7 +3283,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-c-8th-digit-awd-federal-emissions-182",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-c-8th-digit-awd-federal-emissions-182",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3301,7 +3301,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-c-8th-digit-fwd-california-emissions-183",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-c-8th-digit-fwd-california-emissions-183",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3319,7 +3319,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-c-8th-digit-fwd-canada-emissions-184",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-c-8th-digit-fwd-canada-emissions-184",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3337,7 +3337,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-c-8th-digit-fwd-federal-emissions-185",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-c-8th-digit-fwd-federal-emissions-185",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3355,7 +3355,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-d-8th-digit-awd-california-emissions-186",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-d-8th-digit-awd-california-emissions-186",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3373,7 +3373,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-d-8th-digit-awd-federal-emissions-187",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-d-8th-digit-awd-federal-emissions-187",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3391,7 +3391,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-d-8th-digit-fwd-california-emissions-188",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-d-8th-digit-fwd-california-emissions-188",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3409,7 +3409,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-d-8th-digit-fwd-canada-emissions-189",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-d-8th-digit-fwd-canada-emissions-189",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3427,7 +3427,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-d-8th-digit-fwd-federal-emissions-190",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-d-8th-digit-fwd-federal-emissions-190",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3445,7 +3445,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-t-8th-digit-awd-california-emissions-191",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-t-8th-digit-awd-california-emissions-191",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3463,7 +3463,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-t-8th-digit-awd-federal-emissions-192",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-t-8th-digit-awd-federal-emissions-192",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3481,7 +3481,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-t-8th-digit-fwd-california-emissions-193",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-t-8th-digit-fwd-california-emissions-193",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3499,7 +3499,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-t-8th-digit-fwd-canada-emissions-194",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-t-8th-digit-fwd-canada-emissions-194",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3517,7 +3517,7 @@
       "slug": "1992-mitsubishi-expo-engine-18l-vin-t-8th-digit-fwd-federal-emissions-195",
       "canonicalSlug": "1992-mitsubishi-expo-engine-18l-vin-t-8th-digit-fwd-federal-emissions-195",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3535,7 +3535,7 @@
       "slug": "1992-mitsubishi-expo-engine-24l-vin-l-8th-digit-196",
       "canonicalSlug": "1992-mitsubishi-expo-engine-24l-vin-l-8th-digit-196",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3553,7 +3553,7 @@
       "slug": "1992-mitsubishi-expo-engine-24l-vin-w-8th-digit-197",
       "canonicalSlug": "1992-mitsubishi-expo-engine-24l-vin-w-8th-digit-197",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3571,7 +3571,7 @@
       "slug": "1993-mitsubishi-expo-engine-18l-vin-c-8th-digit-california-emissions-198",
       "canonicalSlug": "1993-mitsubishi-expo-engine-18l-vin-c-8th-digit-california-emissions-198",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3589,7 +3589,7 @@
       "slug": "1993-mitsubishi-expo-engine-18l-vin-c-8th-digit-canada-emissions-199",
       "canonicalSlug": "1993-mitsubishi-expo-engine-18l-vin-c-8th-digit-canada-emissions-199",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3607,7 +3607,7 @@
       "slug": "1993-mitsubishi-expo-engine-18l-vin-c-8th-digit-federal-emissions-200",
       "canonicalSlug": "1993-mitsubishi-expo-engine-18l-vin-c-8th-digit-federal-emissions-200",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3625,7 +3625,7 @@
       "slug": "1993-mitsubishi-expo-engine-24l-vin-g-8th-digit-california-emissions-201",
       "canonicalSlug": "1993-mitsubishi-expo-engine-24l-vin-g-8th-digit-california-emissions-201",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3643,7 +3643,7 @@
       "slug": "1993-mitsubishi-expo-engine-24l-vin-g-8th-digit-federal-emissions-202",
       "canonicalSlug": "1993-mitsubishi-expo-engine-24l-vin-g-8th-digit-federal-emissions-202",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3661,7 +3661,7 @@
       "slug": "1994-mitsubishi-expo-engine-24l-vin-g-8th-digit-federal-emissions-203",
       "canonicalSlug": "1994-mitsubishi-expo-engine-24l-vin-g-8th-digit-federal-emissions-203",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3679,7 +3679,7 @@
       "slug": "1994-mitsubishi-expo-engine-18l-vin-c-8th-digit-from-10193-204",
       "canonicalSlug": "1994-mitsubishi-expo-engine-18l-vin-c-8th-digit-from-10193-204",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3697,7 +3697,7 @@
       "slug": "1994-mitsubishi-expo-engine-18l-vin-c-8th-digit-thru-93093-california-205",
       "canonicalSlug": "1994-mitsubishi-expo-engine-18l-vin-c-8th-digit-thru-93093-california-205",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3715,7 +3715,7 @@
       "slug": "1994-mitsubishi-expo-engine-18l-vin-c-8th-digit-thru-93093-canada-emis-206",
       "canonicalSlug": "1994-mitsubishi-expo-engine-18l-vin-c-8th-digit-thru-93093-canada-emis-206",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3733,7 +3733,7 @@
       "slug": "1994-mitsubishi-expo-engine-18l-vin-c-8th-digit-thru-93093-federal-emi-207",
       "canonicalSlug": "1994-mitsubishi-expo-engine-18l-vin-c-8th-digit-thru-93093-federal-emi-207",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3751,7 +3751,7 @@
       "slug": "1994-mitsubishi-expo-engine-24l-vin-g-8th-digit-california-emissions-208",
       "canonicalSlug": "1994-mitsubishi-expo-engine-24l-vin-g-8th-digit-california-emissions-208",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3769,7 +3769,7 @@
       "slug": "1995-mitsubishi-expo-engine-24l-vin-g-8th-digit-209",
       "canonicalSlug": "1995-mitsubishi-expo-engine-24l-vin-g-8th-digit-209",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3787,7 +3787,7 @@
       "slug": "1996-mitsubishi-expo-engine-24l-vin-g-8th-digit-210",
       "canonicalSlug": "1996-mitsubishi-expo-engine-24l-vin-g-8th-digit-210",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1740,
       "tiers": {
         "low": 1885,
@@ -3805,7 +3805,7 @@
       "slug": "1985-mitsubishi-galant-engine-24l-vin-l-8th-digit-4-cylinder-211",
       "canonicalSlug": "1985-mitsubishi-galant-engine-24l-vin-l-8th-digit-4-cylinder-211",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3823,7 +3823,7 @@
       "slug": "1986-mitsubishi-galant-engine-24l-vin-l-8th-digit-4-cylinder-212",
       "canonicalSlug": "1986-mitsubishi-galant-engine-24l-vin-l-8th-digit-4-cylinder-212",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3841,7 +3841,7 @@
       "slug": "1987-mitsubishi-galant-engine-24l-vin-l-8th-digit-4-cylinder-213",
       "canonicalSlug": "1987-mitsubishi-galant-engine-24l-vin-l-8th-digit-4-cylinder-213",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3859,7 +3859,7 @@
       "slug": "1988-mitsubishi-galant-engine-30l-vin-s-8th-digit-6-cylinder-214",
       "canonicalSlug": "1988-mitsubishi-galant-engine-30l-vin-s-8th-digit-6-cylinder-214",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3877,7 +3877,7 @@
       "slug": "1989-mitsubishi-galant-engine-20l-dohc-vin-r-8th-digit-4-cylinder-215",
       "canonicalSlug": "1989-mitsubishi-galant-engine-20l-dohc-vin-r-8th-digit-4-cylinder-215",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3895,7 +3895,7 @@
       "slug": "1989-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-d-8th-digit-216",
       "canonicalSlug": "1989-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-d-8th-digit-216",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3913,7 +3913,7 @@
       "slug": "1989-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-v-8th-digit-217",
       "canonicalSlug": "1989-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-v-8th-digit-217",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3931,7 +3931,7 @@
       "slug": "1990-mitsubishi-galant-engine-20l-dohc-vin-r-8th-digit-4-cylinder-218",
       "canonicalSlug": "1990-mitsubishi-galant-engine-20l-dohc-vin-r-8th-digit-4-cylinder-218",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3949,7 +3949,7 @@
       "slug": "1990-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-d-8th-digit-219",
       "canonicalSlug": "1990-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-d-8th-digit-219",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3967,7 +3967,7 @@
       "slug": "1990-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-v-8th-digit-220",
       "canonicalSlug": "1990-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-v-8th-digit-220",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3985,7 +3985,7 @@
       "slug": "1991-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-d-8th-digit-221",
       "canonicalSlug": "1991-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-d-8th-digit-221",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4003,7 +4003,7 @@
       "slug": "1991-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-v-8th-digit-222",
       "canonicalSlug": "1991-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-v-8th-digit-222",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4021,7 +4021,7 @@
       "slug": "1991-mitsubishi-galant-engine-20l-dohc-wo-turbo-vin-r-8th-digit-4-cyli-223",
       "canonicalSlug": "1991-mitsubishi-galant-engine-20l-dohc-wo-turbo-vin-r-8th-digit-4-cyli-223",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4039,7 +4039,7 @@
       "slug": "1991-mitsubishi-galant-engine-20l-dohc-turbo-vin-u-8th-digit-4-cylinder-224",
       "canonicalSlug": "1991-mitsubishi-galant-engine-20l-dohc-turbo-vin-u-8th-digit-4-cylinder-224",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4057,7 +4057,7 @@
       "slug": "1992-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-d-8th-digit-225",
       "canonicalSlug": "1992-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-d-8th-digit-225",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4075,7 +4075,7 @@
       "slug": "1992-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-v-8th-digit-226",
       "canonicalSlug": "1992-mitsubishi-galant-engine-20l-sohc-4-cylinder-vin-v-8th-digit-226",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4093,7 +4093,7 @@
       "slug": "1992-mitsubishi-galant-engine-20l-dohc-turbo-vin-u-8th-digit-4-cylinder-227",
       "canonicalSlug": "1992-mitsubishi-galant-engine-20l-dohc-turbo-vin-u-8th-digit-4-cylinder-227",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4111,7 +4111,7 @@
       "slug": "1992-mitsubishi-galant-engine-20l-dohc-wo-turbo-vin-r-8th-digit-4-cyli-228",
       "canonicalSlug": "1992-mitsubishi-galant-engine-20l-dohc-wo-turbo-vin-r-8th-digit-4-cyli-228",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4129,7 +4129,7 @@
       "slug": "1992-mitsubishi-galant-engine-20l-dohc-wo-turbo-vin-r-8th-digit-4-cyli-229",
       "canonicalSlug": "1992-mitsubishi-galant-engine-20l-dohc-wo-turbo-vin-r-8th-digit-4-cyli-229",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4147,7 +4147,7 @@
       "slug": "1993-mitsubishi-galant-engine-20l-vin-d-8th-digit-4-cylinder-sohc-califo-230",
       "canonicalSlug": "1993-mitsubishi-galant-engine-20l-vin-d-8th-digit-4-cylinder-sohc-califo-230",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4165,7 +4165,7 @@
       "slug": "1993-mitsubishi-galant-engine-20l-vin-d-8th-digit-4-cylinder-sohc-federa-231",
       "canonicalSlug": "1993-mitsubishi-galant-engine-20l-vin-d-8th-digit-4-cylinder-sohc-federa-231",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4183,7 +4183,7 @@
       "slug": "1994-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-sohc-232",
       "canonicalSlug": "1994-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-sohc-232",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4201,7 +4201,7 @@
       "slug": "1994-mitsubishi-galant-engine-24l-vin-l-8th-digit-4-cylinder-dohc-233",
       "canonicalSlug": "1994-mitsubishi-galant-engine-24l-vin-l-8th-digit-4-cylinder-dohc-233",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4219,7 +4219,7 @@
       "slug": "1995-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-234",
       "canonicalSlug": "1995-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-234",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4237,7 +4237,7 @@
       "slug": "1996-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-235",
       "canonicalSlug": "1996-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-235",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -4255,7 +4255,7 @@
       "slug": "1997-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-236",
       "canonicalSlug": "1997-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-236",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -4273,7 +4273,7 @@
       "slug": "1998-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-237",
       "canonicalSlug": "1998-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-237",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -4291,7 +4291,7 @@
       "slug": "1999-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-238",
       "canonicalSlug": "1999-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-238",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -4309,7 +4309,7 @@
       "slug": "1999-mitsubishi-galant-engine-30l-6-cylinder-vin-h-8th-digit-239",
       "canonicalSlug": "1999-mitsubishi-galant-engine-30l-6-cylinder-vin-h-8th-digit-239",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -4327,7 +4327,7 @@
       "slug": "2000-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-240",
       "canonicalSlug": "2000-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-240",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -4345,7 +4345,7 @@
       "slug": "2000-mitsubishi-galant-engine-30l-6-cylinder-vin-h-8th-digit-241",
       "canonicalSlug": "2000-mitsubishi-galant-engine-30l-6-cylinder-vin-h-8th-digit-241",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -4363,7 +4363,7 @@
       "slug": "2001-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-242",
       "canonicalSlug": "2001-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-242",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -4381,7 +4381,7 @@
       "slug": "2001-mitsubishi-galant-engine-30l-6-cylinder-vin-h-8th-digit-243",
       "canonicalSlug": "2001-mitsubishi-galant-engine-30l-6-cylinder-vin-h-8th-digit-243",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -4399,7 +4399,7 @@
       "slug": "2002-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-244",
       "canonicalSlug": "2002-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-244",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -4417,7 +4417,7 @@
       "slug": "2002-mitsubishi-galant-engine-30l-6-cylinder-vin-h-8th-digit-245",
       "canonicalSlug": "2002-mitsubishi-galant-engine-30l-6-cylinder-vin-h-8th-digit-245",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -4435,7 +4435,7 @@
       "slug": "2003-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-246",
       "canonicalSlug": "2003-mitsubishi-galant-engine-24l-vin-g-8th-digit-4-cylinder-246",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1320,
       "tiers": {
         "low": 1430,
@@ -4453,7 +4453,7 @@
       "slug": "2003-mitsubishi-galant-engine-30l-6-cylinder-vin-h-8th-digit-247",
       "canonicalSlug": "2003-mitsubishi-galant-engine-30l-6-cylinder-vin-h-8th-digit-247",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -4471,7 +4471,7 @@
       "slug": "2004-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-248",
       "canonicalSlug": "2004-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-248",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1866,
       "tiers": {
         "low": 2022,
@@ -4489,7 +4489,7 @@
       "slug": "2004-mitsubishi-galant-engine-38l-vin-s-8th-digit-6-cylinder-249",
       "canonicalSlug": "2004-mitsubishi-galant-engine-38l-vin-s-8th-digit-6-cylinder-249",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -4507,7 +4507,7 @@
       "slug": "2005-mitsubishi-galant-engine-38l-vin-s-8th-digit-6-cylinder-250",
       "canonicalSlug": "2005-mitsubishi-galant-engine-38l-vin-s-8th-digit-6-cylinder-250",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -4525,7 +4525,7 @@
       "slug": "2005-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-251",
       "canonicalSlug": "2005-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-251",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1866,
       "tiers": {
         "low": 2022,
@@ -4543,7 +4543,7 @@
       "slug": "2006-mitsubishi-galant-engine-38l-vin-s-8th-digit-6-cylinder-252",
       "canonicalSlug": "2006-mitsubishi-galant-engine-38l-vin-s-8th-digit-6-cylinder-252",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -4561,7 +4561,7 @@
       "slug": "2006-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-253",
       "canonicalSlug": "2006-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-253",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1866,
       "tiers": {
         "low": 2022,
@@ -4579,7 +4579,7 @@
       "slug": "2007-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-254",
       "canonicalSlug": "2007-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-254",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1866,
       "tiers": {
         "low": 2022,
@@ -4597,7 +4597,7 @@
       "slug": "2007-mitsubishi-galant-engine-38l-ralliart-vin-t-8th-digit-6-cylinder-255",
       "canonicalSlug": "2007-mitsubishi-galant-engine-38l-ralliart-vin-t-8th-digit-6-cylinder-255",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2076,
       "tiers": {
         "low": 2249,
@@ -4615,7 +4615,7 @@
       "slug": "2007-mitsubishi-galant-engine-38l-exc-ralliart-vin-s-8th-digit-6-cylinder-256",
       "canonicalSlug": "2007-mitsubishi-galant-engine-38l-exc-ralliart-vin-s-8th-digit-6-cylinder-256",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1656,
       "tiers": {
         "low": 1794,
@@ -4633,7 +4633,7 @@
       "slug": "2008-mitsubishi-galant-engine-38l-ralliart-vin-t-8th-digit-6-cylinder-257",
       "canonicalSlug": "2008-mitsubishi-galant-engine-38l-ralliart-vin-t-8th-digit-6-cylinder-257",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -4651,7 +4651,7 @@
       "slug": "2008-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-258",
       "canonicalSlug": "2008-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-258",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1866,
       "tiers": {
         "low": 2022,
@@ -4669,7 +4669,7 @@
       "slug": "2009-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-259",
       "canonicalSlug": "2009-mitsubishi-galant-engine-24l-vin-f-8th-digit-4-cylinder-259",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1866,
       "tiers": {
         "low": 2022,
@@ -4687,7 +4687,7 @@
       "slug": "2009-mitsubishi-galant-engine-38l-gt-canada-only-vin-s-8th-digit-6-cylin-260",
       "canonicalSlug": "2009-mitsubishi-galant-engine-38l-gt-canada-only-vin-s-8th-digit-6-cylin-260",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1740,
       "tiers": {
         "low": 1885,
@@ -4705,7 +4705,7 @@
       "slug": "2009-mitsubishi-galant-engine-38l-ralliart-vin-t-8th-digit-6-cylinder-261",
       "canonicalSlug": "2009-mitsubishi-galant-engine-38l-ralliart-vin-t-8th-digit-6-cylinder-261",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -4723,7 +4723,7 @@
       "slug": "2009-mitsubishi-galant-engine-38l-sport-v6-vin-s-8th-digit-6-cylinder-262",
       "canonicalSlug": "2009-mitsubishi-galant-engine-38l-sport-v6-vin-s-8th-digit-6-cylinder-262",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -4741,7 +4741,7 @@
       "slug": "1985-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-263",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-263",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4759,7 +4759,7 @@
       "slug": "1985-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-264",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-264",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4777,7 +4777,7 @@
       "slug": "1985-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-265",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-265",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4795,7 +4795,7 @@
       "slug": "1985-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-266",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-266",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4813,7 +4813,7 @@
       "slug": "1985-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-267",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-267",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4831,7 +4831,7 @@
       "slug": "1985-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-268",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-268",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4849,7 +4849,7 @@
       "slug": "1985-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-269",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-269",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4867,7 +4867,7 @@
       "slug": "1985-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-270",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-270",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4885,7 +4885,7 @@
       "slug": "1985-mitsubishi-mirage-engine-16l-vin-f-8th-digit-at-271",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-16l-vin-f-8th-digit-at-271",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4903,7 +4903,7 @@
       "slug": "1985-mitsubishi-mirage-engine-16l-vin-f-8th-digit-mt-272",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-16l-vin-f-8th-digit-mt-272",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4921,7 +4921,7 @@
       "slug": "1985-mitsubishi-mirage-engine-16l-vin-z-8th-digit-at-273",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-16l-vin-z-8th-digit-at-273",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4939,7 +4939,7 @@
       "slug": "1985-mitsubishi-mirage-engine-16l-vin-z-8th-digit-mt-274",
       "canonicalSlug": "1985-mitsubishi-mirage-engine-16l-vin-z-8th-digit-mt-274",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4957,7 +4957,7 @@
       "slug": "1986-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-275",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-275",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4975,7 +4975,7 @@
       "slug": "1986-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-276",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-276",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4993,7 +4993,7 @@
       "slug": "1986-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-277",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-277",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5011,7 +5011,7 @@
       "slug": "1986-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-278",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-278",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5029,7 +5029,7 @@
       "slug": "1986-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-279",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-279",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5047,7 +5047,7 @@
       "slug": "1986-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-280",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-280",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5065,7 +5065,7 @@
       "slug": "1986-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-281",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-281",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5083,7 +5083,7 @@
       "slug": "1986-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-282",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-282",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5101,7 +5101,7 @@
       "slug": "1986-mitsubishi-mirage-engine-16l-vin-f-8th-digit-at-283",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-16l-vin-f-8th-digit-at-283",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5119,7 +5119,7 @@
       "slug": "1986-mitsubishi-mirage-engine-16l-vin-f-8th-digit-mt-284",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-16l-vin-f-8th-digit-mt-284",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5137,7 +5137,7 @@
       "slug": "1986-mitsubishi-mirage-engine-16l-vin-z-8th-digit-at-285",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-16l-vin-z-8th-digit-at-285",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5155,7 +5155,7 @@
       "slug": "1986-mitsubishi-mirage-engine-16l-vin-z-8th-digit-mt-286",
       "canonicalSlug": "1986-mitsubishi-mirage-engine-16l-vin-z-8th-digit-mt-286",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5173,7 +5173,7 @@
       "slug": "1987-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-287",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-287",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5191,7 +5191,7 @@
       "slug": "1987-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-288",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-288",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5209,7 +5209,7 @@
       "slug": "1987-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-289",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-289",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5227,7 +5227,7 @@
       "slug": "1987-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-290",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-290",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5245,7 +5245,7 @@
       "slug": "1987-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-291",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-291",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5263,7 +5263,7 @@
       "slug": "1987-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-292",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-292",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5281,7 +5281,7 @@
       "slug": "1987-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-293",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-293",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5299,7 +5299,7 @@
       "slug": "1987-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-294",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-294",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5317,7 +5317,7 @@
       "slug": "1987-mitsubishi-mirage-engine-16l-vin-f-8th-digit-at-295",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-16l-vin-f-8th-digit-at-295",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5335,7 +5335,7 @@
       "slug": "1987-mitsubishi-mirage-engine-16l-vin-f-8th-digit-mt-296",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-16l-vin-f-8th-digit-mt-296",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5353,7 +5353,7 @@
       "slug": "1987-mitsubishi-mirage-engine-16l-vin-z-8th-digit-at-297",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-16l-vin-z-8th-digit-at-297",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5371,7 +5371,7 @@
       "slug": "1987-mitsubishi-mirage-engine-16l-vin-z-8th-digit-mt-298",
       "canonicalSlug": "1987-mitsubishi-mirage-engine-16l-vin-z-8th-digit-mt-298",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5389,7 +5389,7 @@
       "slug": "1988-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-299",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-299",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5407,7 +5407,7 @@
       "slug": "1988-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-300",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-300",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5425,7 +5425,7 @@
       "slug": "1988-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-301",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-301",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5443,7 +5443,7 @@
       "slug": "1988-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-302",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-302",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5461,7 +5461,7 @@
       "slug": "1988-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-303",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-303",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5479,7 +5479,7 @@
       "slug": "1988-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-304",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-304",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5497,7 +5497,7 @@
       "slug": "1988-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-305",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-305",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5515,7 +5515,7 @@
       "slug": "1988-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-306",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-306",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5533,7 +5533,7 @@
       "slug": "1988-mitsubishi-mirage-engine-16l-vin-f-8th-digit-at-307",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-16l-vin-f-8th-digit-at-307",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5551,7 +5551,7 @@
       "slug": "1988-mitsubishi-mirage-engine-16l-vin-f-8th-digit-mt-308",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-16l-vin-f-8th-digit-mt-308",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5569,7 +5569,7 @@
       "slug": "1988-mitsubishi-mirage-engine-16l-vin-z-8th-digit-at-309",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-16l-vin-z-8th-digit-at-309",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5587,7 +5587,7 @@
       "slug": "1988-mitsubishi-mirage-engine-16l-vin-z-8th-digit-mt-310",
       "canonicalSlug": "1988-mitsubishi-mirage-engine-16l-vin-z-8th-digit-mt-310",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5605,7 +5605,7 @@
       "slug": "1989-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-311",
       "canonicalSlug": "1989-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-311",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5623,7 +5623,7 @@
       "slug": "1989-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-312",
       "canonicalSlug": "1989-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-312",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5641,7 +5641,7 @@
       "slug": "1989-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-313",
       "canonicalSlug": "1989-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-313",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5659,7 +5659,7 @@
       "slug": "1989-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-314",
       "canonicalSlug": "1989-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-314",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5677,7 +5677,7 @@
       "slug": "1989-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-315",
       "canonicalSlug": "1989-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-315",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5695,7 +5695,7 @@
       "slug": "1989-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-316",
       "canonicalSlug": "1989-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-316",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5713,7 +5713,7 @@
       "slug": "1989-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-317",
       "canonicalSlug": "1989-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-317",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5731,7 +5731,7 @@
       "slug": "1989-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-318",
       "canonicalSlug": "1989-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-318",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5749,7 +5749,7 @@
       "slug": "1989-mitsubishi-mirage-engine-16l-vin-f-8th-digit-319",
       "canonicalSlug": "1989-mitsubishi-mirage-engine-16l-vin-f-8th-digit-319",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5767,7 +5767,7 @@
       "slug": "1989-mitsubishi-mirage-engine-16l-vin-z-8th-digit-320",
       "canonicalSlug": "1989-mitsubishi-mirage-engine-16l-vin-z-8th-digit-320",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5785,7 +5785,7 @@
       "slug": "1990-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-321",
       "canonicalSlug": "1990-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-321",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5803,7 +5803,7 @@
       "slug": "1990-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-322",
       "canonicalSlug": "1990-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-322",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5821,7 +5821,7 @@
       "slug": "1990-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-323",
       "canonicalSlug": "1990-mitsubishi-mirage-engine-15l-vin-k-8th-digit-at-323",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5839,7 +5839,7 @@
       "slug": "1990-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-324",
       "canonicalSlug": "1990-mitsubishi-mirage-engine-15l-vin-k-8th-digit-mt-324",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5857,7 +5857,7 @@
       "slug": "1990-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-325",
       "canonicalSlug": "1990-mitsubishi-mirage-engine-15l-vin-p-8th-digit-at-325",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5875,7 +5875,7 @@
       "slug": "1990-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-326",
       "canonicalSlug": "1990-mitsubishi-mirage-engine-15l-vin-p-8th-digit-mt-326",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5893,7 +5893,7 @@
       "slug": "1990-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-327",
       "canonicalSlug": "1990-mitsubishi-mirage-engine-15l-vin-x-8th-digit-at-327",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5911,7 +5911,7 @@
       "slug": "1990-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-328",
       "canonicalSlug": "1990-mitsubishi-mirage-engine-15l-vin-x-8th-digit-mt-328",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5929,7 +5929,7 @@
       "slug": "1991-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-329",
       "canonicalSlug": "1991-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-329",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5947,7 +5947,7 @@
       "slug": "1991-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-330",
       "canonicalSlug": "1991-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-330",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5965,7 +5965,7 @@
       "slug": "1991-mitsubishi-mirage-engine-16l-vin-y-8th-digit-331",
       "canonicalSlug": "1991-mitsubishi-mirage-engine-16l-vin-y-8th-digit-331",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5983,7 +5983,7 @@
       "slug": "1992-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-332",
       "canonicalSlug": "1992-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-332",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6001,7 +6001,7 @@
       "slug": "1992-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-333",
       "canonicalSlug": "1992-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-333",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6019,7 +6019,7 @@
       "slug": "1992-mitsubishi-mirage-engine-16l-vin-y-8th-digit-334",
       "canonicalSlug": "1992-mitsubishi-mirage-engine-16l-vin-y-8th-digit-334",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6037,7 +6037,7 @@
       "slug": "1993-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-335",
       "canonicalSlug": "1993-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-335",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6055,7 +6055,7 @@
       "slug": "1993-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-336",
       "canonicalSlug": "1993-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-336",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6073,7 +6073,7 @@
       "slug": "1993-mitsubishi-mirage-engine-18l-vin-c-8th-digit-california-emissions-337",
       "canonicalSlug": "1993-mitsubishi-mirage-engine-18l-vin-c-8th-digit-california-emissions-337",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6091,7 +6091,7 @@
       "slug": "1993-mitsubishi-mirage-engine-18l-vin-c-8th-digit-canada-emissions-338",
       "canonicalSlug": "1993-mitsubishi-mirage-engine-18l-vin-c-8th-digit-canada-emissions-338",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6109,7 +6109,7 @@
       "slug": "1993-mitsubishi-mirage-engine-18l-vin-c-8th-digit-federal-emissions-339",
       "canonicalSlug": "1993-mitsubishi-mirage-engine-18l-vin-c-8th-digit-federal-emissions-339",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6127,7 +6127,7 @@
       "slug": "1994-mitsubishi-mirage-engine-15l-vin-a-8th-digit-from-10193-at-340",
       "canonicalSlug": "1994-mitsubishi-mirage-engine-15l-vin-a-8th-digit-from-10193-at-340",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6145,7 +6145,7 @@
       "slug": "1994-mitsubishi-mirage-engine-15l-vin-a-8th-digit-from-10193-mt-341",
       "canonicalSlug": "1994-mitsubishi-mirage-engine-15l-vin-a-8th-digit-from-10193-mt-341",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6163,7 +6163,7 @@
       "slug": "1994-mitsubishi-mirage-engine-15l-vin-a-8th-digit-thru-93093-at-342",
       "canonicalSlug": "1994-mitsubishi-mirage-engine-15l-vin-a-8th-digit-thru-93093-at-342",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6181,7 +6181,7 @@
       "slug": "1994-mitsubishi-mirage-engine-15l-vin-a-8th-digit-thru-93093-mt-343",
       "canonicalSlug": "1994-mitsubishi-mirage-engine-15l-vin-a-8th-digit-thru-93093-mt-343",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6199,7 +6199,7 @@
       "slug": "1994-mitsubishi-mirage-engine-18l-vin-c-8th-digit-from-10193-344",
       "canonicalSlug": "1994-mitsubishi-mirage-engine-18l-vin-c-8th-digit-from-10193-344",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6217,7 +6217,7 @@
       "slug": "1994-mitsubishi-mirage-engine-18l-vin-c-8th-digit-thru-93093-california-345",
       "canonicalSlug": "1994-mitsubishi-mirage-engine-18l-vin-c-8th-digit-thru-93093-california-345",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6235,7 +6235,7 @@
       "slug": "1994-mitsubishi-mirage-engine-18l-vin-c-8th-digit-thru-93093-canada-emis-346",
       "canonicalSlug": "1994-mitsubishi-mirage-engine-18l-vin-c-8th-digit-thru-93093-canada-emis-346",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6253,7 +6253,7 @@
       "slug": "1994-mitsubishi-mirage-engine-18l-vin-c-8th-digit-thru-93093-federal-emi-347",
       "canonicalSlug": "1994-mitsubishi-mirage-engine-18l-vin-c-8th-digit-thru-93093-federal-emi-347",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6271,7 +6271,7 @@
       "slug": "1995-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-california-emissions-348",
       "canonicalSlug": "1995-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-california-emissions-348",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6289,7 +6289,7 @@
       "slug": "1995-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-federal-emissions-349",
       "canonicalSlug": "1995-mitsubishi-mirage-engine-15l-vin-a-8th-digit-at-federal-emissions-349",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6307,7 +6307,7 @@
       "slug": "1995-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-350",
       "canonicalSlug": "1995-mitsubishi-mirage-engine-15l-vin-a-8th-digit-mt-350",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6325,7 +6325,7 @@
       "slug": "1995-mitsubishi-mirage-engine-18l-vin-c-8th-digit-california-emissions-cra-351",
       "canonicalSlug": "1995-mitsubishi-mirage-engine-18l-vin-c-8th-digit-california-emissions-cra-351",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6343,7 +6343,7 @@
       "slug": "1995-mitsubishi-mirage-engine-18l-vin-c-8th-digit-federal-emissions-352",
       "canonicalSlug": "1995-mitsubishi-mirage-engine-18l-vin-c-8th-digit-federal-emissions-352",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6361,7 +6361,7 @@
       "slug": "1996-mitsubishi-mirage-engine-15l-vin-a-8th-digit-353",
       "canonicalSlug": "1996-mitsubishi-mirage-engine-15l-vin-a-8th-digit-353",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -6379,7 +6379,7 @@
       "slug": "1996-mitsubishi-mirage-engine-18l-vin-c-8th-digit-354",
       "canonicalSlug": "1996-mitsubishi-mirage-engine-18l-vin-c-8th-digit-354",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1656,
       "tiers": {
         "low": 1794,
@@ -6397,7 +6397,7 @@
       "slug": "1997-mitsubishi-mirage-engine-18l-vin-c-8th-digit-355",
       "canonicalSlug": "1997-mitsubishi-mirage-engine-18l-vin-c-8th-digit-355",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1656,
       "tiers": {
         "low": 1794,
@@ -6415,7 +6415,7 @@
       "slug": "1997-mitsubishi-mirage-engine-15l-vin-a-8th-digit-356",
       "canonicalSlug": "1997-mitsubishi-mirage-engine-15l-vin-a-8th-digit-356",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -6433,7 +6433,7 @@
       "slug": "1998-mitsubishi-mirage-engine-18l-vin-c-8th-digit-357",
       "canonicalSlug": "1998-mitsubishi-mirage-engine-18l-vin-c-8th-digit-357",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1656,
       "tiers": {
         "low": 1794,
@@ -6451,7 +6451,7 @@
       "slug": "1998-mitsubishi-mirage-engine-15l-vin-a-8th-digit-358",
       "canonicalSlug": "1998-mitsubishi-mirage-engine-15l-vin-a-8th-digit-358",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -6469,7 +6469,7 @@
       "slug": "1999-mitsubishi-mirage-engine-18l-vin-c-8th-digit-359",
       "canonicalSlug": "1999-mitsubishi-mirage-engine-18l-vin-c-8th-digit-359",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1656,
       "tiers": {
         "low": 1794,
@@ -6487,7 +6487,7 @@
       "slug": "1999-mitsubishi-mirage-engine-15l-vin-a-8th-digit-360",
       "canonicalSlug": "1999-mitsubishi-mirage-engine-15l-vin-a-8th-digit-360",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -6505,7 +6505,7 @@
       "slug": "2000-mitsubishi-mirage-engine-18l-vin-c-8th-digit-361",
       "canonicalSlug": "2000-mitsubishi-mirage-engine-18l-vin-c-8th-digit-361",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1656,
       "tiers": {
         "low": 1794,
@@ -6523,7 +6523,7 @@
       "slug": "2000-mitsubishi-mirage-engine-15l-vin-a-8th-digit-362",
       "canonicalSlug": "2000-mitsubishi-mirage-engine-15l-vin-a-8th-digit-362",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -6541,7 +6541,7 @@
       "slug": "2001-mitsubishi-mirage-engine-15l-vin-a-8th-digit-363",
       "canonicalSlug": "2001-mitsubishi-mirage-engine-15l-vin-a-8th-digit-363",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -6559,7 +6559,7 @@
       "slug": "2001-mitsubishi-mirage-engine-18l-vin-c-8th-digit-364",
       "canonicalSlug": "2001-mitsubishi-mirage-engine-18l-vin-c-8th-digit-364",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1656,
       "tiers": {
         "low": 1794,
@@ -6577,7 +6577,7 @@
       "slug": "2002-mitsubishi-mirage-engine-15l-vin-a-8th-digit-365",
       "canonicalSlug": "2002-mitsubishi-mirage-engine-15l-vin-a-8th-digit-365",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -6595,7 +6595,7 @@
       "slug": "2002-mitsubishi-mirage-engine-18l-vin-c-8th-digit-366",
       "canonicalSlug": "2002-mitsubishi-mirage-engine-18l-vin-c-8th-digit-366",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1656,
       "tiers": {
         "low": 1794,
@@ -6613,7 +6613,7 @@
       "slug": "1983-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-367",
       "canonicalSlug": "1983-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-367",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6631,7 +6631,7 @@
       "slug": "1983-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-368",
       "canonicalSlug": "1983-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-368",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6649,7 +6649,7 @@
       "slug": "1984-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-at-369",
       "canonicalSlug": "1984-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-at-369",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6667,7 +6667,7 @@
       "slug": "1984-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-mt-370",
       "canonicalSlug": "1984-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-mt-370",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6685,7 +6685,7 @@
       "slug": "1984-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-at-371",
       "canonicalSlug": "1984-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-at-371",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6703,7 +6703,7 @@
       "slug": "1984-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-mt-372",
       "canonicalSlug": "1984-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-mt-372",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6721,7 +6721,7 @@
       "slug": "1985-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-at-373",
       "canonicalSlug": "1985-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-at-373",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6739,7 +6739,7 @@
       "slug": "1985-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-mt-374",
       "canonicalSlug": "1985-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-mt-374",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6757,7 +6757,7 @@
       "slug": "1985-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-at-375",
       "canonicalSlug": "1985-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-at-375",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6775,7 +6775,7 @@
       "slug": "1985-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-mt-376",
       "canonicalSlug": "1985-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-mt-376",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6793,7 +6793,7 @@
       "slug": "1986-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-at-377",
       "canonicalSlug": "1986-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-at-377",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6811,7 +6811,7 @@
       "slug": "1986-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-mt-378",
       "canonicalSlug": "1986-mitsubishi-montero-engine-26l-4-156-vin-7-8th-digit-mt-378",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6829,7 +6829,7 @@
       "slug": "1986-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-at-379",
       "canonicalSlug": "1986-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-at-379",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6847,7 +6847,7 @@
       "slug": "1986-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-mt-380",
       "canonicalSlug": "1986-mitsubishi-montero-engine-26l-4-156-vin-e-8th-digit-mt-380",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6865,7 +6865,7 @@
       "slug": "1987-mitsubishi-montero-engine-26l-vin-e-8th-digit-4-156-381",
       "canonicalSlug": "1987-mitsubishi-montero-engine-26l-vin-e-8th-digit-4-156-381",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6883,7 +6883,7 @@
       "slug": "1988-mitsubishi-montero-engine-26l-vin-e-8th-digit-4-156-382",
       "canonicalSlug": "1988-mitsubishi-montero-engine-26l-vin-e-8th-digit-4-156-382",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6901,7 +6901,7 @@
       "slug": "1989-mitsubishi-montero-engine-26l-vin-e-8th-digit-4-156-383",
       "canonicalSlug": "1989-mitsubishi-montero-engine-26l-vin-e-8th-digit-4-156-383",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6919,7 +6919,7 @@
       "slug": "1989-mitsubishi-montero-engine-30l-vin-s-8th-digit-384",
       "canonicalSlug": "1989-mitsubishi-montero-engine-30l-vin-s-8th-digit-384",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6937,7 +6937,7 @@
       "slug": "1990-mitsubishi-montero-engine-30l-vin-h-or-s-8th-digit-385",
       "canonicalSlug": "1990-mitsubishi-montero-engine-30l-vin-h-or-s-8th-digit-385",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6955,7 +6955,7 @@
       "slug": "1991-mitsubishi-montero-engine-30l-vin-h-or-s-8th-digit-386",
       "canonicalSlug": "1991-mitsubishi-montero-engine-30l-vin-h-or-s-8th-digit-386",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6973,7 +6973,7 @@
       "slug": "1992-mitsubishi-montero-engine-30l-vin-h-or-s-8th-digit-387",
       "canonicalSlug": "1992-mitsubishi-montero-engine-30l-vin-h-or-s-8th-digit-387",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6991,7 +6991,7 @@
       "slug": "1993-mitsubishi-montero-engine-30l-vin-h-or-s-8th-digit-388",
       "canonicalSlug": "1993-mitsubishi-montero-engine-30l-vin-h-or-s-8th-digit-388",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7009,7 +7009,7 @@
       "slug": "1994-mitsubishi-montero-engine-30l-vin-h-8th-digit-389",
       "canonicalSlug": "1994-mitsubishi-montero-engine-30l-vin-h-8th-digit-389",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7027,7 +7027,7 @@
       "slug": "1994-mitsubishi-montero-engine-30l-vin-s-8th-digit-390",
       "canonicalSlug": "1994-mitsubishi-montero-engine-30l-vin-s-8th-digit-390",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7045,7 +7045,7 @@
       "slug": "1994-mitsubishi-montero-engine-35l-vin-m-8th-digit-391",
       "canonicalSlug": "1994-mitsubishi-montero-engine-35l-vin-m-8th-digit-391",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7063,7 +7063,7 @@
       "slug": "1995-mitsubishi-montero-engine-35l-vin-m-8th-digit-392",
       "canonicalSlug": "1995-mitsubishi-montero-engine-35l-vin-m-8th-digit-392",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7081,7 +7081,7 @@
       "slug": "1995-mitsubishi-montero-engine-30l-vin-h-8th-digit-393",
       "canonicalSlug": "1995-mitsubishi-montero-engine-30l-vin-h-8th-digit-393",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7099,7 +7099,7 @@
       "slug": "1995-mitsubishi-montero-engine-30l-vin-s-8th-digit-394",
       "canonicalSlug": "1995-mitsubishi-montero-engine-30l-vin-s-8th-digit-394",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7117,7 +7117,7 @@
       "slug": "1996-mitsubishi-montero-engine-35l-vin-m-8th-digit-395",
       "canonicalSlug": "1996-mitsubishi-montero-engine-35l-vin-m-8th-digit-395",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3000,
       "tiers": {
         "low": 3250,
@@ -7135,7 +7135,7 @@
       "slug": "1996-mitsubishi-montero-engine-30l-vin-h-8th-digit-396",
       "canonicalSlug": "1996-mitsubishi-montero-engine-30l-vin-h-8th-digit-396",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7153,7 +7153,7 @@
       "slug": "1996-mitsubishi-montero-engine-30l-vin-s-8th-digit-397",
       "canonicalSlug": "1996-mitsubishi-montero-engine-30l-vin-s-8th-digit-397",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7171,7 +7171,7 @@
       "slug": "1997-mitsubishi-montero-engine-35l-vin-r-8th-digit-398",
       "canonicalSlug": "1997-mitsubishi-montero-engine-35l-vin-r-8th-digit-398",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7189,7 +7189,7 @@
       "slug": "1998-mitsubishi-montero-engine-35l-vin-r-8th-digit-399",
       "canonicalSlug": "1998-mitsubishi-montero-engine-35l-vin-r-8th-digit-399",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7207,7 +7207,7 @@
       "slug": "1999-mitsubishi-montero-engine-35l-vin-r-8th-digit-400",
       "canonicalSlug": "1999-mitsubishi-montero-engine-35l-vin-r-8th-digit-400",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7225,7 +7225,7 @@
       "slug": "2000-mitsubishi-montero-engine-35l-vin-r-8th-digit-401",
       "canonicalSlug": "2000-mitsubishi-montero-engine-35l-vin-r-8th-digit-401",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7243,7 +7243,7 @@
       "slug": "2001-mitsubishi-montero-engine-35l-vin-r-8th-digit-402",
       "canonicalSlug": "2001-mitsubishi-montero-engine-35l-vin-r-8th-digit-402",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7261,7 +7261,7 @@
       "slug": "2002-mitsubishi-montero-engine-35l-vin-r-8th-digit-403",
       "canonicalSlug": "2002-mitsubishi-montero-engine-35l-vin-r-8th-digit-403",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7279,7 +7279,7 @@
       "slug": "2003-mitsubishi-montero-engine-38l-vin-s-8th-digit-404",
       "canonicalSlug": "2003-mitsubishi-montero-engine-38l-vin-s-8th-digit-404",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 4008,
       "tiers": {
         "low": 4342,
@@ -7297,7 +7297,7 @@
       "slug": "2004-mitsubishi-montero-engine-38l-vin-s-8th-digit-405",
       "canonicalSlug": "2004-mitsubishi-montero-engine-38l-vin-s-8th-digit-405",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 4008,
       "tiers": {
         "low": 4342,
@@ -7315,7 +7315,7 @@
       "slug": "2005-mitsubishi-montero-engine-38l-vin-s-8th-digit-406",
       "canonicalSlug": "2005-mitsubishi-montero-engine-38l-vin-s-8th-digit-406",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 4008,
       "tiers": {
         "low": 4342,
@@ -7333,7 +7333,7 @@
       "slug": "2006-mitsubishi-montero-engine-38l-vin-s-8th-digit-407",
       "canonicalSlug": "2006-mitsubishi-montero-engine-38l-vin-s-8th-digit-407",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 4008,
       "tiers": {
         "low": 4342,
@@ -7351,7 +7351,7 @@
       "slug": "1997-mitsubishi-montero-sport-engine-24l-vin-g-8th-digit-408",
       "canonicalSlug": "1997-mitsubishi-montero-sport-engine-24l-vin-g-8th-digit-408",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2244,
       "tiers": {
         "low": 2431,
@@ -7369,7 +7369,7 @@
       "slug": "1997-mitsubishi-montero-sport-engine-30l-vin-p-8th-digit-409",
       "canonicalSlug": "1997-mitsubishi-montero-sport-engine-30l-vin-p-8th-digit-409",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -7387,7 +7387,7 @@
       "slug": "1997-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-410",
       "canonicalSlug": "1997-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-410",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -7405,7 +7405,7 @@
       "slug": "1998-mitsubishi-montero-sport-engine-30l-vin-p-8th-digit-411",
       "canonicalSlug": "1998-mitsubishi-montero-sport-engine-30l-vin-p-8th-digit-411",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -7423,7 +7423,7 @@
       "slug": "1998-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-412",
       "canonicalSlug": "1998-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-412",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -7441,7 +7441,7 @@
       "slug": "1998-mitsubishi-montero-sport-engine-24l-vin-g-8th-digit-413",
       "canonicalSlug": "1998-mitsubishi-montero-sport-engine-24l-vin-g-8th-digit-413",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2244,
       "tiers": {
         "low": 2431,
@@ -7459,7 +7459,7 @@
       "slug": "1999-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-414",
       "canonicalSlug": "1999-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-414",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -7477,7 +7477,7 @@
       "slug": "1999-mitsubishi-montero-sport-engine-24l-vin-g-8th-digit-415",
       "canonicalSlug": "1999-mitsubishi-montero-sport-engine-24l-vin-g-8th-digit-415",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2244,
       "tiers": {
         "low": 2431,
@@ -7495,7 +7495,7 @@
       "slug": "1999-mitsubishi-montero-sport-engine-30l-vin-l-8th-digit-416",
       "canonicalSlug": "1999-mitsubishi-montero-sport-engine-30l-vin-l-8th-digit-416",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1530,
       "tiers": {
         "low": 1658,
@@ -7513,7 +7513,7 @@
       "slug": "1999-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-417",
       "canonicalSlug": "1999-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-417",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1992,
       "tiers": {
         "low": 2158,
@@ -7531,7 +7531,7 @@
       "slug": "2000-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-418",
       "canonicalSlug": "2000-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-418",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -7549,7 +7549,7 @@
       "slug": "2000-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-419",
       "canonicalSlug": "2000-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-419",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1992,
       "tiers": {
         "low": 2158,
@@ -7567,7 +7567,7 @@
       "slug": "2001-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-420",
       "canonicalSlug": "2001-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-420",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1992,
       "tiers": {
         "low": 2158,
@@ -7585,7 +7585,7 @@
       "slug": "2001-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-421",
       "canonicalSlug": "2001-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-421",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1992,
       "tiers": {
         "low": 2158,
@@ -7603,7 +7603,7 @@
       "slug": "2002-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-422",
       "canonicalSlug": "2002-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-422",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -7621,7 +7621,7 @@
       "slug": "2002-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-423",
       "canonicalSlug": "2002-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-423",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1992,
       "tiers": {
         "low": 2158,
@@ -7639,7 +7639,7 @@
       "slug": "2002-mitsubishi-montero-sport-engine-30l-vin-p-8th-digit-424",
       "canonicalSlug": "2002-mitsubishi-montero-sport-engine-30l-vin-p-8th-digit-424",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1992,
       "tiers": {
         "low": 2158,
@@ -7657,7 +7657,7 @@
       "slug": "2003-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-425",
       "canonicalSlug": "2003-mitsubishi-montero-sport-engine-30l-vin-h-8th-digit-425",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1992,
       "tiers": {
         "low": 2158,
@@ -7675,7 +7675,7 @@
       "slug": "2003-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-426",
       "canonicalSlug": "2003-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-426",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1572,
       "tiers": {
         "low": 1703,
@@ -7693,7 +7693,7 @@
       "slug": "2004-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-427",
       "canonicalSlug": "2004-mitsubishi-montero-sport-engine-35l-vin-r-8th-digit-427",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2244,
       "tiers": {
         "low": 2431,
@@ -7711,7 +7711,7 @@
       "slug": "2003-mitsubishi-outlander-engine-24l-vin-g-8th-digit-428",
       "canonicalSlug": "2003-mitsubishi-outlander-engine-24l-vin-g-8th-digit-428",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1740,
       "tiers": {
         "low": 1885,
@@ -7729,7 +7729,7 @@
       "slug": "2004-mitsubishi-outlander-engine-24l-vin-f-8th-digit-429",
       "canonicalSlug": "2004-mitsubishi-outlander-engine-24l-vin-f-8th-digit-429",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1740,
       "tiers": {
         "low": 1885,
@@ -7747,7 +7747,7 @@
       "slug": "2005-mitsubishi-outlander-engine-24l-vin-f-8th-digit-430",
       "canonicalSlug": "2005-mitsubishi-outlander-engine-24l-vin-f-8th-digit-430",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1740,
       "tiers": {
         "low": 1885,
@@ -7765,7 +7765,7 @@
       "slug": "2006-mitsubishi-outlander-engine-24l-vin-f-8th-digit-431",
       "canonicalSlug": "2006-mitsubishi-outlander-engine-24l-vin-f-8th-digit-431",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1740,
       "tiers": {
         "low": 1885,
@@ -7783,7 +7783,7 @@
       "slug": "2007-mitsubishi-outlander-engine-30l-vin-x-8th-digit-432",
       "canonicalSlug": "2007-mitsubishi-outlander-engine-30l-vin-x-8th-digit-432",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7801,7 +7801,7 @@
       "slug": "2008-mitsubishi-outlander-engine-24l-vin-w-8th-digit-433",
       "canonicalSlug": "2008-mitsubishi-outlander-engine-24l-vin-w-8th-digit-433",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -7819,7 +7819,7 @@
       "slug": "2008-mitsubishi-outlander-engine-30l-vin-x-8th-digit-434",
       "canonicalSlug": "2008-mitsubishi-outlander-engine-30l-vin-x-8th-digit-434",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7837,7 +7837,7 @@
       "slug": "2009-mitsubishi-outlander-engine-30l-vin-x-8th-digit-435",
       "canonicalSlug": "2009-mitsubishi-outlander-engine-30l-vin-x-8th-digit-435",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7855,7 +7855,7 @@
       "slug": "2009-mitsubishi-outlander-engine-24l-vin-w-8th-digit-436",
       "canonicalSlug": "2009-mitsubishi-outlander-engine-24l-vin-w-8th-digit-436",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -7873,7 +7873,7 @@
       "slug": "2010-mitsubishi-outlander-engine-24l-vin-w-8th-digit-437",
       "canonicalSlug": "2010-mitsubishi-outlander-engine-24l-vin-w-8th-digit-437",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -7891,7 +7891,7 @@
       "slug": "2010-mitsubishi-outlander-engine-30l-vin-x-8th-digit-438",
       "canonicalSlug": "2010-mitsubishi-outlander-engine-30l-vin-x-8th-digit-438",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -7909,7 +7909,7 @@
       "slug": "2011-mitsubishi-outlander-sport-engine-20l-vin-u-8th-digit-439",
       "canonicalSlug": "2011-mitsubishi-outlander-sport-engine-20l-vin-u-8th-digit-439",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2496,
       "tiers": {
         "low": 2704,
@@ -7927,7 +7927,7 @@
       "slug": "2012-mitsubishi-outlander-sport-engine-20l-vin-u-8th-digit-440",
       "canonicalSlug": "2012-mitsubishi-outlander-sport-engine-20l-vin-u-8th-digit-440",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2496,
       "tiers": {
         "low": 2704,
@@ -7945,7 +7945,7 @@
       "slug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-9-8th-digit-441",
       "canonicalSlug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-9-8th-digit-441",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7963,7 +7963,7 @@
       "slug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-j-8th-digit-442",
       "canonicalSlug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-j-8th-digit-442",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7981,7 +7981,7 @@
       "slug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-5-8th-digit-443",
       "canonicalSlug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-5-8th-digit-443",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7999,7 +7999,7 @@
       "slug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-at-444",
       "canonicalSlug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-at-444",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8017,7 +8017,7 @@
       "slug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-mt-445",
       "canonicalSlug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-mt-445",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8035,7 +8035,7 @@
       "slug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-at-446",
       "canonicalSlug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-at-446",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8053,7 +8053,7 @@
       "slug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-mt-447",
       "canonicalSlug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-mt-447",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8071,7 +8071,7 @@
       "slug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-448",
       "canonicalSlug": "1983-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-448",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8089,7 +8089,7 @@
       "slug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-5-8th-digit-449",
       "canonicalSlug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-5-8th-digit-449",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8107,7 +8107,7 @@
       "slug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-at-450",
       "canonicalSlug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-at-450",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 3160,
       "tiers": {
         "low": 3423,
@@ -8125,7 +8125,7 @@
       "slug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-mt-451",
       "canonicalSlug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-mt-451",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8143,7 +8143,7 @@
       "slug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-at-452",
       "canonicalSlug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-at-452",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8161,7 +8161,7 @@
       "slug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-mt-453",
       "canonicalSlug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-mt-453",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8179,7 +8179,7 @@
       "slug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-454",
       "canonicalSlug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-454",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8197,7 +8197,7 @@
       "slug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-9-8th-digit-from-883-455",
       "canonicalSlug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-9-8th-digit-from-883-455",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8215,7 +8215,7 @@
       "slug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-9-8th-digit-thru-783-456",
       "canonicalSlug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-9-8th-digit-thru-783-456",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8233,7 +8233,7 @@
       "slug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-j-8th-digit-from-883-457",
       "canonicalSlug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-j-8th-digit-from-883-457",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8251,7 +8251,7 @@
       "slug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-j-8th-digit-thru-783-458",
       "canonicalSlug": "1984-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-j-8th-digit-thru-783-458",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8269,7 +8269,7 @@
       "slug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-5-8th-digit-459",
       "canonicalSlug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-5-8th-digit-459",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8287,7 +8287,7 @@
       "slug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-at-460",
       "canonicalSlug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-at-460",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8305,7 +8305,7 @@
       "slug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-mt-461",
       "canonicalSlug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-7-8th-digit-mt-461",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2328,
       "tiers": {
         "low": 2522,
@@ -8323,7 +8323,7 @@
       "slug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-at-462",
       "canonicalSlug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-at-462",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8341,7 +8341,7 @@
       "slug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-mt-463",
       "canonicalSlug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-mt-463",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8359,7 +8359,7 @@
       "slug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-464",
       "canonicalSlug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-464",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1740,
       "tiers": {
         "low": 1885,
@@ -8377,7 +8377,7 @@
       "slug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-9-8th-digit-465",
       "canonicalSlug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-9-8th-digit-465",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8395,7 +8395,7 @@
       "slug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-j-8th-digit-466",
       "canonicalSlug": "1985-mitsubishi-pickup-see-also-dodge-d50-engine-23l-diesel-vin-j-8th-digit-466",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8413,7 +8413,7 @@
       "slug": "1986-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-467",
       "canonicalSlug": "1986-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-467",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8431,7 +8431,7 @@
       "slug": "1986-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-468",
       "canonicalSlug": "1986-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-468",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8449,7 +8449,7 @@
       "slug": "1986-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-469",
       "canonicalSlug": "1986-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-469",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2328,
       "tiers": {
         "low": 2522,
@@ -8467,7 +8467,7 @@
       "slug": "1987-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-470",
       "canonicalSlug": "1987-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-470",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8485,7 +8485,7 @@
       "slug": "1987-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-at-471",
       "canonicalSlug": "1987-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-at-471",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -8503,7 +8503,7 @@
       "slug": "1987-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-mt-472",
       "canonicalSlug": "1987-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-mt-472",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8521,7 +8521,7 @@
       "slug": "1987-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-at-473",
       "canonicalSlug": "1987-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-at-473",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -8539,7 +8539,7 @@
       "slug": "1987-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-mt-474",
       "canonicalSlug": "1987-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-mt-474",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -8557,7 +8557,7 @@
       "slug": "1988-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-475",
       "canonicalSlug": "1988-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-475",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8575,7 +8575,7 @@
       "slug": "1988-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-at-476",
       "canonicalSlug": "1988-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-at-476",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8593,7 +8593,7 @@
       "slug": "1988-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-mt-477",
       "canonicalSlug": "1988-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-mt-477",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -8611,7 +8611,7 @@
       "slug": "1988-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-at-478",
       "canonicalSlug": "1988-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-at-478",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -8629,7 +8629,7 @@
       "slug": "1988-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-mt-479",
       "canonicalSlug": "1988-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-mt-479",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1908,
       "tiers": {
         "low": 2067,
@@ -8647,7 +8647,7 @@
       "slug": "1989-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-480",
       "canonicalSlug": "1989-mitsubishi-pickup-see-also-dodge-d50-engine-26l-vin-e-8th-digit-480",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2328,
       "tiers": {
         "low": 2522,
@@ -8665,7 +8665,7 @@
       "slug": "1989-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-at-481",
       "canonicalSlug": "1989-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-at-481",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -8683,7 +8683,7 @@
       "slug": "1989-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-mt-482",
       "canonicalSlug": "1989-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-d-8th-digit-mt-482",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8701,7 +8701,7 @@
       "slug": "1989-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-at-483",
       "canonicalSlug": "1989-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-at-483",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1236,
       "tiers": {
         "low": 1339,
@@ -8719,7 +8719,7 @@
       "slug": "1989-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-mt-484",
       "canonicalSlug": "1989-mitsubishi-pickup-see-also-dodge-d50-engine-20l-vin-v-8th-digit-mt-484",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8737,7 +8737,7 @@
       "slug": "1990-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-l-8th-digit-485",
       "canonicalSlug": "1990-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-l-8th-digit-485",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8755,7 +8755,7 @@
       "slug": "1990-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-w-8th-digit-486",
       "canonicalSlug": "1990-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-w-8th-digit-486",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8773,7 +8773,7 @@
       "slug": "1990-mitsubishi-pickup-see-also-dodge-d50-engine-30l-vin-s-8th-digit-487",
       "canonicalSlug": "1990-mitsubishi-pickup-see-also-dodge-d50-engine-30l-vin-s-8th-digit-487",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2975,
       "tiers": {
         "low": 3223,
@@ -8791,7 +8791,7 @@
       "slug": "1991-mitsubishi-pickup-see-also-dodge-d50-engine-30l-vin-s-8th-digit-488",
       "canonicalSlug": "1991-mitsubishi-pickup-see-also-dodge-d50-engine-30l-vin-s-8th-digit-488",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8809,7 +8809,7 @@
       "slug": "1991-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-l-8th-digit-from-291-489",
       "canonicalSlug": "1991-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-l-8th-digit-from-291-489",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8827,7 +8827,7 @@
       "slug": "1991-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-l-8th-digit-thru-191-490",
       "canonicalSlug": "1991-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-l-8th-digit-thru-191-490",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8845,7 +8845,7 @@
       "slug": "1991-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-w-8th-digit-from-291-491",
       "canonicalSlug": "1991-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-w-8th-digit-from-291-491",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8863,7 +8863,7 @@
       "slug": "1991-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-w-8th-digit-thru-191-492",
       "canonicalSlug": "1991-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-w-8th-digit-thru-191-492",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8881,7 +8881,7 @@
       "slug": "1992-mitsubishi-pickup-see-also-dodge-d50-engine-30l-vin-s-8th-digit-493",
       "canonicalSlug": "1992-mitsubishi-pickup-see-also-dodge-d50-engine-30l-vin-s-8th-digit-493",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8899,7 +8899,7 @@
       "slug": "1992-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-l-8th-digit-494",
       "canonicalSlug": "1992-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-l-8th-digit-494",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8917,7 +8917,7 @@
       "slug": "1992-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-w-8th-digit-495",
       "canonicalSlug": "1992-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-w-8th-digit-495",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8935,7 +8935,7 @@
       "slug": "1993-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-g-8th-digit-496",
       "canonicalSlug": "1993-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-g-8th-digit-496",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8953,7 +8953,7 @@
       "slug": "1993-mitsubishi-pickup-see-also-dodge-d50-engine-30l-vin-h-or-s-8th-digit-497",
       "canonicalSlug": "1993-mitsubishi-pickup-see-also-dodge-d50-engine-30l-vin-h-or-s-8th-digit-497",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2975,
       "tiers": {
         "low": 3223,
@@ -8971,7 +8971,7 @@
       "slug": "1994-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-g-8th-digit-498",
       "canonicalSlug": "1994-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-g-8th-digit-498",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8989,7 +8989,7 @@
       "slug": "1994-mitsubishi-pickup-see-also-dodge-d50-engine-30l-vin-h-or-s-8th-digit-499",
       "canonicalSlug": "1994-mitsubishi-pickup-see-also-dodge-d50-engine-30l-vin-h-or-s-8th-digit-499",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2975,
       "tiers": {
         "low": 3223,
@@ -9007,7 +9007,7 @@
       "slug": "1995-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-g-8th-digit-500",
       "canonicalSlug": "1995-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-g-8th-digit-500",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9025,7 +9025,7 @@
       "slug": "1996-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-g-8th-digit-501",
       "canonicalSlug": "1996-mitsubishi-pickup-see-also-dodge-d50-engine-24l-vin-g-8th-digit-501",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2244,
       "tiers": {
         "low": 2431,
@@ -9043,7 +9043,7 @@
       "slug": "1987-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-california-502",
       "canonicalSlug": "1987-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-california-502",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2832,
       "tiers": {
         "low": 3068,
@@ -9061,7 +9061,7 @@
       "slug": "1987-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-federal-503",
       "canonicalSlug": "1987-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-federal-503",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9079,7 +9079,7 @@
       "slug": "1988-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-california-504",
       "canonicalSlug": "1988-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-california-504",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9097,7 +9097,7 @@
       "slug": "1988-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-federal-505",
       "canonicalSlug": "1988-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-federal-505",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9115,7 +9115,7 @@
       "slug": "1989-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-california-506",
       "canonicalSlug": "1989-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-california-506",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9133,7 +9133,7 @@
       "slug": "1989-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-federal-507",
       "canonicalSlug": "1989-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-federal-507",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9151,7 +9151,7 @@
       "slug": "1990-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-508",
       "canonicalSlug": "1990-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-508",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9169,7 +9169,7 @@
       "slug": "1991-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-509",
       "canonicalSlug": "1991-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-509",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9187,7 +9187,7 @@
       "slug": "1992-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-510",
       "canonicalSlug": "1992-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-510",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9205,7 +9205,7 @@
       "slug": "1993-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-511",
       "canonicalSlug": "1993-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-511",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9223,7 +9223,7 @@
       "slug": "1994-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-512",
       "canonicalSlug": "1994-mitsubishi-precis-engine-15l-vin-j-8th-digit-4-90-512",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9241,7 +9241,7 @@
       "slug": "2011-mitsubishi-rvr-engine-20l-vin-u-8th-digit-513",
       "canonicalSlug": "2011-mitsubishi-rvr-engine-20l-vin-u-8th-digit-513",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2496,
       "tiers": {
         "low": 2704,
@@ -9259,7 +9259,7 @@
       "slug": "2012-mitsubishi-rvr-engine-20l-vin-u-8th-digit-514",
       "canonicalSlug": "2012-mitsubishi-rvr-engine-20l-vin-u-8th-digit-514",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2496,
       "tiers": {
         "low": 2704,
@@ -9277,7 +9277,7 @@
       "slug": "1989-mitsubishi-sigma-engine-30l-vin-s-8th-digit-515",
       "canonicalSlug": "1989-mitsubishi-sigma-engine-30l-vin-s-8th-digit-515",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9295,7 +9295,7 @@
       "slug": "1990-mitsubishi-sigma-engine-30l-vin-s-8th-digit-516",
       "canonicalSlug": "1990-mitsubishi-sigma-engine-30l-vin-s-8th-digit-516",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9313,7 +9313,7 @@
       "slug": "1983-mitsubishi-starion-engine-26l-vin-h-8th-digit-4-156-517",
       "canonicalSlug": "1983-mitsubishi-starion-engine-26l-vin-h-8th-digit-4-156-517",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9331,7 +9331,7 @@
       "slug": "1984-mitsubishi-starion-engine-26l-vin-h-8th-digit-4-156-518",
       "canonicalSlug": "1984-mitsubishi-starion-engine-26l-vin-h-8th-digit-4-156-518",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9349,7 +9349,7 @@
       "slug": "1985-mitsubishi-starion-engine-26l-intercooler-vin-n-8th-digit-4-156-519",
       "canonicalSlug": "1985-mitsubishi-starion-engine-26l-intercooler-vin-n-8th-digit-4-156-519",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9367,7 +9367,7 @@
       "slug": "1985-mitsubishi-starion-engine-26l-wo-intercooler-vin-h-8th-digit-4-156-520",
       "canonicalSlug": "1985-mitsubishi-starion-engine-26l-wo-intercooler-vin-h-8th-digit-4-156-520",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9385,7 +9385,7 @@
       "slug": "1986-mitsubishi-starion-engine-26l-intercooler-vin-n-8th-digit-4-156-521",
       "canonicalSlug": "1986-mitsubishi-starion-engine-26l-intercooler-vin-n-8th-digit-4-156-521",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9403,7 +9403,7 @@
       "slug": "1986-mitsubishi-starion-engine-26l-wo-intercooler-vin-h-8th-digit-4-156-522",
       "canonicalSlug": "1986-mitsubishi-starion-engine-26l-wo-intercooler-vin-h-8th-digit-4-156-522",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9421,7 +9421,7 @@
       "slug": "1987-mitsubishi-starion-engine-26l-intercooler-vin-n-8th-digit-4-156-523",
       "canonicalSlug": "1987-mitsubishi-starion-engine-26l-intercooler-vin-n-8th-digit-4-156-523",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9439,7 +9439,7 @@
       "slug": "1987-mitsubishi-starion-engine-26l-wo-intercooler-vin-h-8th-digit-4-156-524",
       "canonicalSlug": "1987-mitsubishi-starion-engine-26l-wo-intercooler-vin-h-8th-digit-4-156-524",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9457,7 +9457,7 @@
       "slug": "1988-mitsubishi-starion-engine-26l-vin-n-8th-digit-4-156-525",
       "canonicalSlug": "1988-mitsubishi-starion-engine-26l-vin-n-8th-digit-4-156-525",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9475,7 +9475,7 @@
       "slug": "1989-mitsubishi-starion-engine-26l-vin-n-8th-digit-4-156-526",
       "canonicalSlug": "1989-mitsubishi-starion-engine-26l-vin-n-8th-digit-4-156-526",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9493,7 +9493,7 @@
       "slug": "1983-mitsubishi-tredia-engine-18l-vin-4-8th-digit-527",
       "canonicalSlug": "1983-mitsubishi-tredia-engine-18l-vin-4-8th-digit-527",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9511,7 +9511,7 @@
       "slug": "1983-mitsubishi-tredia-engine-18l-vin-c-8th-digit-528",
       "canonicalSlug": "1983-mitsubishi-tredia-engine-18l-vin-c-8th-digit-528",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1278,
       "tiers": {
         "low": 1385,
@@ -9529,7 +9529,7 @@
       "slug": "1984-mitsubishi-tredia-engine-18l-vin-g-8th-digit-529",
       "canonicalSlug": "1984-mitsubishi-tredia-engine-18l-vin-g-8th-digit-529",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9547,7 +9547,7 @@
       "slug": "1984-mitsubishi-tredia-engine-20l-vin-5-8th-digit-530",
       "canonicalSlug": "1984-mitsubishi-tredia-engine-20l-vin-5-8th-digit-530",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9565,7 +9565,7 @@
       "slug": "1984-mitsubishi-tredia-engine-20l-vin-d-8th-digit-531",
       "canonicalSlug": "1984-mitsubishi-tredia-engine-20l-vin-d-8th-digit-531",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -9583,7 +9583,7 @@
       "slug": "1985-mitsubishi-tredia-engine-18l-vin-g-8th-digit-532",
       "canonicalSlug": "1985-mitsubishi-tredia-engine-18l-vin-g-8th-digit-532",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9601,7 +9601,7 @@
       "slug": "1985-mitsubishi-tredia-engine-20l-vin-5-8th-digit-533",
       "canonicalSlug": "1985-mitsubishi-tredia-engine-20l-vin-5-8th-digit-533",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9619,7 +9619,7 @@
       "slug": "1985-mitsubishi-tredia-engine-20l-vin-d-8th-digit-534",
       "canonicalSlug": "1985-mitsubishi-tredia-engine-20l-vin-d-8th-digit-534",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9637,7 +9637,7 @@
       "slug": "1986-mitsubishi-tredia-engine-18l-vin-g-8th-digit-535",
       "canonicalSlug": "1986-mitsubishi-tredia-engine-18l-vin-g-8th-digit-535",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9655,7 +9655,7 @@
       "slug": "1986-mitsubishi-tredia-engine-20l-vin-5-8th-digit-536",
       "canonicalSlug": "1986-mitsubishi-tredia-engine-20l-vin-5-8th-digit-536",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9673,7 +9673,7 @@
       "slug": "1986-mitsubishi-tredia-engine-20l-vin-d-8th-digit-537",
       "canonicalSlug": "1986-mitsubishi-tredia-engine-20l-vin-d-8th-digit-537",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 1488,
       "tiers": {
         "low": 1612,
@@ -9691,7 +9691,7 @@
       "slug": "1987-mitsubishi-tredia-engine-18l-vin-g-8th-digit-538",
       "canonicalSlug": "1987-mitsubishi-tredia-engine-18l-vin-g-8th-digit-538",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9709,7 +9709,7 @@
       "slug": "1987-mitsubishi-tredia-engine-20l-vin-5-8th-digit-539",
       "canonicalSlug": "1987-mitsubishi-tredia-engine-20l-vin-5-8th-digit-539",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9727,7 +9727,7 @@
       "slug": "1987-mitsubishi-tredia-engine-20l-vin-d-8th-digit-540",
       "canonicalSlug": "1987-mitsubishi-tredia-engine-20l-vin-d-8th-digit-540",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9745,7 +9745,7 @@
       "slug": "1988-mitsubishi-tredia-engine-18l-vin-g-8th-digit-541",
       "canonicalSlug": "1988-mitsubishi-tredia-engine-18l-vin-g-8th-digit-541",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9763,7 +9763,7 @@
       "slug": "1988-mitsubishi-tredia-engine-20l-vin-5-8th-digit-542",
       "canonicalSlug": "1988-mitsubishi-tredia-engine-20l-vin-5-8th-digit-542",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9781,7 +9781,7 @@
       "slug": "1988-mitsubishi-tredia-engine-20l-vin-d-8th-digit-543",
       "canonicalSlug": "1988-mitsubishi-tredia-engine-20l-vin-d-8th-digit-543",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9799,7 +9799,7 @@
       "slug": "1987-mitsubishi-van-engine-24l-4-143-vin-l-8th-digit-544",
       "canonicalSlug": "1987-mitsubishi-van-engine-24l-4-143-vin-l-8th-digit-544",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9817,7 +9817,7 @@
       "slug": "1987-mitsubishi-van-engine-24l-4-143-vin-w-8th-digit-545",
       "canonicalSlug": "1987-mitsubishi-van-engine-24l-4-143-vin-w-8th-digit-545",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -9835,7 +9835,7 @@
       "slug": "1988-mitsubishi-van-engine-24l-4-143-vin-l-8th-digit-546",
       "canonicalSlug": "1988-mitsubishi-van-engine-24l-4-143-vin-l-8th-digit-546",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 2160,
       "tiers": {
         "low": 2340,
@@ -9853,7 +9853,7 @@
       "slug": "1988-mitsubishi-van-engine-24l-4-143-vin-w-8th-digit-547",
       "canonicalSlug": "1988-mitsubishi-van-engine-24l-4-143-vin-w-8th-digit-547",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9871,7 +9871,7 @@
       "slug": "1989-mitsubishi-van-engine-24l-4-143-vin-l-8th-digit-548",
       "canonicalSlug": "1989-mitsubishi-van-engine-24l-4-143-vin-l-8th-digit-548",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9889,7 +9889,7 @@
       "slug": "1989-mitsubishi-van-engine-24l-4-143-vin-w-8th-digit-549",
       "canonicalSlug": "1989-mitsubishi-van-engine-24l-4-143-vin-w-8th-digit-549",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9907,7 +9907,7 @@
       "slug": "1990-mitsubishi-van-engine-24l-4-143-vin-l-8th-digit-550",
       "canonicalSlug": "1990-mitsubishi-van-engine-24l-4-143-vin-l-8th-digit-550",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9925,7 +9925,7 @@
       "slug": "1990-mitsubishi-van-engine-24l-4-143-vin-w-8th-digit-551",
       "canonicalSlug": "1990-mitsubishi-van-engine-24l-4-143-vin-w-8th-digit-551",
       "brand": "Mitsubishi",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,

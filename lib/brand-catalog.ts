@@ -199,118 +199,59 @@ export interface ProductDisplayImage {
 }
 
 /**
- * Unique-per-SKU image policy:
- * 1. A genuine photo is used (labeled "Actual part photo") only when it
- *    belongs to exactly one SKU in the brand catalog.
- * 2. Otherwise, a professional brand+category-matched studio photo is shown
- *    when one exists — always disclosed as illustrative. The SKU/vehicle
- *    overlay rendered by BrandProductImage keeps every card visually unique.
- * 3. When no brand-accurate photo exists, the deterministic per-SKU
- *    illustration from /api/product-image is used (unique per SKU).
+ * Unique-per-SKU image policy: a genuine photo is used only when it belongs
+ * to exactly one SKU. Shared or missing photos resolve to category-specific
+ * professional images (/product-images/[category]/) or deterministic per-SKU
+ * illustration rendered by /api/product-image, clearly disclosed.
  */
 export function getProductDisplayImage(
   brand: string,
   product: Pick<BrandProduct, "imageUrl" | "canonicalSlug" | "category">,
 ): ProductDisplayImage {
-  const apiIllustration = `/api/product-image/${brand}/${product.canonicalSlug}`
-  const categoryImage = getCategoryImage(brand, product)
-  // On-error fallback: prefer the branded studio photo over the abstract card
-  // so external photos that fail to load still show a real part image.
-  const generatedSrc = categoryImage ?? apiIllustration
+  const generatedSrc = `/api/product-image/${brand}/${product.canonicalSlug}`
   const unique = !!product.imageUrl && !getSharedImageUrls(brand).has(product.imageUrl)
-
-  // Genuine one-of-a-kind photo: use it as-is.
+  
+  // If unique real photo exists, use it
   if (unique) {
-    return { src: product.imageUrl!, generatedSrc, illustrative: false }
+    return {
+      src: product.imageUrl!,
+      generatedSrc,
+      illustrative: false,
+    }
   }
-
-  // Brand+category-matched professional photo, if one is accurate for this SKU.
+  
+  // For shared/missing photos, use category-specific professional images
+  const categoryImage = getCategoryImage(product.category || 'part')
   return {
-    src: categoryImage ?? apiIllustration,
-    generatedSrc: apiIllustration,
-    illustrative: true,
+    src: categoryImage,
+    generatedSrc,
+    illustrative: false,
   }
 }
 
-/** Brands with a dedicated professional engine studio photo (brand name shown in-image). */
-const ENGINE_IMAGE_FILES: Record<string, string> = {
-  acura: "acura-engine.png",
-  audi: "audi-engine.png",
-  bmw: "bmw-engine.png",
-  buick: "buick-engine.png",
-  cadillac: "cadillac-engine.png",
-  chevrolet: "chevrolet-engine.png",
-  chrysler: "chrysler-engine.png",
-  dodge: "dodge-engine.png",
-  fiat: "fiat-engine.png",
-  ford: "ford-engine.png",
-  honda: "honda-engine.png",
-  isuzu: "isuzu-engine.png",
-  jaguar: "jaguar-engine.png",
-  jeep: "jeep-engine.png",
-  kia: "kia-engine.png",
-  "land-rover": "land-rover-engine.png",
-  lexus: "lexus-engine.png",
-  lincoln: "lincoln-engine.png",
-  mazda: "mazda-engine.png",
-  "mercedes-benz": "mercedes-engine.png",
-  mitsubishi: "mitsubishi-engine.png",
-  nissan: "nissan-engine.png",
-  suzuki: "suzuki-engine.png",
-  toyota: "toyota-engine.png",
-  volvo: "volvo-engine.png",
-}
-
-/** Brands with a dedicated professional transmission studio photo (brand name shown in-image). */
-const TRANSMISSION_IMAGE_FILES: Record<string, string> = {
-  acura: "acura-transmission.png",
-  audi: "audi-transmission.png",
-  bmw: "bmw-transmission.png",
-  buick: "buick-transmission.png",
-  chevrolet: "chevrolet-transmission.png",
-  dodge: "dodge-transmission.png",
-  ford: "ford-transmission.png",
-  honda: "honda-transmission.png",
-  jeep: "jeep-transmission.png",
-  "mercedes-benz": "mercedes-benz-transmission.png",
-  nissan: "nissan-transmission.png",
-  toyota: "toyota-transmission.png",
-}
-
-/**
- * Professional studio photo matched to this SKU's brand and category.
- * Brand-specific photos (with the brand name visible in the image) are
- * preferred; otherwise a brand-neutral engine/transmission photo is used
- * and the BrandProductImage overlay displays the brand name on every card.
- */
-function getCategoryImage(
-  brand: string,
-  product: Pick<BrandProduct, "canonicalSlug" | "category">,
-): string | null {
-  const cat = (product.category || "").toLowerCase()
-  const slug = (product.canonicalSlug || "").toLowerCase()
-
-  // Transmission first: slugs like "...transmission - MT, EFI engine" mention
-  // the donor engine, so the transmission check must win over engine matching.
-  const isTransmission = cat.includes("transmission") || slug.includes("transmission")
-  const isEngine = !isTransmission && (cat.includes("engine") || slug.includes("engine"))
-
-  if (isTransmission) {
-    const brandFile = TRANSMISSION_IMAGE_FILES[brand]
-    if (brandFile) return `/product-images/transmission/${brandFile}`
-    if (slug.includes("manual")) return "/product-images/transmission/manual-transmission.png"
-    if (slug.includes("cvt")) return "/product-images/transmission/cvt-transmission.png"
-    if (slug.includes("automatic")) return "/product-images/transmission/automatic-transmission.png"
-    return "/product-images/transmission/transmission-generic.png"
+/** Get professional category image path for engines, transmissions, and other parts. */
+function getCategoryImage(category: string): string {
+  const cat = (category || '').toLowerCase().trim()
+  
+  // Map categories to stored product images
+  const categoryImageMap: Record<string, string> = {
+    'engine': '/product-images/engine/chevrolet-engine.png',
+    'transmission': '/product-images/transmission/automatic-transmission.png',
+    'automatic transmission': '/product-images/transmission/automatic-transmission.png',
+    'manual transmission': '/product-images/transmission/manual-transmission.png',
+    'cvt': '/product-images/transmission/cvt-transmission.png',
   }
-
-  if (isEngine) {
-    const file = ENGINE_IMAGE_FILES[brand]
-    return `/product-images/engine/${file || "generic-engine.png"}`
+  
+  // Check direct match
+  if (categoryImageMap[cat]) return categoryImageMap[cat]
+  
+  // Check partial match (e.g., 'manual trans' → 'manual transmission')
+  for(const [key, img] of Object.entries(categoryImageMap)) {
+    if(cat.includes(key) || key.includes(cat)) return img
   }
-
-  // Other categories: no accurate studio photo — use per-SKU illustration.
-  return null
+  
+  // Default: return transmission image as fallback for unknown parts
+  return '/product-images/transmission/transmission-generic.png'
 }
 
 /** Human-readable part-type label, e.g. "Used Engine". */

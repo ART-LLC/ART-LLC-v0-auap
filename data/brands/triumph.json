@@ -7,7 +7,7 @@
       "slug": "1962-triumph-gt6-engine-tr4-0",
       "canonicalSlug": "1962-triumph-gt6-engine-tr4-0",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -25,7 +25,7 @@
       "slug": "1963-triumph-gt6-engine-spitfire-mk-i-1",
       "canonicalSlug": "1963-triumph-gt6-engine-spitfire-mk-i-1",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -43,7 +43,7 @@
       "slug": "1963-triumph-gt6-engine-tr4-2",
       "canonicalSlug": "1963-triumph-gt6-engine-tr4-2",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -61,7 +61,7 @@
       "slug": "1964-triumph-gt6-engine-spitfire-mk-i-3",
       "canonicalSlug": "1964-triumph-gt6-engine-spitfire-mk-i-3",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -79,7 +79,7 @@
       "slug": "1964-triumph-gt6-engine-tr4-4",
       "canonicalSlug": "1964-triumph-gt6-engine-tr4-4",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -97,7 +97,7 @@
       "slug": "1965-triumph-gt6-engine-tr4-5",
       "canonicalSlug": "1965-triumph-gt6-engine-tr4-5",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -115,7 +115,7 @@
       "slug": "1965-triumph-gt6-engine-spitfire-mk-ii-6",
       "canonicalSlug": "1965-triumph-gt6-engine-spitfire-mk-ii-6",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -133,7 +133,7 @@
       "slug": "1965-triumph-gt6-engine-tr4a-7",
       "canonicalSlug": "1965-triumph-gt6-engine-tr4a-7",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -151,7 +151,7 @@
       "slug": "1966-triumph-gt6-engine-spitfire-mk-ii-8",
       "canonicalSlug": "1966-triumph-gt6-engine-spitfire-mk-ii-8",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -169,7 +169,7 @@
       "slug": "1966-triumph-gt6-engine-tr4a-9",
       "canonicalSlug": "1966-triumph-gt6-engine-tr4a-9",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -187,7 +187,7 @@
       "slug": "1967-triumph-gt6-engine-spitfire-mk-ii-10",
       "canonicalSlug": "1967-triumph-gt6-engine-spitfire-mk-ii-10",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -205,7 +205,7 @@
       "slug": "1967-triumph-gt6-engine-tr4a-11",
       "canonicalSlug": "1967-triumph-gt6-engine-tr4a-11",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -223,7 +223,7 @@
       "slug": "1967-triumph-gt6-engine-gt6-mk-i-12",
       "canonicalSlug": "1967-triumph-gt6-engine-gt6-mk-i-12",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -241,7 +241,7 @@
       "slug": "1968-triumph-gt6-engine-gt6-mk-i-13",
       "canonicalSlug": "1968-triumph-gt6-engine-gt6-mk-i-13",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -259,7 +259,7 @@
       "slug": "1968-triumph-gt6-engine-spitfire-mk-iii-1300cc-14",
       "canonicalSlug": "1968-triumph-gt6-engine-spitfire-mk-iii-1300cc-14",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -277,7 +277,7 @@
       "slug": "1968-triumph-gt6-engine-tr250-15",
       "canonicalSlug": "1968-triumph-gt6-engine-tr250-15",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -295,7 +295,7 @@
       "slug": "1969-triumph-gt6-engine-spitfire-mk-iii-1300cc-16",
       "canonicalSlug": "1969-triumph-gt6-engine-spitfire-mk-iii-1300cc-16",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -313,7 +313,7 @@
       "slug": "1969-triumph-gt6-engine-tr250-17",
       "canonicalSlug": "1969-triumph-gt6-engine-tr250-17",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -331,7 +331,7 @@
       "slug": "1969-triumph-gt6-engine-gt6-mk-ii-18",
       "canonicalSlug": "1969-triumph-gt6-engine-gt6-mk-ii-18",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -349,7 +349,7 @@
       "slug": "1969-triumph-gt6-engine-tr6-19",
       "canonicalSlug": "1969-triumph-gt6-engine-tr6-19",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -367,7 +367,7 @@
       "slug": "1970-triumph-gt6-engine-gt6-mk-ii-20",
       "canonicalSlug": "1970-triumph-gt6-engine-gt6-mk-ii-20",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -385,7 +385,7 @@
       "slug": "1970-triumph-gt6-engine-tr6-21",
       "canonicalSlug": "1970-triumph-gt6-engine-tr6-21",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -403,7 +403,7 @@
       "slug": "1970-triumph-gt6-engine-spitfire-mk-iii-1300cc-22",
       "canonicalSlug": "1970-triumph-gt6-engine-spitfire-mk-iii-1300cc-22",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -421,7 +421,7 @@
       "slug": "1971-triumph-gt6-engine-tr6-23",
       "canonicalSlug": "1971-triumph-gt6-engine-tr6-23",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -439,7 +439,7 @@
       "slug": "1971-triumph-gt6-engine-spitfire-mk-iii-1300cc-24",
       "canonicalSlug": "1971-triumph-gt6-engine-spitfire-mk-iii-1300cc-24",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -457,7 +457,7 @@
       "slug": "1971-triumph-gt6-engine-gt6-mk-iii-25",
       "canonicalSlug": "1971-triumph-gt6-engine-gt6-mk-iii-25",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -475,7 +475,7 @@
       "slug": "1971-triumph-gt6-engine-stag-26",
       "canonicalSlug": "1971-triumph-gt6-engine-stag-26",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -493,7 +493,7 @@
       "slug": "1972-triumph-gt6-engine-tr6-27",
       "canonicalSlug": "1972-triumph-gt6-engine-tr6-27",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -511,7 +511,7 @@
       "slug": "1972-triumph-gt6-engine-spitfire-mk-iii-1300cc-28",
       "canonicalSlug": "1972-triumph-gt6-engine-spitfire-mk-iii-1300cc-28",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -529,7 +529,7 @@
       "slug": "1972-triumph-gt6-engine-gt6-mk-iii-29",
       "canonicalSlug": "1972-triumph-gt6-engine-gt6-mk-iii-29",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -547,7 +547,7 @@
       "slug": "1972-triumph-gt6-engine-stag-30",
       "canonicalSlug": "1972-triumph-gt6-engine-stag-30",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -565,7 +565,7 @@
       "slug": "1973-triumph-gt6-engine-tr6-31",
       "canonicalSlug": "1973-triumph-gt6-engine-tr6-31",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -583,7 +583,7 @@
       "slug": "1973-triumph-gt6-engine-gt6-mk-iii-32",
       "canonicalSlug": "1973-triumph-gt6-engine-gt6-mk-iii-32",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -601,7 +601,7 @@
       "slug": "1973-triumph-gt6-engine-stag-33",
       "canonicalSlug": "1973-triumph-gt6-engine-stag-33",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -619,7 +619,7 @@
       "slug": "1973-triumph-gt6-engine-spitfire-1500-34",
       "canonicalSlug": "1973-triumph-gt6-engine-spitfire-1500-34",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -637,7 +637,7 @@
       "slug": "1974-triumph-gt6-engine-tr6-35",
       "canonicalSlug": "1974-triumph-gt6-engine-tr6-35",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -655,7 +655,7 @@
       "slug": "1974-triumph-gt6-engine-spitfire-1500-36",
       "canonicalSlug": "1974-triumph-gt6-engine-spitfire-1500-36",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -673,7 +673,7 @@
       "slug": "1975-triumph-gt6-engine-tr6-37",
       "canonicalSlug": "1975-triumph-gt6-engine-tr6-37",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -691,7 +691,7 @@
       "slug": "1975-triumph-gt6-engine-spitfire-1500-38",
       "canonicalSlug": "1975-triumph-gt6-engine-spitfire-1500-38",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -709,7 +709,7 @@
       "slug": "1975-triumph-gt6-engine-tr7-39",
       "canonicalSlug": "1975-triumph-gt6-engine-tr7-39",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -727,7 +727,7 @@
       "slug": "1976-triumph-gt6-engine-tr6-40",
       "canonicalSlug": "1976-triumph-gt6-engine-tr6-40",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -745,7 +745,7 @@
       "slug": "1976-triumph-gt6-engine-spitfire-1500-41",
       "canonicalSlug": "1976-triumph-gt6-engine-spitfire-1500-41",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -763,7 +763,7 @@
       "slug": "1976-triumph-gt6-engine-tr7-42",
       "canonicalSlug": "1976-triumph-gt6-engine-tr7-42",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -781,7 +781,7 @@
       "slug": "1977-triumph-gt6-engine-spitfire-1500-43",
       "canonicalSlug": "1977-triumph-gt6-engine-spitfire-1500-43",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -799,7 +799,7 @@
       "slug": "1977-triumph-gt6-engine-tr7-44",
       "canonicalSlug": "1977-triumph-gt6-engine-tr7-44",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -817,7 +817,7 @@
       "slug": "1978-triumph-gt6-engine-spitfire-1500-45",
       "canonicalSlug": "1978-triumph-gt6-engine-spitfire-1500-45",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -835,7 +835,7 @@
       "slug": "1978-triumph-gt6-engine-tr7-46",
       "canonicalSlug": "1978-triumph-gt6-engine-tr7-46",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -853,7 +853,7 @@
       "slug": "1979-triumph-gt6-engine-spitfire-1500-47",
       "canonicalSlug": "1979-triumph-gt6-engine-spitfire-1500-47",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -871,7 +871,7 @@
       "slug": "1979-triumph-gt6-engine-tr7-48",
       "canonicalSlug": "1979-triumph-gt6-engine-tr7-48",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -889,7 +889,7 @@
       "slug": "1980-triumph-gt6-engine-spitfire-1500-49",
       "canonicalSlug": "1980-triumph-gt6-engine-spitfire-1500-49",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -907,7 +907,7 @@
       "slug": "1980-triumph-gt6-engine-tr7-50",
       "canonicalSlug": "1980-triumph-gt6-engine-tr7-50",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -925,7 +925,7 @@
       "slug": "1980-triumph-gt6-engine-tr8-california-51",
       "canonicalSlug": "1980-triumph-gt6-engine-tr8-california-51",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -943,7 +943,7 @@
       "slug": "1980-triumph-gt6-engine-tr8-federal-52",
       "canonicalSlug": "1980-triumph-gt6-engine-tr8-federal-52",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -961,7 +961,7 @@
       "slug": "1981-triumph-gt6-engine-tr7-53",
       "canonicalSlug": "1981-triumph-gt6-engine-tr7-53",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -979,7 +979,7 @@
       "slug": "1981-triumph-gt6-engine-tr8-54",
       "canonicalSlug": "1981-triumph-gt6-engine-tr8-54",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -997,7 +997,7 @@
       "slug": "1962-triumph-spitfire-engine-tr4-55",
       "canonicalSlug": "1962-triumph-spitfire-engine-tr4-55",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1015,7 +1015,7 @@
       "slug": "1963-triumph-spitfire-engine-spitfire-mk-i-56",
       "canonicalSlug": "1963-triumph-spitfire-engine-spitfire-mk-i-56",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1033,7 +1033,7 @@
       "slug": "1963-triumph-spitfire-engine-tr4-57",
       "canonicalSlug": "1963-triumph-spitfire-engine-tr4-57",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1051,7 +1051,7 @@
       "slug": "1964-triumph-spitfire-engine-spitfire-mk-i-58",
       "canonicalSlug": "1964-triumph-spitfire-engine-spitfire-mk-i-58",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1069,7 +1069,7 @@
       "slug": "1964-triumph-spitfire-engine-tr4-59",
       "canonicalSlug": "1964-triumph-spitfire-engine-tr4-59",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1087,7 +1087,7 @@
       "slug": "1965-triumph-spitfire-engine-tr4-60",
       "canonicalSlug": "1965-triumph-spitfire-engine-tr4-60",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1105,7 +1105,7 @@
       "slug": "1965-triumph-spitfire-engine-spitfire-mk-ii-61",
       "canonicalSlug": "1965-triumph-spitfire-engine-spitfire-mk-ii-61",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1123,7 +1123,7 @@
       "slug": "1965-triumph-spitfire-engine-tr4a-62",
       "canonicalSlug": "1965-triumph-spitfire-engine-tr4a-62",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1141,7 +1141,7 @@
       "slug": "1966-triumph-spitfire-engine-spitfire-mk-ii-63",
       "canonicalSlug": "1966-triumph-spitfire-engine-spitfire-mk-ii-63",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1159,7 +1159,7 @@
       "slug": "1966-triumph-spitfire-engine-tr4a-64",
       "canonicalSlug": "1966-triumph-spitfire-engine-tr4a-64",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1177,7 +1177,7 @@
       "slug": "1967-triumph-spitfire-engine-spitfire-mk-ii-65",
       "canonicalSlug": "1967-triumph-spitfire-engine-spitfire-mk-ii-65",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1195,7 +1195,7 @@
       "slug": "1967-triumph-spitfire-engine-tr4a-66",
       "canonicalSlug": "1967-triumph-spitfire-engine-tr4a-66",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1213,7 +1213,7 @@
       "slug": "1967-triumph-spitfire-engine-gt6-mk-i-67",
       "canonicalSlug": "1967-triumph-spitfire-engine-gt6-mk-i-67",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1231,7 +1231,7 @@
       "slug": "1968-triumph-spitfire-engine-gt6-mk-i-68",
       "canonicalSlug": "1968-triumph-spitfire-engine-gt6-mk-i-68",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1249,7 +1249,7 @@
       "slug": "1968-triumph-spitfire-engine-spitfire-mk-iii-1300cc-69",
       "canonicalSlug": "1968-triumph-spitfire-engine-spitfire-mk-iii-1300cc-69",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1267,7 +1267,7 @@
       "slug": "1968-triumph-spitfire-engine-tr250-70",
       "canonicalSlug": "1968-triumph-spitfire-engine-tr250-70",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1285,7 +1285,7 @@
       "slug": "1969-triumph-spitfire-engine-spitfire-mk-iii-1300cc-71",
       "canonicalSlug": "1969-triumph-spitfire-engine-spitfire-mk-iii-1300cc-71",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1303,7 +1303,7 @@
       "slug": "1969-triumph-spitfire-engine-tr250-72",
       "canonicalSlug": "1969-triumph-spitfire-engine-tr250-72",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1321,7 +1321,7 @@
       "slug": "1969-triumph-spitfire-engine-gt6-mk-ii-73",
       "canonicalSlug": "1969-triumph-spitfire-engine-gt6-mk-ii-73",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1339,7 +1339,7 @@
       "slug": "1969-triumph-spitfire-engine-tr6-74",
       "canonicalSlug": "1969-triumph-spitfire-engine-tr6-74",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1357,7 +1357,7 @@
       "slug": "1970-triumph-spitfire-engine-gt6-mk-ii-75",
       "canonicalSlug": "1970-triumph-spitfire-engine-gt6-mk-ii-75",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1375,7 +1375,7 @@
       "slug": "1970-triumph-spitfire-engine-tr6-76",
       "canonicalSlug": "1970-triumph-spitfire-engine-tr6-76",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1393,7 +1393,7 @@
       "slug": "1970-triumph-spitfire-engine-spitfire-mk-iii-1300cc-77",
       "canonicalSlug": "1970-triumph-spitfire-engine-spitfire-mk-iii-1300cc-77",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1411,7 +1411,7 @@
       "slug": "1971-triumph-spitfire-engine-tr6-78",
       "canonicalSlug": "1971-triumph-spitfire-engine-tr6-78",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1429,7 +1429,7 @@
       "slug": "1971-triumph-spitfire-engine-spitfire-mk-iii-1300cc-79",
       "canonicalSlug": "1971-triumph-spitfire-engine-spitfire-mk-iii-1300cc-79",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1447,7 +1447,7 @@
       "slug": "1971-triumph-spitfire-engine-gt6-mk-iii-80",
       "canonicalSlug": "1971-triumph-spitfire-engine-gt6-mk-iii-80",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1465,7 +1465,7 @@
       "slug": "1971-triumph-spitfire-engine-stag-81",
       "canonicalSlug": "1971-triumph-spitfire-engine-stag-81",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1483,7 +1483,7 @@
       "slug": "1972-triumph-spitfire-engine-tr6-82",
       "canonicalSlug": "1972-triumph-spitfire-engine-tr6-82",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1501,7 +1501,7 @@
       "slug": "1972-triumph-spitfire-engine-spitfire-mk-iii-1300cc-83",
       "canonicalSlug": "1972-triumph-spitfire-engine-spitfire-mk-iii-1300cc-83",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1519,7 +1519,7 @@
       "slug": "1972-triumph-spitfire-engine-gt6-mk-iii-84",
       "canonicalSlug": "1972-triumph-spitfire-engine-gt6-mk-iii-84",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1537,7 +1537,7 @@
       "slug": "1972-triumph-spitfire-engine-stag-85",
       "canonicalSlug": "1972-triumph-spitfire-engine-stag-85",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1555,7 +1555,7 @@
       "slug": "1973-triumph-spitfire-engine-tr6-86",
       "canonicalSlug": "1973-triumph-spitfire-engine-tr6-86",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1573,7 +1573,7 @@
       "slug": "1973-triumph-spitfire-engine-gt6-mk-iii-87",
       "canonicalSlug": "1973-triumph-spitfire-engine-gt6-mk-iii-87",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1591,7 +1591,7 @@
       "slug": "1973-triumph-spitfire-engine-stag-88",
       "canonicalSlug": "1973-triumph-spitfire-engine-stag-88",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1609,7 +1609,7 @@
       "slug": "1973-triumph-spitfire-engine-spitfire-1500-89",
       "canonicalSlug": "1973-triumph-spitfire-engine-spitfire-1500-89",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1627,7 +1627,7 @@
       "slug": "1974-triumph-spitfire-engine-tr6-90",
       "canonicalSlug": "1974-triumph-spitfire-engine-tr6-90",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1645,7 +1645,7 @@
       "slug": "1974-triumph-spitfire-engine-spitfire-1500-91",
       "canonicalSlug": "1974-triumph-spitfire-engine-spitfire-1500-91",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1663,7 +1663,7 @@
       "slug": "1975-triumph-spitfire-engine-tr6-92",
       "canonicalSlug": "1975-triumph-spitfire-engine-tr6-92",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1681,7 +1681,7 @@
       "slug": "1975-triumph-spitfire-engine-spitfire-1500-93",
       "canonicalSlug": "1975-triumph-spitfire-engine-spitfire-1500-93",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1699,7 +1699,7 @@
       "slug": "1975-triumph-spitfire-engine-tr7-94",
       "canonicalSlug": "1975-triumph-spitfire-engine-tr7-94",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1717,7 +1717,7 @@
       "slug": "1976-triumph-spitfire-engine-tr6-95",
       "canonicalSlug": "1976-triumph-spitfire-engine-tr6-95",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1735,7 +1735,7 @@
       "slug": "1976-triumph-spitfire-engine-spitfire-1500-96",
       "canonicalSlug": "1976-triumph-spitfire-engine-spitfire-1500-96",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1753,7 +1753,7 @@
       "slug": "1976-triumph-spitfire-engine-tr7-97",
       "canonicalSlug": "1976-triumph-spitfire-engine-tr7-97",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1771,7 +1771,7 @@
       "slug": "1977-triumph-spitfire-engine-spitfire-1500-98",
       "canonicalSlug": "1977-triumph-spitfire-engine-spitfire-1500-98",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1789,7 +1789,7 @@
       "slug": "1977-triumph-spitfire-engine-tr7-99",
       "canonicalSlug": "1977-triumph-spitfire-engine-tr7-99",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1807,7 +1807,7 @@
       "slug": "1978-triumph-spitfire-engine-spitfire-1500-100",
       "canonicalSlug": "1978-triumph-spitfire-engine-spitfire-1500-100",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1825,7 +1825,7 @@
       "slug": "1978-triumph-spitfire-engine-tr7-101",
       "canonicalSlug": "1978-triumph-spitfire-engine-tr7-101",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1843,7 +1843,7 @@
       "slug": "1979-triumph-spitfire-engine-spitfire-1500-102",
       "canonicalSlug": "1979-triumph-spitfire-engine-spitfire-1500-102",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1861,7 +1861,7 @@
       "slug": "1979-triumph-spitfire-engine-tr7-103",
       "canonicalSlug": "1979-triumph-spitfire-engine-tr7-103",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1879,7 +1879,7 @@
       "slug": "1980-triumph-spitfire-engine-spitfire-1500-104",
       "canonicalSlug": "1980-triumph-spitfire-engine-spitfire-1500-104",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1897,7 +1897,7 @@
       "slug": "1980-triumph-spitfire-engine-tr7-105",
       "canonicalSlug": "1980-triumph-spitfire-engine-tr7-105",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1915,7 +1915,7 @@
       "slug": "1980-triumph-spitfire-engine-tr8-california-106",
       "canonicalSlug": "1980-triumph-spitfire-engine-tr8-california-106",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1933,7 +1933,7 @@
       "slug": "1980-triumph-spitfire-engine-tr8-federal-107",
       "canonicalSlug": "1980-triumph-spitfire-engine-tr8-federal-107",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1951,7 +1951,7 @@
       "slug": "1981-triumph-spitfire-engine-tr7-108",
       "canonicalSlug": "1981-triumph-spitfire-engine-tr7-108",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1969,7 +1969,7 @@
       "slug": "1981-triumph-spitfire-engine-tr8-109",
       "canonicalSlug": "1981-triumph-spitfire-engine-tr8-109",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -1987,7 +1987,7 @@
       "slug": "1962-triumph-stag-engine-tr4-110",
       "canonicalSlug": "1962-triumph-stag-engine-tr4-110",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2005,7 +2005,7 @@
       "slug": "1963-triumph-stag-engine-spitfire-mk-i-111",
       "canonicalSlug": "1963-triumph-stag-engine-spitfire-mk-i-111",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2023,7 +2023,7 @@
       "slug": "1963-triumph-stag-engine-tr4-112",
       "canonicalSlug": "1963-triumph-stag-engine-tr4-112",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2041,7 +2041,7 @@
       "slug": "1964-triumph-stag-engine-spitfire-mk-i-113",
       "canonicalSlug": "1964-triumph-stag-engine-spitfire-mk-i-113",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2059,7 +2059,7 @@
       "slug": "1964-triumph-stag-engine-tr4-114",
       "canonicalSlug": "1964-triumph-stag-engine-tr4-114",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2077,7 +2077,7 @@
       "slug": "1965-triumph-stag-engine-tr4-115",
       "canonicalSlug": "1965-triumph-stag-engine-tr4-115",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2095,7 +2095,7 @@
       "slug": "1965-triumph-stag-engine-spitfire-mk-ii-116",
       "canonicalSlug": "1965-triumph-stag-engine-spitfire-mk-ii-116",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2113,7 +2113,7 @@
       "slug": "1965-triumph-stag-engine-tr4a-117",
       "canonicalSlug": "1965-triumph-stag-engine-tr4a-117",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2131,7 +2131,7 @@
       "slug": "1966-triumph-stag-engine-spitfire-mk-ii-118",
       "canonicalSlug": "1966-triumph-stag-engine-spitfire-mk-ii-118",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2149,7 +2149,7 @@
       "slug": "1966-triumph-stag-engine-tr4a-119",
       "canonicalSlug": "1966-triumph-stag-engine-tr4a-119",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2167,7 +2167,7 @@
       "slug": "1967-triumph-stag-engine-spitfire-mk-ii-120",
       "canonicalSlug": "1967-triumph-stag-engine-spitfire-mk-ii-120",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2185,7 +2185,7 @@
       "slug": "1967-triumph-stag-engine-tr4a-121",
       "canonicalSlug": "1967-triumph-stag-engine-tr4a-121",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2203,7 +2203,7 @@
       "slug": "1967-triumph-stag-engine-gt6-mk-i-122",
       "canonicalSlug": "1967-triumph-stag-engine-gt6-mk-i-122",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2221,7 +2221,7 @@
       "slug": "1968-triumph-stag-engine-gt6-mk-i-123",
       "canonicalSlug": "1968-triumph-stag-engine-gt6-mk-i-123",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2239,7 +2239,7 @@
       "slug": "1968-triumph-stag-engine-spitfire-mk-iii-1300cc-124",
       "canonicalSlug": "1968-triumph-stag-engine-spitfire-mk-iii-1300cc-124",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2257,7 +2257,7 @@
       "slug": "1968-triumph-stag-engine-tr250-125",
       "canonicalSlug": "1968-triumph-stag-engine-tr250-125",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2275,7 +2275,7 @@
       "slug": "1969-triumph-stag-engine-spitfire-mk-iii-1300cc-126",
       "canonicalSlug": "1969-triumph-stag-engine-spitfire-mk-iii-1300cc-126",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2293,7 +2293,7 @@
       "slug": "1969-triumph-stag-engine-tr250-127",
       "canonicalSlug": "1969-triumph-stag-engine-tr250-127",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2311,7 +2311,7 @@
       "slug": "1969-triumph-stag-engine-gt6-mk-ii-128",
       "canonicalSlug": "1969-triumph-stag-engine-gt6-mk-ii-128",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2329,7 +2329,7 @@
       "slug": "1969-triumph-stag-engine-tr6-129",
       "canonicalSlug": "1969-triumph-stag-engine-tr6-129",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2347,7 +2347,7 @@
       "slug": "1970-triumph-stag-engine-gt6-mk-ii-130",
       "canonicalSlug": "1970-triumph-stag-engine-gt6-mk-ii-130",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2365,7 +2365,7 @@
       "slug": "1970-triumph-stag-engine-tr6-131",
       "canonicalSlug": "1970-triumph-stag-engine-tr6-131",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2383,7 +2383,7 @@
       "slug": "1970-triumph-stag-engine-spitfire-mk-iii-1300cc-132",
       "canonicalSlug": "1970-triumph-stag-engine-spitfire-mk-iii-1300cc-132",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2401,7 +2401,7 @@
       "slug": "1971-triumph-stag-engine-tr6-133",
       "canonicalSlug": "1971-triumph-stag-engine-tr6-133",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2419,7 +2419,7 @@
       "slug": "1971-triumph-stag-engine-spitfire-mk-iii-1300cc-134",
       "canonicalSlug": "1971-triumph-stag-engine-spitfire-mk-iii-1300cc-134",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2437,7 +2437,7 @@
       "slug": "1971-triumph-stag-engine-gt6-mk-iii-135",
       "canonicalSlug": "1971-triumph-stag-engine-gt6-mk-iii-135",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2455,7 +2455,7 @@
       "slug": "1971-triumph-stag-engine-stag-136",
       "canonicalSlug": "1971-triumph-stag-engine-stag-136",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2473,7 +2473,7 @@
       "slug": "1972-triumph-stag-engine-tr6-137",
       "canonicalSlug": "1972-triumph-stag-engine-tr6-137",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2491,7 +2491,7 @@
       "slug": "1972-triumph-stag-engine-spitfire-mk-iii-1300cc-138",
       "canonicalSlug": "1972-triumph-stag-engine-spitfire-mk-iii-1300cc-138",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2509,7 +2509,7 @@
       "slug": "1972-triumph-stag-engine-gt6-mk-iii-139",
       "canonicalSlug": "1972-triumph-stag-engine-gt6-mk-iii-139",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2527,7 +2527,7 @@
       "slug": "1972-triumph-stag-engine-stag-140",
       "canonicalSlug": "1972-triumph-stag-engine-stag-140",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2545,7 +2545,7 @@
       "slug": "1973-triumph-stag-engine-tr6-141",
       "canonicalSlug": "1973-triumph-stag-engine-tr6-141",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2563,7 +2563,7 @@
       "slug": "1973-triumph-stag-engine-gt6-mk-iii-142",
       "canonicalSlug": "1973-triumph-stag-engine-gt6-mk-iii-142",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2581,7 +2581,7 @@
       "slug": "1973-triumph-stag-engine-stag-143",
       "canonicalSlug": "1973-triumph-stag-engine-stag-143",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2599,7 +2599,7 @@
       "slug": "1973-triumph-stag-engine-spitfire-1500-144",
       "canonicalSlug": "1973-triumph-stag-engine-spitfire-1500-144",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2617,7 +2617,7 @@
       "slug": "1974-triumph-stag-engine-tr6-145",
       "canonicalSlug": "1974-triumph-stag-engine-tr6-145",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2635,7 +2635,7 @@
       "slug": "1974-triumph-stag-engine-spitfire-1500-146",
       "canonicalSlug": "1974-triumph-stag-engine-spitfire-1500-146",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2653,7 +2653,7 @@
       "slug": "1975-triumph-stag-engine-tr6-147",
       "canonicalSlug": "1975-triumph-stag-engine-tr6-147",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2671,7 +2671,7 @@
       "slug": "1975-triumph-stag-engine-spitfire-1500-148",
       "canonicalSlug": "1975-triumph-stag-engine-spitfire-1500-148",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2689,7 +2689,7 @@
       "slug": "1975-triumph-stag-engine-tr7-149",
       "canonicalSlug": "1975-triumph-stag-engine-tr7-149",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2707,7 +2707,7 @@
       "slug": "1976-triumph-stag-engine-tr6-150",
       "canonicalSlug": "1976-triumph-stag-engine-tr6-150",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2725,7 +2725,7 @@
       "slug": "1976-triumph-stag-engine-spitfire-1500-151",
       "canonicalSlug": "1976-triumph-stag-engine-spitfire-1500-151",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2743,7 +2743,7 @@
       "slug": "1976-triumph-stag-engine-tr7-152",
       "canonicalSlug": "1976-triumph-stag-engine-tr7-152",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2761,7 +2761,7 @@
       "slug": "1977-triumph-stag-engine-spitfire-1500-153",
       "canonicalSlug": "1977-triumph-stag-engine-spitfire-1500-153",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2779,7 +2779,7 @@
       "slug": "1977-triumph-stag-engine-tr7-154",
       "canonicalSlug": "1977-triumph-stag-engine-tr7-154",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2797,7 +2797,7 @@
       "slug": "1978-triumph-stag-engine-spitfire-1500-155",
       "canonicalSlug": "1978-triumph-stag-engine-spitfire-1500-155",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2815,7 +2815,7 @@
       "slug": "1978-triumph-stag-engine-tr7-156",
       "canonicalSlug": "1978-triumph-stag-engine-tr7-156",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2833,7 +2833,7 @@
       "slug": "1979-triumph-stag-engine-spitfire-1500-157",
       "canonicalSlug": "1979-triumph-stag-engine-spitfire-1500-157",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2851,7 +2851,7 @@
       "slug": "1979-triumph-stag-engine-tr7-158",
       "canonicalSlug": "1979-triumph-stag-engine-tr7-158",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2869,7 +2869,7 @@
       "slug": "1980-triumph-stag-engine-spitfire-1500-159",
       "canonicalSlug": "1980-triumph-stag-engine-spitfire-1500-159",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2887,7 +2887,7 @@
       "slug": "1980-triumph-stag-engine-tr7-160",
       "canonicalSlug": "1980-triumph-stag-engine-tr7-160",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2905,7 +2905,7 @@
       "slug": "1980-triumph-stag-engine-tr8-california-161",
       "canonicalSlug": "1980-triumph-stag-engine-tr8-california-161",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2923,7 +2923,7 @@
       "slug": "1980-triumph-stag-engine-tr8-federal-162",
       "canonicalSlug": "1980-triumph-stag-engine-tr8-federal-162",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2941,7 +2941,7 @@
       "slug": "1981-triumph-stag-engine-tr7-163",
       "canonicalSlug": "1981-triumph-stag-engine-tr7-163",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2959,7 +2959,7 @@
       "slug": "1981-triumph-stag-engine-tr8-164",
       "canonicalSlug": "1981-triumph-stag-engine-tr8-164",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2977,7 +2977,7 @@
       "slug": "1962-triumph-tr2-engine-tr4-165",
       "canonicalSlug": "1962-triumph-tr2-engine-tr4-165",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -2995,7 +2995,7 @@
       "slug": "1963-triumph-tr2-engine-spitfire-mk-i-166",
       "canonicalSlug": "1963-triumph-tr2-engine-spitfire-mk-i-166",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3013,7 +3013,7 @@
       "slug": "1963-triumph-tr2-engine-tr4-167",
       "canonicalSlug": "1963-triumph-tr2-engine-tr4-167",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3031,7 +3031,7 @@
       "slug": "1964-triumph-tr2-engine-spitfire-mk-i-168",
       "canonicalSlug": "1964-triumph-tr2-engine-spitfire-mk-i-168",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3049,7 +3049,7 @@
       "slug": "1964-triumph-tr2-engine-tr4-169",
       "canonicalSlug": "1964-triumph-tr2-engine-tr4-169",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3067,7 +3067,7 @@
       "slug": "1965-triumph-tr2-engine-tr4-170",
       "canonicalSlug": "1965-triumph-tr2-engine-tr4-170",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3085,7 +3085,7 @@
       "slug": "1965-triumph-tr2-engine-spitfire-mk-ii-171",
       "canonicalSlug": "1965-triumph-tr2-engine-spitfire-mk-ii-171",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3103,7 +3103,7 @@
       "slug": "1965-triumph-tr2-engine-tr4a-172",
       "canonicalSlug": "1965-triumph-tr2-engine-tr4a-172",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3121,7 +3121,7 @@
       "slug": "1966-triumph-tr2-engine-spitfire-mk-ii-173",
       "canonicalSlug": "1966-triumph-tr2-engine-spitfire-mk-ii-173",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3139,7 +3139,7 @@
       "slug": "1966-triumph-tr2-engine-tr4a-174",
       "canonicalSlug": "1966-triumph-tr2-engine-tr4a-174",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3157,7 +3157,7 @@
       "slug": "1967-triumph-tr2-engine-spitfire-mk-ii-175",
       "canonicalSlug": "1967-triumph-tr2-engine-spitfire-mk-ii-175",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3175,7 +3175,7 @@
       "slug": "1967-triumph-tr2-engine-tr4a-176",
       "canonicalSlug": "1967-triumph-tr2-engine-tr4a-176",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3193,7 +3193,7 @@
       "slug": "1967-triumph-tr2-engine-gt6-mk-i-177",
       "canonicalSlug": "1967-triumph-tr2-engine-gt6-mk-i-177",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3211,7 +3211,7 @@
       "slug": "1968-triumph-tr2-engine-gt6-mk-i-178",
       "canonicalSlug": "1968-triumph-tr2-engine-gt6-mk-i-178",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3229,7 +3229,7 @@
       "slug": "1968-triumph-tr2-engine-spitfire-mk-iii-1300cc-179",
       "canonicalSlug": "1968-triumph-tr2-engine-spitfire-mk-iii-1300cc-179",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3247,7 +3247,7 @@
       "slug": "1968-triumph-tr2-engine-tr250-180",
       "canonicalSlug": "1968-triumph-tr2-engine-tr250-180",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3265,7 +3265,7 @@
       "slug": "1969-triumph-tr2-engine-spitfire-mk-iii-1300cc-181",
       "canonicalSlug": "1969-triumph-tr2-engine-spitfire-mk-iii-1300cc-181",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3283,7 +3283,7 @@
       "slug": "1969-triumph-tr2-engine-tr250-182",
       "canonicalSlug": "1969-triumph-tr2-engine-tr250-182",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3301,7 +3301,7 @@
       "slug": "1969-triumph-tr2-engine-gt6-mk-ii-183",
       "canonicalSlug": "1969-triumph-tr2-engine-gt6-mk-ii-183",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3319,7 +3319,7 @@
       "slug": "1969-triumph-tr2-engine-tr6-184",
       "canonicalSlug": "1969-triumph-tr2-engine-tr6-184",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3337,7 +3337,7 @@
       "slug": "1970-triumph-tr2-engine-gt6-mk-ii-185",
       "canonicalSlug": "1970-triumph-tr2-engine-gt6-mk-ii-185",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3355,7 +3355,7 @@
       "slug": "1970-triumph-tr2-engine-tr6-186",
       "canonicalSlug": "1970-triumph-tr2-engine-tr6-186",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3373,7 +3373,7 @@
       "slug": "1970-triumph-tr2-engine-spitfire-mk-iii-1300cc-187",
       "canonicalSlug": "1970-triumph-tr2-engine-spitfire-mk-iii-1300cc-187",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3391,7 +3391,7 @@
       "slug": "1971-triumph-tr2-engine-tr6-188",
       "canonicalSlug": "1971-triumph-tr2-engine-tr6-188",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3409,7 +3409,7 @@
       "slug": "1971-triumph-tr2-engine-spitfire-mk-iii-1300cc-189",
       "canonicalSlug": "1971-triumph-tr2-engine-spitfire-mk-iii-1300cc-189",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3427,7 +3427,7 @@
       "slug": "1971-triumph-tr2-engine-gt6-mk-iii-190",
       "canonicalSlug": "1971-triumph-tr2-engine-gt6-mk-iii-190",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3445,7 +3445,7 @@
       "slug": "1971-triumph-tr2-engine-stag-191",
       "canonicalSlug": "1971-triumph-tr2-engine-stag-191",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3463,7 +3463,7 @@
       "slug": "1972-triumph-tr2-engine-tr6-192",
       "canonicalSlug": "1972-triumph-tr2-engine-tr6-192",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3481,7 +3481,7 @@
       "slug": "1972-triumph-tr2-engine-spitfire-mk-iii-1300cc-193",
       "canonicalSlug": "1972-triumph-tr2-engine-spitfire-mk-iii-1300cc-193",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3499,7 +3499,7 @@
       "slug": "1972-triumph-tr2-engine-gt6-mk-iii-194",
       "canonicalSlug": "1972-triumph-tr2-engine-gt6-mk-iii-194",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3517,7 +3517,7 @@
       "slug": "1972-triumph-tr2-engine-stag-195",
       "canonicalSlug": "1972-triumph-tr2-engine-stag-195",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3535,7 +3535,7 @@
       "slug": "1973-triumph-tr2-engine-tr6-196",
       "canonicalSlug": "1973-triumph-tr2-engine-tr6-196",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3553,7 +3553,7 @@
       "slug": "1973-triumph-tr2-engine-gt6-mk-iii-197",
       "canonicalSlug": "1973-triumph-tr2-engine-gt6-mk-iii-197",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3571,7 +3571,7 @@
       "slug": "1973-triumph-tr2-engine-stag-198",
       "canonicalSlug": "1973-triumph-tr2-engine-stag-198",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3589,7 +3589,7 @@
       "slug": "1973-triumph-tr2-engine-spitfire-1500-199",
       "canonicalSlug": "1973-triumph-tr2-engine-spitfire-1500-199",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3607,7 +3607,7 @@
       "slug": "1974-triumph-tr2-engine-tr6-200",
       "canonicalSlug": "1974-triumph-tr2-engine-tr6-200",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3625,7 +3625,7 @@
       "slug": "1974-triumph-tr2-engine-spitfire-1500-201",
       "canonicalSlug": "1974-triumph-tr2-engine-spitfire-1500-201",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3643,7 +3643,7 @@
       "slug": "1975-triumph-tr2-engine-tr6-202",
       "canonicalSlug": "1975-triumph-tr2-engine-tr6-202",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3661,7 +3661,7 @@
       "slug": "1975-triumph-tr2-engine-spitfire-1500-203",
       "canonicalSlug": "1975-triumph-tr2-engine-spitfire-1500-203",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3679,7 +3679,7 @@
       "slug": "1975-triumph-tr2-engine-tr7-204",
       "canonicalSlug": "1975-triumph-tr2-engine-tr7-204",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3697,7 +3697,7 @@
       "slug": "1976-triumph-tr2-engine-tr6-205",
       "canonicalSlug": "1976-triumph-tr2-engine-tr6-205",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3715,7 +3715,7 @@
       "slug": "1976-triumph-tr2-engine-spitfire-1500-206",
       "canonicalSlug": "1976-triumph-tr2-engine-spitfire-1500-206",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3733,7 +3733,7 @@
       "slug": "1976-triumph-tr2-engine-tr7-207",
       "canonicalSlug": "1976-triumph-tr2-engine-tr7-207",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3751,7 +3751,7 @@
       "slug": "1977-triumph-tr2-engine-spitfire-1500-208",
       "canonicalSlug": "1977-triumph-tr2-engine-spitfire-1500-208",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3769,7 +3769,7 @@
       "slug": "1977-triumph-tr2-engine-tr7-209",
       "canonicalSlug": "1977-triumph-tr2-engine-tr7-209",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3787,7 +3787,7 @@
       "slug": "1978-triumph-tr2-engine-spitfire-1500-210",
       "canonicalSlug": "1978-triumph-tr2-engine-spitfire-1500-210",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3805,7 +3805,7 @@
       "slug": "1978-triumph-tr2-engine-tr7-211",
       "canonicalSlug": "1978-triumph-tr2-engine-tr7-211",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3823,7 +3823,7 @@
       "slug": "1979-triumph-tr2-engine-spitfire-1500-212",
       "canonicalSlug": "1979-triumph-tr2-engine-spitfire-1500-212",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3841,7 +3841,7 @@
       "slug": "1979-triumph-tr2-engine-tr7-213",
       "canonicalSlug": "1979-triumph-tr2-engine-tr7-213",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3859,7 +3859,7 @@
       "slug": "1980-triumph-tr2-engine-spitfire-1500-214",
       "canonicalSlug": "1980-triumph-tr2-engine-spitfire-1500-214",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3877,7 +3877,7 @@
       "slug": "1980-triumph-tr2-engine-tr7-215",
       "canonicalSlug": "1980-triumph-tr2-engine-tr7-215",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3895,7 +3895,7 @@
       "slug": "1980-triumph-tr2-engine-tr8-california-216",
       "canonicalSlug": "1980-triumph-tr2-engine-tr8-california-216",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3913,7 +3913,7 @@
       "slug": "1980-triumph-tr2-engine-tr8-federal-217",
       "canonicalSlug": "1980-triumph-tr2-engine-tr8-federal-217",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3931,7 +3931,7 @@
       "slug": "1981-triumph-tr2-engine-tr7-218",
       "canonicalSlug": "1981-triumph-tr2-engine-tr7-218",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3949,7 +3949,7 @@
       "slug": "1981-triumph-tr2-engine-tr8-219",
       "canonicalSlug": "1981-triumph-tr2-engine-tr8-219",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3967,7 +3967,7 @@
       "slug": "1962-triumph-tr250-engine-tr4-220",
       "canonicalSlug": "1962-triumph-tr250-engine-tr4-220",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -3985,7 +3985,7 @@
       "slug": "1963-triumph-tr250-engine-spitfire-mk-i-221",
       "canonicalSlug": "1963-triumph-tr250-engine-spitfire-mk-i-221",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4003,7 +4003,7 @@
       "slug": "1963-triumph-tr250-engine-tr4-222",
       "canonicalSlug": "1963-triumph-tr250-engine-tr4-222",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4021,7 +4021,7 @@
       "slug": "1964-triumph-tr250-engine-spitfire-mk-i-223",
       "canonicalSlug": "1964-triumph-tr250-engine-spitfire-mk-i-223",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4039,7 +4039,7 @@
       "slug": "1964-triumph-tr250-engine-tr4-224",
       "canonicalSlug": "1964-triumph-tr250-engine-tr4-224",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4057,7 +4057,7 @@
       "slug": "1965-triumph-tr250-engine-tr4-225",
       "canonicalSlug": "1965-triumph-tr250-engine-tr4-225",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4075,7 +4075,7 @@
       "slug": "1965-triumph-tr250-engine-spitfire-mk-ii-226",
       "canonicalSlug": "1965-triumph-tr250-engine-spitfire-mk-ii-226",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4093,7 +4093,7 @@
       "slug": "1965-triumph-tr250-engine-tr4a-227",
       "canonicalSlug": "1965-triumph-tr250-engine-tr4a-227",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4111,7 +4111,7 @@
       "slug": "1966-triumph-tr250-engine-spitfire-mk-ii-228",
       "canonicalSlug": "1966-triumph-tr250-engine-spitfire-mk-ii-228",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4129,7 +4129,7 @@
       "slug": "1966-triumph-tr250-engine-tr4a-229",
       "canonicalSlug": "1966-triumph-tr250-engine-tr4a-229",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4147,7 +4147,7 @@
       "slug": "1967-triumph-tr250-engine-spitfire-mk-ii-230",
       "canonicalSlug": "1967-triumph-tr250-engine-spitfire-mk-ii-230",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4165,7 +4165,7 @@
       "slug": "1967-triumph-tr250-engine-tr4a-231",
       "canonicalSlug": "1967-triumph-tr250-engine-tr4a-231",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4183,7 +4183,7 @@
       "slug": "1967-triumph-tr250-engine-gt6-mk-i-232",
       "canonicalSlug": "1967-triumph-tr250-engine-gt6-mk-i-232",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4201,7 +4201,7 @@
       "slug": "1968-triumph-tr250-engine-gt6-mk-i-233",
       "canonicalSlug": "1968-triumph-tr250-engine-gt6-mk-i-233",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4219,7 +4219,7 @@
       "slug": "1968-triumph-tr250-engine-spitfire-mk-iii-1300cc-234",
       "canonicalSlug": "1968-triumph-tr250-engine-spitfire-mk-iii-1300cc-234",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4237,7 +4237,7 @@
       "slug": "1968-triumph-tr250-engine-tr250-235",
       "canonicalSlug": "1968-triumph-tr250-engine-tr250-235",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4255,7 +4255,7 @@
       "slug": "1969-triumph-tr250-engine-spitfire-mk-iii-1300cc-236",
       "canonicalSlug": "1969-triumph-tr250-engine-spitfire-mk-iii-1300cc-236",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4273,7 +4273,7 @@
       "slug": "1969-triumph-tr250-engine-tr250-237",
       "canonicalSlug": "1969-triumph-tr250-engine-tr250-237",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4291,7 +4291,7 @@
       "slug": "1969-triumph-tr250-engine-gt6-mk-ii-238",
       "canonicalSlug": "1969-triumph-tr250-engine-gt6-mk-ii-238",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4309,7 +4309,7 @@
       "slug": "1969-triumph-tr250-engine-tr6-239",
       "canonicalSlug": "1969-triumph-tr250-engine-tr6-239",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4327,7 +4327,7 @@
       "slug": "1970-triumph-tr250-engine-gt6-mk-ii-240",
       "canonicalSlug": "1970-triumph-tr250-engine-gt6-mk-ii-240",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4345,7 +4345,7 @@
       "slug": "1970-triumph-tr250-engine-tr6-241",
       "canonicalSlug": "1970-triumph-tr250-engine-tr6-241",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4363,7 +4363,7 @@
       "slug": "1970-triumph-tr250-engine-spitfire-mk-iii-1300cc-242",
       "canonicalSlug": "1970-triumph-tr250-engine-spitfire-mk-iii-1300cc-242",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4381,7 +4381,7 @@
       "slug": "1971-triumph-tr250-engine-tr6-243",
       "canonicalSlug": "1971-triumph-tr250-engine-tr6-243",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4399,7 +4399,7 @@
       "slug": "1971-triumph-tr250-engine-spitfire-mk-iii-1300cc-244",
       "canonicalSlug": "1971-triumph-tr250-engine-spitfire-mk-iii-1300cc-244",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4417,7 +4417,7 @@
       "slug": "1971-triumph-tr250-engine-gt6-mk-iii-245",
       "canonicalSlug": "1971-triumph-tr250-engine-gt6-mk-iii-245",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4435,7 +4435,7 @@
       "slug": "1971-triumph-tr250-engine-stag-246",
       "canonicalSlug": "1971-triumph-tr250-engine-stag-246",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4453,7 +4453,7 @@
       "slug": "1972-triumph-tr250-engine-tr6-247",
       "canonicalSlug": "1972-triumph-tr250-engine-tr6-247",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4471,7 +4471,7 @@
       "slug": "1972-triumph-tr250-engine-spitfire-mk-iii-1300cc-248",
       "canonicalSlug": "1972-triumph-tr250-engine-spitfire-mk-iii-1300cc-248",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4489,7 +4489,7 @@
       "slug": "1972-triumph-tr250-engine-gt6-mk-iii-249",
       "canonicalSlug": "1972-triumph-tr250-engine-gt6-mk-iii-249",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4507,7 +4507,7 @@
       "slug": "1972-triumph-tr250-engine-stag-250",
       "canonicalSlug": "1972-triumph-tr250-engine-stag-250",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4525,7 +4525,7 @@
       "slug": "1973-triumph-tr250-engine-tr6-251",
       "canonicalSlug": "1973-triumph-tr250-engine-tr6-251",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4543,7 +4543,7 @@
       "slug": "1973-triumph-tr250-engine-gt6-mk-iii-252",
       "canonicalSlug": "1973-triumph-tr250-engine-gt6-mk-iii-252",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4561,7 +4561,7 @@
       "slug": "1973-triumph-tr250-engine-stag-253",
       "canonicalSlug": "1973-triumph-tr250-engine-stag-253",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4579,7 +4579,7 @@
       "slug": "1973-triumph-tr250-engine-spitfire-1500-254",
       "canonicalSlug": "1973-triumph-tr250-engine-spitfire-1500-254",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4597,7 +4597,7 @@
       "slug": "1974-triumph-tr250-engine-tr6-255",
       "canonicalSlug": "1974-triumph-tr250-engine-tr6-255",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4615,7 +4615,7 @@
       "slug": "1974-triumph-tr250-engine-spitfire-1500-256",
       "canonicalSlug": "1974-triumph-tr250-engine-spitfire-1500-256",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4633,7 +4633,7 @@
       "slug": "1975-triumph-tr250-engine-tr6-257",
       "canonicalSlug": "1975-triumph-tr250-engine-tr6-257",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4651,7 +4651,7 @@
       "slug": "1975-triumph-tr250-engine-spitfire-1500-258",
       "canonicalSlug": "1975-triumph-tr250-engine-spitfire-1500-258",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4669,7 +4669,7 @@
       "slug": "1975-triumph-tr250-engine-tr7-259",
       "canonicalSlug": "1975-triumph-tr250-engine-tr7-259",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4687,7 +4687,7 @@
       "slug": "1976-triumph-tr250-engine-tr6-260",
       "canonicalSlug": "1976-triumph-tr250-engine-tr6-260",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4705,7 +4705,7 @@
       "slug": "1976-triumph-tr250-engine-spitfire-1500-261",
       "canonicalSlug": "1976-triumph-tr250-engine-spitfire-1500-261",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4723,7 +4723,7 @@
       "slug": "1976-triumph-tr250-engine-tr7-262",
       "canonicalSlug": "1976-triumph-tr250-engine-tr7-262",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4741,7 +4741,7 @@
       "slug": "1977-triumph-tr250-engine-spitfire-1500-263",
       "canonicalSlug": "1977-triumph-tr250-engine-spitfire-1500-263",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4759,7 +4759,7 @@
       "slug": "1977-triumph-tr250-engine-tr7-264",
       "canonicalSlug": "1977-triumph-tr250-engine-tr7-264",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4777,7 +4777,7 @@
       "slug": "1978-triumph-tr250-engine-spitfire-1500-265",
       "canonicalSlug": "1978-triumph-tr250-engine-spitfire-1500-265",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4795,7 +4795,7 @@
       "slug": "1978-triumph-tr250-engine-tr7-266",
       "canonicalSlug": "1978-triumph-tr250-engine-tr7-266",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4813,7 +4813,7 @@
       "slug": "1979-triumph-tr250-engine-spitfire-1500-267",
       "canonicalSlug": "1979-triumph-tr250-engine-spitfire-1500-267",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4831,7 +4831,7 @@
       "slug": "1979-triumph-tr250-engine-tr7-268",
       "canonicalSlug": "1979-triumph-tr250-engine-tr7-268",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4849,7 +4849,7 @@
       "slug": "1980-triumph-tr250-engine-spitfire-1500-269",
       "canonicalSlug": "1980-triumph-tr250-engine-spitfire-1500-269",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4867,7 +4867,7 @@
       "slug": "1980-triumph-tr250-engine-tr7-270",
       "canonicalSlug": "1980-triumph-tr250-engine-tr7-270",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4885,7 +4885,7 @@
       "slug": "1980-triumph-tr250-engine-tr8-california-271",
       "canonicalSlug": "1980-triumph-tr250-engine-tr8-california-271",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4903,7 +4903,7 @@
       "slug": "1980-triumph-tr250-engine-tr8-federal-272",
       "canonicalSlug": "1980-triumph-tr250-engine-tr8-federal-272",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4921,7 +4921,7 @@
       "slug": "1981-triumph-tr250-engine-tr7-273",
       "canonicalSlug": "1981-triumph-tr250-engine-tr7-273",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4939,7 +4939,7 @@
       "slug": "1981-triumph-tr250-engine-tr8-274",
       "canonicalSlug": "1981-triumph-tr250-engine-tr8-274",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4957,7 +4957,7 @@
       "slug": "1962-triumph-tr3-engine-tr4-275",
       "canonicalSlug": "1962-triumph-tr3-engine-tr4-275",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4975,7 +4975,7 @@
       "slug": "1963-triumph-tr3-engine-spitfire-mk-i-276",
       "canonicalSlug": "1963-triumph-tr3-engine-spitfire-mk-i-276",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -4993,7 +4993,7 @@
       "slug": "1963-triumph-tr3-engine-tr4-277",
       "canonicalSlug": "1963-triumph-tr3-engine-tr4-277",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5011,7 +5011,7 @@
       "slug": "1964-triumph-tr3-engine-spitfire-mk-i-278",
       "canonicalSlug": "1964-triumph-tr3-engine-spitfire-mk-i-278",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5029,7 +5029,7 @@
       "slug": "1964-triumph-tr3-engine-tr4-279",
       "canonicalSlug": "1964-triumph-tr3-engine-tr4-279",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5047,7 +5047,7 @@
       "slug": "1965-triumph-tr3-engine-tr4-280",
       "canonicalSlug": "1965-triumph-tr3-engine-tr4-280",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5065,7 +5065,7 @@
       "slug": "1965-triumph-tr3-engine-spitfire-mk-ii-281",
       "canonicalSlug": "1965-triumph-tr3-engine-spitfire-mk-ii-281",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5083,7 +5083,7 @@
       "slug": "1965-triumph-tr3-engine-tr4a-282",
       "canonicalSlug": "1965-triumph-tr3-engine-tr4a-282",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5101,7 +5101,7 @@
       "slug": "1966-triumph-tr3-engine-spitfire-mk-ii-283",
       "canonicalSlug": "1966-triumph-tr3-engine-spitfire-mk-ii-283",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5119,7 +5119,7 @@
       "slug": "1966-triumph-tr3-engine-tr4a-284",
       "canonicalSlug": "1966-triumph-tr3-engine-tr4a-284",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5137,7 +5137,7 @@
       "slug": "1967-triumph-tr3-engine-spitfire-mk-ii-285",
       "canonicalSlug": "1967-triumph-tr3-engine-spitfire-mk-ii-285",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5155,7 +5155,7 @@
       "slug": "1967-triumph-tr3-engine-tr4a-286",
       "canonicalSlug": "1967-triumph-tr3-engine-tr4a-286",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5173,7 +5173,7 @@
       "slug": "1967-triumph-tr3-engine-gt6-mk-i-287",
       "canonicalSlug": "1967-triumph-tr3-engine-gt6-mk-i-287",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5191,7 +5191,7 @@
       "slug": "1968-triumph-tr3-engine-gt6-mk-i-288",
       "canonicalSlug": "1968-triumph-tr3-engine-gt6-mk-i-288",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5209,7 +5209,7 @@
       "slug": "1968-triumph-tr3-engine-spitfire-mk-iii-1300cc-289",
       "canonicalSlug": "1968-triumph-tr3-engine-spitfire-mk-iii-1300cc-289",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5227,7 +5227,7 @@
       "slug": "1968-triumph-tr3-engine-tr250-290",
       "canonicalSlug": "1968-triumph-tr3-engine-tr250-290",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5245,7 +5245,7 @@
       "slug": "1969-triumph-tr3-engine-spitfire-mk-iii-1300cc-291",
       "canonicalSlug": "1969-triumph-tr3-engine-spitfire-mk-iii-1300cc-291",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5263,7 +5263,7 @@
       "slug": "1969-triumph-tr3-engine-tr250-292",
       "canonicalSlug": "1969-triumph-tr3-engine-tr250-292",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5281,7 +5281,7 @@
       "slug": "1969-triumph-tr3-engine-gt6-mk-ii-293",
       "canonicalSlug": "1969-triumph-tr3-engine-gt6-mk-ii-293",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5299,7 +5299,7 @@
       "slug": "1969-triumph-tr3-engine-tr6-294",
       "canonicalSlug": "1969-triumph-tr3-engine-tr6-294",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5317,7 +5317,7 @@
       "slug": "1970-triumph-tr3-engine-gt6-mk-ii-295",
       "canonicalSlug": "1970-triumph-tr3-engine-gt6-mk-ii-295",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5335,7 +5335,7 @@
       "slug": "1970-triumph-tr3-engine-tr6-296",
       "canonicalSlug": "1970-triumph-tr3-engine-tr6-296",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5353,7 +5353,7 @@
       "slug": "1970-triumph-tr3-engine-spitfire-mk-iii-1300cc-297",
       "canonicalSlug": "1970-triumph-tr3-engine-spitfire-mk-iii-1300cc-297",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5371,7 +5371,7 @@
       "slug": "1971-triumph-tr3-engine-tr6-298",
       "canonicalSlug": "1971-triumph-tr3-engine-tr6-298",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5389,7 +5389,7 @@
       "slug": "1971-triumph-tr3-engine-spitfire-mk-iii-1300cc-299",
       "canonicalSlug": "1971-triumph-tr3-engine-spitfire-mk-iii-1300cc-299",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5407,7 +5407,7 @@
       "slug": "1971-triumph-tr3-engine-gt6-mk-iii-300",
       "canonicalSlug": "1971-triumph-tr3-engine-gt6-mk-iii-300",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5425,7 +5425,7 @@
       "slug": "1971-triumph-tr3-engine-stag-301",
       "canonicalSlug": "1971-triumph-tr3-engine-stag-301",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5443,7 +5443,7 @@
       "slug": "1972-triumph-tr3-engine-tr6-302",
       "canonicalSlug": "1972-triumph-tr3-engine-tr6-302",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5461,7 +5461,7 @@
       "slug": "1972-triumph-tr3-engine-spitfire-mk-iii-1300cc-303",
       "canonicalSlug": "1972-triumph-tr3-engine-spitfire-mk-iii-1300cc-303",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5479,7 +5479,7 @@
       "slug": "1972-triumph-tr3-engine-gt6-mk-iii-304",
       "canonicalSlug": "1972-triumph-tr3-engine-gt6-mk-iii-304",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5497,7 +5497,7 @@
       "slug": "1972-triumph-tr3-engine-stag-305",
       "canonicalSlug": "1972-triumph-tr3-engine-stag-305",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5515,7 +5515,7 @@
       "slug": "1973-triumph-tr3-engine-tr6-306",
       "canonicalSlug": "1973-triumph-tr3-engine-tr6-306",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5533,7 +5533,7 @@
       "slug": "1973-triumph-tr3-engine-gt6-mk-iii-307",
       "canonicalSlug": "1973-triumph-tr3-engine-gt6-mk-iii-307",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5551,7 +5551,7 @@
       "slug": "1973-triumph-tr3-engine-stag-308",
       "canonicalSlug": "1973-triumph-tr3-engine-stag-308",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5569,7 +5569,7 @@
       "slug": "1973-triumph-tr3-engine-spitfire-1500-309",
       "canonicalSlug": "1973-triumph-tr3-engine-spitfire-1500-309",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5587,7 +5587,7 @@
       "slug": "1974-triumph-tr3-engine-tr6-310",
       "canonicalSlug": "1974-triumph-tr3-engine-tr6-310",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5605,7 +5605,7 @@
       "slug": "1974-triumph-tr3-engine-spitfire-1500-311",
       "canonicalSlug": "1974-triumph-tr3-engine-spitfire-1500-311",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5623,7 +5623,7 @@
       "slug": "1975-triumph-tr3-engine-tr6-312",
       "canonicalSlug": "1975-triumph-tr3-engine-tr6-312",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5641,7 +5641,7 @@
       "slug": "1975-triumph-tr3-engine-spitfire-1500-313",
       "canonicalSlug": "1975-triumph-tr3-engine-spitfire-1500-313",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5659,7 +5659,7 @@
       "slug": "1975-triumph-tr3-engine-tr7-314",
       "canonicalSlug": "1975-triumph-tr3-engine-tr7-314",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5677,7 +5677,7 @@
       "slug": "1976-triumph-tr3-engine-tr6-315",
       "canonicalSlug": "1976-triumph-tr3-engine-tr6-315",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5695,7 +5695,7 @@
       "slug": "1976-triumph-tr3-engine-spitfire-1500-316",
       "canonicalSlug": "1976-triumph-tr3-engine-spitfire-1500-316",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5713,7 +5713,7 @@
       "slug": "1976-triumph-tr3-engine-tr7-317",
       "canonicalSlug": "1976-triumph-tr3-engine-tr7-317",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5731,7 +5731,7 @@
       "slug": "1977-triumph-tr3-engine-spitfire-1500-318",
       "canonicalSlug": "1977-triumph-tr3-engine-spitfire-1500-318",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5749,7 +5749,7 @@
       "slug": "1977-triumph-tr3-engine-tr7-319",
       "canonicalSlug": "1977-triumph-tr3-engine-tr7-319",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5767,7 +5767,7 @@
       "slug": "1978-triumph-tr3-engine-spitfire-1500-320",
       "canonicalSlug": "1978-triumph-tr3-engine-spitfire-1500-320",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5785,7 +5785,7 @@
       "slug": "1978-triumph-tr3-engine-tr7-321",
       "canonicalSlug": "1978-triumph-tr3-engine-tr7-321",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5803,7 +5803,7 @@
       "slug": "1979-triumph-tr3-engine-spitfire-1500-322",
       "canonicalSlug": "1979-triumph-tr3-engine-spitfire-1500-322",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5821,7 +5821,7 @@
       "slug": "1979-triumph-tr3-engine-tr7-323",
       "canonicalSlug": "1979-triumph-tr3-engine-tr7-323",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5839,7 +5839,7 @@
       "slug": "1980-triumph-tr3-engine-spitfire-1500-324",
       "canonicalSlug": "1980-triumph-tr3-engine-spitfire-1500-324",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5857,7 +5857,7 @@
       "slug": "1980-triumph-tr3-engine-tr7-325",
       "canonicalSlug": "1980-triumph-tr3-engine-tr7-325",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5875,7 +5875,7 @@
       "slug": "1980-triumph-tr3-engine-tr8-california-326",
       "canonicalSlug": "1980-triumph-tr3-engine-tr8-california-326",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5893,7 +5893,7 @@
       "slug": "1980-triumph-tr3-engine-tr8-federal-327",
       "canonicalSlug": "1980-triumph-tr3-engine-tr8-federal-327",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5911,7 +5911,7 @@
       "slug": "1981-triumph-tr3-engine-tr7-328",
       "canonicalSlug": "1981-triumph-tr3-engine-tr7-328",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5929,7 +5929,7 @@
       "slug": "1981-triumph-tr3-engine-tr8-329",
       "canonicalSlug": "1981-triumph-tr3-engine-tr8-329",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5947,7 +5947,7 @@
       "slug": "1962-triumph-tr4-engine-tr4-330",
       "canonicalSlug": "1962-triumph-tr4-engine-tr4-330",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5965,7 +5965,7 @@
       "slug": "1963-triumph-tr4-engine-spitfire-mk-i-331",
       "canonicalSlug": "1963-triumph-tr4-engine-spitfire-mk-i-331",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -5983,7 +5983,7 @@
       "slug": "1963-triumph-tr4-engine-tr4-332",
       "canonicalSlug": "1963-triumph-tr4-engine-tr4-332",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6001,7 +6001,7 @@
       "slug": "1964-triumph-tr4-engine-spitfire-mk-i-333",
       "canonicalSlug": "1964-triumph-tr4-engine-spitfire-mk-i-333",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6019,7 +6019,7 @@
       "slug": "1964-triumph-tr4-engine-tr4-334",
       "canonicalSlug": "1964-triumph-tr4-engine-tr4-334",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6037,7 +6037,7 @@
       "slug": "1965-triumph-tr4-engine-tr4-335",
       "canonicalSlug": "1965-triumph-tr4-engine-tr4-335",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6055,7 +6055,7 @@
       "slug": "1965-triumph-tr4-engine-spitfire-mk-ii-336",
       "canonicalSlug": "1965-triumph-tr4-engine-spitfire-mk-ii-336",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6073,7 +6073,7 @@
       "slug": "1965-triumph-tr4-engine-tr4a-337",
       "canonicalSlug": "1965-triumph-tr4-engine-tr4a-337",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6091,7 +6091,7 @@
       "slug": "1966-triumph-tr4-engine-spitfire-mk-ii-338",
       "canonicalSlug": "1966-triumph-tr4-engine-spitfire-mk-ii-338",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6109,7 +6109,7 @@
       "slug": "1966-triumph-tr4-engine-tr4a-339",
       "canonicalSlug": "1966-triumph-tr4-engine-tr4a-339",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6127,7 +6127,7 @@
       "slug": "1967-triumph-tr4-engine-spitfire-mk-ii-340",
       "canonicalSlug": "1967-triumph-tr4-engine-spitfire-mk-ii-340",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6145,7 +6145,7 @@
       "slug": "1967-triumph-tr4-engine-tr4a-341",
       "canonicalSlug": "1967-triumph-tr4-engine-tr4a-341",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6163,7 +6163,7 @@
       "slug": "1967-triumph-tr4-engine-gt6-mk-i-342",
       "canonicalSlug": "1967-triumph-tr4-engine-gt6-mk-i-342",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6181,7 +6181,7 @@
       "slug": "1968-triumph-tr4-engine-gt6-mk-i-343",
       "canonicalSlug": "1968-triumph-tr4-engine-gt6-mk-i-343",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6199,7 +6199,7 @@
       "slug": "1968-triumph-tr4-engine-spitfire-mk-iii-1300cc-344",
       "canonicalSlug": "1968-triumph-tr4-engine-spitfire-mk-iii-1300cc-344",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6217,7 +6217,7 @@
       "slug": "1968-triumph-tr4-engine-tr250-345",
       "canonicalSlug": "1968-triumph-tr4-engine-tr250-345",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6235,7 +6235,7 @@
       "slug": "1969-triumph-tr4-engine-spitfire-mk-iii-1300cc-346",
       "canonicalSlug": "1969-triumph-tr4-engine-spitfire-mk-iii-1300cc-346",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6253,7 +6253,7 @@
       "slug": "1969-triumph-tr4-engine-tr250-347",
       "canonicalSlug": "1969-triumph-tr4-engine-tr250-347",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6271,7 +6271,7 @@
       "slug": "1969-triumph-tr4-engine-gt6-mk-ii-348",
       "canonicalSlug": "1969-triumph-tr4-engine-gt6-mk-ii-348",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6289,7 +6289,7 @@
       "slug": "1969-triumph-tr4-engine-tr6-349",
       "canonicalSlug": "1969-triumph-tr4-engine-tr6-349",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6307,7 +6307,7 @@
       "slug": "1970-triumph-tr4-engine-gt6-mk-ii-350",
       "canonicalSlug": "1970-triumph-tr4-engine-gt6-mk-ii-350",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6325,7 +6325,7 @@
       "slug": "1970-triumph-tr4-engine-tr6-351",
       "canonicalSlug": "1970-triumph-tr4-engine-tr6-351",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6343,7 +6343,7 @@
       "slug": "1970-triumph-tr4-engine-spitfire-mk-iii-1300cc-352",
       "canonicalSlug": "1970-triumph-tr4-engine-spitfire-mk-iii-1300cc-352",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6361,7 +6361,7 @@
       "slug": "1971-triumph-tr4-engine-tr6-353",
       "canonicalSlug": "1971-triumph-tr4-engine-tr6-353",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6379,7 +6379,7 @@
       "slug": "1971-triumph-tr4-engine-spitfire-mk-iii-1300cc-354",
       "canonicalSlug": "1971-triumph-tr4-engine-spitfire-mk-iii-1300cc-354",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6397,7 +6397,7 @@
       "slug": "1971-triumph-tr4-engine-gt6-mk-iii-355",
       "canonicalSlug": "1971-triumph-tr4-engine-gt6-mk-iii-355",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6415,7 +6415,7 @@
       "slug": "1971-triumph-tr4-engine-stag-356",
       "canonicalSlug": "1971-triumph-tr4-engine-stag-356",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6433,7 +6433,7 @@
       "slug": "1972-triumph-tr4-engine-tr6-357",
       "canonicalSlug": "1972-triumph-tr4-engine-tr6-357",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6451,7 +6451,7 @@
       "slug": "1972-triumph-tr4-engine-spitfire-mk-iii-1300cc-358",
       "canonicalSlug": "1972-triumph-tr4-engine-spitfire-mk-iii-1300cc-358",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6469,7 +6469,7 @@
       "slug": "1972-triumph-tr4-engine-gt6-mk-iii-359",
       "canonicalSlug": "1972-triumph-tr4-engine-gt6-mk-iii-359",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6487,7 +6487,7 @@
       "slug": "1972-triumph-tr4-engine-stag-360",
       "canonicalSlug": "1972-triumph-tr4-engine-stag-360",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6505,7 +6505,7 @@
       "slug": "1973-triumph-tr4-engine-tr6-361",
       "canonicalSlug": "1973-triumph-tr4-engine-tr6-361",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6523,7 +6523,7 @@
       "slug": "1973-triumph-tr4-engine-gt6-mk-iii-362",
       "canonicalSlug": "1973-triumph-tr4-engine-gt6-mk-iii-362",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6541,7 +6541,7 @@
       "slug": "1973-triumph-tr4-engine-stag-363",
       "canonicalSlug": "1973-triumph-tr4-engine-stag-363",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6559,7 +6559,7 @@
       "slug": "1973-triumph-tr4-engine-spitfire-1500-364",
       "canonicalSlug": "1973-triumph-tr4-engine-spitfire-1500-364",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6577,7 +6577,7 @@
       "slug": "1974-triumph-tr4-engine-tr6-365",
       "canonicalSlug": "1974-triumph-tr4-engine-tr6-365",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6595,7 +6595,7 @@
       "slug": "1974-triumph-tr4-engine-spitfire-1500-366",
       "canonicalSlug": "1974-triumph-tr4-engine-spitfire-1500-366",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6613,7 +6613,7 @@
       "slug": "1975-triumph-tr4-engine-tr6-367",
       "canonicalSlug": "1975-triumph-tr4-engine-tr6-367",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6631,7 +6631,7 @@
       "slug": "1975-triumph-tr4-engine-spitfire-1500-368",
       "canonicalSlug": "1975-triumph-tr4-engine-spitfire-1500-368",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6649,7 +6649,7 @@
       "slug": "1975-triumph-tr4-engine-tr7-369",
       "canonicalSlug": "1975-triumph-tr4-engine-tr7-369",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6667,7 +6667,7 @@
       "slug": "1976-triumph-tr4-engine-tr6-370",
       "canonicalSlug": "1976-triumph-tr4-engine-tr6-370",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6685,7 +6685,7 @@
       "slug": "1976-triumph-tr4-engine-spitfire-1500-371",
       "canonicalSlug": "1976-triumph-tr4-engine-spitfire-1500-371",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6703,7 +6703,7 @@
       "slug": "1976-triumph-tr4-engine-tr7-372",
       "canonicalSlug": "1976-triumph-tr4-engine-tr7-372",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6721,7 +6721,7 @@
       "slug": "1977-triumph-tr4-engine-spitfire-1500-373",
       "canonicalSlug": "1977-triumph-tr4-engine-spitfire-1500-373",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6739,7 +6739,7 @@
       "slug": "1977-triumph-tr4-engine-tr7-374",
       "canonicalSlug": "1977-triumph-tr4-engine-tr7-374",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6757,7 +6757,7 @@
       "slug": "1978-triumph-tr4-engine-spitfire-1500-375",
       "canonicalSlug": "1978-triumph-tr4-engine-spitfire-1500-375",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6775,7 +6775,7 @@
       "slug": "1978-triumph-tr4-engine-tr7-376",
       "canonicalSlug": "1978-triumph-tr4-engine-tr7-376",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6793,7 +6793,7 @@
       "slug": "1979-triumph-tr4-engine-spitfire-1500-377",
       "canonicalSlug": "1979-triumph-tr4-engine-spitfire-1500-377",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6811,7 +6811,7 @@
       "slug": "1979-triumph-tr4-engine-tr7-378",
       "canonicalSlug": "1979-triumph-tr4-engine-tr7-378",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6829,7 +6829,7 @@
       "slug": "1980-triumph-tr4-engine-spitfire-1500-379",
       "canonicalSlug": "1980-triumph-tr4-engine-spitfire-1500-379",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6847,7 +6847,7 @@
       "slug": "1980-triumph-tr4-engine-tr7-380",
       "canonicalSlug": "1980-triumph-tr4-engine-tr7-380",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6865,7 +6865,7 @@
       "slug": "1980-triumph-tr4-engine-tr8-california-381",
       "canonicalSlug": "1980-triumph-tr4-engine-tr8-california-381",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6883,7 +6883,7 @@
       "slug": "1980-triumph-tr4-engine-tr8-federal-382",
       "canonicalSlug": "1980-triumph-tr4-engine-tr8-federal-382",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6901,7 +6901,7 @@
       "slug": "1981-triumph-tr4-engine-tr7-383",
       "canonicalSlug": "1981-triumph-tr4-engine-tr7-383",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6919,7 +6919,7 @@
       "slug": "1981-triumph-tr4-engine-tr8-384",
       "canonicalSlug": "1981-triumph-tr4-engine-tr8-384",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6937,7 +6937,7 @@
       "slug": "1962-triumph-tr4a-engine-tr4-385",
       "canonicalSlug": "1962-triumph-tr4a-engine-tr4-385",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6955,7 +6955,7 @@
       "slug": "1963-triumph-tr4a-engine-spitfire-mk-i-386",
       "canonicalSlug": "1963-triumph-tr4a-engine-spitfire-mk-i-386",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6973,7 +6973,7 @@
       "slug": "1963-triumph-tr4a-engine-tr4-387",
       "canonicalSlug": "1963-triumph-tr4a-engine-tr4-387",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -6991,7 +6991,7 @@
       "slug": "1964-triumph-tr4a-engine-spitfire-mk-i-388",
       "canonicalSlug": "1964-triumph-tr4a-engine-spitfire-mk-i-388",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7009,7 +7009,7 @@
       "slug": "1964-triumph-tr4a-engine-tr4-389",
       "canonicalSlug": "1964-triumph-tr4a-engine-tr4-389",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7027,7 +7027,7 @@
       "slug": "1965-triumph-tr4a-engine-tr4-390",
       "canonicalSlug": "1965-triumph-tr4a-engine-tr4-390",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7045,7 +7045,7 @@
       "slug": "1965-triumph-tr4a-engine-spitfire-mk-ii-391",
       "canonicalSlug": "1965-triumph-tr4a-engine-spitfire-mk-ii-391",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7063,7 +7063,7 @@
       "slug": "1965-triumph-tr4a-engine-tr4a-392",
       "canonicalSlug": "1965-triumph-tr4a-engine-tr4a-392",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7081,7 +7081,7 @@
       "slug": "1966-triumph-tr4a-engine-spitfire-mk-ii-393",
       "canonicalSlug": "1966-triumph-tr4a-engine-spitfire-mk-ii-393",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7099,7 +7099,7 @@
       "slug": "1966-triumph-tr4a-engine-tr4a-394",
       "canonicalSlug": "1966-triumph-tr4a-engine-tr4a-394",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7117,7 +7117,7 @@
       "slug": "1967-triumph-tr4a-engine-spitfire-mk-ii-395",
       "canonicalSlug": "1967-triumph-tr4a-engine-spitfire-mk-ii-395",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7135,7 +7135,7 @@
       "slug": "1967-triumph-tr4a-engine-tr4a-396",
       "canonicalSlug": "1967-triumph-tr4a-engine-tr4a-396",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7153,7 +7153,7 @@
       "slug": "1967-triumph-tr4a-engine-gt6-mk-i-397",
       "canonicalSlug": "1967-triumph-tr4a-engine-gt6-mk-i-397",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7171,7 +7171,7 @@
       "slug": "1968-triumph-tr4a-engine-gt6-mk-i-398",
       "canonicalSlug": "1968-triumph-tr4a-engine-gt6-mk-i-398",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7189,7 +7189,7 @@
       "slug": "1968-triumph-tr4a-engine-spitfire-mk-iii-1300cc-399",
       "canonicalSlug": "1968-triumph-tr4a-engine-spitfire-mk-iii-1300cc-399",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7207,7 +7207,7 @@
       "slug": "1968-triumph-tr4a-engine-tr250-400",
       "canonicalSlug": "1968-triumph-tr4a-engine-tr250-400",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7225,7 +7225,7 @@
       "slug": "1969-triumph-tr4a-engine-spitfire-mk-iii-1300cc-401",
       "canonicalSlug": "1969-triumph-tr4a-engine-spitfire-mk-iii-1300cc-401",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7243,7 +7243,7 @@
       "slug": "1969-triumph-tr4a-engine-tr250-402",
       "canonicalSlug": "1969-triumph-tr4a-engine-tr250-402",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7261,7 +7261,7 @@
       "slug": "1969-triumph-tr4a-engine-gt6-mk-ii-403",
       "canonicalSlug": "1969-triumph-tr4a-engine-gt6-mk-ii-403",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7279,7 +7279,7 @@
       "slug": "1969-triumph-tr4a-engine-tr6-404",
       "canonicalSlug": "1969-triumph-tr4a-engine-tr6-404",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7297,7 +7297,7 @@
       "slug": "1970-triumph-tr4a-engine-gt6-mk-ii-405",
       "canonicalSlug": "1970-triumph-tr4a-engine-gt6-mk-ii-405",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7315,7 +7315,7 @@
       "slug": "1970-triumph-tr4a-engine-tr6-406",
       "canonicalSlug": "1970-triumph-tr4a-engine-tr6-406",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7333,7 +7333,7 @@
       "slug": "1970-triumph-tr4a-engine-spitfire-mk-iii-1300cc-407",
       "canonicalSlug": "1970-triumph-tr4a-engine-spitfire-mk-iii-1300cc-407",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7351,7 +7351,7 @@
       "slug": "1971-triumph-tr4a-engine-tr6-408",
       "canonicalSlug": "1971-triumph-tr4a-engine-tr6-408",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7369,7 +7369,7 @@
       "slug": "1971-triumph-tr4a-engine-spitfire-mk-iii-1300cc-409",
       "canonicalSlug": "1971-triumph-tr4a-engine-spitfire-mk-iii-1300cc-409",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7387,7 +7387,7 @@
       "slug": "1971-triumph-tr4a-engine-gt6-mk-iii-410",
       "canonicalSlug": "1971-triumph-tr4a-engine-gt6-mk-iii-410",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7405,7 +7405,7 @@
       "slug": "1971-triumph-tr4a-engine-stag-411",
       "canonicalSlug": "1971-triumph-tr4a-engine-stag-411",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7423,7 +7423,7 @@
       "slug": "1972-triumph-tr4a-engine-tr6-412",
       "canonicalSlug": "1972-triumph-tr4a-engine-tr6-412",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7441,7 +7441,7 @@
       "slug": "1972-triumph-tr4a-engine-spitfire-mk-iii-1300cc-413",
       "canonicalSlug": "1972-triumph-tr4a-engine-spitfire-mk-iii-1300cc-413",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7459,7 +7459,7 @@
       "slug": "1972-triumph-tr4a-engine-gt6-mk-iii-414",
       "canonicalSlug": "1972-triumph-tr4a-engine-gt6-mk-iii-414",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7477,7 +7477,7 @@
       "slug": "1972-triumph-tr4a-engine-stag-415",
       "canonicalSlug": "1972-triumph-tr4a-engine-stag-415",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7495,7 +7495,7 @@
       "slug": "1973-triumph-tr4a-engine-tr6-416",
       "canonicalSlug": "1973-triumph-tr4a-engine-tr6-416",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7513,7 +7513,7 @@
       "slug": "1973-triumph-tr4a-engine-gt6-mk-iii-417",
       "canonicalSlug": "1973-triumph-tr4a-engine-gt6-mk-iii-417",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7531,7 +7531,7 @@
       "slug": "1973-triumph-tr4a-engine-stag-418",
       "canonicalSlug": "1973-triumph-tr4a-engine-stag-418",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7549,7 +7549,7 @@
       "slug": "1973-triumph-tr4a-engine-spitfire-1500-419",
       "canonicalSlug": "1973-triumph-tr4a-engine-spitfire-1500-419",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7567,7 +7567,7 @@
       "slug": "1974-triumph-tr4a-engine-tr6-420",
       "canonicalSlug": "1974-triumph-tr4a-engine-tr6-420",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7585,7 +7585,7 @@
       "slug": "1974-triumph-tr4a-engine-spitfire-1500-421",
       "canonicalSlug": "1974-triumph-tr4a-engine-spitfire-1500-421",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7603,7 +7603,7 @@
       "slug": "1975-triumph-tr4a-engine-tr6-422",
       "canonicalSlug": "1975-triumph-tr4a-engine-tr6-422",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7621,7 +7621,7 @@
       "slug": "1975-triumph-tr4a-engine-spitfire-1500-423",
       "canonicalSlug": "1975-triumph-tr4a-engine-spitfire-1500-423",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7639,7 +7639,7 @@
       "slug": "1975-triumph-tr4a-engine-tr7-424",
       "canonicalSlug": "1975-triumph-tr4a-engine-tr7-424",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7657,7 +7657,7 @@
       "slug": "1976-triumph-tr4a-engine-tr6-425",
       "canonicalSlug": "1976-triumph-tr4a-engine-tr6-425",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7675,7 +7675,7 @@
       "slug": "1976-triumph-tr4a-engine-spitfire-1500-426",
       "canonicalSlug": "1976-triumph-tr4a-engine-spitfire-1500-426",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7693,7 +7693,7 @@
       "slug": "1976-triumph-tr4a-engine-tr7-427",
       "canonicalSlug": "1976-triumph-tr4a-engine-tr7-427",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7711,7 +7711,7 @@
       "slug": "1977-triumph-tr4a-engine-spitfire-1500-428",
       "canonicalSlug": "1977-triumph-tr4a-engine-spitfire-1500-428",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7729,7 +7729,7 @@
       "slug": "1977-triumph-tr4a-engine-tr7-429",
       "canonicalSlug": "1977-triumph-tr4a-engine-tr7-429",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7747,7 +7747,7 @@
       "slug": "1978-triumph-tr4a-engine-spitfire-1500-430",
       "canonicalSlug": "1978-triumph-tr4a-engine-spitfire-1500-430",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7765,7 +7765,7 @@
       "slug": "1978-triumph-tr4a-engine-tr7-431",
       "canonicalSlug": "1978-triumph-tr4a-engine-tr7-431",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7783,7 +7783,7 @@
       "slug": "1979-triumph-tr4a-engine-spitfire-1500-432",
       "canonicalSlug": "1979-triumph-tr4a-engine-spitfire-1500-432",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7801,7 +7801,7 @@
       "slug": "1979-triumph-tr4a-engine-tr7-433",
       "canonicalSlug": "1979-triumph-tr4a-engine-tr7-433",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7819,7 +7819,7 @@
       "slug": "1980-triumph-tr4a-engine-spitfire-1500-434",
       "canonicalSlug": "1980-triumph-tr4a-engine-spitfire-1500-434",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7837,7 +7837,7 @@
       "slug": "1980-triumph-tr4a-engine-tr7-435",
       "canonicalSlug": "1980-triumph-tr4a-engine-tr7-435",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7855,7 +7855,7 @@
       "slug": "1980-triumph-tr4a-engine-tr8-california-436",
       "canonicalSlug": "1980-triumph-tr4a-engine-tr8-california-436",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7873,7 +7873,7 @@
       "slug": "1980-triumph-tr4a-engine-tr8-federal-437",
       "canonicalSlug": "1980-triumph-tr4a-engine-tr8-federal-437",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7891,7 +7891,7 @@
       "slug": "1981-triumph-tr4a-engine-tr7-438",
       "canonicalSlug": "1981-triumph-tr4a-engine-tr7-438",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7909,7 +7909,7 @@
       "slug": "1981-triumph-tr4a-engine-tr8-439",
       "canonicalSlug": "1981-triumph-tr4a-engine-tr8-439",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7927,7 +7927,7 @@
       "slug": "1962-triumph-tr6-engine-tr4-440",
       "canonicalSlug": "1962-triumph-tr6-engine-tr4-440",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7945,7 +7945,7 @@
       "slug": "1963-triumph-tr6-engine-spitfire-mk-i-441",
       "canonicalSlug": "1963-triumph-tr6-engine-spitfire-mk-i-441",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7963,7 +7963,7 @@
       "slug": "1963-triumph-tr6-engine-tr4-442",
       "canonicalSlug": "1963-triumph-tr6-engine-tr4-442",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7981,7 +7981,7 @@
       "slug": "1964-triumph-tr6-engine-spitfire-mk-i-443",
       "canonicalSlug": "1964-triumph-tr6-engine-spitfire-mk-i-443",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -7999,7 +7999,7 @@
       "slug": "1964-triumph-tr6-engine-tr4-444",
       "canonicalSlug": "1964-triumph-tr6-engine-tr4-444",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8017,7 +8017,7 @@
       "slug": "1965-triumph-tr6-engine-tr4-445",
       "canonicalSlug": "1965-triumph-tr6-engine-tr4-445",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8035,7 +8035,7 @@
       "slug": "1965-triumph-tr6-engine-spitfire-mk-ii-446",
       "canonicalSlug": "1965-triumph-tr6-engine-spitfire-mk-ii-446",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8053,7 +8053,7 @@
       "slug": "1965-triumph-tr6-engine-tr4a-447",
       "canonicalSlug": "1965-triumph-tr6-engine-tr4a-447",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8071,7 +8071,7 @@
       "slug": "1966-triumph-tr6-engine-spitfire-mk-ii-448",
       "canonicalSlug": "1966-triumph-tr6-engine-spitfire-mk-ii-448",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8089,7 +8089,7 @@
       "slug": "1966-triumph-tr6-engine-tr4a-449",
       "canonicalSlug": "1966-triumph-tr6-engine-tr4a-449",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8107,7 +8107,7 @@
       "slug": "1967-triumph-tr6-engine-spitfire-mk-ii-450",
       "canonicalSlug": "1967-triumph-tr6-engine-spitfire-mk-ii-450",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8125,7 +8125,7 @@
       "slug": "1967-triumph-tr6-engine-tr4a-451",
       "canonicalSlug": "1967-triumph-tr6-engine-tr4a-451",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8143,7 +8143,7 @@
       "slug": "1967-triumph-tr6-engine-gt6-mk-i-452",
       "canonicalSlug": "1967-triumph-tr6-engine-gt6-mk-i-452",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8161,7 +8161,7 @@
       "slug": "1968-triumph-tr6-engine-gt6-mk-i-453",
       "canonicalSlug": "1968-triumph-tr6-engine-gt6-mk-i-453",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8179,7 +8179,7 @@
       "slug": "1968-triumph-tr6-engine-spitfire-mk-iii-1300cc-454",
       "canonicalSlug": "1968-triumph-tr6-engine-spitfire-mk-iii-1300cc-454",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8197,7 +8197,7 @@
       "slug": "1968-triumph-tr6-engine-tr250-455",
       "canonicalSlug": "1968-triumph-tr6-engine-tr250-455",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8215,7 +8215,7 @@
       "slug": "1969-triumph-tr6-engine-spitfire-mk-iii-1300cc-456",
       "canonicalSlug": "1969-triumph-tr6-engine-spitfire-mk-iii-1300cc-456",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8233,7 +8233,7 @@
       "slug": "1969-triumph-tr6-engine-tr250-457",
       "canonicalSlug": "1969-triumph-tr6-engine-tr250-457",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8251,7 +8251,7 @@
       "slug": "1969-triumph-tr6-engine-gt6-mk-ii-458",
       "canonicalSlug": "1969-triumph-tr6-engine-gt6-mk-ii-458",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8269,7 +8269,7 @@
       "slug": "1969-triumph-tr6-engine-tr6-459",
       "canonicalSlug": "1969-triumph-tr6-engine-tr6-459",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8287,7 +8287,7 @@
       "slug": "1970-triumph-tr6-engine-gt6-mk-ii-460",
       "canonicalSlug": "1970-triumph-tr6-engine-gt6-mk-ii-460",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8305,7 +8305,7 @@
       "slug": "1970-triumph-tr6-engine-tr6-461",
       "canonicalSlug": "1970-triumph-tr6-engine-tr6-461",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8323,7 +8323,7 @@
       "slug": "1970-triumph-tr6-engine-spitfire-mk-iii-1300cc-462",
       "canonicalSlug": "1970-triumph-tr6-engine-spitfire-mk-iii-1300cc-462",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8341,7 +8341,7 @@
       "slug": "1971-triumph-tr6-engine-tr6-463",
       "canonicalSlug": "1971-triumph-tr6-engine-tr6-463",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8359,7 +8359,7 @@
       "slug": "1971-triumph-tr6-engine-spitfire-mk-iii-1300cc-464",
       "canonicalSlug": "1971-triumph-tr6-engine-spitfire-mk-iii-1300cc-464",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8377,7 +8377,7 @@
       "slug": "1971-triumph-tr6-engine-gt6-mk-iii-465",
       "canonicalSlug": "1971-triumph-tr6-engine-gt6-mk-iii-465",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8395,7 +8395,7 @@
       "slug": "1971-triumph-tr6-engine-stag-466",
       "canonicalSlug": "1971-triumph-tr6-engine-stag-466",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8413,7 +8413,7 @@
       "slug": "1972-triumph-tr6-engine-tr6-467",
       "canonicalSlug": "1972-triumph-tr6-engine-tr6-467",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8431,7 +8431,7 @@
       "slug": "1972-triumph-tr6-engine-spitfire-mk-iii-1300cc-468",
       "canonicalSlug": "1972-triumph-tr6-engine-spitfire-mk-iii-1300cc-468",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8449,7 +8449,7 @@
       "slug": "1972-triumph-tr6-engine-gt6-mk-iii-469",
       "canonicalSlug": "1972-triumph-tr6-engine-gt6-mk-iii-469",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8467,7 +8467,7 @@
       "slug": "1972-triumph-tr6-engine-stag-470",
       "canonicalSlug": "1972-triumph-tr6-engine-stag-470",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8485,7 +8485,7 @@
       "slug": "1973-triumph-tr6-engine-tr6-471",
       "canonicalSlug": "1973-triumph-tr6-engine-tr6-471",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8503,7 +8503,7 @@
       "slug": "1973-triumph-tr6-engine-gt6-mk-iii-472",
       "canonicalSlug": "1973-triumph-tr6-engine-gt6-mk-iii-472",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8521,7 +8521,7 @@
       "slug": "1973-triumph-tr6-engine-stag-473",
       "canonicalSlug": "1973-triumph-tr6-engine-stag-473",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8539,7 +8539,7 @@
       "slug": "1973-triumph-tr6-engine-spitfire-1500-474",
       "canonicalSlug": "1973-triumph-tr6-engine-spitfire-1500-474",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8557,7 +8557,7 @@
       "slug": "1974-triumph-tr6-engine-tr6-475",
       "canonicalSlug": "1974-triumph-tr6-engine-tr6-475",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8575,7 +8575,7 @@
       "slug": "1974-triumph-tr6-engine-spitfire-1500-476",
       "canonicalSlug": "1974-triumph-tr6-engine-spitfire-1500-476",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8593,7 +8593,7 @@
       "slug": "1975-triumph-tr6-engine-tr6-477",
       "canonicalSlug": "1975-triumph-tr6-engine-tr6-477",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8611,7 +8611,7 @@
       "slug": "1975-triumph-tr6-engine-spitfire-1500-478",
       "canonicalSlug": "1975-triumph-tr6-engine-spitfire-1500-478",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8629,7 +8629,7 @@
       "slug": "1975-triumph-tr6-engine-tr7-479",
       "canonicalSlug": "1975-triumph-tr6-engine-tr7-479",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8647,7 +8647,7 @@
       "slug": "1976-triumph-tr6-engine-tr6-480",
       "canonicalSlug": "1976-triumph-tr6-engine-tr6-480",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8665,7 +8665,7 @@
       "slug": "1976-triumph-tr6-engine-spitfire-1500-481",
       "canonicalSlug": "1976-triumph-tr6-engine-spitfire-1500-481",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8683,7 +8683,7 @@
       "slug": "1976-triumph-tr6-engine-tr7-482",
       "canonicalSlug": "1976-triumph-tr6-engine-tr7-482",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8701,7 +8701,7 @@
       "slug": "1977-triumph-tr6-engine-spitfire-1500-483",
       "canonicalSlug": "1977-triumph-tr6-engine-spitfire-1500-483",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8719,7 +8719,7 @@
       "slug": "1977-triumph-tr6-engine-tr7-484",
       "canonicalSlug": "1977-triumph-tr6-engine-tr7-484",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8737,7 +8737,7 @@
       "slug": "1978-triumph-tr6-engine-spitfire-1500-485",
       "canonicalSlug": "1978-triumph-tr6-engine-spitfire-1500-485",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8755,7 +8755,7 @@
       "slug": "1978-triumph-tr6-engine-tr7-486",
       "canonicalSlug": "1978-triumph-tr6-engine-tr7-486",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8773,7 +8773,7 @@
       "slug": "1979-triumph-tr6-engine-spitfire-1500-487",
       "canonicalSlug": "1979-triumph-tr6-engine-spitfire-1500-487",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8791,7 +8791,7 @@
       "slug": "1979-triumph-tr6-engine-tr7-488",
       "canonicalSlug": "1979-triumph-tr6-engine-tr7-488",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8809,7 +8809,7 @@
       "slug": "1980-triumph-tr6-engine-spitfire-1500-489",
       "canonicalSlug": "1980-triumph-tr6-engine-spitfire-1500-489",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8827,7 +8827,7 @@
       "slug": "1980-triumph-tr6-engine-tr7-490",
       "canonicalSlug": "1980-triumph-tr6-engine-tr7-490",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8845,7 +8845,7 @@
       "slug": "1980-triumph-tr6-engine-tr8-california-491",
       "canonicalSlug": "1980-triumph-tr6-engine-tr8-california-491",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8863,7 +8863,7 @@
       "slug": "1980-triumph-tr6-engine-tr8-federal-492",
       "canonicalSlug": "1980-triumph-tr6-engine-tr8-federal-492",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8881,7 +8881,7 @@
       "slug": "1981-triumph-tr6-engine-tr7-493",
       "canonicalSlug": "1981-triumph-tr6-engine-tr7-493",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8899,7 +8899,7 @@
       "slug": "1981-triumph-tr6-engine-tr8-494",
       "canonicalSlug": "1981-triumph-tr6-engine-tr8-494",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8917,7 +8917,7 @@
       "slug": "1962-triumph-tr8-engine-tr4-495",
       "canonicalSlug": "1962-triumph-tr8-engine-tr4-495",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8935,7 +8935,7 @@
       "slug": "1963-triumph-tr8-engine-spitfire-mk-i-496",
       "canonicalSlug": "1963-triumph-tr8-engine-spitfire-mk-i-496",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8953,7 +8953,7 @@
       "slug": "1963-triumph-tr8-engine-tr4-497",
       "canonicalSlug": "1963-triumph-tr8-engine-tr4-497",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8971,7 +8971,7 @@
       "slug": "1964-triumph-tr8-engine-spitfire-mk-i-498",
       "canonicalSlug": "1964-triumph-tr8-engine-spitfire-mk-i-498",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -8989,7 +8989,7 @@
       "slug": "1964-triumph-tr8-engine-tr4-499",
       "canonicalSlug": "1964-triumph-tr8-engine-tr4-499",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9007,7 +9007,7 @@
       "slug": "1965-triumph-tr8-engine-tr4-500",
       "canonicalSlug": "1965-triumph-tr8-engine-tr4-500",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9025,7 +9025,7 @@
       "slug": "1965-triumph-tr8-engine-spitfire-mk-ii-501",
       "canonicalSlug": "1965-triumph-tr8-engine-spitfire-mk-ii-501",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9043,7 +9043,7 @@
       "slug": "1965-triumph-tr8-engine-tr4a-502",
       "canonicalSlug": "1965-triumph-tr8-engine-tr4a-502",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9061,7 +9061,7 @@
       "slug": "1966-triumph-tr8-engine-spitfire-mk-ii-503",
       "canonicalSlug": "1966-triumph-tr8-engine-spitfire-mk-ii-503",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9079,7 +9079,7 @@
       "slug": "1966-triumph-tr8-engine-tr4a-504",
       "canonicalSlug": "1966-triumph-tr8-engine-tr4a-504",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9097,7 +9097,7 @@
       "slug": "1967-triumph-tr8-engine-spitfire-mk-ii-505",
       "canonicalSlug": "1967-triumph-tr8-engine-spitfire-mk-ii-505",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9115,7 +9115,7 @@
       "slug": "1967-triumph-tr8-engine-tr4a-506",
       "canonicalSlug": "1967-triumph-tr8-engine-tr4a-506",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9133,7 +9133,7 @@
       "slug": "1967-triumph-tr8-engine-gt6-mk-i-507",
       "canonicalSlug": "1967-triumph-tr8-engine-gt6-mk-i-507",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9151,7 +9151,7 @@
       "slug": "1968-triumph-tr8-engine-gt6-mk-i-508",
       "canonicalSlug": "1968-triumph-tr8-engine-gt6-mk-i-508",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9169,7 +9169,7 @@
       "slug": "1968-triumph-tr8-engine-spitfire-mk-iii-1300cc-509",
       "canonicalSlug": "1968-triumph-tr8-engine-spitfire-mk-iii-1300cc-509",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9187,7 +9187,7 @@
       "slug": "1968-triumph-tr8-engine-tr250-510",
       "canonicalSlug": "1968-triumph-tr8-engine-tr250-510",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9205,7 +9205,7 @@
       "slug": "1969-triumph-tr8-engine-spitfire-mk-iii-1300cc-511",
       "canonicalSlug": "1969-triumph-tr8-engine-spitfire-mk-iii-1300cc-511",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9223,7 +9223,7 @@
       "slug": "1969-triumph-tr8-engine-tr250-512",
       "canonicalSlug": "1969-triumph-tr8-engine-tr250-512",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9241,7 +9241,7 @@
       "slug": "1969-triumph-tr8-engine-gt6-mk-ii-513",
       "canonicalSlug": "1969-triumph-tr8-engine-gt6-mk-ii-513",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9259,7 +9259,7 @@
       "slug": "1969-triumph-tr8-engine-tr6-514",
       "canonicalSlug": "1969-triumph-tr8-engine-tr6-514",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9277,7 +9277,7 @@
       "slug": "1970-triumph-tr8-engine-gt6-mk-ii-515",
       "canonicalSlug": "1970-triumph-tr8-engine-gt6-mk-ii-515",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9295,7 +9295,7 @@
       "slug": "1970-triumph-tr8-engine-tr6-516",
       "canonicalSlug": "1970-triumph-tr8-engine-tr6-516",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9313,7 +9313,7 @@
       "slug": "1970-triumph-tr8-engine-spitfire-mk-iii-1300cc-517",
       "canonicalSlug": "1970-triumph-tr8-engine-spitfire-mk-iii-1300cc-517",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9331,7 +9331,7 @@
       "slug": "1971-triumph-tr8-engine-tr6-518",
       "canonicalSlug": "1971-triumph-tr8-engine-tr6-518",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9349,7 +9349,7 @@
       "slug": "1971-triumph-tr8-engine-spitfire-mk-iii-1300cc-519",
       "canonicalSlug": "1971-triumph-tr8-engine-spitfire-mk-iii-1300cc-519",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9367,7 +9367,7 @@
       "slug": "1971-triumph-tr8-engine-gt6-mk-iii-520",
       "canonicalSlug": "1971-triumph-tr8-engine-gt6-mk-iii-520",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9385,7 +9385,7 @@
       "slug": "1971-triumph-tr8-engine-stag-521",
       "canonicalSlug": "1971-triumph-tr8-engine-stag-521",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9403,7 +9403,7 @@
       "slug": "1972-triumph-tr8-engine-tr6-522",
       "canonicalSlug": "1972-triumph-tr8-engine-tr6-522",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9421,7 +9421,7 @@
       "slug": "1972-triumph-tr8-engine-spitfire-mk-iii-1300cc-523",
       "canonicalSlug": "1972-triumph-tr8-engine-spitfire-mk-iii-1300cc-523",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9439,7 +9439,7 @@
       "slug": "1972-triumph-tr8-engine-gt6-mk-iii-524",
       "canonicalSlug": "1972-triumph-tr8-engine-gt6-mk-iii-524",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9457,7 +9457,7 @@
       "slug": "1972-triumph-tr8-engine-stag-525",
       "canonicalSlug": "1972-triumph-tr8-engine-stag-525",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9475,7 +9475,7 @@
       "slug": "1973-triumph-tr8-engine-tr6-526",
       "canonicalSlug": "1973-triumph-tr8-engine-tr6-526",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9493,7 +9493,7 @@
       "slug": "1973-triumph-tr8-engine-gt6-mk-iii-527",
       "canonicalSlug": "1973-triumph-tr8-engine-gt6-mk-iii-527",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9511,7 +9511,7 @@
       "slug": "1973-triumph-tr8-engine-stag-528",
       "canonicalSlug": "1973-triumph-tr8-engine-stag-528",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9529,7 +9529,7 @@
       "slug": "1973-triumph-tr8-engine-spitfire-1500-529",
       "canonicalSlug": "1973-triumph-tr8-engine-spitfire-1500-529",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9547,7 +9547,7 @@
       "slug": "1974-triumph-tr8-engine-tr6-530",
       "canonicalSlug": "1974-triumph-tr8-engine-tr6-530",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9565,7 +9565,7 @@
       "slug": "1974-triumph-tr8-engine-spitfire-1500-531",
       "canonicalSlug": "1974-triumph-tr8-engine-spitfire-1500-531",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9583,7 +9583,7 @@
       "slug": "1975-triumph-tr8-engine-tr6-532",
       "canonicalSlug": "1975-triumph-tr8-engine-tr6-532",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9601,7 +9601,7 @@
       "slug": "1975-triumph-tr8-engine-spitfire-1500-533",
       "canonicalSlug": "1975-triumph-tr8-engine-spitfire-1500-533",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9619,7 +9619,7 @@
       "slug": "1975-triumph-tr8-engine-tr7-534",
       "canonicalSlug": "1975-triumph-tr8-engine-tr7-534",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9637,7 +9637,7 @@
       "slug": "1976-triumph-tr8-engine-tr6-535",
       "canonicalSlug": "1976-triumph-tr8-engine-tr6-535",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9655,7 +9655,7 @@
       "slug": "1976-triumph-tr8-engine-spitfire-1500-536",
       "canonicalSlug": "1976-triumph-tr8-engine-spitfire-1500-536",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9673,7 +9673,7 @@
       "slug": "1976-triumph-tr8-engine-tr7-537",
       "canonicalSlug": "1976-triumph-tr8-engine-tr7-537",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9691,7 +9691,7 @@
       "slug": "1977-triumph-tr8-engine-spitfire-1500-538",
       "canonicalSlug": "1977-triumph-tr8-engine-spitfire-1500-538",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9709,7 +9709,7 @@
       "slug": "1977-triumph-tr8-engine-tr7-539",
       "canonicalSlug": "1977-triumph-tr8-engine-tr7-539",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9727,7 +9727,7 @@
       "slug": "1978-triumph-tr8-engine-spitfire-1500-540",
       "canonicalSlug": "1978-triumph-tr8-engine-spitfire-1500-540",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9745,7 +9745,7 @@
       "slug": "1978-triumph-tr8-engine-tr7-541",
       "canonicalSlug": "1978-triumph-tr8-engine-tr7-541",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9763,7 +9763,7 @@
       "slug": "1979-triumph-tr8-engine-spitfire-1500-542",
       "canonicalSlug": "1979-triumph-tr8-engine-spitfire-1500-542",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9781,7 +9781,7 @@
       "slug": "1979-triumph-tr8-engine-tr7-543",
       "canonicalSlug": "1979-triumph-tr8-engine-tr7-543",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9799,7 +9799,7 @@
       "slug": "1980-triumph-tr8-engine-spitfire-1500-544",
       "canonicalSlug": "1980-triumph-tr8-engine-spitfire-1500-544",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9817,7 +9817,7 @@
       "slug": "1980-triumph-tr8-engine-tr7-545",
       "canonicalSlug": "1980-triumph-tr8-engine-tr7-545",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9835,7 +9835,7 @@
       "slug": "1980-triumph-tr8-engine-tr8-california-546",
       "canonicalSlug": "1980-triumph-tr8-engine-tr8-california-546",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9853,7 +9853,7 @@
       "slug": "1980-triumph-tr8-engine-tr8-federal-547",
       "canonicalSlug": "1980-triumph-tr8-engine-tr8-federal-547",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9871,7 +9871,7 @@
       "slug": "1981-triumph-tr8-engine-tr7-548",
       "canonicalSlug": "1981-triumph-tr8-engine-tr7-548",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
@@ -9889,7 +9889,7 @@
       "slug": "1981-triumph-tr8-engine-tr8-549",
       "canonicalSlug": "1981-triumph-tr8-engine-tr8-549",
       "brand": "Triumph",
-      "category": "engine",
+      "category": "transmission",
       "price": 799,
       "tiers": {
         "low": 999,
