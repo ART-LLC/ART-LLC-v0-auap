@@ -140,6 +140,37 @@ export function getAcuraProductUrl(product: Pick<AcuraProduct, "canonicalSlug">)
   return `/acura/${product.canonicalSlug}`
 }
 
+/** Human-readable part-type label, e.g. "Used Engine", "Used Transmission". */
+export function getAcuraPartTypeLabel(
+  product: Pick<AcuraProduct, "category">,
+): string {
+  const category = (product.category || "").trim()
+  const withoutUsed = category.replace(/^used\s+/i, "")
+  const titled = withoutUsed.replace(/\b\w/g, (c) => c.toUpperCase())
+  return `Used ${titled}`
+}
+
+/**
+ * Build a Google Images search URL for the exact part so shoppers can index
+ * and verify real photos of that specific engine/transmission/part.
+ */
+export function getAcuraPartImageSearchUrl(
+  product: Pick<AcuraProduct, "name" | "compatibility" | "category">,
+): string {
+  // The name already embeds year + model (e.g. "2001 Acura CL Engine - ...").
+  // Only append compatibility when it isn't already part of the name.
+  const name = product.name || ""
+  const compatibility = product.compatibility || ""
+  const query = (
+    name.toLowerCase().includes(compatibility.toLowerCase()) || !compatibility
+      ? name
+      : `${compatibility} ${name}`
+  )
+    .replace(/\s+/g, " ")
+    .trim()
+  return `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(query)}`
+}
+
 export function getRelatedAcuraProducts(product: AcuraProduct, limit = 4): AcuraProduct[] {
   const sameModel = acuraProducts.filter(
     (candidate) =>
