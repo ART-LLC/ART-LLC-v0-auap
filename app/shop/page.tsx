@@ -89,7 +89,7 @@ export default function ShopPage() {
   return (
     <>
       <Navbar />
-      <main className="bg-background">
+      <main className="bg-background pt-24 lg:pt-28">
         {/* Header */}
         <div className="bg-gradient-to-b from-card/50 to-background border-b border-border/20 py-8">
           <div className="mx-auto max-w-[1280px] px-6">

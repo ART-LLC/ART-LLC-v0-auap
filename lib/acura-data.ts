@@ -23,6 +23,10 @@ export interface AcuraProduct {
   mpn?: string
   model: string
   year: string
+  /** Canonical product URL from the pricing sheet (auapw.org). */
+  productUrl?: string | null
+  /** Reference image URL from the pricing sheet (auapw.org). */
+  imageUrl?: string | null
 }
 
 type RawAcuraProduct = Omit<

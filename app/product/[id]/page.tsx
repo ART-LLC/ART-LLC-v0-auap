@@ -41,7 +41,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
   return (
     <>
       <Navbar />
-      <main>
+      <main className="pt-24 lg:pt-28">
         {/* Breadcrumb */}
         <div className="bg-background border-b border-border/20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
