@@ -1,4 +1,5 @@
 {
+  "brand": "alfa-romeo",
   "products": [
     {
       "id": "ALF-1",
@@ -9,11 +10,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1327,
-      "tiers": {
-        "low": 1433,
-        "medium": 1327,
-        "high": 1101
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1433
+        },
+        {
+          "mileage": "Medium",
+          "price": 1327
+        },
+        {
+          "mileage": "High",
+          "price": 1101
+        }
+      ],
       "year": "1991",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
@@ -32,11 +42,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1327,
-      "tiers": {
-        "low": 1433,
-        "medium": 1327,
-        "high": 1101
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1433
+        },
+        {
+          "mileage": "Medium",
+          "price": 1327
+        },
+        {
+          "mileage": "High",
+          "price": 1101
+        }
+      ],
       "year": "1991",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
@@ -55,11 +74,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1177,
-      "tiers": {
-        "low": 1271,
-        "medium": 1177,
-        "high": 977
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1271
+        },
+        {
+          "mileage": "Medium",
+          "price": 1177
+        },
+        {
+          "mileage": "High",
+          "price": 977
+        }
+      ],
       "year": "1991",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
@@ -78,11 +106,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1222,
-      "tiers": {
-        "low": 1320,
-        "medium": 1222,
-        "high": 1014
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1320
+        },
+        {
+          "mileage": "Medium",
+          "price": 1222
+        },
+        {
+          "mileage": "High",
+          "price": 1014
+        }
+      ],
       "year": "1991",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-164-sedan-engine-side.jpg",
@@ -101,11 +138,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1327,
-      "tiers": {
-        "low": 1433,
-        "medium": 1327,
-        "high": 1101
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1433
+        },
+        {
+          "mileage": "Medium",
+          "price": 1327
+        },
+        {
+          "mileage": "High",
+          "price": 1101
+        }
+      ],
       "year": "1992",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
@@ -124,11 +170,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1327,
-      "tiers": {
-        "low": 1433,
-        "medium": 1327,
-        "high": 1101
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1433
+        },
+        {
+          "mileage": "Medium",
+          "price": 1327
+        },
+        {
+          "mileage": "High",
+          "price": 1101
+        }
+      ],
       "year": "1992",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
@@ -147,11 +202,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1177,
-      "tiers": {
-        "low": 1271,
-        "medium": 1177,
-        "high": 977
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1271
+        },
+        {
+          "mileage": "Medium",
+          "price": 1177
+        },
+        {
+          "mileage": "High",
+          "price": 977
+        }
+      ],
       "year": "1992",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
@@ -170,11 +234,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1222,
-      "tiers": {
-        "low": 1320,
-        "medium": 1222,
-        "high": 1014
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1320
+        },
+        {
+          "mileage": "Medium",
+          "price": 1222
+        },
+        {
+          "mileage": "High",
+          "price": 1014
+        }
+      ],
       "year": "1992",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-164-sedan-engine-side.jpg",
@@ -193,11 +266,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1327,
-      "tiers": {
-        "low": 1433,
-        "medium": 1327,
-        "high": 1101
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1433
+        },
+        {
+          "mileage": "Medium",
+          "price": 1327
+        },
+        {
+          "mileage": "High",
+          "price": 1101
+        }
+      ],
       "year": "1993",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
@@ -216,11 +298,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1327,
-      "tiers": {
-        "low": 1433,
-        "medium": 1327,
-        "high": 1101
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1433
+        },
+        {
+          "mileage": "Medium",
+          "price": 1327
+        },
+        {
+          "mileage": "High",
+          "price": 1101
+        }
+      ],
       "year": "1993",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
@@ -239,11 +330,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1177,
-      "tiers": {
-        "low": 1271,
-        "medium": 1177,
-        "high": 977
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1271
+        },
+        {
+          "mileage": "Medium",
+          "price": 1177
+        },
+        {
+          "mileage": "High",
+          "price": 977
+        }
+      ],
       "year": "1993",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
@@ -262,11 +362,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1222,
-      "tiers": {
-        "low": 1320,
-        "medium": 1222,
-        "high": 1014
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1320
+        },
+        {
+          "mileage": "Medium",
+          "price": 1222
+        },
+        {
+          "mileage": "High",
+          "price": 1014
+        }
+      ],
       "year": "1993",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-164-sedan-engine-side.jpg",
@@ -285,11 +394,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1994",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1994-alfa-164-sedan-engine-side.jpg",
@@ -308,11 +426,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1259,
-      "tiers": {
-        "low": 1360,
-        "medium": 1259,
-        "high": 1045
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1360
+        },
+        {
+          "mileage": "Medium",
+          "price": 1259
+        },
+        {
+          "mileage": "High",
+          "price": 1045
+        }
+      ],
       "year": "1995",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/engines/1995-alfa-164-sedan-engine-side.jpg",
@@ -331,11 +458,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1177,
-      "tiers": {
-        "low": 1271,
-        "medium": 1177,
-        "high": 977
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1271
+        },
+        {
+          "mileage": "Medium",
+          "price": 1177
+        },
+        {
+          "mileage": "High",
+          "price": 977
+        }
+      ],
       "year": "1975",
       "model": "Alfetta Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1975-alfa-alfetta-engine-side.jpg",
@@ -354,11 +490,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1177,
-      "tiers": {
-        "low": 1271,
-        "medium": 1177,
-        "high": 977
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1271
+        },
+        {
+          "mileage": "Medium",
+          "price": 1177
+        },
+        {
+          "mileage": "High",
+          "price": 977
+        }
+      ],
       "year": "1976",
       "model": "Alfetta Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1976-alfa-alfetta-engine-side.jpg",
@@ -377,11 +522,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1177,
-      "tiers": {
-        "low": 1271,
-        "medium": 1177,
-        "high": 977
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1271
+        },
+        {
+          "mileage": "Medium",
+          "price": 1177
+        },
+        {
+          "mileage": "High",
+          "price": 977
+        }
+      ],
       "year": "1977",
       "model": "Alfetta Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1977-alfa-alfetta-engine-side.jpg",
@@ -400,11 +554,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1177,
-      "tiers": {
-        "low": 1271,
-        "medium": 1177,
-        "high": 977
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1271
+        },
+        {
+          "mileage": "Medium",
+          "price": 1177
+        },
+        {
+          "mileage": "High",
+          "price": 977
+        }
+      ],
       "year": "1978",
       "model": "Alfetta Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1978-alfa-alfetta-engine-side.jpg",
@@ -423,11 +586,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1177,
-      "tiers": {
-        "low": 1271,
-        "medium": 1177,
-        "high": 977
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1271
+        },
+        {
+          "mileage": "Medium",
+          "price": 1177
+        },
+        {
+          "mileage": "High",
+          "price": 977
+        }
+      ],
       "year": "1979",
       "model": "Alfetta Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1979-alfa-alfetta-engine-side.jpg",
@@ -446,11 +618,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 4249,
-      "tiers": {
-        "low": 4589,
-        "medium": 4249,
-        "high": 3527
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 4589
+        },
+        {
+          "mileage": "Medium",
+          "price": 4249
+        },
+        {
+          "mileage": "High",
+          "price": 3527
+        }
+      ],
       "year": "2017",
       "model": "Giulia Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-alfa-giulia-engine-side.jpg",
@@ -469,11 +650,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 10745,
-      "tiers": {
-        "low": 11605,
-        "medium": 10745,
-        "high": 8918
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 11605
+        },
+        {
+          "mileage": "Medium",
+          "price": 10745
+        },
+        {
+          "mileage": "High",
+          "price": 8918
+        }
+      ],
       "year": "2017",
       "model": "Giulia Engine",
       "imageUrl": "https://www.auapw.org/images/engines/2017-alfa-giulia-engine-side.jpg",
@@ -492,11 +682,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2224,
-      "tiers": {
-        "low": 2401,
-        "medium": 2224,
-        "high": 1846
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2401
+        },
+        {
+          "mileage": "Medium",
+          "price": 2224
+        },
+        {
+          "mileage": "High",
+          "price": 1846
+        }
+      ],
       "year": "1981",
       "model": "GTV6 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1981-alfa-gtv6-engine-side.jpg",
@@ -515,11 +714,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2224,
-      "tiers": {
-        "low": 2401,
-        "medium": 2224,
-        "high": 1846
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2401
+        },
+        {
+          "mileage": "Medium",
+          "price": 2224
+        },
+        {
+          "mileage": "High",
+          "price": 1846
+        }
+      ],
       "year": "1982",
       "model": "GTV6 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1982-alfa-gtv6-engine-side.jpg",
@@ -538,11 +746,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2224,
-      "tiers": {
-        "low": 2401,
-        "medium": 2224,
-        "high": 1846
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2401
+        },
+        {
+          "mileage": "Medium",
+          "price": 2224
+        },
+        {
+          "mileage": "High",
+          "price": 1846
+        }
+      ],
       "year": "1983",
       "model": "GTV6 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1983-alfa-gtv6-engine-side.jpg",
@@ -561,11 +778,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2224,
-      "tiers": {
-        "low": 2401,
-        "medium": 2224,
-        "high": 1846
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2401
+        },
+        {
+          "mileage": "Medium",
+          "price": 2224
+        },
+        {
+          "mileage": "High",
+          "price": 1846
+        }
+      ],
       "year": "1984",
       "model": "GTV6 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1984-alfa-gtv6-engine-side.jpg",
@@ -584,11 +810,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2224,
-      "tiers": {
-        "low": 2401,
-        "medium": 2224,
-        "high": 1846
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2401
+        },
+        {
+          "mileage": "Medium",
+          "price": 2224
+        },
+        {
+          "mileage": "High",
+          "price": 1846
+        }
+      ],
       "year": "1985",
       "model": "GTV6 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1985-alfa-gtv6-engine-side.jpg",
@@ -607,11 +842,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2224,
-      "tiers": {
-        "low": 2401,
-        "medium": 2224,
-        "high": 1846
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2401
+        },
+        {
+          "mileage": "Medium",
+          "price": 2224
+        },
+        {
+          "mileage": "High",
+          "price": 1846
+        }
+      ],
       "year": "1986",
       "model": "GTV6 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1986-alfa-gtv6-engine-side.jpg",
@@ -630,11 +874,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2194,
-      "tiers": {
-        "low": 2369,
-        "medium": 2194,
-        "high": 1821
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2369
+        },
+        {
+          "mileage": "Medium",
+          "price": 2194
+        },
+        {
+          "mileage": "High",
+          "price": 1821
+        }
+      ],
       "year": "1987",
       "model": "Milano Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1987-alfa-milano-engine-side.jpg",
@@ -653,11 +906,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2194,
-      "tiers": {
-        "low": 2369,
-        "medium": 2194,
-        "high": 1821
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2369
+        },
+        {
+          "mileage": "Medium",
+          "price": 2194
+        },
+        {
+          "mileage": "High",
+          "price": 1821
+        }
+      ],
       "year": "1988",
       "model": "Milano Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1988-alfa-milano-engine-side.jpg",
@@ -676,11 +938,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2194,
-      "tiers": {
-        "low": 2369,
-        "medium": 2194,
-        "high": 1821
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2369
+        },
+        {
+          "mileage": "Medium",
+          "price": 2194
+        },
+        {
+          "mileage": "High",
+          "price": 1821
+        }
+      ],
       "year": "1989",
       "model": "Milano Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1989-alfa-milano-engine-side.jpg",
@@ -699,11 +970,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1972",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1972-alfa-spider-2000-engine-side.jpg",
@@ -722,11 +1002,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1969,
-      "tiers": {
-        "low": 2127,
-        "medium": 1969,
-        "high": 1635
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2127
+        },
+        {
+          "mileage": "Medium",
+          "price": 1969
+        },
+        {
+          "mileage": "High",
+          "price": 1635
+        }
+      ],
       "year": "1972",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1972-alfa-spider-2000-engine-side.jpg",
@@ -745,11 +1034,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1973",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1973-alfa-spider-2000-engine-side.jpg",
@@ -768,11 +1066,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1969,
-      "tiers": {
-        "low": 2127,
-        "medium": 1969,
-        "high": 1635
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2127
+        },
+        {
+          "mileage": "Medium",
+          "price": 1969
+        },
+        {
+          "mileage": "High",
+          "price": 1635
+        }
+      ],
       "year": "1973",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1973-alfa-spider-2000-engine-side.jpg",
@@ -791,11 +1098,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1974",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1974-alfa-spider-2000-engine-side.jpg",
@@ -814,11 +1130,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1969,
-      "tiers": {
-        "low": 2127,
-        "medium": 1969,
-        "high": 1635
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2127
+        },
+        {
+          "mileage": "Medium",
+          "price": 1969
+        },
+        {
+          "mileage": "High",
+          "price": 1635
+        }
+      ],
       "year": "1974",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1974-alfa-spider-2000-engine-side.jpg",
@@ -837,11 +1162,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1975",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1975-alfa-spider-2000-engine-side.jpg",
@@ -860,11 +1194,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1969,
-      "tiers": {
-        "low": 2127,
-        "medium": 1969,
-        "high": 1635
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2127
+        },
+        {
+          "mileage": "Medium",
+          "price": 1969
+        },
+        {
+          "mileage": "High",
+          "price": 1635
+        }
+      ],
       "year": "1975",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1975-alfa-spider-2000-engine-side.jpg",
@@ -883,11 +1226,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1976",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1976-alfa-spider-2000-engine-side.jpg",
@@ -906,11 +1258,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1969,
-      "tiers": {
-        "low": 2127,
-        "medium": 1969,
-        "high": 1635
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2127
+        },
+        {
+          "mileage": "Medium",
+          "price": 1969
+        },
+        {
+          "mileage": "High",
+          "price": 1635
+        }
+      ],
       "year": "1976",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1976-alfa-spider-2000-engine-side.jpg",
@@ -929,11 +1290,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1977",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1977-alfa-spider-2000-engine-side.jpg",
@@ -952,11 +1322,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1969,
-      "tiers": {
-        "low": 2127,
-        "medium": 1969,
-        "high": 1635
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2127
+        },
+        {
+          "mileage": "Medium",
+          "price": 1969
+        },
+        {
+          "mileage": "High",
+          "price": 1635
+        }
+      ],
       "year": "1977",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1977-alfa-spider-2000-engine-side.jpg",
@@ -975,11 +1354,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1978",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1978-alfa-spider-2000-engine-side.jpg",
@@ -998,11 +1386,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1969,
-      "tiers": {
-        "low": 2127,
-        "medium": 1969,
-        "high": 1635
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2127
+        },
+        {
+          "mileage": "Medium",
+          "price": 1969
+        },
+        {
+          "mileage": "High",
+          "price": 1635
+        }
+      ],
       "year": "1978",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1978-alfa-spider-2000-engine-side.jpg",
@@ -1021,11 +1418,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1979",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1979-alfa-spider-2000-engine-side.jpg",
@@ -1044,11 +1450,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1969,
-      "tiers": {
-        "low": 2127,
-        "medium": 1969,
-        "high": 1635
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2127
+        },
+        {
+          "mileage": "Medium",
+          "price": 1969
+        },
+        {
+          "mileage": "High",
+          "price": 1635
+        }
+      ],
       "year": "1979",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1979-alfa-spider-2000-engine-side.jpg",
@@ -1067,11 +1482,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1980",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1980-alfa-spider-2000-engine-side.jpg",
@@ -1090,11 +1514,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2074,
-      "tiers": {
-        "low": 2240,
-        "medium": 2074,
-        "high": 1721
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2240
+        },
+        {
+          "mileage": "Medium",
+          "price": 2074
+        },
+        {
+          "mileage": "High",
+          "price": 1721
+        }
+      ],
       "year": "1981",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1981-alfa-spider-2000-engine-side.jpg",
@@ -1113,11 +1546,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1775,
-      "tiers": {
-        "low": 1917,
-        "medium": 1775,
-        "high": 1473
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1917
+        },
+        {
+          "mileage": "Medium",
+          "price": 1775
+        },
+        {
+          "mileage": "High",
+          "price": 1473
+        }
+      ],
       "year": "1982",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1982-alfa-spider-2000-engine-side.jpg",
@@ -1136,11 +1578,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1775,
-      "tiers": {
-        "low": 1917,
-        "medium": 1775,
-        "high": 1473
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1917
+        },
+        {
+          "mileage": "Medium",
+          "price": 1775
+        },
+        {
+          "mileage": "High",
+          "price": 1473
+        }
+      ],
       "year": "1983",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1983-alfa-spider-2000-engine-side.jpg",
@@ -1159,11 +1610,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1775,
-      "tiers": {
-        "low": 1917,
-        "medium": 1775,
-        "high": 1473
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1917
+        },
+        {
+          "mileage": "Medium",
+          "price": 1775
+        },
+        {
+          "mileage": "High",
+          "price": 1473
+        }
+      ],
       "year": "1984",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1984-alfa-spider-2000-engine-side.jpg",
@@ -1182,11 +1642,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1775,
-      "tiers": {
-        "low": 1917,
-        "medium": 1775,
-        "high": 1473
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1917
+        },
+        {
+          "mileage": "Medium",
+          "price": 1775
+        },
+        {
+          "mileage": "High",
+          "price": 1473
+        }
+      ],
       "year": "1985",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1985-alfa-spider-2000-engine-side.jpg",
@@ -1205,11 +1674,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1775,
-      "tiers": {
-        "low": 1917,
-        "medium": 1775,
-        "high": 1473
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1917
+        },
+        {
+          "mileage": "Medium",
+          "price": 1775
+        },
+        {
+          "mileage": "High",
+          "price": 1473
+        }
+      ],
       "year": "1986",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1986-alfa-spider-2000-engine-side.jpg",
@@ -1228,11 +1706,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1775,
-      "tiers": {
-        "low": 1917,
-        "medium": 1775,
-        "high": 1473
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1917
+        },
+        {
+          "mileage": "Medium",
+          "price": 1775
+        },
+        {
+          "mileage": "High",
+          "price": 1473
+        }
+      ],
       "year": "1987",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1987-alfa-spider-2000-engine-side.jpg",
@@ -1251,11 +1738,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1775,
-      "tiers": {
-        "low": 1917,
-        "medium": 1775,
-        "high": 1473
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1917
+        },
+        {
+          "mileage": "Medium",
+          "price": 1775
+        },
+        {
+          "mileage": "High",
+          "price": 1473
+        }
+      ],
       "year": "1988",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1988-alfa-spider-2000-engine-side.jpg",
@@ -1274,11 +1770,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1775,
-      "tiers": {
-        "low": 1917,
-        "medium": 1775,
-        "high": 1473
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1917
+        },
+        {
+          "mileage": "Medium",
+          "price": 1775
+        },
+        {
+          "mileage": "High",
+          "price": 1473
+        }
+      ],
       "year": "1989",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1989-alfa-spider-2000-engine-side.jpg",
@@ -1297,11 +1802,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2074,
-      "tiers": {
-        "low": 2240,
-        "medium": 2074,
-        "high": 1721
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2240
+        },
+        {
+          "mileage": "Medium",
+          "price": 2074
+        },
+        {
+          "mileage": "High",
+          "price": 1721
+        }
+      ],
       "year": "1990",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1990-alfa-spider-2000-engine-side.jpg",
@@ -1320,11 +1834,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2074,
-      "tiers": {
-        "low": 2240,
-        "medium": 2074,
-        "high": 1721
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2240
+        },
+        {
+          "mileage": "Medium",
+          "price": 2074
+        },
+        {
+          "mileage": "High",
+          "price": 1721
+        }
+      ],
       "year": "1991",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1991-alfa-spider-2000-engine-side.jpg",
@@ -1343,11 +1866,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2074,
-      "tiers": {
-        "low": 2240,
-        "medium": 2074,
-        "high": 1721
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2240
+        },
+        {
+          "mileage": "Medium",
+          "price": 2074
+        },
+        {
+          "mileage": "High",
+          "price": 1721
+        }
+      ],
       "year": "1992",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1992-alfa-spider-2000-engine-side.jpg",
@@ -1366,11 +1898,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2074,
-      "tiers": {
-        "low": 2240,
-        "medium": 2074,
-        "high": 1721
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2240
+        },
+        {
+          "mileage": "Medium",
+          "price": 2074
+        },
+        {
+          "mileage": "High",
+          "price": 1721
+        }
+      ],
       "year": "1993",
       "model": "Spider-2000 Engine",
       "imageUrl": "https://www.auapw.org/images/engines/1993-alfa-spider-2000-engine-side.jpg",
@@ -1389,11 +1930,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1072,
-      "tiers": {
-        "low": 1158,
-        "medium": 1072,
-        "high": 890
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1158
+        },
+        {
+          "mileage": "Medium",
+          "price": 1072
+        },
+        {
+          "mileage": "High",
+          "price": 890
+        }
+      ],
       "year": "1991",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-164-sedan-transmission-side.jpg",
@@ -1412,11 +1962,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1371,
-      "tiers": {
-        "low": 1481,
-        "medium": 1371,
-        "high": 1138
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1481
+        },
+        {
+          "mileage": "Medium",
+          "price": 1371
+        },
+        {
+          "mileage": "High",
+          "price": 1138
+        }
+      ],
       "year": "1991",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-164-sedan-transmission-side.jpg",
@@ -1435,11 +1994,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2904,
-      "tiers": {
-        "low": 3136,
-        "medium": 2904,
-        "high": 2410
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 3136
+        },
+        {
+          "mileage": "Medium",
+          "price": 2904
+        },
+        {
+          "mileage": "High",
+          "price": 2410
+        }
+      ],
       "year": "1991",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-164-sedan-transmission-side.jpg",
@@ -1458,11 +2026,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1371,
-      "tiers": {
-        "low": 1481,
-        "medium": 1371,
-        "high": 1138
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1481
+        },
+        {
+          "mileage": "Medium",
+          "price": 1371
+        },
+        {
+          "mileage": "High",
+          "price": 1138
+        }
+      ],
       "year": "1992",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
@@ -1481,11 +2058,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2904,
-      "tiers": {
-        "low": 3136,
-        "medium": 2904,
-        "high": 2410
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 3136
+        },
+        {
+          "mileage": "Medium",
+          "price": 2904
+        },
+        {
+          "mileage": "High",
+          "price": 2410
+        }
+      ],
       "year": "1992",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
@@ -1504,11 +2090,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1162,
-      "tiers": {
-        "low": 1255,
-        "medium": 1162,
-        "high": 965
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1255
+        },
+        {
+          "mileage": "Medium",
+          "price": 1162
+        },
+        {
+          "mileage": "High",
+          "price": 965
+        }
+      ],
       "year": "1992",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
@@ -1527,11 +2122,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1147,
-      "tiers": {
-        "low": 1239,
-        "medium": 1147,
-        "high": 952
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1239
+        },
+        {
+          "mileage": "Medium",
+          "price": 1147
+        },
+        {
+          "mileage": "High",
+          "price": 952
+        }
+      ],
       "year": "1992",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-164-sedan-transmission-side.jpg",
@@ -1550,11 +2154,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1409,
-      "tiers": {
-        "low": 1521,
-        "medium": 1409,
-        "high": 1169
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1521
+        },
+        {
+          "mileage": "Medium",
+          "price": 1409
+        },
+        {
+          "mileage": "High",
+          "price": 1169
+        }
+      ],
       "year": "1993",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-164-sedan-transmission-side.jpg",
@@ -1573,11 +2186,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2904,
-      "tiers": {
-        "low": 3136,
-        "medium": 2904,
-        "high": 2410
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 3136
+        },
+        {
+          "mileage": "Medium",
+          "price": 2904
+        },
+        {
+          "mileage": "High",
+          "price": 2410
+        }
+      ],
       "year": "1993",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-164-sedan-transmission-side.jpg",
@@ -1596,11 +2218,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1177,
-      "tiers": {
-        "low": 1271,
-        "medium": 1177,
-        "high": 977
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1271
+        },
+        {
+          "mileage": "Medium",
+          "price": 1177
+        },
+        {
+          "mileage": "High",
+          "price": 977
+        }
+      ],
       "year": "1993",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-164-sedan-transmission-side.jpg",
@@ -1619,11 +2250,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1102,
-      "tiers": {
-        "low": 1190,
-        "medium": 1102,
-        "high": 915
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1190
+        },
+        {
+          "mileage": "Medium",
+          "price": 1102
+        },
+        {
+          "mileage": "High",
+          "price": 915
+        }
+      ],
       "year": "1994",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1994-alfa-164-sedan-transmission-side.jpg",
@@ -1642,11 +2282,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1177,
-      "tiers": {
-        "low": 1271,
-        "medium": 1177,
-        "high": 977
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1271
+        },
+        {
+          "mileage": "Medium",
+          "price": 1177
+        },
+        {
+          "mileage": "High",
+          "price": 977
+        }
+      ],
       "year": "1994",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1994-alfa-164-sedan-transmission-side.jpg",
@@ -1665,11 +2314,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1072,
-      "tiers": {
-        "low": 1158,
-        "medium": 1072,
-        "high": 890
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1158
+        },
+        {
+          "mileage": "Medium",
+          "price": 1072
+        },
+        {
+          "mileage": "High",
+          "price": 890
+        }
+      ],
       "year": "1995",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1995-alfa-164-sedan-transmission-side.jpg",
@@ -1688,11 +2346,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1199
+        },
+        {
+          "mileage": "Medium",
+          "price": 1110
+        },
+        {
+          "mileage": "High",
+          "price": 921
+        }
+      ],
       "year": "1995",
       "model": "164 Sedan",
       "imageUrl": "https://www.auapw.org/images/transmissions/1995-alfa-164-sedan-transmission-side.jpg",
@@ -1711,11 +2378,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1199
+        },
+        {
+          "mileage": "Medium",
+          "price": 1110
+        },
+        {
+          "mileage": "High",
+          "price": 921
+        }
+      ],
       "year": "1969",
       "model": "1750 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1969-alfa-1750-transmission-side.jpg",
@@ -1734,11 +2410,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1199
+        },
+        {
+          "mileage": "Medium",
+          "price": 1110
+        },
+        {
+          "mileage": "High",
+          "price": 921
+        }
+      ],
       "year": "1970",
       "model": "1750 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1970-alfa-1750-transmission-side.jpg",
@@ -1757,11 +2442,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1110,
-      "tiers": {
-        "low": 1199,
-        "medium": 1110,
-        "high": 921
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1199
+        },
+        {
+          "mileage": "Medium",
+          "price": 1110
+        },
+        {
+          "mileage": "High",
+          "price": 921
+        }
+      ],
       "year": "1971",
       "model": "1750 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1971-alfa-1750-transmission-side.jpg",
@@ -1780,11 +2474,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1072,
-      "tiers": {
-        "low": 1158,
-        "medium": 1072,
-        "high": 890
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1158
+        },
+        {
+          "mileage": "Medium",
+          "price": 1072
+        },
+        {
+          "mileage": "High",
+          "price": 890
+        }
+      ],
       "year": "1975",
       "model": "Alfetta Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1975-alfa-alfetta-transmission-side.jpg",
@@ -1803,11 +2506,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1102,
-      "tiers": {
-        "low": 1190,
-        "medium": 1102,
-        "high": 915
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1190
+        },
+        {
+          "mileage": "Medium",
+          "price": 1102
+        },
+        {
+          "mileage": "High",
+          "price": 915
+        }
+      ],
       "year": "1976",
       "model": "Alfetta Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1976-alfa-alfetta-transmission-side.jpg",
@@ -1826,11 +2538,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2156,
-      "tiers": {
-        "low": 2329,
-        "medium": 2156,
-        "high": 1790
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2329
+        },
+        {
+          "mileage": "Medium",
+          "price": 2156
+        },
+        {
+          "mileage": "High",
+          "price": 1790
+        }
+      ],
       "year": "2017",
       "model": "Giulia Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2017-alfa-giulia-transmission-side.jpg",
@@ -1849,11 +2570,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2493,
-      "tiers": {
-        "low": 2692,
-        "medium": 2493,
-        "high": 2069
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2692
+        },
+        {
+          "mileage": "Medium",
+          "price": 2493
+        },
+        {
+          "mileage": "High",
+          "price": 2069
+        }
+      ],
       "year": "2017",
       "model": "Giulia Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/2017-alfa-giulia-transmission-side.jpg",
@@ -1872,11 +2602,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 923,
-      "tiers": {
-        "low": 997,
-        "medium": 923,
-        "high": 766
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 997
+        },
+        {
+          "mileage": "Medium",
+          "price": 923
+        },
+        {
+          "mileage": "High",
+          "price": 766
+        }
+      ],
       "year": "1986",
       "model": "GTV6 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1986-alfa-gtv6-transmission-side.jpg",
@@ -1895,11 +2634,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2044,
-      "tiers": {
-        "low": 2208,
-        "medium": 2044,
-        "high": 1697
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2208
+        },
+        {
+          "mileage": "Medium",
+          "price": 2044
+        },
+        {
+          "mileage": "High",
+          "price": 1697
+        }
+      ],
       "year": "1987",
       "model": "Milano Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1987-alfa-milano-transmission-side.jpg",
@@ -1918,11 +2666,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2007,
-      "tiers": {
-        "low": 2167,
-        "medium": 2007,
-        "high": 1666
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2167
+        },
+        {
+          "mileage": "Medium",
+          "price": 2007
+        },
+        {
+          "mileage": "High",
+          "price": 1666
+        }
+      ],
       "year": "1988",
       "model": "Milano Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1988-alfa-milano-transmission-side.jpg",
@@ -1941,11 +2698,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2014,
-      "tiers": {
-        "low": 2175,
-        "medium": 2014,
-        "high": 1672
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2175
+        },
+        {
+          "mileage": "Medium",
+          "price": 2014
+        },
+        {
+          "mileage": "High",
+          "price": 1672
+        }
+      ],
       "year": "1988",
       "model": "Milano Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1988-alfa-milano-transmission-side.jpg",
@@ -1964,11 +2730,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2007,
-      "tiers": {
-        "low": 2167,
-        "medium": 2007,
-        "high": 1666
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2167
+        },
+        {
+          "mileage": "Medium",
+          "price": 2007
+        },
+        {
+          "mileage": "High",
+          "price": 1666
+        }
+      ],
       "year": "1989",
       "model": "Milano Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1989-alfa-milano-transmission-side.jpg",
@@ -1987,11 +2762,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 2007,
-      "tiers": {
-        "low": 2167,
-        "medium": 2007,
-        "high": 1666
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2167
+        },
+        {
+          "mileage": "Medium",
+          "price": 2007
+        },
+        {
+          "mileage": "High",
+          "price": 1666
+        }
+      ],
       "year": "1989",
       "model": "Milano Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1989-alfa-milano-transmission-side.jpg",
@@ -2010,11 +2794,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 998,
-      "tiers": {
-        "low": 1077,
-        "medium": 998,
-        "high": 828
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1077
+        },
+        {
+          "mileage": "Medium",
+          "price": 998
+        },
+        {
+          "mileage": "High",
+          "price": 828
+        }
+      ],
       "year": "1972",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1972-alfa-spider-2000-transmission-side.jpg",
@@ -2033,11 +2826,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 998,
-      "tiers": {
-        "low": 1077,
-        "medium": 998,
-        "high": 828
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1077
+        },
+        {
+          "mileage": "Medium",
+          "price": 998
+        },
+        {
+          "mileage": "High",
+          "price": 828
+        }
+      ],
       "year": "1973",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1973-alfa-spider-2000-transmission-side.jpg",
@@ -2056,11 +2858,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 998,
-      "tiers": {
-        "low": 1077,
-        "medium": 998,
-        "high": 828
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1077
+        },
+        {
+          "mileage": "Medium",
+          "price": 998
+        },
+        {
+          "mileage": "High",
+          "price": 828
+        }
+      ],
       "year": "1974",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1974-alfa-spider-2000-transmission-side.jpg",
@@ -2079,11 +2890,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 998,
-      "tiers": {
-        "low": 1077,
-        "medium": 998,
-        "high": 828
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1077
+        },
+        {
+          "mileage": "Medium",
+          "price": 998
+        },
+        {
+          "mileage": "High",
+          "price": 828
+        }
+      ],
       "year": "1975",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1975-alfa-spider-2000-transmission-side.jpg",
@@ -2102,11 +2922,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1626,
-      "tiers": {
-        "low": 1756,
-        "medium": 1626,
-        "high": 1349
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1756
+        },
+        {
+          "mileage": "Medium",
+          "price": 1626
+        },
+        {
+          "mileage": "High",
+          "price": 1349
+        }
+      ],
       "year": "1982",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1982-alfa-spider-2000-transmission-side.jpg",
@@ -2125,11 +2954,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1626,
-      "tiers": {
-        "low": 1756,
-        "medium": 1626,
-        "high": 1349
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1756
+        },
+        {
+          "mileage": "Medium",
+          "price": 1626
+        },
+        {
+          "mileage": "High",
+          "price": 1349
+        }
+      ],
       "year": "1983",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1983-alfa-spider-2000-transmission-side.jpg",
@@ -2148,11 +2986,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1626,
-      "tiers": {
-        "low": 1756,
-        "medium": 1626,
-        "high": 1349
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1756
+        },
+        {
+          "mileage": "Medium",
+          "price": 1626
+        },
+        {
+          "mileage": "High",
+          "price": 1349
+        }
+      ],
       "year": "1984",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1984-alfa-spider-2000-transmission-side.jpg",
@@ -2171,11 +3018,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1626,
-      "tiers": {
-        "low": 1756,
-        "medium": 1626,
-        "high": 1349
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1756
+        },
+        {
+          "mileage": "Medium",
+          "price": 1626
+        },
+        {
+          "mileage": "High",
+          "price": 1349
+        }
+      ],
       "year": "1985",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1985-alfa-spider-2000-transmission-side.jpg",
@@ -2194,11 +3050,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1626,
-      "tiers": {
-        "low": 1756,
-        "medium": 1626,
-        "high": 1349
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1756
+        },
+        {
+          "mileage": "Medium",
+          "price": 1626
+        },
+        {
+          "mileage": "High",
+          "price": 1349
+        }
+      ],
       "year": "1986",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1986-alfa-spider-2000-transmission-side.jpg",
@@ -2217,11 +3082,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1626,
-      "tiers": {
-        "low": 1756,
-        "medium": 1626,
-        "high": 1349
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1756
+        },
+        {
+          "mileage": "Medium",
+          "price": 1626
+        },
+        {
+          "mileage": "High",
+          "price": 1349
+        }
+      ],
       "year": "1987",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1987-alfa-spider-2000-transmission-side.jpg",
@@ -2240,11 +3114,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1596,
-      "tiers": {
-        "low": 1723,
-        "medium": 1596,
-        "high": 1324
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1723
+        },
+        {
+          "mileage": "Medium",
+          "price": 1596
+        },
+        {
+          "mileage": "High",
+          "price": 1324
+        }
+      ],
       "year": "1988",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1988-alfa-spider-2000-transmission-side.jpg",
@@ -2263,11 +3146,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1596,
-      "tiers": {
-        "low": 1723,
-        "medium": 1596,
-        "high": 1324
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 1723
+        },
+        {
+          "mileage": "Medium",
+          "price": 1596
+        },
+        {
+          "mileage": "High",
+          "price": 1324
+        }
+      ],
       "year": "1989",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1989-alfa-spider-2000-transmission-side.jpg",
@@ -2286,11 +3178,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1990",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1990-alfa-spider-2000-transmission-side.jpg",
@@ -2309,11 +3210,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1991",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1991-alfa-spider-2000-transmission-side.jpg",
@@ -2332,11 +3242,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1992",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-spider-2000-transmission-side.jpg",
@@ -2355,11 +3274,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1857,
-      "tiers": {
-        "low": 2006,
-        "medium": 1857,
-        "high": 1542
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2006
+        },
+        {
+          "mileage": "Medium",
+          "price": 1857
+        },
+        {
+          "mileage": "High",
+          "price": 1542
+        }
+      ],
       "year": "1992",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1992-alfa-spider-2000-transmission-side.jpg",
@@ -2378,11 +3306,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1925,
-      "tiers": {
-        "low": 2078,
-        "medium": 1925,
-        "high": 1597
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2078
+        },
+        {
+          "mileage": "Medium",
+          "price": 1925
+        },
+        {
+          "mileage": "High",
+          "price": 1597
+        }
+      ],
       "year": "1993",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-spider-2000-transmission-side.jpg",
@@ -2401,11 +3338,20 @@
       "brand": "Alfa",
       "category": "part",
       "price": 1857,
-      "tiers": {
-        "low": 2006,
-        "medium": 1857,
-        "high": 1542
-      },
+      "tiers": [
+        {
+          "mileage": "Low",
+          "price": 2006
+        },
+        {
+          "mileage": "Medium",
+          "price": 1857
+        },
+        {
+          "mileage": "High",
+          "price": 1542
+        }
+      ],
       "year": "1993",
       "model": "Spider-2000 Transmission",
       "imageUrl": "https://www.auapw.org/images/transmissions/1993-alfa-spider-2000-transmission-side.jpg",
