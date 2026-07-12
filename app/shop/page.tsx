@@ -1,13 +1,16 @@
 'use client'
 
 import { useState } from 'react'
-import { Search, Filter, Grid, List, ChevronDown } from 'lucide-react'
+import { Search, Filter, Grid, List, ChevronDown, ChevronRight, Cog, Wrench } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
+import brandManifest from '@/data/brands/manifest.json'
+
+const INVENTORY_BRANDS = brandManifest.filter((brand) => brand.count > 0)
 
 const SHOP_PRODUCTS = [
   {
@@ -104,6 +107,46 @@ export default function ShopPage() {
           title="Find Your Parts"
           subtitle="Search across 2,000+ salvage yards nationwide"
         />
+
+        <section className="border-b border-border/20 bg-background py-12" aria-labelledby="shop-by-brand-heading">
+          <div className="mx-auto max-w-[1280px] px-6">
+            <div className="mb-8">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-primary">Live Inventory</p>
+              <h2 id="shop-by-brand-heading" className="mt-2 text-2xl font-black text-foreground sm:text-3xl">
+                Shop Used Parts by Brand
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                Choose a brand to browse available engines, transmissions, and OEM parts with exact inventory pricing.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {INVENTORY_BRANDS.map((brand) => (
+                <Link
+                  key={brand.slug}
+                  href={`/brands/${brand.slug}`}
+                  className="group flex flex-col gap-3 rounded-xl border border-border/40 bg-card p-5 transition-all hover:border-primary/50 hover:shadow-lg"
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="text-lg font-black text-foreground transition-colors group-hover:text-primary">
+                      {brand.label}
+                    </h3>
+                    <span className="rounded-full bg-secondary px-2.5 py-1 text-xs font-semibold text-secondary-foreground">
+                      {brand.count.toLocaleString()} parts
+                    </span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+                    <span className="flex items-center gap-1.5"><Cog className="h-4 w-4 text-primary" />Used Engines</span>
+                    <span className="flex items-center gap-1.5"><Wrench className="h-4 w-4 text-primary" />Transmissions</span>
+                  </div>
+                  <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                    Browse {brand.label} parts
+                    <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <div className="mx-auto max-w-[1280px] px-6 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
