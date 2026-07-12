@@ -80,7 +80,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="pt-24 lg:pt-28">
         {/* Breadcrumb */}
         <section className="py-4 bg-background border-b border-border/20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

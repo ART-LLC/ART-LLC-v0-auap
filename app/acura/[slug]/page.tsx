@@ -1,6 +1,6 @@
 'use client'
 
-import { use } from 'react'
+import { use, useState } from 'react'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -17,11 +17,14 @@ import { PartRecommendations } from '@/components/ai/part-recommendations'
 import { getAcuraProductBySlug, getAcuraProductUrl, getRelatedAcuraProducts, resolveAcuraImage, getAcuraPartTypeLabel, getAcuraPartImageSearchUrl } from '@/lib/acura-data'
 import { getAcuraPartSpecs } from '@/lib/acura-part-specs'
 import { AcuraPartsSearch } from '@/components/acura/acura-parts-search'
+import { MileagePriceSelector } from '@/components/acura/mileage-price-selector'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight, ImageIcon, ExternalLink } from 'lucide-react'
 
 export default function AcuraProductPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params)
   const product = getAcuraProductBySlug(slug)
+  // Price of the mileage tier the shopper selected (null = default medium tier).
+  const [selectedPrice, setSelectedPrice] = useState<number | null>(null)
 
   if (!product) {
     notFound()
@@ -29,7 +32,6 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
 
   const related = getRelatedAcuraProducts(product)
   const productImage = resolveAcuraImage(product)
-  const priceDisplay = `$${product.price.toLocaleString()}`
   // Part-specific specifications for engines/transmissions (null for other parts).
   const partSpecs = getAcuraPartSpecs(product)
   const partTypeLabel = product.category.replace(/^used\s+/i, '')
@@ -40,7 +42,10 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
   // Structured data so the part URL, image, and three mileage-based price tiers
   // are indexed by search engines (Google Merchant / rich results).
   const siteUrl = 'https://www.auapw.org'
-  const canonicalUrl = `${siteUrl}${getAcuraProductUrl(product)}`
+  // Prefer the canonical product URL from the pricing sheet when available.
+  const canonicalUrl = product.productUrl || `${siteUrl}${getAcuraProductUrl(product)}`
+  // Sheet-provided reference image URL, indexed alongside the local image.
+  const sheetImageUrl = product.imageUrl
   const tiers = product.pricingTiers
   const lowPrice = tiers ? Math.min(tiers.low ?? product.price, tiers.medium ?? product.price, tiers.high ?? product.price) : product.price
   const highPrice = tiers ? Math.max(tiers.low ?? product.price, tiers.medium ?? product.price, tiers.high ?? product.price) : product.price
@@ -48,7 +53,7 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
     '@context': 'https://schema.org/',
     '@type': 'Product',
     name: product.name,
-    image: [productImage, imageSearchUrl],
+    image: [sheetImageUrl, productImage, imageSearchUrl].filter(Boolean),
     description: product.description,
     sku: product.mpn || product.id,
     mpn: product.mpn || product.id,
@@ -74,7 +79,7 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <Navbar />
-      <main>
+      <main className="pt-24 lg:pt-28">
         {/* Breadcrumb */}
         <div className="bg-background border-b border-border/20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
@@ -174,36 +179,18 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                   </div>
                 </div>
 
-                {/* Pricing by mileage */}
-                <div className="rounded-lg border border-border/40 bg-card/50 p-4">
-                  <p className="text-sm font-semibold text-foreground mb-3">Pricing by Mileage</p>
-                  <div className="grid grid-cols-3 gap-3 text-center">
-                    <div>
-                      <div className="text-xs text-muted-foreground">Low</div>
-                      <div className="font-bold text-foreground">${(product.pricingTiers?.low ?? product.price).toLocaleString()}</div>
-                    </div>
-                    <div className="border-x border-border/40">
-                      <div className="text-xs text-muted-foreground">Medium</div>
-                      <div className="font-bold text-primary">${(product.pricingTiers?.medium ?? product.price).toLocaleString()}</div>
-                    </div>
-                    <div>
-                      <div className="text-xs text-muted-foreground">High</div>
-                      <div className="font-bold text-foreground">${(product.pricingTiers?.high ?? product.price).toLocaleString()}</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Price */}
-                <div className="flex items-baseline gap-3">
-                  <span className="text-4xl font-black text-primary">{priceDisplay}</span>
-                  <span className="text-sm text-muted-foreground">+ {product.shipping} shipping</span>
-                </div>
+                {/* Interactive pricing by mileage — click a tier to change the price */}
+                <MileagePriceSelector
+                  basePrice={product.price}
+                  tiers={product.pricingTiers}
+                  onTierChange={(_, price) => setSelectedPrice(price)}
+                />
 
                 {/* Actions */}
                 <ProductCardActions
                   productId={String(product.id)}
                   productName={product.name}
-                  productPrice={Number(product.price) || 0}
+                  productPrice={selectedPrice ?? (product.pricingTiers?.medium ?? product.price)}
                   productImage={productImage}
                   productType={product.category}
                   make={product.compatibility || 'Acura'}
