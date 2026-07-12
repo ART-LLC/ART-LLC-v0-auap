@@ -33,28 +33,19 @@ export interface BrandCatalog {
   products: BrandProduct[]
 }
 
-/** All brands with generated catalogs, in display order. */
-export const BRAND_DIRECTORY: { slug: string; label: string }[] = [
-  { slug: "alfa-romeo", label: "Alfa Romeo" },
-  { slug: "audi", label: "Audi" },
-  { slug: "bmw", label: "BMW" },
-  { slug: "buick", label: "Buick" },
-  { slug: "cadillac", label: "Cadillac" },
-  { slug: "chevrolet", label: "Chevrolet" },
-  { slug: "chrysler", label: "Chrysler" },
-  { slug: "daewoo", label: "Daewoo" },
-  { slug: "daihatsu", label: "Daihatsu" },
-  { slug: "dodge", label: "Dodge" },
-  { slug: "eagle", label: "Eagle" },
-  { slug: "fiat", label: "Fiat" },
-  { slug: "ford", label: "Ford" },
-  { slug: "geo", label: "Geo" },
-  { slug: "gmc", label: "GMC" },
-  { slug: "honda", label: "Honda" },
-  { slug: "hummer", label: "HUMMER" },
-  { slug: "hyundai", label: "Hyundai" },
-  { slug: "infiniti", label: "INFINITI" },
-]
+/**
+ * All brands with generated catalogs, in display order. Loaded from the
+ * manifest written by scripts/build-brand-catalogs.mjs, so newly uploaded
+ * sheets appear automatically after the build script runs.
+ */
+function loadBrandDirectory(): { slug: string; label: string; count: number }[] {
+  const manifestPath = path.join(process.cwd(), "data", "brands", "manifest.json")
+  if (!fs.existsSync(manifestPath)) return []
+  return JSON.parse(fs.readFileSync(manifestPath, "utf8"))
+}
+
+export const BRAND_DIRECTORY: { slug: string; label: string; count: number }[] =
+  loadBrandDirectory()
 
 const catalogCache = new Map<string, BrandCatalog>()
 const slugIndexCache = new Map<string, Map<string, BrandProduct>>()
