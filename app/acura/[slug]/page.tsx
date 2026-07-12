@@ -13,6 +13,7 @@ import { ProductFAQ } from '@/components/products/product-faq'
 import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
+import { PartRecommendations } from '@/components/ai/part-recommendations'
 import { getAcuraProductBySlug, getRelatedAcuraProducts, resolveAcuraImage } from '@/lib/acura-data'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight } from 'lucide-react'
 
@@ -134,6 +135,7 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                   productImage={productImage}
                   productType={product.category}
                   make={product.compatibility || 'Acura'}
+                  shipping={product.shipping}
                 />
 
                 {/* Trust Badges */}
@@ -153,6 +155,13 @@ export default function AcuraProductPage({ params }: { params: Promise<{ slug: s
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* AI-Powered Recommendations */}
+        <section className="py-4">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <PartRecommendations productId={product.id} />
           </div>
         </section>
 
