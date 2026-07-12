@@ -43,7 +43,7 @@ section.bg-background,
 }
 
 :root {
-  /* ── Grey Background with Bright Blue CTAs ── */
+  /* ── Grey Background with White Text ── */
   --background: #6b7280;
   --history-panel: #4b5563;
   --foreground: #ffffff;
@@ -51,8 +51,8 @@ section.bg-background,
   --card-foreground: #ffffff;
   --popover: #5a6370;
   --popover-foreground: #ffffff;
-  --primary: #3b82f6;
-  --primary-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #6b7280;
   --secondary: #5a6370;
   --secondary-foreground: #ffffff;
   --muted: #4b5563;
@@ -72,8 +72,8 @@ section.bg-background,
   --radius: 0.5rem;
   --sidebar: #4b5563;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #3b82f6;
-  --sidebar-primary-foreground: #ffffff;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #6b7280;
   --sidebar-accent: #5a6370;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #4b5563;
@@ -81,7 +81,7 @@ section.bg-background,
 }
 
 /* ── Light mode overrides ────────────────────────────── */
-/* Light grey theme with bright blue accents */
+/* Light grey theme with white text and blue accents for buttons only */
 .light {
   --background: #f3f4f6;
   --history-panel: #e5e7eb;
@@ -90,7 +90,7 @@ section.bg-background,
   --card-foreground: #1f2937;
   --popover: #ffffff;
   --popover-foreground: #1f2937;
-  --primary: #3b82f6;
+  --primary: #1f2937;
   --primary-foreground: #ffffff;
   --secondary: #e5e7eb;
   --secondary-foreground: #1f2937;
@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─────────────────────────────────────────────────────────
    LIGHT MODE — GLOBAL BODY & PARAGRAPH READABILITY
    Ensures ALL text is dark and clearly legible on white/light bg
-   ─────────────────────────────────────��─────────────���──── */
+   ─────────────────────────────────────��─────────────����──── */
 .light body {
   color: #0f1117;
 }
