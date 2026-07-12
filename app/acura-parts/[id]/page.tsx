@@ -16,6 +16,7 @@ import { ProductCardActions } from '@/components/products/product-card-actions'
 import { MileagePriceSelector } from '@/components/acura/mileage-price-selector'
 import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
 import { SeoBacklinks } from '@/components/seo-backlinks'
+import { getPartsSearchUrl } from '@/lib/parts-search-routing'
 
 export default function AcuraPartDetailPage() {
   const params = useParams()
@@ -36,12 +37,7 @@ export default function AcuraPartDetailPage() {
   const displayPrice = sheetProduct?.price ?? part?.price ?? 0
 
   const handleSearch = (filters: SearchFilters) => {
-    const searchParams = new URLSearchParams()
-    if (filters.make) searchParams.append('make', filters.make)
-    if (filters.model) searchParams.append('model', filters.model)
-    if (filters.year) searchParams.append('year', filters.year)
-    if (filters.partType) searchParams.append('part', filters.partType)
-    router.push(`/search?${searchParams.toString()}`)
+    router.push(getPartsSearchUrl(filters))
   }
   
   const addToCart = useCartStore((state) => state.addItem)

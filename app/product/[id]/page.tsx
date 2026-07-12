@@ -20,6 +20,7 @@ import { SeoBacklinks } from '@/components/seo-backlinks'
 import { getProductById, getRelatedProducts } from '@/lib/products-catalog'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight } from 'lucide-react'
 
+import { getPartsSearchUrl } from '@/lib/parts-search-routing'
 export default function ProductPage({ params }: { params: Promise<{ id: string }> }) {
   const router = useRouter()
   const { id } = use(params)
@@ -34,12 +35,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
   const related = getRelatedProducts(product)
 
   const handleSearch = (filters: SearchFilters) => {
-    const queryParams = new URLSearchParams()
-    if (filters.make) queryParams.append('make', filters.make)
-    if (filters.model) queryParams.append('model', filters.model)
-    if (filters.year) queryParams.append('year', filters.year)
-    if (filters.partType) queryParams.append('part', filters.partType)
-    router.push(`/search?${queryParams.toString()}`)
+    router.push(getPartsSearchUrl(filters))
   }
 
   return (

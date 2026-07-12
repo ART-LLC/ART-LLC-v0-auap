@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Search } from 'lucide-react'
 import { CAR_MAKES, CAR_MODELS, PART_CATEGORIES, YEARS } from '@/lib/data'
+import { getPartsSearchUrl } from '@/lib/parts-search-routing'
 
 interface BrandProductSearchProps {
   defaultMake?: string
@@ -31,12 +32,7 @@ export function BrandProductSearch({ defaultMake = '' }: BrandProductSearchProps
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    const params = new URLSearchParams()
-    if (make) params.set('make', make)
-    if (model) params.set('model', model)
-    if (year) params.set('year', year)
-    if (part) params.set('part', part)
-    router.push(`/search?${params.toString()}`)
+    router.push(getPartsSearchUrl({ make, model, year, partType: part }))
   }
 
   return (

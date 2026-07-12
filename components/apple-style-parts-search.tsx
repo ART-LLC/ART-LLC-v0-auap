@@ -1,9 +1,11 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import { useRouter } from 'next/navigation'
 import { Search } from 'lucide-react'
 import { CAR_MAKES, CAR_MODELS, PART_CATEGORIES, YEARS } from '@/lib/data'
 import type { PartCategory } from '@/lib/data'
+import { getPartsSearchUrl } from '@/lib/parts-search-routing'
 
 interface AppleStylePartsSearchProps {
   /** Callback when search is submitted */
@@ -35,6 +37,7 @@ export function AppleStylePartsSearch({
   hideModel = false,
   defaultMake,
 }: AppleStylePartsSearchProps) {
+  const router = useRouter()
   const [selectedMake, setSelectedMake] = useState(defaultMake || '')
   const [selectedModel, setSelectedModel] = useState('')
   const [selectedYear, setSelectedYear] = useState('')
@@ -63,12 +66,19 @@ export function AppleStylePartsSearch({
       alert('Please select a make')
       return
     }
-    onSearch?.({
+    const filters = {
       make: selectedMake,
       model: selectedModel,
       year: selectedYear,
       partType: selectedPart,
-    })
+    }
+
+    if (onSearch) {
+      onSearch(filters)
+      return
+    }
+
+    router.push(getPartsSearchUrl(filters))
   }
 
   const gridCols = hideMake ? (hideModel ? 2 : 3) : hideModel ? 3 : 4

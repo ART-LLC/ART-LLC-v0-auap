@@ -4,6 +4,7 @@ import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { CAR_MAKES, CAR_MODELS, PART_CATEGORIES, YEARS, US_STATES } from "@/lib/data"
 import { Search, Phone, MessageSquare, AlertCircle } from "lucide-react"
+import { getPartsSearchUrl } from "@/lib/parts-search-routing"
 
 interface SearchFormProps {
   compact?: boolean
@@ -41,16 +42,15 @@ export function SearchForm({ compact = false }: SearchFormProps) {
     setZipError(zipErr)
     if (zipErr) return
 
-    const params = new URLSearchParams()
-    if (year)       params.set("year",  year)
-    params.set("make", make)
-    if (model)      params.set("model", model)
-    if (part)       params.set("part",  part)
-    if (state)      params.set("state", state)
-    if (city.trim())params.set("city",  city.trim())
-    if (zip)        params.set("zip",   zip)
-
-    router.push(`/search?${params.toString()}`)
+    const location = [city.trim(), state].filter(Boolean).join(", ")
+    router.push(getPartsSearchUrl({
+      year,
+      make,
+      model,
+      partType: part,
+      location,
+      zipCode: zip,
+    }))
   }
 
   const base  = "w-full text-sm px-3.5 py-3 bg-[rgba(13,15,22,0.75)] backdrop-blur-sm border rounded-lg text-foreground appearance-none outline-none transition-all"

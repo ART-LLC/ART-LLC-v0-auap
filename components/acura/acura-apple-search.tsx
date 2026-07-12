@@ -1,7 +1,9 @@
 'use client'
 
 import { useMemo, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { acuraProducts } from '@/lib/acura-data'
+import { getPartsSearchUrl } from '@/lib/parts-search-routing'
 
 interface AppleSearchProps {
   onSearch?: (query: string) => void
@@ -16,6 +18,7 @@ const selectClasses =
  * cascade is Model -> Year -> Part Type (no redundant "Make" step).
  */
 export function AppleStyleSearch({ onSearch }: AppleSearchProps) {
+  const router = useRouter()
   const [model, setModel] = useState('')
   const [year, setYear] = useState('')
   const [partType, setPartType] = useState('')
@@ -45,10 +48,15 @@ export function AppleStyleSearch({ onSearch }: AppleSearchProps) {
   const canSearch = Boolean(model || year || partType)
 
   function handleSearch() {
-    const query = [year, model, partType].filter(Boolean).join(' ')
-    if (query.trim() && onSearch) {
-      onSearch(query)
+    if (!canSearch) return
+
+    if (partType) {
+      router.push(getPartsSearchUrl({ make: 'Acura', model, year, partType }))
+      return
     }
+
+    const query = [year, model].filter(Boolean).join(' ')
+    if (query.trim() && onSearch) onSearch(query)
   }
 
   function handleKeyDown(e: React.KeyboardEvent) {
