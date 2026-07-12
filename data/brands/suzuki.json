@@ -8647,7 +8647,7 @@
       "slug": "2002-suzuki-aerio-engine-20l-vin-4-6th-digit-480",
       "canonicalSlug": "2002-suzuki-aerio-engine-20l-vin-4-6th-digit-480",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -8665,7 +8665,7 @@
       "slug": "2003-suzuki-aerio-engine-20l-vin-4-6th-digit-481",
       "canonicalSlug": "2003-suzuki-aerio-engine-20l-vin-4-6th-digit-481",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -8683,7 +8683,7 @@
       "slug": "2004-suzuki-aerio-engine-23l-vin-6-6th-digit-482",
       "canonicalSlug": "2004-suzuki-aerio-engine-23l-vin-6-6th-digit-482",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -8701,7 +8701,7 @@
       "slug": "2005-suzuki-aerio-engine-23l-vin-6-6th-digit-483",
       "canonicalSlug": "2005-suzuki-aerio-engine-23l-vin-6-6th-digit-483",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -8719,7 +8719,7 @@
       "slug": "2006-suzuki-aerio-engine-23l-vin-6-6th-digit-484",
       "canonicalSlug": "2006-suzuki-aerio-engine-23l-vin-6-6th-digit-484",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -8737,7 +8737,7 @@
       "slug": "2007-suzuki-aerio-engine-23l-vin-6-6th-digit-485",
       "canonicalSlug": "2007-suzuki-aerio-engine-23l-vin-6-6th-digit-485",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -8755,7 +8755,7 @@
       "slug": "2009-suzuki-equator-engine-25l-vin-b-4th-digit-qr25de-486",
       "canonicalSlug": "2009-suzuki-equator-engine-25l-vin-b-4th-digit-qr25de-486",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 5894,
       "tiers": {
         "low": 6365,
@@ -8773,7 +8773,7 @@
       "slug": "2009-suzuki-equator-engine-40l-vin-a-4th-digit-vq40de-487",
       "canonicalSlug": "2009-suzuki-equator-engine-40l-vin-a-4th-digit-vq40de-487",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3128,
       "tiers": {
         "low": 3378,
@@ -8791,7 +8791,7 @@
       "slug": "2010-suzuki-equator-engine-25l-vin-2-4th-digit-qr25de-488",
       "canonicalSlug": "2010-suzuki-equator-engine-25l-vin-2-4th-digit-qr25de-488",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 5894,
       "tiers": {
         "low": 6365,
@@ -8809,7 +8809,7 @@
       "slug": "2010-suzuki-equator-engine-40l-vin-1-4th-digit-vq40de-489",
       "canonicalSlug": "2010-suzuki-equator-engine-40l-vin-1-4th-digit-vq40de-489",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3128,
       "tiers": {
         "low": 3378,
@@ -8827,7 +8827,7 @@
       "slug": "2011-suzuki-equator-engine-25l-vin-2-4th-digit-qr25de-490",
       "canonicalSlug": "2011-suzuki-equator-engine-25l-vin-2-4th-digit-qr25de-490",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 5894,
       "tiers": {
         "low": 6365,
@@ -8845,7 +8845,7 @@
       "slug": "2011-suzuki-equator-engine-40l-vin-1-4th-digit-vq40de-491",
       "canonicalSlug": "2011-suzuki-equator-engine-40l-vin-1-4th-digit-vq40de-491",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3128,
       "tiers": {
         "low": 3378,
@@ -8863,7 +8863,7 @@
       "slug": "2012-suzuki-equator-engine-25l-vin-2-4th-digit-qr25de-492",
       "canonicalSlug": "2012-suzuki-equator-engine-25l-vin-2-4th-digit-qr25de-492",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 5894,
       "tiers": {
         "low": 6365,
@@ -8881,7 +8881,7 @@
       "slug": "2012-suzuki-equator-engine-40l-vin-1-4th-digit-vq40de-493",
       "canonicalSlug": "2012-suzuki-equator-engine-40l-vin-1-4th-digit-vq40de-493",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3128,
       "tiers": {
         "low": 3378,
@@ -8899,7 +8899,7 @@
       "slug": "2013-suzuki-equator-engine-25l-vin-2-4th-digit-qr25de-494",
       "canonicalSlug": "2013-suzuki-equator-engine-25l-vin-2-4th-digit-qr25de-494",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 5894,
       "tiers": {
         "low": 6365,
@@ -8917,7 +8917,7 @@
       "slug": "2013-suzuki-equator-engine-40l-vin-1-4th-digit-vq40de-495",
       "canonicalSlug": "2013-suzuki-equator-engine-40l-vin-1-4th-digit-vq40de-495",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3128,
       "tiers": {
         "low": 3378,
@@ -8935,7 +8935,7 @@
       "slug": "1995-suzuki-esteem-engine-vin-3-6th-digit-496",
       "canonicalSlug": "1995-suzuki-esteem-engine-vin-3-6th-digit-496",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -8953,7 +8953,7 @@
       "slug": "1996-suzuki-esteem-engine-vin-3-6th-digit-497",
       "canonicalSlug": "1996-suzuki-esteem-engine-vin-3-6th-digit-497",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -8971,7 +8971,7 @@
       "slug": "1997-suzuki-esteem-engine-vin-3-6th-digit-498",
       "canonicalSlug": "1997-suzuki-esteem-engine-vin-3-6th-digit-498",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -8989,7 +8989,7 @@
       "slug": "1998-suzuki-esteem-engine-vin-3-6th-digit-499",
       "canonicalSlug": "1998-suzuki-esteem-engine-vin-3-6th-digit-499",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -9007,7 +9007,7 @@
       "slug": "1999-suzuki-esteem-engine-16l-vin-3-6th-digit-500",
       "canonicalSlug": "1999-suzuki-esteem-engine-16l-vin-3-6th-digit-500",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9025,7 +9025,7 @@
       "slug": "1999-suzuki-esteem-engine-18l-vin-4-6th-digit-501",
       "canonicalSlug": "1999-suzuki-esteem-engine-18l-vin-4-6th-digit-501",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9043,7 +9043,7 @@
       "slug": "2000-suzuki-esteem-engine-16l-vin-3-6th-digit-502",
       "canonicalSlug": "2000-suzuki-esteem-engine-16l-vin-3-6th-digit-502",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9061,7 +9061,7 @@
       "slug": "2000-suzuki-esteem-engine-18l-vin-4-6th-digit-503",
       "canonicalSlug": "2000-suzuki-esteem-engine-18l-vin-4-6th-digit-503",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9079,7 +9079,7 @@
       "slug": "2001-suzuki-esteem-engine-16l-vin-3-6th-digit-504",
       "canonicalSlug": "2001-suzuki-esteem-engine-16l-vin-3-6th-digit-504",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9097,7 +9097,7 @@
       "slug": "2001-suzuki-esteem-engine-18l-vin-4-6th-digit-505",
       "canonicalSlug": "2001-suzuki-esteem-engine-18l-vin-4-6th-digit-505",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9115,7 +9115,7 @@
       "slug": "2002-suzuki-esteem-engine-18l-vin-4-6th-digit-506",
       "canonicalSlug": "2002-suzuki-esteem-engine-18l-vin-4-6th-digit-506",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9133,7 +9133,7 @@
       "slug": "2004-suzuki-forenza-engine-20l-vin-z-8th-digit-at-507",
       "canonicalSlug": "2004-suzuki-forenza-engine-20l-vin-z-8th-digit-at-507",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9151,7 +9151,7 @@
       "slug": "2004-suzuki-forenza-engine-20l-vin-z-8th-digit-mt-508",
       "canonicalSlug": "2004-suzuki-forenza-engine-20l-vin-z-8th-digit-mt-508",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1633,
       "tiers": {
         "low": 1764,
@@ -9169,7 +9169,7 @@
       "slug": "2005-suzuki-forenza-engine-20l-vin-z-8th-digit-at-509",
       "canonicalSlug": "2005-suzuki-forenza-engine-20l-vin-z-8th-digit-at-509",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9187,7 +9187,7 @@
       "slug": "2005-suzuki-forenza-engine-20l-vin-z-8th-digit-mt-510",
       "canonicalSlug": "2005-suzuki-forenza-engine-20l-vin-z-8th-digit-mt-510",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1633,
       "tiers": {
         "low": 1764,
@@ -9205,7 +9205,7 @@
       "slug": "2006-suzuki-forenza-engine-20l-vin-z-8th-digit-at-511",
       "canonicalSlug": "2006-suzuki-forenza-engine-20l-vin-z-8th-digit-at-511",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9223,7 +9223,7 @@
       "slug": "2006-suzuki-forenza-engine-20l-vin-z-8th-digit-mt-512",
       "canonicalSlug": "2006-suzuki-forenza-engine-20l-vin-z-8th-digit-mt-512",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1633,
       "tiers": {
         "low": 1764,
@@ -9241,7 +9241,7 @@
       "slug": "2007-suzuki-forenza-engine-20l-vin-z-8th-digit-at-513",
       "canonicalSlug": "2007-suzuki-forenza-engine-20l-vin-z-8th-digit-at-513",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9259,7 +9259,7 @@
       "slug": "2007-suzuki-forenza-engine-20l-vin-z-8th-digit-mt-514",
       "canonicalSlug": "2007-suzuki-forenza-engine-20l-vin-z-8th-digit-mt-514",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1633,
       "tiers": {
         "low": 1764,
@@ -9277,7 +9277,7 @@
       "slug": "2008-suzuki-forenza-engine-20l-vin-z-8th-digit-at-515",
       "canonicalSlug": "2008-suzuki-forenza-engine-20l-vin-z-8th-digit-at-515",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9295,7 +9295,7 @@
       "slug": "2008-suzuki-forenza-engine-20l-vin-z-8th-digit-mt-516",
       "canonicalSlug": "2008-suzuki-forenza-engine-20l-vin-z-8th-digit-mt-516",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1633,
       "tiers": {
         "low": 1764,
@@ -9313,7 +9313,7 @@
       "slug": "2010-suzuki-kizashi-engine-24l-vin-9-6th-digit-517",
       "canonicalSlug": "2010-suzuki-kizashi-engine-24l-vin-9-6th-digit-517",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9331,7 +9331,7 @@
       "slug": "2011-suzuki-kizashi-engine-24l-vin-9-6th-digit-518",
       "canonicalSlug": "2011-suzuki-kizashi-engine-24l-vin-9-6th-digit-518",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9349,7 +9349,7 @@
       "slug": "2012-suzuki-kizashi-engine-24l-vin-9-6th-digit-519",
       "canonicalSlug": "2012-suzuki-kizashi-engine-24l-vin-9-6th-digit-519",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9367,7 +9367,7 @@
       "slug": "2013-suzuki-kizashi-engine-24l-vin-9-6th-digit-520",
       "canonicalSlug": "2013-suzuki-kizashi-engine-24l-vin-9-6th-digit-520",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9385,7 +9385,7 @@
       "slug": "2005-suzuki-reno-engine-20l-vin-z-8th-digit-at-521",
       "canonicalSlug": "2005-suzuki-reno-engine-20l-vin-z-8th-digit-at-521",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9403,7 +9403,7 @@
       "slug": "2005-suzuki-reno-engine-20l-vin-z-8th-digit-mt-522",
       "canonicalSlug": "2005-suzuki-reno-engine-20l-vin-z-8th-digit-mt-522",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9421,7 +9421,7 @@
       "slug": "2006-suzuki-reno-engine-20l-vin-z-8th-digit-at-523",
       "canonicalSlug": "2006-suzuki-reno-engine-20l-vin-z-8th-digit-at-523",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9439,7 +9439,7 @@
       "slug": "2006-suzuki-reno-engine-20l-vin-z-8th-digit-mt-524",
       "canonicalSlug": "2006-suzuki-reno-engine-20l-vin-z-8th-digit-mt-524",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9457,7 +9457,7 @@
       "slug": "2007-suzuki-reno-engine-20l-vin-z-8th-digit-at-525",
       "canonicalSlug": "2007-suzuki-reno-engine-20l-vin-z-8th-digit-at-525",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9475,7 +9475,7 @@
       "slug": "2007-suzuki-reno-engine-20l-vin-z-8th-digit-mt-526",
       "canonicalSlug": "2007-suzuki-reno-engine-20l-vin-z-8th-digit-mt-526",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9493,7 +9493,7 @@
       "slug": "2008-suzuki-reno-engine-20l-vin-z-8th-digit-at-527",
       "canonicalSlug": "2008-suzuki-reno-engine-20l-vin-z-8th-digit-at-527",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9511,7 +9511,7 @@
       "slug": "2008-suzuki-reno-engine-20l-vin-z-8th-digit-mt-528",
       "canonicalSlug": "2008-suzuki-reno-engine-20l-vin-z-8th-digit-mt-528",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9529,7 +9529,7 @@
       "slug": "1995-suzuki-samurai-engine-13l-vin-3-6th-digit-529",
       "canonicalSlug": "1995-suzuki-samurai-engine-13l-vin-3-6th-digit-529",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2082,
       "tiers": {
         "low": 2248,
@@ -9547,7 +9547,7 @@
       "slug": "1995-suzuki-sidekick-engine-2-dr-16l-mfi-16-valve-530",
       "canonicalSlug": "1995-suzuki-sidekick-engine-2-dr-16l-mfi-16-valve-530",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2007,
       "tiers": {
         "low": 2167,
@@ -9565,7 +9565,7 @@
       "slug": "1995-suzuki-sidekick-engine-2-dr-16l-tbi-8-valve-531",
       "canonicalSlug": "1995-suzuki-sidekick-engine-2-dr-16l-tbi-8-valve-531",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -9583,7 +9583,7 @@
       "slug": "1995-suzuki-sidekick-engine-4-dr-16l-16-valve-mfi-532",
       "canonicalSlug": "1995-suzuki-sidekick-engine-4-dr-16l-16-valve-mfi-532",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -9601,7 +9601,7 @@
       "slug": "1996-suzuki-sidekick-engine-16l-sohc-533",
       "canonicalSlug": "1996-suzuki-sidekick-engine-16l-sohc-533",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -9619,7 +9619,7 @@
       "slug": "1996-suzuki-sidekick-engine-18l-dohc-534",
       "canonicalSlug": "1996-suzuki-sidekick-engine-18l-dohc-534",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -9637,7 +9637,7 @@
       "slug": "1997-suzuki-sidekick-engine-16l-sohc-535",
       "canonicalSlug": "1997-suzuki-sidekick-engine-16l-sohc-535",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -9655,7 +9655,7 @@
       "slug": "1997-suzuki-sidekick-engine-18l-dohc-536",
       "canonicalSlug": "1997-suzuki-sidekick-engine-18l-dohc-536",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -9673,7 +9673,7 @@
       "slug": "1998-suzuki-sidekick-engine-16l-sohc-537",
       "canonicalSlug": "1998-suzuki-sidekick-engine-16l-sohc-537",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -9691,7 +9691,7 @@
       "slug": "1998-suzuki-sidekick-engine-18l-dohc-538",
       "canonicalSlug": "1998-suzuki-sidekick-engine-18l-dohc-538",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -9709,7 +9709,7 @@
       "slug": "1995-suzuki-swift-engine-13l-vin-2-6th-digit-539",
       "canonicalSlug": "1995-suzuki-swift-engine-13l-vin-2-6th-digit-539",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9727,7 +9727,7 @@
       "slug": "1996-suzuki-swift-engine-13l-vin-2-6th-digit-540",
       "canonicalSlug": "1996-suzuki-swift-engine-13l-vin-2-6th-digit-540",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9745,7 +9745,7 @@
       "slug": "1997-suzuki-swift-engine-13l-vin-2-6th-digit-541",
       "canonicalSlug": "1997-suzuki-swift-engine-13l-vin-2-6th-digit-541",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9763,7 +9763,7 @@
       "slug": "1998-suzuki-swift-engine-13l-vin-2-6th-digit-542",
       "canonicalSlug": "1998-suzuki-swift-engine-13l-vin-2-6th-digit-542",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9781,7 +9781,7 @@
       "slug": "1999-suzuki-swift-engine-13l-vin-2-6th-digit-543",
       "canonicalSlug": "1999-suzuki-swift-engine-13l-vin-2-6th-digit-543",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9799,7 +9799,7 @@
       "slug": "2000-suzuki-swift-engine-13l-vin-2-6th-digit-544",
       "canonicalSlug": "2000-suzuki-swift-engine-13l-vin-2-6th-digit-544",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9817,7 +9817,7 @@
       "slug": "2001-suzuki-swift-engine-13l-vin-2-6th-digit-545",
       "canonicalSlug": "2001-suzuki-swift-engine-13l-vin-2-6th-digit-545",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9835,7 +9835,7 @@
       "slug": "2004-suzuki-swift-engine-16l-vin-6-8th-digit-at-546",
       "canonicalSlug": "2004-suzuki-swift-engine-16l-vin-6-8th-digit-at-546",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9853,7 +9853,7 @@
       "slug": "2004-suzuki-swift-engine-16l-vin-6-8th-digit-mt-547",
       "canonicalSlug": "2004-suzuki-swift-engine-16l-vin-6-8th-digit-mt-547",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9871,7 +9871,7 @@
       "slug": "2005-suzuki-swift-engine-16l-vin-6-8th-digit-at-548",
       "canonicalSlug": "2005-suzuki-swift-engine-16l-vin-6-8th-digit-at-548",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9889,7 +9889,7 @@
       "slug": "2005-suzuki-swift-engine-16l-vin-6-8th-digit-mt-549",
       "canonicalSlug": "2005-suzuki-swift-engine-16l-vin-6-8th-digit-mt-549",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -9907,7 +9907,7 @@
       "slug": "2006-suzuki-swift-engine-16l-550",
       "canonicalSlug": "2006-suzuki-swift-engine-16l-550",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9925,7 +9925,7 @@
       "slug": "2007-suzuki-swift-engine-16l-551",
       "canonicalSlug": "2007-suzuki-swift-engine-16l-551",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9943,7 +9943,7 @@
       "slug": "2008-suzuki-swift-engine-16l-552",
       "canonicalSlug": "2008-suzuki-swift-engine-16l-552",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9961,7 +9961,7 @@
       "slug": "2009-suzuki-swift-engine-16l-553",
       "canonicalSlug": "2009-suzuki-swift-engine-16l-553",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9979,7 +9979,7 @@
       "slug": "2010-suzuki-swift-engine-16l-554",
       "canonicalSlug": "2010-suzuki-swift-engine-16l-554",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -9997,7 +9997,7 @@
       "slug": "2011-suzuki-swift-engine-16l-555",
       "canonicalSlug": "2011-suzuki-swift-engine-16l-555",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1110,
       "tiers": {
         "low": 1199,
@@ -10015,7 +10015,7 @@
       "slug": "2007-suzuki-sx4-engine-20l-vin-4-6th-digit-556",
       "canonicalSlug": "2007-suzuki-sx4-engine-20l-vin-4-6th-digit-556",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1633,
       "tiers": {
         "low": 1764,
@@ -10033,7 +10033,7 @@
       "slug": "2008-suzuki-sx4-engine-20l-vin-4-6th-digit-557",
       "canonicalSlug": "2008-suzuki-sx4-engine-20l-vin-4-6th-digit-557",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1633,
       "tiers": {
         "low": 1764,
@@ -10051,7 +10051,7 @@
       "slug": "2009-suzuki-sx4-engine-20l-vin-4-6th-digit-558",
       "canonicalSlug": "2009-suzuki-sx4-engine-20l-vin-4-6th-digit-558",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1633,
       "tiers": {
         "low": 1764,
@@ -10069,7 +10069,7 @@
       "slug": "2010-suzuki-sx4-engine-20l-vin-5-6th-digit-559",
       "canonicalSlug": "2010-suzuki-sx4-engine-20l-vin-5-6th-digit-559",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1633,
       "tiers": {
         "low": 1764,
@@ -10087,7 +10087,7 @@
       "slug": "2011-suzuki-sx4-engine-20l-vin-5-6th-digit-560",
       "canonicalSlug": "2011-suzuki-sx4-engine-20l-vin-5-6th-digit-560",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1633,
       "tiers": {
         "low": 1764,
@@ -10105,7 +10105,7 @@
       "slug": "2012-suzuki-sx4-engine-20l-vin-5-6th-digit-561",
       "canonicalSlug": "2012-suzuki-sx4-engine-20l-vin-5-6th-digit-561",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -10123,7 +10123,7 @@
       "slug": "2013-suzuki-sx4-engine-20l-vin-5-6th-digit-562",
       "canonicalSlug": "2013-suzuki-sx4-engine-20l-vin-5-6th-digit-562",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -10141,7 +10141,7 @@
       "slug": "2004-suzuki-verona-engine-25l-vin-l-8th-digit-563",
       "canonicalSlug": "2004-suzuki-verona-engine-25l-vin-l-8th-digit-563",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -10159,7 +10159,7 @@
       "slug": "2005-suzuki-verona-engine-25l-vin-l-8th-digit-564",
       "canonicalSlug": "2005-suzuki-verona-engine-25l-vin-l-8th-digit-564",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -10177,7 +10177,7 @@
       "slug": "2006-suzuki-verona-engine-25l-vin-l-8th-digit-565",
       "canonicalSlug": "2006-suzuki-verona-engine-25l-vin-l-8th-digit-565",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1558,
       "tiers": {
         "low": 1683,
@@ -10195,7 +10195,7 @@
       "slug": "1999-suzuki-vitara-engine-20l-vin-5-6th-digit-566",
       "canonicalSlug": "1999-suzuki-vitara-engine-20l-vin-5-6th-digit-566",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -10213,7 +10213,7 @@
       "slug": "1999-suzuki-vitara-engine-25l-vin-6-6th-digit-567",
       "canonicalSlug": "1999-suzuki-vitara-engine-25l-vin-6-6th-digit-567",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -10231,7 +10231,7 @@
       "slug": "1999-suzuki-vitara-engine-16l-vin-0-6th-digit-568",
       "canonicalSlug": "1999-suzuki-vitara-engine-16l-vin-0-6th-digit-568",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10249,7 +10249,7 @@
       "slug": "2000-suzuki-vitara-engine-20l-vin-5-6th-digit-569",
       "canonicalSlug": "2000-suzuki-vitara-engine-20l-vin-5-6th-digit-569",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -10267,7 +10267,7 @@
       "slug": "2000-suzuki-vitara-engine-25l-vin-6-6th-digit-570",
       "canonicalSlug": "2000-suzuki-vitara-engine-25l-vin-6-6th-digit-570",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -10285,7 +10285,7 @@
       "slug": "2000-suzuki-vitara-engine-16l-vin-0-6th-digit-571",
       "canonicalSlug": "2000-suzuki-vitara-engine-16l-vin-0-6th-digit-571",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10303,7 +10303,7 @@
       "slug": "2001-suzuki-vitara-engine-16l-vin-0-6th-digit-572",
       "canonicalSlug": "2001-suzuki-vitara-engine-16l-vin-0-6th-digit-572",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10321,7 +10321,7 @@
       "slug": "2001-suzuki-vitara-engine-20l-vin-5-6th-digit-573",
       "canonicalSlug": "2001-suzuki-vitara-engine-20l-vin-5-6th-digit-573",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -10339,7 +10339,7 @@
       "slug": "2001-suzuki-vitara-engine-25l-vin-6-6th-digit-574",
       "canonicalSlug": "2001-suzuki-vitara-engine-25l-vin-6-6th-digit-574",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -10357,7 +10357,7 @@
       "slug": "2001-suzuki-vitara-engine-27l-vin-9-6th-digit-575",
       "canonicalSlug": "2001-suzuki-vitara-engine-27l-vin-9-6th-digit-575",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10375,7 +10375,7 @@
       "slug": "2002-suzuki-vitara-engine-16l-vin-0-6th-digit-576",
       "canonicalSlug": "2002-suzuki-vitara-engine-16l-vin-0-6th-digit-576",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10393,7 +10393,7 @@
       "slug": "2002-suzuki-vitara-engine-20l-vin-5-6th-digit-577",
       "canonicalSlug": "2002-suzuki-vitara-engine-20l-vin-5-6th-digit-577",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -10411,7 +10411,7 @@
       "slug": "2002-suzuki-vitara-engine-25l-vin-6-6th-digit-578",
       "canonicalSlug": "2002-suzuki-vitara-engine-25l-vin-6-6th-digit-578",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -10429,7 +10429,7 @@
       "slug": "2002-suzuki-vitara-engine-27l-vin-9-6th-digit-579",
       "canonicalSlug": "2002-suzuki-vitara-engine-27l-vin-9-6th-digit-579",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10447,7 +10447,7 @@
       "slug": "2003-suzuki-vitara-engine-16l-vin-0-6th-digit-580",
       "canonicalSlug": "2003-suzuki-vitara-engine-16l-vin-0-6th-digit-580",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10465,7 +10465,7 @@
       "slug": "2003-suzuki-vitara-engine-20l-vin-5-6th-digit-581",
       "canonicalSlug": "2003-suzuki-vitara-engine-20l-vin-5-6th-digit-581",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -10483,7 +10483,7 @@
       "slug": "2003-suzuki-vitara-engine-25l-vin-6-6th-digit-582",
       "canonicalSlug": "2003-suzuki-vitara-engine-25l-vin-6-6th-digit-582",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -10501,7 +10501,7 @@
       "slug": "2003-suzuki-vitara-engine-27l-vin-9-6th-digit-583",
       "canonicalSlug": "2003-suzuki-vitara-engine-27l-vin-9-6th-digit-583",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10519,7 +10519,7 @@
       "slug": "2004-suzuki-vitara-engine-25l-vin-5-6th-digit-584",
       "canonicalSlug": "2004-suzuki-vitara-engine-25l-vin-5-6th-digit-584",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -10537,7 +10537,7 @@
       "slug": "2004-suzuki-vitara-engine-25l-vin-6-6th-digit-585",
       "canonicalSlug": "2004-suzuki-vitara-engine-25l-vin-6-6th-digit-585",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -10555,7 +10555,7 @@
       "slug": "2004-suzuki-vitara-engine-27l-vin-9-6th-digit-586",
       "canonicalSlug": "2004-suzuki-vitara-engine-27l-vin-9-6th-digit-586",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10573,7 +10573,7 @@
       "slug": "2005-suzuki-vitara-engine-27l-vin-9-6th-digit-587",
       "canonicalSlug": "2005-suzuki-vitara-engine-27l-vin-9-6th-digit-587",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10591,7 +10591,7 @@
       "slug": "2005-suzuki-vitara-engine-25l-vin-6-6th-digit-588",
       "canonicalSlug": "2005-suzuki-vitara-engine-25l-vin-6-6th-digit-588",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -10609,7 +10609,7 @@
       "slug": "2006-suzuki-vitara-engine-27l-grand-vin-9-6th-digit-589",
       "canonicalSlug": "2006-suzuki-vitara-engine-27l-grand-vin-9-6th-digit-589",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10627,7 +10627,7 @@
       "slug": "2006-suzuki-vitara-engine-27l-xl-7-vin-9-6th-digit-590",
       "canonicalSlug": "2006-suzuki-vitara-engine-27l-xl-7-vin-9-6th-digit-590",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2007,
       "tiers": {
         "low": 2167,
@@ -10645,7 +10645,7 @@
       "slug": "2007-suzuki-vitara-engine-27l-vin-9-6th-digit-grand-591",
       "canonicalSlug": "2007-suzuki-vitara-engine-27l-vin-9-6th-digit-grand-591",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10663,7 +10663,7 @@
       "slug": "2007-suzuki-vitara-engine-36l-vin-7-8th-digit-xl-7-592",
       "canonicalSlug": "2007-suzuki-vitara-engine-36l-vin-7-8th-digit-xl-7-592",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2007,
       "tiers": {
         "low": 2167,
@@ -10681,7 +10681,7 @@
       "slug": "2008-suzuki-vitara-engine-27l-vin-9-6th-digit-grand-593",
       "canonicalSlug": "2008-suzuki-vitara-engine-27l-vin-9-6th-digit-grand-593",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -10699,7 +10699,7 @@
       "slug": "2008-suzuki-vitara-engine-36l-vin-7-8th-digit-xl-7-594",
       "canonicalSlug": "2008-suzuki-vitara-engine-36l-vin-7-8th-digit-xl-7-594",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2007,
       "tiers": {
         "low": 2167,
@@ -10717,7 +10717,7 @@
       "slug": "2009-suzuki-vitara-engine-36l-vin-7-8th-digit-595",
       "canonicalSlug": "2009-suzuki-vitara-engine-36l-vin-7-8th-digit-595",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2007,
       "tiers": {
         "low": 2167,
@@ -10735,7 +10735,7 @@
       "slug": "2009-suzuki-vitara-engine-24l-vin-0-6th-digit-596",
       "canonicalSlug": "2009-suzuki-vitara-engine-24l-vin-0-6th-digit-596",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 4997,
       "tiers": {
         "low": 5396,
@@ -10753,7 +10753,7 @@
       "slug": "2009-suzuki-vitara-engine-24l-vin-a-6th-digit-597",
       "canonicalSlug": "2009-suzuki-vitara-engine-24l-vin-a-6th-digit-597",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 4997,
       "tiers": {
         "low": 5396,
@@ -10771,7 +10771,7 @@
       "slug": "2009-suzuki-vitara-engine-32l-vin-1-6th-digit-598",
       "canonicalSlug": "2009-suzuki-vitara-engine-32l-vin-1-6th-digit-598",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2979,
       "tiers": {
         "low": 3217,
@@ -10789,7 +10789,7 @@
       "slug": "2009-suzuki-vitara-engine-32l-vin-b-6th-digit-599",
       "canonicalSlug": "2009-suzuki-vitara-engine-32l-vin-b-6th-digit-599",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2979,
       "tiers": {
         "low": 3217,
@@ -10807,7 +10807,7 @@
       "slug": "2010-suzuki-vitara-engine-24l-vin-0-6th-digit-600",
       "canonicalSlug": "2010-suzuki-vitara-engine-24l-vin-0-6th-digit-600",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 4997,
       "tiers": {
         "low": 5396,
@@ -10825,7 +10825,7 @@
       "slug": "2010-suzuki-vitara-engine-24l-vin-a-6th-digit-601",
       "canonicalSlug": "2010-suzuki-vitara-engine-24l-vin-a-6th-digit-601",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 4997,
       "tiers": {
         "low": 5396,
@@ -10843,7 +10843,7 @@
       "slug": "2010-suzuki-vitara-engine-32l-vin-1-6th-digit-602",
       "canonicalSlug": "2010-suzuki-vitara-engine-32l-vin-1-6th-digit-602",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2979,
       "tiers": {
         "low": 3217,
@@ -10861,7 +10861,7 @@
       "slug": "2010-suzuki-vitara-engine-32l-vin-b-6th-digit-603",
       "canonicalSlug": "2010-suzuki-vitara-engine-32l-vin-b-6th-digit-603",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2979,
       "tiers": {
         "low": 3217,
@@ -10879,7 +10879,7 @@
       "slug": "2011-suzuki-vitara-engine-24l-vin-0-6th-digit-604",
       "canonicalSlug": "2011-suzuki-vitara-engine-24l-vin-0-6th-digit-604",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 4997,
       "tiers": {
         "low": 5396,
@@ -10897,7 +10897,7 @@
       "slug": "2011-suzuki-vitara-engine-24l-vin-a-6th-digit-605",
       "canonicalSlug": "2011-suzuki-vitara-engine-24l-vin-a-6th-digit-605",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 4997,
       "tiers": {
         "low": 5396,
@@ -10915,7 +10915,7 @@
       "slug": "2012-suzuki-vitara-engine-24l-vin-0-6th-digit-606",
       "canonicalSlug": "2012-suzuki-vitara-engine-24l-vin-0-6th-digit-606",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 4997,
       "tiers": {
         "low": 5396,
@@ -10933,7 +10933,7 @@
       "slug": "2012-suzuki-vitara-engine-24l-vin-a-6th-digit-607",
       "canonicalSlug": "2012-suzuki-vitara-engine-24l-vin-a-6th-digit-607",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 4997,
       "tiers": {
         "low": 5396,
@@ -10951,7 +10951,7 @@
       "slug": "2013-suzuki-vitara-engine-24l-vin-0-6th-digit-608",
       "canonicalSlug": "2013-suzuki-vitara-engine-24l-vin-0-6th-digit-608",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 4997,
       "tiers": {
         "low": 5396,
@@ -10969,7 +10969,7 @@
       "slug": "2013-suzuki-vitara-engine-24l-vin-a-6th-digit-609",
       "canonicalSlug": "2013-suzuki-vitara-engine-24l-vin-a-6th-digit-609",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 4997,
       "tiers": {
         "low": 5396,
@@ -10987,7 +10987,7 @@
       "slug": "1996-suzuki-x90-engine-vin-1-6th-digit-610",
       "canonicalSlug": "1996-suzuki-x90-engine-vin-1-6th-digit-610",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3651,
       "tiers": {
         "low": 3943,
@@ -11005,7 +11005,7 @@
       "slug": "1997-suzuki-x90-engine-vin-1-6th-digit-611",
       "canonicalSlug": "1997-suzuki-x90-engine-vin-1-6th-digit-611",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3651,
       "tiers": {
         "low": 3943,
@@ -11023,7 +11023,7 @@
       "slug": "1998-suzuki-x90-engine-vin-1-6th-digit-612",
       "canonicalSlug": "1998-suzuki-x90-engine-vin-1-6th-digit-612",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3651,
       "tiers": {
         "low": 3943,
@@ -11041,7 +11041,7 @@
       "slug": "1999-suzuki-xl7-engine-20l-vin-5-6th-digit-613",
       "canonicalSlug": "1999-suzuki-xl7-engine-20l-vin-5-6th-digit-613",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -11059,7 +11059,7 @@
       "slug": "1999-suzuki-xl7-engine-25l-vin-6-6th-digit-614",
       "canonicalSlug": "1999-suzuki-xl7-engine-25l-vin-6-6th-digit-614",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -11077,7 +11077,7 @@
       "slug": "1999-suzuki-xl7-engine-16l-vin-0-6th-digit-615",
       "canonicalSlug": "1999-suzuki-xl7-engine-16l-vin-0-6th-digit-615",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2231,
       "tiers": {
         "low": 2409,
@@ -11095,7 +11095,7 @@
       "slug": "2000-suzuki-xl7-engine-20l-vin-5-6th-digit-616",
       "canonicalSlug": "2000-suzuki-xl7-engine-20l-vin-5-6th-digit-616",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -11113,7 +11113,7 @@
       "slug": "2000-suzuki-xl7-engine-25l-vin-6-6th-digit-617",
       "canonicalSlug": "2000-suzuki-xl7-engine-25l-vin-6-6th-digit-617",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -11131,7 +11131,7 @@
       "slug": "2000-suzuki-xl7-engine-16l-vin-0-6th-digit-618",
       "canonicalSlug": "2000-suzuki-xl7-engine-16l-vin-0-6th-digit-618",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2231,
       "tiers": {
         "low": 2409,
@@ -11149,7 +11149,7 @@
       "slug": "2001-suzuki-xl7-engine-16l-vin-0-6th-digit-619",
       "canonicalSlug": "2001-suzuki-xl7-engine-16l-vin-0-6th-digit-619",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2231,
       "tiers": {
         "low": 2409,
@@ -11167,7 +11167,7 @@
       "slug": "2001-suzuki-xl7-engine-20l-vin-5-6th-digit-620",
       "canonicalSlug": "2001-suzuki-xl7-engine-20l-vin-5-6th-digit-620",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -11185,7 +11185,7 @@
       "slug": "2001-suzuki-xl7-engine-25l-vin-6-6th-digit-621",
       "canonicalSlug": "2001-suzuki-xl7-engine-25l-vin-6-6th-digit-621",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -11203,7 +11203,7 @@
       "slug": "2001-suzuki-xl7-engine-27l-vin-9-6th-digit-622",
       "canonicalSlug": "2001-suzuki-xl7-engine-27l-vin-9-6th-digit-622",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1708,
       "tiers": {
         "low": 1844,
@@ -11221,7 +11221,7 @@
       "slug": "2002-suzuki-xl7-engine-16l-vin-0-6th-digit-623",
       "canonicalSlug": "2002-suzuki-xl7-engine-16l-vin-0-6th-digit-623",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2231,
       "tiers": {
         "low": 2409,
@@ -11239,7 +11239,7 @@
       "slug": "2002-suzuki-xl7-engine-20l-vin-5-6th-digit-624",
       "canonicalSlug": "2002-suzuki-xl7-engine-20l-vin-5-6th-digit-624",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -11257,7 +11257,7 @@
       "slug": "2002-suzuki-xl7-engine-25l-vin-6-6th-digit-625",
       "canonicalSlug": "2002-suzuki-xl7-engine-25l-vin-6-6th-digit-625",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -11275,7 +11275,7 @@
       "slug": "2002-suzuki-xl7-engine-27l-vin-9-6th-digit-626",
       "canonicalSlug": "2002-suzuki-xl7-engine-27l-vin-9-6th-digit-626",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1708,
       "tiers": {
         "low": 1844,
@@ -11293,7 +11293,7 @@
       "slug": "2003-suzuki-xl7-engine-16l-vin-0-6th-digit-627",
       "canonicalSlug": "2003-suzuki-xl7-engine-16l-vin-0-6th-digit-627",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2231,
       "tiers": {
         "low": 2409,
@@ -11311,7 +11311,7 @@
       "slug": "2003-suzuki-xl7-engine-20l-vin-5-6th-digit-628",
       "canonicalSlug": "2003-suzuki-xl7-engine-20l-vin-5-6th-digit-628",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1259,
       "tiers": {
         "low": 1360,
@@ -11329,7 +11329,7 @@
       "slug": "2003-suzuki-xl7-engine-25l-vin-6-6th-digit-629",
       "canonicalSlug": "2003-suzuki-xl7-engine-25l-vin-6-6th-digit-629",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1409,
       "tiers": {
         "low": 1521,
@@ -11347,7 +11347,7 @@
       "slug": "2003-suzuki-xl7-engine-27l-vin-9-6th-digit-630",
       "canonicalSlug": "2003-suzuki-xl7-engine-27l-vin-9-6th-digit-630",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1708,
       "tiers": {
         "low": 1844,
@@ -11365,7 +11365,7 @@
       "slug": "2004-suzuki-xl7-engine-25l-vin-5-6th-digit-631",
       "canonicalSlug": "2004-suzuki-xl7-engine-25l-vin-5-6th-digit-631",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1708,
       "tiers": {
         "low": 1844,
@@ -11383,7 +11383,7 @@
       "slug": "2004-suzuki-xl7-engine-25l-vin-6-6th-digit-632",
       "canonicalSlug": "2004-suzuki-xl7-engine-25l-vin-6-6th-digit-632",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1708,
       "tiers": {
         "low": 1844,
@@ -11401,7 +11401,7 @@
       "slug": "2004-suzuki-xl7-engine-27l-vin-9-6th-digit-633",
       "canonicalSlug": "2004-suzuki-xl7-engine-27l-vin-9-6th-digit-633",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1708,
       "tiers": {
         "low": 1844,
@@ -11419,7 +11419,7 @@
       "slug": "2005-suzuki-xl7-engine-27l-vin-9-6th-digit-634",
       "canonicalSlug": "2005-suzuki-xl7-engine-27l-vin-9-6th-digit-634",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1708,
       "tiers": {
         "low": 1844,
@@ -11437,7 +11437,7 @@
       "slug": "2005-suzuki-xl7-engine-25l-vin-6-6th-digit-635",
       "canonicalSlug": "2005-suzuki-xl7-engine-25l-vin-6-6th-digit-635",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 1708,
       "tiers": {
         "low": 1844,
@@ -11455,7 +11455,7 @@
       "slug": "2006-suzuki-xl7-engine-27l-grand-vin-9-6th-digit-636",
       "canonicalSlug": "2006-suzuki-xl7-engine-27l-grand-vin-9-6th-digit-636",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2455,
       "tiers": {
         "low": 2652,
@@ -11473,7 +11473,7 @@
       "slug": "2006-suzuki-xl7-engine-27l-xl-7-vin-9-6th-digit-637",
       "canonicalSlug": "2006-suzuki-xl7-engine-27l-xl-7-vin-9-6th-digit-637",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -11491,7 +11491,7 @@
       "slug": "2007-suzuki-xl7-engine-27l-vin-9-6th-digit-grand-638",
       "canonicalSlug": "2007-suzuki-xl7-engine-27l-vin-9-6th-digit-grand-638",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2455,
       "tiers": {
         "low": 2652,
@@ -11509,7 +11509,7 @@
       "slug": "2007-suzuki-xl7-engine-36l-vin-7-8th-digit-xl-7-639",
       "canonicalSlug": "2007-suzuki-xl7-engine-36l-vin-7-8th-digit-xl-7-639",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -11527,7 +11527,7 @@
       "slug": "2008-suzuki-xl7-engine-27l-vin-9-6th-digit-grand-640",
       "canonicalSlug": "2008-suzuki-xl7-engine-27l-vin-9-6th-digit-grand-640",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2455,
       "tiers": {
         "low": 2652,
@@ -11545,7 +11545,7 @@
       "slug": "2008-suzuki-xl7-engine-36l-vin-7-8th-digit-xl-7-641",
       "canonicalSlug": "2008-suzuki-xl7-engine-36l-vin-7-8th-digit-xl-7-641",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2306,
       "tiers": {
         "low": 2490,
@@ -11563,7 +11563,7 @@
       "slug": "2009-suzuki-xl7-engine-36l-vin-7-8th-digit-642",
       "canonicalSlug": "2009-suzuki-xl7-engine-36l-vin-7-8th-digit-642",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2156,
       "tiers": {
         "low": 2329,
@@ -11581,7 +11581,7 @@
       "slug": "2009-suzuki-xl7-engine-24l-vin-0-6th-digit-643",
       "canonicalSlug": "2009-suzuki-xl7-engine-24l-vin-0-6th-digit-643",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3950,
       "tiers": {
         "low": 4266,
@@ -11599,7 +11599,7 @@
       "slug": "2009-suzuki-xl7-engine-24l-vin-a-6th-digit-644",
       "canonicalSlug": "2009-suzuki-xl7-engine-24l-vin-a-6th-digit-644",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3950,
       "tiers": {
         "low": 4266,
@@ -11617,7 +11617,7 @@
       "slug": "2009-suzuki-xl7-engine-32l-vin-1-6th-digit-645",
       "canonicalSlug": "2009-suzuki-xl7-engine-32l-vin-1-6th-digit-645",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2605,
       "tiers": {
         "low": 2813,
@@ -11635,7 +11635,7 @@
       "slug": "2009-suzuki-xl7-engine-32l-vin-b-6th-digit-646",
       "canonicalSlug": "2009-suzuki-xl7-engine-32l-vin-b-6th-digit-646",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2754,
       "tiers": {
         "low": 2975,
@@ -11653,7 +11653,7 @@
       "slug": "2010-suzuki-xl7-engine-24l-vin-0-6th-digit-647",
       "canonicalSlug": "2010-suzuki-xl7-engine-24l-vin-0-6th-digit-647",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3950,
       "tiers": {
         "low": 4266,
@@ -11671,7 +11671,7 @@
       "slug": "2010-suzuki-xl7-engine-24l-vin-a-6th-digit-648",
       "canonicalSlug": "2010-suzuki-xl7-engine-24l-vin-a-6th-digit-648",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3950,
       "tiers": {
         "low": 4266,
@@ -11689,7 +11689,7 @@
       "slug": "2010-suzuki-xl7-engine-32l-vin-1-6th-digit-649",
       "canonicalSlug": "2010-suzuki-xl7-engine-32l-vin-1-6th-digit-649",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2605,
       "tiers": {
         "low": 2813,
@@ -11707,7 +11707,7 @@
       "slug": "2010-suzuki-xl7-engine-32l-vin-b-6th-digit-650",
       "canonicalSlug": "2010-suzuki-xl7-engine-32l-vin-b-6th-digit-650",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 2754,
       "tiers": {
         "low": 2975,
@@ -11725,7 +11725,7 @@
       "slug": "2011-suzuki-xl7-engine-24l-vin-0-6th-digit-651",
       "canonicalSlug": "2011-suzuki-xl7-engine-24l-vin-0-6th-digit-651",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3950,
       "tiers": {
         "low": 4266,
@@ -11743,7 +11743,7 @@
       "slug": "2011-suzuki-xl7-engine-24l-vin-a-6th-digit-652",
       "canonicalSlug": "2011-suzuki-xl7-engine-24l-vin-a-6th-digit-652",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3950,
       "tiers": {
         "low": 4266,
@@ -11761,7 +11761,7 @@
       "slug": "2012-suzuki-xl7-engine-24l-vin-0-6th-digit-653",
       "canonicalSlug": "2012-suzuki-xl7-engine-24l-vin-0-6th-digit-653",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3950,
       "tiers": {
         "low": 4266,
@@ -11779,7 +11779,7 @@
       "slug": "2012-suzuki-xl7-engine-24l-vin-a-6th-digit-654",
       "canonicalSlug": "2012-suzuki-xl7-engine-24l-vin-a-6th-digit-654",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3950,
       "tiers": {
         "low": 4266,
@@ -11797,7 +11797,7 @@
       "slug": "2013-suzuki-xl7-engine-24l-vin-0-6th-digit-655",
       "canonicalSlug": "2013-suzuki-xl7-engine-24l-vin-0-6th-digit-655",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3950,
       "tiers": {
         "low": 4266,
@@ -11815,7 +11815,7 @@
       "slug": "2013-suzuki-xl7-engine-24l-vin-a-6th-digit-656",
       "canonicalSlug": "2013-suzuki-xl7-engine-24l-vin-a-6th-digit-656",
       "brand": "Suzuki",
-      "category": "transmission",
+      "category": "engine",
       "price": 3950,
       "tiers": {
         "low": 4266,
