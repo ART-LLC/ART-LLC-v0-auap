@@ -470,11 +470,20 @@ export interface SearchResult {
 
 export function generateResults(year: string, make: string, model: string, part: string): SearchResult[] {
   if (!make) return []
-  const base = part.toLowerCase().includes("engine") ? 1200
-    : part.toLowerCase().includes("transmission") ? 900
-    : part.toLowerCase().includes("turbo") ? 650
-    : part.toLowerCase().includes("alternator") || part.toLowerCase().includes("starter") ? 150
-    : part.toLowerCase().includes("radiator") ? 280
+  
+  // Return empty results for nonsensical/fictional queries to showcase the no-results UI
+  const partLower = part.toLowerCase()
+  const nonexistentParts = ['unicorn', 'flying car', 'time machine', 'lightsaber', 'delorean', 'hoverboard', 'none']
+  if (nonexistentParts.some(p => partLower.includes(p))) return []
+  
+  // If no part type specified, return empty
+  if (!part) return []
+  
+  const base = partLower.includes("engine") ? 1200
+    : partLower.includes("transmission") ? 900
+    : partLower.includes("turbo") ? 650
+    : partLower.includes("alternator") || partLower.includes("starter") ? 150
+    : partLower.includes("radiator") ? 280
     : 400
   return [
     { id: 1, yard: YARDS[0], price: base, miles: 32000, condition: "Excellent", warranty: "6 Months", shipping: 5, inStock: true },
