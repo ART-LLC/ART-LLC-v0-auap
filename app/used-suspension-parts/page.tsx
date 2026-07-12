@@ -1,8 +1,10 @@
 "use client"
 
+import { useRouter } from "next/navigation"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
+import { AppleStylePartsSearch, type SearchFilters } from "@/components/apple-style-parts-search"
 
 import { PART_CATEGORIES, CAR_MAKES, PHONE_DISPLAY, PHONE_SALES } from "@/lib/data"
 import Link from "next/link"
@@ -11,6 +13,17 @@ import { Search, Phone, MessageSquare, Shield, Truck, Clock, Move } from "lucide
 const CATEGORY = PART_CATEGORIES.find(c => c.id === "suspension")!
 
 export default function UsedSuspensionPartsPage() {
+  const router = useRouter()
+
+  const handleSearch = (filters: SearchFilters) => {
+    const params = new URLSearchParams()
+    if (filters.make) params.append('make', filters.make)
+    if (filters.model) params.append('model', filters.model)
+    if (filters.year) params.append('year', filters.year)
+    params.append('part', CATEGORY.label)
+    router.push(`/search?${params.toString()}`)
+  }
+
   return (
     <>
       <Navbar />
@@ -36,6 +49,13 @@ export default function UsedSuspensionPartsPage() {
             </p>
           </div>
         </div>
+
+        {/* Apple-style search form */}
+        <AppleStylePartsSearch
+          onSearch={handleSearch}
+          title={`Find Your ${CATEGORY.label}`}
+          subtitle="Search our network of 2,000+ salvage yards nationwide"
+        />
 
         {/* Trust badges */}
         <div className="mx-auto max-w-[1280px] px-6 py-8">

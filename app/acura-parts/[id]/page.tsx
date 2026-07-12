@@ -8,16 +8,44 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { ShoppingCart, Heart, Phone, Mail, ArrowLeft, Truck, Shield, CheckCircle, AlertTriangle, Package, Tag, Minus, Plus } from 'lucide-react'
 import { ACURA_PARTS, getPartById, getPartsByModel, type AcuraPart } from '@/lib/acura-parts-data'
+import { acuraProducts } from '@/lib/acura-data'
 import { useCartStore } from '@/lib/stores/cart-store'
 import { useWishlistStore } from '@/lib/stores/wishlist-store'
+import { useRouter } from 'next/navigation'
+import { ProductCardActions } from '@/components/products/product-card-actions'
+import { MileagePriceSelector } from '@/components/acura/mileage-price-selector'
+import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
 
 export default function AcuraPartDetailPage() {
   const params = useParams()
+  const router = useRouter()
   const id = params.id as string
   const part = getPartById(id)
   
   const [quantity, setQuantity] = useState(1)
   const [addedToCart, setAddedToCart] = useState(false)
+  // Price of the mileage tier the shopper selected (null = default medium tier).
+  const [selectedPrice, setSelectedPrice] = useState<number | null>(null)
+
+  // Match this part to the pricing-sheet product (by MPN) for real 3-tier pricing.
+  const sheetProduct = part ? acuraProducts.find((p) => p.mpn === part.mpn) : undefined
+  // Derive tiers from sheet ratios when no sheet match (low ≈ +8.3%, high ≈ −16.7%).
+  const pricingTiers = part
+    ? sheetProduct?.pricingTiers ?? {
+        low: Math.round(part.price * 1.083),
+        medium: part.price,
+        high: Math.round(part.price * 0.833),
+      }
+    : undefined
+
+  const handleSearch = (filters: SearchFilters) => {
+    const searchParams = new URLSearchParams()
+    if (filters.make) searchParams.append('make', filters.make)
+    if (filters.model) searchParams.append('model', filters.model)
+    if (filters.year) searchParams.append('year', filters.year)
+    if (filters.partType) searchParams.append('part', filters.partType)
+    router.push(`/search?${searchParams.toString()}`)
+  }
   
   const addToCart = useCartStore((state) => state.addItem)
   const addToWishlist = useWishlistStore((state) => state.addItem)
@@ -44,7 +72,7 @@ export default function AcuraPartDetailPage() {
     addToCart({
       id: part.id,
       name: part.title,
-      price: part.price,
+      price: selectedPrice ?? pricingTiers?.medium ?? part.price,
       quantity: quantity,
       image: part.image,
       make: 'Acura',
@@ -168,15 +196,16 @@ export default function AcuraPartDetailPage() {
                 <p className="text-sm text-muted-foreground mt-2">MPN: {part.mpn}</p>
               </div>
 
-              {/* Price */}
+              {/* Interactive pricing by mileage — click a tier to change the price */}
               <div className="p-6 rounded-xl bg-gradient-to-br from-card to-card/50 border border-border/50">
-                <div className="flex items-baseline gap-3 mb-2">
-                  <span className="text-4xl font-bold text-foreground">${part.price.toFixed(2)}</span>
-                  <span className="text-lg text-muted-foreground line-through">${part.originalPrice.toFixed(2)}</span>
-                </div>
-                <div className="flex items-center gap-2">
+                <MileagePriceSelector
+                  basePrice={part.price}
+                  tiers={pricingTiers}
+                  onTierChange={(_, price) => setSelectedPrice(price)}
+                />
+                <div className="flex items-center gap-2 mt-3">
                   <Tag className="w-4 h-4 text-green-400" />
-                  <span className="text-green-400 font-semibold">You save ${(part.originalPrice - part.price).toFixed(2)} (15%)</span>
+                  <span className="text-green-400 font-semibold">Used OEM — typically 50–70% below new part price</span>
                 </div>
               </div>
 
@@ -237,7 +266,7 @@ export default function AcuraPartDetailPage() {
                     ) : (
                       <>
                         <ShoppingCart className="w-5 h-5" />
-                        Add to Cart — ${(part.price * quantity).toFixed(2)}
+                        Add to Cart — ${((selectedPrice ?? pricingTiers?.medium ?? part.price) * quantity).toFixed(2)}
                       </>
                     )}
                   </button>
@@ -258,21 +287,25 @@ export default function AcuraPartDetailPage() {
                 )}
               </div>
 
-              {/* Contact CTA */}
-              <div className="p-4 rounded-xl bg-card border border-border/50">
-                <p className="text-sm text-muted-foreground mb-3">Have questions about this part?</p>
-                <div className="flex flex-wrap gap-3">
-                  <a href="tel:8888185001" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-green-500/10 border border-green-500/30 text-green-400 text-sm font-semibold hover:bg-green-500/20 transition-colors">
-                    <Phone className="w-4 h-4" />
-                    (888) 818-5001
-                  </a>
-                  <Link href="/quote" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 text-sm font-semibold hover:bg-amber-500/20 transition-colors">
-                    <Mail className="w-4 h-4" />
-                    Get Quote
-                  </Link>
-                </div>
-              </div>
+              {/* Call / Message / Quote / Details actions — same as other product pages */}
+              <ProductCardActions
+                productId={String(part.id)}
+                productName={part.title}
+                productPrice={selectedPrice ?? pricingTiers?.medium ?? part.price}
+                productImage={part.image}
+                productType={part.partType}
+                make="Acura"
+              />
             </div>
+          </div>
+
+          {/* Apple-style search form */}
+          <div className="mt-12">
+            <AppleStylePartsSearch
+              onSearch={handleSearch}
+              title="Find Another Part"
+              subtitle="Search our full inventory of quality used auto parts"
+            />
           </div>
 
           {/* Related Parts */}
