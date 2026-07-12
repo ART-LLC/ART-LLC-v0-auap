@@ -29,15 +29,11 @@ export default function AcuraPartDetailPage() {
   const [selectedPrice, setSelectedPrice] = useState<number | null>(null)
 
   // Match this part to the pricing-sheet product (by MPN) for real 3-tier pricing.
+  // Only sheet-provided tiers are used — no derived/fabricated pricing.
   const sheetProduct = part ? acuraProducts.find((p) => p.mpn === part.mpn) : undefined
-  // Derive tiers from sheet ratios when no sheet match (low ≈ +8.3%, high ≈ −16.7%).
-  const pricingTiers = part
-    ? sheetProduct?.pricingTiers ?? {
-        low: Math.round(part.price * 1.083),
-        medium: part.price,
-        high: Math.round(part.price * 0.833),
-      }
-    : undefined
+  const pricingTiers = sheetProduct?.pricingTiers
+  // Display price comes from the sheet when matched, otherwise the catalog price.
+  const displayPrice = sheetProduct?.price ?? part?.price ?? 0
 
   const handleSearch = (filters: SearchFilters) => {
     const searchParams = new URLSearchParams()
@@ -73,7 +69,7 @@ export default function AcuraPartDetailPage() {
     addToCart({
       id: part.id,
       name: part.title,
-      price: selectedPrice ?? pricingTiers?.medium ?? part.price,
+      price: selectedPrice ?? displayPrice,
       quantity: quantity,
       image: part.image,
       make: 'Acura',
@@ -200,7 +196,7 @@ export default function AcuraPartDetailPage() {
               {/* Interactive pricing by mileage — click a tier to change the price */}
               <div className="p-6 rounded-xl bg-gradient-to-br from-card to-card/50 border border-border/50">
                 <MileagePriceSelector
-                  basePrice={part.price}
+                  basePrice={displayPrice}
                   tiers={pricingTiers}
                   onTierChange={(_, price) => setSelectedPrice(price)}
                 />
@@ -267,7 +263,7 @@ export default function AcuraPartDetailPage() {
                     ) : (
                       <>
                         <ShoppingCart className="w-5 h-5" />
-                        Add to Cart — ${((selectedPrice ?? pricingTiers?.medium ?? part.price) * quantity).toFixed(2)}
+                        Add to Cart — ${((selectedPrice ?? displayPrice) * quantity).toFixed(2)}
                       </>
                     )}
                   </button>
@@ -292,7 +288,7 @@ export default function AcuraPartDetailPage() {
               <ProductCardActions
                 productId={String(part.id)}
                 productName={part.title}
-                productPrice={selectedPrice ?? pricingTiers?.medium ?? part.price}
+                productPrice={selectedPrice ?? displayPrice}
                 productImage={part.image}
                 productType={part.partType}
                 make="Acura"

@@ -33,13 +33,6 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
 
   const related = getRelatedProducts(product)
 
-  // Three-tier mileage pricing derived from the sheet's ratios (low ≈ +8.3%, high ≈ −16.7%).
-  const pricingTiers = {
-    low: Math.round(product.price * 1.083),
-    medium: product.price,
-    high: Math.round(product.price * 0.833),
-  }
-
   const handleSearch = (filters: SearchFilters) => {
     const queryParams = new URLSearchParams()
     if (filters.make) queryParams.append('make', filters.make)
@@ -121,10 +114,9 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                   </div>
                 </div>
 
-                {/* Interactive pricing by mileage — click a tier to change the price */}
+                {/* Price — tier picker renders only when real sheet tiers exist */}
                 <MileagePriceSelector
                   basePrice={product.price}
-                  tiers={pricingTiers}
                   onTierChange={(_, price) => setSelectedPrice(price)}
                 />
 
@@ -132,7 +124,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                 <ProductCardActions
                   productId={String(product.id)}
                   productName={product.name}
-                  productPrice={selectedPrice ?? pricingTiers.medium}
+                  productPrice={selectedPrice ?? product.price}
                   productImage={product.image}
                   productType={product.category}
                   make={product.fits}
