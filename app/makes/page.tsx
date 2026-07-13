@@ -7,7 +7,16 @@ import { Footer } from "@/components/footer"
 
 import { BrandLogosSection } from "@/components/brand-logos"
 import { CAR_MAKES, CAR_MODELS, BRAND_COLORS, PART_CATEGORIES, getBrandLogoUrl } from "@/lib/data"
+import brandManifest from "@/data/brands/manifest.json"
 import { Search, Phone, Eye } from "lucide-react"
+
+/** Slugs of brands that have a generated product catalog at /brands/[slug]. */
+const CATALOG_SLUGS = new Set((brandManifest as { slug: string }[]).map((b) => b.slug))
+
+/** Convert a display make name to its catalog slug. */
+function makeToSlug(make: string): string {
+  return make.toLowerCase().replace(/\s+/g, "-")
+}
 
 function getInitials(brand: string): string {
   const words = brand.split(/[\s-]+/)
@@ -97,11 +106,17 @@ export default function MakesPage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-3 mb-8 sm:mb-12" role="tabpanel">
             {filteredMakes.map((make) => {
               const isActive = selectedMake === make
+              const slug = makeToSlug(make)
+              const hasCatalog = CATALOG_SLUGS.has(slug)
+              // Brands with a product catalog link straight to their catalog
+              // page; the rare few without one keep the in-page model selector.
+              const href = hasCatalog ? `/brands/${slug}` : `/makes/${encodeURIComponent(slug)}`
               return (
                 <Link
                   key={make}
-                  href={`/makes/${encodeURIComponent(make.toLowerCase().replace(/\s+/g, "-"))}`}
+                  href={href}
                   onClick={(e) => {
+                    if (hasCatalog) return
                     if (isActive) {
                       e.preventDefault()
                       setSelectedMake(null)
