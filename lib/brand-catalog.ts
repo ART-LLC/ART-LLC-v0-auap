@@ -708,9 +708,17 @@ function getBrandModelImage(brand: string, category: string, productName: string
       return '/product-images/transmission/toyota-automatic-4speed.png'
     }
     
-    // Other manufacturers use their per-SKU branded transmission illustration
-    // until a matching brand/spec photograph is available.
-    return null
+    // Other manufacturers resolve to a professional transmission photograph
+    // selected by transmission type. This keeps every transmission SKU on a
+    // real, locked-ratio product photo (like engines) instead of the generated
+    // OG card, satisfying consistent styling across all brands and pages.
+    if (name.includes('cvt')) {
+      return '/product-images/transmission/cvt-transmission-branded.png'
+    }
+    if (name.includes('manual') || /\bmt\b/.test(name) || /\d-speed manual/.test(name)) {
+      return '/product-images/transmission/manual-transmission-branded.png'
+    }
+    return '/product-images/transmission/automatic-transmission-branded.png'
   }
 
   // Unknown parts use their per-SKU branded illustration rather than another brand.
