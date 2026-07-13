@@ -23,14 +23,15 @@ export function IntercomProvider({ user }: IntercomProviderProps) {
   useEffect(() => {
     // Load Intercom widget script
     const script = document.createElement('script')
+    script.type = 'text/javascript'
     script.async = true
-    script.src = 'https://widget.intercom.io/widget/pnwvqy83'
+    script.src = 'https://widget.intercom.io/widget/pldz9zi1'
     document.head.appendChild(script)
 
     // Boot Intercom once the widget is loaded
     const bootIntercom = async () => {
       try {
-        // If user is authenticated, fetch JWT and set it before booting
+        // If user is authenticated, fetch JWT and boot with token
         if (user?.id) {
           try {
             // Fetch secure JWT token from server
@@ -47,31 +48,32 @@ export function IntercomProvider({ user }: IntercomProviderProps) {
             if (tokenResponse.ok) {
               const { token } = await tokenResponse.json()
 
-              // Set JWT token before logging in user
-              window.Intercom('setUserJwt', token)
-
-              // Login authenticated user with same user_id used in JWT
-              window.Intercom('login', {
-                user_id: user.id,
-                email: user.email,
-                name: user.name,
+              // Boot Intercom with JWT token for authenticated users
+              window.Intercom('boot', {
+                api_base: 'https://api-iam.intercom.io',
+                app_id: 'pldz9zi1',
+                intercom_user_jwt: token,
+                session_duration: 86400000, // 1 day
               })
             } else {
               // Fallback: boot as anonymous
               window.Intercom('boot', {
-                app_id: 'pnwvqy83',
+                api_base: 'https://api-iam.intercom.io',
+                app_id: 'pldz9zi1',
               })
             }
           } catch (error) {
             console.warn('[Intercom] Token fetch failed, booting anonymously:', error)
             window.Intercom('boot', {
-              app_id: 'pnwvqy83',
+              api_base: 'https://api-iam.intercom.io',
+              app_id: 'pldz9zi1',
             })
           }
         } else {
           // Boot Intercom anonymously for non-authenticated users
           window.Intercom('boot', {
-            app_id: 'pnwvqy83',
+            api_base: 'https://api-iam.intercom.io',
+            app_id: 'pldz9zi1',
           })
         }
       } catch (error) {
