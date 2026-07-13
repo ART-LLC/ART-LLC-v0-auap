@@ -38,7 +38,7 @@ export default function ContactPage() {
               {[
                 { icon: Phone, title: "(888) 818-5001", sub: "Mon-Sat 8am-6pm PST", href: "tel:8888185001" },
                 { image: "/images/icon-email-logo.png", title: "aupworld@gmail.com", sub: "Response within 24 hours", href: "mailto:aupworld@gmail.com" },
-                { icon: MapPin, title: "107 Myrtle Ave, Woodbine, NJ 08270", sub: "United States", href: "#" },
+                { icon: MapPin, title: "508 S Elm St, Ste 104, Denton, TX 76201", sub: "United States", href: "https://maps.google.com/?q=508+S+Elm+St+Ste+104+Denton+TX+76201" },
                 { icon: Clock, title: "Business Hours", sub: "Monday-Saturday 8:00am - 6:00pm PST", href: "#" },
               ].map(({ icon: Icon, image, title, sub, href }) => (
                 <a key={title} href={href} className="glass-card rounded-sm p-5 flex items-start gap-4 hover:-translate-y-0.5 transition-all">

@@ -85,7 +85,7 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
             </div>
             
             <h1 className="text-3xl sm:text-4xl font-black text-foreground text-balance">
-              Used {label} Engines, Transmissions &amp; Parts
+              {`Used ${label} Engines, Transmissions & Parts`}
             </h1>
             <p className="mt-3 max-w-2xl text-muted-foreground leading-relaxed">
               {(catalog?.products?.length || 0).toLocaleString()} tested used OEM {label} parts with exact mileage-based

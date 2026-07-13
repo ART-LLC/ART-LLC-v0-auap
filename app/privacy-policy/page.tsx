@@ -98,7 +98,7 @@ const sections = [
       "If you have any questions or concerns about this privacy policy, please contact us:",
       "Phone: (888) 818-5001",
       "Email: aupworld@gmail.com",
-      "Address: Woodbine, NJ 08270, United States",
+      "Address: 508 S Elm St, Ste 104, Denton, TX 76201, United States",
     ],
   },
 ]
