@@ -125,18 +125,31 @@ export function searchBrandProducts(
   if (!catalog) return { products: [], total: 0, page: 1, pageCount: 0 }
   let items = catalog.products
   if (opts.model) {
-    const m = opts.model.toLowerCase()
-    items = items.filter((p) => (p.model || "").toLowerCase() === m)
+    // Catalog model values often carry a part-type suffix (e.g. "Mustang Engine",
+    // "Integra Transmission"), while the dropdown supplies the clean model name
+    // ("Mustang"). Normalize by stripping the trailing part type, then match
+    // leniently so a selected model still returns its inventory.
+    const m = opts.model.toLowerCase().trim()
+    items = items.filter((p) => {
+      const pm = (p.model || "").toLowerCase().replace(/\s*(engine|transmission)\s*$/i, "").trim()
+      return pm === m || pm.includes(m) || m.includes(pm)
+    })
   }
   if (opts.category) {
     const c = opts.category.toLowerCase()
     items = items.filter((p) => (p.category || "").toLowerCase().includes(c))
   }
   if (opts.q) {
-    const q = opts.q.toLowerCase()
-    items = items.filter(
-      (p) => p.name.toLowerCase().includes(q) || (p.compatibility || "").toLowerCase().includes(q),
-    )
+    const q = opts.q.toLowerCase().trim()
+    // A bare 4-digit year should match the product's model year, not just any
+    // occurrence in the name; otherwise fall back to name/compatibility search.
+    const isYear = /^\d{4}$/.test(q)
+    items = items.filter((p) => {
+      if (isYear && String(p.year || "").trim() === q) return true
+      return (
+        p.name.toLowerCase().includes(q) || (p.compatibility || "").toLowerCase().includes(q)
+      )
+    })
   }
   const total = items.length
   const pageCount = Math.max(1, Math.ceil(total / PAGE_SIZE))
