@@ -26,58 +26,58 @@ section.bg-background,
   background-image:
     repeating-linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.022) 0px,
-      rgba(255, 255, 255, 0.022) 1px,
-      rgba(0, 0, 0, 0.06) 1px,
-      rgba(0, 0, 0, 0.06) 3px
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      rgba(0, 0, 0, 0.02) 1px,
+      rgba(0, 0, 0, 0.02) 3px
     ),
     linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.20) 0%,
-      rgba(255, 255, 255, 0.035) 48%,
-      rgba(255, 255, 255, 0.045) 52%,
-      rgba(0, 0, 0, 0.20) 100%
+      rgba(0, 0, 0, 0.08) 0%,
+      rgba(255, 255, 255, 0.08) 48%,
+      rgba(255, 255, 255, 0.12) 52%,
+      rgba(0, 0, 0, 0.08) 100%
     ) !important;
   background-size: 3px 100%, 100% 100% !important;
   background-repeat: repeat, no-repeat !important;
 }
 
 :root {
-  /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic ── */
-  --background: #3a3d44;
-  --history-panel: #080a0c;
-  --foreground: #eef1f8;
-  --card: #0f1117;
-  --card-foreground: #dce1f0;
-  --popover: #141820;
-  --popover-foreground: #dce1f0;
-  --primary: #b4bddc;
-  --primary-foreground: #080808;
-  --secondary: #1a1f2e;
-  --secondary-foreground: #b4bddc;
-  --muted: #16181f;
-  --muted-foreground: #6a7080;
-  --accent: #3a4555;
-  --accent-foreground: #dce1f0;
-  --destructive: #c84040;
+  /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic (BRIGHTENED) ── */
+  --background: #5a5f68;
+  --history-panel: #2a2f38;
+  --foreground: #f5f7fc;
+  --card: #3a3f48;
+  --card-foreground: #e5ebf5;
+  --popover: #4a505a;
+  --popover-foreground: #e5ebf5;
+  --primary: #d4ddf5;
+  --primary-foreground: #1a1a1a;
+  --secondary: #4a5268;
+  --secondary-foreground: #d4ddf5;
+  --muted: #5a6278;
+  --muted-foreground: #a5b0c0;
+  --accent: #6a7590;
+  --accent-foreground: #f0f4fa;
+  --destructive: #d65050;
   --destructive-foreground: #ffffff;
-  --border: #1f2230;
-  --input: #141820;
-  --ring: #b4bddc;
-  --chart-1: #3a4555;
-  --chart-2: #6a7080;
-  --chart-3: #dce1f0;
-  --chart-4: #4a5568;
-  --chart-5: #1f2230;
+  --border: #5a6270;
+  --input: #4a5158;
+  --ring: #d4ddf5;
+  --chart-1: #6a7590;
+  --chart-2: #a5b0c0;
+  --chart-3: #e5ebf5;
+  --chart-4: #7a8598;
+  --chart-5: #5a6270;
   --radius: 0.5rem;
-  --sidebar: #080a0c;
-  --sidebar-foreground: #dce1f0;
-  --sidebar-primary: #3a4555;
-  --sidebar-primary-foreground: #dce1f0;
-  --sidebar-accent: #16181f;
-  --sidebar-accent-foreground: #dce1f0;
-  --sidebar-border: #1f2230;
-  --sidebar-ring: #3a4555;
+  --sidebar: #2a2f38;
+  --sidebar-foreground: #e5ebf5;
+  --sidebar-primary: #6a7590;
+  --sidebar-primary-foreground: #e5ebf5;
+  --sidebar-accent: #5a6278;
+  --sidebar-accent-foreground: #e5ebf5;
+  --sidebar-border: #5a6270;
+  --sidebar-ring: #6a7590;
 }
 
 /* ── Light mode overrides ────────────────────────────── */
@@ -159,6 +159,11 @@ section.bg-background,
   }
   * {
     @apply border-border outline-ring/50;
+  }
+  
+  /* Brighten all images for better visibility on the brightened theme */
+  img {
+    filter: brightness(1.12) contrast(1.05);
   }
   body {
     @apply bg-background text-foreground;
@@ -242,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─────────────────────────────────────────────────────────
    LIGHT MODE — GLOBAL BODY & PARAGRAPH READABILITY
    Ensures ALL text is dark and clearly legible on white/light bg
-   ──────────────────────────────────────────────────────── */
+   ─────────────────────────────────────��────────────────── */
 .light body {
   color: #0f1117;
 }
@@ -3264,7 +3269,7 @@ footer .wordmark-3d {
   -webkit-background-clip: text;
 }
 
-/* ═══════════════════════════════════════════════════════
+/* ════════════════════════════════════════════════════���══
    PREMIUM HEADER — Apple Glassmorphism + LED Animations
    ════════════════��═══════════════���══════════════════════ */
 
