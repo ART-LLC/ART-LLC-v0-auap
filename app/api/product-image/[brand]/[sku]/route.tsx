@@ -43,6 +43,8 @@ export async function GET(
     return new Response('Unknown product', { status: 404 })
   }
 
+
+
   const label = getBrandLabel(brand)
   const seed = hashCode(`${brand}:${product.canonicalSlug}`)
   const productName = product.name.toLowerCase()
