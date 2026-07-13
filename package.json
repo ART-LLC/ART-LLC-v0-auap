@@ -6,7 +6,11 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "next start",
+    "sandbox": "node scripts/sandbox-cli.mjs",
+    "sandbox:create": "node scripts/sandbox-cli.mjs create",
+    "sandbox:auth": "node scripts/sandbox-cli.mjs auth",
+    "sandbox:advanced": "node scripts/sandbox-cli.mjs advanced"
   },
   "dependencies": {
     "@ai-sdk/react": "^4.0.23",
@@ -71,6 +75,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vercel/sandbox": "^2.5.0",
     "postcss": "^8.5",
     "sharp": "^0.35.3",
     "tailwindcss": "^4.1.9",
