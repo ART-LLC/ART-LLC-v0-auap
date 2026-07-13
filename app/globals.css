@@ -26,58 +26,58 @@ section.bg-background,
   background-image:
     repeating-linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.05) 0px,
-      rgba(255, 255, 255, 0.05) 1px,
-      rgba(0, 0, 0, 0.02) 1px,
-      rgba(0, 0, 0, 0.02) 3px
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      rgba(0, 0, 0, 0.06) 1px,
+      rgba(0, 0, 0, 0.06) 3px
     ),
     linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.08) 0%,
-      rgba(255, 255, 255, 0.08) 48%,
-      rgba(255, 255, 255, 0.12) 52%,
-      rgba(0, 0, 0, 0.08) 100%
+      rgba(0, 0, 0, 0.22) 0%,
+      rgba(255, 255, 255, 0.03) 48%,
+      rgba(255, 255, 255, 0.04) 52%,
+      rgba(0, 0, 0, 0.22) 100%
     ) !important;
   background-size: 3px 100%, 100% 100% !important;
   background-repeat: repeat, no-repeat !important;
 }
 
 :root {
-  /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic (BALANCED) ── */
-  --background: #464b54;
-  --history-panel: #1f2329;
+  /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic (DARK) ── */
+  --background: #16181f;
+  --history-panel: #0c0e12;
   --foreground: #e8ecf3;
-  --card: #2f3540;
+  --card: #1c1f27;
   --card-foreground: #dce1ed;
-  --popover: #3a4050;
+  --popover: #1c1f27;
   --popover-foreground: #dce1ed;
-  --primary: #c4cde5;
+  --primary: #b4bddc;
   --primary-foreground: #0d0d0d;
-  --secondary: #3a4860;
-  --secondary-foreground: #c4cde5;
-  --muted: #4a5270;
-  --muted-foreground: #95a0b0;
-  --accent: #5a6580;
+  --secondary: #242a38;
+  --secondary-foreground: #b4bddc;
+  --muted: #20242e;
+  --muted-foreground: #7a8496;
+  --accent: #323a4a;
   --accent-foreground: #e8ecf3;
-  --destructive: #d05555;
+  --destructive: #c84040;
   --destructive-foreground: #ffffff;
-  --border: #4a5268;
-  --input: #3a4250;
-  --ring: #c4cde5;
-  --chart-1: #5a6580;
-  --chart-2: #95a0b0;
+  --border: #2a2f3c;
+  --input: #1c2028;
+  --ring: #b4bddc;
+  --chart-1: #323a4a;
+  --chart-2: #7a8496;
   --chart-3: #dce1ed;
-  --chart-4: #6a7588;
-  --chart-5: #4a5268;
+  --chart-4: #4a5568;
+  --chart-5: #2a2f3c;
   --radius: 0.5rem;
-  --sidebar: #1f2329;
+  --sidebar: #0c0e12;
   --sidebar-foreground: #dce1ed;
-  --sidebar-primary: #5a6580;
+  --sidebar-primary: #323a4a;
   --sidebar-primary-foreground: #dce1ed;
-  --sidebar-accent: #4a5270;
+  --sidebar-accent: #20242e;
   --sidebar-accent-foreground: #dce1ed;
-  --sidebar-border: #4a5268;
-  --sidebar-ring: #5a6580;
+  --sidebar-border: #2a2f3c;
+  --sidebar-ring: #323a4a;
 }
 
 /* ── Light mode overrides ────────────────────────────── */
@@ -161,9 +161,9 @@ section.bg-background,
     @apply border-border outline-ring/50;
   }
   
-  /* Balanced image brightness for better visibility */
+  /* Neutral image rendering — no artificial brightness */
   img {
-    filter: brightness(0.95) contrast(1.02);
+    filter: none;
   }
   body {
     @apply bg-background text-foreground;
