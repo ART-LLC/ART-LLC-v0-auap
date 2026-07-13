@@ -30,7 +30,7 @@ export function IntercomProvider({ user }: IntercomProviderProps) {
     // Boot Intercom once the widget is loaded
     const bootIntercom = async () => {
       try {
-        // Boot Intercom with JWT token if user is authenticated
+        // If user is authenticated, fetch JWT and set it before booting
         if (user?.id) {
           try {
             // Fetch secure JWT token from server
@@ -47,34 +47,30 @@ export function IntercomProvider({ user }: IntercomProviderProps) {
             if (tokenResponse.ok) {
               const { token } = await tokenResponse.json()
 
-              // Boot Intercom with JWT token (secure identity verification)
-              window.Intercom('boot', {
-                api_base: 'https://api-iam.intercom.io',
-                app_id: 'pnwvqy83',
-                intercom_user_jwt: token,
+              // Set JWT token before logging in user
+              window.Intercom('setUserJwt', token)
+
+              // Login authenticated user with same user_id used in JWT
+              window.Intercom('login', {
                 user_id: user.id,
                 email: user.email,
                 name: user.name,
-                session_duration: 86400000, // 1 day
               })
             } else {
-              // Fallback: boot without JWT
+              // Fallback: boot as anonymous
               window.Intercom('boot', {
-                api_base: 'https://api-iam.intercom.io',
                 app_id: 'pnwvqy83',
               })
             }
           } catch (error) {
             console.warn('[Intercom] Token fetch failed, booting anonymously:', error)
             window.Intercom('boot', {
-              api_base: 'https://api-iam.intercom.io',
               app_id: 'pnwvqy83',
             })
           }
         } else {
           // Boot Intercom anonymously for non-authenticated users
           window.Intercom('boot', {
-            api_base: 'https://api-iam.intercom.io',
             app_id: 'pnwvqy83',
           })
         }
