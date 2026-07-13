@@ -80,11 +80,11 @@ export default function AcuraTsxPage() {
                       <CardTitle className="text-base">{product.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <div className="text-2xl font-bold text-primary">${product.avgPrice}</div>
+                      <div className="text-2xl font-bold text-primary">${product.price}</div>
                       <ProductCardActions
                         productId={product.id}
                         productName={product.name}
-                        productPrice={product.avgPrice}
+                        productPrice={product.price}
                         productImage={product.image}
                         productType={product.category}
                         make="Acura TSX"
@@ -106,12 +106,12 @@ export default function AcuraTsxPage() {
                       <div className="flex-1">
                         <Badge className="mb-2">{product.category}</Badge>
                         <h3 className="font-semibold text-lg">{product.name}</h3>
-                        <div className="text-2xl font-bold text-primary mt-4">${product.avgPrice}</div>
+                        <div className="text-2xl font-bold text-primary mt-4">${product.price}</div>
                         <div className="mt-4">
                           <ProductCardActions
                             productId={product.id}
                             productName={product.name}
-                            productPrice={product.avgPrice}
+                            productPrice={product.price}
                             productImage={product.image}
                             productType={product.category}
                             make="Acura TSX"
