@@ -4,7 +4,6 @@ import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/lib/auth-context'
 import { MobileThemeFab } from '@/components/mobile-theme-fab'
-import { PartsAssistant } from '@/components/ai/parts-assistant'
 import { IntercomProvider } from '@/components/intercom-provider'
 import './globals.css'
 
@@ -85,7 +84,6 @@ export default function RootLayout({
           <ThemeProvider>
             {children}
             <MobileThemeFab />
-            <PartsAssistant />
             <IntercomProvider />
           </ThemeProvider>
         </AuthProvider>
