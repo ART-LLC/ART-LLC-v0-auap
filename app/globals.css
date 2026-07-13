@@ -43,41 +43,41 @@ section.bg-background,
 }
 
 :root {
-  /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic (BRIGHTENED) ── */
-  --background: #5a5f68;
-  --history-panel: #2a2f38;
-  --foreground: #f5f7fc;
-  --card: #3a3f48;
-  --card-foreground: #e5ebf5;
-  --popover: #4a505a;
-  --popover-foreground: #e5ebf5;
-  --primary: #d4ddf5;
-  --primary-foreground: #1a1a1a;
-  --secondary: #4a5268;
-  --secondary-foreground: #d4ddf5;
-  --muted: #5a6278;
-  --muted-foreground: #a5b0c0;
-  --accent: #6a7590;
-  --accent-foreground: #f0f4fa;
-  --destructive: #d65050;
+  /* ── Metallic Silver Embossed — AUAPW LLC industrial aesthetic (BALANCED) ── */
+  --background: #464b54;
+  --history-panel: #1f2329;
+  --foreground: #e8ecf3;
+  --card: #2f3540;
+  --card-foreground: #dce1ed;
+  --popover: #3a4050;
+  --popover-foreground: #dce1ed;
+  --primary: #c4cde5;
+  --primary-foreground: #0d0d0d;
+  --secondary: #3a4860;
+  --secondary-foreground: #c4cde5;
+  --muted: #4a5270;
+  --muted-foreground: #95a0b0;
+  --accent: #5a6580;
+  --accent-foreground: #e8ecf3;
+  --destructive: #d05555;
   --destructive-foreground: #ffffff;
-  --border: #5a6270;
-  --input: #4a5158;
-  --ring: #d4ddf5;
-  --chart-1: #6a7590;
-  --chart-2: #a5b0c0;
-  --chart-3: #e5ebf5;
-  --chart-4: #7a8598;
-  --chart-5: #5a6270;
+  --border: #4a5268;
+  --input: #3a4250;
+  --ring: #c4cde5;
+  --chart-1: #5a6580;
+  --chart-2: #95a0b0;
+  --chart-3: #dce1ed;
+  --chart-4: #6a7588;
+  --chart-5: #4a5268;
   --radius: 0.5rem;
-  --sidebar: #2a2f38;
-  --sidebar-foreground: #e5ebf5;
-  --sidebar-primary: #6a7590;
-  --sidebar-primary-foreground: #e5ebf5;
-  --sidebar-accent: #5a6278;
-  --sidebar-accent-foreground: #e5ebf5;
-  --sidebar-border: #5a6270;
-  --sidebar-ring: #6a7590;
+  --sidebar: #1f2329;
+  --sidebar-foreground: #dce1ed;
+  --sidebar-primary: #5a6580;
+  --sidebar-primary-foreground: #dce1ed;
+  --sidebar-accent: #4a5270;
+  --sidebar-accent-foreground: #dce1ed;
+  --sidebar-border: #4a5268;
+  --sidebar-ring: #5a6580;
 }
 
 /* ── Light mode overrides ────────────────────────────── */
@@ -161,9 +161,9 @@ section.bg-background,
     @apply border-border outline-ring/50;
   }
   
-  /* Brighten all images for better visibility on the brightened theme */
+  /* Balanced image brightness for better visibility */
   img {
-    filter: brightness(1.12) contrast(1.05);
+    filter: brightness(1.08) contrast(1.03);
   }
   body {
     @apply bg-background text-foreground;
