@@ -262,8 +262,8 @@ export default function PartsPage() {
                     <article key={part.id} className="p-3 sm:p-4 border border-white/10 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
                       <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                         {part.image && (
-                          <div className="w-full sm:w-24 h-32 sm:h-24 rounded-md bg-white/10 flex-shrink-0 overflow-hidden">
-                            <img src={part.image} alt={part.name} className="w-full h-full object-cover" />
+                          <div className="w-full sm:w-28 h-36 sm:h-28 rounded-md bg-slate-900 border border-white/10 flex-shrink-0 overflow-hidden flex items-center justify-center">
+                            <img src={part.image} alt={part.name} className="w-full h-full object-contain p-1" />
                           </div>
                         )}
                         <div className="flex-1 min-w-0">
