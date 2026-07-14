@@ -124,10 +124,17 @@ export default function CatalogPage() {
   const [selectedCategory, setSelectedCategory] = useState('All Parts')
   const [sortBy, setSortBy] = useState('name')
   const [selectedMaterial, setSelectedMaterial] = useState<MaterialType | 'all'>('all')
+  const [flashingCard, setFlashingCard] = useState<number | null>(null)
 
   const addToCart = useCartStore((state) => state.addItem)
   const addToWishlist = useWishlistStore((state) => state.addItem)
   const addToComparison = useComparisonStore((state) => state.addItem)
+
+  const handleCardClick = (partId: number, callback: () => void) => {
+    setFlashingCard(partId)
+    callback()
+    setTimeout(() => setFlashingCard(null), 300)
+  }
 
   // Filter and sort parts
   const filteredParts = useMemo(() => {
@@ -304,7 +311,9 @@ export default function CatalogPage() {
                     {filteredParts.map((part) => (
                       <div
                         key={part.id}
-                        className="bg-gradient-to-br from-slate-800 to-slate-900 border-2 border-slate-600 rounded-xl p-4 sm:p-6 transition-all duration-300 flex flex-col shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),inset_0_-2px_4px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.6)] hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15),inset_0_-2px_4px_rgba(0,0,0,0.5),0_8px_20px_rgba(0,0,0,0.8)] hover:border-slate-500"
+                        className={`bg-gradient-to-br from-slate-800 to-slate-900 border-2 border-slate-600 rounded-xl p-4 sm:p-6 transition-all duration-300 flex flex-col shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),inset_0_-2px_4px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.6)] hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15),inset_0_-2px_4px_rgba(0,0,0,0.5),0_8px_20px_rgba(0,0,0,0.8)] hover:border-slate-500 ${
+                          flashingCard === part.id ? 'animate-pulse scale-105' : ''
+                        }`}
                       >
                         {/* Part Header */}
                         <div className="mb-3 flex-1">
@@ -339,8 +348,8 @@ export default function CatalogPage() {
                         {/* Action Buttons */}
                         <div className="flex flex-col gap-2 mt-auto">
                           <button
-                            onClick={() => handleAddToCart(part)}
-                            className="auapw-btn auapw-btn-blue w-full"
+                            onClick={() => handleCardClick(part.id, () => handleAddToCart(part))}
+                            className={`auapw-btn auapw-btn-blue w-full transition-all ${flashingCard === part.id ? 'animate-pulse' : ''}`}
                             aria-label={`Add ${part.name} to cart`}
                           >
                             <ShoppingCart className="w-4 h-4" />
@@ -348,8 +357,8 @@ export default function CatalogPage() {
                           </button>
                           <div className="flex gap-2">
                             <button
-                              onClick={() => handleAddToWishlist(part)}
-                              className="auapw-btn auapw-btn-red flex-1"
+                              onClick={() => handleCardClick(part.id, () => handleAddToWishlist(part))}
+                              className={`auapw-btn auapw-btn-red flex-1 transition-all ${flashingCard === part.id ? 'animate-pulse' : ''}`}
                               aria-label={`Add ${part.name} to wishlist`}
                               title="Add to wishlist"
                             >
@@ -357,8 +366,8 @@ export default function CatalogPage() {
                               <span className="hidden sm:inline">Save</span>
                             </button>
                             <button
-                              onClick={() => handleAddToComparison(part)}
-                              className="auapw-btn auapw-btn-silver flex-1"
+                              onClick={() => handleCardClick(part.id, () => handleAddToComparison(part))}
+                              className={`auapw-btn auapw-btn-silver flex-1 transition-all ${flashingCard === part.id ? 'animate-pulse' : ''}`}
                               aria-label={`Add ${part.name} to comparison`}
                               title="Add to comparison"
                             >
