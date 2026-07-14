@@ -20,6 +20,7 @@ import {
 } from '@/lib/brand-catalog'
 import { ChevronRight, ChevronLeft, Search } from 'lucide-react'
 import { BrandStorySection } from '@/components/brands/brand-story-section'
+import { BrandFeaturesSection } from '@/components/brands/brand-features-section'
 import { BrandMaterialTabs } from '@/components/brands/brand-material-tabs'
 import { MaterialType, filterPartsByMaterial, countPartsByMaterial } from '@/lib/material-mapper'
 
@@ -225,6 +226,13 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
 
         {/* Brand Story Section */}
         <BrandStorySection brand={brand} label={label} productCount={catalog?.products?.length || 0} />
+
+        {/* Brand Features Section */}
+        <BrandFeaturesSection
+          brandName={label}
+          partCount={catalog?.products?.length || 0}
+          modelCount={models.length}
+        />
 
         {/* Model filter table (inspired by reference design) */}
         {models.length > 1 && (
