@@ -19,6 +19,7 @@ import {
   searchBrandProducts,
 } from '@/lib/brand-catalog'
 import { ChevronRight, ChevronLeft, Search } from 'lucide-react'
+import { SearchForm } from '@/components/search-form'
 import { BrandStorySection } from '@/components/brands/brand-story-section'
 import { BrandFeaturesSection } from '@/components/brands/brand-features-section'
 import { BrandMaterialTabs } from '@/components/brands/brand-material-tabs'
@@ -201,26 +202,10 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
               </div>
             </div>
 
-            {/* Search Form */}
-            <form method="get" className="mt-10 flex flex-col sm:flex-row max-w-2xl gap-3" role="search" aria-label={`Search ${label} parts`}>
-              {sp.model ? <input type="hidden" name="model" value={sp.model} /> : null}
-              <div className="flex-1 relative">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-foreground/50" />
-                <input
-                  type="search"
-                  name="q"
-                  defaultValue={sp.q || ''}
-                  placeholder={`Search ${label} parts…`}
-                  className="w-full rounded-xl border border-foreground/15 bg-foreground/5 backdrop-blur py-3 pl-12 pr-4 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-foreground/40 focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
-                />
-              </div>
-              <button
-                type="submit"
-                className="rounded-xl bg-foreground/80 hover:bg-foreground text-background px-6 py-3 text-sm font-bold shadow-lg transition-all duration-300"
-              >
-                Search Parts
-              </button>
-            </form>
+            {/* Comprehensive Search Form */}
+            <div className="mt-12">
+              <SearchForm compact={true} />
+            </div>
           </div>
         </section>
 

@@ -24,28 +24,17 @@ export function getPartsSearchUrl(filters: PartsSearchFilters) {
   const partType = filters.partType?.trim() ?? ''
   const make = filters.make?.trim() ?? ''
 
-  // Route to the brand product catalog page whenever a make is selected,
-  // so users always land on real product listings.
-  if (make) {
-    const params = new URLSearchParams()
-    if (filters.model) params.set('model', filters.model)
-    if (isTransmissionPart(partType)) params.set('category', 'transmission')
-    else if (isEnginePart(partType)) params.set('category', 'engine')
-    if (filters.year) params.set('q', filters.year)
-
-    const query = params.toString()
-    const pathname = `/brands/${makeToBrandSlug(make)}`
-    return query ? `${pathname}?${query}` : pathname
-  }
-
-  // No make selected — fall back to the generic search page.
+  // Route to the catalog page with make filter applied
   const params = new URLSearchParams()
+  if (make) params.set('make', make)
   if (filters.model) params.set('model', filters.model)
+  if (isTransmissionPart(partType)) params.set('category', 'transmission')
+  else if (isEnginePart(partType)) params.set('category', 'engine')
+  else if (partType) params.set('category', partType)
   if (filters.year) params.set('year', filters.year)
-  if (partType) params.set('part', partType)
   if (filters.location) params.set('location', filters.location)
   if (filters.zipCode) params.set('zip', filters.zipCode)
 
   const query = params.toString()
-  return query ? `/search?${query}` : '/search'
+  return query ? `/catalog?${query}` : '/catalog'
 }
