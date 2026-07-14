@@ -56,9 +56,9 @@ export function MobileThemeFab() {
   return (
     <div
       className={`
-        fixed bottom-6 z-[9990] sm:hidden
-        flex flex-col items-center gap-3
-        ${side === 'right' ? 'right-3' : 'left-3'}
+        fixed bottom-24 z-[9990] sm:hidden
+        flex flex-col items-center gap-2
+        ${side === 'right' ? 'right-2' : 'left-2'}
       `}
       style={{
         transition: 'left 0.35s cubic-bezier(0.4,0,0.2,1), right 0.35s cubic-bezier(0.4,0,0.2,1)',

@@ -22,7 +22,7 @@ export function MaterialTabs({ selected, onSelect, counts }: MaterialTabsProps) 
 
   return (
     <div className="w-full overflow-x-auto scrollbar-hide bg-gradient-to-r from-white/5 via-white/3 to-transparent backdrop-blur-xl rounded-2xl p-4 sm:p-0 sm:bg-transparent sm:backdrop-blur-none">
-      <div className="flex gap-3 pb-2 min-w-min px-0 sm:px-0 sm:flex-wrap sm:justify-start">
+      <div className="flex gap-3 pb-2 min-w-min pr-6 sm:pr-0 sm:flex-wrap sm:justify-start">
         {/* All Materials Tab - Embossed */}
         <button
           onClick={() => handleTabClick('all')}
