@@ -1,10 +1,8 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
-import { HeroSection } from "@/components/home/hero-section"
-import { ContentSection } from "@/components/home/content-section"
-import { BrandValuesSection } from "@/components/home/brand-values-section"
-import { ShowcaseGallerySection } from "@/components/home/showcase-gallery-section"
+import { PremiumHero } from "@/components/home/premium-hero"
+import { TrustSection } from "@/components/home/trust-section"
 import { CategoriesSection } from "@/components/home/categories-section"
 import { FeaturedProductsSection } from "@/components/home/featured-products-section"
 
@@ -12,11 +10,9 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main className="bg-[#3a3d44]">
-        <HeroSection />
-        <ContentSection />
-        <BrandValuesSection />
-        <ShowcaseGallerySection />
+      <main className="bg-black">
+        <PremiumHero />
+        <TrustSection />
         <CategoriesSection />
         <FeaturedProductsSection />
         <BrandLogosSection />
