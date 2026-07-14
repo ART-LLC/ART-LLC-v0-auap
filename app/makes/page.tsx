@@ -238,15 +238,13 @@ export default function MakesPage() {
             </div>
           )}
 
-          {/* Brands Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-3 mb-8 sm:mb-12" role="tabpanel">
+          {/* Brands Grid - Enhanced with Embossed Design */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-8 sm:mb-12" role="tabpanel">
             {filteredMakes.map((make) => {
               const isActive = selectedMake === make
               const slug = makeToSlug(make)
               const hasCatalog = CATALOG_SLUGS.has(slug)
               const count = BRAND_COUNTS[slug] || 0
-              // Brands with a product catalog link straight to their catalog
-              // page; the rare few without one keep the in-page model selector.
               const href = hasCatalog ? `/brands/${slug}` : `/makes/${encodeURIComponent(slug)}`
               return (
                 <Link
@@ -261,19 +259,45 @@ export default function MakesPage() {
                       setSelectedMake(make)
                     }
                   }}
-                  className={`group relative flex flex-col items-center gap-2 py-4 px-3 rounded-lg border transition-all cursor-pointer ${
+                  className={`group relative flex flex-col gap-4 p-6 rounded-xl border-2 transition-all cursor-pointer ${
                     isActive
-                      ? "bg-primary/15 border-primary/60 -translate-y-1 shadow-[0_8px_32px_rgba(0,0,0,0.2)]"
-                      : "bg-card border-border/40 hover:-translate-y-0.5 hover:border-primary/30"
+                      ? "border-slate-400 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.8),inset_0_-2px_4px_rgba(0,0,0,0.3),0_4px_12px_rgba(0,0,0,0.4)]"
+                      : "border-slate-600 bg-gradient-to-br from-slate-800 to-slate-900 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),inset_0_-2px_4px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.6)] hover:border-slate-500 hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15),inset_0_-2px_4px_rgba(0,0,0,0.5),0_8px_20px_rgba(0,0,0,0.8)]"
                   }`}
                 >
-                  <MakeLogo brand={make} />
-                  <span className={`text-[11px] font-semibold text-center leading-tight ${isActive ? "text-foreground" : "text-muted-foreground"}`}>
-                    {make}
-                  </span>
-                  {/* Product Count Badge */}
-                  <div className={`text-[9px] font-bold px-2 py-0.5 rounded-full ${getCountBadgeColor(count)}`}>
-                    {count.toLocaleString()} parts
+                  {/* Header: Logo + Brand Name + Parts Count */}
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex-1">
+                      <h3 className={`text-sm sm:text-base font-black uppercase tracking-wider leading-tight mb-1 ${isActive ? "text-slate-900" : "text-white"}`}>
+                        {make}
+                      </h3>
+                      <div className={`text-xs font-bold px-2.5 py-1 rounded-full inline-block ${
+                        isActive 
+                          ? "bg-slate-400/40 text-slate-900"
+                          : getCountBadgeColor(count)
+                      }`}>
+                        {count.toLocaleString()} parts
+                      </div>
+                    </div>
+                    <MakeLogo brand={make} size="sm" />
+                  </div>
+
+                  {/* Icons: Engines & Transmissions */}
+                  <div className={`flex items-center gap-4 text-xs font-semibold ${isActive ? "text-slate-700" : "text-muted-foreground"}`}>
+                    <div className="flex items-center gap-1.5">
+                      <div className="w-4 h-4 flex items-center justify-center">⚙️</div>
+                      <span>Used Engines</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <div className="w-4 h-4 flex items-center justify-center">🔧</div>
+                      <span>Transmissions</span>
+                    </div>
+                  </div>
+
+                  {/* Browse Link */}
+                  <div className={`text-sm font-bold flex items-center gap-1.5 group/link ${isActive ? "text-slate-900" : "text-white"}`}>
+                    <span className="group-hover/link:underline">Browse {make} parts</span>
+                    <span className="text-lg group-hover/link:translate-x-0.5 transition-transform">›</span>
                   </div>
                 </Link>
               )
