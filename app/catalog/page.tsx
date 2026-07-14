@@ -3,11 +3,13 @@
 import { useState, useMemo } from 'react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { MaterialTabs } from '@/components/material-tabs'
 import { Search, ShoppingCart, Heart, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
 import { useCartStore } from '@/lib/stores/cart-store'
 import { useWishlistStore } from '@/lib/stores/wishlist-store'
 import { useComparisonStore } from '@/lib/stores/comparison-store'
+import { MaterialType, filterPartsByMaterial, countPartsByMaterial } from '@/lib/material-mapper'
 
 // All parts catalog data
 const ALL_PARTS = [
@@ -121,6 +123,7 @@ export default function CatalogPage() {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('All Parts')
   const [sortBy, setSortBy] = useState('name')
+  const [selectedMaterial, setSelectedMaterial] = useState<MaterialType | 'all'>('all')
 
   const addToCart = useCartStore((state) => state.addItem)
   const addToWishlist = useWishlistStore((state) => state.addItem)
@@ -134,6 +137,9 @@ export default function CatalogPage() {
       return matchesSearch && matchesCategory
     })
 
+    // Apply material filter
+    filtered = filterPartsByMaterial(filtered, selectedMaterial)
+
     // Sort
     if (sortBy === 'price-asc') {
       filtered.sort((a, b) => a.price - b.price)
@@ -145,7 +151,17 @@ export default function CatalogPage() {
     }
 
     return filtered
-  }, [searchQuery, selectedCategory, sortBy])
+  }, [searchQuery, selectedCategory, sortBy, selectedMaterial])
+
+  // Calculate material counts
+  const materialCounts = useMemo(() => {
+    const categoryFiltered = ALL_PARTS.filter((part) => {
+      const matchesSearch = searchQuery === '' || part.name.toLowerCase().includes(searchQuery.toLowerCase())
+      const matchesCategory = selectedCategory === 'All Parts' || part.category === selectedCategory
+      return matchesSearch && matchesCategory
+    })
+    return countPartsByMaterial(categoryFiltered)
+  }, [searchQuery, selectedCategory])
 
   const handleAddToCart = (part: typeof ALL_PARTS[0]) => {
     addToCart({
@@ -260,6 +276,16 @@ export default function CatalogPage() {
 
               {/* Main Grid */}
               <div className="flex-1">
+                {/* Material Filter Tabs */}
+                <div className="mb-8 pb-6 border-b border-border/40">
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-foreground/60 mb-3">Filter by Material</h4>
+                  <MaterialTabs
+                    selected={selectedMaterial}
+                    onSelect={setSelectedMaterial}
+                    counts={materialCounts}
+                  />
+                </div>
+
                 {filteredParts.length === 0 ? (
                   <div className="text-center py-16">
                     <p className="text-foreground/70 text-lg mb-4">No parts found matching your search.</p>
