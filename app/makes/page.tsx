@@ -8,7 +8,7 @@ import { HeroBanner } from "@/components/hero-banner"
 import { BrandLogosSection } from "@/components/brand-logos"
 import { CAR_MAKES, CAR_MODELS, BRAND_COLORS, PART_CATEGORIES, getBrandLogoUrl } from "@/lib/data"
 import brandManifest from "@/data/brands/manifest.json"
-import { Search, Phone, Eye, X } from "lucide-react"
+import { Search, Phone, Eye, X, Settings, Wrench } from "lucide-react"
 
 /** Slugs of brands that have a generated product catalog at /brands/[slug]. */
 const CATALOG_SLUGS = new Set((brandManifest as { slug: string }[]).map((b) => b.slug))
@@ -277,11 +277,11 @@ export default function MakesPage() {
                   {/* Icons: Engines & Transmissions */}
                   <div className={`flex items-center gap-4 text-xs font-semibold ${isActive ? "text-slate-700" : "text-muted-foreground"}`}>
                     <div className="flex items-center gap-1.5">
-                      <div className="w-4 h-4 flex items-center justify-center">⚙️</div>
+                      <Settings className="w-3.5 h-3.5 shrink-0" />
                       <span>Used Engines</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <div className="w-4 h-4 flex items-center justify-center">🔧</div>
+                      <Wrench className="w-3.5 h-3.5 shrink-0" />
                       <span>Transmissions</span>
                     </div>
                   </div>

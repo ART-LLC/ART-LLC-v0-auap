@@ -115,7 +115,7 @@ export function Footer() {
                 <li key={label}>
                   <Link href={href} className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-all duration-200 flex items-center gap-2 font-bold tracking-tight text-3d-subtle">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/70 hover:bg-primary transition-colors flex-shrink-0" />
-                    <span className="truncate">{label}</span>
+                    <span>{label}</span>
                   </Link>
                 </li>
               ))}

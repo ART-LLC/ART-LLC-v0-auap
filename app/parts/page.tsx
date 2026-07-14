@@ -97,9 +97,9 @@ export default function PartsPage() {
       <Navbar />
       <div className="pt-[58px]">
         {/* Header */}
-        <div className="relative border-b border-border/30 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.92), rgba(13,15,22,0.72), rgba(13,15,22,0.95)), url('/images/heroes/hero-warehouse.png')" }}>
+        <div className="relative border-b border-border/30 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.80), rgba(13,15,22,0.58), rgba(13,15,22,0.86)), url('/images/heroes/hero-warehouse.png')" }}>
           <div className="metal-line" />
-          <div className="mx-auto max-w-[1280px] px-6 py-14">
+          <div className="mx-auto max-w-[1280px] px-6 py-20 sm:py-28">
             <div className="flex items-center gap-4 mb-5">
               <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/50" />
               <span className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-primary">Full Inventory</span>

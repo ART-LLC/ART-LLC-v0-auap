@@ -27,7 +27,7 @@ export default function AboutPage() {
       <Navbar />
       <main className="pt-[58px]">
         {/* Hero */}
-        <section className="py-24 relative overflow-hidden bg-[#0d0f16] bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom, rgba(13,15,22,0.88), rgba(13,15,22,0.82), rgba(13,15,22,0.95)), url('/images/heroes/hero-garage.png')" }}>
+        <section className="py-24 relative overflow-hidden bg-[#0d0f16] bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom, rgba(13,15,22,0.75), rgba(13,15,22,0.60), rgba(13,15,22,0.88)), url('/images/heroes/hero-garage.png')" }}>
           <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
           <GearBackground />
           <div className="metal-line absolute top-0 left-0 right-0" />
