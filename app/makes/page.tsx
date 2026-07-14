@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-
+import { HeroBanner } from "@/components/hero-banner"
 import { BrandLogosSection } from "@/components/brand-logos"
 import { CAR_MAKES, CAR_MODELS, BRAND_COLORS, PART_CATEGORIES, getBrandLogoUrl } from "@/lib/data"
 import brandManifest from "@/data/brands/manifest.json"
@@ -117,21 +117,13 @@ export default function MakesPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-[58px]">
-        {/* Header */}
-        <div className="bg-gradient-to-br from-background via-card to-background border-b border-border/30">
-          <div className="metal-line" />
-          <div className="mx-auto max-w-[1280px] px-4 sm:px-6 py-10 sm:py-14">
-            <div className="flex items-center gap-4 mb-5">
-              <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/50" />
-              <span className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-primary">All Makes & Models</span>
-            </div>
-            <h1 className="font-serif text-[clamp(1.75rem,4vw,3.5rem)] font-bold text-foreground">Car Brands</h1>
-            <p className="mt-3 text-sm text-muted-foreground max-w-[520px]">
-              Select a brand to see available models and search for specific parts. We carry parts for all major makes.
-            </p>
-          </div>
-        </div>
+      <main className="pt-0">
+        {/* Hero Banner */}
+        <HeroBanner
+          title="Car Brands & Makes"
+          subtitle="Select a brand to see available models and search for specific parts. We carry parts for all major makes."
+          pathname="/makes"
+        />
 
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 py-8 sm:py-12">
           {/* Search & Sort Controls */}

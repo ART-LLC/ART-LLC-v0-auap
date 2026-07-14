@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { HeroBanner } from '@/components/hero-banner'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -86,15 +87,16 @@ export default function EnginesProductPage() {
     <>
       <Navbar />
       <main className="min-h-screen bg-background">
-        {/* Hero Section */}
-        <section className="relative py-12 sm:py-16 lg:py-20 bg-card/50 border-b border-border">
+        {/* Hero Banner */}
+        <HeroBanner
+          title="Engine Parts & Components"
+          subtitle="Premium quality used engine parts from our 2,000+ yard network. Complete engines, blocks, heads, and components for all makes and models."
+          pathname="/parts/engines"
+        />
+
+        {/* Search & Filters Section */}
+        <section className="relative py-8 sm:py-12 bg-card/50 border-b border-border">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8">
-              <h1 className="text-4xl sm:text-5xl font-black mb-3 text-foreground">Engine Parts & Components</h1>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Premium quality used engine parts from our 2,000+ yard network. Complete engines, blocks, heads, and components for all makes and models.
-              </p>
-            </div>
 
             {/* Search and Filters */}
             <div className="space-y-4">

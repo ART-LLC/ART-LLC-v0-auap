@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { HeroBanner } from '@/components/hero-banner'
 import { MaterialTabs } from '@/components/material-tabs'
 import { Search, ShoppingCart, Heart, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
@@ -207,7 +208,14 @@ export default function CatalogPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-background pt-24">
+      <main className="min-h-screen bg-background">
+        {/* Hero Banner */}
+        <HeroBanner
+          title="Complete Parts Catalog"
+          subtitle="Browse our selection of quality used auto parts with warranty"
+          pathname="/catalog"
+        />
+
         {/* Page Header */}
         <section className="py-12 sm:py-16 relative bg-gradient-to-b from-background to-background/50">
           <div className="metal-line absolute top-0 left-0 right-0" />

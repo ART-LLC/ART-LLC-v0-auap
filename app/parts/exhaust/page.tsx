@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import { Navbar } from '@/components/navbar'
+import { HeroBanner } from '@/components/hero-banner'
 import { Footer } from '@/components/footer'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
