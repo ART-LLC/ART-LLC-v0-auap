@@ -8,10 +8,16 @@ import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 import { CAR_MAKES, CAR_MODELS, BRAND_COLORS, PART_CATEGORIES, getBrandLogoUrl } from "@/lib/data"
 import brandManifest from "@/data/brands/manifest.json"
-import { Search, Phone, Eye } from "lucide-react"
+import { Search, Phone, Eye, X, ArrowUpDown } from "lucide-react"
 
 /** Slugs of brands that have a generated product catalog at /brands/[slug]. */
 const CATALOG_SLUGS = new Set((brandManifest as { slug: string }[]).map((b) => b.slug))
+
+/** Product count map from manifest */
+const BRAND_COUNTS: { [key: string]: number } = {}
+;(brandManifest as { slug: string; count: number }[]).forEach((b) => {
+  BRAND_COUNTS[b.slug] = b.count
+})
 
 /** Convert a display make name to its catalog slug. */
 function makeToSlug(make: string): string {
@@ -53,15 +59,60 @@ function MakeLogo({ brand, size = "sm" }: { brand: string; size?: "sm" | "lg" })
   )
 }
 
+type SortOption = "name-asc" | "name-desc" | "count-desc" | "count-asc"
+
+function getCountBadgeColor(count: number): string {
+  if (count >= 2000) return "bg-green-900 text-green-200"
+  if (count >= 500) return "bg-yellow-900 text-yellow-200"
+  return "bg-red-900 text-red-200"
+}
+
 export default function MakesPage() {
   const [selectedMake, setSelectedMake] = useState<string | null>(null)
+  const [searchQuery, setSearchQuery] = useState("")
+  const [sortBy, setSortBy] = useState<SortOption>("name-asc")
   const models = selectedMake ? CAR_MODELS[selectedMake] || [] : []
 
   const allMakes = CAR_MAKES.slice().sort()
   const letters = Array.from(new Set(allMakes.map((m) => m[0].toUpperCase()))).sort()
   const tabs = ["All", ...letters]
   const [activeTab, setActiveTab] = useState("All")
-  const filteredMakes = activeTab === "All" ? allMakes : allMakes.filter((m) => m[0].toUpperCase() === activeTab)
+  
+  // Filter by search and letter tab
+  let filtered = allMakes.filter((m) => {
+    const matchesTab = activeTab === "All" || m[0].toUpperCase() === activeTab
+    const matchesSearch = searchQuery === "" || m.toLowerCase().includes(searchQuery.toLowerCase())
+    return matchesTab && matchesSearch
+  })
+
+  // Sort
+  if (sortBy === "name-asc") {
+    filtered.sort((a, b) => a.localeCompare(b))
+  } else if (sortBy === "name-desc") {
+    filtered.sort((a, b) => b.localeCompare(a))
+  } else if (sortBy === "count-desc") {
+    filtered.sort((a, b) => {
+      const countA = BRAND_COUNTS[makeToSlug(a)] || 0
+      const countB = BRAND_COUNTS[makeToSlug(b)] || 0
+      return countB - countA
+    })
+  } else if (sortBy === "count-asc") {
+    filtered.sort((a, b) => {
+      const countA = BRAND_COUNTS[makeToSlug(a)] || 0
+      const countB = BRAND_COUNTS[makeToSlug(b)] || 0
+      return countA - countB
+    })
+  }
+
+  const filteredMakes = filtered
+
+  // Top 3 brands by inventory (shown only when no search is active)
+  const topBrands = searchQuery === ""
+    ? allMakes
+        .slice()
+        .sort((a, b) => (BRAND_COUNTS[makeToSlug(b)] || 0) - (BRAND_COUNTS[makeToSlug(a)] || 0))
+        .slice(0, 3)
+    : []
 
   return (
     <>
@@ -83,24 +134,109 @@ export default function MakesPage() {
         </div>
 
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 py-8 sm:py-12">
-          {/* A–Z Tab Bar */}
-          <div className="flex flex-wrap gap-1 mb-4 sm:mb-6" role="tablist" aria-label="Filter brands by letter">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                role="tab"
-                aria-selected={activeTab === tab}
-                onClick={() => { setActiveTab(tab); setSelectedMake(null) }}
-                className={`min-w-[36px] h-8 px-2.5 rounded text-[11px] font-bold tracking-wide transition-all ${
-                  activeTab === tab
-                    ? "bg-primary text-primary-foreground shadow-[0_2px_10px_rgba(0,0,0,0.25)]"
-                    : "bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80"
-                }`}
+          {/* Search & Sort Controls */}
+          <div className="mb-6 sm:mb-8 space-y-4">
+            <div className="flex flex-col sm:flex-row gap-3">
+              {/* Search Box */}
+              <div className="flex-1 relative">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                <input
+                  type="text"
+                  placeholder="Search brands by name..."
+                  value={searchQuery}
+                  onChange={(e) => {
+                    setSearchQuery(e.target.value)
+                    setSelectedMake(null)
+                    setActiveTab("All")
+                  }}
+                  className="w-full pl-10 pr-10 py-2.5 rounded-lg bg-card border border-border/60 text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/30 transition-all text-sm"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={() => {
+                      setSearchQuery("")
+                      setActiveTab("All")
+                    }}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+                    aria-label="Clear search"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                )}
+              </div>
+
+              {/* Sort Dropdown */}
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as SortOption)}
+                className="px-4 py-2.5 rounded-lg bg-card border border-border/60 text-foreground focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/30 transition-all text-sm font-medium cursor-pointer"
               >
-                {tab}
-              </button>
-            ))}
+                <option value="name-asc">Sort: A–Z</option>
+                <option value="name-desc">Sort: Z–A</option>
+                <option value="count-desc">Most Parts</option>
+                <option value="count-asc">Least Parts</option>
+              </select>
+            </div>
+
+            {/* Search Result Count */}
+            {searchQuery && (
+              <div className="text-xs text-muted-foreground">
+                Found {filteredMakes.length} {filteredMakes.length === 1 ? "brand" : "brands"} matching &quot;{searchQuery}&quot;
+              </div>
+            )}
           </div>
+
+          {/* Top 3 Brands (shown only when no search) */}
+          {topBrands.length > 0 && (
+            <div className="mb-8 sm:mb-10">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-1 h-1 bg-primary rounded-full" />
+                <span className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Top Brands</span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {topBrands.map((brand) => {
+                  const slug = makeToSlug(brand)
+                  const count = BRAND_COUNTS[slug] || 0
+                  const href = CATALOG_SLUGS.has(slug) ? `/brands/${slug}` : `/makes/${encodeURIComponent(slug)}`
+                  return (
+                    <Link
+                      key={brand}
+                      href={href}
+                      className="group flex items-center gap-3 p-4 rounded-lg border border-primary/30 bg-primary/5 hover:border-primary/50 hover:bg-primary/10 transition-all"
+                    >
+                      <MakeLogo brand={brand} size="sm" />
+                      <div className="flex-1 min-w-0">
+                        <div className="font-semibold text-foreground text-sm">{brand}</div>
+                        <div className="text-xs text-muted-foreground">{count.toLocaleString()} parts</div>
+                      </div>
+                      <Eye className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors flex-shrink-0" />
+                    </Link>
+                  )
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* A–Z Tab Bar (disabled when searching) */}
+          {searchQuery === "" && (
+            <div className="flex flex-wrap gap-1 mb-4 sm:mb-6" role="tablist" aria-label="Filter brands by letter">
+              {tabs.map((tab) => (
+                <button
+                  key={tab}
+                  role="tab"
+                  aria-selected={activeTab === tab}
+                  onClick={() => { setActiveTab(tab); setSelectedMake(null) }}
+                  className={`min-w-[36px] h-8 px-2.5 rounded text-[11px] font-bold tracking-wide transition-all ${
+                    activeTab === tab
+                      ? "bg-primary text-primary-foreground shadow-[0_2px_10px_rgba(0,0,0,0.25)]"
+                      : "bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80"
+                  }`}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
+          )}
 
           {/* Brands Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-3 mb-8 sm:mb-12" role="tabpanel">
@@ -108,6 +244,7 @@ export default function MakesPage() {
               const isActive = selectedMake === make
               const slug = makeToSlug(make)
               const hasCatalog = CATALOG_SLUGS.has(slug)
+              const count = BRAND_COUNTS[slug] || 0
               // Brands with a product catalog link straight to their catalog
               // page; the rare few without one keep the in-page model selector.
               const href = hasCatalog ? `/brands/${slug}` : `/makes/${encodeURIComponent(slug)}`
@@ -139,6 +276,10 @@ export default function MakesPage() {
                   <span className={`text-[11px] font-semibold text-center leading-tight ${isActive ? "text-foreground" : "text-muted-foreground"}`}>
                     {make}
                   </span>
+                  {/* Product Count Badge */}
+                  <div className={`text-[9px] font-bold px-2 py-0.5 rounded-full ${getCountBadgeColor(count)}`}>
+                    {count.toLocaleString()} parts
+                  </div>
                 </Link>
               )
             })}
