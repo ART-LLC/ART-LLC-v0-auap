@@ -58,13 +58,13 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         const resolved = resolveTheme(saved)
         applyTheme(resolved)
       } else {
-        // Default to system
-        const resolved = getSystemTheme()
-        applyTheme(resolved)
+        // Default to dark
+        setThemeState('dark')
+        applyTheme('dark')
       }
     } catch {
-      const resolved = getSystemTheme()
-      applyTheme(resolved)
+      // Default to dark on error
+      applyTheme('dark')
     }
   }, [])
 
