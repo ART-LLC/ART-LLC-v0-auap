@@ -7,6 +7,7 @@ import { BrandValuesSection } from "@/components/home/brand-values-section"
 import { ShowcaseGallerySection } from "@/components/home/showcase-gallery-section"
 import { CategoriesSection } from "@/components/home/categories-section"
 import { FeaturedProductsSection } from "@/components/home/featured-products-section"
+import { AutomotiveShowcase } from "@/components/home/automotive-showcase"
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Navbar />
       <main className="bg-[#3a3d44]">
         <HeroSection />
+        <AutomotiveShowcase />
         <ContentSection />
         <BrandValuesSection />
         <ShowcaseGallerySection />

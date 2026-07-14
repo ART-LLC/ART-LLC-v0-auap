@@ -5,13 +5,20 @@ import { BrandEmblem3D } from "@/components/brand-emblem-3d"
 import { Logo } from "@/components/logo"
 import Image from "next/image"
 import { HeroSlider } from "@/components/home/hero-slider"
-import { Search, MessageSquare, Phone, Mail, Cog, Settings2, Calendar } from "lucide-react"
+import { Search, MessageSquare, Phone, Mail, Cog, Settings2, Calendar, Zap, TrendingUp } from "lucide-react"
 
 export function HeroSection() {
   return (
     <section className="relative pt-[58px] overflow-hidden ghost-scan-section hero-on-dark" style={{ paddingTop: "45px" }}>
       {/* Background — grey base; photo carousel constrained to the top hero band */}
-      <div className="absolute inset-0 bg-[#3a3d44]">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1a1d24] via-[#3a3d44] to-[#2a2d34]">
+        {/* Enhanced automotive-themed gradient background */}
+        <div className="absolute inset-0">
+          {/* Motion blur elements suggesting speed and performance */}
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-orange-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
+        </div>
+        
         <div className="absolute top-0 inset-x-0 h-[820px] overflow-hidden">
           <HeroSlider />
           <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-[#3a3d44]" />
