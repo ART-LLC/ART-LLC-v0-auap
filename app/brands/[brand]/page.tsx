@@ -20,6 +20,8 @@ import {
 } from '@/lib/brand-catalog'
 import { ChevronRight, ChevronLeft, Search } from 'lucide-react'
 import { BrandStorySection } from '@/components/brands/brand-story-section'
+import { BrandMaterialTabs } from '@/components/brands/brand-material-tabs'
+import { MaterialType, filterPartsByMaterial, countPartsByMaterial } from '@/lib/material-mapper'
 
 interface PageProps {
   params: Promise<{ brand: string }>
@@ -48,12 +50,32 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
   if (!catalog) notFound()
 
   const page = Number.parseInt(sp.page || '1', 10) || 1
-  const result = searchBrandProducts(brand, { q: sp.q, model: sp.model, category: sp.category, page })
+  const material = (sp.material as MaterialType) || undefined
+  let result = searchBrandProducts(brand, { q: sp.q, model: sp.model, category: sp.category, page })
+  
+  // Apply material filter if selected
+  if (material && material !== 'all') {
+    result = {
+      ...result,
+      products: filterPartsByMaterial(result.products, material)
+    }
+  }
+
   const models = getBrandModels(brand).slice(0, 24)
+  
+  // Calculate material counts for the current category/search
+  const allProductsForCount = catalog?.products || []
+  const categoryFiltered = allProductsForCount.filter((p) => {
+    const matchesSearch = sp.q === undefined || p.name.toLowerCase().includes(sp.q.toLowerCase())
+    const matchesCategory = sp.category === undefined || p.category === sp.category
+    const matchesModel = sp.model === undefined || p.model === sp.model
+    return matchesSearch && matchesCategory && matchesModel
+  })
+  const materialCounts = countPartsByMaterial(categoryFiltered)
 
   const buildQuery = (overrides: Record<string, string | undefined>) => {
     const q = new URLSearchParams()
-    for (const [k, v] of Object.entries({ q: sp.q, model: sp.model, category: sp.category, ...overrides })) {
+    for (const [k, v] of Object.entries({ q: sp.q, model: sp.model, category: sp.category, material: sp.material, ...overrides })) {
       if (v) q.set(k, v)
     }
     const s = q.toString()
@@ -249,6 +271,14 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
               {result.total.toLocaleString()} parts{sp.model ? ` for ${label} ${sp.model}` : ''}
               {sp.q ? ` matching "${sp.q}"` : ''} — page {result.page} of {result.pageCount}
             </p>
+
+            {/* Material Filter Tabs */}
+            <BrandMaterialTabs
+              brand={brand}
+              selected={material || 'all'}
+              counts={materialCounts}
+              currentParams={{ q: sp.q, model: sp.model, category: sp.category, page: sp.page }}
+            />
 
             {result.products.length === 0 ? (
               <div className="rounded-xl border border-border/40 bg-card p-10 text-center">
