@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import Image from 'next/image'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { Badge } from '@/components/ui/badge'
@@ -62,10 +63,58 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
     <>
       <Navbar />
       <main className="pt-24 lg:pt-28">
-        {/* Breadcrumb + hero */}
-        <section className="py-10 bg-background border-b border-border/20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground mb-4 flex-wrap">
+        {/* HERO SECTION: Brand Car Image + Logo Badge */}
+        <section className="relative h-[380px] sm:h-[480px] lg:h-[560px] bg-gradient-to-b from-background to-background/50 overflow-hidden">
+          {/* Car Background Image */}
+          {brand && (
+            <div className="absolute inset-0">
+              <Image
+                src={`/brand-cars/${brand}-car.png`}
+                alt={`${label} featured vehicle`}
+                fill
+                className="object-cover object-center"
+                priority
+                sizes="100vw"
+              />
+              {/* Dark overlay for readability */}
+              <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
+            </div>
+          )}
+
+          {/* Logo Badge - Top Right */}
+          <div className="absolute top-6 right-4 sm:top-8 sm:right-6 lg:top-10 lg:right-8 z-20 drop-shadow-lg">
+            {brand && (
+              <div className="w-20 h-20 sm:w-24 sm:h-24 relative bg-white/95 backdrop-blur rounded-lg shadow-xl p-2 sm:p-3 border border-white/20">
+                <Image
+                  src={`/logos/${brand}.png`}
+                  alt={`${label} logo`}
+                  fill
+                  className="object-contain object-center"
+                  sizes="96px"
+                />
+              </div>
+            )}
+          </div>
+
+          {/* Content Overlay */}
+          <div className="absolute inset-0 flex flex-col justify-end items-start z-10">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full pb-8 sm:pb-12 lg:pb-16">
+              <div className="inline-flex items-center gap-2 mb-4 text-xs font-bold uppercase tracking-widest text-primary border border-primary/50 bg-primary/20 px-3 py-1.5 rounded-full backdrop-blur-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                {label} · Parts
+              </div>
+              
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white drop-shadow-lg text-balance max-w-2xl">
+                {`Used ${label} Parts`}
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        {/* Breadcrumb + hero details */}
+        <section className="py-8 sm:py-10 bg-background border-b border-border/20 relative">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-muted-foreground mb-6 flex-wrap">
               <Link href="/" className="hover:text-primary transition-colors">Home</Link>
               <ChevronRight className="w-3 h-3" />
               <Link href="/brands" className="hover:text-primary transition-colors">Shop</Link>
@@ -74,13 +123,35 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
               <ChevronRight className="w-3 h-3" />
               <span className="text-foreground font-medium">{label} Parts</span>
             </nav>
-            <h1 className="text-3xl sm:text-4xl font-black text-foreground text-balance">
-              Used {label} Engines, Transmissions &amp; Parts
-            </h1>
-            <p className="mt-2 max-w-2xl text-muted-foreground leading-relaxed">
+            <h2 className="text-2xl sm:text-3xl font-black text-foreground text-balance mb-3">
+              Engines, Transmissions & Parts
+            </h2>
+            <p className="max-w-2xl text-muted-foreground leading-relaxed">
               {(catalog?.products?.length || 0).toLocaleString()} tested used OEM {label} parts with exact mileage-based
               pricing from our live inventory. 90-day warranty and nationwide shipping included.
             </p>
+            
+            {/* Hero stats (inspired by reference design) */}
+            <div className="mt-8 grid grid-cols-3 gap-4 sm:gap-6 border-t border-border/20 pt-6">
+              <div className="flex flex-col">
+                <span className="text-2xl sm:text-3xl font-black text-primary">
+                  {(catalog?.products?.length || 0).toLocaleString()}
+                </span>
+                <span className="text-xs uppercase tracking-widest text-muted-foreground font-semibold mt-1">Parts Available</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-2xl sm:text-3xl font-black text-primary">
+                  {models.length}
+                </span>
+                <span className="text-xs uppercase tracking-widest text-muted-foreground font-semibold mt-1">Models</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-2xl sm:text-3xl font-black text-primary">
+                  90 Days
+                </span>
+                <span className="text-xs uppercase tracking-widest text-muted-foreground font-semibold mt-1">Warranty</span>
+              </div>
+            </div>
 
             {/* Search — plain GET form, works without JS */}
             <form method="get" className="mt-6 flex max-w-xl gap-2" role="search" aria-label={`Search ${label} parts`}>
@@ -105,32 +176,37 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
           </div>
         </section>
 
-        {/* Model filter chips */}
+        {/* Model filter table (inspired by reference design) */}
         {models.length > 1 && (
-          <section className="py-4 border-b border-border/20 bg-card/20">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <nav aria-label={`${label} models`} className="flex flex-wrap gap-2">
+          <section className="bg-background border-b border-border/20">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+              <h2 className="text-xs uppercase tracking-widest font-bold text-muted-foreground mb-4">Filter by model</h2>
+              <nav aria-label={`${label} models`} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                 <Link
                   href={`/brands/${brand}${buildQuery({ model: undefined, page: undefined })}`}
-                  className={`rounded-full border px-3 py-1 text-xs font-semibold transition-colors ${
+                  className={`rounded-lg border px-4 py-3 text-sm font-semibold transition-all ${
                     !sp.model
-                      ? 'border-primary bg-primary/10 text-primary'
-                      : 'border-border/40 text-muted-foreground hover:border-primary/50 hover:text-primary'
+                      ? 'border-primary bg-primary/10 text-primary shadow-sm'
+                      : 'border-border/40 text-foreground hover:border-primary/50 hover:bg-card/50'
                   }`}
                 >
-                  All models
+                  All models ({models.reduce((sum, m) => sum + m.count, 0).toLocaleString()})
                 </Link>
-                {models.map(({ model, count }) => (
+                {models.map(({ model, count }, idx) => (
                   <Link
                     key={model}
                     href={`/brands/${brand}${buildQuery({ model, page: undefined })}`}
-                    className={`rounded-full border px-3 py-1 text-xs font-semibold transition-colors ${
+                    className={`rounded-lg border px-4 py-3 text-sm font-semibold transition-all flex items-center justify-between ${
                       sp.model === model
-                        ? 'border-primary bg-primary/10 text-primary'
-                        : 'border-border/40 text-muted-foreground hover:border-primary/50 hover:text-primary'
+                        ? 'border-primary bg-primary/10 text-primary shadow-sm'
+                        : 'border-border/40 text-foreground hover:border-primary/50 hover:bg-card/50'
                     }`}
                   >
-                    {model} ({count.toLocaleString()})
+                    <span className="flex items-center gap-3">
+                      <span className="text-xs text-muted-foreground font-bold leading-none w-6 text-right">{String(idx + 1).padStart(2, '0')}</span>
+                      <span>{model}</span>
+                    </span>
+                    <span className="text-xs text-muted-foreground">{count.toLocaleString()}</span>
                   </Link>
                 ))}
               </nav>

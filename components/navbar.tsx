@@ -122,7 +122,7 @@ export function Navbar() {
         <div className="mx-auto w-full px-2 sm:px-4 md:px-6 lg:px-8 flex items-center h-full justify-between gap-1 sm:gap-4 relative z-10">
 
           {/* Logo + Wordmark */}
-          <Link href="/" className="flex items-center gap-1 sm:gap-4 shrink-0 group header-boss-logo-group min-w-0">
+          <Link href="/" className="on-dark flex items-center gap-1 sm:gap-4 shrink-0 group header-boss-logo-group min-w-0">
             {/* Single responsive logo */}
             <div className="header-boss-logo-ring w-7 h-7 sm:w-12 sm:h-12 flex items-center justify-center flex-shrink-0">
               <Logo size="sm" priority showGlow />

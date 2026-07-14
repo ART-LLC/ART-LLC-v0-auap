@@ -125,18 +125,31 @@ export function searchBrandProducts(
   if (!catalog) return { products: [], total: 0, page: 1, pageCount: 0 }
   let items = catalog.products
   if (opts.model) {
-    const m = opts.model.toLowerCase()
-    items = items.filter((p) => (p.model || "").toLowerCase() === m)
+    // Catalog model values often carry a part-type suffix (e.g. "Mustang Engine",
+    // "Integra Transmission"), while the dropdown supplies the clean model name
+    // ("Mustang"). Normalize by stripping the trailing part type, then match
+    // leniently so a selected model still returns its inventory.
+    const m = opts.model.toLowerCase().trim()
+    items = items.filter((p) => {
+      const pm = (p.model || "").toLowerCase().replace(/\s*(engine|transmission)\s*$/i, "").trim()
+      return pm === m || pm.includes(m) || m.includes(pm)
+    })
   }
   if (opts.category) {
     const c = opts.category.toLowerCase()
     items = items.filter((p) => (p.category || "").toLowerCase().includes(c))
   }
   if (opts.q) {
-    const q = opts.q.toLowerCase()
-    items = items.filter(
-      (p) => p.name.toLowerCase().includes(q) || (p.compatibility || "").toLowerCase().includes(q),
-    )
+    const q = opts.q.toLowerCase().trim()
+    // A bare 4-digit year should match the product's model year, not just any
+    // occurrence in the name; otherwise fall back to name/compatibility search.
+    const isYear = /^\d{4}$/.test(q)
+    items = items.filter((p) => {
+      if (isYear && String(p.year || "").trim() === q) return true
+      return (
+        p.name.toLowerCase().includes(q) || (p.compatibility || "").toLowerCase().includes(q)
+      )
+    })
   }
   const total = items.length
   const pageCount = Math.max(1, Math.ceil(total / PAGE_SIZE))
@@ -695,9 +708,17 @@ function getBrandModelImage(brand: string, category: string, productName: string
       return '/product-images/transmission/toyota-automatic-4speed.png'
     }
     
-    // Other manufacturers use their per-SKU branded transmission illustration
-    // until a matching brand/spec photograph is available.
-    return null
+    // Other manufacturers resolve to a professional transmission photograph
+    // selected by transmission type. This keeps every transmission SKU on a
+    // real, locked-ratio product photo (like engines) instead of the generated
+    // OG card, satisfying consistent styling across all brands and pages.
+    if (name.includes('cvt')) {
+      return '/product-images/transmission/cvt-transmission-branded.png'
+    }
+    if (name.includes('manual') || /\bmt\b/.test(name) || /\d-speed manual/.test(name)) {
+      return '/product-images/transmission/manual-transmission-branded.png'
+    }
+    return '/product-images/transmission/automatic-transmission-branded.png'
   }
 
   // Unknown parts use their per-SKU branded illustration rather than another brand.
