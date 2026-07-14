@@ -207,7 +207,7 @@ export default function CatalogPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main className="min-h-screen bg-background pt-24">
         {/* Page Header */}
         <section className="py-12 sm:py-16 relative bg-gradient-to-b from-background to-background/50">
           <div className="metal-line absolute top-0 left-0 right-0" />
