@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import Intercom from '@intercom/messenger-js-sdk'
 
 interface IntercomUser {
   id?: string
@@ -13,88 +14,43 @@ interface IntercomProviderProps {
   user?: IntercomUser
 }
 
-declare global {
-  interface Window {
-    Intercom: any
-  }
-}
-
 export function IntercomProvider({ user }: IntercomProviderProps) {
   useEffect(() => {
-    // Load Intercom widget script
-    const script = document.createElement('script')
-    script.type = 'text/javascript'
-    script.async = true
-    script.src = 'https://widget.intercom.io/widget/pldz9zi1'
-    document.head.appendChild(script)
+    try {
+      // Initialize Intercom with app ID
+      const settings: any = {
+        app_id: 'pldz9zi1',
+        api_base: 'https://api-iam.intercom.io',
+      }
 
-    // Boot Intercom once the widget is loaded
-    const bootIntercom = async () => {
-      try {
-        // If user is authenticated, fetch JWT and boot with token
-        if (user?.id) {
-          try {
-            // Fetch secure JWT token from server
-            const tokenResponse = await fetch('/api/intercom-token', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                userId: user.id,
-                email: user.email,
-                name: user.name,
-              }),
-            })
-
-            if (tokenResponse.ok) {
-              const { token } = await tokenResponse.json()
-
-              // Boot Intercom with JWT token for authenticated users
-              window.Intercom('boot', {
-                api_base: 'https://api-iam.intercom.io',
-                app_id: 'pldz9zi1',
-                intercom_user_jwt: token,
-                session_duration: 86400000, // 1 day
-              })
-            } else {
-              // Fallback: boot as anonymous
-              window.Intercom('boot', {
-                api_base: 'https://api-iam.intercom.io',
-                app_id: 'pldz9zi1',
-              })
+      // If user is authenticated, fetch and use JWT token
+      if (user?.id) {
+        fetch('/api/intercom-token', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            userId: user.id,
+            email: user.email,
+            name: user.name,
+          }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.token) {
+              settings.intercom_user_jwt = data.token
+              Intercom(settings)
             }
-          } catch (error) {
-            console.warn('[Intercom] Token fetch failed, booting anonymously:', error)
-            window.Intercom('boot', {
-              api_base: 'https://api-iam.intercom.io',
-              app_id: 'pldz9zi1',
-            })
-          }
-        } else {
-          // Boot Intercom anonymously for non-authenticated users
-          window.Intercom('boot', {
-            api_base: 'https://api-iam.intercom.io',
-            app_id: 'pldz9zi1',
           })
-        }
-      } catch (error) {
-        console.error('[Intercom] Boot error:', error)
+          .catch((err) => {
+            console.warn('[Intercom] JWT failed, booting anonymously:', err)
+            Intercom(settings)
+          })
+      } else {
+        // Boot anonymously for non-authenticated users
+        Intercom(settings)
       }
-    }
-
-    // Wait for window.Intercom to be available
-    const waitForIntercom = setInterval(() => {
-      if (typeof window.Intercom === 'function') {
-        clearInterval(waitForIntercom)
-        bootIntercom()
-      }
-    }, 100)
-
-    // Timeout after 5 seconds
-    const timeout = setTimeout(() => clearInterval(waitForIntercom), 5000)
-
-    return () => {
-      clearInterval(waitForIntercom)
-      clearTimeout(timeout)
+    } catch (error) {
+      console.error('[Intercom] Failed to initialize:', error)
     }
   }, [user])
 
