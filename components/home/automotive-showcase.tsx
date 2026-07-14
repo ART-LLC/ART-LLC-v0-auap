@@ -38,7 +38,7 @@ export function AutomotiveShowcase() {
             {/* Engine image */}
             <div className="relative h-96 overflow-hidden">
               <Image
-                src="/product-images/engines/2008-bmw-128i-engine.png"
+                src="/product-images/engines/v8-engine-complete.png"
                 alt="Premium Engine Assembly"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -76,7 +76,7 @@ export function AutomotiveShowcase() {
             {/* Transmission image */}
             <div className="relative h-96 overflow-hidden">
               <Image
-                src="/product-images/transmissions/2008-bmw-128i-transmission.png"
+                src="/product-images/transmissions/auto-6-speed-complete.png"
                 alt="Premium Transmission Assembly"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
