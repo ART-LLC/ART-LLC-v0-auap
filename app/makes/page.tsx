@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 import { CAR_MAKES, CAR_MODELS, BRAND_COLORS, PART_CATEGORIES, getBrandLogoUrl } from "@/lib/data"
 import brandManifest from "@/data/brands/manifest.json"
-import { Search, Phone, Eye, X, ArrowUpDown } from "lucide-react"
+import { Search, Phone, Eye, X } from "lucide-react"
 
 /** Slugs of brands that have a generated product catalog at /brands/[slug]. */
 const CATALOG_SLUGS = new Set((brandManifest as { slug: string }[]).map((b) => b.slug))
@@ -267,12 +267,7 @@ export default function MakesPage() {
                       : "bg-card border-border/40 hover:-translate-y-0.5 hover:border-primary/30"
                   }`}
                 >
-                  <div className="relative">
-                    <MakeLogo brand={make} />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 rounded-md transition-all duration-200">
-                      <Eye className="w-4 h-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                    </div>
-                  </div>
+                  <MakeLogo brand={make} />
                   <span className={`text-[11px] font-semibold text-center leading-tight ${isActive ? "text-foreground" : "text-muted-foreground"}`}>
                     {make}
                   </span>
