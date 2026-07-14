@@ -234,23 +234,27 @@ export default function CatalogPage() {
             <div className="flex flex-col lg:flex-row gap-8">
               {/* Sidebar - Categories */}
               <aside className="lg:w-64 flex-shrink-0">
-                <div className="sticky top-24 space-y-2">
-                  <h3 className="text-sm font-bold uppercase tracking-wide text-foreground/70 mb-4">
-                    Categories
-                  </h3>
-                  {CATEGORIES.map((category) => (
-                    <button
-                      key={category}
-                      onClick={() => setSelectedCategory(category)}
-                      className={`auapw-btn auapw-btn-sm w-full text-left ${
-                        selectedCategory === category
-                          ? 'auapw-btn-blue'
-                          : 'auapw-btn-silver'
-                      }`}
-                    >
-                      {category}
-                    </button>
-                  ))}
+                <div className="sticky top-24">
+                  <div className="rounded-xl border border-border bg-card/60 p-3 shadow-sm">
+                    <h3 className="text-xs font-bold uppercase tracking-wide text-foreground/60 px-2 mb-3">
+                      Categories
+                    </h3>
+                    <div className="flex flex-col gap-1">
+                      {CATEGORIES.map((category) => (
+                        <button
+                          key={category}
+                          onClick={() => setSelectedCategory(category)}
+                          className={`w-full text-left rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
+                            selectedCategory === category
+                              ? 'bg-blue-600 text-white shadow-sm'
+                              : 'text-foreground/80 hover:bg-muted hover:text-foreground'
+                          }`}
+                        >
+                          {category}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </aside>
 
