@@ -11,7 +11,6 @@ Welcome to the complete documentation index for the AUAPW LLC auto parts e-comme
 
 ### For Developers
 - **[API Documentation](./API.md)** - Full endpoint reference with examples
-- **[Intercom Guide](./INTERCOM.md)** - Messenger integration and customer support setup
 - **[Features Index](./FEATURES.md)** - Technical components and data sources
 - **[Installation](../README.md#installation)** - Setup instructions
 
