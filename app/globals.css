@@ -3,9 +3,19 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Smooth theme transition */
-*, *::before, *::after {
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
+/* Smooth theme transition — disabled on initial load for performance */
+@media (prefers-reduced-motion: no-preference) {
+  *, *::before, *::after {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
+  }
+}
+
+/* Disable transitions during hydration to speed up initial paint */
+html.hydrating *, 
+html.hydrating *::before, 
+html.hydrating *::after {
+  animation-duration: 0.001ms !important;
+  transition-duration: 0.001ms !important;
 }
 
 /* Page background — light theme base, texture applied to visible surfaces */
@@ -3269,7 +3279,7 @@ footer .wordmark-3d {
   -webkit-background-clip: text;
 }
 
-/* ═��══════════════════════════════════════════════════���══
+/* ═���══════════════════════════════════════════════════���══
    PREMIUM HEADER — Apple Glassmorphism + LED Animations
    ════════════════��═══════════════���══════════════════════ */
 
@@ -4998,6 +5008,11 @@ button, a, [role="button"], [role="tab"] {
   opacity: 0;
   will-change: transform, opacity;
   animation: cinematic-fade 24s infinite;
+  animation-play-state: paused;
+}
+
+html:not(.hydrating) .cinematic-frame {
+  animation-play-state: running;
 }
 .cinematic-frame:nth-child(1) { animation-delay: 0s; }
 .cinematic-frame:nth-child(2) { animation-delay: 8s; }

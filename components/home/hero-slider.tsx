@@ -54,12 +54,12 @@ export function HeroSlider() {
         />
       )}
 
-      {/* Active slide */}
-      {SLIDES.map((slide, idx) => (
+      {/* Active slide - only render current and next to avoid rendering overhead */}
+      {[current, (current + 1) % SLIDES.length].map((idx) => (
         <Image
           key={`slide-${idx}`}
-          src={slide.src}
-          alt={slide.alt}
+          src={SLIDES[idx].src}
+          alt={SLIDES[idx].alt}
           fill
           className={`object-cover transition-all duration-[1200ms] ease-in-out ${
             idx === current
@@ -67,6 +67,7 @@ export function HeroSlider() {
               : "opacity-0 scale-110"
           }`}
           priority={idx === 0}
+          sizes="100vw"
         />
       ))}
 
