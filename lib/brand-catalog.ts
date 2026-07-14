@@ -47,6 +47,7 @@ function loadBrandDirectory(): { slug: string; label: string; count: number }[] 
 export const BRAND_DIRECTORY: { slug: string; label: string; count: number }[] =
   loadBrandDirectory()
 
+
 const catalogCache = new Map<string, BrandCatalog>()
 const slugIndexCache = new Map<string, Map<string, BrandProduct>>()
 
