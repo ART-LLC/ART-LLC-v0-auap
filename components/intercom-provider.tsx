@@ -1,6 +1,9 @@
 'use client'
 
 import { useEffect } from 'react'
+import Intercom from '@intercom/messenger-js-sdk'
+
+const INTERCOM_APP_ID = 'pldz9zi1'
 
 interface IntercomUser {
   id?: string
@@ -13,88 +16,54 @@ interface IntercomProviderProps {
   user?: IntercomUser
 }
 
-declare global {
-  interface Window {
-    Intercom: any
-  }
-}
-
 export function IntercomProvider({ user }: IntercomProviderProps) {
   useEffect(() => {
-    // Load Intercom widget script
-    const script = document.createElement('script')
-    script.type = 'text/javascript'
-    script.async = true
-    script.src = 'https://widget.intercom.io/widget/pldz9zi1'
-    document.head.appendChild(script)
+    let cancelled = false
 
-    // Boot Intercom once the widget is loaded
-    const bootIntercom = async () => {
+    const initIntercom = async () => {
+      // Anonymous visitors: boot the messenger immediately.
+      if (!user?.id) {
+        Intercom({ app_id: INTERCOM_APP_ID })
+        return
+      }
+
+      // Authenticated users: fetch a signed JWT from the server so Intercom
+      // can verify the visitor's identity, then boot with it.
       try {
-        // If user is authenticated, fetch JWT and boot with token
-        if (user?.id) {
-          try {
-            // Fetch secure JWT token from server
-            const tokenResponse = await fetch('/api/intercom-token', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                userId: user.id,
-                email: user.email,
-                name: user.name,
-              }),
-            })
+        const res = await fetch('/api/intercom-token', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            userId: user.id,
+            email: user.email,
+            name: user.name,
+          }),
+        })
 
-            if (tokenResponse.ok) {
-              const { token } = await tokenResponse.json()
+        if (cancelled) return
 
-              // Boot Intercom with JWT token for authenticated users
-              window.Intercom('boot', {
-                api_base: 'https://api-iam.intercom.io',
-                app_id: 'pldz9zi1',
-                intercom_user_jwt: token,
-                session_duration: 86400000, // 1 day
-              })
-            } else {
-              // Fallback: boot as anonymous
-              window.Intercom('boot', {
-                api_base: 'https://api-iam.intercom.io',
-                app_id: 'pldz9zi1',
-              })
-            }
-          } catch (error) {
-            console.warn('[Intercom] Token fetch failed, booting anonymously:', error)
-            window.Intercom('boot', {
-              api_base: 'https://api-iam.intercom.io',
-              app_id: 'pldz9zi1',
-            })
-          }
-        } else {
-          // Boot Intercom anonymously for non-authenticated users
-          window.Intercom('boot', {
-            api_base: 'https://api-iam.intercom.io',
-            app_id: 'pldz9zi1',
+        if (res.ok) {
+          const { token } = await res.json()
+          Intercom({
+            app_id: INTERCOM_APP_ID,
+            intercom_user_jwt: token,
+            user_id: user.id,
+            name: user.name,
+            email: user.email,
           })
+        } else {
+          // Signing failed (e.g. missing secret) — still show the messenger.
+          Intercom({ app_id: INTERCOM_APP_ID })
         }
-      } catch (error) {
-        console.error('[Intercom] Boot error:', error)
+      } catch {
+        if (!cancelled) Intercom({ app_id: INTERCOM_APP_ID })
       }
     }
 
-    // Wait for window.Intercom to be available
-    const waitForIntercom = setInterval(() => {
-      if (typeof window.Intercom === 'function') {
-        clearInterval(waitForIntercom)
-        bootIntercom()
-      }
-    }, 100)
-
-    // Timeout after 5 seconds
-    const timeout = setTimeout(() => clearInterval(waitForIntercom), 5000)
+    initIntercom()
 
     return () => {
-      clearInterval(waitForIntercom)
-      clearTimeout(timeout)
+      cancelled = true
     }
   }, [user])
 
