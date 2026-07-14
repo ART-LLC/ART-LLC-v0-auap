@@ -295,7 +295,7 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
                   <Link
                     key={product.canonicalSlug}
                     href={getBrandProductUrl(brand, product)}
-                    className="group flex flex-col overflow-hidden rounded-xl border border-border/40 bg-card transition-all hover:border-primary/50 hover:shadow-lg"
+                    className="group flex flex-col overflow-hidden rounded-xl border-2 border-slate-600 bg-gradient-to-br from-slate-800 to-slate-900 transition-all shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),inset_0_-2px_4px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.6)] hover:border-slate-500 hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15),inset_0_-2px_4px_rgba(0,0,0,0.5),0_8px_20px_rgba(0,0,0,0.8)]"
                   >
                     <div className="relative aspect-[4/3] w-full bg-muted">
                       <BrandProductImage

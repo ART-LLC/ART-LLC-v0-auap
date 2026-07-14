@@ -304,7 +304,7 @@ export default function CatalogPage() {
                     {filteredParts.map((part) => (
                       <div
                         key={part.id}
-                        className="bg-background border border-border rounded-lg p-4 sm:p-6 hover:shadow-lg transition-all duration-300 hover:border-border/50 flex flex-col"
+                        className="bg-gradient-to-br from-slate-800 to-slate-900 border-2 border-slate-600 rounded-xl p-4 sm:p-6 transition-all duration-300 flex flex-col shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),inset_0_-2px_4px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.6)] hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15),inset_0_-2px_4px_rgba(0,0,0,0.5),0_8px_20px_rgba(0,0,0,0.8)] hover:border-slate-500"
                       >
                         {/* Part Header */}
                         <div className="mb-3 flex-1">
