@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Zap, TrendingUp, Gauge, Wrench } from "lucide-react"
 
@@ -36,12 +35,12 @@ export function AutomotiveShowcase() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/60 z-10" />
             
             {/* Engine image */}
-            <div className="relative h-96 overflow-hidden">
-              <Image
+            <div className="relative h-96 w-full overflow-hidden">
+              <img
                 src="/product-images/engines/v8-engine-complete.png"
                 alt="Premium Engine Assembly"
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-700"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                loading="lazy"
               />
             </div>
 
@@ -74,12 +73,12 @@ export function AutomotiveShowcase() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/60 z-10" />
             
             {/* Transmission image */}
-            <div className="relative h-96 overflow-hidden">
-              <Image
+            <div className="relative h-96 w-full overflow-hidden">
+              <img
                 src="/product-images/transmissions/auto-6-speed-complete.png"
                 alt="Premium Transmission Assembly"
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-700"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                loading="lazy"
               />
             </div>
 
