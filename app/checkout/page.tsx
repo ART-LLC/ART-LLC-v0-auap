@@ -85,16 +85,17 @@ export default function CheckoutPage() {
     <>
       <Navbar />
       <main className="pt-[58px]">
-        <div className="py-12 pb-20">
-        <div className="mx-auto max-w-4xl px-4">
-          {/* Page header */}
-          <div className="mb-12">
-            <Link href="/cart" className="inline-flex items-center gap-2 text-primary hover:text-foreground mb-6">
+        <div className="relative bg-cover bg-center py-14 border-b border-border/20 mb-12" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.9), rgba(13,15,22,0.72), rgba(13,15,22,0.95)), url('/images/heroes/hero-warehouse.png')" }}>
+          <div className="mx-auto max-w-4xl px-4">
+            <Link href="/cart" className="inline-flex items-center gap-2 text-slate-200 hover:text-white mb-6">
               <ArrowLeft className="w-4 h-4" />
               Back to Cart
             </Link>
-            <h1 className="text-4xl font-bold text-balance mb-2">Checkout</h1>
+            <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight text-white mb-2 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">Checkout</h1>
           </div>
+        </div>
+        <div className="pb-20">
+        <div className="mx-auto max-w-4xl px-4">
 
           {step === 'confirmation' ? (
             <div className="text-center py-20">

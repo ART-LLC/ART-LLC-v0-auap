@@ -70,7 +70,7 @@ export default function AcuraPartsPage() {
       <Navbar />
       <div className="pt-[58px]">
         {/* Hero Header */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-[#0a0a0f] via-[#12121a] to-[#0a0a0f] border-b border-border/30">
+        <div className="relative overflow-hidden border-b border-border/30 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(10,10,15,0.9), rgba(18,18,26,0.8), rgba(10,10,15,0.95)), url('/images/heroes/hero-brands.png')" }}>
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-red-500/20 rounded-full blur-[120px]" />
             <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-[120px]" />

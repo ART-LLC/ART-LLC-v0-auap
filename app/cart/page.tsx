@@ -26,13 +26,14 @@ export default function CartPage() {
     <>
       <Navbar />
       <main className="pt-[58px]">
-        <div className="py-8 sm:py-12 pb-16 sm:pb-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          {/* Page header */}
-          <div className="mb-8 sm:mb-12">
-            <h1 className="text-2xl sm:text-4xl font-bold text-balance mb-2">Shopping Cart</h1>
-            <p className="text-sm sm:text-base text-foreground/60">Review and manage your selected parts</p>
+        <div className="relative bg-cover bg-center py-14 border-b border-border/20 mb-8 sm:mb-12" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.9), rgba(13,15,22,0.72), rgba(13,15,22,0.95)), url('/images/heroes/hero-warehouse.png')" }}>
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <h1 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white mb-2 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">Shopping Cart</h1>
+            <p className="text-sm sm:text-base text-slate-200/90">Review and manage your selected parts</p>
           </div>
+        </div>
+        <div className="pb-16 sm:pb-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
           {items.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-20 border border-white/10 rounded-lg bg-white/5">
