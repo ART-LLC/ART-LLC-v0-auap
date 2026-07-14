@@ -5,14 +5,14 @@ Welcome to the complete documentation index for the AUAPW LLC auto parts e-comme
 ## Quick Navigation
 
 ### For Users
-- **[Site Index & Pages](./SITE_INDEX.md)** - All 57 pages and where to find Intercom support
 - **[Features Index](./FEATURES.md)** - Complete list of all website features
 - **[API Documentation](./API.md)** - REST API endpoints and integration guide
+- **[Support](../README.md#support)** - Getting help via Intercom messenger
 
 ### For Developers
-- **[Site Index & Pages](./SITE_INDEX.md)** - Complete page routing and Intercom integration
 - **[API Documentation](./API.md)** - Full endpoint reference with examples
 - **[Features Index](./FEATURES.md)** - Technical components and data sources
+- **[Installation](../README.md#installation)** - Setup instructions
 
 ---
 
@@ -21,16 +21,13 @@ Welcome to the complete documentation index for the AUAPW LLC auto parts e-comme
 ### 🎯 Core Features
 
 #### 1. **Intercom Messenger Integration**
-Secure, enterprise-grade customer support system with JWT authentication — **available on all 57 pages of the website**.
+Secure, enterprise-grade customer support system with JWT authentication.
 
-- ✅ Automatic initialization on ALL pages (homepage, product pages, brand pages, category pages, checkout, etc.)
+- ✅ Automatic initialization on all pages
 - ✅ Secure JWT tokens for authenticated users
-- ✅ Anonymous visitor support (works without login)
+- ✅ Anonymous visitor support
 - ✅ Persistent conversation history
 - ✅ App ID: `pldz9zi1`
-- ✅ Bottom-right messenger bubble on every page
-
-**Where to Find It:** Every page has the Intercom messenger in the bottom-right corner. See [Site Index](./SITE_INDEX.md) for complete page list.
 
 **More Info:** [API Documentation → Intercom Messenger](./API.md#intercom-messenger)
 

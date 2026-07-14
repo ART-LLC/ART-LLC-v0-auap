@@ -5,7 +5,6 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/lib/auth-context'
 import { MobileThemeFab } from '@/components/mobile-theme-fab'
 import { IntercomProvider } from '@/components/intercom-provider'
-import { PWARegister } from '@/components/pwa-register'
 import './globals.css'
 
 const roboto = Roboto({
@@ -22,7 +21,6 @@ export const metadata: Metadata = {
   generator: 'v0.dev',
   applicationName: 'AUAPW LLC',
   referrer: 'origin-when-cross-origin',
-  manifest: '/manifest.json',
   formatDetection: {
     email: true,
     address: true,
@@ -71,7 +69,7 @@ export const viewport: Viewport = {
   maximumScale: 5,
   userScalable: true,
   viewportFit: 'cover',
-  themeColor: '#d4ddf5',
+  themeColor: '#0d0f16',
 }
 
 export default function RootLayout({
@@ -87,7 +85,6 @@ export default function RootLayout({
             {children}
             <MobileThemeFab />
             <IntercomProvider />
-            <PWARegister />
           </ThemeProvider>
         </AuthProvider>
         <Analytics />
