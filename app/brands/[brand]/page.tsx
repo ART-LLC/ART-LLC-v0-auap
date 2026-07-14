@@ -219,18 +219,18 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
           modelCount={models.length}
         />
 
-        {/* Model filter table (inspired by reference design) */}
+        {/* Model filter table - Glassmorphism Design */}
         {models.length > 1 && (
-          <section className="bg-background border-b border-border/20">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-              <h2 className="text-xs uppercase tracking-widest font-bold text-muted-foreground mb-4">Filter by model</h2>
-              <nav aria-label={`${label} models`} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+          <section className="bg-gradient-to-b from-slate-900/40 to-slate-800/20 backdrop-blur-xl border-b border-white/10 py-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <h2 className="text-xs uppercase tracking-widest font-bold text-slate-300 mb-6">Filter by model</h2>
+              <nav aria-label={`${label} models`} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <Link
                   href={`/brands/${brand}${buildQuery({ model: undefined, page: undefined })}`}
-                  className={`rounded-lg border px-4 py-3 text-sm font-semibold transition-all ${
+                  className={`group rounded-xl border backdrop-blur-lg px-4 py-3 text-sm font-semibold transition-all ${
                     !sp.model
-                      ? 'border-primary bg-primary/10 text-primary shadow-sm'
-                      : 'border-border/40 text-foreground hover:border-primary/50 hover:bg-card/50'
+                      ? 'border-white/40 bg-white/20 text-white shadow-lg hover:shadow-xl'
+                      : 'border-white/10 bg-white/5 text-slate-200 hover:border-white/20 hover:bg-white/10 hover:shadow-lg'
                   }`}
                 >
                   All models ({models.reduce((sum, m) => sum + m.count, 0).toLocaleString()})
@@ -239,17 +239,17 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
                   <Link
                     key={model}
                     href={`/brands/${brand}${buildQuery({ model, page: undefined })}`}
-                    className={`rounded-lg border px-4 py-3 text-sm font-semibold transition-all flex items-center justify-between ${
+                    className={`group rounded-xl border backdrop-blur-lg px-4 py-3 text-sm font-semibold transition-all flex items-center justify-between ${
                       sp.model === model
-                        ? 'border-primary bg-primary/10 text-primary shadow-sm'
-                        : 'border-border/40 text-foreground hover:border-primary/50 hover:bg-card/50'
+                        ? 'border-white/40 bg-white/20 text-white shadow-lg hover:shadow-xl'
+                        : 'border-white/10 bg-white/5 text-slate-200 hover:border-white/20 hover:bg-white/10 hover:shadow-lg'
                     }`}
                   >
                     <span className="flex items-center gap-3">
-                      <span className="text-xs text-muted-foreground font-bold leading-none w-6 text-right">{String(idx + 1).padStart(2, '0')}</span>
+                      <span className="text-xs text-slate-400 font-bold leading-none w-6 text-right">{String(idx + 1).padStart(2, '0')}</span>
                       <span>{model}</span>
                     </span>
-                    <span className="text-xs text-muted-foreground">{count.toLocaleString()}</span>
+                    <span className="text-xs text-slate-400">{count.toLocaleString()}</span>
                   </Link>
                 ))}
               </nav>

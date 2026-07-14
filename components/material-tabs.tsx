@@ -21,17 +21,17 @@ export function MaterialTabs({ selected, onSelect, counts }: MaterialTabsProps) 
   }
 
   return (
-    <div className="w-full overflow-x-auto scrollbar-hide">
-      <div className="flex gap-3 pb-2 min-w-min px-4 sm:px-0 sm:flex-wrap sm:justify-start">
+    <div className="w-full overflow-x-auto scrollbar-hide bg-gradient-to-r from-white/5 via-white/3 to-transparent backdrop-blur-xl rounded-2xl p-4 sm:p-0 sm:bg-transparent sm:backdrop-blur-none">
+      <div className="flex gap-3 pb-2 min-w-min px-0 sm:px-0 sm:flex-wrap sm:justify-start">
         {/* All Materials Tab - Embossed */}
         <button
           onClick={() => handleTabClick('all')}
-          className={`flex-shrink-0 flex items-center gap-2 px-5 py-3 rounded-xl border-2 font-semibold text-sm whitespace-nowrap relative overflow-hidden group transition-all duration-200 ${
+          className={`flex-shrink-0 flex items-center gap-2 px-5 py-3 rounded-xl border-2 font-semibold text-sm whitespace-nowrap relative overflow-hidden group transition-all duration-200 backdrop-blur-md ${
             flashingTab === 'all' ? 'animate-pulse' : ''
           } ${
             selected === 'all'
-              ? 'border-slate-400 bg-gradient-to-b from-slate-200 to-slate-300 text-slate-900 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.8),inset_0_-2px_4px_rgba(0,0,0,0.3),0_4px_12px_rgba(0,0,0,0.4)]'
-              : 'border-foreground/20 bg-gradient-to-b from-foreground/10 to-foreground/5 text-foreground/70 hover:border-foreground/30 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)]'
+              ? 'border-white/40 bg-white/25 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.8),0_8px_32px_rgba(255,255,255,0.1)]'
+              : 'border-white/15 bg-white/10 text-white/80 hover:border-white/30 hover:bg-white/20 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.3)]'
           }`}
         >
           <div className="w-5 h-5 rounded bg-gradient-to-br from-slate-300 to-slate-500 flex items-center justify-center text-xs font-bold text-white shadow-[inset_0_1px_2px_rgba(255,255,255,0.5)]">
@@ -50,12 +50,12 @@ export function MaterialTabs({ selected, onSelect, counts }: MaterialTabsProps) 
           <button
             key={material.id}
             onClick={() => handleTabClick(material.id)}
-            className={`flex-shrink-0 flex items-center gap-2 px-5 py-3 rounded-xl border-2 font-semibold text-sm whitespace-nowrap relative overflow-hidden transition-all duration-200 ${
+            className={`flex-shrink-0 flex items-center gap-2 px-5 py-3 rounded-xl border-2 font-semibold text-sm whitespace-nowrap relative overflow-hidden transition-all duration-200 backdrop-blur-md ${
               flashingTab === material.id ? 'animate-pulse scale-105' : ''
             } ${
               selected === material.id
-                ? `border-white/60 bg-gradient-to-b ${material.color} text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.6),inset_0_-2px_4px_rgba(0,0,0,0.3),0_6px_16px_rgba(0,0,0,0.5)]`
-                : 'border-foreground/20 bg-gradient-to-b from-foreground/10 to-foreground/5 text-foreground/70 hover:border-foreground/30 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)]'
+                ? `border-white/40 bg-gradient-to-b ${material.color}/40 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.6),0_8px_32px_rgba(255,255,255,0.1)]`
+                : 'border-white/15 bg-white/10 text-white/80 hover:border-white/30 hover:bg-white/20 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.3)]'
             }`}
           >
             <div className={`w-5 h-5 rounded flex items-center justify-center bg-gradient-to-br ${material.color} text-white shadow-[inset_0_1px_2px_rgba(255,255,255,0.5),0_2px_4px_rgba(0,0,0,0.3)]`}>
