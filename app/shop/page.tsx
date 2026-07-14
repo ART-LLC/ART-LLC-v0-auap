@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Search, Filter, Grid, List, ChevronDown, ChevronRight, Cog, Wrench } from 'lucide-react'
+import { Search, Grid, List, ChevronRight, Settings, Wrench } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
@@ -9,9 +9,54 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
 import brandManifest from '@/data/brands/manifest.json'
-
+import { BRAND_COLORS, getBrandLogoUrl } from '@/lib/data'
 import { getPartsSearchUrl } from '@/lib/parts-search-routing'
+
 const INVENTORY_BRANDS = brandManifest.filter((brand) => brand.count > 0)
+
+function makeToSlug(make: string): string {
+  return make.toLowerCase().replace(/\s+/g, '-')
+}
+
+function getInitials(brand: string): string {
+  const words = brand.split(/[\s-]+/)
+  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase()
+  return brand.substring(0, brand.length > 4 ? 3 : brand.length).toUpperCase()
+}
+
+function getCountBadgeColor(count: number): string {
+  if (count >= 2000) return 'bg-green-900 text-green-200'
+  if (count >= 500) return 'bg-yellow-900 text-yellow-200'
+  return 'bg-red-900 text-red-200'
+}
+
+function BrandLogo({ brand, size = 'sm' }: { brand: string; size?: 'sm' | 'lg' }) {
+  const [imgFailed, setImgFailed] = useState(false)
+  const logoUrl = getBrandLogoUrl(brand)
+  const color = BRAND_COLORS[brand] || '#333'
+  const initials = getInitials(brand)
+  const w = size === 'lg' ? 'w-[88px] h-[56px]' : 'w-[72px] h-[48px]'
+  const textSize = size === 'lg' ? 'text-lg' : 'text-[13px]'
+  return (
+    <div className={`${w} luxury-logo-tile flex items-center justify-center rounded-lg shrink-0 overflow-hidden`}>
+      {logoUrl && !imgFailed ? (
+        <img
+          src={logoUrl}
+          alt={`${brand} logo`}
+          className="w-full h-full object-cover rounded-lg"
+          loading="lazy"
+          onError={() => setImgFailed(true)}
+        />
+      ) : (
+        <div className="w-full h-full flex items-center justify-center rounded-lg" style={{ background: `linear-gradient(135deg, ${color}, ${color}dd, ${color}88)` }}>
+          <span className={`${textSize} font-black text-white/90 uppercase tracking-wider leading-none select-none`} style={{ textShadow: '0 2px 6px rgba(0,0,0,0.6), 0 0 12px rgba(255,255,255,0.1)' }}>
+            {initials}
+          </span>
+        </div>
+      )}
+    </div>
+  )
+}
 
 const SHOP_PRODUCTS = [
   {
@@ -120,24 +165,38 @@ export default function ShopPage() {
                 <Link
                   key={brand.slug}
                   href={`/brands/${brand.slug}`}
-                  className="group flex flex-col gap-3 rounded-xl border border-border/40 bg-card p-5 transition-all hover:border-primary/50 hover:shadow-lg"
+                  className="group relative flex flex-col gap-4 p-6 rounded-xl border-2 transition-all cursor-pointer border-slate-600 bg-gradient-to-br from-slate-800 to-slate-900 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),inset_0_-2px_4px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.6)] hover:border-slate-500 hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15),inset_0_-2px_4px_rgba(0,0,0,0.5),0_8px_20px_rgba(0,0,0,0.8)]"
                 >
-                  <div className="flex items-center justify-between gap-2">
-                    <h3 className="text-lg font-black text-foreground transition-colors group-hover:text-primary">
-                      {brand.label}
-                    </h3>
-                    <span className="rounded-full bg-secondary px-2.5 py-1 text-xs font-semibold text-secondary-foreground">
-                      {brand.count.toLocaleString()} parts
-                    </span>
+                  {/* Header: Logo + Brand Name + Parts Count */}
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex-1">
+                      <h3 className="text-sm sm:text-base font-black uppercase tracking-wider leading-tight mb-1 text-white">
+                        {brand.label}
+                      </h3>
+                      <div className={`text-xs font-bold px-2.5 py-1 rounded-full inline-block ${getCountBadgeColor(brand.count)}`}>
+                        {brand.count.toLocaleString()} parts
+                      </div>
+                    </div>
+                    <BrandLogo brand={brand.label} size="sm" />
                   </div>
-                  <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-                    <span className="flex items-center gap-1.5"><Cog className="h-4 w-4 text-primary" />Used Engines</span>
-                    <span className="flex items-center gap-1.5"><Wrench className="h-4 w-4 text-primary" />Transmissions</span>
+
+                  {/* Icons: Engines & Transmissions */}
+                  <div className="flex items-center gap-4 text-xs font-semibold text-muted-foreground">
+                    <div className="flex items-center gap-1.5">
+                      <Settings className="w-3.5 h-3.5 shrink-0" />
+                      <span>Used Engines</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <Wrench className="w-3.5 h-3.5 shrink-0" />
+                      <span>Transmissions</span>
+                    </div>
                   </div>
-                  <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">
-                    Browse {brand.label} parts
-                    <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                  </span>
+
+                  {/* Browse Link */}
+                  <div className="text-sm font-bold flex items-center gap-1.5 text-white">
+                    <span className="group-hover:underline">Browse {brand.label} parts</span>
+                    <span className="text-lg group-hover:translate-x-0.5 transition-transform">›</span>
+                  </div>
                 </Link>
               ))}
             </div>
