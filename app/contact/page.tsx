@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
 
 import { QuoteForm } from "@/components/quote-form"
+import { PageHero } from "@/components/page-hero"
 import Image from "next/image"
 import { Phone, MapPin, Clock } from "lucide-react"
 
@@ -17,19 +18,13 @@ export default function ContactPage() {
       <Navbar />
       <main className="pt-[58px]">
         {/* Header */}
-        <div className="bg-gradient-to-br from-background via-card to-background border-b border-border/30">
-          <div className="metal-line" />
-          <div className="mx-auto max-w-[1280px] px-6 py-14">
-            <div className="flex items-center gap-4 mb-5">
-              <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/50" />
-              <span className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-primary">Get in Touch</span>
-            </div>
-            <h1 className="font-serif text-[clamp(1.75rem,4vw,3.5rem)] font-bold text-foreground">Contact Us</h1>
-            <p className="mt-3 text-sm text-muted-foreground max-w-[520px]">
-              Have a question or need a part? Reach out by phone, email, or use the form below. Our team responds within 24 hours.
-            </p>
-          </div>
-        </div>
+        <PageHero
+          image="support"
+          align="left"
+          eyebrow="Get in Touch"
+          title="Contact Us"
+          subtitle="Have a question or need a part? Reach out by phone, email, or use the form below. Our team responds within 24 hours."
+        />
 
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 py-8 sm:py-12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10">

@@ -109,7 +109,7 @@ export default function PrivacyPolicyPage() {
       <Navbar />
       <main className="pt-[58px]">
         {/* Header */}
-        <div className="bg-gradient-to-br from-background via-card to-background border-b border-border/30">
+        <div className="relative border-b border-border/30 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.93), rgba(13,15,22,0.78), rgba(13,15,22,0.96)), url('/images/heroes/hero-warehouse.png')" }}>
           <div className="metal-line" />
           <div className="mx-auto max-w-[1280px] px-6 py-14">
             <div className="flex items-center gap-4 mb-5">

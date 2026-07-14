@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 
 import { BrandLogosSection } from "@/components/brand-logos"
+import { PageHero } from "@/components/page-hero"
 import Link from "next/link"
 import { Search, Zap, Package, MapPin } from "lucide-react"
 
@@ -26,6 +27,13 @@ export default function InventoryPage() {
     <>
       <Navbar />
       <main className="pt-[58px]">
+        <PageHero
+          image="salvage"
+          align="left"
+          eyebrow="Live Inventory"
+          title="Real-Time Inventory"
+          subtitle="Access live inventory data from our network of 2,000+ verified automotive recycling yards. Every part is inspected and tested before listing."
+        />
         <div className="mx-auto max-w-[1200px] px-4 sm:px-6 py-10 sm:py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
             <div className="flex flex-col gap-3 sm:gap-4">

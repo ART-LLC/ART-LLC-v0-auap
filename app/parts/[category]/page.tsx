@@ -4,6 +4,7 @@ import { useParams } from "next/navigation"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { BrandLogosSection } from "@/components/brand-logos"
+import { PageHero } from "@/components/page-hero"
 
 import { PART_CATEGORIES, CAR_MAKES, PHONE_DISPLAY, PHONE_SALES } from "@/lib/data"
 import { ALL_PARTS, getPartsByCategory } from "@/lib/parts-content"
@@ -51,26 +52,21 @@ export default function CategoryPage() {
       <Navbar />
       <main className="pt-[58px]">
         {/* Header */}
-        <div className="bg-gradient-to-br from-background via-card to-background border-b border-border/30">
-          <div className="metal-line" />
-          <div className="mx-auto max-w-[1280px] px-6 py-14">
-            <div className="flex items-center gap-2 text-xs text-muted-foreground mb-6">
-              <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
-              <span>/</span>
-              <Link href="/parts" className="hover:text-foreground transition-colors">Parts</Link>
-              <span>/</span>
-              <span className="text-foreground">{cat.label}</span>
-            </div>
-            <div className="flex items-center gap-4 mb-5">
-              <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/50" />
-              <span className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-primary">Parts Category</span>
-            </div>
-            <h1 className="font-serif text-[clamp(1.75rem,4vw,3.5rem)] font-bold text-foreground">{cat.label}</h1>
-            <p className="mt-3 text-sm text-muted-foreground max-w-[520px]">
-              Quality used {cat.label.toLowerCase()} from our network of 2,000+ verified yards. Every part comes with a warranty and free shipping.
-            </p>
+        <PageHero
+          image={category}
+          align="left"
+          eyebrow="Parts Category"
+          title={cat.label}
+          subtitle={`Quality used ${cat.label.toLowerCase()} from our network of 2,000+ verified yards. Every part comes with a warranty and free shipping.`}
+        >
+          <div className="flex items-center gap-2 text-xs text-slate-300">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <Link href="/parts" className="hover:text-white transition-colors">Parts</Link>
+            <span>/</span>
+            <span className="text-white">{cat.label}</span>
           </div>
-        </div>
+        </PageHero>
 
         {/* Trust badges */}
         <div className="mx-auto max-w-[1280px] px-6 py-8">
