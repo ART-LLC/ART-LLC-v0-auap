@@ -20,9 +20,9 @@ export function Footer() {
   const popularMakes = CAR_MAKES.slice(0, 8)
 
   return (
-    <footer className="bg-card/95 backdrop-blur-xl border-t border-border/30 relative overflow-hidden w-full automotive-pattern">
+    <footer className="bg-gradient-to-br from-slate-900/40 to-slate-800/30 backdrop-blur-xl border-t border-white/10 relative overflow-hidden w-full automotive-pattern">
       {/* Top brand strip with logos */}
-      <div className="border-b border-border/20 py-2 sm:py-3 md:py-4 overflow-x-auto">
+      <div className="border-b border-white/10 bg-gradient-to-r from-white/5 via-white/3 to-transparent backdrop-blur-lg py-2 sm:py-3 md:py-4 overflow-x-auto">
         <div className="mx-auto w-full max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8">
           <div className="flex items-center gap-2 mb-1.5 sm:mb-2">
             <span className="text-[8px] sm:text-[9px] font-black tracking-[0.15em] uppercase text-3d-subtle whitespace-nowrap">Popular Brands</span>
@@ -195,7 +195,7 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-border/30 bg-background/60 backdrop-blur-sm">
+      <div className="border-t border-white/10 bg-gradient-to-r from-white/5 via-white/3 to-white/5 backdrop-blur-xl">
         <div className="mx-auto w-full max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 py-5 sm:py-7 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6">
           <span className="text-xs sm:text-sm text-muted-foreground font-semibold tracking-tight text-center sm:text-left text-3d-subtle">
             &copy; {new Date().getFullYear()} <strong className="font-black text-foreground text-3d-bold">AUAPW LLC</strong>
