@@ -4907,4 +4907,73 @@ footer .wordmark-3d {
   transform: translateX(4px);
 }
 
+/* ============================================================
+   GLOBAL CLICK FLASH — every button, tab, link, card
+   Gives instant visual feedback on every interactive element
+   ============================================================ */
+
+/* Flash keyframe: bright white burst then fade */
+@keyframes click-flash {
+  0%   { filter: brightness(1); }
+  20%  { filter: brightness(2.2) saturate(1.4); }
+  60%  { filter: brightness(1.4); }
+  100% { filter: brightness(1); }
+}
+
+/* Press-down keyframe */
+@keyframes click-press {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(0.94); }
+  70%  { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Apply to ALL buttons */
+button:active,
+[role="button"]:active,
+[role="tab"]:active {
+  animation: click-flash 0.35s ease-out, click-press 0.25s ease-out;
+}
+
+/* Apply to ALL links */
+a:active {
+  animation: click-flash 0.35s ease-out, click-press 0.25s ease-out;
+}
+
+/* Extra ring flash for auapw metallic buttons */
+.auapw-btn:active {
+  animation: click-flash 0.35s ease-out, click-press 0.25s ease-out;
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.6),
+    inset 0 2px 8px rgba(0, 0, 0, 0.4),
+    0 6px 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Sidebar category buttons */
+aside button:active {
+  animation: click-flash 0.3s ease-out, click-press 0.2s ease-out;
+}
+
+/* Product cards */
+.product-card:active,
+[data-card]:active {
+  animation: click-flash 0.3s ease-out, click-press 0.2s ease-out;
+}
+
+/* A-Z letter tabs */
+[role="tablist"] button:active {
+  animation: click-flash 0.3s ease-out, click-press 0.2s ease-out;
+}
+
+/* Nav links */
+nav a:active,
+header a:active {
+  animation: click-flash 0.25s ease-out;
+}
+
+/* Prevent transition from fighting the animation */
+button, a, [role="button"], [role="tab"] {
+  animation-fill-mode: forwards;
+}
+
 /* v0 rebuild cache busting */
