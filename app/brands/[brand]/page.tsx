@@ -66,17 +66,15 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
       <main className="pt-24 lg:pt-28">
         {/* LUXURY HERO SECTION: Premium Gradient + Brand Showcase */}
         <section className="relative h-[420px] sm:h-[520px] lg:h-[640px] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 overflow-hidden">
-          {/* Luxury Background Gradient + Accent Lines */}
+          {/* Subtle Background */}
           <div className="absolute inset-0">
-            {/* Gradient overlay with gold accents */}
-            <div className="absolute inset-0 bg-gradient-to-br from-amber-950/20 via-transparent to-slate-950/40" />
-            {/* Decorative accent line */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-800/30 via-transparent to-slate-900/30" />
+            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-400/30 to-transparent" />
           </div>
 
           {/* Car Background Image - if available */}
           {brand && (
-            <div className="absolute inset-0 opacity-40">
+            <div className="absolute inset-0 opacity-30">
               <Image
                 src={`/brand-cars/${brand}-car.png`}
                 alt={`${label} featured vehicle`}
@@ -90,10 +88,10 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
 
           {/* Content Overlay */}
           <div className="absolute inset-0 flex flex-col justify-between items-start z-10">
-            {/* Top: Heritage Badge */}
+            {/* Top: Premium Badge */}
             <div className="w-full px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 lg:pt-12">
-              <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-amber-400 border border-amber-500/50 bg-amber-500/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+              <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-foreground/70 border border-foreground/20 bg-foreground/5 px-4 py-2 rounded-full backdrop-blur-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-foreground/50" />
                 {label} · Premium Parts
               </div>
             </div>
@@ -104,14 +102,13 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
                 <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white drop-shadow-xl text-balance leading-tight mb-2">
                   {`${label}`}
                 </h1>
-                <p className="text-amber-200/80 text-sm sm:text-base font-medium">Premium OEM Parts Inventory</p>
+                <p className="text-foreground/70 text-sm sm:text-base font-medium">Premium OEM Parts Inventory</p>
               </div>
 
-              {/* Logo Badge - Premium Style */}
+              {/* Logo Badge - Minimal Luxury */}
               {brand && (
                 <div className="w-28 h-28 sm:w-36 sm:h-36 relative flex-shrink-0">
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-400/30 to-amber-600/30 rounded-2xl blur-xl" />
-                  <div className="relative w-full h-full bg-gradient-to-br from-slate-100 to-slate-50 backdrop-blur rounded-2xl shadow-2xl p-3 sm:p-4 border border-amber-400/50 flex items-center justify-center">
+                  <div className="relative w-full h-full bg-slate-100 backdrop-blur rounded-2xl shadow-2xl p-3 sm:p-4 border border-slate-200/50 flex items-center justify-center">
                     <Image
                       src={`/logos/${brand}.png`}
                       alt={`${label} logo`}
@@ -127,18 +124,15 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
         </section>
 
         {/* Luxury Stats + Details Section */}
-        <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-background to-background/50 border-b border-amber-500/20 relative overflow-hidden">
-          {/* Subtle background accent */}
-          <div className="absolute inset-0 bg-gradient-to-r from-amber-950/5 via-transparent to-amber-950/5 pointer-events-none" />
-          
+        <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-background to-background/50 border-b border-foreground/10 relative overflow-hidden">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Breadcrumb */}
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-muted-foreground mb-8 flex-wrap font-medium">
-              <Link href="/" className="hover:text-amber-400 transition-colors">Home</Link>
+              <Link href="/" className="hover:text-foreground/80 transition-colors">Home</Link>
               <ChevronRight className="w-3 h-3 opacity-50" />
-              <Link href="/brands" className="hover:text-amber-400 transition-colors">Brands</Link>
+              <Link href="/brands" className="hover:text-foreground/80 transition-colors">Brands</Link>
               <ChevronRight className="w-3 h-3 opacity-50" />
-              <span className="text-amber-400 font-semibold">{label} Parts</span>
+              <span className="text-foreground/70 font-semibold">{label} Parts</span>
             </nav>
 
             {/* Title and Description */}
@@ -154,55 +148,52 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
             {/* Luxury Stats Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
               {/* Stat 1: Total Parts */}
-              <div className="group relative p-6 sm:p-8 rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/40 to-amber-950/10 hover:border-amber-400/50 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/0 rounded-2xl transition-colors duration-300" />
+              <div className="group relative p-6 sm:p-8 rounded-2xl border border-foreground/10 bg-foreground/5 hover:border-foreground/20 transition-all duration-300">
                 <div className="relative">
-                  <div className="text-4xl sm:text-5xl font-black text-transparent bg-gradient-to-r from-amber-300 to-amber-200 bg-clip-text mb-2">
+                  <div className="text-4xl sm:text-5xl font-black text-white mb-2">
                     {(catalog?.products?.length || 0).toLocaleString()}
                   </div>
-                  <div className="text-[10px] uppercase tracking-widest text-amber-200/70 font-bold">Total Parts in Inventory</div>
+                  <div className="text-[10px] uppercase tracking-widest text-foreground/60 font-bold">Total Parts in Inventory</div>
                 </div>
               </div>
 
               {/* Stat 2: Compatible Models */}
-              <div className="group relative p-6 sm:p-8 rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/40 to-amber-950/10 hover:border-amber-400/50 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/0 rounded-2xl transition-colors duration-300" />
+              <div className="group relative p-6 sm:p-8 rounded-2xl border border-foreground/10 bg-foreground/5 hover:border-foreground/20 transition-all duration-300">
                 <div className="relative">
-                  <div className="text-4xl sm:text-5xl font-black text-transparent bg-gradient-to-r from-amber-300 to-amber-200 bg-clip-text mb-2">
+                  <div className="text-4xl sm:text-5xl font-black text-white mb-2">
                     {models.length}
                   </div>
-                  <div className="text-[10px] uppercase tracking-widest text-amber-200/70 font-bold">Compatible Models</div>
+                  <div className="text-[10px] uppercase tracking-widest text-foreground/60 font-bold">Compatible Models</div>
                 </div>
               </div>
 
               {/* Stat 3: Warranty */}
-              <div className="group relative p-6 sm:p-8 rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/40 to-amber-950/10 hover:border-amber-400/50 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/0 rounded-2xl transition-colors duration-300" />
+              <div className="group relative p-6 sm:p-8 rounded-2xl border border-foreground/10 bg-foreground/5 hover:border-foreground/20 transition-all duration-300">
                 <div className="relative">
-                  <div className="text-4xl sm:text-5xl font-black text-transparent bg-gradient-to-r from-amber-300 to-amber-200 bg-clip-text mb-2">
+                  <div className="text-4xl sm:text-5xl font-black text-white mb-2">
                     90 Days
                   </div>
-                  <div className="text-[10px] uppercase tracking-widest text-amber-200/70 font-bold">Complete Warranty</div>
+                  <div className="text-[10px] uppercase tracking-widest text-foreground/60 font-bold">Complete Warranty</div>
                 </div>
               </div>
             </div>
 
-            {/* Luxury Search Form */}
+            {/* Search Form */}
             <form method="get" className="mt-10 flex flex-col sm:flex-row max-w-2xl gap-3" role="search" aria-label={`Search ${label} parts`}>
               {sp.model ? <input type="hidden" name="model" value={sp.model} /> : null}
               <div className="flex-1 relative">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-amber-400/60" />
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-foreground/50" />
                 <input
                   type="search"
                   name="q"
                   defaultValue={sp.q || ''}
                   placeholder={`Search ${label} parts…`}
-                  className="w-full rounded-xl border border-amber-500/40 bg-slate-900/60 backdrop-blur py-3 pl-12 pr-4 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400/30 transition-all"
+                  className="w-full rounded-xl border border-foreground/15 bg-foreground/5 backdrop-blur py-3 pl-12 pr-4 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-foreground/40 focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
                 />
               </div>
               <button
                 type="submit"
-                className="rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 px-6 py-3 text-sm font-bold text-black shadow-lg hover:shadow-amber-500/30 transition-all duration-300"
+                className="rounded-xl bg-foreground/80 hover:bg-foreground text-background px-6 py-3 text-sm font-bold shadow-lg transition-all duration-300"
               >
                 Search Parts
               </button>
