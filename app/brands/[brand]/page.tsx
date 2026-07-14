@@ -27,7 +27,7 @@ import { MaterialType, filterPartsByMaterial, countPartsByMaterial } from '@/lib
 
 interface PageProps {
   params: Promise<{ brand: string }>
-  searchParams: Promise<{ q?: string; model?: string; category?: string; page?: string }>
+  searchParams: Promise<{ q?: string; model?: string; category?: string; material?: string; page?: string }>
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -52,7 +52,7 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
   if (!catalog) notFound()
 
   const page = Number.parseInt(sp.page || '1', 10) || 1
-  const material = (sp.material as MaterialType) || undefined
+  const material = (sp.material as MaterialType | 'all') || undefined
   let result = searchBrandProducts(brand, { q: sp.q, model: sp.model, category: sp.category, page })
   
   // Apply material filter if selected
