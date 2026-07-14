@@ -9,19 +9,19 @@ import { Search, MessageSquare, Phone, Mail, Cog, Settings2, Calendar, Zap, Tren
 
 export function HeroSection() {
   return (
-    <section className="relative pt-[58px] overflow-hidden ghost-scan-section hero-on-dark" style={{ paddingTop: "45px" }}>
-      {/* Background — grey base; photo carousel constrained to the top hero band */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1a1d24] via-[#3a3d44] to-[#2a2d34]">
+    <section className="relative pt-[58px] overflow-hidden ghost-scan-section" style={{ paddingTop: "45px" }}>
+      {/* Background — adaptive for light/dark mode */}
+      <div className="absolute inset-0 bg-gradient-to-b dark:from-[#1a1d24] dark:via-[#3a3d44] dark:to-[#2a2d34] from-slate-50 via-blue-50 to-slate-100">
         {/* Enhanced automotive-themed gradient background */}
         <div className="absolute inset-0">
           {/* Motion blur elements suggesting speed and performance */}
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-orange-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 dark:bg-blue-600/5 bg-blue-400/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-1/3 right-1/4 w-80 h-80 dark:bg-orange-500/5 bg-orange-400/10 rounded-full blur-3xl animate-pulse delay-1000" />
         </div>
         
         <div className="absolute top-0 inset-x-0 h-[820px] overflow-hidden">
           <HeroSlider />
-          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-[#3a3d44]" />
+          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b dark:from-transparent dark:to-[#3a3d44] from-transparent to-slate-100" />
         </div>
         <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: "radial-gradient(circle, #e8e8e8 0%, transparent 70%)" }} />
         <GearBackground />
@@ -46,17 +46,11 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="font-sans leading-tight text-balance max-w-4xl" style={{ fontFamily: "system-ui" }}>
-              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
+              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase dark:text-white/70 text-slate-600 mb-3" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
               <span
-                className="block text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black"
+                className="block text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black dark:text-white text-slate-900"
                 style={{
                   fontFamily: "system-ui",
-                  backgroundImage:
-                    "linear-gradient(90deg,#c8cdda 0%,#eef1f8 30%,#ffffff 50%,#eef1f8 70%,#c8cdda 100%)",
-                  WebkitBackgroundClip: "text",
-                  backgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.4))",
                 }}
               >
                 Premium Quality Used Auto Parts
@@ -72,8 +66,8 @@ export function HeroSection() {
                 { value: "50", label: "States Covered" },
               ].map(({ value, label }) => (
                 <div key={label} className="flex flex-col items-center gap-0.5">
-                  <span className="text-[1.4rem] sm:text-[1.8rem] font-black text-white">{value}</span>
-                  <span className="text-[0.6rem] sm:text-[0.65rem] font-bold tracking-[0.18em] uppercase text-white/70">{label}</span>
+                  <span className="text-[1.4rem] sm:text-[1.8rem] font-black dark:text-white text-slate-900">{value}</span>
+                  <span className="text-[0.6rem] sm:text-[0.65rem] font-bold tracking-[0.18em] uppercase dark:text-white/70 text-slate-600">{label}</span>
                 </div>
               ))}
             </div>
@@ -91,11 +85,10 @@ export function HeroSection() {
                 { title: "Dealer & DIY Friendly", desc: "Whether you are a professional mechanic or a DIY enthusiast, our platform provides the same premium access, expert support, and seamless ordering experience." },
               ].map(({ title, desc }) => (
                 <div key={title}
-                  className="flex flex-col gap-1 p-3 rounded-lg"
-                  style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)" }}
+                  className="flex flex-col gap-1 p-3 rounded-lg dark:bg-white/[0.04] bg-white/60 dark:border-white/[0.07] border-slate-300/30 border"
                 >
-                  <span className="text-sm font-bold tracking-tight text-primary">{title}</span>
-                  <span className="text-sm font-semibold tracking-tight text-foreground leading-relaxed" style={{ fontFamily: "system-ui" }}>{desc}</span>
+                  <span className="text-sm font-bold tracking-tight dark:text-primary text-slate-800">{title}</span>
+                  <span className="text-sm font-semibold tracking-tight dark:text-foreground text-slate-700 leading-relaxed" style={{ fontFamily: "system-ui" }}>{desc}</span>
                 </div>
               ))}
             </div>
