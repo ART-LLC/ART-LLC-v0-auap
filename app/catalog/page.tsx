@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { HeroBanner } from '@/components/hero-banner'
 import { MaterialTabs } from '@/components/material-tabs'
 import { Search, ShoppingCart, Heart, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
@@ -208,16 +209,20 @@ export default function CatalogPage() {
     <>
       <Navbar />
       <main className="min-h-screen bg-background pt-24">
-        {/* Page Header */}
-        <section className="py-12 sm:py-16 relative bg-gradient-to-b from-background to-background/50">
+        {/* Hero Banner */}
+        <section className="px-4 sm:px-6 lg:px-8 mb-12">
+          <HeroBanner
+            imageSrc="/images/hero-catalog.png"
+            title="Complete Parts Catalog"
+            subtitle="Browse our extensive inventory of quality used auto parts for all vehicle makes and models"
+            height="large"
+          />
+        </section>
+
+        {/* Content Section */}
+        <section className="relative">
           <div className="metal-line absolute top-0 left-0 right-0" />
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight mb-2 text-balance font-sans text-3d-bold">
-              Complete Parts Catalog
-            </h1>
-            <p className="text-foreground/70 text-lg sm:text-xl mb-6 max-w-2xl">
-              Browse our extensive inventory of quality used auto parts for all vehicle makes and models
-            </p>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
             {/* Search Bar */}
             <div className="relative mb-8">
