@@ -268,7 +268,7 @@ export default function CatalogPage() {
                         setSearchQuery('')
                         setSelectedCategory('All Parts')
                       }}
-                      className="auapw-btn auapw-btn-blue auapw-btn-lg"
+                      className="rounded-lg bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 font-semibold transition-colors"
                     >
                       Clear Filters
                     </button>
@@ -290,17 +290,12 @@ export default function CatalogPage() {
                           </p>
                         </div>
 
-                        {/* Status Button */}
+                        {/* Status Badge */}
                         <div className="mb-4">
-                          <button
-                            disabled
-                            className="auapw-btn auapw-btn-green auapw-btn-sm auapw-btn-subtext w-full text-center opacity-70"
-                          >
-                            <div className="flex flex-col items-center w-full">
-                              <span className="btn-main">{part.name}</span>
-                              <span className="btn-sub">In Stock</span>
-                            </div>
-                          </button>
+                          <div className="rounded-lg bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 px-3 py-2 text-center text-sm font-medium">
+                            <div className="font-semibold">{part.name}</div>
+                            <div className="text-xs opacity-80">In Stock</div>
+                          </div>
                         </div>
 
                         {/* Price */}
@@ -314,7 +309,7 @@ export default function CatalogPage() {
                         <div className="flex flex-col gap-2 mt-auto">
                           <button
                             onClick={() => handleAddToCart(part)}
-                            className="auapw-btn auapw-btn-blue w-full"
+                            className="w-full rounded-lg bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 font-semibold transition-colors flex items-center justify-center gap-2"
                             aria-label={`Add ${part.name} to cart`}
                           >
                             <ShoppingCart className="w-4 h-4" />
@@ -323,21 +318,21 @@ export default function CatalogPage() {
                           <div className="flex gap-2">
                             <button
                               onClick={() => handleAddToWishlist(part)}
-                              className="auapw-btn auapw-btn-red flex-1"
+                              className="flex-1 rounded-lg bg-red-100 hover:bg-red-200 dark:bg-red-900/30 dark:hover:bg-red-900/50 text-red-700 dark:text-red-400 px-3 py-2 font-medium transition-colors flex items-center justify-center gap-1"
                               aria-label={`Add ${part.name} to wishlist`}
                               title="Add to wishlist"
                             >
                               <Heart className="w-4 h-4" />
-                              <span className="hidden sm:inline">Save</span>
+                              <span className="hidden sm:inline text-sm">Save</span>
                             </button>
                             <button
                               onClick={() => handleAddToComparison(part)}
-                              className="auapw-btn auapw-btn-silver flex-1"
+                              className="flex-1 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 px-3 py-2 font-medium transition-colors flex items-center justify-center gap-1"
                               aria-label={`Add ${part.name} to comparison`}
                               title="Add to comparison"
                             >
                               <BarChart3 className="w-4 h-4" />
-                              <span className="hidden sm:inline">Compare</span>
+                              <span className="hidden sm:inline text-sm">Compare</span>
                             </button>
                           </div>
                         </div>
