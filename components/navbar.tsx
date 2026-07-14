@@ -127,10 +127,11 @@ export function Navbar() {
             <div className="header-boss-logo-ring w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center flex-shrink-0">
               <Logo size="sm" priority showGlow />
             </div>
-            {/* Mobile: readable brand name */}
+            {/* Mobile: full brand name */}
             <div className="flex flex-col justify-center sm:hidden min-w-0">
-              <span className="wordmark-3d leading-tight font-bold" style={{ fontSize: '0.75rem', letterSpacing: '0.02em' }}>AUAPW</span>
-              <span className="wordmark-sub font-bold uppercase leading-tight" style={{ fontSize: '0.55rem', letterSpacing: '0.08em' }}>Auto Parts</span>
+              <span className="wordmark-3d leading-tight font-bold" style={{ fontSize: '0.7rem', letterSpacing: '0.01em' }}>AUAPW LLC</span>
+              <span className="wordmark-sub font-bold uppercase leading-tight" style={{ fontSize: '0.5rem', letterSpacing: '0.06em' }}>ALL USED AUTO PARTS</span>
+              <span className="wordmark-sub font-bold uppercase leading-tight" style={{ fontSize: '0.5rem', letterSpacing: '0.06em' }}>WAREHOUSE</span>
             </div>
             {/* Desktop: full wordmark */}
             <div className="hidden sm:flex flex-col justify-center pt-[2px]">
