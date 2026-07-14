@@ -26,9 +26,9 @@ export default function UsedElectricalPartsPage() {
       <Navbar />
       <main className="pt-[58px]">
         {/* Header */}
-        <div className="relative border-b border-border/30 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.92), rgba(13,15,22,0.72), rgba(13,15,22,0.95)), url('/images/heroes/hero-electrical.png')" }}>
+        <div className="relative border-b border-border/30 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.78), rgba(13,15,22,0.72), rgba(13,15,22,0.88)), url('/images/heroes/hero-electrical.png')" }}>
           <div className="metal-line" />
-          <div className="mx-auto max-w-[1280px] px-6 py-14">
+          <div className="mx-auto max-w-[1280px] px-6 py-20">
             <div className="flex items-center gap-2 text-xs text-muted-foreground mb-6">
               <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
               <span>/</span>

@@ -60,13 +60,13 @@ export default function BlogPage() {
     <>
       <Navbar />
       <main className="pt-[58px]">
-        <div className="relative border-b border-border/20 bg-cover bg-center py-16" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.9), rgba(13,15,22,0.7), rgba(13,15,22,0.95)), url('/images/heroes/hero-garage.png')" }}>
+        <div className="relative border-b border-border/20 bg-cover bg-center py-20" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.9), rgba(13,15,22,0.7), rgba(13,15,22,0.88)), url('/images/heroes/hero-garage.png')" }}>
           <div className="mx-auto max-w-[1200px] px-6">
             <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight text-white mb-4 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">Latest Articles</h1>
             <p className="text-slate-200/90 text-lg max-w-2xl">Stay informed with tips, guides, and news about used auto parts and automotive maintenance.</p>
           </div>
         </div>
-        <div className="mx-auto max-w-[1200px] px-6 py-16">
+        <div className="mx-auto max-w-[1200px] px-6 py-20">
 
           <div className="grid gap-6 mb-16">
             {posts.map((post) => (

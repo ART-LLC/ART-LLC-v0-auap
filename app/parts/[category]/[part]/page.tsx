@@ -73,7 +73,7 @@ export default function IndividualPartPage() {
         {/* Header */}
         <div className="bg-gradient-to-br from-background via-card to-background border-b border-border/30">
           <div className="metal-line" />
-          <div className="mx-auto max-w-[1280px] px-6 py-14">
+          <div className="mx-auto max-w-[1280px] px-6 py-20">
             <div className="flex items-center gap-2 text-xs text-muted-foreground mb-6">
               <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
               <span>/</span>

@@ -302,7 +302,7 @@ export default function CatalogPage() {
                 </div>
 
                 {filteredParts.length === 0 ? (
-                  <div className="text-center py-16">
+                  <div className="text-center py-20">
                     <p className="text-foreground/70 text-lg mb-4">No parts found matching your search.</p>
                     <button
                       onClick={() => {

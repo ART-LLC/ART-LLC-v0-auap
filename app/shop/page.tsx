@@ -90,7 +90,7 @@ export default function ShopPage() {
       <Navbar />
       <main className="bg-background pt-24 lg:pt-28">
         {/* Header */}
-        <div className="relative border-b border-border/20 bg-cover bg-center py-16" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.9), rgba(13,15,22,0.7), rgba(13,15,22,0.95)), url('/images/heroes/hero-warehouse.png')" }}>
+        <div className="relative border-b border-border/20 bg-cover bg-center py-20" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.9), rgba(13,15,22,0.7), rgba(13,15,22,0.88)), url('/images/heroes/hero-warehouse.png')" }}>
           <div className="mx-auto max-w-[1280px] px-6">
             <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight text-white mb-2 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">Shop Quality Auto Parts</h1>
             <p className="text-slate-200/90">Browse our selection of premium used auto parts with warranty</p>

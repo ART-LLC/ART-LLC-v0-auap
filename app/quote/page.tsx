@@ -85,9 +85,9 @@ export default function QuotePage() {
       <Navbar />
       <main className="pt-[58px]">
         {/* Header */}
-        <div className="relative border-b border-border/30 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.92), rgba(13,15,22,0.72), rgba(13,15,22,0.95)), url('/images/heroes/hero-support.png')" }}>
+        <div className="relative border-b border-border/30 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.78), rgba(13,15,22,0.72), rgba(13,15,22,0.88)), url('/images/heroes/hero-support.png')" }}>
           <div className="metal-line" />
-          <div className="mx-auto max-w-[1280px] px-6 py-14">
+          <div className="mx-auto max-w-[1280px] px-6 py-20">
             <div className="flex items-center gap-4 mb-5">
               <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/50" />
               <span className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-primary">No Obligation</span>

@@ -85,7 +85,7 @@ export default function CheckoutPage() {
     <>
       <Navbar />
       <main className="pt-[58px]">
-        <div className="relative bg-cover bg-center py-14 border-b border-border/20 mb-12" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.9), rgba(13,15,22,0.72), rgba(13,15,22,0.95)), url('/images/heroes/hero-warehouse.png')" }}>
+        <div className="relative bg-cover bg-center py-20 sm:py-28 border-b border-border/20 mb-12" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.82), rgba(13,15,22,0.60), rgba(13,15,22,0.88)), url('/images/heroes/hero-warehouse.png')" }}>
           <div className="mx-auto max-w-4xl px-4">
             <Link href="/cart" className="inline-flex items-center gap-2 text-slate-200 hover:text-white mb-6">
               <ArrowLeft className="w-4 h-4" />

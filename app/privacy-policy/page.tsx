@@ -109,9 +109,9 @@ export default function PrivacyPolicyPage() {
       <Navbar />
       <main className="pt-[58px]">
         {/* Header */}
-        <div className="relative border-b border-border/30 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.93), rgba(13,15,22,0.78), rgba(13,15,22,0.96)), url('/images/heroes/hero-warehouse.png')" }}>
+        <div className="relative border-b border-border/30 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.78), rgba(13,15,22,0.78), rgba(13,15,22,0.88)), url('/images/heroes/hero-warehouse.png')" }}>
           <div className="metal-line" />
-          <div className="mx-auto max-w-[1280px] px-6 py-14">
+          <div className="mx-auto max-w-[1280px] px-6 py-20">
             <div className="flex items-center gap-4 mb-5">
               <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/50" />
               <span className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-primary">Legal</span>
@@ -125,7 +125,7 @@ export default function PrivacyPolicyPage() {
         </div>
 
         {/* Content */}
-        <div className="mx-auto max-w-[900px] px-6 py-14">
+        <div className="mx-auto max-w-[900px] px-6 py-20">
           <div className="flex flex-col gap-10">
             {sections.map((section, i) => (
               <section key={section.title} className="glass-card rounded-sm p-7 sm:p-8">

@@ -13,13 +13,13 @@ export default function CookiePolicyPage() {
     <>
       <Navbar />
       <main className="pt-[58px]">
-        <div className="relative border-b border-border/20 bg-cover bg-center py-16" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.93), rgba(13,15,22,0.78), rgba(13,15,22,0.96)), url('/images/heroes/hero-warehouse.png')" }}>
+        <div className="relative border-b border-border/20 bg-cover bg-center py-20" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.78), rgba(13,15,22,0.78), rgba(13,15,22,0.88)), url('/images/heroes/hero-warehouse.png')" }}>
           <div className="mx-auto max-w-[900px] px-6">
             <span className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-primary">Legal</span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-black uppercase tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">Cookie Policy</h1>
           </div>
         </div>
-        <div className="mx-auto max-w-[900px] px-6 py-16">
+        <div className="mx-auto max-w-[900px] px-6 py-20">
           <div className="prose prose-invert max-w-none">
             <p className="text-muted-foreground mb-6">Last updated: March 2026</p>
 
