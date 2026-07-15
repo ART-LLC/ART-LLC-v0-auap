@@ -1,4 +1,7 @@
-import { MaterialType } from '@/components/material-icon'
+import type { MaterialType } from '@/components/material-icon'
+
+export type { MaterialType } from '@/components/material-icon'
+export type MaterialCounts = Record<MaterialType | 'all', number>
 
 export function getPartMaterial(partName: string, category?: string): MaterialType {
   const nameLower = partName.toLowerCase()
