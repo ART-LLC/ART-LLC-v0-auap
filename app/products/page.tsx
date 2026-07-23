@@ -199,7 +199,16 @@ export default function ProductsPage() {
                     </button>
 
                     <button
-                      onClick={() => addToWishlist(product)}
+                      onClick={() =>
+                        addToWishlist({
+                          id: product.id,
+                          name: product.name,
+                          price: Number.parseFloat(product.price) || 0,
+                          make: product.make,
+                          partType: product.category,
+                          addedAt: Date.now(),
+                        })
+                      }
                       className={`px-4 py-2 rounded-lg transition ${
                         isInWishlist(product.id)
                           ? 'bg-red-500/20 text-red-500'
