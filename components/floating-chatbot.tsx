@@ -14,6 +14,10 @@ interface Message {
 
 export function FloatingChatbot() {
   const [isOpen, setIsOpen] = useState(false)
+  const [customerEmail, setCustomerEmail] = useState('')
+  const [emailVerified, setEmailVerified] = useState(false)
+  const [emailInput, setEmailInput] = useState('')
+  const [emailError, setEmailError] = useState('')
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
@@ -28,11 +32,82 @@ export function FloatingChatbot() {
   ])
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+  const [isSendingTranscript, setIsSendingTranscript] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const sessionStartTimeRef = useRef<number>(Date.now())
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
+
+  const validateEmail = (email: string): boolean => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return regex.test(email)
+  }
+
+  const handleEmailSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    setEmailError('')
+
+    if (!emailInput.trim()) {
+      setEmailError('Please enter your email address')
+      return
+    }
+
+    if (!validateEmail(emailInput)) {
+      setEmailError('Please enter a valid email address')
+      return
+    }
+
+    setCustomerEmail(emailInput)
+    setEmailVerified(true)
+    setEmailInput('')
+  }
+
+  const sendTranscriptEmail = async () => {
+    if (!customerEmail || messages.length <= 1) return
+
+    setIsSendingTranscript(true)
+    try {
+      const sessionDuration = Date.now() - sessionStartTimeRef.current
+      const response = await fetch('/api/chat/send-transcript', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          customerEmail,
+          messages,
+          sessionDuration,
+        }),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send transcript')
+      }
+
+      // Add confirmation message
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: Date.now().toString(),
+          role: 'assistant',
+          content: `✓ Chat transcript has been sent to ${customerEmail} and our support team. Thank you for chatting with us!`,
+        },
+      ])
+    } catch (error) {
+      console.error('[v0] Transcript send error:', error)
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: Date.now().toString(),
+          role: 'assistant',
+          content:
+            'There was an issue sending your chat transcript. Please try again or contact support@auapw.com',
+        },
+      ])
+    } finally {
+      setIsSendingTranscript(false)
+    }
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -167,9 +242,45 @@ export function FloatingChatbot() {
             <ChevronDown className="w-4 h-4 text-white/60 cursor-pointer flex-shrink-0" onClick={() => setIsOpen(false)} />
           </div>
 
-          {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-3">
-            {messages.map((msg) => (
+          {/* Email Verification Section */}
+          {!emailVerified ? (
+            <div className="flex-1 overflow-y-auto p-4 flex flex-col justify-center space-y-4">
+              <div className="text-center">
+                <h4 className="font-bold text-white mb-2">Verify Your Email</h4>
+                <p className="text-sm text-slate-300 mb-4">
+                  Please provide your email so we can send you the chat transcript
+                </p>
+              </div>
+              <form onSubmit={handleEmailSubmit} className="space-y-3">
+                <div>
+                  <input
+                    type="email"
+                    value={emailInput}
+                    onChange={(e) => {
+                      setEmailInput(e.target.value)
+                      setEmailError('')
+                    }}
+                    placeholder="your@email.com"
+                    className="w-full px-3 py-2 rounded-lg bg-slate-800 text-white text-sm placeholder-slate-500 border border-slate-600 focus:outline-none focus:border-blue-500"
+                  />
+                  {emailError && <p className="text-xs text-red-400 mt-1">{emailError}</p>}
+                </div>
+                <button
+                  type="submit"
+                  className="w-full px-4 py-2 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition text-sm"
+                >
+                  Continue to Chat
+                </button>
+              </form>
+              <p className="text-xs text-slate-400 text-center">
+                Your email will only be used to send chat transcripts
+              </p>
+            </div>
+          ) : (
+            <>
+              {/* Messages */}
+              <div className="flex-1 overflow-y-auto p-4 space-y-3">
+                {messages.map((msg) => (
               <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div
                   className={`max-w-xs px-4 py-2 rounded-lg text-sm ${
@@ -208,24 +319,47 @@ export function FloatingChatbot() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input */}
-          <form onSubmit={handleSubmit} className="p-4 border-t border-slate-700 flex gap-2">
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask about parts..."
-              disabled={isLoading}
-              className="flex-1 px-3 py-2 rounded-lg bg-slate-800 text-white text-sm placeholder-slate-500 border border-slate-600 focus:outline-none focus:border-blue-500 disabled:opacity-50"
-            />
-            <button
-              type="submit"
-              disabled={isLoading || !input.trim()}
-              className="p-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 transition"
-            >
-              <Send className="w-4 h-4" />
-            </button>
-          </form>
+              {/* Input */}
+              <div className="p-4 border-t border-slate-700 space-y-2">
+                <form onSubmit={handleSubmit} className="flex gap-2">
+                  <input
+                    type="text"
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    placeholder="Ask about parts..."
+                    disabled={isLoading}
+                    className="flex-1 px-3 py-2 rounded-lg bg-slate-800 text-white text-sm placeholder-slate-500 border border-slate-600 focus:outline-none focus:border-blue-500 disabled:opacity-50"
+                  />
+                  <button
+                    type="submit"
+                    disabled={isLoading || !input.trim()}
+                    className="p-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 transition"
+                  >
+                    <Send className="w-4 h-4" />
+                  </button>
+                </form>
+                <div className="flex gap-2">
+                  <button
+                    onClick={sendTranscriptEmail}
+                    disabled={isSendingTranscript || messages.length <= 1}
+                    className="flex-1 text-xs font-semibold px-3 py-1.5 rounded-lg bg-green-600/80 text-white hover:bg-green-700 disabled:opacity-50 transition"
+                  >
+                    {isSendingTranscript ? 'Sending...' : 'Email Transcript'}
+                  </button>
+                  <button
+                    onClick={() => {
+                      setEmailVerified(false)
+                      setCustomerEmail('')
+                    }}
+                    className="flex-1 text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-700 text-white hover:bg-slate-600 transition"
+                  >
+                    Change Email
+                  </button>
+                </div>
+                <p className="text-xs text-slate-400 text-center">Chat as: {customerEmail}</p>
+              </div>
+            </>
+          )}
         </div>
       )}
     </>
