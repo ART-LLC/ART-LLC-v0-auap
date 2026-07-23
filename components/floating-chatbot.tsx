@@ -19,11 +19,11 @@ export function FloatingChatbot() {
       id: '1',
       role: 'assistant',
       content:
-        'Hey there! 👋 I\'m AUAPW\'s automotive expert. Decode your VIN instantly to find guaranteed-fit OEM parts, or ask me about engines, transmissions, pricing, warranty, returns, and shipping. What can I help you with?',
+        "Hi! I'm the AUAPW automotive assistant. I can help you find compatible OEM used parts, decode a VIN, get a quote, or answer questions about shipping, warranty, returns, orders, and your account. What do you need?",
       links: [
-        { title: 'Decode My VIN', path: '/ai-search' },
-        { title: 'Browse Parts', path: '/products' },
-        { title: 'Chat Full Screen', path: '/chat' },
+        { title: 'Find Parts by VIN', path: '/ai-search' },
+        { title: 'Browse Used Parts', path: '/parts' },
+        { title: 'Get a Free Quote', path: '/quote' },
       ],
     },
   ])
@@ -50,58 +50,27 @@ export function FloatingChatbot() {
     setIsLoading(true)
 
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch('/api/support/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          messages: [
-            ...messages,
-            userMessage,
-          ].map((m) => ({
-            role: m.role,
-            content: m.content,
-          })),
-        }),
+        body: JSON.stringify({ message: userMessage.content }),
       })
 
-      if (!response.ok) throw new Error('Failed to get response')
+      const data: {
+        content?: string
+        links?: Array<{ title: string; path: string }>
+        error?: string
+      } = await response.json()
 
-      // For streaming responses, read the stream
-      const reader = response.body?.getReader()
-      if (!reader) throw new Error('No response body')
-
-      let fullContent = ''
-      const decoder = new TextDecoder()
-
-      while (true) {
-        const { done, value } = await reader.read()
-        if (done) break
-        fullContent += decoder.decode(value, { stream: true })
-      }
-
-      // Parse the streaming JSON response
-      const lines = fullContent.split('\n')
-      let assistantContent = ''
-
-      for (const line of lines) {
-        if (line.includes('"text"')) {
-          const match = line.match(/"text":"([^"]*)"/)
-          if (match) {
-            assistantContent += match[1]
-          }
-        }
-      }
-
-      if (!assistantContent) {
-        assistantContent =
-          'I had trouble processing that. Try asking about parts, warranty, returns, or shipping, or visit /support for help!'
+      if (!response.ok || !data.content) {
+        throw new Error(data.error || 'Failed to get response')
       }
 
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: assistantContent,
-        links: extractLinks(assistantContent),
+        content: data.content,
+        links: data.links,
       }
       setMessages((prev) => [...prev, assistantMessage])
     } catch (error) {
@@ -187,7 +156,14 @@ export function FloatingChatbot() {
                 </p>
               </div>
             </div>
-            <ChevronDown className="w-4 h-4 text-white/60 cursor-pointer" onClick={() => setIsOpen(false)} />
+            <button
+              type="button"
+              onClick={() => setIsOpen(false)}
+              className="rounded-md p-1 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+              aria-label="Minimize chat"
+            >
+              <ChevronDown className="w-4 h-4" />
+            </button>
           </div>
 
           {/* Messages */}
@@ -237,13 +213,19 @@ export function FloatingChatbot() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask about parts..."
+              onKeyDown={(event) => {
+                if (event.nativeEvent.isComposing || event.keyCode === 229) return
+              }}
+              placeholder="Ask about parts, shipping, or warranty..."
+              aria-label="Message AUAPW automotive assistant"
+              maxLength={1000}
               disabled={isLoading}
               className="flex-1 px-3 py-2 rounded-lg bg-slate-800 text-white text-sm placeholder-slate-500 border border-slate-600 focus:outline-none focus:border-blue-500 disabled:opacity-50"
             />
             <button
               type="submit"
               disabled={isLoading || !input.trim()}
+              aria-label="Send message"
               className="p-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 transition"
             >
               <Send className="w-4 h-4" />
@@ -253,32 +235,4 @@ export function FloatingChatbot() {
       )}
     </>
   )
-}
-
-/**
- * Extract links from response text (looks for patterns like /path or URLs)
- */
-function extractLinks(content: string): Array<{ title: string; path: string }> {
-  const links: Array<{ title: string; path: string }> = []
-
-  // Common page links
-  const pageLinks: Record<string, string> = {
-    '/ai-search': 'Decode My VIN',
-    '/products': 'Browse Products',
-    '/dashboard': 'View Dashboard',
-    '/warranty': 'Warranty Info',
-    '/returns': 'Returns Policy',
-    '/support': 'Get Support',
-    '/chat': 'Full Chat',
-    '/wishlist': 'My Wishlist',
-    '/checkout': 'Checkout',
-  }
-
-  for (const [path, title] of Object.entries(pageLinks)) {
-    if (content.toLowerCase().includes(path.toLowerCase()) || content.includes(path)) {
-      links.push({ title, path })
-    }
-  }
-
-  return links.slice(0, 3) // Max 3 links per message
 }
