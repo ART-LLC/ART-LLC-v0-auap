@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import { MapPin } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 
@@ -21,12 +21,6 @@ interface AddressDetails {
   lng?: number
 }
 
-declare global {
-  interface Window {
-    google?: any
-  }
-}
-
 export function AddressAutocomplete({
   label,
   onAddressSelect,
@@ -38,139 +32,95 @@ export function AddressAutocomplete({
   const [showSuggestions, setShowSuggestions] = useState(false)
   const [loading, setLoading] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
-  const autocompleteServiceRef = useRef<any>(null)
-  const placesServiceRef = useRef<any>(null)
+  const debounceRef = useRef<NodeJS.Timeout | undefined>(undefined)
+  const selectedRef = useRef(false)
 
-  // Initialize Google Maps services
-  useEffect(() => {
-    if (!window.google) {
-      console.warn('[AddressAutocomplete] Google Maps API not loaded')
-      return
-    }
-
-    const { google } = window
-    if (!autocompleteServiceRef.current) {
-      autocompleteServiceRef.current = new google.maps.places.AutocompleteService()
-      placesServiceRef.current = new google.maps.places.PlacesService(
-        document.createElement('div')
-      )
-    }
-  }, [])
-
-  // Fetch suggestions as user types
-  const handleInputChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  // Fetch suggestions from OpenStreetMap Nominatim API (free, no key needed)
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value
     setValue(inputValue)
+    selectedRef.current = false
 
-    if (inputValue.length < 2) {
+    // Clear existing debounce timer
+    if (debounceRef.current) {
+      clearTimeout(debounceRef.current)
+    }
+
+    if (inputValue.length < 3) {
       setSuggestions([])
       setShowSuggestions(false)
       return
     }
 
-    if (!autocompleteServiceRef.current) {
-      console.warn('[AddressAutocomplete] Autocomplete service not ready')
-      return
-    }
-
     setLoading(true)
-    try {
-      const results = await autocompleteServiceRef.current.getPlacePredictions({
-        input: inputValue,
-        componentRestrictions: { country: 'us' }, // Limit to US for AUAPW
-      })
+    // Debounce API calls to avoid rate limiting and improve performance
+    debounceRef.current = setTimeout(async () => {
+      try {
+        const response = await fetch(
+          `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(inputValue)}&format=json&addressdetails=1&limit=8&countrycodes=us`,
+          {
+            headers: {
+              'Accept': 'application/json',
+              'User-Agent': 'AUAPW-Checkout',
+            },
+          }
+        )
+        const data = await response.json()
 
-      setSuggestions(results.predictions || [])
-      setShowSuggestions(true)
-    } catch (error) {
-      console.error('[AddressAutocomplete] Error fetching suggestions:', error)
-      setSuggestions([])
-    } finally {
-      setLoading(false)
-    }
+        const formattedSuggestions = data.map((result: any) => ({
+          id: result.place_id,
+          text: result.display_name,
+          lat: parseFloat(result.lat),
+          lng: parseFloat(result.lon),
+          address: result.address?.road || result.address?.residential || result.display_name.split(',')[0] || '',
+          city: result.address?.city || result.address?.town || result.address?.village || '',
+          state: result.address?.state || '',
+          zip: result.address?.postcode || '',
+        }))
+
+        setSuggestions(formattedSuggestions)
+        setShowSuggestions(formattedSuggestions.length > 0)
+      } catch (error) {
+        console.error('[v0] Nominatim API error:', error)
+        setSuggestions([])
+      } finally {
+        setLoading(false)
+      }
+    }, 400)
   }
 
   // Handle suggestion selection
-  const handleSelectSuggestion = async (placeId: string, description: string) => {
-    if (!placesServiceRef.current) return
+  const handleSelectSuggestion = (suggestion: any) => {
+    setValue(suggestion.text)
+    setShowSuggestions(false)
+    setSuggestions([])
+    selectedRef.current = true
 
-    setLoading(true)
-    try {
-      const result = await new Promise((resolve, reject) => {
-        placesServiceRef.current.getDetails(
-          { placeId, fields: ['address_components', 'geometry', 'formatted_address'] },
-          (place: any) => {
-            if (place) resolve(place)
-            else reject(new Error('Place not found'))
-          }
-        )
+    if (onAddressSelect) {
+      onAddressSelect({
+        street: suggestion.address,
+        city: suggestion.city,
+        state: suggestion.state,
+        zip: suggestion.zip,
+        country: 'US',
+        lat: suggestion.lat,
+        lng: suggestion.lng,
       })
-
-      const place = result as any
-
-      // Extract address components
-      const addressDetails: AddressDetails = {
-        street: '',
-        city: '',
-        state: '',
-        zip: '',
-        country: '',
-        lat: place.geometry?.location?.lat?.(),
-        lng: place.geometry?.location?.lng?.(),
-      }
-
-      place.address_components?.forEach((component: any) => {
-        const types = component.types || []
-        if (types.includes('street_number')) {
-          addressDetails.street = component.short_name + ' ' + addressDetails.street
-        }
-        if (types.includes('route')) {
-          addressDetails.street += component.short_name
-        }
-        if (types.includes('locality')) {
-          addressDetails.city = component.long_name
-        }
-        if (types.includes('administrative_area_level_1')) {
-          addressDetails.state = component.short_name
-        }
-        if (types.includes('postal_code')) {
-          addressDetails.zip = component.short_name
-        }
-        if (types.includes('country')) {
-          addressDetails.country = component.long_name
-        }
-      })
-
-      setValue(description)
-      if (onAddressSelect) {
-        onAddressSelect(addressDetails)
-      }
-      setSuggestions([])
-      setShowSuggestions(false)
-    } catch (error) {
-      console.error('[AddressAutocomplete] Error getting place details:', error)
-    } finally {
-      setLoading(false)
     }
   }
 
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
-  if (!apiKey) {
-    return (
-      <div className={className}>
-        {label && <label className="block text-sm font-medium mb-2">{label}</label>}
-        <Input
-          ref={inputRef}
-          type="text"
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-          placeholder={placeholder}
-          disabled
-          className="opacity-50 cursor-not-allowed"
-        />
-        <p className="text-xs text-amber-600 mt-1">Google Maps API key not configured</p>
-      </div>
-    )
+  // Handle blur — commit manually typed address if no suggestion selected
+  const handleBlur = () => {
+    setTimeout(() => setShowSuggestions(false), 150)
+    if (!selectedRef.current && value.trim() && onAddressSelect) {
+      onAddressSelect({
+        street: value.trim(),
+        city: '',
+        state: '',
+        zip: '',
+        country: 'US',
+      })
+    }
   }
 
   return (
@@ -183,30 +133,34 @@ export function AddressAutocomplete({
           type="text"
           value={value}
           onChange={handleInputChange}
-          onFocus={() => value && value.length >= 2 && setShowSuggestions(true)}
+          onFocus={() => value && value.length >= 3 && suggestions.length > 0 && setShowSuggestions(true)}
+          onBlur={handleBlur}
           placeholder={placeholder}
           className="pl-9"
         />
         {loading && <div className="absolute right-3 top-3 w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin" />}
       </div>
 
-      {/* Suggestions dropdown */}
+      {/* Suggestions dropdown powered by OpenStreetMap Nominatim */}
       {showSuggestions && suggestions.length > 0 && (
         <div className="absolute top-full left-0 right-0 mt-1 bg-background border border-border rounded-md shadow-lg z-50 max-h-64 overflow-y-auto">
           {suggestions.map((suggestion) => (
             <button
-              key={suggestion.place_id}
-              onClick={() => handleSelectSuggestion(suggestion.place_id, suggestion.description)}
-              className="w-full text-left px-4 py-2 hover:bg-accent hover:text-accent-foreground transition-colors text-sm border-b last:border-b-0"
+              key={suggestion.id}
+              type="button"
+              onClick={() => handleSelectSuggestion(suggestion)}
+              className="w-full text-left px-4 py-3 hover:bg-accent hover:text-accent-foreground transition-colors text-sm border-b last:border-b-0"
             >
-              <div className="font-medium">{suggestion.main_text}</div>
-              <div className="text-xs text-muted-foreground">{suggestion.secondary_text}</div>
+              <div className="font-medium line-clamp-1">{suggestion.address || suggestion.text}</div>
+              <div className="text-xs text-muted-foreground line-clamp-1">
+                {suggestion.city && `${suggestion.city}, `}{suggestion.state} {suggestion.zip}
+              </div>
             </button>
           ))}
         </div>
       )}
 
-      {showSuggestions && value && value.length >= 2 && suggestions.length === 0 && !loading && (
+      {showSuggestions && value && value.length >= 3 && suggestions.length === 0 && !loading && (
         <div className="absolute top-full left-0 right-0 mt-1 bg-background border border-border rounded-md shadow-lg z-50 px-4 py-2 text-sm text-muted-foreground">
           No addresses found
         </div>

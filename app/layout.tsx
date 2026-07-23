@@ -109,13 +109,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-VXWHZYRD08');`}
         </Script>
-        {/* Google Maps API for address autocomplete */}
-        {process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY && (
-          <Script
-            src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`}
-            strategy="afterInteractive"
-          />
-        )}
         {/* Intercom messenger — loads after page is interactive */}
         <Script 
           id="intercom-bootstrap"
