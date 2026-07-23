@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { MessageCircle, X, Send, Loader2, ChevronDown } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface Message {
   id: string
@@ -143,16 +144,27 @@ export function FloatingChatbot() {
         >
           {/* Header */}
           <div
-            className="p-4 flex items-center justify-between"
+            className="p-4 flex items-center justify-between gap-3"
             style={{
               background: 'linear-gradient(135deg, #2a4fa8 0%, #1a3580 100%)',
             }}
           >
-            <div>
-              <h3 className="font-bold text-white text-sm">AUAPW Automotive</h3>
-              <p className="text-xs text-blue-100">Always here to help</p>
+            <div className="flex items-center gap-2">
+              <div className="relative w-10 h-10 rounded-full overflow-hidden bg-white/10 flex items-center justify-center flex-shrink-0">
+                <Image
+                  src="/images/mechanic-chatbot-logo.png"
+                  alt="AUAPW Mechanic"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="font-bold text-white text-sm">AUAPW Automotive</h3>
+                <p className="text-xs text-blue-100">Expert Support</p>
+              </div>
             </div>
-            <ChevronDown className="w-4 h-4 text-white/60 cursor-pointer" onClick={() => setIsOpen(false)} />
+            <ChevronDown className="w-4 h-4 text-white/60 cursor-pointer flex-shrink-0" onClick={() => setIsOpen(false)} />
           </div>
 
           {/* Messages */}

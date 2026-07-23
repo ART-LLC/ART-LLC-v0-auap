@@ -68,6 +68,12 @@ export const WEBSITE_PAGES: PageInfo[] = [
     keywords: ['chat', 'chatbot', 'expert', 'help', 'ask', 'question', 'recommendation', 'compatibility'],
   },
   {
+    title: 'VIN Decoder',
+    path: '/products',
+    description: 'Decode your Vehicle Identification Number (VIN) to find compatible OEM parts for your specific vehicle year, make, and model',
+    keywords: ['vin', 'vin decoder', 'vehicle identification', 'decode', 'compatibility', 'vehicle', 'year', 'make', 'model', 'fitment'],
+  },
+  {
     title: 'Admin Dashboard',
     path: '/admin/dashboard',
     description: 'Real-time KPI metrics, order monitoring, fraud detection, and performance analytics for business operations',
@@ -154,6 +160,16 @@ export const FAQ_ITEMS = [
     question: 'What payment methods do you accept?',
     answer: 'We accept all major credit cards (Visa, Mastercard, American Express) and secure Stripe payments at checkout.',
     link: '/checkout',
+  },
+  {
+    question: 'How do I find parts for my vehicle using VIN?',
+    answer: 'Use our VIN decoder at /products to instantly find compatible OEM parts for your exact vehicle year, make, and model. Enter your 17-character VIN and we\'ll show all matching parts.',
+    link: '/products',
+  },
+  {
+    question: 'What is a VIN and why should I decode it?',
+    answer: 'VIN (Vehicle Identification Number) is a unique 17-character code for your vehicle. Decoding it helps ensure you get parts that are 100% compatible with your specific vehicle. Use our VIN decoder for accurate fitment.',
+    link: '/products',
   },
 ]
 
