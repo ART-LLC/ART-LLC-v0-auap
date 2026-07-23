@@ -37,24 +37,81 @@ export function HeroSection() {
               />
             </div>
 
-            {/* Headline */}
-            <h1 className="font-sans leading-tight text-balance max-w-4xl" style={{ fontFamily: "system-ui" }}>
-              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
+            {/* Kicker + Main Headline */}
+            <div className="flex flex-col items-center gap-3 mt-4">
               <span
-                className="block text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black"
+                className="text-[0.7rem] sm:text-[0.8rem] font-black tracking-[0.32em] uppercase"
+                style={{
+                  color: "rgba(255,255,255,0.55)",
+                  letterSpacing: "0.32em",
+                }}
+              >
+                Industry-Leading Platform
+              </span>
+              <h1
+                className="text-center leading-[0.92] text-balance max-w-5xl"
                 style={{
                   fontFamily: "system-ui",
+                  fontSize: "clamp(3rem, 9.5vw, 8.5rem)",
+                  fontWeight: 900,
+                  letterSpacing: "-0.01em",
                   backgroundImage:
-                    "linear-gradient(90deg,#c8cdda 0%,#eef1f8 30%,#ffffff 50%,#eef1f8 70%,#c8cdda 100%)",
+                    "linear-gradient(180deg,#d8dce8 0%,#eef1f8 28%,#ffffff 48%,#eef1f8 70%,#b8bccf 100%)",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.4))",
+                  filter:
+                    "drop-shadow(0 2px 6px rgba(0,0,0,0.55)) drop-shadow(0 1px 0 rgba(255,255,255,0.12))",
+                  textTransform: "uppercase",
                 }}
               >
-                Premium Quality Used Auto Parts
-              </span>
-            </h1>
+                America&apos;s Trusted<br />OEM Used Auto<br />Parts Marketplace
+              </h1>
+            </div>
+
+            {/* Hero CTA — Search + Quote + Call */}
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-2xl mt-2">
+              <Link
+                href="/products"
+                className="flex-1 w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg px-6 py-3.5 font-black tracking-wide uppercase text-sm"
+                style={{
+                  background: "linear-gradient(135deg,#2a4fa8 0%,#1a3580 100%)",
+                  color: "#fff",
+                  border: "1px solid rgba(255,255,255,0.18)",
+                  boxShadow: "0 4px 18px rgba(30,60,160,0.45)",
+                }}
+              >
+                <Search className="w-4 h-4 shrink-0" />
+                Search Parts
+              </Link>
+              <Link
+                href="/products"
+                className="flex-1 w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg px-6 py-3.5 font-black tracking-wide uppercase text-sm"
+                style={{
+                  background: "linear-gradient(135deg,rgba(255,255,255,0.13) 0%,rgba(255,255,255,0.06) 100%)",
+                  color: "#fff",
+                  border: "1px solid rgba(255,255,255,0.22)",
+                  boxShadow: "0 2px 12px rgba(0,0,0,0.3)",
+                  backdropFilter: "blur(8px)",
+                }}
+              >
+                <MessageSquare className="w-4 h-4 shrink-0" />
+                Free Quote
+              </Link>
+              <a
+                href="tel:8888185001"
+                className="flex-1 w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg px-6 py-3.5 font-black tracking-wide uppercase text-sm"
+                style={{
+                  background: "linear-gradient(135deg,#1a6e3a 0%,#145c30 100%)",
+                  color: "#fff",
+                  border: "1px solid rgba(255,255,255,0.18)",
+                  boxShadow: "0 4px 18px rgba(20,100,60,0.4)",
+                }}
+              >
+                <Phone className="w-4 h-4 shrink-0" />
+                (888) 818-5001
+              </a>
+            </div>
 
             {/* Key stats */}
             <div className="flex flex-wrap justify-center gap-6 sm:gap-10 text-center">
