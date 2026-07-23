@@ -80,6 +80,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark bg-background" suppressHydrationWarning>
+      <head>
+        <Script
+          id="suppress-hmr-errors"
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Suppress known Next.js 16 HMR error during development
+              if (typeof window !== 'undefined') {
+                const originalError = console.error;
+                console.error = function(...args) {
+                  const message = args[0]?.message || args[0]?.toString() || '';
+                  if (message.includes('Router action dispatched before initialization')) {
+                    return; // Silently ignore this HMR error
+                  }
+                  originalError.apply(console, args);
+                };
+              }
+            `,
+          }}
+        />
+      </head>
       <body className={`${roboto.variable} font-sans antialiased bg-background text-foreground`}>
         {/* Intercom messenger — loads after page is interactive */}
         <Script 
