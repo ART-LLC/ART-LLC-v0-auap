@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone } from "lucide-react"
+import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, Sparkles } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
@@ -185,6 +185,16 @@ export function Navbar() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+
+            {/* AI Smart Search */}
+            <Link
+              href="/ai-search"
+              className="header-boss-nav-text group relative flex items-center gap-1.5"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-primary" />
+              <span className="header-boss-nav-label">AI Search</span>
+              <span className="header-boss-nav-glow" />
+            </Link>
 
             {/* Review All Website Dropdown */}
             <DropdownMenu>
