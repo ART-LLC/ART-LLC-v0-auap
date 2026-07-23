@@ -643,6 +643,18 @@ footer .wordmark-3d {
   font-size: 18px !important;
 }
 
+/* ── Navbar wordmark — responsive so the right-side CTA cluster
+   (theme, cart, FREE QUOTE) always fits on tablet/laptop widths.
+   The fixed 38px is too wide once the full desktop nav appears at xl. ── */
+.header-boss-container .wordmark-3d {
+  font-size: clamp(18px, 1.7vw, 30px) !important;
+}
+@media (min-width: 1536px) {
+  .header-boss-container .wordmark-3d {
+    font-size: 34px !important;
+  }
+}
+
 /* .ORG suffix — smaller, slightly dimmer */
 .wordmark-3d-org {
   font-size: 0.55em;
@@ -3024,18 +3036,18 @@ footer .wordmark-3d {
   }
 
 /* ── EMBOSSED NAVIGATION TEXT — Main boss aesthetic ── */
-.header-boss-nav-text {
+  .header-boss-nav-text {
   position: relative;
   display: inline-flex;
   align-items: center;
-  padding: clamp(6px, 1.5vw, 12px) clamp(4px, 1vw, 8px);
+  padding: clamp(6px, 1.5vw, 12px) clamp(3px, 0.5vw, 6px);
   min-height: 44px;
   white-space: nowrap;
-}
+  }
 
-.header-boss-nav-label {
+  .header-boss-nav-label {
   display: block;
-  font-size: clamp(0.7rem, 1.1vw, 0.9rem);
+  font-size: clamp(0.66rem, 0.85vw, 0.82rem);
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;

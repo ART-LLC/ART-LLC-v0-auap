@@ -81,16 +81,18 @@ export function ShippingInfo() {
           {shippingOptions.map((option, index) => {
             const IconComponent = option.icon
             return (
-              <Card key={index} className="border-border hover:border-primary/50 transition-all">
+              <Card key={index} className="border-2 border-border/40 hover:border-primary/60 bg-gradient-to-br from-card to-background/50 hover:from-primary/10 hover:to-card transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 group cursor-pointer">
                 <CardHeader className="pb-3">
                   <div className="flex items-start justify-between mb-2">
-                    <IconComponent className="w-6 h-6 text-primary flex-shrink-0" />
+                    <div className="p-3 rounded-lg bg-primary/15 group-hover:bg-primary/20 transition-colors">
+                      <IconComponent className="w-6 h-6 text-primary flex-shrink-0 group-hover:scale-110 transition-transform" />
+                    </div>
                   </div>
-                  <CardTitle className="text-lg">{option.title}</CardTitle>
-                  <CardDescription>{option.description}</CardDescription>
+                  <CardTitle className="text-lg group-hover:text-primary transition-colors">{option.title}</CardTitle>
+                  <CardDescription className="text-sm text-muted-foreground/80">{option.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <div className="text-2xl font-bold text-primary">{option.price}</div>
+                  <div className="text-2xl font-bold text-primary group-hover:scale-105 transition-transform origin-left">{option.price}</div>
                   <p className="text-sm text-muted-foreground">{option.details}</p>
                 </CardContent>
               </Card>
@@ -104,14 +106,14 @@ export function ShippingInfo() {
           <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
             {shippingProcess.map((item, index) => (
               <div key={index} className="flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold mb-3 flex-shrink-0">
+                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary/80 text-background flex items-center justify-center font-bold mb-3 flex-shrink-0 shadow-lg shadow-primary/40 ring-2 ring-primary/20 hover:scale-110 transition-transform hover:shadow-xl hover:shadow-primary/50">
                   {item.step}
                 </div>
-                <h4 className="font-semibold text-center mb-1">{item.title}</h4>
+                <h4 className="font-semibold text-center mb-1 text-sm hover:text-primary transition-colors">{item.title}</h4>
                 <p className="text-xs text-muted-foreground text-center">{item.description}</p>
                 {index < shippingProcess.length - 1 && (
-                  <div className="hidden md:block w-full h-1 bg-border my-4 relative">
-                    <div className="absolute top-1/2 right-0 transform translate-x-6 -translate-y-1/2">
+                  <div className="hidden md:block w-full h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent my-4 relative group">
+                    <div className="absolute top-1/2 right-0 transform translate-x-4 -translate-y-1/2 text-primary/60 group-hover:text-primary transition-colors">
                       →
                     </div>
                   </div>
@@ -123,37 +125,37 @@ export function ShippingInfo() {
 
         {/* Guarantees */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className="border-border bg-primary/5">
+          <Card className="border-2 border-primary/40 bg-gradient-to-br from-primary/15 to-primary/5 hover:border-primary/80 hover:bg-primary/20 hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 group cursor-pointer">
             <CardHeader>
-              <Shield className="w-8 h-8 text-primary mb-2" />
-              <CardTitle>90-Day Warranty</CardTitle>
+              <Shield className="w-8 h-8 text-primary mb-2 group-hover:scale-110 transition-transform" />
+              <CardTitle className="text-primary">90-Day Warranty</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground group-hover:text-muted-foreground/90 transition-colors">
                 All parts covered by our comprehensive warranty against manufacturing defects. No questions asked.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-border bg-primary/5">
+          <Card className="border-2 border-primary/40 bg-gradient-to-br from-primary/15 to-primary/5 hover:border-primary/80 hover:bg-primary/20 hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 group cursor-pointer">
             <CardHeader>
-              <DollarSign className="w-8 h-8 text-primary mb-2" />
-              <CardTitle>Money-Back Guarantee</CardTitle>
+              <DollarSign className="w-8 h-8 text-primary mb-2 group-hover:scale-110 transition-transform" />
+              <CardTitle className="text-primary">Money-Back Guarantee</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground group-hover:text-muted-foreground/90 transition-colors">
                 Not satisfied? Return eligible unused parts within 14 days under the terms of our return policy.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-border bg-primary/5">
+          <Card className="border-2 border-primary/40 bg-gradient-to-br from-primary/15 to-primary/5 hover:border-primary/80 hover:bg-primary/20 hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 group cursor-pointer">
             <CardHeader>
-              <Package className="w-8 h-8 text-primary mb-2" />
-              <CardTitle>Damage Protection</CardTitle>
+              <Package className="w-8 h-8 text-primary mb-2 group-hover:scale-110 transition-transform" />
+              <CardTitle className="text-primary">Damage Protection</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground group-hover:text-muted-foreground/90 transition-colors">
                 $2 million in transit insurance. If your part arrives damaged, we replace it free within 48 hours.
               </p>
             </CardContent>

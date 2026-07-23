@@ -122,7 +122,6 @@ export function BrandLogosSection() {
         {/* Brand Grid */}
         <ul
           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-2.5 list-none p-0 m-0"
-          role="tabpanel"
           aria-label={`Brands starting with ${activeTab}`}
         >
           {filtered.map((brand) => (

@@ -173,8 +173,9 @@ export function FeaturedProductsSection() {
                   {/* Footer */}
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-black text-primary">{product.price}</span>
-                    <button className="p-2 rounded bg-primary/10 hover:bg-primary/20 text-primary transition-colors">
-                      <Truck className="w-4 h-4" />
+                    <button className="relative p-3 rounded-xl border-2 border-primary bg-gradient-to-br from-primary/20 to-primary/10 hover:from-primary/30 hover:to-primary/15 text-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 group" aria-label="Request shipping info" title="View shipping options">
+                      <Truck className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                      <div className="absolute inset-0 rounded-xl border border-primary/50 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </button>
                   </div>
                 </div>

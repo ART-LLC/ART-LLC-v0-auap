@@ -162,11 +162,11 @@ export function ProductCardActions({
       </div>
 
       {/* Info Badges */}
-      <div className="flex flex-wrap gap-1">
-        <Badge variant="secondary" className="text-[10px]">
+      <div className="flex flex-wrap gap-2 pt-2">
+        <Badge variant="secondary" className="text-[10px] bg-primary/15 text-primary hover:bg-primary/20 border-primary/30 transition-colors">
           90-Day Warranty
         </Badge>
-        <Badge variant="secondary" className="text-[10px]">
+        <Badge variant="secondary" className="text-[10px] bg-primary/10 text-primary/80 hover:bg-primary/15 border-primary/20 transition-colors">
           Shipping: {shipping}
         </Badge>
       </div>

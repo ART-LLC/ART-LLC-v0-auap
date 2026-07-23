@@ -12,7 +12,7 @@ interface SizeCfg {
 }
 
 const SIZES: Record<BrandSize, SizeCfg> = {
-  nav:    { wordmarkSize: "text-[clamp(1.1rem,3.5vw,1.85rem)]",   subSize: "text-[0.5rem]",                            tagSize: "text-[0.38rem]",                          showSub: true,  showTag: false, align: "items-start" },
+  nav:    { wordmarkSize: "text-[clamp(1rem,2.2vw,1.5rem)]",      subSize: "text-[0.5rem]",                            tagSize: "text-[0.38rem]",                          showSub: true,  showTag: false, align: "items-start" },
   hero:   { wordmarkSize: "text-[clamp(2rem,6vw,5rem)]",         subSize: "text-[clamp(0.55rem,1.2vw,0.75rem)]",      tagSize: "text-[clamp(0.42rem,1vw,0.58rem)]",       showSub: true,  showTag: true,  align: "items-start" },
   banner: { wordmarkSize: "text-[clamp(2rem,5.5vw,4.5rem)]",     subSize: "text-[clamp(0.6rem,1.3vw,0.8rem)]",        tagSize: "text-[clamp(0.44rem,1vw,0.58rem)]",       showSub: true,  showTag: true,  align: "items-center" },
   footer: { wordmarkSize: "text-[clamp(1.4rem,3vw,2rem)]",       subSize: "text-[0.54rem]",                           tagSize: "text-[0.42rem]",                          showSub: true,  showTag: false, align: "items-start" },

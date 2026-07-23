@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, Sparkles } from "lucide-react"
+import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, Sparkles, User } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
@@ -20,9 +20,14 @@ import {
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [hidden, setHidden] = useState(false)
+  const [hydrated, setHydrated] = useState(false)
   const lastScrollY = useRef(0)
   const cartItems = useCartStore((state) => state.getTotalItems())
   const wishlistCount = useWishlistStore((state) => state.getCount())
+
+  useEffect(() => {
+    setHydrated(true)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -119,7 +124,7 @@ export function Navbar() {
       <div className="header-boss-container">
         <div className="header-boss-bg" />
 
-        <div className="mx-auto w-full px-2 sm:px-4 md:px-6 lg:px-8 flex items-center h-full justify-between gap-1 sm:gap-4 relative z-10">
+        <div className="mx-auto w-full max-w-[1680px] px-2 sm:px-4 md:px-6 lg:px-6 xl:px-6 2xl:px-8 flex items-center h-full justify-between gap-1 xl:gap-2 2xl:gap-4 relative z-10">
 
           {/* Logo + Wordmark */}
           <Link href="/" className="on-dark flex items-center gap-2 sm:gap-4 shrink-0 group header-boss-logo-group min-w-0">
@@ -140,7 +145,7 @@ export function Navbar() {
           </Link>
 
           {/* Center — embossed typography navigation (desktop only) */}
-          <div className="hidden lg:flex items-center gap-6 flex-1 justify-center">
+          <div className="hidden xl:flex items-center gap-3 2xl:gap-5 flex-1 justify-center min-w-0">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -224,21 +229,28 @@ export function Navbar() {
           </div>
 
           {/* Right — CTA, phone, menu */}
-          <div className="flex items-center gap-1 sm:gap-3 shrink-0">
-            {/* Theme toggle — desktop only */}
-            <div className="hidden sm:block">
+          <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+            {/* Theme toggle — shown on small screens and wide desktops; hidden in the
+                tight 1280–1440 range where the full nav needs the horizontal room */}
+            <div className="hidden sm:block xl:hidden 2xl:block">
               <ThemeToggle />
             </div>
 
-            {/* Cart indicator — desktop only */}
-            <Link href="/cart" className="relative hidden sm:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors" title="Cart">
-              <ShoppingCart className="w-5 h-5 text-foreground" />
-              {cartItems > 0 && (
-                <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-xs font-bold flex items-center justify-center">
-                  {cartItems}
-                </span>
-              )}
-            </Link>
+  {/* Cart indicator — shown on small screens and wide desktops; hidden in the
+      tight 1280–1440 range where the full nav needs the horizontal room */}
+  <Link href="/cart" className="relative hidden sm:flex xl:hidden 2xl:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors" title="Cart" suppressHydrationWarning>
+  <ShoppingCart className="w-5 h-5 text-foreground" />
+  {hydrated && cartItems > 0 && (
+  <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-xs font-bold flex items-center justify-center">
+  {cartItems}
+  </span>
+  )}
+  </Link>
+
+  {/* Account / dashboard link — shown on small screens and wide desktops */}
+  <Link href="/dashboard" className="hidden sm:flex xl:hidden 2xl:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors" title="My Account">
+  <User className="w-5 h-5 text-foreground" />
+  </Link>
 
             {/* Desktop: FREE QUOTE button */}
             <Link href="/quote" className="hidden sm:flex auapw-btn auapw-btn-amber auapw-btn-sm">
@@ -248,7 +260,7 @@ export function Navbar() {
 
             {/* Mobile menu toggle */}
             <button
-              className="lg:hidden flex flex-col items-center justify-center rounded-md border border-white/25 bg-white/8 hover:bg-white/15 active:scale-90 transition-all duration-150 cursor-pointer gap-[4px] px-1.5"
+              className="xl:hidden flex flex-col items-center justify-center rounded-md border border-white/25 bg-white/8 hover:bg-white/15 active:scale-90 transition-all duration-150 cursor-pointer gap-[4px] px-1.5"
               style={{ width: '1.75rem', height: '1.75rem' }}
               onClick={() => setMobileOpen(!mobileOpen)}
               onKeyDown={(e) => {
@@ -283,14 +295,14 @@ export function Navbar() {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/75 lg:hidden"
+            className="fixed inset-0 bg-black/75 xl:hidden"
             onClick={() => setMobileOpen(false)}
             style={{ zIndex: 9998 }}
             aria-hidden="true"
           />
 
           <div
-            className="fixed left-0 right-0 lg:hidden"
+            className="fixed left-0 right-0 xl:hidden"
             style={{
               top: '92px',
               zIndex: 9999,
@@ -392,29 +404,31 @@ export function Navbar() {
 
               {/* ── Cart / Wishlist / Theme ── */}
               <div className="grid grid-cols-3 gap-1.5 pb-1">
-                <Link
-                  href="/cart"
-                  onClick={() => setMobileOpen(false)}
-                  className="relative flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-blue-500/10 border border-blue-500/20 hover:bg-blue-500/20 active:scale-95 transition-all"
-                >
-                  <ShoppingCart className="w-4 h-4 text-blue-400" />
-                  <span className="text-[10px] font-bold text-blue-300">Cart</span>
-                  {cartItems > 0 && (
-                    <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-[9px] font-black flex items-center justify-center">
+  <Link
+  href="/cart"
+  onClick={() => setMobileOpen(false)}
+  className="relative flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-blue-500/10 border border-blue-500/20 hover:bg-blue-500/20 active:scale-95 transition-all"
+  suppressHydrationWarning
+  >
+  <ShoppingCart className="w-4 h-4 text-blue-400" />
+  <span className="text-[10px] font-bold text-blue-300">Cart</span>
+  {hydrated && cartItems > 0 && (
+  <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-[9px] font-black flex items-center justify-center">
                       {cartItems}
                     </span>
                   )}
                 </Link>
-                <Link
-                  href="/wishlist"
-                  onClick={() => setMobileOpen(false)}
-                  className="relative flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-pink-500/10 border border-pink-500/20 hover:bg-pink-500/20 active:scale-95 transition-all"
-                >
-                  <Heart className="w-4 h-4 text-pink-400" />
-                  <span className="text-[10px] font-bold text-pink-300">Saved</span>
-                  {wishlistCount > 0 && (
-                    <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-pink-500 text-white text-[9px] font-black flex items-center justify-center">
-                      {wishlistCount}
+  <Link
+  href="/wishlist"
+  onClick={() => setMobileOpen(false)}
+  className="relative flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-pink-500/10 border border-pink-500/20 hover:bg-pink-500/20 active:scale-95 transition-all"
+  suppressHydrationWarning
+  >
+  <Heart className="w-4 h-4 text-pink-400" />
+  <span className="text-[10px] font-bold text-pink-300">Saved</span>
+  {hydrated && wishlistCount > 0 && (
+  <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-pink-500 text-white text-[9px] font-black flex items-center justify-center">
+  {wishlistCount}
                     </span>
                   )}
                 </Link>
@@ -422,6 +436,16 @@ export function Navbar() {
                   <ThemeToggle />
                 </div>
               </div>
+
+              {/* My Account link */}
+              <Link
+                href="/dashboard"
+                onClick={() => setMobileOpen(false)}
+                className="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 active:scale-95 transition-all"
+              >
+                <User className="w-4 h-4 text-foreground" />
+                <span className="text-xs font-bold text-foreground">My Account / Track Orders</span>
+              </Link>
 
             </div>
           </div>

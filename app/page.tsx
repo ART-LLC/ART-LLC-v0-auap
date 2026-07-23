@@ -1,6 +1,8 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/home/hero-section"
+import { TrustBadgesSection } from "@/components/home/trust-badges-section"
+import { CredibilitySection } from "@/components/home/credibility-section"
 import { CinematicShowcaseSection } from "@/components/home/cinematic-showcase-section"
 import { ContentSection } from "@/components/home/content-section"
 import { FeaturesGridSection } from "@/components/home/features-grid-section"
@@ -19,6 +21,8 @@ export default function HomePage() {
       <Navbar />
       <main className="bg-[#3a3d44]">
         <HeroSection />
+        <TrustBadgesSection />
+        <CredibilitySection />
         <CinematicShowcaseSection />
         <FeaturesGridSection />
         <ContentSection />
