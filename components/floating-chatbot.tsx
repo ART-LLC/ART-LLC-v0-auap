@@ -19,7 +19,7 @@ export function FloatingChatbot() {
       id: '1',
       role: 'assistant',
       content:
-        'Hey there! 👋 I\'m AUAPW\'s automotive expert. Need help finding parts, decoding your VIN, or questions about warranty and returns? Just ask!',
+        'Hey there! 👋 I\'m AUAPW\'s automotive expert. Decode your VIN instantly to find guaranteed-fit OEM parts, or ask me about engines, transmissions, pricing, warranty, returns, and shipping. What can I help you with?',
       links: [
         { title: 'Decode My VIN', path: '/ai-search' },
         { title: 'Browse Parts', path: '/products' },
@@ -136,7 +136,7 @@ export function FloatingChatbot() {
           <X className="w-6 h-6" />
         ) : (
           <Image
-            src="/chatbot-mechanic-logo.jpg"
+            src="/images/auapw-mechanic-logo.png"
             alt="AUAPW automotive assistant"
             width={64}
             height={64}
@@ -172,7 +172,7 @@ export function FloatingChatbot() {
                 }}
               >
                 <Image
-                  src="/chatbot-mechanic-logo.jpg"
+                  src="/images/auapw-mechanic-logo.png"
                   alt="AUAPW automotive assistant"
                   width={40}
                   height={40}
