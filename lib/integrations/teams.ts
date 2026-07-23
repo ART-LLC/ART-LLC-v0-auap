@@ -10,8 +10,8 @@
 import { TeamsConfig } from './config'
 
 interface TeamsMessage {
-  '@type': string
-  '@context': string
+  @type: string
+  @context: string
   summary: string
   themeColor: string
   sections: Array<{
