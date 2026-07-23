@@ -1,8 +1,9 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { MessageCircle, X, Send, Loader2, ChevronDown } from 'lucide-react'
+import { X, Send, Loader2, ChevronDown } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface Message {
   id: string
@@ -18,8 +19,9 @@ export function FloatingChatbot() {
       id: '1',
       role: 'assistant',
       content:
-        'Hey there! 👋 I\'m AUAPW\'s automotive expert. Need help finding parts, have questions about warranty, returns, or anything else? Just ask!',
+        'Hey there! 👋 I\'m AUAPW\'s automotive expert. Need help finding parts, decoding your VIN, or questions about warranty and returns? Just ask!',
       links: [
+        { title: 'Decode My VIN', path: '/ai-search' },
         { title: 'Browse Parts', path: '/products' },
         { title: 'Chat Full Screen', path: '/chat' },
       ],
@@ -121,14 +123,27 @@ export function FloatingChatbot() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg"
+        className="fixed bottom-6 right-6 z-40 w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg overflow-hidden"
         style={{
-          background: 'linear-gradient(135deg, #2a4fa8 0%, #1a3580 100%)',
+          background: 'radial-gradient(circle at 50% 35%, #3a3a42 0%, #1c1c22 70%, #0e0e12 100%)',
+          border: '2px solid rgba(203, 213, 225, 0.35)',
           color: '#fff',
+          boxShadow: '0 8px 24px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05)',
         }}
         aria-label="Toggle chat"
       >
-        {isOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}
+        {isOpen ? (
+          <X className="w-6 h-6" />
+        ) : (
+          <Image
+            src="/chatbot-mechanic-logo.jpg"
+            alt="AUAPW automotive assistant"
+            width={64}
+            height={64}
+            className="w-full h-full object-cover"
+            priority
+          />
+        )}
       </button>
 
       {/* Chat Window */}
@@ -148,9 +163,29 @@ export function FloatingChatbot() {
               background: 'linear-gradient(135deg, #2a4fa8 0%, #1a3580 100%)',
             }}
           >
-            <div>
-              <h3 className="font-bold text-white text-sm">AUAPW Automotive</h3>
-              <p className="text-xs text-blue-100">Always here to help</p>
+            <div className="flex items-center gap-3">
+              <span
+                className="w-10 h-10 rounded-full overflow-hidden shrink-0 flex items-center justify-center"
+                style={{
+                  background: 'radial-gradient(circle at 50% 35%, #3a3a42 0%, #14141a 100%)',
+                  border: '1.5px solid rgba(203, 213, 225, 0.4)',
+                }}
+              >
+                <Image
+                  src="/chatbot-mechanic-logo.jpg"
+                  alt="AUAPW automotive assistant"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-cover"
+                />
+              </span>
+              <div>
+                <h3 className="font-bold text-white text-sm">AUAPW Automotive</h3>
+                <p className="text-xs text-blue-100 flex items-center gap-1.5">
+                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-400" />
+                  Online · Always here to help
+                </p>
+              </div>
             </div>
             <ChevronDown className="w-4 h-4 text-white/60 cursor-pointer" onClick={() => setIsOpen(false)} />
           </div>
@@ -228,6 +263,7 @@ function extractLinks(content: string): Array<{ title: string; path: string }> {
 
   // Common page links
   const pageLinks: Record<string, string> = {
+    '/ai-search': 'Decode My VIN',
     '/products': 'Browse Products',
     '/dashboard': 'View Dashboard',
     '/warranty': 'Warranty Info',

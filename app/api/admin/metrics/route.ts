@@ -36,7 +36,7 @@ export async function GET(request: Request) {
       { date: '2026-07-21', total_orders: 139, total_revenue: 43500, approval_rate: 96.0, fraud_rate: 0.8, chargeback_rate: 0, customer_satisfaction: 4.65 },
       { date: '2026-07-22', total_orders: 145, total_revenue: 45100, approval_rate: 96.5, fraud_rate: 0.7, chargeback_rate: 0, customer_satisfaction: 4.68 },
       { date: '2026-07-23', total_orders: 151, total_revenue: 47300, approval_rate: 97.0, fraud_rate: 0.6, chargeback_rate: 0, customer_satisfaction: 4.7 },
-      { date: today, ...mockTodaysData },
+      { ...mockTodaysData, date: today },
     ]
 
     return NextResponse.json({

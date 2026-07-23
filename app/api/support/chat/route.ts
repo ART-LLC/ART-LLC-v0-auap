@@ -1,6 +1,8 @@
 import {
   convertToModelMessages,
+  createUIMessageStreamResponse,
   streamText,
+  toUIMessageStream,
   tool,
   type UIMessage,
 } from 'ai'
@@ -108,7 +110,9 @@ export async function POST(req: Request) {
       },
     })
 
-    return result.toDataStreamResponse()
+    return createUIMessageStreamResponse({
+      stream: toUIMessageStream({ stream: result.stream }),
+    })
   } catch (error) {
     console.error('[v0] Support chat error:', error)
     return new Response('Internal server error', { status: 500 })

@@ -68,6 +68,12 @@ export const WEBSITE_PAGES: PageInfo[] = [
     keywords: ['chat', 'chatbot', 'expert', 'help', 'ask', 'question', 'recommendation', 'compatibility'],
   },
   {
+    title: 'VIN Decoding & Search',
+    path: '/ai-search',
+    description: 'Decode your 17-character VIN to instantly identify your exact vehicle (year, make, model, engine, trim) and find guaranteed-fit OEM parts. Also supports AI-powered natural language part search.',
+    keywords: ['vin', 'vin decode', 'vin decoder', 'vin decoding', 'vin lookup', 'vin search', 'vehicle identification', 'decode vin', 'chassis number', 'fitment', 'compatibility', 'find my part', 'ai search', 'smart search', '17-character', 'vehicle lookup'],
+  },
+  {
     title: 'Admin Dashboard',
     path: '/admin/dashboard',
     description: 'Real-time KPI metrics, order monitoring, fraud detection, and performance analytics for business operations',
@@ -134,6 +140,16 @@ export const FAQ_ITEMS = [
     question: 'Do you have my vehicle part?',
     answer: 'Search our catalog of 8,000+ OEM parts at /products. Use VIN decoder or browse by category. Chat with an expert at /chat for personalized recommendations.',
     link: '/products',
+  },
+  {
+    question: 'How do I decode my VIN / find parts by VIN?',
+    answer: 'Use our VIN Decoder at /ai-search. Enter your 17-character VIN (found on your registration, title, or driver-side dashboard) to instantly identify your exact vehicle and see guaranteed-fit OEM parts. You can also search by plain-language description there.',
+    link: '/ai-search',
+  },
+  {
+    question: 'Where do I find my VIN?',
+    answer: 'Your VIN is a 17-character code located on your vehicle registration, title, insurance card, or the driver-side dashboard where it meets the windshield. Decode it at /ai-search to match parts to your exact vehicle.',
+    link: '/ai-search',
   },
   {
     question: 'How do I track my order?',

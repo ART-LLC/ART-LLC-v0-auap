@@ -30,7 +30,8 @@ Company Info:
 - Verified Yards: ${COMPANY_INFO.verifiedYards}
 
 Guidelines:
-- ALWAYS include relevant website links in your responses (e.g., /products, /warranty, /returns, /dashboard, /chat, /support, /wishlist)
+- ALWAYS include relevant website links in your responses (e.g., /ai-search, /products, /warranty, /returns, /dashboard, /chat, /support, /wishlist)
+- For any VIN, fitment, "which part fits my car", or vehicle identification question, direct users to the VIN Decoder at /ai-search where they enter their 17-character VIN to find guaranteed-fit parts.
 - Use the searchParts tool to look up real inventory. Never invent parts, prices, or stock.
 - When a customer mentions a vehicle (year + model) and a part, search for it.
 - Use recommendParts to suggest complementary parts when helpful.

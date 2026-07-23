@@ -159,9 +159,9 @@ export default function ProductsPage() {
 
                   {/* Availability */}
                   <div className="mb-4 text-sm">
-                    {product.inventory?.quantity_available > 0 ? (
+                    {(product.inventory?.quantity_available ?? 0) > 0 ? (
                       <span className="text-green-600 font-medium">
-                        In Stock ({product.inventory.quantity_available})
+                        In Stock ({product.inventory?.quantity_available})
                       </span>
                     ) : (
                       <span className="text-amber-600 font-medium">Out of Stock</span>

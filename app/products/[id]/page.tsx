@@ -502,7 +502,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                           <p className="text-xs uppercase text-muted-foreground tracking-wide mb-2">
                             {key.replace(/([A-Z])/g, ' $1').trim()}
                           </p>
-                          <p className="font-semibold text-foreground">{value}</p>
+                          <p className="font-semibold text-foreground">{String(value)}</p>
                         </div>
                       ))}
                     </div>
