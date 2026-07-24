@@ -49,7 +49,17 @@ export function BrandWordmark({
 
       {/* AUAPW LLC — 3D Block Extrusion + Diamond LED + Ghost Scan */}
       <div className="wordmark-3d-wrap pt-[0.08em]">
-        <span className={`wordmark-3d ${cfg.wordmarkSize}`}>
+        <span 
+          className={`wordmark-3d ${cfg.wordmarkSize}`}
+          style={{
+            marginTop: "-96px",
+            backgroundColor: "rgba(0, 0, 0, 0.13)",
+            textTransform: "uppercase",
+            letterSpacing: "0.106em",
+            lineHeight: "5.9em",
+            fontSize: "72px",
+          }}
+        >
           AUAPW LLC
         </span>
         <span className="ghost-scan-bar" aria-hidden="true" />

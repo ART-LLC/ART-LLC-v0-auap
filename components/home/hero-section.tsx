@@ -25,16 +25,18 @@ export function HeroSection() {
         <div className="flex flex-col items-center py-10 sm:py-16 lg:py-24 gap-8 sm:gap-10">
 
           {/* Brand column — full width, centered */}
-          <div className="fade-up w-full flex flex-col items-center gap-5 sm:gap-7 rounded-xl sm:rounded-2xl p-6 sm:p-10 lg:p-14 text-center">
+          <div className="fade-up w-full flex flex-col items-center gap-5 sm:gap-7 rounded-xl sm:rounded-2xl p-6 sm:p-10 lg:p-14 text-center" style={{ paddingTop: "0px" }}>
             {/* Logo + Wordmark — ULTRA brand block */}
-            <div className="flex flex-col items-center gap-16 sm:gap-20 w-full py-14 pb-0">
-              {/* Ultra-massive logo */}
-              <Logo size="4xl" variant="medallion" priority showGlow />
-              {/* Ultra wordmark */}
+            <div className="flex flex-col items-center gap-16 sm:gap-20 w-full py-14 pb-0" style={{ color: "#c8cfdf", paddingTop: "0px" }}>
+              {/* Ultra wordmark — moved before logo */}
               <BrandWordmark 
                 size="hero-5xl" 
                 className="text-center items-center on-dark"
               />
+              {/* Ultra-massive logo */}
+              <div className="relative w-full flex items-center justify-center">
+                <Logo size="4xl" variant="medallion" priority showGlow style={{ objectFit: "fill", borderRadius: "var(--tracking-tight)" }} />
+              </div>
             </div>
 
             {/* Headline */}

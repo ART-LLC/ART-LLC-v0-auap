@@ -9,6 +9,7 @@ interface LogoProps {
   priority?: boolean
   showGlow?: boolean
   variant?: "default" | "ring" | "medallion"
+  style?: React.CSSProperties
 }
 
 const SIZE_MAP: Record<LogoSize, { width: number; height: number; containerClass: string }> = {
@@ -31,6 +32,7 @@ export function Logo({
   priority = false,
   showGlow = false,
   variant = "default",
+  style,
 }: LogoProps) {
   const { width, height, containerClass } = SIZE_MAP[size]
 
@@ -46,13 +48,14 @@ export function Logo({
 
   return (
     <div className="relative">
-      <div className={containerStyles}>
+      <div className={containerStyles} style={style}>
         <Image
           src="/auapw-logo.png"
           alt="AUAPW LLC - Quality Used Auto Parts"
           width={width}
           height={height}
           className="object-contain"
+          style={{ objectFit: "fill", borderRadius: "var(--tracking-tight)" }}
           priority={priority}
         />
       </div>
