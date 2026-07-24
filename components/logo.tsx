@@ -6,6 +6,7 @@ type LogoSize = "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl"
 interface LogoProps {
   size?: LogoSize
   className?: string
+  imageClassName?: string
   priority?: boolean
   showGlow?: boolean
   variant?: "default" | "ring" | "medallion"
@@ -28,6 +29,7 @@ const SIZE_MAP: Record<LogoSize, { width: number; height: number; containerClass
 export function Logo({
   size = "md",
   className,
+  imageClassName,
   priority = false,
   showGlow = false,
   variant = "default",
@@ -52,7 +54,7 @@ export function Logo({
           alt="AUAPW LLC - Quality Used Auto Parts"
           width={width}
           height={height}
-          className="object-contain"
+          className={cn("object-contain", imageClassName)}
           priority={priority}
         />
       </div>
