@@ -52,7 +52,7 @@ export function HeroSection() {
                 className="text-center leading-[0.92] text-balance max-w-5xl"
                 style={{
                   fontFamily: "system-ui",
-                  fontSize: "clamp(3rem, 9.5vw, 8.5rem)",
+                  fontSize: "clamp(2rem, 6.3vw, 5.5rem)",
                   fontWeight: 900,
                   letterSpacing: "-0.01em",
                   backgroundImage:
