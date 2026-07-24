@@ -12,9 +12,9 @@ export function HeroSection() {
     <section className="relative pt-[58px] overflow-hidden ghost-scan-section hero-on-dark" style={{ paddingTop: "45px" }}>
       {/* Background — grey base; photo carousel constrained to the top hero band */}
       <div className="absolute inset-0 bg-[#3a3d44]">
-        <div className="absolute top-0 inset-x-0 h-[1000px] overflow-hidden">
+        <div className="absolute top-0 inset-x-0 h-[1400px] overflow-hidden">
           <HeroSlider />
-          <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-b from-transparent to-[#3a3d44]" />
+          <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-b from-transparent to-[#3a3d44]" />
         </div>
         <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: "radial-gradient(circle, #e8e8e8 0%, transparent 70%)" }} />
         <GearBackground />
