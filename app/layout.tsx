@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/lib/auth-context'
 import { MobileThemeFab } from '@/components/mobile-theme-fab'
 import { IntercomProvider } from '@/components/intercom-provider'
-import { FloatingChatbot } from '@/components/floating-chatbot'
+import { FloatingChatbot } from '@/components/floating-chatbot-v2'
 import './globals.css'
 
 const roboto = Roboto({
