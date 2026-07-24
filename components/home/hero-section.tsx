@@ -34,9 +34,7 @@ export function HeroSection() {
                 className="text-center items-center on-dark"
               />
               {/* Ultra-massive logo */}
-              <div className="relative w-full flex items-center justify-center">
-                <Logo size="4xl" variant="medallion" priority showGlow style={{ objectFit: "fill", borderRadius: "var(--tracking-tight)" }} />
-              </div>
+              <Logo size="4xl" variant="medallion" priority showGlow />
             </div>
 
             {/* Headline */}

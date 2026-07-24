@@ -129,9 +129,8 @@ export function Navbar() {
             </div>
             {/* Mobile: full brand name */}
             <div className="flex flex-col justify-center sm:hidden min-w-0">
-              <span className="wordmark-3d leading-tight font-bold" style={{ fontSize: '0.7rem', letterSpacing: '0.01em' }}>AUAPW LLC</span>
-              <span className="wordmark-sub font-bold uppercase leading-tight" style={{ fontSize: '0.5rem', letterSpacing: '0.06em' }}>ALL USED AUTO PARTS</span>
-              <span className="wordmark-sub font-bold uppercase leading-tight" style={{ fontSize: '0.5rem', letterSpacing: '0.06em' }}>WAREHOUSE</span>
+              <span className="wordmark-3d leading-tight font-bold" style={{ fontSize: '0.7rem', letterSpacing: '0.01em' }}>AUAPW</span>
+              <span className="wordmark-sub font-bold uppercase leading-tight" style={{ fontSize: '0.45rem', letterSpacing: '0.06em' }}>All Used Auto Parts</span>
             </div>
             {/* Desktop: full wordmark */}
             <div className="hidden sm:flex flex-col justify-center pt-[2px]">
