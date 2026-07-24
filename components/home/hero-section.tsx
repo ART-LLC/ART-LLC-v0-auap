@@ -12,9 +12,9 @@ export function HeroSection() {
     <section className="relative pt-[58px] overflow-hidden ghost-scan-section hero-on-dark" style={{ paddingTop: "45px" }}>
       {/* Background — grey base; photo carousel constrained to the top hero band */}
       <div className="absolute inset-0 bg-[#3a3d44]">
-        <div className="absolute top-0 inset-x-0 h-[1400px] overflow-hidden">
+        <div className="absolute top-0 inset-x-0 h-[820px] overflow-hidden">
           <HeroSlider />
-          <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-b from-transparent to-[#3a3d44]" />
+          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-[#3a3d44]" />
         </div>
         <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: "radial-gradient(circle, #e8e8e8 0%, transparent 70%)" }} />
         <GearBackground />
@@ -22,7 +22,7 @@ export function HeroSection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1280px] px-4 sm:px-6">
-        <div className="flex flex-col items-center py-16 sm:py-24 lg:py-32 gap-10 sm:gap-14">
+        <div className="flex flex-col items-center py-10 sm:py-16 lg:py-24 gap-8 sm:gap-10">
 
           {/* Brand column — full width, centered */}
           <div className="fade-up w-full flex flex-col items-center gap-5 sm:gap-7 rounded-xl sm:rounded-2xl p-6 sm:p-10 lg:p-14 text-center" style={{ paddingTop: "0px" }}>
@@ -40,10 +40,10 @@ export function HeroSection() {
             </div>
 
             {/* Headline */}
-            <h1 className="font-sans leading-tight text-balance max-w-5xl" style={{ fontFamily: "system-ui" }}>
-              <span className="block text-[0.85rem] sm:text-[1.1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-4" style={{ fontFamily: "system-ui" }}>Industry-Leading Platform</span>
+            <h1 className="font-sans leading-tight text-balance max-w-4xl" style={{ fontFamily: "system-ui" }}>
+              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3" style={{ fontFamily: "system-ui" }}>Industry-Leading Platform</span>
               <span
-                className="block text-[2.2rem] sm:text-[clamp(2.5rem,6.5vw,4.5rem)] font-black leading-tight"
+                className="block text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black"
                 style={{
                   fontFamily: "system-ui",
                   backgroundImage:
@@ -51,7 +51,7 @@ export function HeroSection() {
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.5))",
+                  filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.4))",
                 }}
               >
                 America&apos;s Trusted OEM Used Auto Parts Marketplace
@@ -59,16 +59,16 @@ export function HeroSection() {
             </h1>
 
             {/* Key stats */}
-            <div className="flex flex-wrap justify-center gap-8 sm:gap-14 text-center mt-4">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-10 text-center">
               {[
                 { value: "2,000+", label: "Verified Yards" },
                 { value: "30–180", label: "Day Warranty" },
                 { value: "24hr", label: "Response Time" },
                 { value: "50", label: "States Covered" },
               ].map(({ value, label }) => (
-                <div key={label} className="flex flex-col items-center gap-1">
-                  <span className="text-[1.8rem] sm:text-[2.2rem] lg:text-[2.6rem] font-black text-white">{value}</span>
-                  <span className="text-[0.65rem] sm:text-[0.75rem] lg:text-[0.85rem] font-bold tracking-[0.18em] uppercase text-white/70">{label}</span>
+                <div key={label} className="flex flex-col items-center gap-0.5">
+                  <span className="text-[1.4rem] sm:text-[1.8rem] font-black text-white">{value}</span>
+                  <span className="text-[0.6rem] sm:text-[0.65rem] font-bold tracking-[0.18em] uppercase text-white/70">{label}</span>
                 </div>
               ))}
             </div>
