@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone } from "lucide-react"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useSyncExternalStore } from "react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -23,6 +23,11 @@ export function Navbar() {
   const lastScrollY = useRef(0)
   const cartItems = useCartStore((state) => state.getTotalItems())
   const wishlistCount = useWishlistStore((state) => state.getCount())
+  const hasHydrated = useSyncExternalStore(
+    () => () => undefined,
+    () => true,
+    () => false,
+  )
 
   useEffect(() => {
     const handleScroll = () => {
@@ -223,7 +228,7 @@ export function Navbar() {
             {/* Cart indicator — desktop only */}
             <Link href="/cart" className="relative hidden sm:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors" title="Cart">
               <ShoppingCart className="w-5 h-5 text-foreground" />
-              {cartItems > 0 && (
+              {hasHydrated && cartItems > 0 && (
                 <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-xs font-bold flex items-center justify-center">
                   {cartItems}
                 </span>
@@ -389,7 +394,7 @@ export function Navbar() {
                 >
                   <ShoppingCart className="w-4 h-4 text-blue-400" />
                   <span className="text-[10px] font-bold text-blue-300">Cart</span>
-                  {cartItems > 0 && (
+                  {hasHydrated && cartItems > 0 && (
                     <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-[9px] font-black flex items-center justify-center">
                       {cartItems}
                     </span>
@@ -402,7 +407,7 @@ export function Navbar() {
                 >
                   <Heart className="w-4 h-4 text-pink-400" />
                   <span className="text-[10px] font-bold text-pink-300">Saved</span>
-                  {wishlistCount > 0 && (
+                  {hasHydrated && wishlistCount > 0 && (
                     <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-pink-500 text-white text-[9px] font-black flex items-center justify-center">
                       {wishlistCount}
                     </span>
