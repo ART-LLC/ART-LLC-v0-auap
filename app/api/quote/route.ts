@@ -75,7 +75,7 @@ export async function POST(request: Request) {
     if (!apiKey) {
       console.error("[Quote] RESEND_API_KEY is not set — cannot send email")
       return NextResponse.json(
-        { error: "Email service is not configured. Please call us at (888) 818-5001." },
+        { error: "Email service is not configured. Please call us at (888) 854-8681." },
         { status: 500 }
       )
     }
@@ -93,7 +93,7 @@ export async function POST(request: Request) {
     if (sendError) {
       console.error("[Quote] Resend error:", sendError)
       return NextResponse.json(
-        { error: "Failed to send your request. Please try again or call us at (888) 818-5001." },
+        { error: "Failed to send your request. Please try again or call us at (888) 854-8681." },
         { status: 500 }
       )
     }

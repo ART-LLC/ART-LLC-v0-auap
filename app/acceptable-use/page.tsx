@@ -61,7 +61,7 @@ export default function AcceptableUsePolicyPage() {
             <p className="mb-4">We may update this Acceptable Use Policy at any time. Continued use of our website constitutes acceptance of any changes.</p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">Contact Us</h2>
-            <p className="mb-4">To report violations or for questions about this policy, contact us at aupworld@gmail.com or (888) 818-5001.</p>
+            <p className="mb-4">To report violations or for questions about this policy, contact us at aupworld@gmail.com or (888) 854-8681.</p>
           </div>
         </div>
         <BrandLogosSection />
