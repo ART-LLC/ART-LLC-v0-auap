@@ -41,7 +41,7 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="font-sans leading-tight text-balance max-w-4xl" style={{ fontFamily: "system-ui" }}>
-              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3" style={{ fontFamily: "system-ui" }}>Your Trusted Partner</span>
+              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3" style={{ fontFamily: "system-ui" }}>Industry-Leading Platform</span>
               <span
                 className="block text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black"
                 style={{
@@ -54,7 +54,7 @@ export function HeroSection() {
                   filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.4))",
                 }}
               >
-                Premium Quality Used Auto Parts
+                America&apos;s Trusted OEM Used Auto Parts Marketplace
               </span>
             </h1>
 

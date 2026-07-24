@@ -186,7 +186,7 @@ export function FeaturedProductsSection() {
         {/* CTA */}
         <div className="mt-16 text-center">
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            All parts come with 90-180 day warranty, free shipping nationwide, and 24-hour response time. Get your premium used parts today.
+            All parts come with 30-180 day warranty, free shipping nationwide, and 24-hour response time. Get your premium used parts today.
           </p>
           <Link
             href="/quote"

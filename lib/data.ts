@@ -1,10 +1,9 @@
 export const CAR_MAKES = [
-  "Acura","Alfa Romeo","AMC","Aston Martin","Audi","Austin","BMW","Buick","Cadillac",
-  "Chevrolet","Chrysler","Daewoo","Daihatsu","Dodge","Eagle","Fiat","Ford","Geo","GMC","Honda",
+  "AMC","Acura","Alfa Romeo","Aston Martin","Audi","Austin","BMW","Buick","Cadillac",
+  "Chevrolet","Chrysler","Daewoo","Dodge","Eagle","Fiat","Ford","GMC","Geo","Honda",
   "Hummer","Hyundai","Infiniti","Isuzu","Jaguar","Jeep","Kia","Land Rover","Lexus",
-  "Lincoln","Mazda","Mercedes-Benz","Mercury","Mini","Mitsubishi","Nissan","Oldsmobile",
-  "Opel","Peugeot","Plymouth","Pontiac","Porsche","Renault","Saab","Saturn","Scion",
-  "Subaru","Suzuki","Toyota","Triumph","Volkswagen","Volvo"
+  "Lincoln","Mazda","Mercedes-Benz","Mercury","Mitsubishi","Nissan","Oldsmobile",
+  "Plymouth","Pontiac","Saab","Saturn","Scion","Subaru","Suzuki","Toyota","Volkswagen","Volvo"
 ]
 
 export const CAR_MODELS: Record<string, string[]> = {

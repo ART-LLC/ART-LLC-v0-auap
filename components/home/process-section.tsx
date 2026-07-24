@@ -1,10 +1,10 @@
 "use client"
 
 const steps = [
-  { num: "01", title: "Select Your Vehicle", desc: "Choose year, make, model and the exact part you need from our smart search form.", delay: "0s" },
-  { num: "02", title: "We Source It", desc: "Our system searches 2,000+ verified yards and returns the best available options.", delay: "0.6s" },
-  { num: "03", title: "Confirm & Order", desc: "Review listings, prices and condition. Request a quote with zero obligation.", delay: "1.2s" },
-  { num: "04", title: "Delivered to Door", desc: "Your part ships directly from the yard to your address — anywhere in the US.", delay: "1.8s" },
+  { num: "01", title: "Search Your Part", desc: "Enter your vehicle year, make, model, and the part you need to get matched results instantly.", delay: "0s" },
+  { num: "02", title: "Get a Free Quote", desc: "Receive a transparent, no-obligation quote from our verified network with clear pricing upfront.", delay: "0.6s" },
+  { num: "03", title: "Confirm & Order", desc: "Review availability, warranty details, and shipping options, then confirm your order with ease.", delay: "1.2s" },
+  { num: "04", title: "Fast Delivery", desc: "Your part ships same day when available, delivered directly to your door or local shop.", delay: "1.8s" },
 ]
 
 export function ProcessSection() {
