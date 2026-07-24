@@ -35,7 +35,7 @@ export function UsedEnginesContent() {
                 AUAPW LLC is connected with all junkyards and salvage yards near you, and can compare the best offers among them. When you fill the part request form, our system will send requests to all the auto part dealers and receive the part availability with price. The quality engine and lowest price quote will be sent to you. Also, we will assist you to place an order to your home or garage.
               </p>
               <p>
-                We always ensure that you will get free shipping and the best warranty. We ensure that we should have the return or replacement facility if there is any problem with your purchase. What are you waiting for? Fill the form or call us at our toll free number. We are happy to assist you now!
+                We always ensure that you will get free shipping and the best warranty. We ensure that we should have the return or replacement facility if there is any problem with your purchase. What are you waiting for? Fill the form or call us. We are happy to assist you now!
               </p>
             </div>
 
@@ -55,7 +55,7 @@ export function UsedEnginesContent() {
                 { icon: Truck, title: "Free Shipping", desc: "Free shipping all across the USA. Order your desired used low mileage engines and get them shipped to your house completely free." },
                 { icon: Shield, title: "Warranty From Dealers", desc: "Get a 30-180 days warranty directly from the junkyard and salvage yard dealers after purchasing a used engine." },
                 { icon: Cog, title: "All Engine Types", desc: "Find gasoline, diesel and hybrid engines with low mileage for all types of vehicles -- van, sedan, jeep and more." },
-                { icon: RotateCcw, title: "Returns Available", desc: "Not satisfied with the used auto part? You can easily return it. Contact us through our toll-free number." },
+                { icon: RotateCcw, title: "Returns Available", desc: "Not satisfied with the used auto part? You can easily return it. Contact us for more information." },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="glass-card rounded-sm p-5">
                   <Icon className="w-5 h-5 text-primary mb-2" />
@@ -121,7 +121,7 @@ export function UsedEnginesContent() {
             </Accordion>
 
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Got any more questions? Get in touch with us through our toll-free number <a href="tel:8888185001" className="text-primary font-bold">{PHONE_DISPLAY}</a>
+              Got any more questions? Get in touch with us at <a href="tel:8888185001" className="text-primary font-bold">{PHONE_DISPLAY}</a>
             </p>
           </div>
 
