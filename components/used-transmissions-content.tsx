@@ -53,7 +53,7 @@ export function UsedTransmissionsContent() {
                 { icon: Truck, title: "Free Shipping", desc: "Free shipping all across the USA. No extra charges -- you pay only for the transmission." },
                 { icon: Shield, title: "Warranty From Dealers", desc: "30-180 days warranty directly from junkyard and salvage yard dealers." },
                 { icon: Cog, title: "All Types", desc: "Find automatic, manual, and CVT transmissions for all types of vehicles." },
-                { icon: RotateCcw, title: "Returns Available", desc: "Not satisfied? Easily return the part. Contact us for more information." },
+                { icon: RotateCcw, title: "Returns Available", desc: "Not satisfied? Easily return the part. Contact us through our toll-free number." },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="glass-card rounded-sm p-5">
                   <Icon className="w-5 h-5 text-primary mb-2" />
@@ -109,7 +109,7 @@ export function UsedTransmissionsContent() {
             </Accordion>
 
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Got any more questions? Get in touch with us at <a href="tel:8888185001" className="text-primary font-bold">{PHONE_DISPLAY}</a>
+              Got any more questions? Get in touch with us through our toll-free number <a href="tel:8888185001" className="text-primary font-bold">{PHONE_DISPLAY}</a>
             </p>
           </div>
 
