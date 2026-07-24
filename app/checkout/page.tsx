@@ -35,6 +35,7 @@ export default function CheckoutPage() {
     cvv: '',
   })
   const [isProcessing, setIsProcessing] = useState(false)
+  const [receipt, setReceipt] = useState<{ orderNumber: string; total: number } | null>(null)
 
   const totalPrice = getTotalPrice()
   const shipping = items.reduce((total, item) => total + (item.shippingCost ?? 0) * item.quantity, 0)
@@ -53,12 +54,21 @@ export default function CheckoutPage() {
   }
 
   const handlePaymentSubmit = async () => {
+    if (items.length === 0 || finalTotal <= 0 || receipt) return
+
     setIsProcessing(true)
     // Simulate payment processing
     await new Promise((resolve) => setTimeout(resolve, 2000))
-    setIsProcessing(false)
+
+    const completedOrder = {
+      orderNumber: `ORD-${crypto.randomUUID().slice(0, 8).toUpperCase()}`,
+      total: finalTotal,
+    }
+
+    setReceipt(completedOrder)
     clearCart()
     setStep('confirmation')
+    setIsProcessing(false)
   }
 
   if (items.length === 0 && step !== 'confirmation') {
@@ -86,16 +96,23 @@ export default function CheckoutPage() {
     <>
       <Navbar />
       <main className="pt-[58px]">
-        <div className="relative bg-cover bg-center py-20 sm:py-28 border-b border-border/20 mb-12" style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.82), rgba(13,15,22,0.60), rgba(13,15,22,0.88)), url('/images/heroes/hero-warehouse.png')" }}>
+        <div
+          className={`relative border-b border-border/20 bg-cover bg-center ${
+            step === 'confirmation' ? 'py-10 sm:py-12 mb-8' : 'py-20 sm:py-28 mb-12'
+          }`}
+          style={{ backgroundImage: "linear-gradient(to bottom right, rgba(13,15,22,0.82), rgba(13,15,22,0.60), rgba(13,15,22,0.88)), url('/images/heroes/hero-warehouse.png')" }}
+        >
           <div className="mx-auto max-w-4xl px-4">
-            <Link href="/cart" className="inline-flex items-center gap-2 text-slate-200 hover:text-white mb-6">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Cart
-            </Link>
-            <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight text-white mb-2 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">Checkout</h1>
+            {step !== 'confirmation' && (
+              <Link href="/cart" className="inline-flex items-center gap-2 text-slate-200 hover:text-white mb-6">
+                <ArrowLeft className="w-4 h-4" />
+                Back to Cart
+              </Link>
+            )}
+            <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">Checkout</h1>
           </div>
         </div>
-        <div className="pb-20">
+        <div className={step === 'confirmation' ? 'pb-12' : 'pb-20'}>
         <div className="mx-auto max-w-4xl px-4">
 
           {step === 'auth' ? (
@@ -129,20 +146,24 @@ export default function CheckoutPage() {
             </div>
           ) : null}
 
-          {step === 'confirmation' ? (
-            <div className="text-center py-20">
-              <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-6">
-                <Check className="w-8 h-8 text-green-400" />
+          {step === 'confirmation' && receipt ? (
+            <div className="py-4 text-center sm:py-6">
+              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-green-500/15">
+                <Check className="h-7 w-7 text-green-400" />
               </div>
-              <h2 className="text-3xl font-bold mb-2">Order Confirmed!</h2>
-              <p className="text-foreground/60 mb-8">Thank you for your purchase. You will receive an email confirmation shortly.</p>
-              <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-8 text-left">
-                <p className="text-sm text-foreground/60 mb-2">Order Number</p>
-                <p className="text-2xl font-bold mb-6">ORD-{Date.now()}</p>
-                <p className="text-sm text-foreground/60 mb-2">Total Amount</p>
-                <p className="text-2xl font-bold text-blue-400">${finalTotal.toFixed(2)}</p>
+              <h2 className="mb-2 text-2xl font-bold sm:text-3xl">Order Confirmed!</h2>
+              <p className="mb-6 text-foreground/60">Thank you for your purchase. You will receive an email confirmation shortly.</p>
+              <div className="mb-6 grid gap-5 rounded-lg border border-white/10 bg-white/5 p-5 text-left sm:grid-cols-2 sm:p-6">
+                <div>
+                  <p className="mb-2 text-sm text-foreground/60">Order Number</p>
+                  <p className="text-xl font-bold sm:text-2xl">{receipt.orderNumber}</p>
+                </div>
+                <div>
+                  <p className="mb-2 text-sm text-foreground/60">Total Amount</p>
+                  <p className="text-xl font-bold text-blue-400 sm:text-2xl">${receipt.total.toFixed(2)}</p>
+                </div>
               </div>
-              <div className="flex gap-4 justify-center">
+              <div className="flex flex-col justify-center gap-3 sm:flex-row">
                 <Link href="/parts">
                   <Button size="lg">Continue Shopping</Button>
                 </Link>
