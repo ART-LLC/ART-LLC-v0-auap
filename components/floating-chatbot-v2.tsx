@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react'
 import Link from 'next/link'
-import { ArrowRight, MessageSquare, X, Send, Clock, CheckCircle } from 'lucide-react'
+import { ArrowRight, MessageSquare, X, Send, CheckCircle, Loader2, User, Bot } from 'lucide-react'
 import { useChat } from '@ai-sdk/react'
 
 interface WebsiteLink {
@@ -13,12 +13,14 @@ interface WebsiteLink {
 }
 
 const SUGGESTIONS = [
-  "What parts do you have for Acura?",
-  "How much does shipping cost?",
-  "Tell me about your warranty",
-  "Can you help me find an engine?",
-  "Show me your return policy",
+  "What Acura parts are available?",
+  "How much is shipping?",
+  "Tell me about warranty coverage",
+  "Help me find an engine",
+  "What's your return policy?",
   "Browse transmission parts",
+  "How do I request a quote?",
+  "Contact customer support",
 ]
 
 function MessageBubble({ message }: { message: any }) {
@@ -57,39 +59,51 @@ function MessageBubble({ message }: { message: any }) {
     .join('')
 
   return (
-    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
-      <div className={`flex max-w-[85%] flex-col gap-2 ${isUser ? 'items-end' : 'items-start'}`}>
+    <div className={`flex gap-2 mb-3 ${isUser ? 'flex-row-reverse' : 'flex-row'}`}>
+      {/* Avatar */}
+      <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-semibold ${
+        isUser 
+          ? 'bg-blue-600 text-white' 
+          : 'bg-gradient-to-br from-emerald-500 to-teal-600 text-white'
+      }`}>
+        {isUser ? <User className='w-4 h-4' /> : <Bot className='w-4 h-4' />}
+      </div>
+
+      <div className={`flex max-w-[calc(100%-32px)] flex-col gap-1.5 ${isUser ? 'items-end' : 'items-start'}`}>
         {textContent && (
           <div
-            className={`rounded-lg px-4 py-2.5 text-sm leading-relaxed ${
+            className={`rounded-xl px-3.5 py-2 text-sm leading-relaxed max-w-full ${
               isUser
-                ? 'bg-primary text-primary-foreground rounded-br-none'
-                : 'bg-card text-card-foreground border border-border rounded-bl-none'
+                ? 'bg-blue-600 text-white rounded-br-none shadow-sm'
+                : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-bl-none'
             }`}
           >
             {textContent}
           </div>
         )}
 
-        {/* Website links */}
+        {/* Website links with improved styling */}
         {websiteLinks.length > 0 && (
-          <div className='flex w-full flex-col gap-1.5'>
+          <div className='flex flex-col gap-2 w-full'>
             {websiteLinks.slice(0, 3).map((link, idx) => (
               <Link
                 key={`website-${idx}`}
                 href={link.url}
-                className='group flex items-start justify-between gap-2 rounded-lg border border-border bg-card/50 px-3 py-2 text-left transition-all hover:border-primary hover:bg-primary/5'
+                target="_blank"
+                rel="noopener noreferrer"
+                className='group flex items-start gap-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-2.5 text-left transition-all hover:border-blue-400 dark:hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-gray-800 w-full'
               >
+                <div className='flex-shrink-0 w-1 h-full bg-gradient-to-b from-blue-500 to-blue-400 rounded-full' />
                 <div className='min-w-0 flex-1'>
-                  <div className='flex items-center gap-1.5'>
-                    <p className='truncate text-xs font-semibold text-card-foreground'>{link.title}</p>
-                    <span className='text-[10px] px-1.5 py-0.5 rounded bg-primary/10 text-primary font-medium flex-shrink-0'>
+                  <div className='flex items-center gap-2 flex-wrap'>
+                    <p className='truncate text-xs font-semibold text-gray-900 dark:text-white'>{link.title}</p>
+                    <span className='text-[10px] px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-medium flex-shrink-0 whitespace-nowrap'>
                       {link.category}
                     </span>
                   </div>
-                  <p className='text-[11px] text-muted-foreground line-clamp-1 mt-0.5'>{link.description}</p>
+                  <p className='text-[11px] text-gray-600 dark:text-gray-400 line-clamp-2 mt-1'>{link.description}</p>
                 </div>
-                <ArrowRight className='h-3 w-3 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-primary mt-0.5' />
+                <ArrowRight className='h-3.5 w-3.5 shrink-0 text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-all mt-0.5' />
               </Link>
             ))}
           </div>
@@ -134,31 +148,38 @@ function EmailForm({ onSubmit }: { onSubmit: (email: string) => void }) {
 
   if (submitted) {
     return (
-      <div className='flex items-center gap-2 px-4 py-3 bg-green-500/10 border border-green-500/20 rounded-lg text-sm text-green-600'>
+      <div className='mx-3 mb-3 flex items-center gap-2 px-3 py-2.5 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 dark:border-emerald-500/20 rounded-lg text-sm text-emerald-700 dark:text-emerald-400'>
         <CheckCircle className='h-4 w-4 flex-shrink-0' />
-        <span className='font-medium'>Email verified! Support team will follow up.</span>
+        <span className='font-medium'>Email verified! We&apos;ll follow up soon.</span>
       </div>
     )
   }
 
   return (
-    <div className='px-4 py-3 bg-card border-t border-border'>
-      <p className='text-xs text-muted-foreground mb-2 font-medium'>Continue the conversation via email:</p>
+    <div className='px-3 py-3 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950 dark:to-cyan-950 border-t border-gray-200 dark:border-gray-700'>
+      <p className='text-xs font-semibold text-gray-700 dark:text-gray-300 mb-2'>Continue conversation via email:</p>
       <form onSubmit={handleSubmit} className='flex gap-2'>
         <input
           type='email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder='your@email.com'
-          className='flex-1 bg-input border border-border rounded px-2 py-1.5 text-xs placeholder:text-muted-foreground focus:outline-none focus:border-primary'
+          className='flex-1 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg px-2.5 py-1.5 text-xs placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 focus:ring-1 focus:ring-blue-500 dark:focus:ring-blue-400'
           required
         />
         <button
           type='submit'
           disabled={verifying || !email.includes('@')}
-          className='px-3 py-1.5 bg-primary text-primary-foreground rounded text-xs font-medium hover:bg-primary/90 disabled:opacity-50 transition-colors'
+          className='px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-1.5'
         >
-          {verifying ? 'Verifying...' : 'Send'}
+          {verifying ? (
+            <>
+              <Loader2 className='h-3 w-3 animate-spin' />
+              <span>Verifying</span>
+            </>
+          ) : (
+            'Send'
+          )}
         </button>
       </form>
     </div>
@@ -236,10 +257,10 @@ export function FloatingChatbot() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-40 flex items-center gap-2 px-4 py-3 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl ${
+        className={`fixed bottom-6 right-6 z-40 flex items-center gap-2 px-5 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl ${
           isOpen
-            ? 'bg-primary text-primary-foreground'
-            : 'bg-primary text-primary-foreground hover:scale-105 hover:bg-primary/90'
+            ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white'
+            : 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:scale-110 hover:shadow-xl'
         }`}
       >
         <MessageSquare className='h-5 w-5' />
@@ -250,34 +271,38 @@ export function FloatingChatbot() {
       {isOpen && (
         <div
           ref={chatBoxRef}
-          className='fixed bottom-24 right-6 z-50 w-96 max-h-[600px] flex flex-col bg-background border border-border rounded-xl shadow-2xl overflow-hidden'
+          className='fixed bottom-24 right-6 z-50 w-96 max-h-[600px] flex flex-col bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-2xl overflow-hidden'
         >
           {/* Header */}
-          <div className='bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-4 py-4 flex items-center justify-between'>
+          <div className='bg-gradient-to-r from-blue-600 via-blue-600 to-cyan-600 text-white px-4 py-4 flex items-center justify-between'>
             <div className='flex items-center gap-3'>
-              <MessageSquare className='h-5 w-5' />
+              <div className='w-10 h-10 rounded-full bg-white/20 flex items-center justify-center'>
+                <MessageSquare className='h-5 w-5' />
+              </div>
               <div>
-                <h3 className='font-bold text-sm'>AUAPW Support Chat</h3>
-                <p className='text-xs text-primary-foreground/80'>AI-Powered Assistant</p>
+                <h3 className='font-bold text-sm'>AUAPW Assistant</h3>
+                <p className='text-xs text-white/80'>Always here to help</p>
               </div>
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className='hover:bg-primary-foreground/20 p-1 rounded transition-colors'
+              className='hover:bg-white/20 p-1.5 rounded-lg transition-colors'
             >
               <X className='h-5 w-5' />
             </button>
           </div>
 
           {/* Messages Area */}
-          <div className='flex-1 overflow-y-auto p-4 space-y-3 bg-card/30'>
+          <div className='flex-1 overflow-y-auto p-4 space-y-3 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900'>
             {messages.length === 0 ? (
-              <div className='flex flex-col items-center justify-center h-full gap-3 text-center'>
-                <MessageSquare className='h-12 w-12 text-muted-foreground/30' />
+              <div className='flex flex-col items-center justify-center h-full gap-4 text-center px-4'>
+                <div className='w-16 h-16 rounded-full bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900 dark:to-cyan-900 flex items-center justify-center'>
+                  <MessageSquare className='h-8 w-8 text-blue-600 dark:text-blue-300' />
+                </div>
                 <div>
-                  <p className='text-sm font-medium text-card-foreground'>Welcome to AUAPW Support!</p>
-                  <p className='text-xs text-muted-foreground mt-1'>
-                    Ask about parts, shipping, warranty, or browse our catalog
+                  <p className='text-sm font-bold text-gray-900 dark:text-white'>Welcome to AUAPW!</p>
+                  <p className='text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed'>
+                    Ask me about parts, pricing, shipping, warranty, or any questions about AUAPW.
                   </p>
                 </div>
               </div>
@@ -287,10 +312,10 @@ export function FloatingChatbot() {
                   <MessageBubble key={idx} message={message} />
                 ))}
                 {isLoading && (
-                  <div className='flex gap-1'>
-                    <div className='w-2 h-2 rounded-full bg-muted-foreground/40 animate-bounce' style={{ animationDelay: '0ms' }} />
-                    <div className='w-2 h-2 rounded-full bg-muted-foreground/40 animate-bounce' style={{ animationDelay: '150ms' }} />
-                    <div className='w-2 h-2 rounded-full bg-muted-foreground/40 animate-bounce' style={{ animationDelay: '300ms' }} />
+                  <div className='flex items-center gap-2 ml-8'>
+                    <div className='w-2 h-2 rounded-full bg-blue-500 animate-bounce' style={{ animationDelay: '0ms' }} />
+                    <div className='w-2 h-2 rounded-full bg-blue-400 animate-bounce' style={{ animationDelay: '150ms' }} />
+                    <div className='w-2 h-2 rounded-full bg-blue-300 animate-bounce' style={{ animationDelay: '300ms' }} />
                   </div>
                 )}
                 <div ref={messagesEndRef} />
@@ -303,8 +328,8 @@ export function FloatingChatbot() {
 
           {/* Suggestions or Input */}
           {messages.length === 0 ? (
-            <div className='px-4 py-3 border-t border-border bg-card/50 space-y-2'>
-              {SUGGESTIONS.map((suggestion, idx) => (
+            <div className='px-3 py-3 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 space-y-2'>
+              {SUGGESTIONS.slice(0, 4).map((suggestion, idx) => (
                 <button
                   key={idx}
                   onClick={() => {
@@ -312,25 +337,25 @@ export function FloatingChatbot() {
                     form.append('input', suggestion)
                     handleChatSubmit2({ target: { elements: { input: { value: suggestion } } } } as any)
                   }}
-                  className='w-full text-left px-3 py-2 text-xs rounded bg-primary/10 hover:bg-primary/20 text-card-foreground transition-colors border border-primary/20 hover:border-primary/40'
+                  className='w-full text-left px-3 py-2 text-xs rounded-lg bg-blue-50 dark:bg-blue-900/30 hover:bg-blue-100 dark:hover:bg-blue-900/50 text-gray-900 dark:text-gray-100 transition-colors border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 font-medium'
                 >
                   {suggestion}
                 </button>
               ))}
             </div>
           ) : (
-            <form onSubmit={handleChatSubmit2} className='px-4 py-3 border-t border-border bg-card flex gap-2'>
+            <form onSubmit={handleChatSubmit2} className='px-3 py-3 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 flex gap-2'>
               <input
                 value={input}
                 onChange={handleInputChange}
-                placeholder='Ask anything...'
-                className='flex-1 bg-input border border-border rounded px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary'
+                placeholder='Ask a question...'
+                className='flex-1 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 text-sm placeholder:text-gray-400 dark:placeholder:text-gray-500 text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 focus:ring-1 focus:ring-blue-500 dark:focus:ring-blue-400'
                 disabled={isLoading}
               />
               <button
                 type='submit'
                 disabled={isLoading || !input.trim()}
-                className='px-3 py-2 bg-primary text-primary-foreground rounded hover:bg-primary/90 disabled:opacity-50 transition-colors'
+                className='px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center'
               >
                 <Send className='h-4 w-4' />
               </button>
