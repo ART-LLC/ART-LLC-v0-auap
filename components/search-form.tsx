@@ -75,12 +75,12 @@ export function SearchForm({ compact = false }: SearchFormProps) {
             </span>
           </div>
           <a
-            href="tel:8888548681"
+            href="tel:8888185001"
             className="hidden sm:flex items-center gap-1.5 text-[0.7rem] font-semibold text-muted-foreground hover:text-foreground transition-colors"
-            aria-label="Call (888) 854-8681"
+            aria-label="Call (888) 818-5001"
           >
             <Phone className="w-3.5 h-3.5" aria-hidden="true" />
-            (888) 854-8681
+            (888) 818-5001
           </a>
         </div>
 
@@ -226,13 +226,13 @@ export function SearchForm({ compact = false }: SearchFormProps) {
               Search Available Parts
             </button>
             <a
-              href="tel:8888548681"
+              href="tel:8888185001"
               className="auapw-btn auapw-btn-green auapw-btn-sm sm:auapw-btn-lg justify-center"
-              aria-label="Call us at (888) 854-8681"
+              aria-label="Call us at (888) 818-5001"
             >
               <Phone className="w-4 h-4" aria-hidden="true" />
               <span className="sm:hidden">Call</span>
-              <span className="hidden sm:inline">(888) 854-8681</span>
+              <span className="hidden sm:inline">(888) 818-5001</span>
             </a>
             <a
               href="/quote"

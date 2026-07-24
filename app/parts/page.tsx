@@ -244,9 +244,9 @@ export default function PartsPage() {
                   <div className="mt-6 space-y-3">
                     <p className="text-sm text-foreground/70">Don&apos;t see the right part? Our team can source from additional yards not listed here.</p>
                     <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                      <a href="tel:8888548681" className="auapw-btn auapw-btn-green">
+                      <a href="tel:8888185001" className="auapw-btn auapw-btn-green">
                         <Phone className="w-4 h-4" />
-                        Call (888) 854-8681
+                        Call (888) 818-5001
                       </a>
                       <Link href="/quote" className="auapw-btn auapw-btn-amber">
                         <MessageSquare className="w-4 h-4" />
@@ -330,9 +330,9 @@ export default function PartsPage() {
                       Our team can source from additional yards not listed here. Call or request a quote for immediate assistance.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                      <a href="tel:8888548681" className="auapw-btn auapw-btn-green">
+                      <a href="tel:8888185001" className="auapw-btn auapw-btn-green">
                         <Phone className="w-4 h-4" />
-                        Call (888) 854-8681
+                        Call (888) 818-5001
                       </a>
                       <Link href="/quote" className="auapw-btn auapw-btn-amber">
                         <Mail className="w-4 h-4" />

@@ -81,9 +81,9 @@ export function CinematicShowcaseSection() {
                 <Search className="w-4 h-4" />
                 <span>Find Your Part</span>
               </Link>
-              <a href="tel:8888548681" className="auapw-btn auapw-btn-green">
+              <a href="tel:8888185001" className="auapw-btn auapw-btn-green">
                 <Phone className="w-4 h-4" />
-                <span>Call 888-854-8681</span>
+                <span>Call 888-818-5001</span>
               </a>
             </div>
           </div>

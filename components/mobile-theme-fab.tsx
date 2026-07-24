@@ -93,9 +93,9 @@ export function MobileThemeFab() {
 
       {/* ── CALL button ── */}
       <a
-        href="tel:8888548681"
-        title="Call (888) 854-8681"
-        aria-label="Call us at 888-854-8681"
+        href="tel:8888185001"
+        title="Call (888) 818-5001"
+        aria-label="Call us at 888-818-5001"
         className="fab-btn"
         style={{
           background: 'linear-gradient(160deg, #4a9a60 0%, #62b878 18%, #1e5c30 38%, #0e3a1c 55%, #1a5228 72%, #3d8a52 88%, #56a86c 100%)',

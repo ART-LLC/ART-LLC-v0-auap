@@ -226,7 +226,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 <div className="grid grid-cols-2 gap-3">
                   <Button variant="outline" className="gap-2">
                     <Phone className="w-4 h-4" />
-                    Call (888) 854-8681
+                    Call (888) 818-5001
                   </Button>
                   <Button variant="outline" className="gap-2">
                     <MessageSquare className="w-4 h-4" />

@@ -62,9 +62,9 @@ export function Footer() {
               Premium quality used auto parts from 2,000+ verified yards nationwide. 30-180 day warranty on every part.
             </p>
             <div className="space-y-2.5 sm:space-y-3">
-              <a href="tel:8888548681" className="auapw-btn auapw-btn-green auapw-btn-sm w-full">
+              <a href="tel:8888185001" className="auapw-btn auapw-btn-green auapw-btn-sm w-full">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span className="text-xs sm:text-sm">(888) 854-8681</span>
+                <span className="text-xs sm:text-sm">(888) 818-5001</span>
               </a>
               <a href="mailto:support@auapw.com" className="auapw-btn auapw-btn-teal auapw-btn-sm w-full">
                 <Mail className="w-4 h-4 flex-shrink-0" />
