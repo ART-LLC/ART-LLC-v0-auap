@@ -51,11 +51,7 @@ export function BrandWordmark({
       <div className="wordmark-3d-wrap pt-[0.08em]">
         <span 
           className={`wordmark-3d ${cfg.wordmarkSize}`}
-          style={size === 'hero-5xl' ? { 
-            marginTop: '-51px',
-            paddingTop: '19px',
-            marginBottom: '1px'
-          } : {}}
+          style={size === 'hero-5xl' ? { marginTop: '-51px' } : {}}
         >
           AUAPW LLC
         </span>
