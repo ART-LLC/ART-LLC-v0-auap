@@ -92,7 +92,7 @@ export function FloatingChatbot() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-40 w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg overflow-hidden"
+        className="fixed bottom-4 right-4 z-40 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg overflow-hidden"
         style={{
           background: 'radial-gradient(circle at 50% 35%, #3a3a42 0%, #1c1c22 70%, #0e0e12 100%)',
           border: '2px solid rgba(203, 213, 225, 0.35)',
@@ -118,9 +118,9 @@ export function FloatingChatbot() {
       {/* Chat Window */}
       {isOpen && (
         <div
-          className="fixed bottom-24 right-6 z-50 w-full max-w-sm rounded-xl shadow-2xl overflow-hidden flex flex-col"
+          className="fixed bottom-20 right-4 z-50 w-[calc(100vw-2rem)] max-w-xs rounded-xl shadow-2xl overflow-hidden flex flex-col"
           style={{
-            height: '600px',
+            height: 'min(520px, calc(100vh - 6rem))',
             background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
             border: '1px solid rgba(148, 163, 184, 0.2)',
           }}
@@ -166,8 +166,30 @@ export function FloatingChatbot() {
             </button>
           </div>
 
+          {/* Quick tabs */}
+          <nav
+            className="grid grid-cols-4 gap-1 border-b border-slate-700 bg-slate-900/80 p-2"
+            aria-label="Chatbot quick links"
+          >
+            {[
+              { label: 'VIN', href: '/ai-search' },
+              { label: 'Parts', href: '/parts' },
+              { label: 'Quote', href: '/quote' },
+              { label: 'Help', href: '/support' },
+            ].map((tab) => (
+              <Link
+                key={tab.href}
+                href={tab.href}
+                onClick={() => setIsOpen(false)}
+                className="rounded-md border border-slate-700 bg-slate-800 px-2 py-2 text-center text-xs font-bold text-slate-200 transition-colors hover:border-blue-500 hover:bg-blue-600 hover:text-white"
+              >
+                {tab.label}
+              </Link>
+            ))}
+          </nav>
+
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-3">
+          <div className="flex-1 overflow-y-auto p-3 space-y-3">
             {messages.map((msg) => (
               <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div

@@ -1,14 +1,13 @@
 "use client"
 
 import Link from "next/link"
-import { X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, UserRound } from "lucide-react"
+import { X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { useCartStore } from "@/lib/stores/cart-store"
 import { useWishlistStore } from "@/lib/stores/wishlist-store"
-import { useAuth } from "@/lib/auth-context"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -24,9 +23,6 @@ export function Navbar() {
   const lastScrollY = useRef(0)
   const cartItems = useCartStore((state) => state.getTotalItems())
   const wishlistCount = useWishlistStore((state) => state.getCount())
-  const { user, isLoading: authLoading } = useAuth()
-  const accountHref = user ? "/dashboard" : "/sign-in"
-  const accountLabel = user ? "Dashboard" : "Sign In"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -189,18 +185,6 @@ export function Navbar() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-
-            {/* Account destination follows the current auth state */}
-            <Link
-              href={accountHref}
-              className="header-boss-nav-text group relative flex items-center gap-1.5"
-              aria-label={authLoading ? "Account" : accountLabel}
-              title={authLoading ? "Account" : accountLabel}
-            >
-              <UserRound className="w-4 h-4 text-primary" />
-              <span className="sr-only">{authLoading ? "Account" : accountLabel}</span>
-              <span className="header-boss-nav-glow" />
-            </Link>
 
             {/* Review All Website Dropdown */}
             <DropdownMenu>
@@ -396,16 +380,8 @@ export function Navbar() {
               {/* ── Divider ── */}
               <div className="h-px bg-white/8" />
 
-              {/* ── Account / Cart / Wishlist / Theme ── */}
-              <div className="grid grid-cols-4 gap-1.5 pb-1">
-                <Link
-                  href={accountHref}
-                  onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-primary/10 border border-primary/20 hover:bg-primary/20 active:scale-95 transition-all"
-                >
-                  <UserRound className="w-4 h-4 text-primary" />
-                  <span className="text-[10px] font-bold text-primary">{authLoading ? "Account" : accountLabel}</span>
-                </Link>
+              {/* ── Cart / Wishlist / Theme ── */}
+              <div className="grid grid-cols-3 gap-1.5 pb-1">
                 <Link
                   href="/cart"
                   onClick={() => setMobileOpen(false)}
