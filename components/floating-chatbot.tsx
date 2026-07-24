@@ -17,11 +17,20 @@ interface ContentResult {
   price?: number
 }
 
+interface WebsiteLink {
+  title: string
+  description: string
+  url: string
+  category: "product" | "guide" | "policy" | "service" | "tool" | "category"
+}
+
 const SUGGESTIONS = [
   "What parts do you have for Acura?",
   "How much does shipping cost?",
   "Tell me about your warranty",
   "Can you help me find an engine?",
+  "Show me your return policy",
+  "Browse transmission parts",
 ]
 
 export function FloatingChatbot() {
@@ -176,16 +185,39 @@ export function FloatingChatbot() {
 function MessageBubble({ message }: { message: any }) {
   const isUser = message.role === "user"
 
-  // Collect content results from tool outputs
+  // Collect content results and website links from tool outputs
   const content: ContentResult[] = []
+  const websiteLinks: WebsiteLink[] = []
+  
   for (const part of message.parts ?? []) {
     if (
       typeof part.type === "string" &&
       part.type.startsWith("tool-") &&
       part.state === "output-available" &&
-      part.output?.results
+      part.output
     ) {
-      for (const r of part.output.results) content.push(r)
+      // Handle searchWebsite tool results
+      if (part.type === "tool-searchWebsite" && part.output.pages) {
+        for (const page of part.output.pages) {
+          websiteLinks.push(page)
+        }
+      }
+      // Handle searchParts and recommendParts tool results
+      else if (part.output.results) {
+        for (const r of part.output.results) content.push(r)
+      }
+      // Handle searchParts with parts array
+      else if (part.output.parts) {
+        for (const p of part.output.parts) {
+          content.push({
+            title: p.name,
+            description: p.category ? `${p.category}${p.year ? ` - ${p.year}` : ""}` : undefined,
+            url: p.url,
+            type: "product",
+            price: p.price,
+          })
+        }
+      }
     }
   }
 
@@ -209,12 +241,36 @@ function MessageBubble({ message }: { message: any }) {
           </div>
         )}
 
-        {/* Content result cards */}
-        {content.length > 0 && (
+        {/* Website links */}
+        {websiteLinks.length > 0 && (
+          <div className="flex w-full flex-col gap-2">
+            {websiteLinks.slice(0, 5).map((link, idx) => (
+              <Link
+                key={`website-${idx}`}
+                href={link.url}
+                className="group flex items-start justify-between gap-3 rounded-lg border border-gray-200 bg-white px-3 py-2.5 transition-all hover:border-blue-300 hover:bg-blue-50"
+              >
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-2">
+                    <p className="truncate text-xs font-semibold text-gray-900">{link.title}</p>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-100 text-blue-700 font-medium flex-shrink-0">
+                      {link.category}
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-gray-600 line-clamp-2 mt-1">{link.description}</p>
+                </div>
+                <ArrowRight className="h-4 w-4 shrink-0 text-gray-400 transition-all group-hover:translate-x-0.5 group-hover:text-blue-600 mt-1" />
+              </Link>
+            ))}
+          </div>
+        )}
+
+        {/* Content result cards (products) */}
+        {content.length > 0 && !websiteLinks.length && (
           <div className="flex w-full flex-col gap-2">
             {content.slice(0, 5).map((item, idx) => (
               <Link
-                key={idx}
+                key={`content-${idx}`}
                 href={item.url}
                 className="group flex items-start justify-between gap-3 rounded-lg border border-gray-200 bg-white px-3 py-2.5 transition-all hover:border-blue-300 hover:bg-blue-50"
               >
