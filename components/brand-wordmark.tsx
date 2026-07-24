@@ -49,10 +49,7 @@ export function BrandWordmark({
 
       {/* AUAPW LLC — 3D Block Extrusion + Diamond LED + Ghost Scan */}
       <div className="wordmark-3d-wrap pt-[0.08em]">
-        <span 
-          className={`wordmark-3d ${cfg.wordmarkSize}`}
-          style={size === 'hero-5xl' ? { marginTop: '-51px' } : {}}
-        >
+        <span className={`wordmark-3d ${cfg.wordmarkSize}`}>
           AUAPW LLC
         </span>
         <span className="ghost-scan-bar" aria-hidden="true" />
@@ -63,17 +60,7 @@ export function BrandWordmark({
         <>
           <div className="wordmark-rule" aria-hidden="true" />
           <div className="wordmark-sub-wrap">
-            <span 
-              className={`wordmark-sub ${cfg.subSize} tracking-[0.28em] uppercase`}
-              style={size === 'hero-5xl' ? {
-                fontSize: '53px',
-                fontWeight: '800',
-                letterSpacing: '0.102em',
-                lineHeight: '1em',
-                paddingTop: '-18px',
-                fontFamily: 'inherit'
-              } : {}}
-            >
+            <span className={`wordmark-sub ${cfg.subSize} tracking-[0.28em] uppercase`}>
               All Used Auto Parts Warehouse
             </span>
             <span className="ghost-scan-bar ghost-scan-bar--delay" aria-hidden="true" />
