@@ -19,7 +19,8 @@ export default function CheckoutPage() {
   const getTotalPrice = useCartStore((state) => state.getTotalPrice)
   const clearCart = useCartStore((state) => state.clearCart)
   
-  const [step, setStep] = useState<'shipping' | 'payment' | 'confirmation'>('shipping')
+  const [step, setStep] = useState<'auth' | 'shipping' | 'payment' | 'confirmation'>('auth')
+  const [isGuest, setIsGuest] = useState(false)
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -96,6 +97,37 @@ export default function CheckoutPage() {
         </div>
         <div className="pb-20">
         <div className="mx-auto max-w-4xl px-4">
+
+          {step === 'auth' ? (
+            <div className="mb-8 p-6 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/50 rounded-lg">
+              <h2 className="text-xl font-bold mb-4">Checkout as:</h2>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  onClick={() => setStep('shipping')}
+                  className="flex-1 bg-blue-600 hover:bg-blue-700 py-6 text-base font-semibold"
+                >
+                  Sign In to Account
+                </Button>
+                <Button
+                  onClick={() => {
+                    setIsGuest(true)
+                    setStep('shipping')
+                  }}
+                  variant="outline"
+                  className="flex-1 py-6 text-base font-semibold"
+                >
+                  Continue as Guest
+                </Button>
+              </div>
+              <div className="mt-4 flex flex-col gap-2">
+                <Link href="/sign-up">
+                  <Button variant="ghost" className="w-full justify-start text-blue-400 hover:text-blue-300">
+                    New to AUAPW? Create Account
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          ) : null}
 
           {step === 'confirmation' ? (
             <div className="text-center py-20">
