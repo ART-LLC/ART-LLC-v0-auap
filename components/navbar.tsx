@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone } from "lucide-react"
+import { X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, UserRound } from "lucide-react"
 import { useState, useEffect, useRef, useSyncExternalStore } from "react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
@@ -228,6 +228,16 @@ export function Navbar() {
             <div className="hidden sm:block">
               <ThemeToggle />
             </div>
+
+            {/* User profile — desktop header */}
+            <Link
+              href="/dashboard"
+              className="hidden sm:flex h-9 w-9 items-center justify-center rounded-lg transition-colors hover:bg-white/10"
+              title="My profile"
+              aria-label="Open my profile"
+            >
+              <UserRound className="h-5 w-5 text-foreground" />
+            </Link>
 
             {/* Cart indicator — desktop only */}
             <Link href="/cart" className="relative hidden sm:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors" title="Cart">
