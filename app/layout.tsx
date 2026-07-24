@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/lib/auth-context'
 import { MobileThemeFab } from '@/components/mobile-theme-fab'
 import { IntercomProvider } from '@/components/intercom-provider'
-import { FloatingChatbot } from '@/components/floating-chatbot-v2'
+import { FloatingChatbotImproved } from '@/components/floating-chatbot-improved'
 import './globals.css'
 
 const roboto = Roboto({
@@ -97,7 +97,7 @@ export default function RootLayout({
             {children}
             <MobileThemeFab />
             <IntercomProvider />
-            <FloatingChatbot />
+            <FloatingChatbotImproved />
           </ThemeProvider>
         </AuthProvider>
         <Analytics />
