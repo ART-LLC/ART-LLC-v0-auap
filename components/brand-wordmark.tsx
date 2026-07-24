@@ -45,7 +45,7 @@ export function BrandWordmark({
   const taglineText = subtitle ?? '"Trusted Partner for Automotive Services and Solutions"'
 
   return (
-    <div className={`flex flex-col gap-0 ${cfg.align} ${className}`}>
+    <div className={`flex flex-col gap-0 ${cfg.align} ${className}`} style={{ fontWeight: 800 }}>
 
       {/* AUAPW LLC — 3D Block Extrusion + Diamond LED + Ghost Scan */}
       <div className="wordmark-3d-wrap pt-[0.08em]">
@@ -60,7 +60,18 @@ export function BrandWordmark({
         <>
           <div className="wordmark-rule" aria-hidden="true" />
           <div className="wordmark-sub-wrap">
-            <span className={`wordmark-sub ${cfg.subSize} tracking-[0.28em] uppercase`}>
+            <span 
+              className={`wordmark-sub ${cfg.subSize} tracking-[0.28em] uppercase`}
+              style={{
+                borderStyle: "double",
+                borderRadius: "339px",
+                boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+                lineHeight: "1.1em",
+                letterSpacing: "0.066em",
+                fontWeight: 800,
+                fontSize: "88px",
+              }}
+            >
               All Used Auto Parts Warehouse
             </span>
             <span className="ghost-scan-bar ghost-scan-bar--delay" aria-hidden="true" />
