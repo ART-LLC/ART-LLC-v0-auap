@@ -62,7 +62,10 @@ export function BrandWordmark({
           <div className="wordmark-sub-wrap">
             <span 
               className={`wordmark-sub ${cfg.subSize} tracking-[0.28em] uppercase`}
-              style={{
+              style={size === "nav" ? {
+                fontWeight: 700,
+                fontSize: "10px",
+              } : {
                 borderStyle: "double",
                 borderRadius: "339px",
                 boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
