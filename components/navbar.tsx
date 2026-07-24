@@ -1,8 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, UserRound } from "lucide-react"
-import { useState, useEffect, useRef, useSyncExternalStore } from "react"
+import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, Sparkles } from "lucide-react"
+import { useState, useEffect, useRef } from "react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -17,21 +17,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-const subscribeToClientHydration = () => () => undefined
-const getClientSnapshot = () => true
-const getServerSnapshot = () => false
-
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [hidden, setHidden] = useState(false)
   const lastScrollY = useRef(0)
   const cartItems = useCartStore((state) => state.getTotalItems())
   const wishlistCount = useWishlistStore((state) => state.getCount())
-  const hasHydrated = useSyncExternalStore(
-    subscribeToClientHydration,
-    getClientSnapshot,
-    getServerSnapshot,
-  )
 
   useEffect(() => {
     const handleScroll = () => {
@@ -195,6 +186,16 @@ export function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
+            {/* AI Smart Search */}
+            <Link
+              href="/ai-search"
+              className="header-boss-nav-text group relative flex items-center gap-1.5"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-primary" />
+              <span className="header-boss-nav-label">AI Search</span>
+              <span className="header-boss-nav-glow" />
+            </Link>
+
             {/* Review All Website Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className="header-boss-nav-text group relative flex items-center gap-1.5 outline-none">
@@ -229,20 +230,10 @@ export function Navbar() {
               <ThemeToggle />
             </div>
 
-            {/* User profile — desktop header */}
-            <Link
-              href="/dashboard"
-              className="hidden sm:flex h-9 w-9 items-center justify-center rounded-lg transition-colors hover:bg-white/10"
-              title="My profile"
-              aria-label="Open my profile"
-            >
-              <UserRound className="h-5 w-5 text-foreground" />
-            </Link>
-
             {/* Cart indicator — desktop only */}
             <Link href="/cart" className="relative hidden sm:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors" title="Cart">
               <ShoppingCart className="w-5 h-5 text-foreground" />
-              {hasHydrated && cartItems > 0 && (
+              {cartItems > 0 && (
                 <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-xs font-bold flex items-center justify-center">
                   {cartItems}
                 </span>
@@ -408,7 +399,7 @@ export function Navbar() {
                 >
                   <ShoppingCart className="w-4 h-4 text-blue-400" />
                   <span className="text-[10px] font-bold text-blue-300">Cart</span>
-                  {hasHydrated && cartItems > 0 && (
+                  {cartItems > 0 && (
                     <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-[9px] font-black flex items-center justify-center">
                       {cartItems}
                     </span>
@@ -421,7 +412,7 @@ export function Navbar() {
                 >
                   <Heart className="w-4 h-4 text-pink-400" />
                   <span className="text-[10px] font-bold text-pink-300">Saved</span>
-                  {hasHydrated && wishlistCount > 0 && (
+                  {wishlistCount > 0 && (
                     <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-pink-500 text-white text-[9px] font-black flex items-center justify-center">
                       {wishlistCount}
                     </span>

@@ -185,39 +185,3 @@ export const vinQuotes = pgTable('vin_quotes', {
   createdAt: timestamp('createdAt').notNull().defaultNow(),
   updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })
-
-export const products = pgTable('products', {
-  id: text('id').primaryKey(),
-  sku: text('sku').notNull().unique(),
-  category: text('category').notNull(),
-  subcategory: text('subcategory'),
-  name: text('name').notNull(),
-  description: text('description'),
-  year_from: integer('year_from'),
-  year_to: integer('year_to'),
-  make: text('make'),
-  model: text('model'),
-  condition: text('condition').default('used'),
-  price: decimal('price', { precision: 10, scale: 2 }).notNull(),
-  cost: decimal('cost', { precision: 10, scale: 2 }),
-  warranty_days: integer('warranty_days').default(180),
-  warranty_description: text('warranty_description'),
-  images: json('images'),
-  specs: json('specs'),
-  isActive: boolean('isActive').default(true),
-  createdAt: timestamp('createdAt').notNull().defaultNow(),
-  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
-})
-
-export const inventory = pgTable('inventory', {
-  id: text('id').primaryKey(),
-  productId: text('productId').notNull().unique(),
-  quantity_on_hand: integer('quantity_on_hand').default(0),
-  quantity_reserved: integer('quantity_reserved').default(0),
-  quantity_available: integer('quantity_available').default(0),
-  reorder_point: integer('reorder_point').default(5),
-  reorder_quantity: integer('reorder_quantity').default(20),
-  supplier_id: text('supplier_id'),
-  location: text('location'),
-  last_updated: timestamp('last_updated').notNull().defaultNow(),
-})
