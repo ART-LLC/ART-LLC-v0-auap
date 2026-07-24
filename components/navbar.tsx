@@ -17,6 +17,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+const subscribeToClientHydration = () => () => undefined
+const getClientSnapshot = () => true
+const getServerSnapshot = () => false
+
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [hidden, setHidden] = useState(false)
@@ -24,9 +28,9 @@ export function Navbar() {
   const cartItems = useCartStore((state) => state.getTotalItems())
   const wishlistCount = useWishlistStore((state) => state.getCount())
   const hasHydrated = useSyncExternalStore(
-    () => () => undefined,
-    () => true,
-    () => false,
+    subscribeToClientHydration,
+    getClientSnapshot,
+    getServerSnapshot,
   )
 
   useEffect(() => {
