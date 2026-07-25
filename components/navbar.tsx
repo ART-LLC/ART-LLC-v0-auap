@@ -65,6 +65,9 @@ export function Navbar() {
     { label: "All Makes", href: "/makes" },
     { label: "Inventory", href: "/inventory" },
     { label: "Search", href: "/search" },
+    { label: "AI Search", href: "/ai-search" },
+    { label: "Chat", href: "/chat" },
+    { label: "Chat History", href: "/chat/history" },
     { label: "Get a Quote", href: "/quote" },
     { label: "Contact", href: "/contact" },
     { label: "Blog", href: "/blog" },
@@ -193,6 +196,16 @@ export function Navbar() {
             >
               <Sparkles className="w-3.5 h-3.5 text-primary" />
               <span className="header-boss-nav-label">AI Search</span>
+              <span className="header-boss-nav-glow" />
+            </Link>
+
+            {/* Chat */}
+            <Link
+              href="/chat"
+              className="header-boss-nav-text group relative flex items-center gap-1.5"
+            >
+              <MessageSquare className="w-3.5 h-3.5 text-primary" />
+              <span className="header-boss-nav-label">Chat</span>
               <span className="header-boss-nav-glow" />
             </Link>
 
