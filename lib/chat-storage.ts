@@ -62,14 +62,21 @@ export const chatStorage = {
   },
 
   // Add a message to a chat
-  addMessage: (chatId: string, message: Message): void => {
-    if (typeof window === 'undefined') return;
+  addMessage: (chatId: string, message: Omit<Message, 'id' | 'timestamp'>): ChatSession | null => {
+    if (typeof window === 'undefined') return null;
     const chat = chatStorage.getChat(chatId);
     if (chat) {
-      chat.messages.push(message);
+      const fullMessage: Message = {
+        id: `msg_${Date.now()}`,
+        timestamp: Date.now(),
+        ...message,
+      };
+      chat.messages.push(fullMessage);
       chat.updatedAt = Date.now();
       chatStorage.saveChat(chat);
+      return chat;
     }
+    return null;
   },
 
   // Delete a chat session
