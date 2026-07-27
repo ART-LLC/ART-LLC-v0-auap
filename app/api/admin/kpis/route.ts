@@ -1,111 +1,145 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { verifyAdminToken } from '@/lib/admin-auth'
+import { NextResponse } from 'next/server'
+import { desc, gte, sql } from 'drizzle-orm'
+import { db } from '@/lib/db'
+import {
+  orders,
+  fraudFlags,
+  rmaRequests,
+  sellerReviews,
+  user,
+} from '@/lib/db/schema'
+import { getAdminSession } from '@/lib/admin-auth'
 
-export interface KPIData {
-  dailyRevenue: number
-  totalOrders: number
-  averageOrderValue: number
-  approvalRate: number
-  fraudRate: number
-  chargebackRate: number
-  refundRate: number
-  customerSatisfaction: number
-  avgResponseTime: number
-  avgShippingTime: number
-  inventoryTurnover: number
-  topSellingCategories: { category: string; sales: number }[]
-  topCustomers: { name: string; orders: number; spent: number }[]
-  recentOrders: { orderNumber: string; customer: string; amount: number; status: string }[]
+export const dynamic = 'force-dynamic'
+
+function num(value: unknown): number {
+  const n = Number(value)
+  return Number.isFinite(n) ? n : 0
 }
 
-/**
- * Fetch KPI data from database
- * In production: integrate with analytics database and real-time queries
- */
-export async function GET(request: NextRequest) {
+export async function GET() {
+  // Protect the endpoint — admin session required (httpOnly cookie)
+  const session = await getAdminSession()
+  if (!session) {
+    return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
-    // Verify admin token
-    const authHeader = request.headers.get('authorization')
-    if (!authHeader?.startsWith('Bearer ')) {
-      return NextResponse.json(
-        { error: 'Unauthorized' },
-        { status: 401 }
-      )
-    }
+    const startOfDay = new Date()
+    startOfDay.setHours(0, 0, 0, 0)
 
-    const token = authHeader.slice(7)
-    const tokenVerification = verifyAdminToken(token)
-    
-    if (!tokenVerification.valid) {
-      return NextResponse.json(
-        { error: 'Invalid token' },
-        { status: 401 }
-      )
-    }
+    // --- Order metrics (today) ---
+    const [orderAgg] = await db
+      .select({
+        count: sql<number>`count(*)`,
+        revenue: sql<number>`coalesce(sum(${orders.total}), 0)`,
+        paidCount: sql<number>`count(*) filter (where ${orders.paymentStatus} = 'paid')`,
+        refundedCount: sql<number>`count(*) filter (where ${orders.status} = 'refunded')`,
+      })
+      .from(orders)
+      .where(gte(orders.createdAt, startOfDay))
 
-    // Get query parameters
-    const searchParams = request.nextUrl.searchParams
-    const period = searchParams.get('period') || 'today' // today, week, month, year
+    const totalOrders = num(orderAgg?.count)
+    const dailyRevenue = num(orderAgg?.revenue)
+    const paidCount = num(orderAgg?.paidCount)
+    const refundedCount = num(orderAgg?.refundedCount)
+    const averageOrderValue = totalOrders > 0 ? dailyRevenue / totalOrders : 0
+    const approvalRate = totalOrders > 0 ? (paidCount / totalOrders) * 100 : 0
+    const refundRate = totalOrders > 0 ? (refundedCount / totalOrders) * 100 : 0
 
-    // Mock KPI data - replace with real database queries
-    const kpis = generateMockKPIs(period)
+    // --- Lifetime order count (for fraud / chargeback rates) ---
+    const [lifetimeOrders] = await db
+      .select({ count: sql<number>`count(*)` })
+      .from(orders)
+    const lifetimeOrderCount = num(lifetimeOrders?.count)
+
+    // --- Fraud metrics ---
+    const [fraudAgg] = await db
+      .select({
+        open: sql<number>`count(*) filter (where ${fraudFlags.status} = 'open')`,
+        chargebacks: sql<number>`count(*) filter (where ${fraudFlags.flagType} = 'high_chargeback_rate')`,
+      })
+      .from(fraudFlags)
+
+    const openFraud = num(fraudAgg?.open)
+    const chargebacks = num(fraudAgg?.chargebacks)
+    const fraudRate =
+      lifetimeOrderCount > 0 ? (openFraud / lifetimeOrderCount) * 100 : 0
+    const chargebackRate =
+      lifetimeOrderCount > 0 ? (chargebacks / lifetimeOrderCount) * 100 : 0
+
+    // --- Customer satisfaction (avg seller review rating) ---
+    const [reviewAgg] = await db
+      .select({
+        avg: sql<number>`coalesce(avg(${sellerReviews.rating}), 0)`,
+        count: sql<number>`count(*)`,
+      })
+      .from(sellerReviews)
+    const customerSatisfaction = num(reviewAgg?.avg)
+
+    // --- Returns / RMA ---
+    const [rmaAgg] = await db
+      .select({
+        pending: sql<number>`count(*) filter (where ${rmaRequests.status} = 'pending')`,
+      })
+      .from(rmaRequests)
+    const pendingReturns = num(rmaAgg?.pending)
+
+    // --- Customers ---
+    const [customerAgg] = await db
+      .select({
+        total: sql<number>`count(*)`,
+        newToday: sql<number>`count(*) filter (where ${user.createdAt} >= ${startOfDay.toISOString()})`,
+      })
+      .from(user)
+
+    // --- Recent orders ---
+    const recentOrders = await db
+      .select({
+        orderNumber: orders.orderNumber,
+        amount: orders.total,
+        status: orders.status,
+        createdAt: orders.createdAt,
+      })
+      .from(orders)
+      .orderBy(desc(orders.createdAt))
+      .limit(8)
 
     return NextResponse.json({
-      success: true,
-      period,
-      data: kpis,
-      lastUpdated: new Date().toISOString(),
+      generatedAt: new Date().toISOString(),
+      kpis: {
+        dailyRevenue,
+        totalOrders,
+        averageOrderValue,
+        approvalRate,
+        fraudRate,
+        chargebackRate,
+        refundRate,
+        customerSatisfaction,
+        // Operational metrics without a live data source yet default to 0
+        avgResponseTime: 0,
+        avgShippingTime: 0,
+        inventoryTurnover: 0,
+      },
+      operations: {
+        openFraudFlags: openFraud,
+        pendingReturns,
+        totalReviews: num(reviewAgg?.count),
+        totalCustomers: num(customerAgg?.total),
+        newCustomersToday: num(customerAgg?.newToday),
+        lifetimeOrders: lifetimeOrderCount,
+      },
+      recentOrders: recentOrders.map((o) => ({
+        orderNumber: o.orderNumber,
+        amount: num(o.amount),
+        status: o.status ?? 'pending',
+      })),
     })
   } catch (error) {
-    console.error('[v0] KPI API error:', error)
+    console.error('[v0] KPI query error:', error)
     return NextResponse.json(
-      { error: 'Failed to fetch KPIs' },
+      { message: 'Failed to compute KPIs' },
       { status: 500 }
     )
-  }
-}
-
-/**
- * Generate mock KPI data
- * Replace with real queries to your database
- */
-function generateMockKPIs(period: string): KPIData {
-  const baseMultiplier = period === 'today' ? 1 : 
-                        period === 'week' ? 7 :
-                        period === 'month' ? 30 : 365
-
-  return {
-    dailyRevenue: 12450.50 * baseMultiplier,
-    totalOrders: Math.floor(287 * baseMultiplier),
-    averageOrderValue: 433.76,
-    approvalRate: 94.2 + Math.random() * 2,
-    fraudRate: 2.1 - Math.random() * 0.5,
-    chargebackRate: 0.8 - Math.random() * 0.2,
-    refundRate: 3.5 + Math.random() * 1,
-    customerSatisfaction: 4.7,
-    avgResponseTime: 2.4,
-    avgShippingTime: 2.8,
-    inventoryTurnover: 12.5,
-    topSellingCategories: [
-      { category: 'Engines', sales: 2450 },
-      { category: 'Transmissions', sales: 1890 },
-      { category: 'Electronics', sales: 1450 },
-      { category: 'Suspension', sales: 980 },
-      { category: 'Doors & Windows', sales: 760 },
-    ],
-    topCustomers: [
-      { name: 'John Mechanic Shop', orders: 45, spent: 12450 },
-      { name: 'Quick Fix Garage', orders: 38, spent: 11200 },
-      { name: 'Auto Repair Co', orders: 32, spent: 9800 },
-      { name: 'Parts Direct LLC', orders: 28, spent: 8600 },
-      { name: 'Collision Center Inc', orders: 24, spent: 7200 },
-    ],
-    recentOrders: [
-      { orderNumber: 'AUA-2024-0001', customer: 'John Doe', amount: 2450, status: 'shipped' },
-      { orderNumber: 'AUA-2024-0002', customer: 'Jane Smith', amount: 1890, status: 'processing' },
-      { orderNumber: 'AUA-2024-0003', customer: 'Bob Johnson', amount: 3200, status: 'confirmed' },
-      { orderNumber: 'AUA-2024-0004', customer: 'Alice Brown', amount: 1450, status: 'pending' },
-      { orderNumber: 'AUA-2024-0005', customer: 'Charlie Wilson', amount: 980, status: 'shipped' },
-    ],
   }
 }

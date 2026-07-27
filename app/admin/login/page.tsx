@@ -21,7 +21,8 @@ export default function AdminLoginPage() {
       const response = await fetch('/api/admin/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username: email, password }),
+        credentials: 'include',
+        body: JSON.stringify({ email, password }),
       })
 
       const data = await response.json()
@@ -31,11 +32,9 @@ export default function AdminLoginPage() {
         return
       }
 
-      // Store token in localStorage/cookie
-      localStorage.setItem('adminToken', data.token)
-      localStorage.setItem('adminEmail', email)
-
+      // Session is stored in an httpOnly cookie by the server.
       router.push('/admin/dashboard')
+      router.refresh()
     } catch (err) {
       setError('An error occurred. Please try again.')
       console.error('[v0] Login error:', err)
