@@ -5,7 +5,7 @@ if (!process.env.STRIPE_SECRET_KEY) {
 }
 
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2026-06-24.dahlia' as any,
+  apiVersion: '2024-06-20' as any,
 })
 
 /**
@@ -162,7 +162,7 @@ export async function initiatePayout(input: {
       success: true,
       transferId: transfer.id,
       amount: transfer.amount / 100,
-      status: transfer.status,
+      status: (transfer as any).status || 'pending',
     }
   } catch (error) {
     console.error('[v0] Initiate payout error:', error)

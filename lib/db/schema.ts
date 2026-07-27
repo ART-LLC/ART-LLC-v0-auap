@@ -123,6 +123,8 @@ export const savedVehicles = pgTable('saved_vehicles', {
 export const orders = pgTable('orders', {
   id: text('id').primaryKey(),
   userId: text('userId').notNull(),
+  sellerId: text('sellerId'),
+  customerId: text('customerId'),
   orderNumber: text('orderNumber').notNull().unique(),
   status: text('status').default('pending'),
   subtotal: decimal('subtotal', { precision: 10, scale: 2 }).notNull(),
@@ -131,6 +133,7 @@ export const orders = pgTable('orders', {
   total: decimal('total', { precision: 10, scale: 2 }).notNull(),
   paymentMethod: text('paymentMethod'),
   paymentStatus: text('paymentStatus').default('unpaid'),
+  stripeChargeId: text('stripeChargeId'),
   shippingAddress: text('shippingAddress'),
   billingAddress: text('billingAddress'),
   notes: text('notes'),
