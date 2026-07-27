@@ -5,160 +5,132 @@ import {
   ledgerEntries,
   payoutRecords,
   sellerProfiles,
-  orders,
 } from '@/lib/db/schema'
-import { eq, and } from 'drizzle-orm'
-import { sql } from 'drizzle-orm'
-
-interface LedgerEntryInput {
-  txnId: string
-  txnType: string
-  accountType: string
-  accountId: string
-  debit?: string | number
-  credit?: string | number
-  description: string
-  metadata?: Record<string, any>
-}
+import { eq, and, sql } from 'drizzle-orm'
+import { stripe } from '@/lib/stripe'
 
 /**
- * Double-entry ledger: every financial transaction creates two entries
- * (one debit, one credit) to maintain accounting integrity
+ * Record a double-entry ledger transaction
  */
-export async function recordLedgerEntry(input: LedgerEntryInput) {
+export async function recordLedgerEntry(
+  txnId: string,
+  txnType: string,
+  accountType: string,
+  accountId: string,
+  debit: number,
+  credit: number,
+  description: string,
+  metadata?: Record<string, any>
+) {
   try {
-    if (!input.debit && !input.credit) {
-      return { error: 'Must specify either debit or credit amount', status: 400 }
-    }
+    const entryId = `ledger_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
 
-    const entry = await db
-      .insert(ledgerEntries)
-      .values({
-        id: `ledger_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
-        txnId: input.txnId,
-        txnType: input.txnType,
-        accountType: input.accountType,
-        accountId: input.accountId,
-        debit: input.debit?.toString() || '0',
-        credit: input.credit?.toString() || '0',
-        description: input.description,
-        metadata: input.metadata || {},
-        createdAt: new Date(),
-      })
-      .returning()
+    await db.insert(ledgerEntries).values({
+      id: entryId,
+      txnId,
+      txnType,
+      accountType,
+      accountId,
+      debit: debit.toString(),
+      credit: credit.toString(),
+      description,
+      metadata: metadata || {},
+      createdAt: new Date(),
+    })
 
-    return { success: true, data: entry[0] }
+    return { success: true, id: entryId }
   } catch (error) {
-    console.error('[v0] Record ledger entry error:', error)
+    console.error('[v0] Ledger entry error:', error)
     return { error: 'Failed to record ledger entry', status: 500 }
   }
 }
 
 /**
  * Calculate seller payout for a given period
- * Accounts for: sales, commissions, fees, chargebacks, adjustments
  */
 export async function calculateSellerPayout(
   sellerId: string,
-  period: string // 'YYYY-MM'
+  period: string
 ) {
   try {
-    // Get seller profile for fee structure
-    const seller = await db
+    // Get seller profile
+    const seller = (await db
       .select()
       .from(sellerProfiles)
-      .where(eq(sellerProfiles.id, sellerId))
-      .limit(1)
+      .where(eq(sellerProfiles.userId, sellerId))
+      .limit(1)) as any
 
     if (!seller.length) {
       return { error: 'Seller not found', status: 404 }
     }
 
-    // Get all ledger entries for this seller in the period
     const [startDate, endDate] = getPeriodDateRange(period)
 
-    // Sum up sales (credits to seller)
-    const salesResult = (await db
-      .select({
-        total: sql<string>`SUM(${ledgerEntries.credit})`,
-      })
+    // Sum up sales (credits to seller) - get all records and calculate
+    const salesEntries = (await db
+      .select()
       .from(ledgerEntries)
       .where(
         and(
           eq(ledgerEntries.accountType, 'seller'),
           eq(ledgerEntries.accountId, seller[0].userId),
-          eq(ledgerEntries.txnType, 'sale'),
-          sql`${ledgerEntries.createdAt} >= ${startDate}`,
-          sql`${ledgerEntries.createdAt} < ${endDate}`
+          eq(ledgerEntries.txnType, 'sale')
         )
       )) as any
 
-    const totalSales = parseFloat(salesResult[0]?.total || '0')
+    const totalSales = salesEntries.reduce((sum: number, entry: any) => {
+      return sum + parseFloat(entry.credit || '0')
+    }, 0)
 
     // Calculate commission
-    const commissionPercent = parseFloat(seller[0].commissionPercent || '10') / 100
+    const commissionPercent =
+      (parseFloat(seller[0].commissionPercent || '10') / 100)
     const commissionDue = totalSales * commissionPercent
 
-    // Calculate flat transaction fees
-    const transactionCount = (await db
-      .select({
-        count: sql<number>`COUNT(*)`,
-      })
-      .from(ledgerEntries)
-      .where(
-        and(
-          eq(ledgerEntries.accountType, 'seller'),
-          eq(ledgerEntries.accountId, seller[0].userId),
-          eq(ledgerEntries.txnType, 'sale'),
-          sql`${ledgerEntries.createdAt} >= ${startDate}`,
-          sql`${ledgerEntries.createdAt} < ${endDate}`
-        )
-      )) as any
-
-    const transactionFees = transactionCount[0].count * 
-      (parseFloat(seller[0].flatTransactionFee || '0'))
+    // Count transactions for flat fees
+    const transactionCount = salesEntries.length
+    const transactionFees =
+      transactionCount * parseFloat(seller[0].flatTransactionFee || '0')
 
     // Get listing fees (monthly)
     const listingFees = parseFloat(seller[0].monthlyListingFee || '0')
 
     // Get chargebacks
-    const chargebackResult = (await db
-      .select({
-        total: sql<string>`SUM(${ledgerEntries.debit})`,
-      })
+    const chargebackEntries = (await db
+      .select()
       .from(ledgerEntries)
       .where(
         and(
           eq(ledgerEntries.accountType, 'seller'),
           eq(ledgerEntries.accountId, seller[0].userId),
-          eq(ledgerEntries.txnType, 'chargeback'),
-          sql`${ledgerEntries.createdAt} >= ${startDate}`,
-          sql`${ledgerEntries.createdAt} < ${endDate}`
+          eq(ledgerEntries.txnType, 'chargeback')
         )
       )) as any
 
-    const chargebacks = parseFloat(chargebackResult[0]?.total || '0')
+    const chargebacks = chargebackEntries.reduce((sum: number, entry: any) => {
+      return sum + parseFloat(entry.debit || '0')
+    }, 0)
 
-    // Get adjustments (manual overrides)
-    const adjustmentResult = (await db
-      .select({
-        total: sql<string>`SUM(CASE WHEN debit > 0 THEN -debit ELSE credit END)`,
-      })
+    // Get adjustments
+    const adjustmentEntries = (await db
+      .select()
       .from(ledgerEntries)
       .where(
         and(
           eq(ledgerEntries.accountType, 'seller'),
           eq(ledgerEntries.accountId, seller[0].userId),
-          eq(ledgerEntries.txnType, 'adjustment'),
-          sql`${ledgerEntries.createdAt} >= ${startDate}`,
-          sql`${ledgerEntries.createdAt} < ${endDate}`
+          eq(ledgerEntries.txnType, 'adjustment')
         )
       )) as any
 
-    const adjustments = parseFloat(adjustmentResult[0]?.total || '0')
+    const adjustments = adjustmentEntries.reduce((sum: number, entry: any) => {
+      const val = parseFloat(entry.debit || '0') - parseFloat(entry.credit || '0')
+      return sum + val
+    }, 0)
 
     // Calculate net payout
-    const netPayout = totalSales - commissionDue - transactionFees - listingFees - chargebacks + adjustments
+    const netPayout =
+      totalSales - commissionDue - transactionFees - listingFees - chargebacks + adjustments
 
     return {
       success: true,
@@ -183,17 +155,14 @@ export async function calculateSellerPayout(
 /**
  * Create a payout record and initiate Stripe payout
  */
-export async function createPayoutRecord(
-  sellerId: string,
-  period: string
-) {
+export async function createPayoutRecord(sellerId: string, period: string) {
   try {
     // Get seller profile
-    const seller = await db
+    const seller = (await db
       .select()
       .from(sellerProfiles)
-      .where(eq(sellerProfiles.id, sellerId))
-      .limit(1)
+      .where(eq(sellerProfiles.userId, sellerId))
+      .limit(1)) as any
 
     if (!seller.length) {
       return { error: 'Seller not found', status: 404 }
@@ -209,7 +178,7 @@ export async function createPayoutRecord(
 
     // Create payout record
     const payoutId = `payout_${Date.now()}`
-    const record = await db
+    const record = (await db
       .insert(payoutRecords)
       .values({
         id: payoutId,
@@ -225,19 +194,50 @@ export async function createPayoutRecord(
         payoutStatus: 'pending',
         createdAt: new Date(),
       })
-      .returning()
+      .returning()) as any
 
-    // TODO: Wire Stripe Connect payout here (Phase 2)
-    // if (seller[0].stripeConnectId) {
-    //   const stripePayoutId = await initiateStripePayout(
-    //     seller[0].stripeConnectId,
-    //     payoutData.netPayout
-    //   )
-    //   await db
-    //     .update(payoutRecords)
-    //     .set({ stripePayoutId })
-    //     .where(eq(payoutRecords.id, payoutId))
-    // }
+    // If payout amount > 0, initiate Stripe transfer
+    if (payoutData.netPayout > 0 && seller[0].stripeConnectId) {
+      const transfer = await stripe.transfers.create({
+        amount: Math.round(payoutData.netPayout * 100), // cents
+        currency: 'usd',
+        destination: seller[0].stripeConnectId,
+        description: `AUAPW Payout for ${period}`,
+        metadata: {
+          payoutId,
+          sellerId,
+          period,
+        },
+      })
+
+      // Update payout record with Stripe ID
+      await db
+        .insert(payoutRecords)
+        .values({
+          id: payoutId,
+          sellerId,
+          period,
+          totalSales: payoutData.totalSales.toString(),
+          commissionDue: payoutData.commissionDue.toString(),
+          listingFees: payoutData.listingFees.toString(),
+          transactionFees: payoutData.transactionFees.toString(),
+          chargebacks: payoutData.chargebacks.toString(),
+          adjustments: payoutData.adjustments.toString(),
+          netPayout: payoutData.netPayout.toString(),
+          payoutStatus: 'initiated',
+          stripePayoutId: transfer.id,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        })
+        .onConflictDoUpdate({
+          target: [payoutRecords.id],
+          set: {
+            stripePayoutId: transfer.id,
+            payoutStatus: 'initiated',
+            updatedAt: new Date(),
+          },
+        })
+    }
 
     return { success: true, data: record[0] }
   } catch (error) {
@@ -247,36 +247,32 @@ export async function createPayoutRecord(
 }
 
 /**
- * Get seller's ledger entries for audit/transparency
+ * Get seller ledger for a period
  */
 export async function getSellerLedger(
   sellerId: string,
-  startDate?: Date,
-  endDate?: Date
+  period?: string
 ) {
   try {
-    let query: any = db
+    let entries = (await db
       .select()
       .from(ledgerEntries)
-      .where(eq(ledgerEntries.accountId, sellerId))
+      .where(eq(ledgerEntries.accountId, sellerId))) as any
 
-    if (startDate) {
-      query = query.where(sql`${ledgerEntries.createdAt} >= ${startDate}`)
+    if (period) {
+      const [startDate, endDate] = getPeriodDateRange(period)
+      entries = entries.filter(
+        (e: any) => e.createdAt >= startDate && e.createdAt < endDate
+      )
     }
 
-    if (endDate) {
-      query = query.where(sql`${ledgerEntries.createdAt} < ${endDate}`)
-    }
+    // Calculate totals
+    let sumDebits = 0
+    let sumCredits = 0
 
-    const entries = (await query) as any
-
-    // Calculate balances by type
-    let totalDebits = 0
-    let totalCredits = 0
-
-    (entries as any[]).forEach((entry) => {
-      totalDebits += parseFloat(entry.debit || '0')
-      totalCredits += parseFloat(entry.credit || '0')
+    entries.forEach((entry: any) => {
+      sumDebits += parseFloat(entry.debit || '0')
+      sumCredits += parseFloat(entry.credit || '0')
     })
 
     return {
@@ -284,24 +280,24 @@ export async function getSellerLedger(
       data: {
         entries,
         summary: {
-          totalDebits,
-          totalCredits,
-          balance: totalCredits - totalDebits,
+          totalDebits: sumDebits,
+          totalCredits: sumCredits,
+          balance: sumCredits - sumDebits,
         },
       },
     }
   } catch (error) {
-    console.error('[v0] Get seller ledger error:', error)
+    console.error('[v0] Get ledger error:', error)
     return { error: 'Failed to fetch ledger', status: 500 }
   }
 }
 
 /**
- * Helper: convert period string (YYYY-MM) to date range
+ * Helper: parse period string to date range
  */
 function getPeriodDateRange(period: string): [Date, Date] {
   const [year, month] = period.split('-').map(Number)
-  const startDate = new Date(year, month - 1, 1)
-  const endDate = new Date(year, month, 1)
+  const startDate = new Date(year, (month || 1) - 1, 1)
+  const endDate = new Date(year, (month || 1), 1)
   return [startDate, endDate]
 }
