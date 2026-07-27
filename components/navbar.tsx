@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, Sparkles } from "lucide-react"
+import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, Sparkles, LayoutDashboard } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
@@ -240,6 +240,35 @@ export function Navbar() {
                 </span>
               )}
             </Link>
+
+            {/* Desktop: Dashboards Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="hidden sm:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors outline-none" title="Dashboards">
+                <LayoutDashboard className="w-5 h-5 text-foreground" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48 bg-card/95 backdrop-blur-xl border-border/50">
+                <DropdownMenuLabel className="text-xs font-bold tracking-widest uppercase text-muted-foreground">
+                  Dashboards
+                </DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link
+                    href="/admin/login"
+                    className="flex items-center gap-2 cursor-pointer text-sm"
+                  >
+                    Admin Dashboard
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link
+                    href="/customer/dashboard"
+                    className="flex items-center gap-2 cursor-pointer text-sm"
+                  >
+                    Customer Dashboard
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
             {/* Desktop: FREE QUOTE button */}
             <Link href="/quote" className="hidden sm:flex auapw-btn auapw-btn-amber auapw-btn-sm">
