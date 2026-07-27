@@ -29,7 +29,7 @@ export function BrandBanner({ subtitle }: BrandBannerProps) {
         />
         <GearBackground />
         {/* Dark matte overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(8,8,8,0.55)] via-[rgba(8,8,8,0.4)] to-[rgba(8,8,8,0.7)] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(8,8,8,0.55)] via-[rgba(8,8,8,0.4)] to-[rgba(8,8,8,0.7)]" />
       </div>
 
       <div className="metal-line absolute top-0 left-0 right-0" />

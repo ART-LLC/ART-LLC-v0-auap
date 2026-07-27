@@ -30,7 +30,7 @@ export function BrandValuesSection() {
       {/* Vivid background */}
       <div className="absolute inset-0 z-0">
         <Image src="/images/section-network.png" alt="" fill className="object-cover opacity-12" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/50 to-background/90 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/50 to-background/90" />
       </div>
       <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -50,7 +50,7 @@ export function BrandValuesSection() {
               {/* Card image */}
               <div className="relative w-full h-44 overflow-hidden">
                 <Image src={value.image} alt={value.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-3 left-4 flex items-center gap-2">
                   <div className="w-8 h-8 rounded-lg bg-primary/20 backdrop-blur-sm flex items-center justify-center">
                     <value.Icon className="w-4 h-4 text-primary" />

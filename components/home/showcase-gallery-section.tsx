@@ -71,7 +71,7 @@ export function ShowcaseGallerySection() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 flex flex-col gap-2">
                   <div className="flex items-center gap-2">
                     <div className="w-9 h-9 rounded-lg bg-primary/20 backdrop-blur-sm flex items-center justify-center shrink-0">

@@ -232,7 +232,7 @@ export function HeroSection() {
                 <div className="flex flex-col gap-4 rounded-lg overflow-hidden" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
                   <div className="relative w-full h-44 overflow-hidden">
                     <Image src="/images/section-used-engines.png" alt="Used Engines" fill className="object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                     <span className="absolute bottom-3 left-4 text-white font-bold tracking-wide text-base uppercase drop-shadow">Used Engines</span>
                   </div>
                   <div className="flex flex-col gap-4 p-5 pt-2">
@@ -258,7 +258,7 @@ export function HeroSection() {
                 <div className="flex flex-col gap-4 rounded-lg overflow-hidden" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
                   <div className="relative w-full h-44 overflow-hidden">
                     <Image src="/images/section-used-transmissions.png" alt="Used Transmissions" fill className="object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                     <span className="absolute bottom-3 left-4 text-white font-bold tracking-wide text-base uppercase drop-shadow">Used Transmissions</span>
                   </div>
                   <div className="flex flex-col gap-4 p-5 pt-2">
@@ -284,7 +284,7 @@ export function HeroSection() {
                 <div className="flex flex-col gap-4 rounded-lg overflow-hidden" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.09)" }}>
                   <div className="relative w-full h-44 overflow-hidden">
                     <Image src="/images/section-appointment.png" alt="Schedule a Callback" fill className="object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                     <span className="absolute bottom-3 left-4 text-white font-bold tracking-wide text-base uppercase drop-shadow">Schedule a Callback</span>
                   </div>
                   <div className="flex flex-col gap-4 p-5 pt-2">
