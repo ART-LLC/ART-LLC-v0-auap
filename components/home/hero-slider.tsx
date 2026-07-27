@@ -67,6 +67,7 @@ export function HeroSlider() {
               : "opacity-0 scale-110"
           }`}
           priority={idx === 0}
+          loading={idx === 0 ? "eager" : "lazy"}
           sizes="100vw"
         />
       ))}

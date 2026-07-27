@@ -28,7 +28,7 @@ export function IntercomProvider({ user }: IntercomProviderProps) {
     const bootIntercom = async () => {
       // Script is loaded via next/script in layout, check if window.Intercom is available
       if (typeof window.Intercom !== 'function') {
-        console.warn('[v0] Intercom: window.Intercom not available yet')
+        // Silently return - will be retried by timer below
         return
       }
 
