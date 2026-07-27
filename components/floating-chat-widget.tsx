@@ -62,7 +62,7 @@ export function FloatingChatWidget() {
       }
       setCurrentChat(updatedChat);
 
-      const response = await fetch('/api/chat-rag', {
+      const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -139,7 +139,7 @@ export function FloatingChatWidget() {
               <MessageCircle className="w-5 h-5 text-primary" />
               <div>
                 <h3 className="font-semibold text-sm">AUAPW AI Assistant</h3>
-                <p className="text-xs text-muted-foreground">Indexed website expert</p>
+                <p className="text-xs text-muted-foreground">Auto parts expert</p>
               </div>
             </div>
             <div className="flex items-center gap-1">

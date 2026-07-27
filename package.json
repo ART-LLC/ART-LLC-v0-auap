@@ -10,7 +10,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@ai-sdk/google": "^4.0.25",
     "@ai-sdk/react": "^4.0.23",
     "@hookform/resolvers": "^3.10.0",
     "@intercom/messenger-js-sdk": "^0.0.20",
