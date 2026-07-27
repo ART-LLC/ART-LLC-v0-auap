@@ -24,7 +24,7 @@ export function HeroBanner({ title, subtitle, pathname, imageSrc }: HeroBannerPr
       />
 
       {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60 pointer-events-none" />
 
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">

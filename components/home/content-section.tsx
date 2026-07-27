@@ -9,7 +9,7 @@ export function ContentSection() {
         {/* Banner Image */}
         <div className="relative w-full h-56 sm:h-72 rounded-xl overflow-hidden mb-10">
           <Image src="/images/section-content-banner.png" alt="AUAPW - All Used Auto Parts Warehouse" fill className="object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent pointer-events-none" />
           <div className="absolute inset-0 flex flex-col justify-center px-8">
             <span className="text-[0.65rem] font-black tracking-[0.25em] uppercase text-white/60 mb-2">America&apos;s Largest Network</span>
             <span className="text-2xl sm:text-3xl font-black text-white leading-tight">2,000+ Verified Yards<br />Across All 50 States</span>

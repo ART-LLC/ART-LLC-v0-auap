@@ -50,21 +50,21 @@ export function CinematicShowcaseSection() {
           ))}
 
           {/* Cinematic overlays */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-black/25 pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-transparent to-black/30 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-black/25 pointer-events-none z-[1]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-transparent to-black/30 pointer-events-none z-[1]" />
 
           {/* Letterbox bars for film feel */}
-          <div className="absolute top-0 inset-x-0 h-6 sm:h-8 bg-black/70 pointer-events-none" />
-          <div className="absolute bottom-0 inset-x-0 h-6 sm:h-8 bg-black/70 pointer-events-none" />
+          <div className="absolute top-0 inset-x-0 h-6 sm:h-8 bg-black/70 pointer-events-none z-[2]" />
+          <div className="absolute bottom-0 inset-x-0 h-6 sm:h-8 bg-black/70 pointer-events-none z-[2]" />
 
           {/* LIVE badge */}
-          <div className="absolute top-9 sm:top-11 left-4 sm:left-6 flex items-center gap-2 rounded-full bg-black/50 backdrop-blur-sm px-3 py-1.5 border border-white/15">
+          <div className="absolute top-9 sm:top-11 left-4 sm:left-6 flex items-center gap-2 rounded-full bg-black/50 backdrop-blur-sm px-3 py-1.5 border border-white/15 z-[3]">
             <span className="live-dot w-1.5 h-1.5 rounded-full bg-destructive" />
             <span className="text-[0.6rem] font-black tracking-[0.2em] uppercase text-white">Live Inventory</span>
           </div>
 
           {/* Overlaid content */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 z-10">
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 z-[3]">
             <span className="text-[0.7rem] sm:text-[0.8rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3">
               2,000+ Verified Yards · All 50 States
             </span>

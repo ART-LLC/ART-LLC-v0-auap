@@ -76,9 +76,9 @@ export function HeroSlider() {
       {/* Radial gradient for depth */}
       <div className="absolute inset-0 bg-radial-gradient from-[rgba(8,8,8,0.2)] via-[rgba(8,8,8,0.4)] to-[rgba(8,8,8,0.85)]" style={{ backgroundImage: "radial-gradient(ellipse at center, rgba(8,8,8,0.2) 0%, rgba(8,8,8,0.85) 100%)" }} />
       {/* Vertical gradient for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[rgba(8,8,8,0.4)] via-[rgba(8,8,8,0.1)] to-[rgba(8,8,8,0.8)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[rgba(8,8,8,0.4)] via-[rgba(8,8,8,0.1)] to-[rgba(8,8,8,0.8)] pointer-events-none" />
       {/* Horizontal gradient for edge contrast */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[rgba(8,8,8,0.3)] via-transparent to-[rgba(8,8,8,0.3)]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[rgba(8,8,8,0.3)] via-transparent to-[rgba(8,8,8,0.3)] pointer-events-none" />
       {/* Subtle animated shimmer for premium feel */}
       <div className="absolute inset-0 opacity-[0.03] animate-pulse" style={{ background: "linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.05) 50%, transparent 100%)" }} />
 
