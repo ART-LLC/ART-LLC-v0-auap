@@ -162,7 +162,6 @@ export async function initiatePayout(input: {
       success: true,
       transferId: transfer.id,
       amount: transfer.amount / 100,
-      status: transfer.status,
     }
   } catch (error) {
     console.error('[v0] Initiate payout error:', error)
