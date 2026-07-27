@@ -79,6 +79,19 @@ export const chatStorage = {
     return null;
   },
 
+  // Update the content of the last message (used for streaming assistant replies)
+  updateLastMessage: (chatId: string, content: string): ChatSession | null => {
+    if (typeof window === 'undefined') return null;
+    const chat = chatStorage.getChat(chatId);
+    if (chat && chat.messages.length > 0) {
+      chat.messages[chat.messages.length - 1].content = content;
+      chat.updatedAt = Date.now();
+      chatStorage.saveChat(chat);
+      return chat;
+    }
+    return null;
+  },
+
   // Delete a chat session
   deleteChat: (chatId: string): void => {
     if (typeof window === 'undefined') return;

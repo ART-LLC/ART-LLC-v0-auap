@@ -13,10 +13,9 @@ export function FloatingChatWidget() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (isOpen) {
-      initializeChat();
-    }
-  }, [isOpen]);
+    // Initialize on mount so the floating button always renders on every page.
+    initializeChat();
+  }, []);
 
   useEffect(() => {
     scrollToBottom();
@@ -78,25 +77,21 @@ export function FloatingChatWidget() {
       let assistantMessage = '';
       const decoder = new TextDecoder();
 
+      // Seed an empty assistant message we progressively update as text streams in.
+      let chatWithAI = chatStorage.addMessage(currentChat.id, {
+        role: 'assistant',
+        content: '',
+      });
+      if (chatWithAI) setCurrentChat(chatWithAI);
+
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
 
-        const chunk = decoder.decode(value);
-        const lines = chunk.split('\n');
+        assistantMessage += decoder.decode(value, { stream: true });
 
-        for (const line of lines) {
-          if (line.startsWith('0:')) {
-            const content = line.slice(2);
-            assistantMessage += content;
-
-            const chatWithAI = chatStorage.addMessage(currentChat.id, {
-              role: 'assistant',
-              content: assistantMessage,
-            });
-            setCurrentChat(chatWithAI);
-          }
-        }
+        chatWithAI = chatStorage.updateLastMessage(currentChat.id, assistantMessage);
+        if (chatWithAI) setCurrentChat({ ...chatWithAI });
       }
     } catch (error) {
       console.error('Chat error:', error);
@@ -111,8 +106,6 @@ export function FloatingChatWidget() {
       createNewChat();
     }
   };
-
-  if (!currentChat) return null;
 
   return (
     <>
@@ -131,7 +124,7 @@ export function FloatingChatWidget() {
       </button>
 
       {/* Chat Widget */}
-      {isOpen && (
+      {isOpen && currentChat && (
         <div className="fixed bottom-24 right-6 z-40 w-96 h-[600px] rounded-lg shadow-2xl bg-background border border-border/50 backdrop-blur-sm flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-300 pointer-events-auto" style={{ pointerEvents: 'auto' }}>
           {/* Header */}
           <div className="bg-gradient-to-r from-primary/20 to-primary/10 border-b border-border/30 p-4 flex items-center justify-between">
