@@ -83,6 +83,8 @@ export default function RootLayout({
     <html lang="en" className="dark bg-background" suppressHydrationWarning>
       <body className={`${roboto.variable} font-sans antialiased bg-background text-foreground`}>
         {/* Intercom messenger — loads after page is interactive */}
+        {/* Disabled due to content blocking issues */}
+        {/* 
         <Script 
           id="intercom-bootstrap"
           strategy="afterInteractive"
@@ -92,6 +94,7 @@ export default function RootLayout({
             `,
           }}
         />
+        */}
         <AuthProvider>
           <ThemeProvider>
             {children}

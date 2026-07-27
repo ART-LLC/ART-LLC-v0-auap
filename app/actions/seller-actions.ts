@@ -220,7 +220,6 @@ export async function updateSellerListing(listingId: string, updates: Partial<Cr
       .update(sellerListings)
       .set({
         ...updates,
-        updatedAt: new Date(),
       })
       .where(eq(sellerListings.id, listingId))
       .returning()

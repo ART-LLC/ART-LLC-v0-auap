@@ -119,8 +119,9 @@ export function FloatingChatWidget() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center"
+        className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center pointer-events-auto"
         aria-label="Open chat"
+        style={{ pointerEvents: 'auto' }}
       >
         {isOpen ? (
           <X className="w-6 h-6" />
@@ -131,7 +132,7 @@ export function FloatingChatWidget() {
 
       {/* Chat Widget */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-40 w-96 h-[600px] rounded-lg shadow-2xl bg-background border border-border/50 backdrop-blur-sm flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-300">
+        <div className="fixed bottom-24 right-6 z-40 w-96 h-[600px] rounded-lg shadow-2xl bg-background border border-border/50 backdrop-blur-sm flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-300 pointer-events-auto" style={{ pointerEvents: 'auto' }}>
           {/* Header */}
           <div className="bg-gradient-to-r from-primary/20 to-primary/10 border-b border-border/30 p-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
