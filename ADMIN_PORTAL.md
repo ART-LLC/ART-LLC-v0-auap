@@ -1,57 +1,348 @@
-# AUAPW Admin & Customer Portal
+# AUAPW Admin Portal - Enterprise Dashboard
 
-This document contains all login credentials and access information for the AUAPW platform.
+Complete admin portal with real-time KPI monitoring, secure session management, and merchant approval workflows.
 
 ---
 
-## Admin Portal
+## Admin Portal Access
 
 ### Admin Dashboard URL
 ```
-/admin/login
+http://localhost:3000/admin/login (development)
+https://yourdomain.com/admin/login (production)
 ```
 
-### Default Admin Credentials
+### Secure Admin Credentials
 
-**Email:** `admin@auapw.com`  
-**Password:** `AUAPWAdmin123!`
+Your admin credentials are stored securely in environment variables:
 
-### Admin Portal Features
+**Email:** `ADMIN_EMAIL` environment variable  
+**Password:** `ADMIN_PASSWORD` environment variable
 
-After logging in, admins have access to:
+These were configured when you added the environment variables to your Vercel/local project.
 
-- **KPI Dashboard** - Live metrics including:
-  - Daily Revenue
-  - Total Orders
-  - Average Order Value (AOV)
-  - Approval Rate
-  - Fraud Rate
-  - Chargeback Rate
-  - Refund Rate
-  - Customer Satisfaction Score
-  - Average Response Time
-  - Average Shipping Time
+---
 
-- **Admin Actions**
-  - View Pending Approvals
-  - Manage Sellers
-  - View Fraud Alerts
+## Secure Backend Architecture
 
-### How to Access Admin Portal
+### Session Management
+- **Storage:** httpOnly cookies (JavaScript cannot access, CSRF-safe)
+- **Token Format:** HMAC-SHA256 signed JWT-like tokens
+- **Expiration:** 8 hours
+- **Verification:** Every request verifies HMAC signature against server secret
 
-1. Navigate to: `http://localhost:3000/admin/login` (local) or `https://yourdomain.com/admin/login` (production)
-2. Enter credentials:
-   - Email: `admin@auapw.com`
-   - Password: `AUAPWAdmin123!`
-3. Click "Sign In"
-4. You'll be redirected to the Admin Dashboard
+### Authentication Flow
+1. Admin enters email + password
+2. Server verifies credentials against `ADMIN_EMAIL` + `ADMIN_PASSWORD`
+3. Server generates HMAC-signed token with 8-hour expiration
+4. Token stored in secure httpOnly cookie
+5. Subsequent requests automatically include cookie
+6. Server validates signature on every protected request
 
-### Admin Features Included
+### Why httpOnly Cookies?
+- Immune to XSS attacks (JavaScript cannot steal)
+- Immune to token leakage in localStorage
+- Automatically sent with every request
+- Supports CSRF protection via SameSite attribute
 
-- Real-time KPI monitoring
-- Session management with logout
-- Secure token-based authentication
-- Admin-specific actions and controls
+---
+
+## Admin Portal Features
+
+### Real-Time KPI Dashboard
+
+Live metrics computed directly from database with 30-second refresh:
+
+| KPI | Source | Meaning |
+|-----|--------|---------|
+| Daily Revenue | invoices.total | Total revenue today |
+| Total Orders | COUNT(orders) | All orders placed |
+| Avg Order Value | AVG(orders.total) | Average transaction |
+| Approval Rate | seller_profiles approved/total | % Sellers approved |
+| Fraud Rate | fraud_flags / transactions | % Flagged orders |
+| Chargeback Rate | chargebacks / sales | % Disputed payments |
+| Refund Rate | refunds / sales | % Refunded orders |
+| Customer Satisfaction | AVG(seller_reviews.rating) | Average star rating |
+| Avg Response Time | AVG(support_tickets.response_time) | Hours to respond |
+| Avg Shipping Time | AVG(order_fulfillment.days_to_ship) | Days to fulfill |
+| Inventory Turnover | sales / avg_inventory | Inventory velocity |
+
+### Seller Approvals (Coming Soon)
+- View pending KYB/KYC applications
+- Review business documents
+- Check fraud scores
+- Approve/reject with commission tiers
+- Email notifications to merchants
+
+### Analytics
+- Revenue trends
+- Order patterns
+- Fraud flag distribution
+- Seller performance metrics
+- Customer satisfaction trends
+
+---
+
+## How to Access Admin Portal
+
+1. Navigate to: `http://localhost:3000/admin/login`
+2. Enter your admin credentials:
+   - Email: (from your `ADMIN_EMAIL` environment variable)
+   - Password: (from your `ADMIN_PASSWORD` environment variable)
+3. Click "Login"
+4. Session cookie is automatically set
+5. You're redirected to `/admin/dashboard`
+
+### Session Features
+- **Auto-login:** Revisit `/admin/dashboard` - no re-login needed if session valid
+- **Logout:** Click "Logout" button in header - clears cookie, redirects to login
+- **Session Timeout:** 8 hours of inactivity
+- **Multi-window safe:** Session valid across all browser tabs
+
+---
+
+## API Endpoints
+
+### Authentication Endpoints
+
+**POST** `/api/admin/auth/login`
+```json
+Request: { "email": "admin@example.com", "password": "password" }
+Response: { "success": true }
+Sets: httpOnly cookie "adminSession"
+```
+
+**POST** `/api/admin/auth/logout`
+```
+Clears: adminSession cookie
+Redirects: /admin/login
+```
+
+**GET** `/api/admin/auth/session`
+```json
+Response: { "authenticated": true, "email": "admin@example.com" }
+(Protected route - returns 401 if not authenticated)
+```
+
+### KPI Endpoint
+
+**GET** `/api/admin/kpis`
+```json
+Response: {
+  "kpis": {
+    "dailyRevenue": 12345.67,
+    "totalOrders": 234,
+    "averageOrderValue": 52.88,
+    "approvalRate": 0.95,
+    "fraudRate": 0.02,
+    "chargebackRate": 0.003,
+    "refundRate": 0.05,
+    "customerSatisfaction": 4.7,
+    "avgResponseTime": 2.3,
+    "avgShippingTime": 2,
+    "inventoryTurnover": 4.2
+  },
+  "timestamp": "2024-01-15T10:30:00Z"
+}
+(Protected route - requires valid session cookie)
+```
+
+---
+
+## Frontend Architecture
+
+### Dashboard Component
+
+Uses **SWR (Stale-While-Revalidate)** for optimal real-time updates:
+
+```typescript
+// Automatic refresh every 30 seconds with deduplication
+const { data, error, isLoading } = useSWR(
+  '/api/admin/kpis',
+  fetcher,
+  { 
+    refreshInterval: 30000,  // 30s refresh
+    dedupingInterval: 10000, // 10s dedup window
+  }
+)
+```
+
+### Why SWR?
+- Automatic background refresh
+- Request deduplication across components
+- Graceful error handling
+- Offline support with stale data
+- Built-in revalidation on window focus
+
+---
+
+## Environment Variables Required
+
+```bash
+# Admin credentials (REQUIRED)
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=your-secure-password
+
+# Database (REQUIRED)
+DATABASE_URL=postgresql://user:pass@host/db
+
+# Better Auth (for future customer auth)
+BETTER_AUTH_SECRET=generated-secret-key
+
+# Email (for notifications)
+RESEND_API_KEY=re_xxxxx
+
+# Stripe (for payments)
+STRIPE_SECRET_KEY=sk_live_xxxxx
+STRIPE_PUBLIC_KEY=pk_live_xxxxx
+```
+
+---
+
+## Security Practices Implemented
+
+✓ HMAC-SHA256 token signing  
+✓ httpOnly cookies (XSS immune)  
+✓ SameSite=Lax CSRF protection  
+✓ Server-side token validation on every request  
+✓ 8-hour session expiration  
+✓ Secure flag in production  
+✓ No sensitive data in localStorage  
+✓ Environment-variable based credentials  
+✓ No default passwords in code  
+
+---
+
+## Testing the Admin Portal
+
+### Test Scenario 1: Login and View KPIs
+1. Open `http://localhost:3000/admin/login`
+2. Enter your admin credentials
+3. Observe dashboard with real-time metrics
+4. Refresh page - metrics persist (session valid)
+5. Wait 30 seconds - KPIs auto-update
+
+### Test Scenario 2: Session Persistence
+1. Login to admin portal
+2. Open new browser tab
+3. Visit `http://localhost:3000/admin/dashboard`
+4. You're already logged in (session shared across tabs)
+
+### Test Scenario 3: Logout
+1. Click "Logout" button in header
+2. Redirected to `/admin/login`
+3. Visit `/admin/dashboard` - redirected back to login
+4. Session cookie cleared
+
+---
+
+## Architecture Diagram
+
+```
+User Login Form
+    ↓
+POST /api/admin/auth/login
+    ↓
+Server Validates: ADMIN_EMAIL + ADMIN_PASSWORD
+    ↓
+Server Creates HMAC Token: HMAC-SHA256(secret, payload)
+    ↓
+Server Sets: httpOnly Cookie "adminSession"
+    ↓
+Client Redirected: /admin/dashboard
+    ↓
+SWR Auto-fetches: GET /api/admin/kpis
+    ↓
+Server Validates Cookie & HMAC Signature
+    ↓
+Database Query: SELECT SUM(total) FROM invoices WHERE date = TODAY
+    ↓
+Return Live KPIs
+    ↓
+Dashboard Renders Real-Time Metrics
+    ↓
+Auto-refresh every 30 seconds
+```
+
+---
+
+## Troubleshooting
+
+### "Invalid credentials" on login
+- Verify `ADMIN_EMAIL` matches exactly (case-sensitive)
+- Verify `ADMIN_PASSWORD` matches exactly
+- Check for trailing spaces
+- Verify environment variables are loaded
+
+### "Session expired" error
+- Session lasts 8 hours
+- Log in again to start new session
+- Check server clock is synchronized
+
+### KPIs showing zero
+- Database may be empty (new deployment)
+- Create test orders/invoices to populate data
+- Verify database connection working
+
+### Logout not working
+- Browser may have stale cookie
+- Clear browser cookies and try again
+- Check browser DevTools → Application → Cookies
+
+---
+
+## Production Deployment
+
+### Before Going Live
+
+1. **Change admin password** - Don't use default
+2. **Set `BETTER_AUTH_SECRET`** - Use `openssl rand -base64 32`
+3. **Enable HTTPS** - Secure flag required for cookies
+4. **Set secure environment variables** in Vercel/hosting
+5. **Test login flow** in production environment
+6. **Enable MFA** - Recommended (Phase 2)
+
+### Deployment Checklist
+
+- [ ] ADMIN_EMAIL set
+- [ ] ADMIN_PASSWORD set (strong password)
+- [ ] BETTER_AUTH_SECRET set
+- [ ] DATABASE_URL set (production DB)
+- [ ] HTTPS enabled
+- [ ] CORS properly configured
+- [ ] Cookies secure=true in production
+- [ ] Monitoring/logging enabled
+- [ ] Backup strategy in place
+
+---
+
+## Next Phases
+
+### Phase 2 - Customer Experience
+- Customer login + dashboard
+- Order tracking
+- VIN search
+- Product recommendations
+- Wishlist
+
+### Phase 3 - Notifications
+- Email templates (Resend)
+- Real-time notifications
+- Order status updates
+- Marketing emails
+
+### Phase 4 - Advanced Features
+- AI product recommendations
+- Live chat support
+- Warranty registration
+- Return management
+- Reviews & ratings
+
+---
+
+**Version:** 2.0 (Secure Backend)  
+**Last Updated:** January 2024  
+**Status:** Production Ready
 
 ---
 
