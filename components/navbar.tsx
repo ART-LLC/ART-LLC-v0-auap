@@ -187,13 +187,13 @@ export function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* AI Smart Search */}
+            {/* Chatbot */}
             <Link
-              href="/ai-search"
+              href="/chat"
               className="header-boss-nav-text group relative flex items-center gap-1.5"
             >
-              <Sparkles className="w-3.5 h-3.5 text-primary" />
-              <span className="header-boss-nav-label">AI Search</span>
+              <MessageSquare className="w-3.5 h-3.5 text-primary" />
+              <span className="header-boss-nav-label">Chat</span>
               <span className="header-boss-nav-glow" />
             </Link>
 
