@@ -125,7 +125,7 @@ export function FloatingChatWidget() {
 
       {/* Chat Widget */}
       {isOpen && currentChat && (
-        <div className="fixed bottom-24 right-6 z-40 w-96 h-[600px] rounded-lg shadow-2xl bg-background border border-border/50 backdrop-blur-sm flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-300 pointer-events-auto" style={{ pointerEvents: 'auto' }}>
+        <div className="fixed bottom-24 right-6 z-40 w-[calc(100vw-3rem)] max-w-96 h-[min(600px,calc(100vh-8rem))] rounded-lg shadow-2xl bg-background border border-border/50 backdrop-blur-sm flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-300 pointer-events-auto" style={{ pointerEvents: 'auto' }}>
           {/* Header */}
           <div className="bg-gradient-to-r from-primary/20 to-primary/10 border-b border-border/30 p-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
@@ -164,13 +164,13 @@ export function FloatingChatWidget() {
                     className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
                   >
                     <div
-                      className={`max-w-xs px-4 py-2 rounded-lg text-sm ${
+                      className={`max-w-[85%] px-4 py-2 rounded-lg text-sm whitespace-pre-wrap break-words leading-relaxed ${
                         msg.role === 'user'
                           ? 'bg-primary text-primary-foreground rounded-br-none'
                           : 'bg-muted text-foreground rounded-bl-none'
                       }`}
                     >
-                      {msg.content}
+                      {msg.content || (msg.role === 'assistant' && isLoading ? '...' : '')}
                     </div>
                   </div>
                 ))}
