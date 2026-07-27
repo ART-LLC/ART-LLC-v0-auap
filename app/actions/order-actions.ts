@@ -193,7 +193,7 @@ export async function confirmOrderPayment(
       txnType: 'sale',
       accountType: 'platform',
       accountId: 'platform_account',
-      credit: amount.toString(),
+      credit: amount,
       description: `Payment received for order ${orderId}`,
       metadata: { orderId, chargeId: stripeChargeId },
     })
@@ -241,7 +241,7 @@ export async function getUserOrders(userId: string, limit: number = 50) {
     const userOrders = await db
       .select()
       .from(orders)
-      .where(eq(orders.customerId, userId))
+      .where(eq(orders.userId, userId))
       .limit(limit)
 
     return { success: true, data: userOrders }
@@ -310,12 +310,12 @@ export async function cancelOrder(orderId: string, reason: string) {
     }
 
     // Verify user is order owner or admin
-    if (order[0].customerId !== session.user.id) {
+    if (order[0].userId !== session.user.id) {
       return { error: 'Unauthorized', status: 403 }
     }
 
     // Only allow cancellation if not yet shipped
-    if (!['pending_payment', 'confirmed', 'processing'].includes(order[0].status)) {
+    if (!order[0].status || !['pending_payment', 'confirmed', 'processing'].includes(order[0].status)) {
       return { error: 'Order cannot be cancelled in current state', status: 400 }
     }
 
