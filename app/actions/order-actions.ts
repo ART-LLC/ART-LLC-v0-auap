@@ -83,7 +83,6 @@ export async function createOrder(input: CreateOrderInput) {
         userId: session.user.id,
         description: `High-value order: $${totalAmount.toFixed(2)}`,
         status: 'open',
-        createdAt: new Date(),
       })
     }
 
@@ -93,14 +92,18 @@ export async function createOrder(input: CreateOrderInput) {
       .insert(orders)
       .values({
         id: orderId,
-        customerId: session.user.id,
+        userId: session.user.id,
         orderNumber: `ORD-${Date.now()}`,
-        status: 'pending_payment',
-        totalAmount: totalAmount.toString(),
+        status: 'pending',
+        subtotal: totalAmount.toString(),
+        tax: '0',
+        shipping: '0',
+        total: totalAmount.toString(),
         shippingAddress: JSON.stringify(input.shippingAddress),
-        billingAddress: JSON.stringify(input.billingAddress || input.shippingAddress),
-        createdAt: new Date(),
-        updatedAt: new Date(),
+        billingAddress: input.billingAddress
+          ? JSON.stringify(input.billingAddress)
+          : undefined,
+        paymentStatus: 'pending',
       })
       .returning()
 
@@ -109,12 +112,10 @@ export async function createOrder(input: CreateOrderInput) {
       await db.insert(orderItems).values({
         id: `item_${Date.now()}_${Math.random()}`,
         orderId,
-        listingId: item.listingId,
-        sellerId: item.listing.sellerId,
+        productId: item.listingId,
         quantity: item.quantity,
-        pricePerUnit: item.price.toString(),
-        totalPrice: (item.price * item.quantity).toString(),
-        createdAt: new Date(),
+        unitPrice: item.price.toString(),
+        lineTotal: (item.price * item.quantity).toString(),
       })
 
       // Reduce inventory
