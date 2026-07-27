@@ -171,8 +171,6 @@ export async function confirmOrderPayment(
       .update(orders)
       .set({
         status: 'confirmed',
-        stripeChargeId,
-        updatedAt: new Date(),
       })
       .where(eq(orders.id, orderId))
       .returning()
@@ -183,8 +181,8 @@ export async function confirmOrderPayment(
       txnId: stripeChargeId,
       txnType: 'sale',
       accountType: 'buyer',
-      accountId: order[0].customerId,
-      debit: amount.toString(),
+      accountId: order[0].userId,
+      debit: amount,
       description: `Payment for order ${orderId}`,
       metadata: { orderId, chargeId: stripeChargeId },
     })

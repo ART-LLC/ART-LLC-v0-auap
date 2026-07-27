@@ -60,7 +60,7 @@ export default function ReturnPolicyPage() {
             <p className="mb-4">If you receive a defective part, we will replace it free of charge or provide a full refund. Contact us immediately with photos and documentation of the defect.</p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">Contact for Returns</h2>
-            <p className="mb-4">Email: aupworld@gmail.com | Phone: (888) 818-5001</p>
+            <p className="mb-4">Email: aupworld@gmail.com | Phone: (888) 854-8681</p>
           </div>
         </div>
         <BrandLogosSection />
