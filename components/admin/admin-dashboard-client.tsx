@@ -1,7 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
-import useSWR from 'swr'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import {
   DollarSign,
@@ -58,14 +57,31 @@ function money(n: number) {
 
 export function AdminDashboardClient({ adminEmail }: { adminEmail: string }) {
   const router = useRouter()
+  const [data, setData] = useState<KpiResponse | null>(null)
+  const [error, setError] = useState<any>(null)
+  const [isLoading, setIsLoading] = useState(true)
 
-  const { data, error, isLoading, mutate, isValidating } = useSWR<KpiResponse>(
-    '/api/admin/kpis',
-    fetcher,
-    { refreshInterval: 30000, revalidateOnFocus: true }
-  )
+  // Fetch KPIs
+  useEffect(() => {
+    const fetchKpis = async () => {
+      try {
+        setIsLoading(true)
+        const res = await fetcher('/api/admin/kpis')
+        setData(res)
+        setError(null)
+      } catch (err) {
+        setError(err)
+      } finally {
+        setIsLoading(false)
+      }
+    }
 
-  // Redirect to login if the session expired (only in effect, not during render)
+    fetchKpis()
+    const interval = setInterval(fetchKpis, 30000)
+    return () => clearInterval(interval)
+  }, [])
+
+  // Redirect to login if unauthorized
   useEffect(() => {
     if (error?.message === 'unauthorized') {
       router.push('/admin/login')
@@ -96,11 +112,22 @@ export function AdminDashboardClient({ adminEmail }: { adminEmail: string }) {
           </div>
           <div className="flex items-center gap-2">
             <button
-              onClick={() => mutate()}
+              onClick={async () => {
+                setIsLoading(true)
+                try {
+                  const res = await fetcher('/api/admin/kpis')
+                  setData(res)
+                  setError(null)
+                } catch (err) {
+                  setError(err)
+                } finally {
+                  setIsLoading(false)
+                }
+              }}
               className="flex items-center gap-2 px-4 py-2 bg-muted text-foreground hover:bg-muted/70 rounded-lg transition-colors"
               aria-label="Refresh KPIs"
             >
-              <RefreshCw className={`w-4 h-4 ${isValidating ? 'animate-spin' : ''}`} />
+              <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin' : ''}`} />
               Refresh
             </button>
             <button

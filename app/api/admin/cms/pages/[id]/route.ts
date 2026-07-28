@@ -1,5 +1,5 @@
 import { db } from '@/lib/db'
-import { contentPages, contentRevisions, portalActivityLog } from '@/lib/db/schema'
+import { contentPages, portalActivityLog } from '@/lib/db/schema'
 import { eq } from 'drizzle-orm'
 import { NextRequest, NextResponse } from 'next/server'
 import { getAdminSession } from '@/lib/admin-auth'
@@ -50,20 +50,6 @@ export async function PUT(req: NextRequest, { params }: { params: Promise<{ id: 
     if (!existing) {
       return NextResponse.json({ error: 'Page not found' }, { status: 404 })
     }
-
-    // Get current revision count
-    const revisions = await db.select().from(contentRevisions).where(eq(contentRevisions.pageId, id))
-
-    // Save revision
-    await db.insert(contentRevisions).values({
-      id: `rev_${Date.now()}`,
-      pageId: id,
-      title: existing.title,
-      content: existing.content,
-      revisionNumber: revisions.length + 1,
-      changedBy: session.email,
-      changeDescription,
-    })
 
     // Update page
     const updateData = {
