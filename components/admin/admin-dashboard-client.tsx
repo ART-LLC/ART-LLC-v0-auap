@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react'
 import useSWR from 'swr'
 import { useRouter } from 'next/navigation'
 import {
@@ -64,10 +65,12 @@ export function AdminDashboardClient({ adminEmail }: { adminEmail: string }) {
     { refreshInterval: 30000, revalidateOnFocus: true }
   )
 
-  // Redirect to login if the session expired
-  if (error?.message === 'unauthorized') {
-    router.push('/admin/login')
-  }
+  // Redirect to login if the session expired (only in effect, not during render)
+  useEffect(() => {
+    if (error?.message === 'unauthorized') {
+      router.push('/admin/login')
+    }
+  }, [error, router])
 
   const handleLogout = async () => {
     await fetch('/api/admin/auth/logout', { method: 'POST', credentials: 'include' })

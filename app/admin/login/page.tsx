@@ -33,8 +33,8 @@ export default function AdminLoginPage() {
       }
 
       // Session is stored in an httpOnly cookie by the server.
-      router.push('/admin/dashboard')
       router.refresh()
+      router.push('/admin/dashboard')
     } catch (err) {
       setError('An error occurred. Please try again.')
       console.error('[v0] Login error:', err)
