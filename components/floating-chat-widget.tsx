@@ -128,8 +128,12 @@ export function FloatingChatWidget() {
         <div className="fixed bottom-24 right-6 z-40 w-[calc(100vw-3rem)] max-w-96 h-[min(600px,calc(100vh-8rem))] rounded-lg shadow-2xl bg-background border border-border/50 backdrop-blur-sm flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-300 pointer-events-auto" style={{ pointerEvents: 'auto' }}>
           {/* Header */}
           <div className="bg-gradient-to-r from-primary/20 to-primary/10 border-b border-border/30 p-4 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <MessageCircle className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/II%20%28512%20x%20512%20px%29-09IvNqKjkkSDxuKfJ7dluqviRGQn9v.png" 
+                alt="AUAPW Assistant" 
+                className="w-8 h-8 rounded-full object-cover"
+              />
               <div>
                 <h3 className="font-semibold text-sm">AUAPW AI Assistant</h3>
                 <p className="text-xs text-muted-foreground">Auto parts expert</p>
@@ -150,7 +154,11 @@ export function FloatingChatWidget() {
           <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-background/50">
             {currentChat.messages.length === 0 ? (
               <div className="h-full flex flex-col items-center justify-center text-center gap-3">
-                <MessageCircle className="w-8 h-8 text-muted-foreground/40" />
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/II%20%28512%20x%20512%20px%29-09IvNqKjkkSDxuKfJ7dluqviRGQn9v.png" 
+                  alt="AUAPW" 
+                  className="w-16 h-16 rounded-full object-cover opacity-80"
+                />
                 <div>
                   <p className="text-sm font-medium">Welcome to AUAPW!</p>
                   <p className="text-xs text-muted-foreground">Ask me about OEM auto parts, availability, or pricing</p>
