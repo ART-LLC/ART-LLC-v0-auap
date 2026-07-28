@@ -8,6 +8,49 @@ interface MessageProps {
   message: Message;
 }
 
+/** Renders a subset of markdown: **bold**, [text](url), and newlines. */
+function MarkdownContent({ text, isUser }: { text: string; isUser: boolean }) {
+  const linkClass = isUser
+    ? 'underline text-blue-200 hover:text-white'
+    : 'underline text-blue-600 dark:text-blue-400 hover:opacity-80';
+
+  const lines = text.split('\n');
+
+  const renderLine = (line: string, key: number) => {
+    // Split on **bold** and [text](url) tokens
+    const parts = line.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+    return (
+      <span key={key}>
+        {parts.map((part, i) => {
+          // Bold: **text**
+          const boldMatch = part.match(/^\*\*([^*]+)\*\*$/);
+          if (boldMatch) return <strong key={i}>{boldMatch[1]}</strong>;
+          // Link: [text](url)
+          const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+          if (linkMatch)
+            return (
+              <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                {linkMatch[1]}
+              </a>
+            );
+          return <span key={i}>{part}</span>;
+        })}
+      </span>
+    );
+  };
+
+  return (
+    <p className="text-sm leading-relaxed break-words whitespace-pre-wrap">
+      {lines.map((line, i) => (
+        <span key={i}>
+          {renderLine(line, i)}
+          {i < lines.length - 1 && <br />}
+        </span>
+      ))}
+    </p>
+  );
+}
+
 export function ChatMessage({ message }: MessageProps) {
   const [copied, setCopied] = useState(false);
 
@@ -28,7 +71,7 @@ export function ChatMessage({ message }: MessageProps) {
             : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100'
         }`}
       >
-        <p className="text-sm leading-relaxed break-words">{message.content}</p>
+        <MarkdownContent text={message.content} isUser={isUser} />
         
         {!isUser && (
           <button
