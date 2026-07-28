@@ -227,7 +227,7 @@ export async function logNotification(
     await db.insert(auditLog).values({
       id: `notif_${Date.now()}`,
       action: 'notification_sent',
-      actor: 'system',
+      userId: 'system',
       resource: 'notification',
       resourceId: `${type}_${Date.now()}`,
       changes: {

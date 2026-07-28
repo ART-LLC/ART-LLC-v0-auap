@@ -3,10 +3,6 @@ import { desc, gte, sql } from 'drizzle-orm'
 import { db } from '@/lib/db'
 import {
   orders,
-  fraudFlags,
-  rmaRequests,
-  sellerReviews,
-  user,
 } from '@/lib/db/schema'
 import { getAdminSession } from '@/lib/admin-auth'
 

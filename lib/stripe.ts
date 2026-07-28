@@ -1,12 +1,23 @@
-import Stripe from 'stripe'
+let Stripe: any
+let stripe: any
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error('STRIPE_SECRET_KEY is not set')
+try {
+  Stripe = require('stripe').default || require('stripe')
+  
+  if (!process.env.STRIPE_SECRET_KEY) {
+    console.warn('[v0] STRIPE_SECRET_KEY is not set - Stripe features will be disabled')
+    stripe = null
+  } else {
+    stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: '2026-06-24.dahlia' as any,
+    })
+  }
+} catch (error) {
+  console.warn('[v0] Stripe module not available - Stripe features will be disabled', error)
+  stripe = null
 }
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2026-06-24.dahlia' as any,
-})
+export { stripe }
 
 /**
  * Create a Stripe Connect account for a seller
@@ -21,6 +32,12 @@ export async function createStripeConnectAccount(sellerData: {
   businessZip: string
   taxId: string
 }) {
+  if (!stripe) {
+    return {
+      success: false,
+      error: 'Stripe is not configured',
+    }
+  }
   try {
     const account = await stripe.accounts.create({
       type: 'express',
@@ -85,6 +102,9 @@ export async function generateStripeOnboardingLink(
   refreshUrl: string,
   returnUrl: string
 ) {
+  if (!stripe) {
+    return { success: false, error: 'Stripe is not configured' }
+  }
   try {
     const link = await stripe.accountLinks.create({
       account: accountId,
@@ -116,6 +136,9 @@ export async function processPayment(input: {
   description: string
   metadata?: Record<string, string>
 }) {
+  if (!stripe) {
+    return { success: false, error: 'Stripe is not configured' }
+  }
   try {
     const charge = await stripe.charges.create({
       amount: Math.round(input.amount * 100), // Stripe uses cents
@@ -149,6 +172,9 @@ export async function initiatePayout(input: {
   description: string
   metadata?: Record<string, string>
 }) {
+  if (!stripe) {
+    return { success: false, error: 'Stripe is not configured' }
+  }
   try {
     const transfer = await stripe.transfers.create({
       amount: Math.round(input.amount * 100),
@@ -175,22 +201,22 @@ export async function initiatePayout(input: {
 /**
  * Handle Stripe webhook for fraud detection (chargebacks, disputes)
  */
-export async function handleStripeWebhook(event: Stripe.Event) {
+export async function handleStripeWebhook(event: any) {
   switch (event.type) {
     case 'charge.dispute.created':
-      const dispute = event.data.object as Stripe.Dispute
+      const dispute = event.data.object as any
       console.log('[v0] Dispute created:', dispute.id, dispute.amount / 100)
       // TODO: Create fraud flag
       break
 
     case 'charge.refunded':
-      const refund = event.data.object as Stripe.Charge
+      const refund = event.data.object as any
       console.log('[v0] Charge refunded:', refund.id)
       // TODO: Process refund in ledger
       break
 
     case 'account.updated':
-      const account = event.data.object as Stripe.Account
+      const account = event.data.object as any
       console.log('[v0] Stripe account updated:', account.id)
       // TODO: Update seller Stripe verification status
       break
@@ -204,6 +230,9 @@ export async function handleStripeWebhook(event: Stripe.Event) {
  * Retrieve account details (for verification status, etc)
  */
 export async function getAccountDetails(accountId: string) {
+  if (!stripe) {
+    return { success: false, error: 'Stripe is not configured' }
+  }
   try {
     const account = await stripe.accounts.retrieve(accountId)
 
