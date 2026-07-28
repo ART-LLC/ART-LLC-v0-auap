@@ -39,7 +39,11 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="font-sans leading-tight text-balance max-w-4xl" style={{ fontFamily: "system-ui" }}>
-              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3" style={{ fontFamily: "system-ui" }}>Industry-Leading Platform</span>
+              <span className="flex items-center justify-center gap-3 mb-3">
+                <span className="h-px w-8 sm:w-12 bg-primary/60 rounded-full" />
+                <span className="text-[0.7rem] sm:text-[0.85rem] font-black tracking-[0.3em] uppercase text-primary" style={{ fontFamily: "system-ui" }}>Industry-Leading Platform</span>
+                <span className="h-px w-8 sm:w-12 bg-primary/60 rounded-full" />
+              </span>
               <span
                 className="block text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black"
                 style={{
