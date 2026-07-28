@@ -47,7 +47,7 @@ const fetcher = async (url: string): Promise<KpiResponse> => {
   if (res.status === 401) {
     throw new Error('unauthorized')
   }
-  if (!res.ok) throw new Error('Failed to load KPIs')
+  if (!res.ok) throw new Error(`Failed to load KPIs: ${res.status}`)
   return res.json()
 }
 
