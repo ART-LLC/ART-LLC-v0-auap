@@ -363,3 +363,92 @@ export const auditLog = pgTable('audit_log', {
   userAgent: text('userAgent'),
   createdAt: timestamp('createdAt').notNull().defaultNow(),
 })
+
+// --- CMS CONTENT MANAGEMENT TABLES ---
+
+// Team roles and permissions for portals
+export const teamRoles = pgTable('team_roles', {
+  id: text('id').primaryKey(),
+  userId: text('userId').notNull(),
+  teamType: text('teamType').notNull(), // 'admin', 'sales', 'support', 'marketing'
+  role: text('role').notNull(), // 'owner', 'manager', 'editor', 'viewer'
+  status: text('status').default('active'), // 'active', 'inactive'
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// Content pages (website pages, blog posts, etc.)
+export const contentPages = pgTable('content_pages', {
+  id: text('id').primaryKey(),
+  slug: text('slug').notNull().unique(),
+  title: text('title').notNull(),
+  description: text('description'),
+  content: text('content'), // Rich text/markdown content
+  contentType: text('contentType').notNull(), // 'page', 'blog', 'faq', 'policy'
+  category: text('category'), // 'general', 'shipping', 'returns', 'sales', 'support'
+  teamType: text('teamType'), // Which team can edit: 'admin', 'sales', 'support'
+  status: text('status').default('published'), // 'draft', 'published', 'archived'
+  seoTitle: text('seoTitle'),
+  seoDescription: text('seoDescription'),
+  metaKeywords: text('metaKeywords'),
+  featuredImage: text('featuredImage'),
+  authorId: text('authorId'),
+  publishedAt: timestamp('publishedAt'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// Content revisions/history
+export const contentRevisions = pgTable('content_revisions', {
+  id: text('id').primaryKey(),
+  pageId: text('pageId').notNull(),
+  title: text('title').notNull(),
+  content: text('content'),
+  revisionNumber: integer('revisionNumber').notNull(),
+  changedBy: text('changedBy').notNull(),
+  changeDescription: text('changeDescription'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+})
+
+// Sales content (products, pricing, promotions)
+export const salesContent = pgTable('sales_content', {
+  id: text('id').primaryKey(),
+  title: text('title').notNull(),
+  contentType: text('contentType').notNull(), // 'product_feature', 'promotion', 'pricing_info', 'testimonial'
+  content: text('content'),
+  images: json('images'), // array of image URLs
+  targetAudience: text('targetAudience'), // 'retail', 'wholesale', 'business'
+  status: text('status').default('draft'), // 'draft', 'published', 'archived'
+  startDate: timestamp('startDate'),
+  endDate: timestamp('endDate'),
+  editedBy: text('editedBy'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// Support content (FAQs, policies, guides)
+export const supportContent = pgTable('support_content', {
+  id: text('id').primaryKey(),
+  title: text('title').notNull(),
+  contentType: text('contentType').notNull(), // 'faq', 'policy', 'guide', 'troubleshooting'
+  category: text('category').notNull(), // 'shipping', 'returns', 'payments', 'account', 'technical'
+  content: text('content'),
+  relatedPages: json('relatedPages'), // array of page IDs
+  status: text('status').default('published'), // 'draft', 'published', 'archived'
+  priority: integer('priority').default(0), // for sorting/ordering
+  editedBy: text('editedBy'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// Portal activity log
+export const portalActivityLog = pgTable('portal_activity_log', {
+  id: text('id').primaryKey(),
+  userId: text('userId').notNull(),
+  teamType: text('teamType').notNull(), // which portal
+  action: text('action').notNull(), // 'created', 'updated', 'deleted', 'published'
+  resourceType: text('resourceType').notNull(), // 'page', 'product', 'faq'
+  resourceId: text('resourceId').notNull(),
+  details: json('details'), // what changed
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+})
