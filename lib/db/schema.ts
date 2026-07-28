@@ -185,3 +185,154 @@ export const vinQuotes = pgTable('vin_quotes', {
   createdAt: timestamp('createdAt').notNull().defaultNow(),
   updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })
+
+// --- Content Management System (CMS) ---
+export const contentPages = pgTable('content_pages', {
+  id: text('id').primaryKey(),
+  slug: text('slug').notNull().unique(),
+  title: text('title').notNull(),
+  description: text('description'),
+  content: text('content').notNull(),
+  contentType: text('contentType').notNull(),
+  category: text('category'),
+  teamType: text('teamType'),
+  seoTitle: text('seoTitle'),
+  seoDescription: text('seoDescription'),
+  metaKeywords: text('metaKeywords'),
+  featuredImage: text('featuredImage'),
+  authorId: text('authorId'),
+  status: text('status').default('draft'),
+  published: boolean('published').default(false),
+  publishedAt: timestamp('publishedAt'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+export const pageContent = pgTable('page_content', {
+  id: text('id').primaryKey(),
+  page: text('page').notNull().unique(),
+  title: text('title').notNull(),
+  description: text('description'),
+  content: text('content').notNull(),
+  sections: json('sections'),
+  published: boolean('published').default(false),
+  publishedAt: timestamp('publishedAt'),
+  createdBy: text('createdBy').notNull(),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+export const contentBlocks = pgTable('content_blocks', {
+  id: text('id').primaryKey(),
+  pageId: text('pageId').notNull(),
+  title: text('title').notNull(),
+  content: text('content').notNull(),
+  blockType: text('blockType').notNull(),
+  order: integer('order').notNull(),
+  visible: boolean('visible').default(true),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Team/Business Portal ---
+export const teams = pgTable('teams', {
+  id: text('id').primaryKey(),
+  name: text('name').notNull(),
+  businessId: text('businessId'),
+  ownerId: text('ownerId').notNull(),
+  description: text('description'),
+  logo: text('logo'),
+  status: text('status').default('active'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+export const teamMembers = pgTable('team_members', {
+  id: text('id').primaryKey(),
+  teamId: text('teamId').notNull(),
+  userId: text('userId').notNull(),
+  role: text('role').notNull(),
+  joinedAt: timestamp('joinedAt').notNull().defaultNow(),
+})
+
+export const teamBulkOrders = pgTable('team_bulk_orders', {
+  id: text('id').primaryKey(),
+  teamId: text('teamId').notNull(),
+  userId: text('userId').notNull(),
+  status: text('status').default('draft'),
+  items: json('items').notNull(),
+  quantity: integer('quantity').notNull(),
+  discount: decimal('discount', { precision: 10, scale: 2 }).default('0'),
+  total: decimal('total', { precision: 10, scale: 2 }).notNull(),
+  approvedBy: text('approvedBy'),
+  approvedAt: timestamp('approvedAt'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Support Portal ---
+export const supportTickets = pgTable('support_tickets', {
+  id: text('id').primaryKey(),
+  userId: text('userId').notNull(),
+  ticketNumber: text('ticketNumber').notNull().unique(),
+  subject: text('subject').notNull(),
+  description: text('description').notNull(),
+  category: text('category').notNull(),
+  priority: text('priority').default('medium'),
+  status: text('status').default('open'),
+  assignedTo: text('assignedTo'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+  resolvedAt: timestamp('resolvedAt'),
+})
+
+export const supportTicketMessages = pgTable('support_ticket_messages', {
+  id: text('id').primaryKey(),
+  ticketId: text('ticketId').notNull(),
+  userId: text('userId').notNull(),
+  message: text('message').notNull(),
+  attachments: json('attachments'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+})
+
+export const supportTeamUsers = pgTable('support_team_users', {
+  id: text('id').primaryKey(),
+  userId: text('userId').notNull(),
+  role: text('role').notNull(),
+  department: text('department'),
+  status: text('status').default('active'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Settings & Configuration ---
+export const siteSettings = pgTable('site_settings', {
+  id: text('id').primaryKey(),
+  key: text('key').notNull().unique(),
+  value: text('value'),
+  category: text('category'),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+  updatedBy: text('updatedBy'),
+})
+
+export const auditLog = pgTable('audit_log', {
+  id: text('id').primaryKey(),
+  userId: text('userId'),
+  action: text('action').notNull(),
+  resource: text('resource').notNull(),
+  resourceId: text('resourceId'),
+  changes: json('changes'),
+  ipAddress: text('ipAddress'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+})
+
+export const portalActivityLog = pgTable('portal_activity_log', {
+  id: text('id').primaryKey(),
+  userId: text('userId'),
+  teamType: text('teamType').notNull(),
+  action: text('action').notNull(),
+  resourceType: text('resourceType').notNull(),
+  resourceId: text('resourceId'),
+  details: json('details'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+})

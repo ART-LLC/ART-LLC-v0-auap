@@ -1,5 +1,5 @@
 import { db } from '@/lib/db'
-import { contentPages, contentRevisions, portalActivityLog } from '@/lib/db/schema'
+import { contentPages, portalActivityLog } from '@/lib/db/schema'
 import { eq } from 'drizzle-orm'
 import { NextRequest, NextResponse } from 'next/server'
 import { getAdminSession } from '@/lib/admin-auth'
