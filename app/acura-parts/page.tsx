@@ -326,9 +326,9 @@ export default function AcuraPartsPage() {
                   <Mail className="w-4 h-4" />
                   GET QUOTE
                 </Link>
-                <a href="tel:8888185001" className="auapw-btn auapw-btn-green">
+                <a href="tel:8888548681" className="auapw-btn auapw-btn-green">
                   <Phone className="w-4 h-4" />
-                  (888) 818-5001
+                  (888) 854-8681
                 </a>
               </div>
             </div>

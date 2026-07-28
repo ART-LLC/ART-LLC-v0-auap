@@ -56,7 +56,7 @@ export default function CookiePolicyPage() {
             <p className="mb-4">We may update this Cookie Policy from time to time. Changes will be effective when posted on our website. Your continued use of our site constitutes acceptance of the updated policy.</p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">Contact Us</h2>
-            <p className="mb-4">If you have questions about our Cookie Policy, please contact us at aupworld@gmail.com or (888) 818-5001.</p>
+            <p className="mb-4">If you have questions about our Cookie Policy, please contact us at aupworld@gmail.com or (888) 854-8681.</p>
           </div>
         </div>
         <BrandLogosSection />

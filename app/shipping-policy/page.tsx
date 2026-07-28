@@ -56,7 +56,7 @@ export default function ShippingPolicyPage() {
             <h2 className="text-2xl font-bold mt-8 mb-4">Contact Us</h2>
             <p className="mb-4">For shipping inquiries, contact us at:</p>
             <ul className="list-none pl-0 space-y-2">
-              <li>📞 Phone: <a href="tel:8888185001" className="text-blue-400 hover:text-blue-300">(888) 818-5001</a></li>
+              <li>📞 Phone: <a href="tel:8888548681" className="text-blue-400 hover:text-blue-300">(888) 854-8681</a></li>
               <li>📧 Email: <a href="mailto:support@auapw.com" className="text-blue-400 hover:text-blue-300">support@auapw.com</a></li>
             </ul>
           </div>

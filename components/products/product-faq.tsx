@@ -128,7 +128,7 @@ export function ProductFAQ({ productType }: ProductFAQProps) {
           </p>
           <div className="flex gap-2 flex-wrap">
             <Button variant="outline" asChild>
-              <a href="tel:8888185001">Call (888) 818-5001</a>
+              <a href="tel:8888548681">Call (888) 854-8681</a>
             </Button>
             <Button variant="outline" asChild>
               <a href="mailto:support@auapw.com">Email Support</a>

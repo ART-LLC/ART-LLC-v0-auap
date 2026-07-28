@@ -28,11 +28,11 @@ export function CTASection() {
             <span>Search Parts Now</span>
           </Link>
           <a 
-            href="tel:8888185001" 
+            href="tel:8888548681" 
             className="auapw-btn auapw-btn-green"
           >
             <Phone className="w-4 h-4" />
-            <span>(888) 818-5001</span>
+            <span>(888) 854-8681</span>
           </a>
           <Link 
             href="/quote" 
