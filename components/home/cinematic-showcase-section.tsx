@@ -17,7 +17,7 @@ const STATS = [
 export function CinematicShowcaseSection() {
   return (
     <section className="relative bg-[#3a3d44] py-16 sm:py-20">
-      <div className="mx-auto max-w-[1280px] px-4 sm:px-6">
+      <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
         {/* Section heading */}
         <div className="flex flex-col items-center text-center mb-8 sm:mb-10">
           <div className="flex items-center gap-3 mb-4">
@@ -81,9 +81,9 @@ export function CinematicShowcaseSection() {
                 <Search className="w-4 h-4" />
                 <span>Find Your Part</span>
               </Link>
-              <a href="tel:8888185001" className="auapw-btn auapw-btn-green">
+              <a href="tel:8888548681" className="auapw-btn auapw-btn-green">
                 <Phone className="w-4 h-4" />
-                <span>Call 888-818-5001</span>
+                <span>Call 888-854-8681</span>
               </a>
             </div>
           </div>

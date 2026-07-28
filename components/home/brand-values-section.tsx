@@ -32,7 +32,7 @@ export function BrandValuesSection() {
         <Image src="/images/section-network.png" alt="" fill className="object-cover opacity-12" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/50 to-background/90" />
       </div>
-      <div className="mx-auto max-w-[1200px] px-4 sm:px-6 relative z-10">
+      <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="font-sans text-[clamp(1.5rem,4vw,2.75rem)] font-black mercury-heading text-3d-section mb-4" style={{ fontFamily: 'system-ui', fontSize: '62px' }}>

@@ -5,7 +5,7 @@ import { Search, Truck, Shield, RotateCcw, Clock, ThumbsUp, DollarSign, Grid3X3 
 export function ContentSection() {
   return (
     <section className="py-20 bg-[#3a3d44] relative" style={{ paddingTop: '9px' }}>
-      <div className="mx-auto max-w-[1000px] px-6 relative z-10" style={{ fontFamily: 'system-ui' }}>
+      <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8 relative z-10" style={{ fontFamily: 'system-ui' }}>
         {/* Banner Image */}
         <div className="relative w-full h-56 sm:h-72 rounded-xl overflow-hidden mb-10">
           <Image src="/images/section-content-banner.png" alt="AUAPW - All Used Auto Parts Warehouse" fill className="object-cover" priority />

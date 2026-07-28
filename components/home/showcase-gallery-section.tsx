@@ -39,8 +39,8 @@ const GALLERY = [
 
 export function ShowcaseGallerySection() {
   return (
-    <section className="py-20 bg-[#3a3d44]">
-      <div className="mx-auto max-w-[1280px] px-6">
+    <section className="py-20 sm:py-28 bg-[#3a3d44] relative">
+      <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-6 mb-10 sm:mb-14">
           <div>

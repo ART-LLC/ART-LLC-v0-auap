@@ -21,7 +21,7 @@ export function HeroSection() {
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E\")", backgroundSize: "100px" }} />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-[1280px] px-4 sm:px-6">
+      <div className="relative z-10 mx-auto max-w-full px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center py-10 sm:py-16 lg:py-24 gap-8 sm:gap-10">
 
           {/* Brand column — full width, centered */}
@@ -195,7 +195,7 @@ export function HeroSection() {
                   <span className="text-2xl font-bold tracking-wide text-primary/40">03</span>
                   <span className="text-sm font-bold tracking-wide text-primary uppercase">Confirm &amp; Order</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">Review availability, warranty details, and shipping options, then confirm your order with ease.</p>
-                  <a href="tel:8888185001" className="mt-auto w-full auapw-btn auapw-btn-green auapw-btn-sm">
+                  <a href="tel:8888548681" className="mt-auto w-full auapw-btn auapw-btn-green auapw-btn-sm">
                     <Phone className="w-4 h-4" />
                     <span>Call &amp; Order</span>
                   </a>

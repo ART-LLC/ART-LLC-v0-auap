@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, Sparkles } from "lucide-react"
+import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, Sparkles, LayoutDashboard } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
@@ -65,6 +65,7 @@ export function Navbar() {
     { label: "All Makes", href: "/makes" },
     { label: "Inventory", href: "/inventory" },
     { label: "Search", href: "/search" },
+    { label: "AI Search", href: "/ai-search" },
     { label: "Get a Quote", href: "/quote" },
     { label: "Contact", href: "/contact" },
     { label: "Blog", href: "/blog" },
@@ -186,16 +187,6 @@ export function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* AI Smart Search */}
-            <Link
-              href="/ai-search"
-              className="header-boss-nav-text group relative flex items-center gap-1.5"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-primary" />
-              <span className="header-boss-nav-label">AI Search</span>
-              <span className="header-boss-nav-glow" />
-            </Link>
-
             {/* Review All Website Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className="header-boss-nav-text group relative flex items-center gap-1.5 outline-none">
@@ -239,6 +230,35 @@ export function Navbar() {
                 </span>
               )}
             </Link>
+
+            {/* Desktop: Dashboards Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="hidden sm:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors outline-none" title="Dashboards">
+                <LayoutDashboard className="w-5 h-5 text-foreground" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48 bg-card/95 backdrop-blur-xl border-border/50">
+                <DropdownMenuLabel className="text-xs font-bold tracking-widest uppercase text-muted-foreground">
+                  Dashboards
+                </DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link
+                    href="/admin/login"
+                    className="flex items-center gap-2 cursor-pointer text-sm"
+                  >
+                    Admin Dashboard
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link
+                    href="/customer/dashboard"
+                    className="flex items-center gap-2 cursor-pointer text-sm"
+                  >
+                    Customer Dashboard
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
             {/* Desktop: FREE QUOTE button */}
             <Link href="/quote" className="hidden sm:flex auapw-btn auapw-btn-amber auapw-btn-sm">
@@ -307,11 +327,11 @@ export function Navbar() {
               {/* ── Quick-contact strip ── */}
               <div className="grid grid-cols-2 gap-2">
                 <a
-                  href="tel:8888185001"
+                  href="tel:8888548681"
                   className="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-green-500/15 border border-green-500/30 hover:bg-green-500/25 active:scale-95 transition-all"
                 >
                   <Phone className="w-4 h-4 text-green-400 shrink-0" />
-                  <span className="text-xs font-black text-green-300 tracking-wide">(888) 818-5001</span>
+                  <span className="text-xs font-black text-green-300 tracking-wide">(888) 854-8681</span>
                 </a>
                 <Link
                   href="/quote"

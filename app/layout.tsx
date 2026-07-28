@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/lib/auth-context'
 import { MobileThemeFab } from '@/components/mobile-theme-fab'
 import { IntercomProvider } from '@/components/intercom-provider'
+import { FloatingChatWidget } from '@/components/floating-chat-widget'
 import './globals.css'
 
 const roboto = Roboto({
@@ -82,6 +83,8 @@ export default function RootLayout({
     <html lang="en" className="dark bg-background" suppressHydrationWarning>
       <body className={`${roboto.variable} font-sans antialiased bg-background text-foreground`}>
         {/* Intercom messenger — loads after page is interactive */}
+        {/* Disabled due to content blocking issues */}
+        {/* 
         <Script 
           id="intercom-bootstrap"
           strategy="afterInteractive"
@@ -91,11 +94,13 @@ export default function RootLayout({
             `,
           }}
         />
+        */}
         <AuthProvider>
           <ThemeProvider>
             {children}
             <MobileThemeFab />
             <IntercomProvider />
+            <FloatingChatWidget />
           </ThemeProvider>
         </AuthProvider>
         <Analytics />

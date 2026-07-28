@@ -24,6 +24,18 @@ body {
   color: var(--foreground);
 }
 
+/* Ensure buttons and links are always clickable — prevent overlays from blocking */
+button, a, [role="button"], [role="link"], input[type="submit"], input[type="button"] {
+  pointer-events: auto !important;
+  z-index: auto;
+}
+
+/* Ensure tel: links work properly */
+a[href^="tel:"] {
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
 /* Brushed-metal spray texture applied GLOBALLY to every page-level surface:
    the home #3a3d44 sections plus the full-page main/section wrappers used on
    /acura, /catalog, /analytics, etc. Targets only large page surfaces

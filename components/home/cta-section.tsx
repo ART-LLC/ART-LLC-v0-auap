@@ -6,7 +6,7 @@ export function CTASection() {
     <section className="py-20 text-center relative bg-gradient-to-br from-card via-secondary to-card">
       <div className="metal-line absolute top-0 left-0 right-0" />
       <div className="metal-line absolute bottom-0 left-0 right-0" />
-      <div className="mx-auto max-w-[900px] px-6">
+      <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center gap-4 mb-6">
           <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/50" />
           <span className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-primary">Your Trusted Partner</span>
@@ -28,11 +28,11 @@ export function CTASection() {
             <span>Search Parts Now</span>
           </Link>
           <a 
-            href="tel:8888185001" 
+            href="tel:8888548681" 
             className="auapw-btn auapw-btn-green"
           >
             <Phone className="w-4 h-4" />
-            <span>(888) 818-5001</span>
+            <span>(888) 854-8681</span>
           </a>
           <Link 
             href="/quote" 
