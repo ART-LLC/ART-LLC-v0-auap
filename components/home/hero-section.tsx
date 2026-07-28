@@ -199,7 +199,7 @@ export function HeroSection() {
                   <span className="text-2xl font-bold tracking-wide text-primary/40">03</span>
                   <span className="text-sm font-bold tracking-wide text-primary uppercase">Confirm &amp; Order</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">Review availability, warranty details, and shipping options, then confirm your order with ease.</p>
-                  <a href="tel:8888185001" className="mt-auto w-full auapw-btn auapw-btn-green auapw-btn-sm">
+                  <a href="tel:8888548681" className="mt-auto w-full auapw-btn auapw-btn-green auapw-btn-sm">
                     <Phone className="w-4 h-4" />
                     <span>Call &amp; Order</span>
                   </a>
