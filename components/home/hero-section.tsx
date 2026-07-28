@@ -39,7 +39,11 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="font-sans leading-tight text-balance max-w-4xl" style={{ fontFamily: "system-ui" }}>
-              <span className="block text-[0.75rem] sm:text-[1rem] font-black tracking-[0.25em] uppercase text-white/70 mb-3" style={{ fontFamily: "system-ui" }}>Industry-Leading Platform</span>
+              <span className="flex items-center justify-center gap-3 mb-3">
+                <span className="h-px w-8 sm:w-12 bg-primary/60 rounded-full" />
+                <span className="text-[0.7rem] sm:text-[0.85rem] font-black tracking-[0.3em] uppercase text-primary" style={{ fontFamily: "system-ui" }}>Industry-Leading Platform</span>
+                <span className="h-px w-8 sm:w-12 bg-primary/60 rounded-full" />
+              </span>
               <span
                 className="block text-[1.8rem] sm:text-[clamp(2rem,5vw,3.8rem)] font-black"
                 style={{
@@ -195,7 +199,7 @@ export function HeroSection() {
                   <span className="text-2xl font-bold tracking-wide text-primary/40">03</span>
                   <span className="text-sm font-bold tracking-wide text-primary uppercase">Confirm &amp; Order</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">Review availability, warranty details, and shipping options, then confirm your order with ease.</p>
-                  <a href="tel:8888185001" className="mt-auto w-full auapw-btn auapw-btn-green auapw-btn-sm">
+                  <a href="tel:8888548681" className="mt-auto w-full auapw-btn auapw-btn-green auapw-btn-sm">
                     <Phone className="w-4 h-4" />
                     <span>Call &amp; Order</span>
                   </a>

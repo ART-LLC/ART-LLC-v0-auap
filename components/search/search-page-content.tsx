@@ -100,8 +100,8 @@ export function SearchPageContent() {
               <span className="text-[10px] sm:text-xs font-bold tracking-wider text-foreground flex items-center gap-2">
                 <Search className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-primary" /> Search by Year, Make, Model & Part
               </span>
-              <a href="tel:8888185001" className="text-[10px] sm:text-[11px] text-muted-foreground hidden sm:block">
-                <Phone className="w-3 h-3 inline mr-1" /> (888) 818-5001
+              <a href="tel:8888548681" className="text-[10px] sm:text-[11px] text-muted-foreground hidden sm:block">
+                <Phone className="w-3 h-3 inline mr-1" /> (888) 854-8681
               </a>
             </div>
             <div className="p-4 sm:p-7">
@@ -188,7 +188,7 @@ export function SearchPageContent() {
                   <button type="submit" disabled={!make} className="btn-led flex-1 min-w-[200px] inline-flex items-center justify-center gap-2.5 text-[0.75rem] font-bold tracking-[0.18em] uppercase px-6 py-4 rounded-lg transition-all shadow-lg disabled:opacity-40 disabled:cursor-not-allowed">
                     <Search className="w-4 h-4" /> Search Available Parts
                   </button>
-                  <a href="tel:8888185001" className="inline-flex items-center justify-center gap-2 px-6 py-4 text-[0.7rem] font-bold tracking-[0.18em] uppercase border border-border/60 text-muted-foreground rounded-lg hover:border-foreground/50 hover:text-foreground transition-all">
+                  <a href="tel:8888548681" className="inline-flex items-center justify-center gap-2 px-6 py-4 text-[0.7rem] font-bold tracking-[0.18em] uppercase border border-border/60 text-muted-foreground rounded-lg hover:border-foreground/50 hover:text-foreground transition-all">
                     <Phone className="w-3.5 h-3.5" /> Call & Order
                   </a>
                   <Link href="/quote" className="inline-flex items-center justify-center gap-2 px-6 py-4 text-[0.7rem] font-bold tracking-[0.18em] uppercase border border-border/60 text-muted-foreground rounded-lg hover:border-foreground/50 hover:text-foreground transition-all">
@@ -232,7 +232,7 @@ export function SearchPageContent() {
               We couldn't find parts matching your search criteria. Try adjusting your filters or contact our team to source from additional yards.
             </p>
             <div className="flex gap-3 justify-center flex-wrap">
-              <a href="tel:8888185001" className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
+              <a href="tel:8888548681" className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
                 <Phone className="w-3.5 h-3.5" /> Call Us for Help
               </a>
               <Link href="/quote" className="w-40 inline-block hover:-translate-y-1 transition-transform duration-200">
@@ -296,7 +296,7 @@ export function SearchPageContent() {
                       <Link href="/quote" className="btn-led inline-flex items-center justify-center gap-1.5 px-4 py-2 text-[10px] font-bold tracking-[0.15em] uppercase rounded-sm">
                         Get Quote
                       </Link>
-                      <a href="tel:8888185001" className="inline-flex items-center justify-center gap-1.5 px-4 py-2 text-[10px] font-bold tracking-[0.15em] uppercase border border-border/60 text-muted-foreground rounded-sm hover:border-foreground/50 hover:text-foreground transition-all">
+                      <a href="tel:8888548681" className="inline-flex items-center justify-center gap-1.5 px-4 py-2 text-[10px] font-bold tracking-[0.15em] uppercase border border-border/60 text-muted-foreground rounded-sm hover:border-foreground/50 hover:text-foreground transition-all">
                         Call
                       </a>
                     </div>
@@ -313,8 +313,8 @@ export function SearchPageContent() {
                 Our team can source from additional yards not listed here. Call or request a quote for immediate assistance.
               </p>
               <div className="flex gap-3 justify-center flex-wrap">
-                <a href="tel:8888185001" className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
-                  <Phone className="w-3.5 h-3.5" /> Call (888) 818-5001
+                <a href="tel:8888548681" className="btn-led inline-flex items-center justify-center gap-2 px-5 py-3 text-[0.68rem] font-bold tracking-[0.18em] uppercase rounded-sm">
+                  <Phone className="w-3.5 h-3.5" /> Call (888) 854-8681
                 </a>
                 <Link href="/quote" className="w-40 inline-block hover:-translate-y-1 transition-transform duration-200">
                   <img src="/images/button-request-free-quote.png" alt="Request Free Quote" className="w-full h-auto drop-shadow-lg" />
