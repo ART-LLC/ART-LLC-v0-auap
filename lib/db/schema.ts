@@ -452,3 +452,91 @@ export const portalActivityLog = pgTable('portal_activity_log', {
   details: json('details'), // what changed
   createdAt: timestamp('createdAt').notNull().defaultNow(),
 })
+
+// --- PHASE 1: MARKETPLACE TABLES ---
+
+// Seller profiles (users who sell auto parts on platform)
+export const sellerProfiles = pgTable('seller_profiles', {
+  id: text('id').primaryKey(),
+  userId: text('userId').notNull().unique(),
+  businessName: text('businessName').notNull(),
+  businessLicense: text('businessLicense'),
+  stripeConnectId: text('stripeConnectId'),
+  taxId: text('taxId'),
+  bankAccount: text('bankAccount'),
+  commissionRate: numeric('commissionRate').default('10'), // percentage commission
+  status: text('status').default('pending'), // 'pending', 'active', 'suspended', 'rejected'
+  verificationStatus: text('verificationStatus').default('unverified'), // 'unverified', 'verified', 'rejected'
+  totalSalesVolume: numeric('totalSalesVolume').default('0'),
+  averageRating: numeric('averageRating').default('0'),
+  reviewCount: integer('reviewCount').default(0),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// Product listings (inventory for sale)
+export const listings = pgTable('listings', {
+  id: text('id').primaryKey(),
+  sellerId: text('sellerId').notNull(),
+  title: text('title').notNull(),
+  sku: text('sku').unique(),
+  category: text('category').notNull(), // 'engines', 'transmissions', 'parts'
+  subcategory: text('subcategory'),
+  description: text('description'),
+  price: numeric('price').notNull(),
+  originalPrice: numeric('originalPrice'), // MSRP
+  quantity: integer('quantity').default(0),
+  condition: text('condition').notNull(), // 'new', 'refurbished', 'used'
+  warranty: text('warranty'), // e.g. '12 months', 'lifetime'
+  compatibility: json('compatibility'), // {makes: [], models: [], years: []}
+  images: json('images'), // array of image URLs
+  status: text('status').default('active'), // 'active', 'inactive', 'sold_out', 'archived'
+  shippingClass: text('shippingClass'), // for different shipping rates
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// Append-only ledger (immutable transaction record)
+export const ledger = pgTable('ledger', {
+  id: text('id').primaryKey(),
+  orderId: text('orderId').notNull(),
+  sellerId: text('sellerId').notNull(),
+  transactionType: text('transactionType').notNull(), // 'sale', 'refund', 'chargeback', 'withdrawal'
+  amount: numeric('amount').notNull(),
+  commission: numeric('commission').notNull(),
+  netAmount: numeric('netAmount').notNull(), // amount - commission
+  status: text('status').notNull(), // 'pending', 'completed', 'failed'
+  description: text('description'),
+  metadata: json('metadata'), // transaction details
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+})
+
+// Fraud flags and risk scoring
+export const fraudFlags = pgTable('fraud_flags', {
+  id: text('id').primaryKey(),
+  orderId: text('orderId'),
+  userId: text('userId'),
+  sellerId: text('sellerId'),
+  flagType: text('flagType').notNull(), // 'high_velocity', 'high_chargeback_rate', 'duplicate_card', 'geographical_mismatch', 'price_manipulation'
+  riskScore: numeric('riskScore').notNull(), // 0-100
+  status: text('status').default('open'), // 'open', 'resolved', 'dismissed'
+  notes: text('notes'),
+  reviewedBy: text('reviewedBy'),
+  reviewedAt: timestamp('reviewedAt'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+})
+
+// Payouts to sellers
+export const payouts = pgTable('payouts', {
+  id: text('id').primaryKey(),
+  sellerId: text('sellerId').notNull(),
+  stripePayoutId: text('stripePayoutId'),
+  amount: numeric('amount').notNull(),
+  status: text('status').default('pending'), // 'pending', 'in_transit', 'paid', 'failed', 'cancelled'
+  period: text('period').notNull(), // 'monthly', 'weekly', 'manual'
+  startDate: timestamp('startDate').notNull(),
+  endDate: timestamp('endDate').notNull(),
+  failureReason: text('failureReason'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  paidAt: timestamp('paidAt'),
+})
