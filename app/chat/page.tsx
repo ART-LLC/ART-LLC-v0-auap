@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import { ChatContainer } from '@/components/chat/chat-container';
 
 export const metadata: Metadata = {
-  title: 'Chat | ART LLC',
-  description: 'Chat with our AI assistant about automotive parts and services',
+  title: 'Chat | AUAPW LLC',
+  description: 'Chat with our AUAPW AI assistant about used auto parts, pricing, and availability.',
 };
 
 interface ChatPageProps {

@@ -18,10 +18,18 @@ function MarkdownContent({ text, isUser }: { text: string; isUser: boolean }) {
 
   const renderLine = (line: string, key: number) => {
     // Split on **bold** and [text](url) tokens
-    const parts = line.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+    const parts = line.split(/(\*\*\[[^\]]+\]\([^)]+\)\*\*|\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
     return (
       <span key={key}>
         {parts.map((part, i) => {
+          // Bold link: **[text](url)**
+          const boldLink = part.match(/^\*\*\[([^\]]+)\]\(([^)]+)\)\*\*$/);
+          if (boldLink)
+            return (
+              <a key={i} href={boldLink[2]} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                <strong>{boldLink[1]}</strong>
+              </a>
+            );
           // Bold: **text**
           const boldMatch = part.match(/^\*\*([^*]+)\*\*$/);
           if (boldMatch) return <strong key={i}>{boldMatch[1]}</strong>;

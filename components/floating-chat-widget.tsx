@@ -5,6 +5,34 @@ import { MessageCircle, X, Send, Trash2, Download, History } from 'lucide-react'
 import { ChatSession, Message, chatStorage } from '@/lib/chat-storage';
 import Link from 'next/link';
 
+/** Lightweight markdown renderer for chat bubbles: bold, links, newlines. */
+function WidgetMarkdown({ text }: { text: string }) {
+  const lines = text.split('\n');
+  const renderLine = (line: string, key: number) => {
+    const parts = line.split(/(\*\*\[[^\]]+\]\([^)]+\)\*\*|\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+    return (
+      <span key={key}>
+        {parts.map((part, i) => {
+          const boldLink = part.match(/^\*\*\[([^\]]+)\]\(([^)]+)\)\*\*$/);
+          if (boldLink) return <a key={i} href={boldLink[2]} target="_blank" rel="noopener noreferrer" className="underline text-primary hover:opacity-80"><strong>{boldLink[1]}</strong></a>;
+          const bold = part.match(/^\*\*([^*]+)\*\*$/);
+          if (bold) return <strong key={i}>{bold[1]}</strong>;
+          const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+          if (link) return <a key={i} href={link[2]} target="_blank" rel="noopener noreferrer" className="underline text-primary hover:opacity-80">{link[1]}</a>;
+          return <span key={i}>{part}</span>;
+        })}
+      </span>
+    );
+  };
+  return (
+    <span className="whitespace-pre-wrap">
+      {lines.map((line, i) => (
+        <span key={i}>{renderLine(line, i)}{i < lines.length - 1 && <br />}</span>
+      ))}
+    </span>
+  );
+}
+
 export function FloatingChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentChat, setCurrentChat] = useState<ChatSession | null>(null);
@@ -172,13 +200,17 @@ export function FloatingChatWidget() {
                     className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
                   >
                     <div
-                      className={`max-w-[85%] px-4 py-2 rounded-lg text-sm whitespace-pre-wrap break-words leading-relaxed ${
+                      className={`max-w-[85%] px-4 py-2 rounded-lg text-sm break-words leading-relaxed ${
                         msg.role === 'user'
                           ? 'bg-primary text-primary-foreground rounded-br-none'
                           : 'bg-muted text-foreground rounded-bl-none'
                       }`}
                     >
-                      {msg.content || (msg.role === 'assistant' && isLoading ? '...' : '')}
+                      {msg.role === 'user' ? (
+                        <span className="whitespace-pre-wrap">{msg.content}</span>
+                      ) : (
+                        <WidgetMarkdown text={msg.content || (isLoading ? '...' : '')} />
+                      )}
                     </div>
                   </div>
                 ))}
