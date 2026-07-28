@@ -9,6 +9,7 @@ export const user = pgTable('user', {
   email: text('email').notNull().unique(),
   emailVerified: boolean('emailVerified').notNull().default(false),
   image: text('image'),
+  role: text('role').default('buyer'), // 'buyer', 'seller', 'admin'
   createdAt: timestamp('createdAt').notNull().defaultNow(),
   updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })
@@ -335,4 +336,130 @@ export const portalActivityLog = pgTable('portal_activity_log', {
   resourceId: text('resourceId'),
   details: json('details'),
   createdAt: timestamp('createdAt').notNull().defaultNow(),
+})
+
+// --- Marketplace: Sellers ---
+export const sellers = pgTable('sellers', {
+  id: text('id').primaryKey(),
+  userId: text('userId').notNull().unique(),
+  businessName: text('businessName').notNull(),
+  description: text('description'),
+  businessType: text('businessType'),
+  stripeConnectId: text('stripeConnectId').unique(),
+  onboardingStatus: text('onboardingStatus').default('pending'), // 'pending', 'in_progress', 'completed', 'rejected'
+  verificationStatus: text('verificationStatus').default('unverified'), // 'unverified', 'verified', 'suspended'
+  website: text('website'),
+  phone: text('phone'),
+  address: text('address'),
+  city: text('city'),
+  state: text('state'),
+  zipCode: text('zipCode'),
+  country: text('country').default('USA'),
+  taxId: text('taxId'),
+  rating: decimal('rating', { precision: 3, scale: 2 }).default('0'),
+  totalReviews: integer('totalReviews').default(0),
+  totalSales: decimal('totalSales', { precision: 15, scale: 2 }).default('0'),
+  commissionRate: decimal('commissionRate', { precision: 5, scale: 2 }).default('5'), // Platform takes 5% by default
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Marketplace: Listings (Products/Inventory) ---
+export const listings = pgTable('listings', {
+  id: text('id').primaryKey(),
+  sellerId: text('sellerId').notNull(),
+  sku: text('sku').notNull(),
+  title: text('title').notNull(),
+  description: text('description'),
+  category: text('category').notNull(),
+  subcategory: text('subcategory'),
+  price: decimal('price', { precision: 10, scale: 2 }).notNull(),
+  originalPrice: decimal('originalPrice', { precision: 10, scale: 2 }),
+  quantity: integer('quantity').notNull().default(0),
+  images: json('images'), // Array of image URLs
+  specifications: json('specifications'), // VIN, year, make, model, etc.
+  condition: text('condition').notNull(), // 'new', 'like-new', 'excellent', 'good', 'fair'
+  warranty: text('warranty'),
+  shippingCost: decimal('shippingCost', { precision: 10, scale: 2 }).default('0'),
+  status: text('status').default('active'), // 'active', 'inactive', 'sold', 'delisted'
+  views: integer('views').default(0),
+  sales: integer('sales').default(0),
+  rating: decimal('rating', { precision: 3, scale: 2 }).default('0'),
+  totalReviews: integer('totalReviews').default(0),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Marketplace: Ledger Entries (Financial Records) ---
+export const ledgerEntries = pgTable('ledger_entries', {
+  id: text('id').primaryKey(),
+  sellerId: text('sellerId').notNull(),
+  type: text('type').notNull(), // 'sale', 'commission_deduction', 'refund', 'adjustment', 'payout'
+  amount: decimal('amount', { precision: 10, scale: 2 }).notNull(),
+  orderId: text('orderId'),
+  description: text('description'),
+  status: text('status').default('completed'), // 'pending', 'completed', 'failed'
+  reference: text('reference'), // Transaction ID, check number, etc.
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Marketplace: Payouts ---
+export const payouts = pgTable('payouts', {
+  id: text('id').primaryKey(),
+  sellerId: text('sellerId').notNull(),
+  amount: decimal('amount', { precision: 10, scale: 2 }).notNull(),
+  status: text('status').default('pending'), // 'pending', 'in_transit', 'completed', 'failed', 'canceled'
+  method: text('method').notNull(), // 'stripe', 'bank_transfer', 'check'
+  stripeTransferId: text('stripeTransferId'),
+  bankDetails: json('bankDetails'),
+  period: text('period').notNull(), // 'YYYY-MM' for monthly periods
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  processedAt: timestamp('processedAt'),
+  completedAt: timestamp('completedAt'),
+})
+
+// --- Marketplace: Fraud Detection ---
+export const fraudFlags = pgTable('fraud_flags', {
+  id: text('id').primaryKey(),
+  userId: text('userId'),
+  sellerId: text('sellerId'),
+  type: text('type').notNull(), // 'chargeback', 'dispute', 'suspicious_activity', 'policy_violation'
+  severity: text('severity').notNull(), // 'low', 'medium', 'high', 'critical'
+  description: text('description'),
+  evidence: json('evidence'),
+  status: text('status').default('open'), // 'open', 'investigating', 'resolved', 'dismissed'
+  actionTaken: text('actionTaken'), // 'none', 'warning', 'suspension', 'termination'
+  resolvedAt: timestamp('resolvedAt'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Marketplace: Reviews & Ratings ---
+export const sellerReviews = pgTable('seller_reviews', {
+  id: text('id').primaryKey(),
+  sellerId: text('sellerId').notNull(),
+  buyerId: text('buyerId').notNull(),
+  orderId: text('orderId').notNull(),
+  rating: integer('rating').notNull(), // 1-5 stars
+  title: text('title'),
+  comment: text('comment'),
+  verified: boolean('verified').default(false), // Verified purchase
+  helpful: integer('helpful').default(0),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+export const listingReviews = pgTable('listing_reviews', {
+  id: text('id').primaryKey(),
+  listingId: text('listingId').notNull(),
+  buyerId: text('buyerId').notNull(),
+  orderId: text('orderId').notNull(),
+  rating: integer('rating').notNull(), // 1-5 stars
+  title: text('title'),
+  comment: text('comment'),
+  verified: boolean('verified').default(false), // Verified purchase
+  helpful: integer('helpful').default(0),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })
