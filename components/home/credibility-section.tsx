@@ -1,4 +1,4 @@
-import { Shield, Award, CheckCircle2, Star, Users, Clock } from 'lucide-react'
+import { Shield, Award, CheckCircle2, Star, Users, Clock, ExternalLink } from 'lucide-react'
 
 export function CredibilitySection() {
   const credentials = [
@@ -70,6 +70,21 @@ export function CredibilitySection() {
           <p className="text-sm text-foreground/60">
             Founded to revolutionize how Americans access affordable, quality used auto parts — we&apos;re your trusted partner in vehicle maintenance and repair.
           </p>
+        </div>
+
+        <div className="mt-8 flex flex-col items-center gap-3 text-center">
+          <p className="text-sm text-foreground/70">
+            Reviews build trust and help our Business Profile stand out to customers on Search and Maps.
+          </p>
+          <a
+            href="https://g.page/r/CclCaJLOX5cjEBM/review"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          >
+            Leave us a Google review
+            <ExternalLink className="h-4 w-4" aria-hidden="true" />
+          </a>
         </div>
       </div>
     </section>
