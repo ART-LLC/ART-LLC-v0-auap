@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import useSWR from 'swr'
 import { Search, Grid, List, ChevronRight, Settings, Wrench } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -58,59 +59,49 @@ function BrandLogo({ brand, size = 'sm' }: { brand: string; size?: 'sm' | 'lg' }
   )
 }
 
-const SHOP_PRODUCTS = [
-  {
-    id: 1,
-    name: '2018 Acura MDX Complete Engine',
-    category: 'Engines',
-    price: '$1,299',
-    mileage: '82,000',
-    condition: 'Excellent',
-    warranty: '180 days',
-    rating: 4.8,
-    reviews: 24,
-    image: '/images/product-engine-1.png',
-  },
-  {
-    id: 2,
-    name: 'Automatic Transmission Assembly',
-    category: 'Transmissions',
-    price: '$899',
-    mileage: '91,000',
-    condition: 'Good',
-    warranty: '90 days',
-    rating: 4.9,
-    reviews: 18,
-    image: '/images/product-transmission-1.png',
-  },
-  {
-    id: 3,
-    name: 'High-Quality Alternator',
-    category: 'Electrical',
-    price: '$249',
-    mileage: '75,000',
-    condition: 'Excellent',
-    warranty: '90 days',
-    rating: 4.7,
-    reviews: 31,
-    image: '/images/product-alternator-1.png',
-  },
-  {
-    id: 4,
-    name: 'Complete Radiator Assembly',
-    category: 'Cooling',
-    price: '$399',
-    mileage: '85,000',
-    condition: 'Excellent',
-    warranty: '180 days',
-    rating: 5.0,
-    reviews: 12,
-    image: '/images/product-radiator-1.png',
-  },
-]
+type ShopProduct = {
+  id: string | number
+  name: string
+  category: string
+  price: string
+  mileage: string
+  condition: string
+  warranty: string
+  rating: number
+  reviews: number
+  image: string
+}
+
+type CatalogApiProduct = {
+  id: string | number
+  name: string
+  category: string
+  priceDisplay: string
+  mileage: string
+  condition: string
+  warranty: string
+  rating: number
+  reviews: number
+  image: string
+}
+
+const fetcher = (url: string) => fetch(url).then((response) => response.json())
 
 export default function ShopPage() {
   const router = useRouter()
+  const { data } = useSWR<{ products: CatalogApiProduct[] }>('/api/catalog', fetcher)
+  const SHOP_PRODUCTS: ShopProduct[] = (data?.products ?? []).map((product) => ({
+    id: product.id,
+    name: product.name,
+    category: product.category,
+    price: product.priceDisplay,
+    mileage: product.mileage.replace(/\s*miles$/i, ''),
+    condition: product.condition,
+    warranty: product.warranty,
+    rating: product.rating,
+    reviews: product.reviews,
+    image: product.image,
+  }))
   const [viewType, setViewType] = useState<'grid' | 'list'>('grid')
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [priceRange, setPriceRange] = useState([0, 2000])

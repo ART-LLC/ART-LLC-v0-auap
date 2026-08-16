@@ -1,99 +1,12 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, Star, Zap, Truck } from "lucide-react"
+import { getCatalogProducts } from "@/lib/catalog-source"
+import { getProductPartsUrl } from "@/lib/products-catalog"
 
-const FEATURED_PRODUCTS = [
-  {
-    id: 1,
-    name: "2018 Acura MDX Complete Engine",
-    price: "$1,299",
-    mileage: "82,000 miles",
-    condition: "Excellent",
-    rating: 4.8,
-    reviews: 24,
-    image: "/images/product-engine-1.png",
-    tags: ["Engine", "Acura MDX"],
-  },
-  {
-    id: 2,
-    name: "Automatic Transmission Assembly",
-    price: "$899",
-    mileage: "91,000 miles",
-    condition: "Good",
-    rating: 4.9,
-    reviews: 18,
-    image: "/images/product-transmission-1.png",
-    tags: ["Transmission", "Complete"],
-  },
-  {
-    id: 3,
-    name: "High-Quality Alternator",
-    price: "$249",
-    mileage: "75,000 miles",
-    condition: "Excellent",
-    rating: 4.7,
-    reviews: 31,
-    image: "/images/product-alternator-1.png",
-    tags: ["Electrical", "Alternator"],
-  },
-  {
-    id: 4,
-    name: "Complete Radiator Assembly",
-    price: "$399",
-    mileage: "85,000 miles",
-    condition: "Excellent",
-    rating: 5.0,
-    reviews: 12,
-    image: "/images/product-radiator-1.png",
-    tags: ["Cooling", "Radiator"],
-  },
-  {
-    id: 5,
-    name: "Front Brake Caliper Set",
-    price: "$189",
-    mileage: "68,000 miles",
-    condition: "Excellent",
-    rating: 4.8,
-    reviews: 27,
-    image: "/images/product-brakes-1.png",
-    tags: ["Brakes", "Caliper"],
-  },
-  {
-    id: 6,
-    name: "Rear Drive Axle Assembly",
-    price: "$549",
-    mileage: "79,000 miles",
-    condition: "Good",
-    rating: 4.6,
-    reviews: 15,
-    image: "/images/product-drivetrain-1.png",
-    tags: ["Drivetrain", "Axle"],
-  },
-  {
-    id: 7,
-    name: "Front Strut & Suspension Kit",
-    price: "$329",
-    mileage: "73,000 miles",
-    condition: "Excellent",
-    rating: 4.9,
-    reviews: 21,
-    image: "/images/product-suspension-1.png",
-    tags: ["Suspension", "Strut"],
-  },
-  {
-    id: 8,
-    name: "Complete Exhaust System",
-    price: "$419",
-    mileage: "88,000 miles",
-    condition: "Good",
-    rating: 4.7,
-    reviews: 19,
-    image: "/images/product-exhaust-1.png",
-    tags: ["Exhaust", "System"],
-  },
-]
-
-export function FeaturedProductsSection() {
+export async function FeaturedProductsSection() {
+  const catalog = await getCatalogProducts()
+  const products = catalog.filter((product) => product.inStock).slice(0, 8)
   return (
     <section className="py-20 bg-[#3a3d44]">
       <div className="mx-auto max-w-[1280px] px-6">
@@ -115,8 +28,8 @@ export function FeaturedProductsSection() {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {FEATURED_PRODUCTS.map((product) => (
-            <Link key={product.id} href={`/parts/${product.tags[0].toLowerCase() === 'engine' ? 'engines' : product.tags[0].toLowerCase() === 'transmission' ? 'transmissions' : product.tags[0].toLowerCase() === 'alternator' ? 'electrical' : product.tags[0].toLowerCase() === 'radiator' ? 'cooling' : product.tags[0].toLowerCase() === 'brakes' ? 'brakes' : product.tags[0].toLowerCase() === 'drivetrain' ? 'drivetrain' : product.tags[0].toLowerCase() === 'suspension' ? 'suspension' : 'exhaust'}/${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
+          {products.map((product) => (
+            <Link key={product.id} href={getProductPartsUrl(product)}>
               <div className="group cursor-pointer h-full glass-card rounded-lg overflow-hidden transition-all hover:border-primary/30 hover:shadow-[0_20px_40px_rgba(0,0,0,0.6)]">
                 {/* Image Container */}
                 <div className="relative h-56 bg-gradient-to-br from-card to-background overflow-hidden">
@@ -138,13 +51,11 @@ export function FeaturedProductsSection() {
 
                 {/* Content */}
                 <div className="p-5">
-                  {/* Tags */}
+                  {/* Category */}
                   <div className="flex flex-wrap gap-2 mb-3">
-                    {product.tags.map((tag) => (
-                      <span key={tag} className="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-sm font-bold">
-                        {tag}
-                      </span>
-                    ))}
+                    <span className="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-sm font-bold">
+                      {product.category}
+                    </span>
                   </div>
 
                   {/* Name */}
@@ -172,7 +83,7 @@ export function FeaturedProductsSection() {
 
                   {/* Footer */}
                   <div className="flex items-center justify-between">
-                    <span className="text-lg font-black text-primary">{product.price}</span>
+                    <span className="text-lg font-black text-primary">{product.priceDisplay}</span>
                     <button className="relative p-3 rounded-xl border-2 border-primary bg-gradient-to-br from-primary/20 to-primary/10 hover:from-primary/30 hover:to-primary/15 text-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 group" aria-label="Request shipping info" title="View shipping options">
                       <Truck className="w-5 h-5 group-hover:scale-110 transition-transform" />
                       <div className="absolute inset-0 rounded-xl border border-primary/50 opacity-0 group-hover:opacity-100 transition-opacity" />

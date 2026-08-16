@@ -9,7 +9,11 @@ import { getCatalogProducts } from '@/lib/catalog-source'
 async function requireAdmin() {
   const session = await auth.api.getSession({ headers: await headers() })
   if (!session?.user) return null
-  if (process.env.ADMIN_EMAIL && session.user.email !== process.env.ADMIN_EMAIL) return null
+  if (
+    process.env.ADMIN_EMAIL &&
+    session.user.email.toLowerCase() !== process.env.ADMIN_EMAIL.toLowerCase()
+  )
+    return null
   return session.user
 }
 
