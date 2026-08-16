@@ -31,6 +31,13 @@ function rowToProduct(row: ProductRow): CatalogProduct {
     fits: row.fits,
     sku: row.sku,
     inStock: row.inStock,
+    brand: row.brand,
+    fitment: row.fitment ?? undefined,
+    imageGallery: Array.isArray(row.imageGallery) ? row.imageGallery.filter((value): value is string => typeof value === 'string') : [],
+    mpn: row.mpn ?? undefined,
+    gtin: row.gtin ?? undefined,
+    supplier: row.supplier ?? undefined,
+    sourceUrl: row.sourceUrl ?? undefined,
   }
 }
 
