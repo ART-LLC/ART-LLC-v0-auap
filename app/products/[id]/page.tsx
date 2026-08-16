@@ -359,7 +359,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                     <p className="font-semibold text-foreground">{prod.name}</p>
                     <p className="text-lg font-bold text-primary mt-2">${prod.price}</p>
                     <Button className="w-full mt-4" asChild>
-                      <Link href={`/products/${prod.id}`}>View Details</Link>
+                      <Link href={`/parts/${prod.name.toLowerCase().includes('transmission') ? 'transmissions' : prod.name.toLowerCase().includes('radiator') ? 'cooling' : 'electrical'}/${prod.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>View Details</Link>
                     </Button>
                   </CardContent>
                 </Card>

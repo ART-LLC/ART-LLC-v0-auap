@@ -15,13 +15,29 @@ interface ProductCardActionsProps {
   productType?: string
   make?: string
   shipping?: string
-  /** Where the "Details" button links. Defaults to /products/[productId]. */
+  /** Where the Details button links. Defaults to the canonical parts URL. */
   detailsHref?: string
 }
 
 const PHONE_SALES = '877-840-6741'
 const PHONE_DISPLAY = '(877) 840-6741'
 const CONTACT_EMAIL = 'aupworld@gmail.com'
+
+function getCategorySlug(productType?: string): string {
+  const category = (productType || 'parts').toLowerCase()
+  const aliases: Record<string, string> = {
+    engine: 'engines',
+    transmission: 'transmissions',
+    brake: 'brakes',
+    cooling: 'cooling',
+    electrical: 'electrical',
+    drivetrain: 'drivetrain',
+    suspension: 'suspension',
+    exhaust: 'exhaust',
+    body: 'body',
+  }
+  return aliases[category] || category.replace(/\s+/g, '-')
+}
 
 export function ProductCardActions({
   productId,
@@ -154,7 +170,7 @@ export function ProductCardActions({
           title="View full product details"
           asChild
         >
-          <Link href={detailsHref ?? `/products/${productId}`}>
+          <Link href={detailsHref ?? `/parts/${getCategorySlug(productType)}/${productName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
             <ExternalLink className="w-3 h-3" />
             Details
           </Link>

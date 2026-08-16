@@ -441,6 +441,12 @@ export function getProductById(id: number): CatalogProduct | undefined {
   return PRODUCTS_CATALOG.find((p) => p.id === id)
 }
 
+export function getProductPartsUrl(product: Pick<CatalogProduct, 'category' | 'name'>): string {
+  const category = product.category.toLowerCase().replace(/\s+/g, '-')
+  const part = product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+  return `/parts/${category}/${part}`
+}
+
 export function getRelatedProducts(product: CatalogProduct, limit = 4): CatalogProduct[] {
   const sameCategory = PRODUCTS_CATALOG.filter(
     (p) => p.category === product.category && p.id !== product.id
