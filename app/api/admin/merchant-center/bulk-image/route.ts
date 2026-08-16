@@ -14,6 +14,7 @@ export async function PATCH(request: Request) {
   if (!await allowed()) return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
   const { ids, image } = await request.json()
   if (!Array.isArray(ids) || !ids.length || typeof image !== 'string') return NextResponse.json({ error: 'Select products and provide an image URL.' }, { status: 400 })
+  if (image.length > 2000) return NextResponse.json({ error: 'Image URL is too long.' }, { status: 400 })
   await db.update(catalogProducts).set({ image, updatedAt: new Date() }).where(inArray(catalogProducts.id, ids.filter((id: unknown): id is string => typeof id === 'string')))
   return NextResponse.json({ updated: ids.length })
 }
