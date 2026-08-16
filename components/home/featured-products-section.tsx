@@ -116,7 +116,7 @@ export function FeaturedProductsSection() {
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {FEATURED_PRODUCTS.map((product) => (
-            <Link key={product.id} href={`/product/${product.id}`}>
+            <Link key={product.id} href={`/parts/${product.tags[0].toLowerCase() === 'engine' ? 'engines' : product.tags[0].toLowerCase() === 'transmission' ? 'transmissions' : product.tags[0].toLowerCase() === 'alternator' ? 'electrical' : product.tags[0].toLowerCase() === 'radiator' ? 'cooling' : product.tags[0].toLowerCase() === 'brakes' ? 'brakes' : product.tags[0].toLowerCase() === 'drivetrain' ? 'drivetrain' : product.tags[0].toLowerCase() === 'suspension' ? 'suspension' : 'exhaust'}/${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
               <div className="group cursor-pointer h-full glass-card rounded-lg overflow-hidden transition-all hover:border-primary/30 hover:shadow-[0_20px_40px_rgba(0,0,0,0.6)]">
                 {/* Image Container */}
                 <div className="relative h-56 bg-gradient-to-br from-card to-background overflow-hidden">

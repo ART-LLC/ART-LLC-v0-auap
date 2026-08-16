@@ -7,7 +7,7 @@ import {
   UserAuthorizationRequiredError,
   type ConnectTokenSubject,
 } from '@vercel/connect'
-import { PRODUCTS_CATALOG, type CatalogProduct } from '@/lib/products-catalog'
+import { PRODUCTS_CATALOG, getProductPartsUrl, type CatalogProduct } from '@/lib/products-catalog'
 
 const CONNECTOR_UID = 'google/google-merchant-center-product-sync'
 const MERCHANT_ACCOUNT_ID = '5828832429'
@@ -51,7 +51,7 @@ function productInput(product: CatalogProduct, origin: string) {
     attributes: {
       title: product.name,
       description: product.description,
-      link: `${origin}/products/${product.id}`,
+      link: `${origin}${getProductPartsUrl(product)}`,
       imageLink: `${origin}${product.image}`,
       availability: product.inStock ? 'in stock' : 'out of stock',
       condition: 'used',

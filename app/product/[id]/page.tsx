@@ -159,7 +159,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
             <h2 className="text-2xl font-black text-foreground mb-6">Related Parts</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {related.map((rp) => (
-                <Link key={rp.id} href={`/product/${rp.id}`}>
+                <Link key={rp.id} href={`/parts/${rp.name.toLowerCase().includes('transmission') ? 'transmissions' : rp.name.toLowerCase().includes('radiator') ? 'cooling' : 'electrical'}/${rp.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
                   <Card className="hover:shadow-lg transition-shadow duration-200 overflow-hidden h-full">
                     <div className="relative w-full h-40 bg-muted">
                       <Image src={rp.image || "/placeholder.svg"} alt={rp.name} fill className="object-cover" />

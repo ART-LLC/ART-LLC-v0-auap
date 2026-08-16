@@ -309,7 +309,7 @@ export default function ShopPage() {
               {filteredProducts.length > 0 ? (
                 <div className={viewType === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6' : 'space-y-4'}>
                   {filteredProducts.map(product => (
-                    <Link key={product.id} href={`/product/${product.id}`}>
+                    <Link key={product.id} href={`/parts/${product.category.toLowerCase()}/${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
                       <div className={`group cursor-pointer glass-card rounded-lg overflow-hidden transition-all hover:border-primary/30 hover:shadow-lg ${
                         viewType === 'list' ? 'flex gap-4 p-4' : ''
                       }`}>
