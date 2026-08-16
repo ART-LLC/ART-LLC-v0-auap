@@ -14,6 +14,13 @@ export interface CatalogProduct {
   fits: string
   sku: string
   inStock: boolean
+  brand?: string
+  fitment?: string
+  imageGallery?: string[]
+  mpn?: string
+  gtin?: string
+  supplier?: string
+  sourceUrl?: string
 }
 
 export const PRODUCTS_CATALOG: CatalogProduct[] = [

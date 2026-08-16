@@ -1,10 +1,10 @@
 'use client'
 
-import { useEffect, useMemo, useState, type FormEvent } from 'react'
+import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react'
 import { getProductPartsUrl } from '@/lib/products-catalog'
 
 type Product = {
-  id: string; name: string; category: string; price: string; sku: string; inStock: boolean
+  id: string; name: string; brand: string; category: string; price: string; sku: string; inStock: boolean
   mileage: string; condition: string; warranty: string; description: string; fits: string
   image: string; updatedAt: string
 }
@@ -17,6 +17,8 @@ export default function MerchantCenterPage() {
   const [status, setStatus] = useState('Loading catalog…')
   const [busy, setBusy] = useState(false)
   const [query, setQuery] = useState('')
+  const [brandFilter, setBrandFilter] = useState('all')
+  const importInput = useRef<HTMLInputElement>(null)
 
   async function load() {
     const response = await fetch('/api/admin/merchant-center/catalog')
@@ -28,7 +30,8 @@ export default function MerchantCenterPage() {
 
   useEffect(() => { load().catch((error) => setStatus(error.message)) }, [])
 
-  const filtered = useMemo(() => products.filter((product) => `${product.name} ${product.sku} ${product.category}`.toLowerCase().includes(query.toLowerCase())), [products, query])
+  const brands = useMemo(() => Array.from(new Set(products.map((product) => product.brand).filter(Boolean))).sort(), [products])
+  const filtered = useMemo(() => products.filter((product) => (brandFilter === 'all' || product.brand === brandFilter) && `${product.name} ${product.sku} ${product.category} ${product.brand}`.toLowerCase().includes(query.toLowerCase())), [products, query, brandFilter])
 
   function edit(product: Product) { setForm({ ...emptyForm, ...product, price: String(product.price) }) }
 
@@ -67,6 +70,24 @@ export default function MerchantCenterPage() {
     } catch (error) { setStatus(error instanceof Error ? error.message : 'Delete failed') } finally { setBusy(false) }
   }
 
+  async function importWorkbook(file: File) {
+    setBusy(true)
+    try {
+      const data = new FormData()
+      data.append('file', file)
+      const response = await fetch('/api/admin/merchant-center/import', { method: 'POST', body: data })
+      const result = await response.json()
+      if (!response.ok) throw new Error(result.error || 'Import failed')
+      await load()
+      setStatus(`Imported ${result.imported} products from ${result.sheet}. Review the catalog before syncing.`)
+    } catch (error) {
+      setStatus(error instanceof Error ? error.message : 'Import failed')
+    } finally {
+      setBusy(false)
+      if (importInput.current) importInput.current.value = ''
+    }
+  }
+
   function downloadSpreadsheet() {
     const headers = ['ID', 'Product Name', 'Category', 'Price', 'Price Display', 'SKU', 'In Stock', 'Mileage', 'Condition', 'Warranty', 'Rating', 'Reviews', 'Fits', 'Description', 'Image URL', 'Canonical URL', 'Updated At']
     const escape = (value: unknown) => `"${String(value ?? '').replace(/"/g, '""')}"`
@@ -102,11 +123,11 @@ export default function MerchantCenterPage() {
   const input = (key: keyof typeof emptyForm, label: string, type = 'text') => <label className="flex flex-col gap-1 text-sm"><span className="text-muted-foreground">{label}</span><input required={['name', 'price', 'sku'].includes(key)} type={type} value={String(form[key])} onChange={(event) => setForm({ ...form, [key]: type === 'checkbox' ? event.target.checked : event.target.value })} className="rounded-md border border-border bg-background px-3 py-2 text-foreground outline-none focus:ring-2 focus:ring-primary" /></label>
 
   return <main className="min-h-screen bg-background px-4 py-10 text-foreground sm:px-8"><div className="mx-auto flex max-w-7xl flex-col gap-8">
-    <header className="flex flex-col gap-4 border-b border-border pb-6 sm:flex-row sm:items-end sm:justify-between"><div><p className="font-mono text-xs uppercase tracking-[0.24em] text-primary">Catalog operations</p><h1 className="mt-2 text-balance text-4xl font-bold">Merchant Center portal</h1><p className="mt-2 max-w-2xl leading-6 text-muted-foreground">Manage the full website catalog, canonical parts URLs, and Google Merchant Center account 5828832429 from one source of truth.</p></div><div className="flex flex-wrap gap-3"><button type="button" onClick={downloadSpreadsheet} disabled={!products.length || busy} className="rounded-md border border-border px-5 py-3 text-sm font-semibold text-foreground disabled:opacity-60">Download Excel</button><button type="button" onClick={() => { setForm(emptyForm); setStatus('Fill in the form to add a new product.') }} className="rounded-md border border-border px-5 py-3 text-sm font-semibold text-foreground disabled:opacity-60">New product</button><button type="button" onClick={sync} disabled={busy} className="rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground disabled:opacity-60">{busy ? 'Working…' : 'Sync catalog to Google'}</button></div></header>
+    <header className="flex flex-col gap-4 border-b border-border pb-6 sm:flex-row sm:items-end sm:justify-between"><div><p className="font-mono text-xs uppercase tracking-[0.24em] text-primary">Catalog operations</p><h1 className="mt-2 text-balance text-4xl font-bold">Merchant Center portal</h1><p className="mt-2 max-w-2xl leading-6 text-muted-foreground">Manage the full website catalog, canonical parts URLs, and Google Merchant Center account 5828832429 from one source of truth.</p></div><div className="flex flex-wrap gap-3"><input ref={importInput} type="file" accept=".xlsx" className="hidden" onChange={(event) => { const file = event.target.files?.[0]; if (file) importWorkbook(file) }} /><button type="button" onClick={() => importInput.current?.click()} disabled={busy} className="rounded-md border border-border px-5 py-3 text-sm font-semibold text-foreground disabled:opacity-60">Import XLSX</button><button type="button" onClick={downloadSpreadsheet} disabled={!products.length || busy} className="rounded-md border border-border px-5 py-3 text-sm font-semibold text-foreground disabled:opacity-60">Download Excel</button><button type="button" onClick={() => { setForm(emptyForm); setStatus('Fill in the form to add a new product.') }} className="rounded-md border border-border px-5 py-3 text-sm font-semibold text-foreground disabled:opacity-60">New product</button><button type="button" onClick={sync} disabled={busy} className="rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground disabled:opacity-60">{busy ? 'Working…' : 'Sync catalog to Google'}</button></div></header>
     <p role="status" aria-live="polite" className="text-sm text-muted-foreground">{status}</p>
     <section className="grid gap-6 lg:grid-cols-[360px_1fr]">
       <form onSubmit={save} className="flex h-fit flex-col gap-4 rounded-lg border border-border bg-card p-5"><div className="flex items-center justify-between"><h2 className="text-lg font-semibold">{form.id ? 'Edit product' : 'New product'}</h2>{form.id && <button type="button" onClick={() => setForm(emptyForm)} className="text-xs text-muted-foreground underline">Cancel</button>}</div>{input('name', 'Product name')}{input('category', 'Category')}{input('price', 'Price', 'number')}{input('sku', 'SKU')}{input('mileage', 'Mileage')}{input('condition', 'Condition')}{input('warranty', 'Warranty')}{input('fits', 'Fits')}{input('description', 'Description')}<label className="flex flex-col gap-1 text-sm"><span className="text-muted-foreground">Product image URL</span><input type="url" value={form.image} onChange={(event) => setForm({ ...form, image: event.target.value })} placeholder="https://…" className="rounded-md border border-border bg-background px-3 py-2 text-foreground outline-none focus:ring-2 focus:ring-primary" /></label><label className="flex flex-col gap-1 text-sm"><span className="text-muted-foreground">Upload image</span><input type="file" accept="image/*" disabled={busy} onChange={(event) => { const file = event.target.files?.[0]; if (file) uploadImage(file) }} className="text-sm text-muted-foreground file:mr-3 file:rounded-md file:border-0 file:bg-primary file:px-3 file:py-2 file:text-primary-foreground" /></label>{form.image && <img src={form.image} alt="Product preview" className="aspect-square w-full rounded-md border border-border object-cover" /> }<label className="flex items-center gap-2 text-sm"><input type="checkbox" checked={form.inStock} onChange={(event) => setForm({ ...form, inStock: event.target.checked })} /> In stock / publishable</label><button disabled={busy} className="rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground disabled:opacity-50">{form.id ? 'Save product changes' : 'Create product'}</button></form>
-      <div className="flex flex-col gap-4"><input aria-label="Search catalog" placeholder="Search by product, SKU, or category" value={query} onChange={(event) => setQuery(event.target.value)} className="rounded-md border border-border bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-primary" /><div className="overflow-x-auto rounded-lg border border-border bg-card"><table className="w-full min-w-[760px] text-left text-sm"><thead className="border-b border-border text-xs uppercase tracking-wider text-muted-foreground"><tr><th className="p-4">Product</th><th className="p-4">SKU</th><th className="p-4">Price</th><th className="p-4">Status</th><th className="p-4">Actions</th></tr></thead><tbody>{filtered.map((product) => <tr key={product.id} className="border-b border-border last:border-0"><td className="p-4"><div className="font-semibold">{product.name}</div><div className="mt-1 text-xs text-muted-foreground">{getProductPartsUrl(product)}</div></td><td className="p-4 font-mono text-xs">{product.sku}</td><td className="p-4">${Number(product.price).toLocaleString()}</td><td className="p-4"><span className={product.inStock ? 'text-emerald-500' : 'text-muted-foreground'}>{product.inStock ? 'In stock' : 'Out of stock'}</span></td><td className="p-4"><div className="flex gap-3"><button type="button" onClick={() => edit(product)} className="text-primary underline">Edit</button><button type="button" onClick={() => remove(product.id, product.name)} className="text-destructive underline">Delete</button></div></td></tr>)}</tbody></table></div></div>
+      <div className="flex flex-col gap-4"><div className="flex flex-col gap-3 sm:flex-row"><input aria-label="Search catalog" placeholder="Search by product, SKU, category, or brand" value={query} onChange={(event) => setQuery(event.target.value)} className="flex-1 rounded-md border border-border bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-primary" /><select aria-label="Filter by brand" value={brandFilter} onChange={(event) => setBrandFilter(event.target.value)} className="rounded-md border border-border bg-card px-4 py-3 text-sm text-foreground outline-none focus:ring-2 focus:ring-primary"><option value="all">All brands</option>{brands.map((brand) => <option key={brand} value={brand}>{brand}</option>)}</select></div><div className="overflow-x-auto rounded-lg border border-border bg-card"><table className="w-full min-w-[760px] text-left text-sm"><thead className="border-b border-border text-xs uppercase tracking-wider text-muted-foreground"><tr><th className="p-4">Product</th><th className="p-4">SKU</th><th className="p-4">Price</th><th className="p-4">Status</th><th className="p-4">Actions</th></tr></thead><tbody>{filtered.map((product) => <tr key={product.id} className="border-b border-border last:border-0"><td className="p-4"><div className="font-semibold">{product.name}</div><div className="mt-1 text-xs text-muted-foreground">{getProductPartsUrl(product)}</div></td><td className="p-4 font-mono text-xs">{product.sku}</td><td className="p-4">${Number(product.price).toLocaleString()}</td><td className="p-4"><span className={product.inStock ? 'text-emerald-500' : 'text-muted-foreground'}>{product.inStock ? 'In stock' : 'Out of stock'}</span></td><td className="p-4"><div className="flex gap-3"><button type="button" onClick={() => edit(product)} className="text-primary underline">Edit</button><button type="button" onClick={() => remove(product.id, product.name)} className="text-destructive underline">Delete</button></div></td></tr>)}</tbody></table></div></div>
     </section>
   </div></main>
 }
