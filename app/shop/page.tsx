@@ -12,6 +12,7 @@ import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-st
 import brandManifest from '@/data/brands/manifest.json'
 import { BRAND_COLORS, getBrandLogoUrl } from '@/lib/data'
 import { getPartsSearchUrl } from '@/lib/parts-search-routing'
+import { getProductPartsUrl } from '@/lib/products-catalog'
 
 const INVENTORY_BRANDS = brandManifest.filter((brand) => brand.count > 0)
 
@@ -318,42 +319,21 @@ export default function ShopPage() {
 
               {/* Products */}
               {filteredProducts.length > 0 ? (
-                <div className={viewType === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6' : 'space-y-4'}>
-                  {filteredProducts.map(product => (
-                    <Link key={product.id} href={`/parts/${product.category.toLowerCase()}/${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
-                      <div className={`group cursor-pointer glass-card rounded-lg overflow-hidden transition-all hover:border-primary/30 hover:shadow-lg ${
-                        viewType === 'list' ? 'flex gap-4 p-4' : ''
-                      }`}>
-                        {/* Image */}
-                        <div className={`relative ${viewType === 'list' ? 'w-32 h-32 flex-shrink-0' : 'h-48'} bg-gradient-to-br from-card to-background overflow-hidden`}>
-                          <Image
-                            src={product.image}
-                            alt={product.name}
-                            fill
-                            className="object-cover group-hover:scale-110 transition-transform duration-500"
-                          />
-                        </div>
-
-                        {/* Content */}
-                        <div className={viewType === 'list' ? 'flex-1 flex flex-col justify-between' : 'p-4'}>
-                          <div>
-                            <div className="text-[11px] font-bold text-primary mb-2 uppercase tracking-wider">{product.category}</div>
-                            <h3 className="font-bold text-foreground text-sm leading-tight mb-2 line-clamp-2">
-                              {product.name}
-                            </h3>
-                            <div className="text-xs text-muted-foreground space-y-1">
-                              <div>Mileage: {product.mileage} miles</div>
-                              <div>Condition: {product.condition}</div>
-                              <div>Warranty: {product.warranty}</div>
+                <div className="space-y-10">
+                  {Object.entries(groupedProducts).sort(([a], [b]) => a.localeCompare(b)).map(([brand, brandProducts]) => (
+                    <section key={brand} aria-labelledby={`brand-${makeToSlug(brand)}`}>
+                      <div className="mb-4 flex items-center justify-between border-b border-border/30 pb-3"><h2 id={`brand-${makeToSlug(brand)}`} className="text-lg font-black uppercase tracking-wider text-foreground">{brand}</h2><span className="text-xs text-muted-foreground">{brandProducts.length} products</span></div>
+                      <div className={viewType === 'grid' ? 'grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3' : 'space-y-4'}>
+                        {brandProducts.map((product) => (
+                          <Link key={product.id} href={getProductPartsUrl(product)}>
+                            <div className={`group cursor-pointer glass-card overflow-hidden rounded-lg transition-all hover:border-primary/30 hover:shadow-lg ${viewType === 'list' ? 'flex gap-4 p-4' : ''}`}>
+                              <div className={`relative ${viewType === 'list' ? 'h-32 w-32 flex-shrink-0' : 'h-48'} overflow-hidden bg-gradient-to-br from-card to-background`}><Image src={product.image} alt={product.name} fill className="object-cover transition-transform duration-500 group-hover:scale-110" /></div>
+                              <div className={viewType === 'list' ? 'flex flex-1 flex-col justify-between' : 'p-4'}><div><div className="mb-2 text-[11px] font-bold uppercase tracking-wider text-primary">{product.category}</div><h3 className="mb-2 line-clamp-2 text-sm font-bold leading-tight text-foreground">{product.name}</h3><div className="space-y-1 text-xs text-muted-foreground"><div>Condition: {product.condition}</div><div>Warranty: {product.warranty}</div></div></div><div className="mt-4 flex items-center justify-between"><span className="text-lg font-black text-primary">{product.price}</span><div className="text-xs text-muted-foreground">Rating {product.rating}</div></div></div>
                             </div>
-                          </div>
-                          <div className="flex items-center justify-between mt-4">
-                            <span className="text-lg font-black text-primary">{product.price}</span>
-                            <div className="text-xs text-muted-foreground">⭐ {product.rating}</div>
-                          </div>
-                        </div>
+                          </Link>
+                        ))}
                       </div>
-                    </Link>
+                    </section>
                   ))}
                 </div>
               ) : (
