@@ -207,6 +207,26 @@ export const comparisonHistory = pgTable('comparison_history', {
 })
 
 // Saved comparisons — customers can save comparison snapshots
+export const products = pgTable('products', {
+  id: text('id').primaryKey(),
+  name: text('name').notNull(),
+  category: text('category').notNull(),
+  price: decimal('price', { precision: 10, scale: 2 }).notNull(),
+  priceDisplay: text('priceDisplay').notNull(),
+  mileage: text('mileage').notNull(),
+  condition: text('condition').notNull(),
+  warranty: text('warranty').notNull(),
+  rating: decimal('rating', { precision: 3, scale: 2 }).notNull(),
+  reviews: integer('reviews').notNull().default(0),
+  image: text('image').notNull(),
+  description: text('description').notNull(),
+  fits: text('fits').notNull(),
+  sku: text('sku').notNull().unique(),
+  inStock: boolean('inStock').notNull().default(true),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
 export const savedComparisons = pgTable('saved_comparisons', {
   id: text('id').primaryKey(),
   userId: text('userId').notNull(),

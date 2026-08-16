@@ -8,6 +8,8 @@ import {
   type ConnectTokenSubject,
 } from '@vercel/connect'
 import { PRODUCTS_CATALOG, getProductPartsUrl, type CatalogProduct } from '@/lib/products-catalog'
+import { db } from '@/lib/db'
+import { products as productRows } from '@/lib/db/schema'
 
 const CONNECTOR_UID = 'google/google-merchant-center-product-sync'
 const MERCHANT_ACCOUNT_ID = '5828832429'
@@ -142,7 +144,15 @@ export async function syncCatalogToMerchantCenter(userId: string): Promise<Merch
     }
   }
 
-  for (const product of PRODUCTS_CATALOG.filter((item) => item.inStock)) {
+  const persisted = await db.select().from(productRows)
+  const catalog: CatalogProduct[] = persisted.length ? persisted.map((product) => ({
+    id: Number(product.id), name: product.name, category: product.category, price: Number(product.price),
+    priceDisplay: product.priceDisplay, mileage: product.mileage, condition: product.condition,
+    warranty: product.warranty, rating: Number(product.rating), reviews: product.reviews, image: product.image,
+    description: product.description, fits: product.fits, sku: product.sku, inStock: product.inStock,
+  })) : PRODUCTS_CATALOG
+
+  for (const product of catalog.filter((item) => item.inStock)) {
     const response = await fetch(
       `${PRODUCTS_API}/accounts/${MERCHANT_ACCOUNT_ID}/productInputs:insert?dataSource=${encodeURIComponent(dataSource)}`,
       {
