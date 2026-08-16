@@ -10,7 +10,7 @@ import {
 import { getProductPartsUrl, type CatalogProduct } from '@/lib/products-catalog'
 import { getCatalogProducts } from '@/lib/catalog-source'
 
-const CONNECTOR_UID = 'google/google-merchant-center-product-sync'
+const CONNECTOR_UID = 'google/google-merchant-center-product-sync-2'
 const MERCHANT_ACCOUNT_ID = '5828832429'
 const PRODUCTS_API = 'https://merchantapi.googleapis.com/products/v1beta'
 const DATASOURCES_API = 'https://merchantapi.googleapis.com/datasources/v1beta'
