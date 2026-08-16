@@ -23,6 +23,7 @@ export default function MerchantCenterPage() {
   const [bulkMode, setBulkMode] = useState<'set' | 'amount' | 'percent'>('set')
   const [bulkImage, setBulkImage] = useState('')
   const importInput = useRef<HTMLInputElement>(null)
+  const bulkImageInput = useRef<HTMLInputElement>(null)
 
   async function load() {
     const response = await fetch('/api/admin/merchant-center/catalog')
@@ -120,6 +121,21 @@ export default function MerchantCenterPage() {
       const result = await response.json(); if (!response.ok) throw new Error(result.error)
       await load(); setSelectedIds([]); setBulkPrice(''); setStatus(`Updated pricing for ${result.updated} products.`)
     } catch (error) { setStatus(error instanceof Error ? error.message : 'Bulk pricing failed') } finally { setBusy(false) }
+  }
+
+  async function bulkUploadImages(files: FileList) {
+    if (!selectedIds.length) { setStatus('Select products before uploading multiple images.'); return }
+    setBusy(true)
+    try {
+      const data = new FormData()
+      Array.from(files).forEach((file) => data.append('files', file))
+      const uploadResponse = await fetch('/api/admin/merchant-center/bulk-upload', { method: 'POST', body: data })
+      const uploadResult = await uploadResponse.json()
+      if (!uploadResponse.ok) throw new Error(uploadResult.error || 'Bulk upload failed')
+      const pairs = selectedIds.slice(0, uploadResult.urls.length)
+      await Promise.all(pairs.map((id, index) => fetch('/api/admin/merchant-center/bulk-image', { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ids: [id], image: uploadResult.urls[index] }) })) )
+      await load(); setSelectedIds([]); setStatus(`Uploaded and assigned ${pairs.length} images.`)
+    } catch (error) { setStatus(error instanceof Error ? error.message : 'Bulk upload failed') } finally { setBusy(false); if (bulkImageInput.current) bulkImageInput.current.value = '' }
   }
 
   async function bulkImageUpdate() {
