@@ -6,10 +6,10 @@ import { getProductPartsUrl } from '@/lib/products-catalog'
 type Product = {
   id: string; name: string; brand: string; category: string; price: string; sku: string; inStock: boolean
   mileage: string; condition: string; warranty: string; description: string; fits: string
-  image: string; updatedAt: string
+  image: string; imageGallery?: string[]; updatedAt: string
 }
 
-const emptyForm = { id: '', name: '', category: 'Engines', price: '', sku: '', inStock: true, mileage: '', condition: 'Used', warranty: '', description: '', fits: '', image: '' }
+const emptyForm = { id: '', name: '', brand: '', category: 'Engines', price: '', sku: '', inStock: true, mileage: '', condition: 'Used', warranty: '', description: '', fits: '', image: '', imageGallery: [] as string[] }
 
 export default function MerchantCenterPage() {
   const [products, setProducts] = useState<Product[]>([])

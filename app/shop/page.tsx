@@ -62,6 +62,7 @@ function BrandLogo({ brand, size = 'sm' }: { brand: string; size?: 'sm' | 'lg' }
 type ShopProduct = {
   id: string | number
   name: string
+  brand: string
   category: string
   price: string
   mileage: string
@@ -75,6 +76,7 @@ type ShopProduct = {
 type CatalogApiProduct = {
   id: string | number
   name: string
+  brand?: string
   category: string
   priceDisplay: string
   mileage: string
@@ -87,12 +89,15 @@ type CatalogApiProduct = {
 
 const fetcher = (url: string) => fetch(url).then((response) => response.json())
 
+const PER_BRAND_LIMIT = 12
+
 export default function ShopPage() {
   const router = useRouter()
   const { data } = useSWR<{ products: CatalogApiProduct[] }>('/api/catalog', fetcher)
   const SHOP_PRODUCTS: ShopProduct[] = (data?.products ?? []).map((product) => ({
     id: product.id,
     name: product.name,
+    brand: product.brand || 'Other',
     category: product.category,
     price: product.priceDisplay,
     mileage: product.mileage.replace(/\s*miles$/i, ''),
@@ -104,22 +109,37 @@ export default function ShopPage() {
   }))
   const [viewType, setViewType] = useState<'grid' | 'list'>('grid')
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
-  const [priceRange, setPriceRange] = useState([0, 2000])
+  const [selectedBrand, setSelectedBrand] = useState<string | null>(null)
+  const [priceRange, setPriceRange] = useState([0, 10000])
   const [searchTerm, setSearchTerm] = useState('')
 
   const categories = ['Engines', 'Transmissions', 'Electrical', 'Cooling', 'Drivetrain']
+  const shopBrands = Array.from(new Set(SHOP_PRODUCTS.map((product) => product.brand))).sort((a, b) => a.localeCompare(b))
 
   const handleSearch = (filters: SearchFilters) => {
     router.push(getPartsSearchUrl(filters))
   }
 
+  const parsePrice = (price: string) => parseInt(price.replace(/[^0-9]/g, ''), 10) || 0
+
   const filteredProducts = SHOP_PRODUCTS.filter(product => {
     const matchesCategory = !selectedCategory || product.category === selectedCategory
-    const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase())
-    const matchesPrice = parseInt(product.price.replace('$', '').replace(',', '')) >= priceRange[0] && 
-                        parseInt(product.price.replace('$', '').replace(',', '')) <= priceRange[1]
-    return matchesCategory && matchesSearch && matchesPrice
+    const matchesBrand = !selectedBrand || product.brand === selectedBrand
+    const query = searchTerm.trim().toLowerCase()
+    const matchesSearch = !query || `${product.name} ${product.brand} ${product.category} ${product.condition}`.toLowerCase().includes(query)
+    const price = parsePrice(product.price)
+    const matchesPrice = price >= priceRange[0] && price <= priceRange[1]
+    return matchesCategory && matchesBrand && matchesSearch && matchesPrice
   })
+
+  const productsByBrand = Array.from(
+    filteredProducts.reduce((groups, product) => {
+      const key = product.brand || 'Other'
+      if (!groups.has(key)) groups.set(key, [])
+      groups.get(key)!.push(product)
+      return groups
+    }, new Map<string, ShopProduct[]>()),
+  ).sort((a, b) => a[0].localeCompare(b[0]))
 
   return (
     <>
@@ -244,6 +264,21 @@ export default function ShopPage() {
                   </div>
                 </div>
 
+                {/* Brands */}
+                <div>
+                  <label className="text-sm font-bold text-foreground uppercase tracking-wider mb-3 block">Brand</label>
+                  <select
+                    value={selectedBrand ?? ''}
+                    onChange={(e) => setSelectedBrand(e.target.value || null)}
+                    className="w-full px-3 py-2.5 bg-card border border-border/50 rounded-lg text-foreground text-sm focus:outline-none focus:border-primary/50"
+                  >
+                    <option value="">All Brands</option>
+                    {shopBrands.map((brand) => (
+                      <option key={brand} value={brand}>{brand}</option>
+                    ))}
+                  </select>
+                </div>
+
                 {/* Price Range */}
                 <div>
                   <label className="text-sm font-bold text-foreground uppercase tracking-wider mb-3 block">Price Range</label>
@@ -251,14 +286,15 @@ export default function ShopPage() {
                     <input
                       type="range"
                       min="0"
-                      max="2000"
+                      max="10000"
+                      step="50"
                       value={priceRange[1]}
                       onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
                       className="w-full"
                     />
                     <div className="flex justify-between text-xs text-muted-foreground">
-                      <span>${priceRange[0]}</span>
-                      <span>${priceRange[1]}</span>
+                      <span>${priceRange[0].toLocaleString()}</span>
+                      <span>${priceRange[1].toLocaleString()}</span>
                     </div>
                   </div>
                 </div>
@@ -296,44 +332,57 @@ export default function ShopPage() {
                 </div>
               </div>
 
-              {/* Products */}
+              {/* Products grouped by brand */}
               {filteredProducts.length > 0 ? (
-                <div className={viewType === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6' : 'space-y-4'}>
-                  {filteredProducts.map(product => (
-                    <Link key={product.id} href={`/parts/${product.category.toLowerCase()}/${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
-                      <div className={`group cursor-pointer glass-card rounded-lg overflow-hidden transition-all hover:border-primary/30 hover:shadow-lg ${
-                        viewType === 'list' ? 'flex gap-4 p-4' : ''
-                      }`}>
-                        {/* Image */}
-                        <div className={`relative ${viewType === 'list' ? 'w-32 h-32 flex-shrink-0' : 'h-48'} bg-gradient-to-br from-card to-background overflow-hidden`}>
-                          <Image
-                            src={product.image}
-                            alt={product.name}
-                            fill
-                            className="object-cover group-hover:scale-110 transition-transform duration-500"
-                          />
-                        </div>
-
-                        {/* Content */}
-                        <div className={viewType === 'list' ? 'flex-1 flex flex-col justify-between' : 'p-4'}>
-                          <div>
-                            <div className="text-[11px] font-bold text-primary mb-2 uppercase tracking-wider">{product.category}</div>
-                            <h3 className="font-bold text-foreground text-sm leading-tight mb-2 line-clamp-2">
-                              {product.name}
-                            </h3>
-                            <div className="text-xs text-muted-foreground space-y-1">
-                              <div>Mileage: {product.mileage} miles</div>
-                              <div>Condition: {product.condition}</div>
-                              <div>Warranty: {product.warranty}</div>
-                            </div>
-                          </div>
-                          <div className="flex items-center justify-between mt-4">
-                            <span className="text-lg font-black text-primary">{product.price}</span>
-                            <div className="text-xs text-muted-foreground">⭐ {product.rating}</div>
-                          </div>
-                        </div>
+                <div className="space-y-12">
+                  {productsByBrand.map(([brand, items]) => (
+                    <section key={brand} aria-label={`${brand} products`}>
+                      <div className="flex items-center justify-between mb-4 pb-2 border-b border-border/20">
+                        <h3 className="text-lg font-black uppercase tracking-wider text-foreground">{brand}</h3>
+                        <span className="text-xs font-bold text-muted-foreground">{items.length} {items.length === 1 ? 'product' : 'products'}</span>
                       </div>
-                    </Link>
+                      <div className={viewType === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6' : 'space-y-4'}>
+                        {items.slice(0, PER_BRAND_LIMIT).map(product => (
+                          <Link key={product.id} href={`/parts/${product.category.toLowerCase()}/${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
+                            <div className={`group cursor-pointer glass-card rounded-lg overflow-hidden transition-all hover:border-primary/30 hover:shadow-lg ${
+                              viewType === 'list' ? 'flex gap-4 p-4' : ''
+                            }`}>
+                              {/* Image */}
+                              <div className={`relative ${viewType === 'list' ? 'w-32 h-32 flex-shrink-0' : 'h-48'} bg-gradient-to-br from-card to-background overflow-hidden`}>
+                                <Image
+                                  src={product.image}
+                                  alt={product.name}
+                                  fill
+                                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                />
+                              </div>
+
+                              {/* Content */}
+                              <div className={viewType === 'list' ? 'flex-1 flex flex-col justify-between' : 'p-4'}>
+                                <div>
+                                  <div className="text-[11px] font-bold text-primary mb-2 uppercase tracking-wider">{product.category}</div>
+                                  <h3 className="font-bold text-foreground text-sm leading-tight mb-2 line-clamp-2">
+                                    {product.name}
+                                  </h3>
+                                  <div className="text-xs text-muted-foreground space-y-1">
+                                    <div>Mileage: {product.mileage} miles</div>
+                                    <div>Condition: {product.condition}</div>
+                                    <div>Warranty: {product.warranty}</div>
+                                  </div>
+                                </div>
+                                <div className="flex items-center justify-between mt-4">
+                                  <span className="text-lg font-black text-primary">{product.price}</span>
+                                  <div className="text-xs text-muted-foreground">⭐ {product.rating}</div>
+                                </div>
+                              </div>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                      {items.length > PER_BRAND_LIMIT && (
+                        <p className="mt-4 text-sm text-muted-foreground">Showing {PER_BRAND_LIMIT} of {items.length} {brand} products. Refine your search to see more.</p>
+                      )}
+                    </section>
                   ))}
                 </div>
               ) : (
