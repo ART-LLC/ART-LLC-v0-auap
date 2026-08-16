@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server'
-import { and, asc, eq } from 'drizzle-orm'
+import { asc, eq } from 'drizzle-orm'
 import { headers } from 'next/headers'
 import { auth } from '@/lib/auth'
 import { db } from '@/lib/db'
-import { products } from '@/lib/db/schema'
-import { PRODUCTS_CATALOG } from '@/lib/products-catalog'
+import { catalogProducts as products } from '@/lib/db/schema'
+import { getCatalogProducts } from '@/lib/catalog-source'
 
 async function requireAdmin() {
   const session = await auth.api.getSession({ headers: await headers() })
@@ -13,21 +13,10 @@ async function requireAdmin() {
   return session.user
 }
 
-async function seedIfEmpty() {
-  const existing = await db.select({ id: products.id }).from(products).limit(1)
-  if (existing.length) return
-  await db.insert(products).values(PRODUCTS_CATALOG.map((product) => ({
-    id: String(product.id), name: product.name, category: product.category,
-    price: String(product.price), priceDisplay: product.priceDisplay, mileage: product.mileage,
-    condition: product.condition, warranty: product.warranty, rating: String(product.rating),
-    reviews: product.reviews, image: product.image, description: product.description,
-    fits: product.fits, sku: product.sku, inStock: product.inStock,
-  })))
-}
-
 export async function GET() {
   if (!(await requireAdmin())) return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
-  await seedIfEmpty()
+  // Seeds the products table from static data on first read.
+  await getCatalogProducts()
   const rows = await db.select().from(products).orderBy(asc(products.category), asc(products.name))
   return NextResponse.json({ products: rows })
 }

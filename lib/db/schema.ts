@@ -206,8 +206,10 @@ export const comparisonHistory = pgTable('comparison_history', {
   createdAt: timestamp('createdAt').notNull().defaultNow(),
 })
 
-// Saved comparisons — customers can save comparison snapshots
-export const products = pgTable('products', {
+// Merchant Center portal catalog — the source of truth for the website
+// storefront and Google Merchant Center sync. Uses its own table so it does
+// not collide with the separate inventory `products` table.
+export const catalogProducts = pgTable('catalog_products', {
   id: text('id').primaryKey(),
   name: text('name').notNull(),
   category: text('category').notNull(),
