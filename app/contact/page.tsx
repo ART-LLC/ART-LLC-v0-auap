@@ -5,7 +5,7 @@ import { BrandLogosSection } from "@/components/brand-logos"
 import { QuoteForm } from "@/components/quote-form"
 import { PageHero } from "@/components/page-hero"
 import Image from "next/image"
-import { Phone, MapPin, Clock } from "lucide-react"
+import { Phone, MapPin, Clock, ExternalLink } from "lucide-react"
 
 export const metadata = {
   title: "Contact Us - AUAPW LLC",
@@ -56,6 +56,21 @@ export default function ContactPage() {
                 <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mb-1.5">Prefer to Call?</p>
                 <a href="tel:8888548681" className="text-2xl font-bold text-foreground block mb-1">(888) 854-8681</a>
                 <p className="text-[11px] text-muted-foreground">Mon-Sat 8am-6pm PST</p>
+              </div>
+
+              <div className="glass-card rounded-sm p-6">
+                <div className="metal-line mb-5" />
+                <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mb-2">Help Others Find Us</p>
+                <p className="text-sm leading-6 text-muted-foreground mb-4">Reviews build trust and help our Business Profile stand out to customers on Search and Maps.</p>
+                <a
+                  href="https://g.page/r/CclCaJLOX5cjEBM/review"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-sm bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  Leave a Google review
+                  <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                </a>
               </div>
             </div>
 
