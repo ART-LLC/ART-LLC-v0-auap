@@ -17,22 +17,42 @@ import { PartsHistory } from '@/components/products/parts-history'
 import { AppleStylePartsSearch, type SearchFilters } from '@/components/apple-style-parts-search'
 import { MileagePriceSelector } from '@/components/acura/mileage-price-selector'
 import { SeoBacklinks } from '@/components/seo-backlinks'
-import { getProductById, getRelatedProducts } from '@/lib/products-catalog'
+import type { CatalogProduct } from '@/lib/products-catalog'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight } from 'lucide-react'
+import useSWR from 'swr'
 
 import { getPartsSearchUrl } from '@/lib/parts-search-routing'
+
+const fetcher = (url: string) => fetch(url).then((res) => res.json())
+
 export default function ProductPage({ params }: { params: Promise<{ id: string }> }) {
   const router = useRouter()
   const { id } = use(params)
-  const product = getProductById(Number(id))
+  // Read the live portal catalog so admin edits/deletes are reflected here.
+  const { data, isLoading } = useSWR<{ product: CatalogProduct; related: CatalogProduct[] }>(
+    `/api/catalog/${id}`,
+    fetcher,
+  )
+  const product = data?.product
   // Price of the mileage tier the shopper selected (null = default medium tier).
   const [selectedPrice, setSelectedPrice] = useState<number | null>(null)
+
+  if (isLoading) {
+    return (
+      <>
+        <Navbar />
+        <main className="flex min-h-screen items-center justify-center pt-24">
+          <p className="text-muted-foreground">Loading product…</p>
+        </main>
+      </>
+    )
+  }
 
   if (!product) {
     notFound()
   }
 
-  const related = getRelatedProducts(product)
+  const related = data?.related ?? []
 
   const handleSearch = (filters: SearchFilters) => {
     router.push(getPartsSearchUrl(filters))

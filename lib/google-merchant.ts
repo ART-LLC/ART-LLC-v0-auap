@@ -7,9 +7,8 @@ import {
   UserAuthorizationRequiredError,
   type ConnectTokenSubject,
 } from '@vercel/connect'
-import { PRODUCTS_CATALOG, getProductPartsUrl, type CatalogProduct } from '@/lib/products-catalog'
-import { db } from '@/lib/db'
-import { products as productRows } from '@/lib/db/schema'
+import { getProductPartsUrl, type CatalogProduct } from '@/lib/products-catalog'
+import { getCatalogProducts } from '@/lib/catalog-source'
 
 const CONNECTOR_UID = 'google/google-merchant-center-product-sync'
 const MERCHANT_ACCOUNT_ID = '5828832429'
@@ -20,6 +19,7 @@ const DATA_SOURCE_NAME = 'AUAPW Website Catalog'
 
 export type MerchantSyncResult = {
   synced: number
+  removed: number
   failed: Array<{ sku: string; error: string }>
   authorizationUrl?: string
   prerequisite?: string
@@ -123,12 +123,38 @@ async function resolvePrimaryDataSource(token: string): Promise<string> {
   return created.name
 }
 
+/**
+ * List every product currently in the Merchant Center account, following
+ * pagination. Returns a map of offerId (SKU) -> product resource name so we
+ * can delete the ones the portal no longer publishes.
+ */
+async function listMerchantProducts(token: string): Promise<Map<string, string>> {
+  const byOffer = new Map<string, string>()
+  let pageToken: string | undefined
+  do {
+    const url = new URL(`${PRODUCTS_API}/accounts/${MERCHANT_ACCOUNT_ID}/products`)
+    url.searchParams.set('pageSize', '250')
+    if (pageToken) url.searchParams.set('pageToken', pageToken)
+    const response = await fetch(url, { headers: { Authorization: `Bearer ${token}` } })
+    if (!response.ok) break
+    const data = (await response.json()) as {
+      products?: Array<{ name: string; offerId?: string }>
+      nextPageToken?: string
+    }
+    for (const product of data.products ?? []) {
+      if (product.offerId) byOffer.set(product.offerId, product.name)
+    }
+    pageToken = data.nextPageToken
+  } while (pageToken)
+  return byOffer
+}
+
 export async function syncCatalogToMerchantCenter(userId: string): Promise<MerchantSyncResult> {
   const origin = await getOrigin()
   const auth = await resolveToken(userId, origin)
-  if (!auth.token) return { synced: 0, failed: [], authorizationUrl: auth.authorizationUrl }
+  if (!auth.token) return { synced: 0, removed: 0, failed: [], authorizationUrl: auth.authorizationUrl }
 
-  const result: MerchantSyncResult = { synced: 0, failed: [] }
+  const result: MerchantSyncResult = { synced: 0, removed: 0, failed: [] }
 
   let dataSource: string
   try {
@@ -136,6 +162,7 @@ export async function syncCatalogToMerchantCenter(userId: string): Promise<Merch
   } catch (error) {
     return {
       synced: 0,
+      removed: 0,
       failed: [],
       prerequisite:
         error instanceof Error
@@ -144,15 +171,12 @@ export async function syncCatalogToMerchantCenter(userId: string): Promise<Merch
     }
   }
 
-  const persisted = await db.select().from(productRows)
-  const catalog: CatalogProduct[] = persisted.length ? persisted.map((product) => ({
-    id: Number(product.id), name: product.name, category: product.category, price: Number(product.price),
-    priceDisplay: product.priceDisplay, mileage: product.mileage, condition: product.condition,
-    warranty: product.warranty, rating: Number(product.rating), reviews: product.reviews, image: product.image,
-    description: product.description, fits: product.fits, sku: product.sku, inStock: product.inStock,
-  })) : PRODUCTS_CATALOG
+  const catalog: CatalogProduct[] = await getCatalogProducts()
+  const publishable = catalog.filter((item) => item.inStock)
+  const publishableSkus = new Set(publishable.map((item) => item.sku))
 
-  for (const product of catalog.filter((item) => item.inStock)) {
+  // Upsert every in-stock product (insert is an upsert keyed by offerId).
+  for (const product of publishable) {
     const response = await fetch(
       `${PRODUCTS_API}/accounts/${MERCHANT_ACCOUNT_ID}/productInputs:insert?dataSource=${encodeURIComponent(dataSource)}`,
       {
@@ -171,6 +195,29 @@ export async function syncCatalogToMerchantCenter(userId: string): Promise<Merch
       result.failed.push({ sku: product.sku, error: body.slice(0, 500) })
     }
   }
+
+  // Reconcile: remove products from Google that are no longer publishable in
+  // the portal (deleted or marked out of stock).
+  const existing = await listMerchantProducts(auth.token)
+  for (const [offerId, resourceName] of existing) {
+    if (publishableSkus.has(offerId)) continue
+    // Deletes go through the writable productInputs resource with the data source.
+    const productInputName = resourceName.replace('/products/', '/productInputs/')
+    const response = await fetch(
+      `${PRODUCTS_API}/${productInputName}?dataSource=${encodeURIComponent(dataSource)}`,
+      {
+        method: 'DELETE',
+        headers: { Authorization: `Bearer ${auth.token}` },
+      },
+    )
+    if (response.ok || response.status === 404) {
+      result.removed += 1
+    } else {
+      const body = await response.text()
+      result.failed.push({ sku: offerId, error: body.slice(0, 500) })
+    }
+  }
+
   return result
 }
 
