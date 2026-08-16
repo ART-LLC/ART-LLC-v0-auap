@@ -65,7 +65,8 @@ export default async function BrandProductPage({ params }: PageProps) {
   const partTypeHeading = getBrandPartTypeLabel(product)
   const imageSearchUrl = getImageSearchUrl(product.name)
   const fitmentYear = product.year || '1990-Present'
-  const canonicalUrl = product.productUrl || `${SITE_URL}${getBrandProductUrl(brand, product)}`
+  // Always use the internal canonical route so legacy/external product URLs do not leak into the site or structured data.
+  const canonicalUrl = `${SITE_URL}${getBrandProductUrl(brand, product)}`
 
   // Structured data: exact sheet prices as an AggregateOffer across the three
   // mileage tiers (single Offer when the sheet has one price).
