@@ -1,10 +1,17 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function MerchantCenterPage() {
   const [status, setStatus] = useState<string>('Ready to sync')
   const [busy, setBusy] = useState(false)
+
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get('connected') === '1') {
+      setStatus('Google account connected. Click “Sync catalog now” to publish products.')
+      window.history.replaceState(null, '', '/admin/merchant-center')
+    }
+  }, [])
 
   async function sync() {
     setBusy(true)
@@ -13,12 +20,18 @@ export default function MerchantCenterPage() {
       const response = await fetch('/api/admin/merchant-center/sync', { method: 'POST' })
       const result = await response.json()
       if (result.authorizationUrl) {
-        window.location.href = result.authorizationUrl
+        setStatus('Authorize Google Merchant Center in the new tab, then run the sync again.')
+        // Google's consent page blocks framing, so open a new tab when embedded.
+        if (window.self !== window.top) {
+          window.open(result.authorizationUrl, '_blank', 'noopener,noreferrer')
+        } else {
+          window.location.href = result.authorizationUrl
+        }
         return
       }
       if (!response.ok) throw new Error(result.error)
-      setStatus(`${result.synced} products synced${result.failed?.length ? `, ${result.failed.length} failed` : ''}.`)
-      if (result.prerequisite) setStatus(`${result.synced} synced. ${result.prerequisite}`)
+      const base = `${result.synced} product${result.synced === 1 ? '' : 's'} synced${result.failed?.length ? `, ${result.failed.length} failed` : ''}.`
+      setStatus(result.prerequisite ? `${base} ${result.prerequisite}` : base)
     } catch (error) {
       setStatus(error instanceof Error ? error.message : 'Sync failed')
     } finally {

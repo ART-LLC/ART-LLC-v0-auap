@@ -6,6 +6,9 @@ import { syncCatalogToMerchantCenter } from '@/lib/google-merchant'
 export async function POST() {
   const session = await auth.api.getSession({ headers: await headers() })
   if (!session?.user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (process.env.ADMIN_EMAIL && session.user.email !== process.env.ADMIN_EMAIL) {
+    return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
+  }
 
   try {
     const result = await syncCatalogToMerchantCenter(session.user.id)

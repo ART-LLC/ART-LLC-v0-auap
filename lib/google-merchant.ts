@@ -1,16 +1,20 @@
 import 'server-only'
 
-import { getToken, startAuthorization, UserAuthorizationRequiredError } from '@vercel/connect'
-import { PRODUCTS_CATALOG } from '@/lib/products-catalog'
+import { headers } from 'next/headers'
+import {
+  getToken,
+  startAuthorization,
+  UserAuthorizationRequiredError,
+  type ConnectTokenSubject,
+} from '@vercel/connect'
+import { PRODUCTS_CATALOG, type CatalogProduct } from '@/lib/products-catalog'
 
 const CONNECTOR_UID = 'google/google-merchant-center-product-sync'
 const MERCHANT_ACCOUNT_ID = '5828832429'
-const MERCHANT_API = 'https://merchantapi.googleapis.com/products/v1'
-const SITE_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : 'http://localhost:3000'
+const PRODUCTS_API = 'https://merchantapi.googleapis.com/products/v1beta'
+const DATASOURCES_API = 'https://merchantapi.googleapis.com/datasources/v1beta'
+const CONTENT_SCOPE = 'https://www.googleapis.com/auth/content'
+const DATA_SOURCE_NAME = 'AUAPW Website Catalog'
 
 export type MerchantSyncResult = {
   synced: number
@@ -19,11 +23,27 @@ export type MerchantSyncResult = {
   prerequisite?: string
 }
 
-function subject(userId: string) {
-  return { type: 'user' as const, id: userId, issuer: 'better-auth' }
+/**
+ * Resolve an origin that works in production, Vercel previews, and the v0
+ * preview iframe. Used for both provider product links and the Connect
+ * callback URL.
+ */
+async function getOrigin(): Promise<string> {
+  if (process.env.NODE_ENV !== 'production' && process.env.V0_RUNTIME_URL)
+    return process.env.V0_RUNTIME_URL
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL)
+    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`
+  const h = await headers()
+  const host = h.get('x-forwarded-host') ?? h.get('host')
+  return `${h.get('x-forwarded-proto') ?? 'https'}://${host}`
 }
 
-function productInput(product: (typeof PRODUCTS_CATALOG)[number]) {
+function getSubject(userId: string): ConnectTokenSubject {
+  return { type: 'user', id: userId, issuer: 'better-auth' }
+}
+
+function productInput(product: CatalogProduct, origin: string) {
   return {
     offerId: product.sku,
     contentLanguage: 'en',
@@ -31,53 +51,114 @@ function productInput(product: (typeof PRODUCTS_CATALOG)[number]) {
     attributes: {
       title: product.name,
       description: product.description,
-      link: `${SITE_URL}/products/${product.id}`,
-      imageLink: `${SITE_URL}${product.image}`,
+      link: `${origin}/products/${product.id}`,
+      imageLink: `${origin}${product.image}`,
       availability: product.inStock ? 'in stock' : 'out of stock',
       condition: 'used',
       brand: 'AUAPW',
-      price: { amountMicros: String(Math.round(product.price * 1_000_000)), currencyCode: 'USD' },
+      price: {
+        amountMicros: String(Math.round(product.price * 1_000_000)),
+        currencyCode: 'USD',
+      },
       productTypes: [product.category],
       customAttributes: [{ name: 'fits', value: product.fits }],
     },
   }
 }
 
-async function merchantToken(userId: string) {
-  const params = {
-    subject: subject(userId),
-    scopes: ['https://www.googleapis.com/auth/content'],
-  }
-
+async function resolveToken(userId: string, origin: string) {
+  const params = { subject: getSubject(userId), scopes: [CONTENT_SCOPE] }
   try {
     return { token: await getToken(CONNECTOR_UID, params) }
   } catch (error) {
     if (error instanceof UserAuthorizationRequiredError) {
       const authorization = await startAuthorization(CONNECTOR_UID, params, {
-        callbackUrl: `${SITE_URL}/api/admin/merchant-center/callback`,
+        callbackUrl: `${origin}/api/admin/merchant-center/callback`,
       })
-      return { token: null, authorizationUrl: authorization.url }
+      return { token: null as string | null, authorizationUrl: authorization.url }
     }
     throw error
   }
 }
 
+/**
+ * Find an existing primary product data source for the account, or create an
+ * API data source if none exists. Returns the full resource name used as the
+ * `dataSource` query parameter on product inserts.
+ */
+async function resolvePrimaryDataSource(token: string): Promise<string> {
+  const listRes = await fetch(
+    `${DATASOURCES_API}/accounts/${MERCHANT_ACCOUNT_ID}/dataSources`,
+    { headers: { Authorization: `Bearer ${token}` } },
+  )
+  if (listRes.ok) {
+    const data = (await listRes.json()) as {
+      dataSources?: Array<{ name: string; primaryProductDataSource?: unknown }>
+    }
+    const primary = data.dataSources?.find((source) => source.primaryProductDataSource)
+    if (primary?.name) return primary.name
+  }
+
+  const createRes = await fetch(
+    `${DATASOURCES_API}/accounts/${MERCHANT_ACCOUNT_ID}/dataSources`,
+    {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        displayName: DATA_SOURCE_NAME,
+        primaryProductDataSource: {
+          contentLanguage: 'en',
+          feedLabel: 'US',
+          countries: ['US'],
+        },
+      }),
+    },
+  )
+  if (!createRes.ok) {
+    throw new Error(`data source setup failed: ${(await createRes.text()).slice(0, 300)}`)
+  }
+  const created = (await createRes.json()) as { name: string }
+  return created.name
+}
+
 export async function syncCatalogToMerchantCenter(userId: string): Promise<MerchantSyncResult> {
-  const auth = await merchantToken(userId)
+  const origin = await getOrigin()
+  const auth = await resolveToken(userId, origin)
   if (!auth.token) return { synced: 0, failed: [], authorizationUrl: auth.authorizationUrl }
 
   const result: MerchantSyncResult = { synced: 0, failed: [] }
+
+  let dataSource: string
+  try {
+    dataSource = await resolvePrimaryDataSource(auth.token)
+  } catch (error) {
+    return {
+      synced: 0,
+      failed: [],
+      prerequisite:
+        error instanceof Error
+          ? error.message
+          : 'Could not resolve a Merchant Center data source.',
+    }
+  }
+
   for (const product of PRODUCTS_CATALOG.filter((item) => item.inStock)) {
-    const response = await fetch(`${MERCHANT_API}/accounts/${MERCHANT_ACCOUNT_ID}/productInputs:insert`, {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${auth.token}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ productInput: productInput(product), dataSource: 'accounts/5828832429/dataSources/online' }),
-    })
-    if (response.ok) result.synced += 1
-    else {
+    const response = await fetch(
+      `${PRODUCTS_API}/accounts/${MERCHANT_ACCOUNT_ID}/productInputs:insert?dataSource=${encodeURIComponent(dataSource)}`,
+      {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${auth.token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(productInput(product, origin)),
+      },
+    )
+    if (response.ok) {
+      result.synced += 1
+    } else {
       const body = await response.text()
       result.failed.push({ sku: product.sku, error: body.slice(0, 500) })
-      if (response.status === 404 || response.status === 400) result.prerequisite = 'Create or select an online product data source in Merchant Center, then run the sync again.'
     }
   }
   return result
