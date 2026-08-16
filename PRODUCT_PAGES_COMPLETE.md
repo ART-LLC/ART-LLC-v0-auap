@@ -63,7 +63,7 @@ Every product card now includes:
 - **Quantity Selector** (1-10 units)
 - **ADD TO CART** button (Blue) - Adds to persistent cart
 - **BUY NOW** button (Green) - Adds to cart and goes to checkout
-- **Call** button - Initiates phone call to (888) 818-5001
+- **Call** button - Initiates phone call to (877) 840-6741
 - **Message** button - Opens email composer
 - **Quote** button - Redirects to quote form
 - **Details** button (NEW) - Links to individual product page
