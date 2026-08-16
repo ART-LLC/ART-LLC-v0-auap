@@ -491,8 +491,8 @@ export const NAV_LINKS = [
   { label: "Contact",          href: "/contact" },
 ]
 
-export const PHONE_SALES = "1-888-854-8681"
-export const PHONE_DISPLAY = "(888) 854-8681"
+export const PHONE_SALES = "1-877-840-6741"
+export const PHONE_DISPLAY = "(877) 840-6741"
 export const CONTACT_EMAIL = "aupworld@gmail.com"
 export const COMPANY_TAGLINE = "Trusted Partner for Automotive Services and Solutions"
 

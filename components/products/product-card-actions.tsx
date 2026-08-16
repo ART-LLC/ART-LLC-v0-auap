@@ -19,8 +19,8 @@ interface ProductCardActionsProps {
   detailsHref?: string
 }
 
-const PHONE_SALES = '888-854-8681'
-const PHONE_DISPLAY = '(888) 854-8681'
+const PHONE_SALES = '877-840-6741'
+const PHONE_DISPLAY = '(877) 840-6741'
 const CONTACT_EMAIL = 'aupworld@gmail.com'
 
 export function ProductCardActions({
