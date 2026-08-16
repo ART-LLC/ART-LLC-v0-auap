@@ -30,9 +30,9 @@ export async function POST(request: Request) {
   const body = await request.json()
   if (!body.name || !body.category || !body.sku || Number(body.price) <= 0) return NextResponse.json({ error: 'Name, category, SKU, and a positive price are required.' }, { status: 400 })
   const [created] = await db.insert(products).values({
-    id: crypto.randomUUID(), name: String(body.name).trim(), category: String(body.category).trim(), price: String(body.price),
+    id: crypto.randomUUID(), name: String(body.name).trim(), brand: String(body.brand || 'Unknown').trim(), category: String(body.category).trim(), price: String(body.price),
     priceDisplay: `$${Number(body.price).toLocaleString('en-US')}`, mileage: String(body.mileage || ''), condition: String(body.condition || 'Used'), warranty: String(body.warranty || ''),
-    rating: '0', reviews: 0, image: String(body.image || '/images/placeholder-product.jpg'), description: String(body.description || ''), fits: String(body.fits || ''), sku: String(body.sku).trim(), inStock: Boolean(body.inStock),
+    rating: '0', reviews: 0, image: String(body.image || ''), description: String(body.description || ''), fits: String(body.fits || ''), sku: String(body.sku).trim(), inStock: Boolean(body.inStock),
   }).returning()
   return NextResponse.json({ product: created }, { status: 201 })
 }
@@ -45,10 +45,10 @@ export async function PATCH(request: Request) {
     return NextResponse.json({ error: 'Name, category, SKU, and a positive price are required.' }, { status: 400 })
   }
   const [updated] = await db.update(products).set({
-    name: String(body.name).trim(), category: String(body.category).trim(), price: String(body.price),
+    name: String(body.name).trim(), brand: String(body.brand || 'Unknown').trim(), category: String(body.category).trim(), price: String(body.price),
     priceDisplay: `$${Number(body.price).toLocaleString('en-US')}`, mileage: String(body.mileage || ''),
     condition: String(body.condition || ''), warranty: String(body.warranty || ''),
-    description: String(body.description || ''), fits: String(body.fits || ''), sku: String(body.sku).trim(),
+    description: String(body.description || ''), fits: String(body.fits || ''), image: String(body.image || ''), sku: String(body.sku).trim(),
     inStock: Boolean(body.inStock), updatedAt: new Date(),
   }).where(eq(products.id, id)).returning()
   return updated ? NextResponse.json({ product: updated }) : NextResponse.json({ error: 'Product not found' }, { status: 404 })
