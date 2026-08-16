@@ -70,6 +70,7 @@ type ShopProduct = {
   rating: number
   reviews: number
   image: string
+  brand: string
 }
 
 type CatalogApiProduct = {
@@ -83,6 +84,7 @@ type CatalogApiProduct = {
   rating: number
   reviews: number
   image: string
+  brand?: string
 }
 
 const fetcher = (url: string) => fetch(url).then((response) => response.json())
@@ -101,11 +103,13 @@ export default function ShopPage() {
     rating: product.rating,
     reviews: product.reviews,
     image: product.image,
+    brand: product.brand || 'Unknown',
   }))
   const [viewType, setViewType] = useState<'grid' | 'list'>('grid')
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [priceRange, setPriceRange] = useState([0, 2000])
   const [searchTerm, setSearchTerm] = useState('')
+  const [selectedBrand, setSelectedBrand] = useState<string | null>(null)
 
   const categories = ['Engines', 'Transmissions', 'Electrical', 'Cooling', 'Drivetrain']
 
@@ -113,13 +117,20 @@ export default function ShopPage() {
     router.push(getPartsSearchUrl(filters))
   }
 
+  const brandOptions = Array.from(new Set(SHOP_PRODUCTS.map((product) => product.brand).filter(Boolean)))
   const filteredProducts = SHOP_PRODUCTS.filter(product => {
     const matchesCategory = !selectedCategory || product.category === selectedCategory
-    const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    const matchesBrand = !selectedBrand || product.brand === selectedBrand
+    const matchesSearch = `${product.name} ${product.brand} ${product.category}`.toLowerCase().includes(searchTerm.toLowerCase())
     const matchesPrice = parseInt(product.price.replace('$', '').replace(',', '')) >= priceRange[0] && 
                         parseInt(product.price.replace('$', '').replace(',', '')) <= priceRange[1]
-    return matchesCategory && matchesSearch && matchesPrice
+    return matchesCategory && matchesBrand && matchesSearch && matchesPrice
   })
+  const groupedProducts = filteredProducts.reduce<Record<string, ShopProduct[]>>((groups, product) => {
+    const key = product.brand || 'Other brands'
+    ;(groups[key] ||= []).push(product)
+    return groups
+  }, {})
 
   return (
     <>
@@ -211,6 +222,15 @@ export default function ShopPage() {
                       onChange={(e) => setSearchTerm(e.target.value)}
                       className="w-full pl-10 pr-4 py-2.5 bg-card border border-border/50 rounded-lg text-foreground text-sm focus:outline-none focus:border-primary/50"
                     />
+                  </div>
+                </div>
+
+                {/* Brands */}
+                <div>
+                  <label className="text-sm font-bold text-foreground uppercase tracking-wider mb-3 block">Brands</label>
+                  <div className="space-y-2 max-h-64 overflow-y-auto">
+                    <button onClick={() => setSelectedBrand(null)} className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${!selectedBrand ? 'bg-primary/20 text-primary border border-primary/50' : 'bg-card/50 text-muted-foreground hover:text-foreground'}`}>All Brands</button>
+                    {brandOptions.map((brand) => <button key={brand} onClick={() => setSelectedBrand(brand)} className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${selectedBrand === brand ? 'bg-primary/20 text-primary border border-primary/50' : 'bg-card/50 text-muted-foreground hover:text-foreground'}`}>{brand}</button>)}
                   </div>
                 </div>
 
