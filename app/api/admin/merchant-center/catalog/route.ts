@@ -44,14 +44,11 @@ export async function PATCH(request: Request) {
   if (!id || !body.name || !body.category || !body.sku || Number(body.price) <= 0) {
     return NextResponse.json({ error: 'Name, category, SKU, and a positive price are required.' }, { status: 400 })
   }
-  const gallery = Array.isArray(body.imageGallery) ? body.imageGallery.filter((value: unknown): value is string => typeof value === 'string' && value.length > 0) : undefined
   const [updated] = await db.update(products).set({
     name: String(body.name).trim(), category: String(body.category).trim(), price: String(body.price),
     priceDisplay: `$${Number(body.price).toLocaleString('en-US')}`, mileage: String(body.mileage || ''),
     condition: String(body.condition || ''), warranty: String(body.warranty || ''),
     description: String(body.description || ''), fits: String(body.fits || ''), sku: String(body.sku).trim(),
-    image: String(body.image || '/images/placeholder-product.jpg'),
-    ...(gallery ? { imageGallery: gallery } : {}),
     inStock: Boolean(body.inStock), updatedAt: new Date(),
   }).where(eq(products.id, id)).returning()
   return updated ? NextResponse.json({ product: updated }) : NextResponse.json({ error: 'Product not found' }, { status: 404 })
