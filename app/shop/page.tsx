@@ -62,6 +62,8 @@ function BrandLogo({ brand, size = 'sm' }: { brand: string; size?: 'sm' | 'lg' }
 type ShopProduct = {
   id: string | number
   name: string
+  brand?: string
+  sku?: string
   category: string
   price: string
   mileage: string
@@ -75,6 +77,8 @@ type ShopProduct = {
 type CatalogApiProduct = {
   id: string | number
   name: string
+  brand?: string
+  sku?: string
   category: string
   priceDisplay: string
   mileage: string
@@ -93,6 +97,8 @@ export default function ShopPage() {
   const SHOP_PRODUCTS: ShopProduct[] = (data?.products ?? []).map((product) => ({
     id: product.id,
     name: product.name,
+    brand: product.brand,
+    sku: product.sku,
     category: product.category,
     price: product.priceDisplay,
     mileage: product.mileage.replace(/\s*miles$/i, ''),
@@ -104,10 +110,12 @@ export default function ShopPage() {
   }))
   const [viewType, setViewType] = useState<'grid' | 'list'>('grid')
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+  const [selectedBrand, setSelectedBrand] = useState<string | null>(null)
   const [priceRange, setPriceRange] = useState([0, 2000])
   const [searchTerm, setSearchTerm] = useState('')
 
   const categories = ['Engines', 'Transmissions', 'Electrical', 'Cooling', 'Drivetrain']
+  const brands = Array.from(new Set(SHOP_PRODUCTS.map((product) => product.brand).filter(Boolean))).sort()
 
   const handleSearch = (filters: SearchFilters) => {
     router.push(getPartsSearchUrl(filters))
@@ -115,10 +123,11 @@ export default function ShopPage() {
 
   const filteredProducts = SHOP_PRODUCTS.filter(product => {
     const matchesCategory = !selectedCategory || product.category === selectedCategory
-    const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    const matchesBrand = !selectedBrand || product.brand === selectedBrand
+    const matchesSearch = `${product.name} ${product.brand ?? ''} ${product.category} ${product.sku ?? ''}`.toLowerCase().includes(searchTerm.toLowerCase())
     const matchesPrice = parseInt(product.price.replace('$', '').replace(',', '')) >= priceRange[0] && 
                         parseInt(product.price.replace('$', '').replace(',', '')) <= priceRange[1]
-    return matchesCategory && matchesSearch && matchesPrice
+    return matchesCategory && matchesBrand && matchesSearch && matchesPrice
   })
 
   return (
@@ -212,6 +221,15 @@ export default function ShopPage() {
                       className="w-full pl-10 pr-4 py-2.5 bg-card border border-border/50 rounded-lg text-foreground text-sm focus:outline-none focus:border-primary/50"
                     />
                   </div>
+                </div>
+
+                {/* Brands */}
+                <div>
+                  <label className="mb-3 block text-sm font-bold uppercase tracking-wider text-foreground">Brands</label>
+                  <select value={selectedBrand ?? ''} onChange={(event) => setSelectedBrand(event.target.value || null)} className="w-full rounded-lg border border-border/50 bg-card px-3 py-2.5 text-sm text-foreground focus:border-primary/50 focus:outline-none">
+                    <option value="">All Brands</option>
+                    {brands.map((brand) => <option key={brand} value={brand}>{brand}</option>)}
+                  </select>
                 </div>
 
                 {/* Categories */}
@@ -317,7 +335,7 @@ export default function ShopPage() {
                         {/* Content */}
                         <div className={viewType === 'list' ? 'flex-1 flex flex-col justify-between' : 'p-4'}>
                           <div>
-                            <div className="text-[11px] font-bold text-primary mb-2 uppercase tracking-wider">{product.category}</div>
+                            <div className="mb-2 flex flex-wrap gap-2 text-[11px] font-bold uppercase tracking-wider"><span className="text-primary">{product.brand || 'All Brands'}</span><span className="text-muted-foreground">{product.category}</span></div>
                             <h3 className="font-bold text-foreground text-sm leading-tight mb-2 line-clamp-2">
                               {product.name}
                             </h3>
