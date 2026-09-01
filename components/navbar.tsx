@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Menu, X, Zap, ShoppingCart, Heart, Home, ChevronDown, Globe, MessageSquare, Phone, Sparkles } from "lucide-react"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useSyncExternalStore } from "react"
 import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -17,10 +17,19 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+const subscribeToHydration = () => () => undefined
+const getClientHydration = () => true
+const getServerHydration = () => false
+
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [hidden, setHidden] = useState(false)
   const lastScrollY = useRef(0)
+  const hasHydrated = useSyncExternalStore(
+    subscribeToHydration,
+    getClientHydration,
+    getServerHydration,
+  )
   const cartItems = useCartStore((state) => state.getTotalItems())
   const wishlistCount = useWishlistStore((state) => state.getCount())
 
@@ -233,7 +242,7 @@ export function Navbar() {
             {/* Cart indicator — desktop only */}
             <Link href="/cart" className="relative hidden sm:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors" title="Cart">
               <ShoppingCart className="w-5 h-5 text-foreground" />
-              {cartItems > 0 && (
+              {hasHydrated && cartItems > 0 && (
                 <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-xs font-bold flex items-center justify-center">
                   {cartItems}
                 </span>
