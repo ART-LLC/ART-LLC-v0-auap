@@ -21,8 +21,10 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [hidden, setHidden] = useState(false)
   const lastScrollY = useRef(0)
-  const cartItems = useCartStore((state) => state.getTotalItems())
-  const wishlistCount = useWishlistStore((state) => state.getCount())
+  const cartItems = useCartStore((state) =>
+    state.items.reduce((total, item) => total + item.quantity, 0)
+  )
+  const wishlistCount = useWishlistStore((state) => state.items.length)
 
   useEffect(() => {
     const handleScroll = () => {
