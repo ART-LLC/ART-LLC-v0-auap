@@ -22,7 +22,7 @@ function getSecret(): string {
 
 function getAdminCredentials() {
   return {
-    email: process.env.ADMIN_EMAIL || 'admin@allusedautopartswarehouse.com',
+    email: process.env.ADMIN_EMAIL || 'auapworld@gmail.com',
     password: process.env.ADMIN_PASSWORD || 'AUAPWAdmin123!',
   }
 }

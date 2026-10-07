@@ -7,7 +7,7 @@
  */
 
 export const ADMIN_CREDENTIALS = {
-  username: 'admin@allusedautopartswarehouse.com',
+  username: 'auapworld@gmail.com',
   password: 'AuapW@2024Admin!Secure', // Change this immediately!
   role: 'super_admin',
   permissions: [
