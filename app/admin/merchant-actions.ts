@@ -16,13 +16,13 @@ const text = (v: FormDataEntryValue | null, max: number) => {
 }
 
 async function resolveTarget(formData: FormData) {
-  if (!(await getAdminSession())) return { error: "Session expired. Please log in again." } as const
+  if (!(await getAdminSession())) return { ok: false as const, error: "Session expired. Please log in again." }
   const brand = String(formData.get("brand") ?? "")
   const slug = String(formData.get("slug") ?? "")
-  if (!isValidBrand(brand)) return { error: "Unknown brand." } as const
+  if (!isValidBrand(brand)) return { ok: false as const, error: "Unknown brand." }
   const product = getBrandProductBySlug(brand, slug)
-  if (!product) return { error: "Product not found." } as const
-  return { brand, slug, url: getBrandProductUrl(brand, product) } as const
+  if (!product) return { ok: false as const, error: "Product not found." }
+  return { ok: true as const, brand, slug, url: getBrandProductUrl(brand, product) }
 }
 
 function revalidate(url: string) {
@@ -35,7 +35,7 @@ export async function saveProductOverride(
   formData: FormData,
 ): Promise<MerchantActionState> {
   const target = await resolveTarget(formData)
-  if ("error" in target) return { ok: false, message: target.error }
+  if (!target.ok) return { ok: false, message: target.error }
 
   const rawPrice = String(formData.get("price") ?? "").trim()
   const price = rawPrice === "" ? null : Number(rawPrice)
@@ -74,7 +74,7 @@ export async function resetProductOverride(
   formData: FormData,
 ): Promise<MerchantActionState> {
   const target = await resolveTarget(formData)
-  if ("error" in target) return { ok: false, message: target.error }
+  if (!target.ok) return { ok: false, message: target.error }
   await deleteOverride(target.brand, target.slug)
   revalidate(target.url)
   return { ok: true, message: "Reset to the original sheet data." }

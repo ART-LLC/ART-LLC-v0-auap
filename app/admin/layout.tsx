@@ -30,6 +30,9 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
               <Link href="/admin/orders" className="text-sm hover:text-primary transition-colors">
                 Orders
               </Link>
+              <Link href="/admin/merchant" className="text-sm hover:text-primary transition-colors">
+                Google Shopping
+              </Link>
             </nav>
             
             <form action="/api/admin/auth/logout" method="POST">
