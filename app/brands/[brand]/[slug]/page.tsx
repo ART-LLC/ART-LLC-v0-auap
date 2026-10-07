@@ -30,7 +30,7 @@ interface PageProps {
   params: Promise<{ brand: string; slug: string }>
 }
 
-const SITE_URL = 'https://allusedautopartswarehouse.com'
+const SITE_URL = 'https://www.allusedautopartswarehouse.com'
 const WARRANTY = '90 Days'
 const SHIPPING = '$240'
 

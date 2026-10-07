@@ -15,7 +15,7 @@ import {
 export const MERCHANT_CENTER_ID = "5828832429"
 export const MERCHANT_STORE_NAME = "A U A P W - All Used Auto Parts Warehouse"
 export const COMPARISON_SHOPPING_SERVICE = "Google Shopping (google.com/shopping)"
-export const SITE_URL = "https://allusedautopartswarehouse.com"
+export const SITE_URL = "https://www.allusedautopartswarehouse.com"
 export const FEED_PATH = "/feeds/google-shopping.xml"
 
 export const AVAILABILITY_OPTIONS = ["in_stock", "out_of_stock", "backorder"] as const
