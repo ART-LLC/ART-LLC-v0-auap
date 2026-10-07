@@ -23,7 +23,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ bra
     return new NextResponse('Not found', { status: 404 })
   }
 
-  const baseUrl = 'https://allusedautopartswearhouse.us'
+  const baseUrl = 'https://allusedautopartswarehouse.com'
   const lastMod = new Date().toISOString().split('T')[0]
   const products = loadBrandCatalog(entry.slug)?.products ?? []
 

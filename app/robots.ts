@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { BRAND_DIRECTORY } from '@/lib/brand-catalog'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://allusedautopartswearhouse.us'
+  const baseUrl = 'https://allusedautopartswarehouse.com'
 
   return {
     rules: [

@@ -1,4 +1,4 @@
-// Mock inventory data — sourced from allusedautopartswearhouse.us real listings
+// Mock inventory data — sourced from allusedautopartswarehouse.com real listings
 export interface PartListing {
   id: string
   name: string
@@ -19,7 +19,7 @@ export interface PartListing {
 }
 
 export const mockParts: PartListing[] = [
-  // ── Real listings from allusedautopartswearhouse.us ──────────────────────────────
+  // ── Real listings from allusedautopartswarehouse.com ──────────────────────────────
   {
     id: 'part-001',
     name: '8-Speed Automatic Transmission (opt M5U)',

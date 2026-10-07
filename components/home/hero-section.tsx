@@ -206,7 +206,7 @@ export function HeroSection() {
                   <span className="text-2xl font-bold tracking-wide text-primary/40">04</span>
                   <span className="text-sm font-bold tracking-wide text-primary uppercase">Fast Delivery</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">Your part ships same day when available, delivered directly to your door or local shop.</p>
-                  <a href="mailto:support@allusedautopartswearhouse.us" className="mt-auto w-full auapw-btn auapw-btn-teal auapw-btn-sm">
+                  <a href="mailto:support@allusedautopartswarehouse.com" className="mt-auto w-full auapw-btn auapw-btn-teal auapw-btn-sm">
                     <Mail className="w-4 h-4" />
                     <span>Email Us</span>
                   </a>
@@ -304,9 +304,9 @@ export function HeroSection() {
                       <Calendar className="w-4 h-4" />
                       <span>Schedule Callback</span>
                     </Link>
-                    <a href="mailto:support@allusedautopartswearhouse.us" className="w-full auapw-btn auapw-btn-teal auapw-btn-sm">
+                    <a href="mailto:support@allusedautopartswarehouse.com" className="w-full auapw-btn auapw-btn-teal auapw-btn-sm">
                       <Mail className="w-4 h-4" />
-                      <span>support@allusedautopartswearhouse.us</span>
+                      <span>support@allusedautopartswarehouse.com</span>
                     </a>
                   </div>
                   </div>

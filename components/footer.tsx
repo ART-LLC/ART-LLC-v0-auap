@@ -66,13 +66,13 @@ export function Footer() {
                 <Phone className="w-4 h-4 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">(888) 818-5001</span>
               </a>
-              <a href="mailto:support@allusedautopartswearhouse.us" className="auapw-btn auapw-btn-teal auapw-btn-sm w-full">
+              <a href="mailto:support@allusedautopartswarehouse.com" className="auapw-btn auapw-btn-teal auapw-btn-sm w-full">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span className="text-xs sm:text-sm">support@allusedautopartswearhouse.us</span>
+                <span className="text-xs sm:text-sm">support@allusedautopartswarehouse.com</span>
               </a>
-              <a href="mailto:info@allusedautopartswearhouse.us" className="auapw-btn auapw-btn-blue auapw-btn-sm w-full">
+              <a href="mailto:info@allusedautopartswarehouse.com" className="auapw-btn auapw-btn-blue auapw-btn-sm w-full">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span className="text-xs sm:text-sm">info@allusedautopartswearhouse.us</span>
+                <span className="text-xs sm:text-sm">info@allusedautopartswarehouse.com</span>
               </a>
               <a href="https://maps.google.com/?q=508+S+Elm+St+Ste+104+Denton+TX+76201" target="_blank" rel="noopener noreferrer" className="auapw-btn auapw-btn-silver auapw-btn-sm w-full">
                 <MapPin className="w-4 h-4 flex-shrink-0" />
