@@ -23,9 +23,9 @@ export interface AcuraProduct {
   mpn?: string
   model: string
   year: string
-  /** Canonical product URL from the pricing sheet (auapw.org). */
+  /** Canonical product URL from the pricing sheet (legacy sheet). */
   productUrl?: string | null
-  /** Reference image URL from the pricing sheet (auapw.org). */
+  /** Reference image URL from the pricing sheet (legacy sheet). */
   imageUrl?: string | null
 }
 

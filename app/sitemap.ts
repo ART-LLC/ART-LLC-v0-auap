@@ -9,7 +9,7 @@ function slugify(text: string) {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.auapw.com'
+  const baseUrl = 'https://allusedautopartswearhouse.us'
 
   // Main pages
   const mainPages = [

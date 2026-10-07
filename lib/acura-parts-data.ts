@@ -76,7 +76,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Engine",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=331"
+    link: "https://allusedautopartswearhouse.us/product.php?id=331"
   },
   {
     id: "AAP-332",
@@ -91,7 +91,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Engine",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=332"
+    link: "https://allusedautopartswearhouse.us/product.php?id=332"
   },
   {
     id: "AAP-333",
@@ -106,7 +106,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Engine",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=333"
+    link: "https://allusedautopartswearhouse.us/product.php?id=333"
   },
   {
     id: "AAP-334",
@@ -121,7 +121,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Engine",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=334"
+    link: "https://allusedautopartswearhouse.us/product.php?id=334"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -140,7 +140,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Transmission",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=335"
+    link: "https://allusedautopartswearhouse.us/product.php?id=335"
   },
   {
     id: "AAP-336",
@@ -155,7 +155,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Transmission",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=336"
+    link: "https://allusedautopartswearhouse.us/product.php?id=336"
   },
   {
     id: "AAP-337",
@@ -170,7 +170,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Transmission",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=337"
+    link: "https://allusedautopartswearhouse.us/product.php?id=337"
   },
   {
     id: "AAP-338",
@@ -185,7 +185,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Transmission",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=338"
+    link: "https://allusedautopartswearhouse.us/product.php?id=338"
   },
   {
     id: "AAP-339",
@@ -200,7 +200,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Transmission",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=339"
+    link: "https://allusedautopartswearhouse.us/product.php?id=339"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -219,7 +219,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314114"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314114"
   },
   {
     id: "AAP-2291702",
@@ -234,7 +234,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314115"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314115"
   },
   {
     id: "AAP-2291703",
@@ -249,7 +249,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314116"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314116"
   },
   {
     id: "AAP-2291705",
@@ -264,7 +264,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314118"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314118"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -283,7 +283,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Headlight",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314145"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314145"
   },
   {
     id: "AAP-2291733",
@@ -298,7 +298,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Headlight",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314146"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314146"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -317,7 +317,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314168"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314168"
   },
   {
     id: "AAP-2291758",
@@ -332,7 +332,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314171"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314171"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -351,7 +351,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314271"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314271"
   },
   {
     id: "AAP-2291860",
@@ -366,7 +366,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314273"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314273"
   },
   {
     id: "AAP-2291861",
@@ -381,7 +381,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314274"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314274"
   },
   {
     id: "AAP-2291863",
@@ -396,7 +396,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314276"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314276"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -415,7 +415,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wiper Motor",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2334810"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2334810"
   },
   {
     id: "AAP-2291807",
@@ -430,7 +430,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314220"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314220"
   },
   {
     id: "AAP-2291808",
@@ -445,7 +445,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2314221"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2314221"
   },
   {
     id: "AAP-2249555",
@@ -460,7 +460,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271968"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271968"
   },
   {
     id: "AAP-2249556",
@@ -475,7 +475,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Wheel Rim",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271969"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271969"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -494,7 +494,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "A/C Control",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271602"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271602"
   },
   {
     id: "AAP-2249190",
@@ -509,7 +509,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "A/C Control",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271603"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271603"
   },
   {
     id: "AAP-2249191",
@@ -524,7 +524,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "A/C Control",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271604"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271604"
   },
   {
     id: "AAP-2249192",
@@ -539,7 +539,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "A/C Control",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271605"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271605"
   },
   {
     id: "AAP-2249193",
@@ -554,7 +554,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "A/C Control",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271606"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271606"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -573,7 +573,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "ABS Control Module",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271608"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271608"
   },
   {
     id: "AAP-2249196",
@@ -588,7 +588,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "ABS Control Module",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271609"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271609"
   },
   {
     id: "AAP-2249197",
@@ -603,7 +603,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "ABS Control Module",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271610"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271610"
   },
   {
     id: "AAP-2249198",
@@ -618,7 +618,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "ABS Control Module",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271611"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271611"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -637,7 +637,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Air Bag",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271612"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271612"
   },
   {
     id: "AAP-2249200",
@@ -652,7 +652,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Air Bag",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271613"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271613"
   },
   {
     id: "AAP-2249202",
@@ -667,7 +667,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Air Bag",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271615"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271615"
   },
   {
     id: "AAP-2249203",
@@ -682,7 +682,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Air Bag",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271616"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271616"
   },
   {
     id: "AAP-2249204",
@@ -697,7 +697,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Air Bag",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271617"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271617"
   },
   {
     id: "AAP-2249205",
@@ -712,7 +712,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Air Bag",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271618"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271618"
   },
   {
     id: "AAP-2249207",
@@ -727,7 +727,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Air Bag",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271620"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271620"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -746,7 +746,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Engine Computer",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271709"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271709"
   },
   {
     id: "AAP-2249298",
@@ -761,7 +761,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Engine Computer",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271711"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271711"
   },
   {
     id: "AAP-2249300",
@@ -776,7 +776,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Engine Computer",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271713"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271713"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -795,7 +795,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Radiator",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271731"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271731"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -814,7 +814,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Radio",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271734"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271734"
   },
   {
     id: "AAP-2249323",
@@ -829,7 +829,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Radio",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271736"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271736"
   },
   {
     id: "AAP-2249328",
@@ -844,7 +844,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Radio",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271741"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271741"
   },
   {
     id: "AAP-2249330",
@@ -859,7 +859,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Radio",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271743"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271743"
   },
   {
     id: "AAP-2249331",
@@ -874,7 +874,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Radio",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271744"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271744"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -893,7 +893,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Seat",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271756"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271756"
   },
   {
     id: "AAP-2249344",
@@ -908,7 +908,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Seat",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271757"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271757"
   },
   {
     id: "AAP-2249345",
@@ -923,7 +923,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Seat",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271758"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271758"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -942,7 +942,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Speedometer",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271767"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271767"
   },
   {
     id: "AAP-2249356",
@@ -957,7 +957,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Speedometer",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271769"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271769"
   },
   {
     id: "AAP-2249358",
@@ -972,7 +972,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Speedometer",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271771"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271771"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -991,7 +991,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Starter",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271777"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271777"
   },
   {
     id: "AAP-2249365",
@@ -1006,7 +1006,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Starter",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271778"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271778"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -1025,7 +1025,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Steering Column",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271779"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271779"
   },
   {
     id: "AAP-2249367",
@@ -1040,7 +1040,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Steering Column",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271780"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271780"
   },
   {
     id: "AAP-2249368",
@@ -1055,7 +1055,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Steering Column",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271781"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271781"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -1074,7 +1074,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Flywheel",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271715"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271715"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -1093,7 +1093,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Ignition Switch",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271723"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271723"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -1112,7 +1112,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Lower Control Arm",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271726"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271726"
   },
   {
     id: "AAP-2249314",
@@ -1127,7 +1127,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Lower Control Arm",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271727"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271727"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -1146,7 +1146,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Seatbelt",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271760"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271760"
   },
   {
     id: "AAP-2249348",
@@ -1161,7 +1161,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Seatbelt",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271761"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271761"
   },
   {
     id: "AAP-2249349",
@@ -1176,7 +1176,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Seatbelt",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271762"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271762"
   },
   {
     id: "AAP-2249350",
@@ -1191,7 +1191,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Seatbelt",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271763"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271763"
   },
 
   // ═══════════════════════════════════════════════════════════════════
@@ -1210,7 +1210,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Spindle",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271775"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271775"
   },
   {
     id: "AAP-2249363",
@@ -1225,7 +1225,7 @@ export const ACURA_PARTS: AcuraPart[] = [
     partType: "Spindle",
     condition: "used",
     availability: "in_stock",
-    link: "https://allusedautoparts.world/product.php?id=2271776"
+    link: "https://allusedautopartswearhouse.us/product.php?id=2271776"
   },
 ]
 
