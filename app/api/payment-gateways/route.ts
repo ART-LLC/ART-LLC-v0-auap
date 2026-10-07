@@ -4,19 +4,50 @@ import { asc } from 'drizzle-orm'
 import { NextRequest, NextResponse } from 'next/server'
 import { getAdminSession } from '@/lib/admin-auth'
 
-const VALID_TYPES = ['card', 'wallet', 'bank', 'offline']
+export const VALID_TYPES = ['card', 'wallet', 'bank', 'link', 'offline']
 
 /**
  * GET /api/payment-gateways
- * Public: list configured payment gateways/methods (used by checkout and the
- * admin payments dashboard). No secrets are ever stored in this table.
+ * Public: list configured payment gateways/methods (used by checkout).
+ * Only customer-facing, non-secret fields are returned publicly (name, type,
+ * description, hosted payment link, instructions). Admins (valid admin
+ * session) additionally see merchant config (API key/merchant id — never
+ * actual secrets, which always live in Vercel project environment variables,
+ * not this table) and the list of env var names each gateway depends on.
  */
 export async function GET() {
   try {
-    const gateways = await db
+    const session = await getAdminSession()
+    const isAdmin = Boolean(session)
+
+    const rows = await db
       .select()
       .from(paymentGateways)
       .orderBy(asc(paymentGateways.sortOrder))
+
+    const gateways = rows.map((row) => {
+      const config = (row.config && typeof row.config === 'object' ? row.config : {}) as Record<
+        string,
+        unknown
+      >
+      if (isAdmin) {
+        return row
+      }
+      return {
+        id: row.id,
+        name: row.name,
+        slug: row.slug,
+        type: row.type,
+        description: row.description,
+        logo: row.logo,
+        isEnabled: row.isEnabled,
+        isDefault: row.isDefault,
+        sortOrder: row.sortOrder,
+        paymentLink: row.paymentLink,
+        instructions: row.instructions,
+        config: { apiKey: typeof config.apiKey === 'string' ? config.apiKey : undefined },
+      }
+    })
 
     return NextResponse.json({ gateways })
   } catch (error) {
@@ -27,7 +58,10 @@ export async function GET() {
 
 /**
  * POST /api/payment-gateways
- * Admin-only: add a new payment gateway/method to the dashboard.
+ * Admin-only: add a new payment gateway/method to the dashboard, optionally
+ * with its (non-secret) merchant config, a hosted payment link, customer
+ * instructions, and the env var names its secrets should be configured
+ * under (in the project's environment variables — never in this table).
  */
 export async function POST(req: NextRequest) {
   try {
@@ -37,7 +71,20 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json()
-    const { name, slug, type, description, logo, isEnabled, config } = body
+    const {
+      name,
+      slug,
+      type,
+      description,
+      logo,
+      isEnabled,
+      apiKey,
+      merchantId,
+      environment,
+      paymentLink,
+      instructions,
+      envVarsRequired,
+    } = body
 
     if (!name || !slug) {
       return NextResponse.json(
@@ -63,7 +110,14 @@ export async function POST(req: NextRequest) {
       isEnabled: Boolean(isEnabled),
       isDefault: false,
       sortOrder: 99,
-      config: config || {},
+      config: {
+        apiKey: apiKey || '',
+        merchantId: merchantId || '',
+        environment: environment === 'production' ? 'production' : 'sandbox',
+      },
+      paymentLink: paymentLink || null,
+      instructions: instructions || null,
+      envVarsRequired: Array.isArray(envVarsRequired) ? envVarsRequired : [],
     }
 
     await db.insert(paymentGateways).values(newGateway)

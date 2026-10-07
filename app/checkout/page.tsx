@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { Check, ArrowLeft, ShieldCheck, Lock } from 'lucide-react'
+import { Check, ArrowLeft, ShieldCheck, Lock, ExternalLink, Landmark, Wallet, Phone } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 
@@ -17,10 +17,14 @@ interface PaymentGateway {
   id: string
   name: string
   slug: string
-  type: 'card' | 'wallet' | 'bank' | 'offline'
+  type: 'card' | 'wallet' | 'bank' | 'link' | 'offline'
   description: string | null
   isEnabled: boolean
   isDefault: boolean
+  config?: {
+    paymentLinkUrl?: string
+    instructions?: string
+  }
 }
 
 export default function CheckoutPage() {
@@ -375,44 +379,129 @@ export default function CheckoutPage() {
                           </div>
                         )}
 
-                        {selectedGateway && selectedGateway !== 'phone' && (
-                          <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-3">
-                            <div className="flex items-center justify-between flex-wrap gap-2">
-                              <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
-                                <ShieldCheck className="w-4 h-4" />
-                                Secured by {gateways.find((g) => g.slug === selectedGateway)?.name ?? 'Secure Gateway'}
+                        {(() => {
+                          const active = gateways.find((g) => g.slug === selectedGateway)
+                          if (!active) return null
+
+                          if (active.type === 'card') {
+                            return (
+                              <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-3">
+                                <div className="flex items-center justify-between flex-wrap gap-2">
+                                  <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                                    <ShieldCheck className="w-4 h-4" />
+                                    Secured by {active.name}
+                                  </div>
+                                  <div className="flex items-center gap-1.5">
+                                    {['VISA', 'MASTERCARD', 'AMEX', 'DISCOVER'].map((card) => (
+                                      <span
+                                        key={card}
+                                        className="px-1.5 py-0.5 rounded border border-white/15 text-[9px] font-bold tracking-wide text-foreground/60"
+                                      >
+                                        {card}
+                                      </span>
+                                    ))}
+                                  </div>
+                                </div>
+                                <div className="grid sm:grid-cols-2 gap-3 opacity-60">
+                                  <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
+                                    Card Number
+                                  </div>
+                                  <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
+                                    Name on Card
+                                  </div>
+                                  <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
+                                    MM / YY
+                                  </div>
+                                  <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
+                                    CVV
+                                  </div>
+                                </div>
+                                <p className="flex items-center gap-1.5 text-xs text-foreground/50">
+                                  <Lock className="w-3 h-3" />
+                                  Card details are collected securely by phone — nothing is charged online.
+                                </p>
                               </div>
-                              <div className="flex items-center gap-1.5">
-                                {['VISA', 'MASTERCARD', 'AMEX', 'DISCOVER'].map((card) => (
-                                  <span
-                                    key={card}
-                                    className="px-1.5 py-0.5 rounded border border-white/15 text-[9px] font-bold tracking-wide text-foreground/60"
+                            )
+                          }
+
+                          if (active.type === 'wallet') {
+                            return (
+                              <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-3">
+                                <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                                  <ShieldCheck className="w-4 h-4" />
+                                  Secured by {active.name}
+                                </div>
+                                <div className="flex items-center justify-center gap-2 rounded-md border border-white/15 bg-background/40 py-3.5 text-sm font-semibold text-foreground/70">
+                                  <Wallet className="w-4 h-4" />
+                                  Continue with {active.name}
+                                </div>
+                                <p className="flex items-center gap-1.5 text-xs text-foreground/50">
+                                  <Lock className="w-3 h-3" />
+                                  You&apos;ll confirm payment with {active.name} by phone after placing your order.
+                                </p>
+                              </div>
+                            )
+                          }
+
+                          if (active.type === 'link') {
+                            return (
+                              <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-3">
+                                <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                                  <ShieldCheck className="w-4 h-4" />
+                                  Pay via {active.name}
+                                </div>
+                                {active.config?.paymentLinkUrl ? (
+                                  <a
+                                    href={active.config.paymentLinkUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center gap-2 rounded-md bg-blue-600 hover:bg-blue-700 transition-colors py-3 text-sm font-semibold text-white"
                                   >
-                                    {card}
-                                  </span>
-                                ))}
+                                    Open secure payment page
+                                    <ExternalLink className="w-3.5 h-3.5" />
+                                  </a>
+                                ) : (
+                                  <p className="text-xs text-foreground/50">
+                                    A payment link will be sent to you after your order is placed.
+                                  </p>
+                                )}
+                                {active.config?.instructions && (
+                                  <p className="text-xs text-foreground/50 whitespace-pre-line">
+                                    {active.config.instructions}
+                                  </p>
+                                )}
                               </div>
+                            )
+                          }
+
+                          if (active.type === 'bank') {
+                            return (
+                              <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-3">
+                                <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                                  <Landmark className="w-4 h-4" />
+                                  {active.name}
+                                </div>
+                                <p className="text-sm text-foreground/60 whitespace-pre-line">
+                                  {active.config?.instructions ??
+                                    'A parts specialist will provide bank transfer details by phone after you place your order.'}
+                                </p>
+                              </div>
+                            )
+                          }
+
+                          return (
+                            <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-2">
+                              <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                                <Phone className="w-4 h-4" />
+                                {active.name}
+                              </div>
+                              <p className="text-sm text-foreground/60 whitespace-pre-line">
+                                {active.config?.instructions ??
+                                  'A parts specialist calls you to confirm fitment for your VIN and take payment securely by phone.'}
+                              </p>
                             </div>
-                            <div className="grid sm:grid-cols-2 gap-3 opacity-60">
-                              <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
-                                Card Number
-                              </div>
-                              <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
-                                Name on Card
-                              </div>
-                              <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
-                                MM / YY
-                              </div>
-                              <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
-                                CVV
-                              </div>
-                            </div>
-                            <p className="flex items-center gap-1.5 text-xs text-foreground/50">
-                              <Lock className="w-3 h-3" />
-                              Card details are collected securely by phone — nothing is charged online.
-                            </p>
-                          </div>
-                        )}
+                          )
+                        })()}
 
                         <p className="text-sm text-foreground/70 leading-relaxed">
                           No card needed online. After you place your order, a parts specialist calls you to confirm fitment for your VIN and take payment securely{selectedGateway && selectedGateway !== 'phone' ? ` using ${gateways.find((g) => g.slug === selectedGateway)?.name}` : ''} by phone.
