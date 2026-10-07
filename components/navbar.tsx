@@ -20,11 +20,17 @@ import {
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [hidden, setHidden] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const lastScrollY = useRef(0)
   const cartItems = useCartStore((state) =>
     state.items.reduce((total, item) => total + item.quantity, 0)
   )
   const wishlistCount = useWishlistStore((state) => state.items.length)
+
+  // Persisted browser counts must not change the server's initial badge markup.
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -235,7 +241,7 @@ export function Navbar() {
             {/* Cart indicator — desktop only */}
             <Link href="/cart" className="relative hidden sm:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors" title="Cart">
               <ShoppingCart className="w-5 h-5 text-foreground" />
-              {cartItems > 0 && (
+              {mounted && cartItems > 0 && (
                 <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-xs font-bold flex items-center justify-center">
                   {cartItems}
                 </span>
@@ -401,7 +407,7 @@ export function Navbar() {
                 >
                   <ShoppingCart className="w-4 h-4 text-blue-400" />
                   <span className="text-[10px] font-bold text-blue-300">Cart</span>
-                  {cartItems > 0 && (
+                  {mounted && cartItems > 0 && (
                     <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-[9px] font-black flex items-center justify-center">
                       {cartItems}
                     </span>
@@ -414,7 +420,7 @@ export function Navbar() {
                 >
                   <Heart className="w-4 h-4 text-pink-400" />
                   <span className="text-[10px] font-bold text-pink-300">Saved</span>
-                  {wishlistCount > 0 && (
+                  {mounted && wishlistCount > 0 && (
                     <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-pink-500 text-white text-[9px] font-black flex items-center justify-center">
                       {wishlistCount}
                     </span>
