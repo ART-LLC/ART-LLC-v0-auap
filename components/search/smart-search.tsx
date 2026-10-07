@@ -11,20 +11,22 @@ import type { CatalogHit } from "@/lib/ai-catalog"
 interface SmartSearchResponse {
   filters: {
     query: string
+    make: string | null
     model: string | null
     year: string | null
     category: string | null
     maxPrice: number | null
     intent: string
   }
+  needsMake?: boolean
   results: CatalogHit[]
 }
 
 const EXAMPLES = [
-  "Cheap engine for a 2003 Acura CL",
-  "Automatic transmission for an MDX under $2000",
-  "Low mileage TL motor",
-  "Best RDX engine you have",
+  "Engine for a 2010 Toyota Camry",
+  "Automatic transmission for a Silverado 1500 under $2000",
+  "Cheap Honda Accord engine",
+  "2019 Acura MDX transmission",
 ]
 
 export function SmartSearch() {
@@ -68,8 +70,8 @@ export function SmartSearch() {
           Smart Parts Search
         </h1>
         <p className="mt-2 max-w-xl text-pretty text-sm leading-relaxed text-muted-foreground">
-          Describe what you need in plain English — like &ldquo;engine for a 2019 Acura MDX under
-          $4,000&rdquo; — and our AI will find the right parts from our inventory.
+          Describe what you need in plain English — like &ldquo;engine for a 2010 Toyota Camry under
+          $2,500&rdquo; — and our AI will search every make in our current price list.
         </p>
       </div>
 
@@ -121,6 +123,7 @@ export function SmartSearch() {
             <span className="font-semibold text-foreground">Understood as:</span> {data.filters.intent}
           </p>
           <div className="mt-2 flex flex-wrap gap-1.5">
+            {data.filters.make && <Badge variant="secondary" className="text-[11px] capitalize">{data.filters.make.replace(/-/g, " ")}</Badge>}
             {data.filters.model && <Badge variant="secondary" className="gap-1 text-[11px]"><Tag className="h-3 w-3" />{data.filters.model}</Badge>}
             {data.filters.year && <Badge variant="secondary" className="text-[11px]">{data.filters.year}</Badge>}
             {data.filters.category && <Badge variant="secondary" className="text-[11px]">{data.filters.category}</Badge>}
@@ -145,9 +148,13 @@ export function SmartSearch() {
 
       {!loading && data && data.results.length === 0 && (
         <div className="mt-10 text-center">
-          <p className="text-sm font-semibold text-foreground">No matching parts found</p>
+          <p className="text-sm font-semibold text-foreground">
+            {data.needsMake ? "Which make is your vehicle?" : "No matching parts found"}
+          </p>
           <p className="mt-1 text-sm text-muted-foreground">
-            Try a different vehicle or part, or{" "}
+            {data.needsMake
+              ? "Include the year, make and model — for example “2012 Ford F-150 engine” — or "
+              : "Try a different vehicle or part, or "}
             <Link href="/quote" className="text-primary underline underline-offset-2">
               request a quote
             </Link>
@@ -201,7 +208,9 @@ function ResultCard({ hit }: { hit: CatalogHit }) {
           <Badge variant="secondary" className="text-[10px] capitalize">{hit.category}</Badge>
         </div>
         <div className="mt-auto flex items-center justify-between pt-2">
-          <span className="text-lg font-black text-foreground">${hit.price.toLocaleString()}</span>
+          <span className="text-lg font-black text-foreground">
+            {hit.price === null ? "Call for price" : `$${hit.price.toLocaleString()}`}
+          </span>
           <span className="flex items-center gap-1 text-xs font-semibold text-primary">
             View
             <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />

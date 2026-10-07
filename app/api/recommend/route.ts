@@ -1,6 +1,5 @@
 import { generateText } from "ai"
-import { recommendParts } from "@/lib/ai-catalog"
-import { getAcuraProductById } from "@/lib/acura-data"
+import { getCatalogHitById, recommendParts } from "@/lib/ai-catalog"
 
 export const maxDuration = 30
 
@@ -11,7 +10,7 @@ export async function POST(req: Request) {
     return Response.json({ error: "Missing productId" }, { status: 400 })
   }
 
-  const base = getAcuraProductById(productId)
+  const base = getCatalogHitById(productId)
   const parts = recommendParts(productId, 4)
 
   if (!base || parts.length === 0) {
