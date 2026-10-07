@@ -5,7 +5,7 @@ import { CAR_MAKES, CAR_MODELS, YEARS } from "@/lib/data"
 import { Phone, AlertCircle, CheckCircle2, Mail, Loader2 } from "lucide-react"
 
 const CONTACT_EMAIL = "aupworld@gmail.com"
-const PHONE_DISPLAY = "(888) 818-5001"
+const PHONE_DISPLAY = "(708) 896-2383"
 
 interface QuoteFormProps {
   defaultPart?: "Engine" | "Transmission" | ""
@@ -26,6 +26,7 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
   const [success, setSuccess] = useState(false)
   const [error, setError]     = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+  const [quoteId, setQuoteId] = useState<number | null>(null)
 
   const models = make ? CAR_MODELS[make] || [] : []
 
@@ -36,52 +37,39 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
     setError(null)
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setError(null)
 
     if (!make)        { setError("Please select a vehicle make.");   return }
     if (!name.trim()) { setError("Please enter your name.");         return }
-    if (!phone.trim()){ setError("Please enter your phone number."); return }
+    if (phone.replace(/\D/g, "").length < 10) { setError("Please enter a valid phone number."); return }
 
     setLoading(true)
-
-    // Build the email subject and body from the form fields.
-    const subject = `Quote Request: ${[year, make, model].filter(Boolean).join(" ")} - ${part || "Auto Part"}`
-      .replace(/\s+/g, " ")
-      .trim()
-
-    const body = [
-      "Hi AUAPW LLC team,",
-      "",
-      "I'd like a free quote for the following part:",
-      "",
-      "--- Vehicle Details ---",
-      `Part:    ${part || "Not specified"}`,
-      `Make:    ${make}`,
-      `Model:   ${model || "Not specified"}`,
-      `Year:    ${year || "Not specified"}`,
-      `Option:  ${option || "Not specified"}`,
-      "",
-      "--- My Contact Details ---",
-      `Name:    ${name}`,
-      `Phone:   ${phone}`,
-      `Email:   ${email || "Not provided"}`,
-      `ZIP:     ${zip || "Not provided"}`,
-      "",
-      "--- Message ---",
-      message || "(no additional details)",
-      "",
-      "Thank you!",
-    ].join("\n")
-
-    // Open the customer's own email client with everything pre-filled,
-    // so the quote request is sent from their mailbox to AUAPW LLC.
-    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-    window.location.href = mailto
-
-    setLoading(false)
-    setSuccess(true)
+    try {
+      const honeypot = new FormData(e.currentTarget).get("website")
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          part, make, model, year, option, name, phone, email, zip, message,
+          source: compact ? "quote-widget" : "quote-form",
+          pageUrl: window.location.pathname,
+          website: honeypot ?? "",
+        }),
+      })
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok) {
+        setError(data.error ?? `Something went wrong. Please call us at ${PHONE_DISPLAY}.`)
+        return
+      }
+      setQuoteId(data.id ?? null)
+      setSuccess(true)
+    } catch {
+      setError(`Network error. Please call us at ${PHONE_DISPLAY}.`)
+    } finally {
+      setLoading(false)
+    }
   }
 
   const field =
@@ -91,13 +79,14 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
     return (
       <div className="glass-card rounded-xl p-8 flex flex-col items-center text-center gap-4">
         <CheckCircle2 className="w-14 h-14 text-green-400" />
-        <h3 className="text-xl font-bold text-foreground">Your Email Is Ready to Send!</h3>
+        <h3 className="text-xl font-bold text-foreground">Quote Request Received!</h3>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          We&apos;ve opened your email app with your quote request pre-filled. Just press <strong>Send</strong> to deliver it to us, and we&apos;ll reply within <strong>24 hours</strong>. If your email app didn&apos;t open, contact us directly below.
+          {quoteId ? <>Your reference is <strong>#{quoteId}</strong>. </> : null}
+          A parts specialist will call you within <strong>one business day</strong> with pricing and availability.
         </p>
         <div className="w-full bg-card/50 border border-border/30 rounded-lg p-4 flex flex-col sm:flex-row gap-3 justify-center">
           <p className="text-xs text-muted-foreground w-full text-center mb-1 sm:hidden">Need it faster? Contact us directly:</p>
-          <a href="tel:8888185001" className="auapw-btn auapw-btn-green auapw-btn-sm">
+          <a href="tel:+17088962383" className="auapw-btn auapw-btn-green auapw-btn-sm">
             <Phone className="w-4 h-4" />
             {PHONE_DISPLAY}
           </a>
@@ -137,6 +126,7 @@ export function QuoteForm({ defaultPart = "", compact = false }: QuoteFormProps)
         )}
 
         <form onSubmit={handleSubmit} noValidate className="flex-1 flex flex-col gap-3">
+          <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
 
           {/* Row 1: Part + Make */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

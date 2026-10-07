@@ -67,7 +67,7 @@ export default function SettingsPage() {
                     <label className="block text-sm font-medium mb-2">Support Phone</label>
                     <input
                       type="tel"
-                      defaultValue="(888) 854-8681"
+                      defaultValue="(708) 896-2383"
                       className="w-full px-4 py-2 border border-border rounded-lg bg-background focus:outline-none focus:border-primary"
                     />
                   </div>

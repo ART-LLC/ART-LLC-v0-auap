@@ -198,7 +198,7 @@ Required Environment Variables (.env.local):
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Email:    support@auapw.com
-Phone:    (888) 854-8681
+Phone:    (708) 896-2383
 Hours:    7 days a week, 24-hour response time
 Address:  508 South Elm Street, Suite 105
           Denton, Texas 76201
