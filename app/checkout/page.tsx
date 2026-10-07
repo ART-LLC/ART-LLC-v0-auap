@@ -28,11 +28,13 @@ export default function CheckoutPage() {
   const items = useCartStore((state) => state.items)
   const getTotalPrice = useCartStore((state) => state.getTotalPrice)
   const clearCart = useCartStore((state) => state.clearCart)
+  const addItem = useCartStore((state) => state.addItem)
   
   const [step, setStep] = useState<'auth' | 'shipping' | 'payment' | 'confirmation'>('auth')
   const [isGuest, setIsGuest] = useState(false)
   const [gateways, setGateways] = useState<PaymentGateway[]>([])
   const [selectedGateway, setSelectedGateway] = useState<string | null>(null)
+  const [loadingItemId, setLoadingItemId] = useState(false)
 
   useEffect(() => {
     fetch('/api/payment-gateways')
@@ -47,6 +49,25 @@ export default function CheckoutPage() {
       })
       .catch(() => {})
   }, [])
+
+  // Supports Google Merchant Center's "Checkout URL" deep link
+  // (e.g. https://www.allusedautopartswarehouse.com/checkout?item_id={id})
+  // so ads can take a shopper straight into checkout with the item preloaded.
+  useEffect(() => {
+    const itemId = new URLSearchParams(window.location.search).get('item_id')
+    if (!itemId) return
+
+    setLoadingItemId(true)
+    fetch(`/api/checkout-item/${encodeURIComponent(itemId)}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data?.item) {
+          addItem({ ...data.item, quantity: 1 })
+        }
+      })
+      .catch(() => {})
+      .finally(() => setLoadingItemId(false))
+  }, [addItem])
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -113,7 +134,7 @@ export default function CheckoutPage() {
     }
   }
 
-  if (items.length === 0 && step !== 'confirmation') {
+  if (items.length === 0 && step !== 'confirmation' && !loadingItemId) {
     return (
       <>
         <Navbar />
@@ -128,6 +149,18 @@ export default function CheckoutPage() {
             </div>
           </div>
           <BrandLogosSection />
+        </main>
+        <Footer />
+      </>
+    )
+  }
+
+  if (items.length === 0 && loadingItemId) {
+    return (
+      <>
+        <Navbar />
+        <main className="pt-[58px]">
+          <div className="py-24 text-center text-foreground/60">Loading your item…</div>
         </main>
         <Footer />
       </>
