@@ -48,7 +48,7 @@ export async function POST(request: Request) {
   }
   const { customer, items } = parsed.data
 
-  const pricing = priceCart(items)
+  const pricing = await priceCart(items)
   if (!pricing.ok) return NextResponse.json({ error: pricing.error }, { status: 422 })
 
   try {

@@ -148,7 +148,7 @@ export function Navbar() {
           </Link>
 
           {/* Center — embossed typography navigation (desktop only) */}
-          <div className="hidden lg:flex items-center gap-6 flex-1 justify-center">
+          <div className="hidden min-[1600px]:flex items-center gap-1 flex-1 justify-center">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -256,7 +256,7 @@ export function Navbar() {
 
             {/* Mobile menu toggle */}
             <button
-              className="lg:hidden flex flex-col items-center justify-center rounded-md border border-white/25 bg-white/8 hover:bg-white/15 active:scale-90 transition-all duration-150 cursor-pointer gap-[4px] px-1.5"
+              className="min-[1600px]:hidden flex flex-col items-center justify-center rounded-md border border-white/25 bg-white/8 hover:bg-white/15 active:scale-90 transition-all duration-150 cursor-pointer gap-[4px] px-1.5"
               style={{ width: '1.75rem', height: '1.75rem' }}
               onClick={() => setMobileOpen(!mobileOpen)}
               onKeyDown={(e) => {
@@ -291,14 +291,14 @@ export function Navbar() {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/75 lg:hidden"
+            className="fixed inset-0 bg-black/75 min-[1600px]:hidden"
             onClick={() => setMobileOpen(false)}
             style={{ zIndex: 9998 }}
             aria-hidden="true"
           />
 
           <div
-            className="fixed left-0 right-0 lg:hidden"
+            className="fixed left-0 right-0 min-[1600px]:hidden"
             style={{
               top: '92px',
               zIndex: 9999,

@@ -158,7 +158,9 @@ export default async function BrandProductPage({ params }: PageProps) {
                   priority
                 />
                 <Badge className="absolute top-4 left-4 capitalize">{product.category || 'Part'}</Badge>
-                <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">In Stock</Badge>
+                <Badge className="absolute top-4 right-4" variant={override?.availability === 'out_of_stock' ? 'secondary' : 'default'}>
+                  {override?.availability === 'out_of_stock' ? 'Out of Stock' : override?.availability === 'backorder' ? 'Backorder' : 'In Stock'}
+                </Badge>
 
               </div>
 
@@ -229,6 +231,8 @@ export default async function BrandProductPage({ params }: PageProps) {
                   productType={product.category || 'Part'}
                   make={label}
                   shipping={SHIPPING}
+                  availability={override?.availability ?? 'in_stock'}
+                  detailsHref={getBrandProductUrl(brand, product)}
                 />
 
                 {/* Trust Badges */}
