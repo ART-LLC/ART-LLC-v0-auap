@@ -225,7 +225,7 @@ export default async function BrandProductPage({ params }: PageProps) {
                   productName={product.name}
                   basePrice={product.price}
                   tiers={product.tiers}
-                  productImage={product.imageUrl || fallbackImage}
+                  productImage={displayImage.src}
                   productType={product.category || 'Part'}
                   make={label}
                   shipping={SHIPPING}
