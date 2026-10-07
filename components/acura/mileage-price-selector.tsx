@@ -32,6 +32,13 @@ export function MileagePriceSelector({ basePrice, tiers, onTierChange }: Mileage
     typeof tiers?.low === 'number' && typeof tiers?.medium === 'number' && typeof tiers?.high === 'number'
 
   if (!hasRealTiers) {
+    if (basePrice <= 0) {
+      return (
+        <div className="flex items-baseline gap-3">
+          <span className="text-3xl font-black text-primary">Call for price</span>
+        </div>
+      )
+    }
     return (
       <div className="flex items-baseline gap-3">
         <span className="text-4xl font-black text-primary">${basePrice.toLocaleString()}</span>

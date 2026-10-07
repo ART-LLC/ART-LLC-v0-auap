@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const product = applyOverrideToProduct(sheetProduct, override)
   const label = getBrandLabel(brand)
   return {
-    title: `${product.name} | Used OEM ${label} Part — $${product.price.toLocaleString()}`,
+    title: `${product.name} | Used OEM ${label} Part${product.price > 0 ? ` — $${product.price.toLocaleString()}` : ''}`,
     description:
       product.description ||
       `Buy a tested used OEM ${product.name} with exact mileage-based pricing, ${WARRANTY} warranty, and nationwide shipping.`,
@@ -95,25 +95,30 @@ export default async function BrandProductPage({ params }: PageProps) {
     brand: { '@type': 'Brand', name: label },
     category: partTypeHeading,
     url: canonicalUrl,
-    offers: tiers
+    // Quote-only parts have no sheet price — omit offers rather than advertise $0.
+    ...(tiers || product.price > 0
       ? {
-          '@type': 'AggregateOffer',
-          priceCurrency: 'USD',
-          lowPrice,
-          highPrice,
-          offerCount: 3,
-          availability,
-          itemCondition: 'https://schema.org/UsedCondition',
-          url: canonicalUrl,
+          offers: tiers
+            ? {
+                '@type': 'AggregateOffer',
+                priceCurrency: 'USD',
+                lowPrice,
+                highPrice,
+                offerCount: 3,
+                availability,
+                itemCondition: 'https://schema.org/UsedCondition',
+                url: canonicalUrl,
+              }
+            : {
+                '@type': 'Offer',
+                priceCurrency: 'USD',
+                price: product.price,
+                availability,
+                itemCondition: 'https://schema.org/UsedCondition',
+                url: canonicalUrl,
+              },
         }
-      : {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: product.price,
-          availability,
-          itemCondition: 'https://schema.org/UsedCondition',
-          url: canonicalUrl,
-        },
+      : {}),
   }
 
   return (
@@ -302,7 +307,9 @@ export default async function BrandProductPage({ params }: PageProps) {
                         <CardTitle className="text-sm line-clamp-2">{rp.name}</CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <span className="text-lg font-bold text-primary">${rp.price.toLocaleString()}</span>
+                        <span className="text-lg font-bold text-primary">
+                          {rp.price > 0 ? `$${rp.price.toLocaleString()}` : 'Call for price'}
+                        </span>
                       </CardContent>
                     </Card>
                   </Link>

@@ -19,6 +19,7 @@ interface ProductCardActionsProps {
   /** Where the "Details" button links. Defaults to /products/[productId]. */
   detailsHref?: string
   purchaseDisabled?: boolean
+  isQuoteOnly?: boolean
 }
 
 const PHONE_SALES = '708-896-2383'
@@ -35,6 +36,7 @@ export function ProductCardActions({
   shipping,
   detailsHref,
   purchaseDisabled = false,
+  isQuoteOnly = false,
 }: ProductCardActionsProps) {
   const [quantity, setQuantity] = useState(1)
   const [addedToCart, setAddedToCart] = useState(false)
@@ -70,7 +72,7 @@ export function ProductCardActions({
   }
 
   const handleMessage = () => {
-    const message = `Hi, I'm interested in: ${productName} - $${productPrice}`
+    const message = `Hi, I'm interested in: ${productName}${isQuoteOnly ? '' : ` - $${productPrice}`}`
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=Product Inquiry: ${productName}&body=${encodeURIComponent(message)}`
   }
 
@@ -87,45 +89,49 @@ export function ProductCardActions({
   return (
     <div className="flex flex-col gap-3 pt-4 border-t border-border/30">
       {/* Quantity Selector */}
-      <div className="flex items-center gap-2">
-        <span className="text-sm font-medium text-muted-foreground">Qty:</span>
-        <input
-          type="number"
-          min="1"
-          max="5"
-          aria-label="Quantity"
-          disabled={purchaseDisabled}
-          value={quantity}
-          onChange={(e) => setQuantity(Math.min(5, Math.max(1, parseInt(e.target.value) || 1)))}
-          className="w-16 px-2 py-1 rounded border border-border bg-background text-foreground text-sm"
-        />
-      </div>
+      {!isQuoteOnly && (
+        <div className="flex items-center gap-2">
+          <span className="text-sm font-medium text-muted-foreground">Qty:</span>
+          <input
+            type="number"
+            min="1"
+            max="5"
+            aria-label="Quantity"
+            disabled={purchaseDisabled}
+            value={quantity}
+            onChange={(e) => setQuantity(Math.min(5, Math.max(1, parseInt(e.target.value) || 1)))}
+            className="w-16 px-2 py-1 rounded border border-border bg-background text-foreground text-sm"
+          />
+        </div>
+      )}
 
       {/* Primary Actions */}
-      <div className="grid grid-cols-2 gap-2">
-        <Button
-          onClick={handleAddToCart}
-          disabled={purchaseDisabled}
-          className={`text-xs font-bold transition-all ${
-            addedToCart
-              ? 'bg-green-600 hover:bg-green-700'
-              : 'auapw-btn auapw-btn-blue'
-          }`}
-          title="Add to cart for bulk orders"
-        >
-          <ShoppingCart className="w-3 h-3" />
-          {addedToCart ? 'Added!' : 'Add to Cart'}
-        </Button>
-        <Button
-          onClick={handleBuyNow}
-          disabled={purchaseDisabled}
-          className="auapw-btn auapw-btn-green text-xs font-bold"
-          title="Add to cart and proceed to checkout"
-        >
-          <Zap className="w-3 h-3" />
-          Buy Now
-        </Button>
-      </div>
+      {!isQuoteOnly && (
+        <div className="grid grid-cols-2 gap-2">
+          <Button
+            onClick={handleAddToCart}
+            disabled={purchaseDisabled}
+            className={`text-xs font-bold transition-all ${
+              addedToCart
+                ? 'bg-green-600 hover:bg-green-700'
+                : 'auapw-btn auapw-btn-blue'
+            }`}
+            title="Add to cart for bulk orders"
+          >
+            <ShoppingCart className="w-3 h-3" />
+            {addedToCart ? 'Added!' : 'Add to Cart'}
+          </Button>
+          <Button
+            onClick={handleBuyNow}
+            disabled={purchaseDisabled}
+            className="auapw-btn auapw-btn-green text-xs font-bold"
+            title="Add to cart and proceed to checkout"
+          >
+            <Zap className="w-3 h-3" />
+            Buy Now
+          </Button>
+        </div>
+      )}
 
       {/* Secondary Actions */}
       <div className="grid grid-cols-4 gap-2">
