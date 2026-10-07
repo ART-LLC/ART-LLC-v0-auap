@@ -29,7 +29,7 @@ interface PageProps {
   params: Promise<{ brand: string; slug: string }>
 }
 
-const SITE_URL = 'https://www.auapw.org'
+const SITE_URL = 'https://allusedautopartswearhouse.us'
 const WARRANTY = '90 Days'
 const SHIPPING = '$240'
 
@@ -65,7 +65,7 @@ export default async function BrandProductPage({ params }: PageProps) {
   const partTypeHeading = getBrandPartTypeLabel(product)
   const imageSearchUrl = getImageSearchUrl(product.name)
   const fitmentYear = product.year || '1990-Present'
-  const canonicalUrl = product.productUrl || `${SITE_URL}${getBrandProductUrl(brand, product)}`
+  const canonicalUrl = `${SITE_URL}${getBrandProductUrl(brand, product)}`
 
   // Structured data: exact sheet prices as an AggregateOffer across the three
   // mileage tiers (single Offer when the sheet has one price).

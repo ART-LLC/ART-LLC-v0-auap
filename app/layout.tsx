@@ -16,7 +16,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.auapw.com'),
+  metadataBase: new URL('https://allusedautopartswearhouse.us'),
   title: 'AUAPW LLC - Quality Used Auto Parts | Engines, Transmissions & More',
   description: 'AUAPW LLC - Your trusted source for quality used auto parts. Shop engines, transmissions, body parts and more from 2,000+ verified salvage yards nationwide. $240 flat-rate shipping per part and a 6-month warranty.',
   generator: 'v0.dev',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     telephone: true,
   },
   alternates: {
-    canonical: 'https://www.auapw.com',
+    canonical: 'https://allusedautopartswearhouse.us',
   },
   robots: {
     index: true,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://www.auapw.com',
+    url: 'https://allusedautopartswearhouse.us',
     siteName: 'AUAPW LLC',
     title: 'AUAPW LLC - Quality Used Auto Parts | Engines, Transmissions & More',
     description: 'Your trusted source for quality used auto parts. Shop engines, transmissions, body parts and more from 2,000+ verified salvage yards nationwide.',

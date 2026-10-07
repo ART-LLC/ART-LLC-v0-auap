@@ -288,11 +288,11 @@ async function sendEmailNotification(
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          from: 'notifications@auapw.com',
+          from: 'notifications@allusedautopartswearhouse.us',
           to: email,
           subject: template.subject,
           html: template.htmlBody,
-          reply_to: 'support@auapw.com',
+          reply_to: 'support@allusedautopartswearhouse.us',
         }),
       })
 

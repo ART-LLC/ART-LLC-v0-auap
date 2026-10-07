@@ -7,7 +7,7 @@
  */
 
 export const ADMIN_CREDENTIALS = {
-  username: 'admin@auapw.com',
+  username: 'admin@allusedautopartswearhouse.us',
   password: 'AuapW@2024Admin!Secure', // Change this immediately!
   role: 'super_admin',
   permissions: [
@@ -31,7 +31,7 @@ export const ADMIN_SESSIONS = {
 
 // Secondary admin account for support team
 export const SUPPORT_ADMIN = {
-  username: 'support@auapw.com',
+  username: 'support@allusedautopartswearhouse.us',
   password: 'Support@AUAPW2024!Access',
   role: 'support_admin',
   permissions: [
@@ -45,7 +45,7 @@ export const SUPPORT_ADMIN = {
 
 // Finance admin account
 export const FINANCE_ADMIN = {
-  username: 'finance@auapw.com',
+  username: 'finance@allusedautopartswearhouse.us',
   password: 'Finance@AUAPW2024!Secure',
   role: 'finance_admin',
   permissions: [
