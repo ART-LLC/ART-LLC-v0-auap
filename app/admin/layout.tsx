@@ -20,12 +20,18 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
           </div>
           
           <div className="flex items-center gap-4">
-            <nav className="hidden md:flex gap-6">
+            <nav aria-label="Admin" className="flex gap-4 sm:gap-6">
               <Link href="/admin/dashboard" className="text-sm hover:text-primary transition-colors">
                 Dashboard
               </Link>
-              <Link href="/admin/approvals" className="text-sm hover:text-primary transition-colors">
-                Approvals
+              <Link href="/admin/quotes" className="text-sm hover:text-primary transition-colors">
+                Quotes
+              </Link>
+              <Link href="/admin/orders" className="text-sm hover:text-primary transition-colors">
+                Orders
+              </Link>
+              <Link href="/admin/merchant" className="text-sm hover:text-primary transition-colors">
+                Google Shopping
               </Link>
             </nav>
             
