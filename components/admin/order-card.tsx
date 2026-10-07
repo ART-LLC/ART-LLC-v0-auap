@@ -20,6 +20,11 @@ export function OrderCard({ order, statuses }: { order: CustomerOrder; statuses:
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <span className="font-mono text-sm font-semibold text-foreground">{order.orderNumber}</span>
             <StatusBadge status={order.status} />
+            {order.paymentGateway && (
+              <span className="rounded-full border border-border px-2 py-0.5 text-xs capitalize text-muted-foreground">
+                {order.paymentGateway}
+              </span>
+            )}
             <time className="text-xs text-muted-foreground" dateTime={order.createdAt}>
               {new Date(order.createdAt).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" })}
             </time>
