@@ -159,6 +159,10 @@ export interface NewOrderInput {
   tax: number
   shippingCost: number
   totalAmount: number
+  /** Gateway slug the customer selected (e.g. "stripe", "phone"). Defaults to phone/offline. */
+  paymentGateway?: string
+  /** Initial order status. Online-payment flows should pass "pending" until payment is confirmed. */
+  status?: string
 }
 
 function makeOrderNumber() {
@@ -175,12 +179,13 @@ export async function createOrder(input: NewOrderInput): Promise<CustomerOrder> 
     const { rows } = await client.query(
       `INSERT INTO public.orders
          (id, userid, ordernumber, status, totalamount, subtotal, tax, shippingcost,
-          shippingaddress, items, customer_name, customer_email, customer_phone, customer_notes)
-       VALUES ($1,'guest',$2,'pending',$3,$4,$5,$6,$7,$8::jsonb,$9,$10,$11,$12)
+          shippingaddress, items, customer_name, customer_email, customer_phone, customer_notes, payment_gateway)
+       VALUES ($1,'guest',$2,$3,$4,$5,$6,$7,$8,$9::jsonb,$10,$11,$12,$13,$14)
        RETURNING *`,
       [
         id,
         makeOrderNumber(),
+        input.status || "pending",
         input.totalAmount,
         input.subtotal,
         input.tax,
@@ -191,6 +196,7 @@ export async function createOrder(input: NewOrderInput): Promise<CustomerOrder> 
         input.customerEmail,
         input.customerPhone,
         input.customerNotes || null,
+        input.paymentGateway || null,
       ],
     )
     for (const line of input.items) {
@@ -208,6 +214,33 @@ export async function createOrder(input: NewOrderInput): Promise<CustomerOrder> 
   } finally {
     client.release()
   }
+}
+
+/** Attach a Stripe Checkout Session id to a pending order so payment can be confirmed later. */
+export async function attachStripeSession(orderId: string, stripeSessionId: string) {
+  await pool.query(`UPDATE public.orders SET stripe_session_id = $2, updatedat = now() WHERE id = $1`, [
+    orderId,
+    stripeSessionId,
+  ])
+}
+
+/** Look up an order by its Stripe Checkout Session id (used to confirm payment). */
+export async function getOrderByStripeSession(stripeSessionId: string): Promise<CustomerOrder | null> {
+  const { rows } = await pool.query(`SELECT * FROM public.orders WHERE stripe_session_id = $1 LIMIT 1`, [
+    stripeSessionId,
+  ])
+  return rows[0] ? mapOrder(rows[0]) : null
+}
+
+/** Mark an order paid after Stripe confirms the Checkout Session succeeded. Idempotent. */
+export async function markOrderPaid(orderId: string): Promise<CustomerOrder> {
+  const { rows } = await pool.query(
+    `UPDATE public.orders SET status = 'paid', updatedat = now() WHERE id = $1 AND status != 'paid' RETURNING *`,
+    [orderId],
+  )
+  if (rows[0]) return mapOrder(rows[0])
+  const { rows: existing } = await pool.query(`SELECT * FROM public.orders WHERE id = $1`, [orderId])
+  return mapOrder(existing[0])
 }
 
 export async function listQuoteLeads(status?: string, search?: string): Promise<QuoteLead[]> {
