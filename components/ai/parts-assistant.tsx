@@ -15,14 +15,14 @@ interface PartResult {
   model?: string
   year?: string
   category?: string
-  price?: number
+  price?: number | null
   url: string
 }
 
 const SUGGESTIONS = [
-  "Engine for a 2019 Acura MDX",
-  "Do you have a TL transmission?",
-  "Cheapest CL engine you have",
+  "Engine for a 2010 Toyota Camry",
+  "Transmission for a 2015 Ford F-150",
+  "Cheapest Honda Civic engine you have",
 ]
 
 export function PartsAssistant() {
@@ -231,7 +231,7 @@ function MessageBubble({ message }: { message: any }) {
                   <p className="truncate text-xs font-semibold text-foreground">{p.name}</p>
                   <p className="text-[11px] text-muted-foreground">
                     {p.category}
-                    {typeof p.price === "number" ? ` · $${p.price.toLocaleString()}` : ""}
+                    {typeof p.price === "number" ? ` · $${p.price.toLocaleString()}` : " · Call for price"}
                   </p>
                 </div>
                 <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-primary" />

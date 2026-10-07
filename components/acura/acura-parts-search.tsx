@@ -201,7 +201,7 @@ export function AcuraPartsSearch({ onSearch, activeQuery = '', size = 'lg', plac
                     <span className="min-w-0 flex-1">
                       <span className="block truncate text-sm font-medium text-foreground">{product.name}</span>
                       <span className="block truncate text-xs text-muted-foreground">
-                        {product.model} · {product.category} · ${product.price}
+                        {product.model} · {product.category} · {product.price > 0 ? `$${product.price.toLocaleString()}` : "Call for price"}
                       </span>
                     </span>
                   </button>
