@@ -40,23 +40,23 @@ function shell(title: string, body: string, adminPath: string, siteUrl: string) 
   </div>`
 }
 
-async function send(subject: string, html: string, replyTo?: string) {
+async function send(subject: string, html: string, to: string[] = [STAFF_EMAIL], replyTo?: string) {
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) {
-    console.error("[followup] RESEND_API_KEY missing; staff alert not emailed (record is saved in admin)")
+    console.error("[followup] RESEND_API_KEY missing; email not sent (record is saved in admin)")
     return
   }
   try {
     const { error } = await new Resend(apiKey).emails.send({
       from: FROM,
-      to: [STAFF_EMAIL],
+      to,
       subject,
       html,
       ...(replyTo ? { replyTo } : {}),
     })
     if (error) console.error("[followup] Resend error:", error.message)
   } catch (err) {
-    console.error("[followup] Staff alert failed:", err instanceof Error ? err.message : err)
+    console.error("[followup] Email send failed:", err instanceof Error ? err.message : err)
   }
 }
 
@@ -77,6 +77,7 @@ export async function notifyNewQuote(lead: QuoteLead, siteUrl: string) {
   await send(
     `New quote #${lead.id}: ${vehicle || lead.make} ${lead.partType}`.trim(),
     shell("New Quote Request", body, "/admin/quotes", siteUrl),
+    [STAFF_EMAIL],
     lead.email || undefined,
   )
 }
@@ -92,11 +93,68 @@ export async function notifyNewOrder(order: CustomerOrder, siteUrl: string) {
     ["Email", order.customerEmail],
     ["Ship to", order.shippingAddress],
     ["Notes", order.customerNotes],
+    ["Payment", order.paymentGateway ?? "phone"],
+    ["Status", order.status],
     ["Total", money(order.totalAmount)],
   ])}</table><h3>Items</h3><ul>${items}</ul>`
   await send(
     `New order ${order.orderNumber} — ${money(order.totalAmount)}`,
     shell("New Order — call to confirm & take payment", body, "/admin/orders", siteUrl),
+    [STAFF_EMAIL],
     order.customerEmail || undefined,
+  )
+}
+
+/**
+ * Emails the customer an invoice-style receipt for their own order. Sent
+ * on every placed order (pending phone orders and Stripe-paid orders alike)
+ * so the customer always has a record of exactly what they entered.
+ */
+export async function sendCustomerOrderInvoice(order: CustomerOrder, siteUrl: string) {
+  if (!order.customerEmail) return
+
+  const items = order.items
+    .map(
+      (l) =>
+        `<li>${escapeHtml(l.name)} × ${l.quantity} — ${money(l.lineTotal)}</li>`,
+    )
+    .join("")
+  const paid = order.status === "paid"
+  const body = `
+    <p>Thanks for your order, ${escapeHtml(order.customerName) || "there"}! Here is your receipt.</p>
+    <table style="width:100%;border-collapse:collapse">${rows([
+      ["Order #", order.orderNumber],
+      ["Date", new Date(order.createdAt).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" })],
+      ["Ship to", order.shippingAddress],
+      ["Phone", order.customerPhone],
+      ["Notes", order.customerNotes],
+    ])}</table>
+    <h3>Items</h3>
+    <ul>${items}</ul>
+    <table style="width:100%;border-collapse:collapse;margin-top:8px">${rows([
+      ["Subtotal", money(order.subtotal)],
+      ["Tax", money(order.tax)],
+      ["Shipping", money(order.shippingCost)],
+      ["Total", money(order.totalAmount)],
+    ])}</table>
+    <p style="margin-top:16px">
+      ${
+        paid
+          ? `Your card has been charged and your order is confirmed.`
+          : `No charge has been made yet — a parts specialist will call you at ${escapeHtml(order.customerPhone)} within one business day to confirm fitment and take payment securely by phone.`
+      }
+    </p>`
+
+  await send(
+    `Your AUAPW order ${order.orderNumber}${paid ? " — paid" : " — received"}`,
+    `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto">
+      <div style="background:#0f1117;color:#fff;padding:20px;border-radius:8px 8px 0 0">
+        <h2 style="margin:0">${paid ? "Payment Received" : "Order Received"}</h2>
+      </div>
+      <div style="border:1px solid #e5e7eb;border-top:none;padding:20px;border-radius:0 0 8px 8px">
+        ${body}
+      </div>
+    </div>`,
+    [order.customerEmail],
   )
 }

@@ -221,13 +221,13 @@ export default async function BrandProductPage({ params }: PageProps) {
 
                 {/* Mileage tier pricing + Call/Message/Quote/Cart actions */}
                 <BrandPurchasePanel
-                  productId={product.id}
+                  productId={product.canonicalSlug}
                   productName={product.name}
                   basePrice={product.price}
                   tiers={product.tiers}
                   productImage={product.imageUrl || fallbackImage}
                   productType={product.category || 'Part'}
-                  make={product.compatibility || label}
+                  make={label}
                   shipping={SHIPPING}
                 />
 

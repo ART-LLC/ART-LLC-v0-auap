@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import { z } from "zod"
 import { createOrder } from "@/lib/followup"
-import { notifyNewOrder } from "@/lib/followup-notify"
+import { notifyNewOrder, sendCustomerOrderInvoice } from "@/lib/followup-notify"
 import { priceCart } from "@/lib/order-pricing"
 
 const req = (label: string, max: number) => z.string().trim().min(1, `Please enter your ${label}.`).max(max)
@@ -64,7 +64,11 @@ export async function POST(request: Request) {
       shippingCost: pricing.shippingCost,
       totalAmount: pricing.totalAmount,
     })
-    await notifyNewOrder(order, new URL(request.url).origin)
+    const origin = new URL(request.url).origin
+    await notifyNewOrder(order, origin)
+    await sendCustomerOrderInvoice(order, origin).catch((err) =>
+      console.error("[orders] Customer invoice email failed:", err instanceof Error ? err.message : err),
+    )
     return NextResponse.json({ ok: true, orderNumber: order.orderNumber, totalAmount: order.totalAmount })
   } catch (err) {
     console.error("[orders] Failed to save order:", err instanceof Error ? err.message : err)

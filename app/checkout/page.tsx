@@ -11,6 +11,7 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 
 import { BrandLogosSection } from '@/components/brand-logos'
+import { StripeCardPayment } from '@/components/checkout/stripe-card-payment'
 import { useRouter } from 'next/navigation'
 
 interface PaymentGateway {
@@ -135,6 +136,19 @@ export default function CheckoutPage() {
       setIsProcessing(false)
     }
   }
+
+  const handleStripePaid = (result: { orderNumber: string; totalAmount: number }) => {
+    setPlacedOrder(result)
+    clearCart()
+    setStep('confirmation')
+  }
+
+  const handleStripeError = (message: string) => {
+    setError(message)
+  }
+
+  const activeGateway = gateways.find((g) => g.slug === selectedGateway)
+  const isStripeCard = activeGateway?.type === 'card' && activeGateway.slug === 'stripe'
 
   if (items.length === 0 && step !== 'confirmation' && !loadingItemId) {
     return (
@@ -381,6 +395,39 @@ export default function CheckoutPage() {
                           const active = gateways.find((g) => g.slug === selectedGateway)
                           if (!active) return null
 
+                          if (active.type === 'card' && active.slug === 'stripe') {
+                            return (
+                              <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-3">
+                                <div className="flex items-center justify-between flex-wrap gap-2">
+                                  <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                                    <ShieldCheck className="w-4 h-4" />
+                                    Secured by {active.name}
+                                  </div>
+                                  <div className="flex items-center gap-1.5">
+                                    {['VISA', 'MASTERCARD', 'AMEX', 'DISCOVER'].map((card) => (
+                                      <span
+                                        key={card}
+                                        className="px-1.5 py-0.5 rounded border border-white/15 text-[9px] font-bold tracking-wide text-foreground/60"
+                                      >
+                                        {card}
+                                      </span>
+                                    ))}
+                                  </div>
+                                </div>
+                                <StripeCardPayment
+                                  customer={formData}
+                                  items={items.map(({ id, make, price, quantity }) => ({ id, make, price, quantity }))}
+                                  onPaid={handleStripePaid}
+                                  onError={handleStripeError}
+                                />
+                                <p className="flex items-center gap-1.5 text-xs text-foreground/50">
+                                  <Lock className="w-3 h-3" />
+                                  Enter your card details above. Your card is charged securely by Stripe.
+                                </p>
+                              </div>
+                            )
+                          }
+
                           if (active.type === 'card') {
                             return (
                               <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-3">
@@ -501,9 +548,11 @@ export default function CheckoutPage() {
                           )
                         })()}
 
-                        <p className="text-sm text-foreground/70 leading-relaxed">
-                          No card needed online. After you place your order, a parts specialist calls you to confirm fitment for your VIN and take payment securely{selectedGateway && selectedGateway !== 'phone' ? ` using ${gateways.find((g) => g.slug === selectedGateway)?.name}` : ''} by phone.
-                        </p>
+                        {!isStripeCard && (
+                          <p className="text-sm text-foreground/70 leading-relaxed">
+                            No card needed online. After you place your order, a parts specialist calls you to confirm fitment for your VIN and take payment securely{selectedGateway && selectedGateway !== 'phone' ? ` using ${gateways.find((g) => g.slug === selectedGateway)?.name}` : ''} by phone.
+                          </p>
+                        )}
                         <label htmlFor="checkout-notes" className="sr-only">Order notes</label>
                         <Textarea
                           id="checkout-notes"
@@ -518,9 +567,11 @@ export default function CheckoutPage() {
                           <Button variant="outline" size="lg" onClick={() => setStep('shipping')} disabled={isProcessing}>
                             Edit Shipping
                           </Button>
-                          <Button size="lg" className="flex-1" onClick={handlePlaceOrder} disabled={isProcessing}>
-                            {isProcessing ? 'Placing order...' : 'Place Order'}
-                          </Button>
+                          {!isStripeCard && (
+                            <Button size="lg" className="flex-1" onClick={handlePlaceOrder} disabled={isProcessing}>
+                              {isProcessing ? 'Placing order...' : 'Place Order'}
+                            </Button>
+                          )}
                         </div>
                       </div>
                     )}
