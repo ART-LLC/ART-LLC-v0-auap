@@ -75,24 +75,44 @@ function slugFromUrl(url, fallback) {
   return fallback
 }
 
+function normalizeWebsiteUrl(value) {
+  if (!value) return undefined
+  return String(value).replace(/^https?:\/\/(?:www\.)?auapw\.com(?=\/|[?#]|$)/i, 'https://www.allusedautopartswarehouse.com')
+}
+
 const round = (n) => Math.round(n)
 
 const manifest = fs.existsSync(MANIFEST) ? JSON.parse(fs.readFileSync(MANIFEST, "utf8")) : []
 
-// Newest master workbook per brand wins, so re-uploads replace older ones.
-const files = fs
-  .readdirSync(DATA_DIR)
-  .filter((f) => f.toLowerCase().endsWith(".xlsx"))
-  .map((f) => ({ f, mtime: fs.statSync(path.join(DATA_DIR, f)).mtimeMs }))
-  .sort((a, b) => a.mtime - b.mtime)
+// Explicit files avoid filesystem timestamps choosing an older upload after checkout.
+const requestedFiles = process.argv.slice(2)
+const files = requestedFiles.length
+  ? requestedFiles.map((file) => {
+      const f = path.basename(file)
+      if (path.resolve(file) !== path.resolve(DATA_DIR, f) || !f.toLowerCase().endsWith('.xlsx')) {
+        throw new Error(`Expected an .xlsx file in data/: ${file}`)
+      }
+      return { f }
+    })
+  : fs.readdirSync(DATA_DIR)
+      .filter((f) => f.toLowerCase().endsWith(".xlsx"))
+      .map((f) => ({ f, mtime: fs.statSync(path.join(DATA_DIR, f)).mtimeMs }))
+      .sort((a, b) => a.mtime - b.mtime)
 
 const byBrand = new Map()
 for (const { f } of files) {
   const wb = read(fs.readFileSync(path.join(DATA_DIR, f)))
-  if (!isMasterWorkbook(wb)) continue
+  if (!isMasterWorkbook(wb)) {
+    if (requestedFiles.length) throw new Error(`Missing master Products sheet: ${f}`)
+    continue
+  }
   const rows = utils.sheet_to_json(wb.Sheets.Products)
-  if (!rows.length) continue
+  if (!rows.length) throw new Error(`Empty Products sheet: ${f}`)
   const make = resolveMake(rows[0].Make, manifest)
+  if (!make.slug || rows.some((row) => resolveMake(row.Make, manifest).slug !== make.slug)) {
+    throw new Error(`Missing or inconsistent Make values: ${f}`)
+  }
+  if (requestedFiles.length && byBrand.has(make.slug)) throw new Error(`Multiple selected sheets for ${make.slug}`)
   byBrand.set(make.slug, { file: f, make, rows })
 }
 
@@ -110,7 +130,7 @@ for (const [slug, { file, make, rows }] of byBrand) {
 
     const sheetPrice = parsePrice(r.Price)
     const isQuote = sheetPrice === null || sheetPrice <= 0 || sheetPrice === PLACEHOLDER_PRICE
-    const standard = isQuote ? 0 : round(sheetPrice)
+    const standard = isQuote ? 0 : Math.round(sheetPrice * 100) / 100
     if (isQuote) quote++
     else buyNow++
 
@@ -137,8 +157,8 @@ for (const [slug, { file, make, rows }] of byBrand) {
       tiers: isQuote
         ? undefined
         : { low: round(standard * 1.0833), medium: standard, high: round(standard * 0.8333) },
-      imageUrl: r["Image URL"] || undefined,
-      productUrl: r["Product URL"] || undefined,
+      imageUrl: normalizeWebsiteUrl(r["Image URL"]),
+      productUrl: normalizeWebsiteUrl(r["Product URL"]),
       compatibility: `${year} ${make.label} ${model}`.trim(),
       description: `Tested used ${partType} for the ${year} ${make.label} ${model}${
         variant ? ` (${variant})` : ""

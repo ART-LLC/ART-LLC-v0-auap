@@ -58,8 +58,8 @@ export default function IndividualPartPage() {
   }
 
   const partName = partInfo?.name || categoryPartName || partSlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
-  const partDescription = partInfo?.longDescription || `Quality used ${partName.toLowerCase()} parts from our network of 2,000+ verified salvage yards. Every part comes with warranty coverage and free shipping nationwide.`
-  const partBenefits = partInfo?.benefits || ["Save 40-70% vs new parts", "All parts inspected and tested", "Up to 6-month warranty", "Free shipping to all 50 states", "24-hour quote response"]
+  const partDescription = partInfo?.longDescription || `Quality used ${partName.toLowerCase()} parts from our network of 2,000+ verified salvage yards. Every part comes with warranty coverage and $240 flat-rate shipping per part.`
+  const partBenefits = partInfo?.benefits || ["Save 40-70% vs new parts", "All parts inspected and tested", "Up to 6-month warranty", "$240 shipping per part to all 50 states", "24-hour quote response"]
   const partFaqs = partInfo?.faqs || [
     { q: `Where can I buy a used ${partName.toLowerCase()}?`, a: `AUAPW LLC connects you with 2,000+ verified salvage yards nationwide to find quality used ${partName.toLowerCase()} parts at competitive prices.` },
     { q: `How much does a used ${partName.toLowerCase()} cost?`, a: `Used ${partName.toLowerCase()} parts typically cost 40-70% less than new OEM parts. Contact us for a specific quote for your vehicle.` },
@@ -99,7 +99,7 @@ export default function IndividualPartPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
               { icon: Shield, title: "Up to 6-Month Warranty", desc: `Every ${partName.toLowerCase()} covered with full return & replacement` },
-              { icon: Truck, title: "Free Shipping USA", desc: "Ships to all 50 states, 1-3 business day processing" },
+              { icon: Truck, title: "$240 Shipping Per Part", desc: "Ships to all 50 states, 1-3 business day processing" },
               { icon: Clock, title: "24-Hour Response", desc: "Get quotes within one business day" },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="embossed-col rounded-lg p-5 flex items-start gap-3.5">

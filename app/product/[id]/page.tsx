@@ -134,7 +134,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Truck className="w-5 h-5 text-primary shrink-0" />
-                    <span>Free shipping</span>
+                    <span>$240 shipping per part</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <BadgeCheck className="w-5 h-5 text-primary shrink-0" />

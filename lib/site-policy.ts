@@ -9,10 +9,10 @@ export const PHONE_DISPLAY = "(708) 896-2383"
 export const PHONE_HREF = "tel:+17088962383"
 
 export const SHIPPING = {
-  price: 0,
-  label: "Free insured freight",
-  short: "Free freight",
-  allInNote: "Free insured freight included — no $99 residential surprise",
+  price: 240,
+  label: "$240 flat-rate shipping per part",
+  short: "$240 per part",
+  allInNote: "$240 insured freight per part — liftgate and residential delivery included",
   liftgate: "Liftgate and residential delivery included",
   dispatch: "Ships in 1-2 business days",
   transit: "3-7 business days door to door in the lower 48",
@@ -58,7 +58,7 @@ export const RETURNS = {
 } as const
 
 export const TRUST_FACTS = [
-  { label: "Free freight", detail: "Insured, liftgate included" },
+  { label: SHIPPING.short, detail: "Insured, liftgate included" },
   { label: "90-day–12-month warranty", detail: "Used 90 days · rebuilt 12 months" },
   { label: "No core charge on used", detail: "Keep your old unit" },
   { label: "Ships 1-2 days", detail: "Tested, crated, dispatched" },

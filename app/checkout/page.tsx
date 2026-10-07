@@ -1,6 +1,7 @@
 'use client'
 
 import { useCartStore } from '@/lib/stores/cart-store'
+import { SHIPPING } from '@/lib/site-policy'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -89,7 +90,7 @@ export default function CheckoutPage() {
   const [paymentConfirmed, setPaymentConfirmed] = useState(false)
 
   const totalPrice = getTotalPrice()
-  const shipping = items.reduce((total, item) => total + (item.shippingCost ?? 0) * item.quantity, 0)
+  const shipping = items.reduce((total, item) => total + SHIPPING.price * item.quantity, 0)
   const tax = totalPrice * 0.08
   const finalTotal = totalPrice + shipping + tax
 

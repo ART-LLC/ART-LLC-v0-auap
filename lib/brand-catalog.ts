@@ -321,8 +321,8 @@ function isUsablePhotoUrl(url: string | undefined): boolean {
   if (!url) return false
   // The original spreadsheet photo host is offline — every URL 400s.
   if (url.includes("auapw.org")) return false
-  // Master-sheet image paths on auapw.com/images/ return 404.
-  if (/auapw\.com\/images\//.test(url)) return false
+  // Master-sheet /images/ paths return 404 on both the old and replacement domains.
+  if (/^https?:\/\/(?:www\.)?(?:auapw\.com|allusedautopartswarehouse\.com)\/images\//i.test(url)) return false
   return /^https?:\/\//.test(url)
 }
 

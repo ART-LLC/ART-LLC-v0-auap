@@ -35,7 +35,7 @@ export function MileagePriceSelector({ basePrice, tiers, onTierChange }: Mileage
     return (
       <div className="flex items-baseline gap-3">
         <span className="text-4xl font-black text-primary">${basePrice.toLocaleString()}</span>
-        <span className="text-sm text-muted-foreground">+ free shipping</span>
+        <span className="text-sm text-muted-foreground">+ $240 shipping per part</span>
       </div>
     )
   }

@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { resolveFeedItemId, getEffectiveProduct, getAllOverrides, isFeedEligible } from '@/lib/merchant'
 import { getBrandLabel } from '@/lib/brand-catalog'
 
-const SHIPPING_COST = 240
+import { SHIPPING } from '@/lib/site-policy'
 
 export async function GET(_req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
@@ -33,7 +33,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ id: str
       image: effective.imageUrl,
       make: getBrandLabel(brand),
       partType: product.category,
-      shippingCost: SHIPPING_COST,
+      shippingCost: SHIPPING.price,
     },
   })
 }

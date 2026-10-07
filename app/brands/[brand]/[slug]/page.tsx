@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SHIPPING as SHIPPING_POLICY } from '@/lib/site-policy'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
@@ -32,7 +33,7 @@ interface PageProps {
 
 const SITE_URL = 'https://www.allusedautopartswarehouse.com'
 const WARRANTY = '90 Days'
-const SHIPPING = '$240'
+const SHIPPING = SHIPPING_POLICY.label
 
 function getImageSearchUrl(name: string): string {
   return `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(`${name} used OEM part`)}`

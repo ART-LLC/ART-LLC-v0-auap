@@ -1,4 +1,5 @@
 import { after } from "next/server"
+import { SHIPPING } from "@/lib/site-policy"
 import { BRAND_DIRECTORY, loadBrandCatalog } from "@/lib/brand-catalog"
 import { getPartType } from "@/lib/catalog-fields"
 import {
@@ -54,7 +55,7 @@ export async function GET(request: Request) {
         encoder.encode(
           `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">\n<channel>\n` +
             `<title>${xml(MERCHANT_STORE_NAME)}</title>\n<link>${SITE_URL}</link>\n` +
-            `<description>Tested used OEM engines and transmissions with free insured freight.</description>\n`,
+            `<description>Tested used OEM engines and transmissions with ${xml(SHIPPING.label)}.</description>\n`,
         ),
       )
     },
@@ -92,7 +93,7 @@ export async function GET(request: Request) {
             `<g:identifier_exists>no</g:identifier_exists>` +
             `<g:google_product_category>${xml(CATEGORY[partType])}</g:google_product_category>` +
             `<g:product_type>${xml(productType)}</g:product_type>` +
-            `<g:shipping><g:country>US</g:country><g:price>0.00 USD</g:price></g:shipping>` +
+            `<g:shipping><g:country>US</g:country><g:price>${SHIPPING.price.toFixed(2)} USD</g:price></g:shipping>` +
             `<g:custom_label_0>${xml(brand.label)}</g:custom_label_0>` +
             `<g:custom_label_1>${partType}</g:custom_label_1>` +
             `</item>\n`,

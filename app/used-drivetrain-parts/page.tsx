@@ -59,7 +59,7 @@ export default function UsedDrivetrainPartsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
               { icon: Shield, title: "Up to 6-Month Warranty", desc: "Every drivetrain part covered with full return & replacement" },
-              { icon: Truck, title: "Free Shipping USA", desc: "Ships to all 50 states, 1-3 business day processing" },
+              { icon: Truck, title: "$240 Shipping Per Part", desc: "Ships to all 50 states, 1-3 business day processing" },
               { icon: Clock, title: "24-Hour Response", desc: "Get quotes within one business day" },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="embossed-col rounded-lg p-5 flex items-start gap-3.5">
