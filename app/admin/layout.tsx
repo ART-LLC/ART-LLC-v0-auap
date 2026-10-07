@@ -34,6 +34,12 @@ export default async function AdminLayout({ children }: { children: ReactNode })
               <Link href="/admin/orders" className="text-sm hover:text-primary transition-colors">
                 Orders
               </Link>
+              <Link href="/admin/team" className="text-sm hover:text-primary transition-colors">
+                Team
+              </Link>
+              <Link href="/admin/payments" className="text-sm hover:text-primary transition-colors">
+                Payments
+              </Link>
               <Link href="/admin/merchant" className="text-sm hover:text-primary transition-colors">
                 Google Shopping
               </Link>

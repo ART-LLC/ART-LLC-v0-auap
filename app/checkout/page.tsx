@@ -5,13 +5,23 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import Link from 'next/link'
-import { useState } from 'react'
-import { Check, ArrowLeft } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Check, ArrowLeft, ShieldCheck, Lock } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 
 import { BrandLogosSection } from '@/components/brand-logos'
 import { useRouter } from 'next/navigation'
+
+interface PaymentGateway {
+  id: string
+  name: string
+  slug: string
+  type: 'card' | 'wallet' | 'bank' | 'offline'
+  description: string | null
+  isEnabled: boolean
+  isDefault: boolean
+}
 
 export default function CheckoutPage() {
   const router = useRouter()
@@ -21,6 +31,22 @@ export default function CheckoutPage() {
   
   const [step, setStep] = useState<'auth' | 'shipping' | 'payment' | 'confirmation'>('auth')
   const [isGuest, setIsGuest] = useState(false)
+  const [gateways, setGateways] = useState<PaymentGateway[]>([])
+  const [selectedGateway, setSelectedGateway] = useState<string | null>(null)
+
+  useEffect(() => {
+    fetch('/api/payment-gateways')
+      .then((res) => (res.ok ? res.json() : { gateways: [] }))
+      .then((data) => {
+        const enabled: PaymentGateway[] = (data.gateways ?? []).filter(
+          (g: PaymentGateway) => g.isEnabled
+        )
+        setGateways(enabled)
+        const def = enabled.find((g) => g.isDefault) ?? enabled[0]
+        if (def) setSelectedGateway(def.slug)
+      })
+      .catch(() => {})
+  }, [])
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -280,9 +306,83 @@ export default function CheckoutPage() {
                     </div>
 
                     {step === 'payment' && (
-                      <div className="space-y-4">
+                      <div className="space-y-5">
+                        {gateways.length > 0 && (
+                          <div className="space-y-2">
+                            <p className="text-sm font-semibold text-foreground/90">Payment Method</p>
+                            <div className="grid sm:grid-cols-2 gap-3">
+                              {gateways.map((gw) => {
+                                const isSelected = selectedGateway === gw.slug
+                                return (
+                                  <button
+                                    key={gw.id}
+                                    type="button"
+                                    onClick={() => setSelectedGateway(gw.slug)}
+                                    className={`text-left p-4 rounded-lg border transition-colors ${
+                                      isSelected
+                                        ? 'border-blue-500 bg-blue-500/10'
+                                        : 'border-white/10 bg-white/5 hover:border-white/30'
+                                    }`}
+                                  >
+                                    <div className="flex items-center justify-between mb-1">
+                                      <span className="font-semibold text-sm">{gw.name}</span>
+                                      {gw.isDefault && (
+                                        <span className="text-[10px] uppercase tracking-wide font-bold text-blue-400">
+                                          Recommended
+                                        </span>
+                                      )}
+                                    </div>
+                                    {gw.description && (
+                                      <p className="text-xs text-foreground/60 leading-snug">{gw.description}</p>
+                                    )}
+                                  </button>
+                                )
+                              })}
+                            </div>
+                          </div>
+                        )}
+
+                        {selectedGateway && selectedGateway !== 'phone' && (
+                          <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-3">
+                            <div className="flex items-center justify-between flex-wrap gap-2">
+                              <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                                <ShieldCheck className="w-4 h-4" />
+                                Secured by {gateways.find((g) => g.slug === selectedGateway)?.name ?? 'Secure Gateway'}
+                              </div>
+                              <div className="flex items-center gap-1.5">
+                                {['VISA', 'MASTERCARD', 'AMEX', 'DISCOVER'].map((card) => (
+                                  <span
+                                    key={card}
+                                    className="px-1.5 py-0.5 rounded border border-white/15 text-[9px] font-bold tracking-wide text-foreground/60"
+                                  >
+                                    {card}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                            <div className="grid sm:grid-cols-2 gap-3 opacity-60">
+                              <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
+                                Card Number
+                              </div>
+                              <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
+                                Name on Card
+                              </div>
+                              <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
+                                MM / YY
+                              </div>
+                              <div className="rounded-md border border-white/10 bg-background/40 px-3 py-2.5 text-sm text-foreground/50">
+                                CVV
+                              </div>
+                            </div>
+                            <p className="flex items-center gap-1.5 text-xs text-foreground/50">
+                              <Lock className="w-3 h-3" />
+                              Card details are collected securely by phone — nothing is charged online.
+                            </p>
+                          </div>
+                        )}
+
                         <p className="text-sm text-foreground/70 leading-relaxed">
-                          No card needed online. After you place your order, a parts specialist calls you to confirm fitment for your VIN and take payment securely by phone.
+                          No card needed online. After you place your order, a parts specialist calls you to confirm fitment for your VIN and take payment securely{selectedGateway && selectedGateway !== 'phone' ? ` using ${gateways.find((g) => g.slug === selectedGateway)?.name}` : ''} by phone.
                         </p>
                         <label htmlFor="checkout-notes" className="sr-only">Order notes</label>
                         <Textarea
