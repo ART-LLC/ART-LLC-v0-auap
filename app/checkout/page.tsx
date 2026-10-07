@@ -21,10 +21,8 @@ interface PaymentGateway {
   description: string | null
   isEnabled: boolean
   isDefault: boolean
-  config?: {
-    paymentLinkUrl?: string
-    instructions?: string
-  }
+  paymentLink?: string | null
+  instructions?: string | null
 }
 
 export default function CheckoutPage() {
@@ -450,9 +448,9 @@ export default function CheckoutPage() {
                                   <ShieldCheck className="w-4 h-4" />
                                   Pay via {active.name}
                                 </div>
-                                {active.config?.paymentLinkUrl ? (
+                                {active.paymentLink ? (
                                   <a
-                                    href={active.config.paymentLinkUrl}
+                                    href={active.paymentLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-2 rounded-md bg-blue-600 hover:bg-blue-700 transition-colors py-3 text-sm font-semibold text-white"
@@ -465,9 +463,9 @@ export default function CheckoutPage() {
                                     A payment link will be sent to you after your order is placed.
                                   </p>
                                 )}
-                                {active.config?.instructions && (
+                                {active.instructions && (
                                   <p className="text-xs text-foreground/50 whitespace-pre-line">
-                                    {active.config.instructions}
+                                    {active.instructions}
                                   </p>
                                 )}
                               </div>
@@ -482,7 +480,7 @@ export default function CheckoutPage() {
                                   {active.name}
                                 </div>
                                 <p className="text-sm text-foreground/60 whitespace-pre-line">
-                                  {active.config?.instructions ??
+                                  {active.instructions ??
                                     'A parts specialist will provide bank transfer details by phone after you place your order.'}
                                 </p>
                               </div>
@@ -496,7 +494,7 @@ export default function CheckoutPage() {
                                 {active.name}
                               </div>
                               <p className="text-sm text-foreground/60 whitespace-pre-line">
-                                {active.config?.instructions ??
+                                {active.instructions ??
                                   'A parts specialist calls you to confirm fitment for your VIN and take payment securely by phone.'}
                               </p>
                             </div>

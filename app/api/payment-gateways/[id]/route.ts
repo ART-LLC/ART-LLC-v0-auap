@@ -7,12 +7,10 @@ import { VALID_TYPES } from '../route'
 
 /**
  * PATCH /api/payment-gateways/[id]
- * Admin-only: toggle enabled/default state, edit gateway display details,
- * or update its API credentials / payment link / customer instructions.
- * Credential fields are merged into the existing config rather than
- * replacing it, so editing one field never clears the others. `apiSecret`
- * is write-only: omit it to keep the stored secret, or send an empty string
- * to clear it.
+ * Admin-only: toggle enabled/default state, edit display details, or update
+ * the hosted payment link / customer instructions / required env var names.
+ * No API secrets are ever accepted or stored here — gateways read their
+ * credentials from Vercel project environment variables at request time.
  */
 export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   try {
@@ -31,12 +29,10 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
       isEnabled,
       isDefault,
       sortOrder,
-      apiKey,
-      apiSecret,
-      merchantId,
-      environment,
-      paymentLinkUrl,
+      config,
+      paymentLink,
       instructions,
+      envVarsRequired,
     } = body
 
     if (type !== undefined && !VALID_TYPES.includes(type)) {
@@ -63,29 +59,17 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
     if (logo !== undefined) updates.logo = logo
     if (isEnabled !== undefined) updates.isEnabled = Boolean(isEnabled)
     if (sortOrder !== undefined) updates.sortOrder = sortOrder
-
-    const hasConfigUpdate =
-      apiKey !== undefined ||
-      apiSecret !== undefined ||
-      merchantId !== undefined ||
-      environment !== undefined ||
-      paymentLinkUrl !== undefined ||
-      instructions !== undefined
-
-    if (hasConfigUpdate) {
+    if (paymentLink !== undefined) updates.paymentLink = paymentLink || null
+    if (instructions !== undefined) updates.instructions = instructions || null
+    if (envVarsRequired !== undefined) {
+      updates.envVarsRequired = Array.isArray(envVarsRequired) ? envVarsRequired.filter(Boolean) : []
+    }
+    if (config !== undefined) {
       const prevConfig = (existing.config && typeof existing.config === 'object' ? existing.config : {}) as Record<
         string,
         unknown
       >
-      updates.config = {
-        ...prevConfig,
-        ...(apiKey !== undefined ? { apiKey } : {}),
-        ...(apiSecret !== undefined ? { apiSecret } : {}),
-        ...(merchantId !== undefined ? { merchantId } : {}),
-        ...(environment !== undefined ? { environment: environment === 'production' ? 'production' : 'sandbox' } : {}),
-        ...(paymentLinkUrl !== undefined ? { paymentLinkUrl } : {}),
-        ...(instructions !== undefined ? { instructions } : {}),
-      }
+      updates.config = { ...prevConfig, ...(config && typeof config === 'object' ? config : {}) }
     }
 
     if (isDefault === true) {

@@ -9,11 +9,11 @@ export const VALID_TYPES = ['card', 'wallet', 'bank', 'link', 'offline']
 /**
  * GET /api/payment-gateways
  * Public: list configured payment gateways/methods (used by checkout).
- * Only customer-facing, non-secret fields are returned publicly (name, type,
- * description, hosted payment link, instructions). Admins (valid admin
- * session) additionally see merchant config (API key/merchant id — never
- * actual secrets, which always live in Vercel project environment variables,
- * not this table) and the list of env var names each gateway depends on.
+ * Returns only customer-facing, non-secret fields (name, type, description,
+ * hosted payment link, instructions, display config). Admins additionally
+ * see `envVarsRequired` (the env var *names* each gateway depends on —
+ * never values; actual secrets always live in Vercel project environment
+ * variables, not in this table).
  */
 export async function GET() {
   try {
@@ -25,29 +25,24 @@ export async function GET() {
       .from(paymentGateways)
       .orderBy(asc(paymentGateways.sortOrder))
 
-    const gateways = rows.map((row) => {
-      const config = (row.config && typeof row.config === 'object' ? row.config : {}) as Record<
-        string,
-        unknown
-      >
-      if (isAdmin) {
-        return row
-      }
-      return {
-        id: row.id,
-        name: row.name,
-        slug: row.slug,
-        type: row.type,
-        description: row.description,
-        logo: row.logo,
-        isEnabled: row.isEnabled,
-        isDefault: row.isDefault,
-        sortOrder: row.sortOrder,
-        paymentLink: row.paymentLink,
-        instructions: row.instructions,
-        config: { apiKey: typeof config.apiKey === 'string' ? config.apiKey : undefined },
-      }
-    })
+    const gateways = rows.map((row) =>
+      isAdmin
+        ? row
+        : {
+            id: row.id,
+            name: row.name,
+            slug: row.slug,
+            type: row.type,
+            description: row.description,
+            logo: row.logo,
+            isEnabled: row.isEnabled,
+            isDefault: row.isDefault,
+            sortOrder: row.sortOrder,
+            config: row.config,
+            paymentLink: row.paymentLink,
+            instructions: row.instructions,
+          }
+    )
 
     return NextResponse.json({ gateways })
   } catch (error) {
@@ -58,10 +53,11 @@ export async function GET() {
 
 /**
  * POST /api/payment-gateways
- * Admin-only: add a new payment gateway/method to the dashboard, optionally
- * with its (non-secret) merchant config, a hosted payment link, customer
- * instructions, and the env var names its secrets should be configured
- * under (in the project's environment variables — never in this table).
+ * Admin-only: add a new payment gateway/method to the dashboard — any type
+ * (card, wallet, bank/wire, hosted payment link / EPS, or offline/manual) —
+ * with a hosted payment link, customer-facing instructions, and the env var
+ * names its API keys/secrets should be configured under in the project's
+ * environment variables (never stored in this table).
  */
 export async function POST(req: NextRequest) {
   try {
@@ -71,26 +67,11 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json()
-    const {
-      name,
-      slug,
-      type,
-      description,
-      logo,
-      isEnabled,
-      apiKey,
-      merchantId,
-      environment,
-      paymentLink,
-      instructions,
-      envVarsRequired,
-    } = body
+    const { name, slug, type, description, logo, isEnabled, config, paymentLink, instructions, envVarsRequired } =
+      body
 
     if (!name || !slug) {
-      return NextResponse.json(
-        { error: 'Missing required fields: name, slug' },
-        { status: 400 }
-      )
+      return NextResponse.json({ error: 'Missing required fields: name, slug' }, { status: 400 })
     }
 
     if (type && !VALID_TYPES.includes(type)) {
@@ -110,14 +91,10 @@ export async function POST(req: NextRequest) {
       isEnabled: Boolean(isEnabled),
       isDefault: false,
       sortOrder: 99,
-      config: {
-        apiKey: apiKey || '',
-        merchantId: merchantId || '',
-        environment: environment === 'production' ? 'production' : 'sandbox',
-      },
+      config: config && typeof config === 'object' ? config : {},
       paymentLink: paymentLink || null,
       instructions: instructions || null,
-      envVarsRequired: Array.isArray(envVarsRequired) ? envVarsRequired : [],
+      envVarsRequired: Array.isArray(envVarsRequired) ? envVarsRequired.filter(Boolean) : [],
     }
 
     await db.insert(paymentGateways).values(newGateway)
