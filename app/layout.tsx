@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/lib/auth-context'
 import { MobileThemeFab } from '@/components/mobile-theme-fab'
 import { IntercomProvider } from '@/components/intercom-provider'
+import { GoogleCustomerReviewsBadge } from '@/components/google-customer-reviews'
 import './globals.css'
 
 const roboto = Roboto({
@@ -98,6 +99,7 @@ export default function RootLayout({
             <IntercomProvider />
           </ThemeProvider>
         </AuthProvider>
+        <GoogleCustomerReviewsBadge />
         <Analytics />
       </body>
     </html>

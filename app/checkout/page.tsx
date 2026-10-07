@@ -12,6 +12,7 @@ import { Footer } from '@/components/footer'
 
 import { BrandLogosSection } from '@/components/brand-logos'
 import { StripeCardPayment } from '@/components/checkout/stripe-card-payment'
+import { GoogleCustomerReviewsOptIn } from '@/components/google-customer-reviews'
 import { useRouter } from 'next/navigation'
 
 interface PaymentGateway {
@@ -232,6 +233,12 @@ export default function CheckoutPage() {
 
           {step === 'confirmation' ? (
             <div className="text-center py-20">
+              {placedOrder && (
+                <GoogleCustomerReviewsOptIn
+                  orderId={placedOrder.orderNumber}
+                  email={formData.email}
+                />
+              )}
               <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-6">
                 <Check className="w-8 h-8 text-green-400" />
               </div>
