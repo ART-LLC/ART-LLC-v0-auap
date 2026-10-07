@@ -484,13 +484,16 @@ export const paymentGateways = pgTable('payment_gateways', {
   id: text('id').primaryKey(),
   name: text('name').notNull(), // Display name, e.g. "Authorize.Net"
   slug: text('slug').notNull().unique(), // 'authorize_net' | 'stripe' | 'paypal' | ...
-  type: text('type').notNull().default('card'), // 'card' | 'wallet' | 'bank' | 'offline'
+  type: text('type').notNull().default('card'), // 'card' | 'wallet' | 'bank' | 'offline' | 'link'
   description: text('description'),
   logo: text('logo'),
   isEnabled: boolean('isEnabled').notNull().default(false),
   isDefault: boolean('isDefault').notNull().default(false),
   sortOrder: integer('sortOrder').notNull().default(0),
   config: json('config'), // non-secret display config only (e.g. supported cards)
+  instructions: text('instructions'), // customer-facing instructions (bank/offline/link types)
+  paymentLink: text('paymentLink'), // hosted checkout / payment link URL (e.g. EPS, PayPal.me)
+  envVarsRequired: json('envVarsRequired'), // string[] of env var names this gateway needs (names only, never values)
   createdAt: timestamp('createdAt').notNull().defaultNow(),
   updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })
