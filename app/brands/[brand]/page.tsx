@@ -24,6 +24,7 @@ import { BrandStorySection } from '@/components/brands/brand-story-section'
 import { BrandFeaturesSection } from '@/components/brands/brand-features-section'
 import { BrandMaterialTabs } from '@/components/brands/brand-material-tabs'
 import { MaterialType, filterPartsByMaterial, countPartsByMaterial } from '@/lib/material-mapper'
+import { primeManualOverlay } from '@/lib/manual-products'
 
 interface PageProps {
   params: Promise<{ brand: string }>
@@ -46,6 +47,7 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
   const { brand } = await params
   const sp = await searchParams
   if (!isValidBrand(brand)) notFound()
+  await primeManualOverlay(brand)
 
   const label = getBrandLabel(brand)
   const catalog = loadBrandCatalog(brand)

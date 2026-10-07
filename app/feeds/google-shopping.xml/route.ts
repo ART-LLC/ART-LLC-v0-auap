@@ -11,6 +11,7 @@ import {
   isFeedEligible,
   logFeedFetch,
 } from "@/lib/merchant"
+import { primeManualOverlay } from "@/lib/manual-products"
 
 export const dynamic = "force-dynamic"
 export const maxDuration = 300
@@ -59,7 +60,7 @@ export async function GET(request: Request) {
         ),
       )
     },
-    pull(controller) {
+    async pull(controller) {
       const brand = brands[index++]
       if (!brand) {
         controller.enqueue(encoder.encode("</channel>\n</rss>\n"))
@@ -67,6 +68,7 @@ export async function GET(request: Request) {
         return
       }
 
+      await primeManualOverlay(brand.slug)
       const catalog = loadBrandCatalog(brand.slug)
       const chunk: string[] = []
       for (const product of catalog?.products ?? []) {

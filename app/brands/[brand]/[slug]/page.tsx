@@ -25,6 +25,7 @@ import {
   resolveBrandPartImage,
 } from '@/lib/brand-catalog'
 import { SCHEMA_AVAILABILITY, applyOverrideToProduct, getProductOverride } from '@/lib/merchant'
+import { primeManualOverlay } from '@/lib/manual-products'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight, ImageIcon, ExternalLink } from 'lucide-react'
 
 interface PageProps {
@@ -42,6 +43,7 @@ function getImageSearchUrl(name: string): string {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { brand, slug } = await params
   if (!isValidBrand(brand)) return {}
+  await primeManualOverlay(brand)
   const sheetProduct = getBrandProductBySlug(brand, slug)
   if (!sheetProduct) return {}
   const override = await getProductOverride(brand, slug)
@@ -60,6 +62,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function BrandProductPage({ params }: PageProps) {
   const { brand, slug } = await params
   if (!isValidBrand(brand)) notFound()
+  await primeManualOverlay(brand)
   const sheetProduct = getBrandProductBySlug(brand, slug)
   if (!sheetProduct) notFound()
   const override = await getProductOverride(brand, slug)

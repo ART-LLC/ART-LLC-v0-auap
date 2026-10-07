@@ -61,6 +61,22 @@ export const BRAND_DIRECTORY: { slug: string; label: string; count: number }[] =
 
 const catalogCache = new Map<string, BrandCatalog>()
 const slugIndexCache = new Map<string, Map<string, BrandProduct>>()
+const manualOverlay = new Map<string, BrandProduct[]>()
+
+/**
+ * Layers admin-added manual/uploaded products on top of a brand's sheet
+ * catalog for the current request. Call this (via lib/manual-products'
+ * primeManualOverlay) before reading the catalog so every consumer —
+ * listings, product pages, search, the feed — sees the merged result.
+ */
+export function setManualOverlay(brand: string, products: BrandProduct[]): void {
+  manualOverlay.set(brand, products)
+  // Derived caches are keyed off the previously-merged product set, so they
+  // must be dropped whenever the overlay changes.
+  slugIndexCache.delete(brand)
+  derivedCache.delete(brand)
+  sharedImageCache.delete(brand)
+}
 
 export function isValidBrand(brand: string): boolean {
   return BRAND_DIRECTORY.some((b) => b.slug === brand)
@@ -72,13 +88,16 @@ export function getBrandLabel(brand: string): string {
 
 export function loadBrandCatalog(brand: string): BrandCatalog | null {
   if (!isValidBrand(brand)) return null
-  const cached = catalogCache.get(brand)
-  if (cached) return cached
-  const filePath = path.join(process.cwd(), "data", "brands", `${brand}.json`)
-  if (!fs.existsSync(filePath)) return null
-  const catalog = JSON.parse(fs.readFileSync(filePath, "utf8")) as BrandCatalog
-  catalogCache.set(brand, catalog)
-  return catalog
+  let catalog = catalogCache.get(brand)
+  if (!catalog) {
+    const filePath = path.join(process.cwd(), "data", "brands", `${brand}.json`)
+    if (!fs.existsSync(filePath)) return null
+    catalog = JSON.parse(fs.readFileSync(filePath, "utf8")) as BrandCatalog
+    catalogCache.set(brand, catalog)
+  }
+  const manual = manualOverlay.get(brand)
+  if (!manual || manual.length === 0) return catalog
+  return { ...catalog, products: [...manual, ...catalog.products], count: catalog.products.length + manual.length }
 }
 
 export function getBrandProductBySlug(brand: string, slug: string): BrandProduct | undefined {

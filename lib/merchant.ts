@@ -11,6 +11,7 @@ import {
   loadBrandCatalog,
   type BrandProduct,
 } from "@/lib/brand-catalog"
+import { primeManualOverlay } from "@/lib/manual-products"
 
 export const MERCHANT_CENTER_ID = "5828832429"
 export const MERCHANT_STORE_NAME = "A U A P W - All Used Auto Parts Warehouse"
@@ -264,6 +265,7 @@ const emptyIssues = (): Record<IssueCode, number> => ({
 
 export async function getFeedStats(): Promise<BrandFeedStats[]> {
   const overrides = await getAllOverrides()
+  await Promise.all(BRAND_DIRECTORY.map((b) => primeManualOverlay(b.slug)))
   return BRAND_DIRECTORY.map((b) => {
     const catalog = loadBrandCatalog(b.slug)
     const stats: BrandFeedStats = { slug: b.slug, label: b.label, total: 0, eligible: 0, issues: emptyIssues() }
@@ -295,6 +297,7 @@ export async function searchProductsForAdmin(opts: {
 }): Promise<{ hits: ProductSearchHit[]; total: number }> {
   const overrides = await getAllOverrides()
   const brands = opts.brand ? BRAND_DIRECTORY.filter((b) => b.slug === opts.brand) : BRAND_DIRECTORY
+  await Promise.all(brands.map((b) => primeManualOverlay(b.slug)))
   const q = opts.q?.toLowerCase().trim()
   const limit = opts.limit ?? 30
   const hits: ProductSearchHit[] = []

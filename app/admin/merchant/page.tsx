@@ -14,6 +14,8 @@ import {
 } from "@/lib/merchant"
 import { MerchantOverview } from "@/components/admin/merchant/merchant-overview"
 import { ProductFixCard, type ProductFixCardProps } from "@/components/admin/merchant/product-fix-card"
+import { CatalogSyncPanel } from "@/components/admin/merchant/catalog-sync-panel"
+import { listManualProducts } from "@/lib/manual-products"
 
 export const dynamic = "force-dynamic"
 export const maxDuration = 60
@@ -38,11 +40,12 @@ export default async function AdminMerchantPage({
   const q = params.q?.trim().slice(0, 100) || undefined
   const searching = Boolean(brand || issue || q)
 
-  const [stats, fetches, recentOverrides, search] = await Promise.all([
+  const [stats, fetches, recentOverrides, search, manualProducts] = await Promise.all([
     getFeedStats(),
     listFeedFetches(8),
     listRecentOverrides(500),
     searching ? searchProductsForAdmin({ brand, q, issue, limit: 30 }) : null,
+    listManualProducts(),
   ])
 
   const cards: ProductFixCardProps[] = search
@@ -89,6 +92,20 @@ export default async function AdminMerchantPage({
           reach Google on its next feed fetch.
         </p>
       </header>
+
+      <CatalogSyncPanel
+        brands={BRAND_DIRECTORY.map((b) => ({ slug: b.slug, label: b.label }))}
+        manualProducts={manualProducts.map((p) => ({
+          brand: p.brand,
+          brandLabel: getBrandLabel(p.brand),
+          slug: p.slug,
+          name: p.name,
+          price: p.price,
+          source: p.source,
+          pagePath: `/brands/${p.brand}/${p.slug}`,
+          createdAt: p.createdAt,
+        }))}
+      />
 
       <MerchantOverview stats={stats} fetches={fetches} overrideCount={recentOverrides.length} />
 
