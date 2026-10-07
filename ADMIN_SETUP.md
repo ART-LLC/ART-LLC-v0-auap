@@ -3,16 +3,18 @@
 ## Quick Start
 
 ### Admin Portal Access
-**URL:** `http://localhost:3000/admin/login` (development) or `https://your-domain.com/admin/login` (production)
+**URL:** `http://localhost:3000/admin/login` (development) or `https://allusedautopartswarehouse.com/admin/login` (production)
 
 **Admin Credentials:**
 - Email: `admin@auapw.com`
 - Password: `AUAPWAdmin123!`
 
-**Admin Dashboard:** `http://localhost:3000/admin/dashboard`
+**Admin Dashboard:** `http://localhost:3000/admin/dashboard` or `https://allusedautopartswarehouse.com/admin/dashboard`
+
+**Google Shopping Merchant Center:** `https://allusedautopartswarehouse.com/admin/merchant`
 
 ### Customer Portal Access
-**URL:** `http://localhost:3000/customer/login` (development) or `https://your-domain.com/customer/login` (production)
+**URL:** `http://localhost:3000/customer/login` (development) or `https://allusedautopartswarehouse.com/customer/login` (production)
 
 **Demo Customer Credentials:**
 - Email: `demo@auapw.com`
@@ -54,7 +56,17 @@
   - Top Customers
   - Recent Orders
 
-#### 3. Notification System
+#### 3. Google Shopping Merchant Center
+- Location: `/app/admin/merchant/page.tsx`
+- URL: `https://allusedautopartswarehouse.com/admin/merchant`
+- Features:
+  - Product feed management
+  - Inventory sync with Google Shopping
+  - Campaign performance tracking
+  - Product listing optimization
+  - Real-time status updates
+
+#### 4. Notification System
 - Location: `/lib/notifications.ts`
 - Supports 13+ notification types:
   - New Customer
@@ -79,7 +91,7 @@
   - Retry mechanisms
   - HTML email templates with branding
 
-#### 4. Customer Portal
+#### 5. Customer Portal
 - Location: `/app/customer/login/page.tsx` and `/app/customer/dashboard/page.tsx`
 - Features:
   - Customer Login/Signup
@@ -124,6 +136,10 @@ HUBSPOT_API_KEY=your_hubspot_key
 
 # Analytics
 POWER_BI_KEY=your_power_bi_key
+
+# Google Shopping
+GOOGLE_MERCHANT_ID=your_google_merchant_id
+GOOGLE_API_KEY=your_google_api_key
 ```
 
 ---
@@ -293,6 +309,7 @@ All notifications include:
 - [ ] Setup SMS notifications (Twilio)
 - [ ] Configure automated daily reports
 - [ ] Setup monitoring and alerting
+- [ ] Integrate Google Shopping Merchant Center
 
 ---
 
@@ -303,8 +320,10 @@ app/
 ├── admin/
 │   ├── login/
 │   │   └── page.tsx                    # Admin login
-│   └── dashboard/
-│       └── page.tsx                    # Admin dashboard with KPIs
+│   ├── dashboard/
+│   │   └── page.tsx                    # Admin dashboard with KPIs
+│   └── merchant/
+│       └── page.tsx                    # Google Shopping Merchant Center
 ├── customer/
 │   ├── login/
 │   │   └── page.tsx                    # Customer login/signup
@@ -314,13 +333,15 @@ app/
 │   ├── admin/
 │   │   ├── auth/
 │   │   │   └── login/route.ts         # Admin login API
-│   │   └── kpis/route.ts              # KPI data API
+│   │   ├── kpis/route.ts              # KPI data API
+│   │   └── merchant/route.ts          # Google Shopping API
 │   └── notifications/
 │       └── send/route.ts              # Send notification API
 
 lib/
 ├── admin-auth.ts                       # Admin authentication utilities
 ├── notifications.ts                    # Notification system
+├── google-merchant.ts                  # Google Shopping integration
 └── db/
     └── schema.ts                       # Database schema
 ```
@@ -377,6 +398,11 @@ npm start
    - React Native customer app
    - Order tracking
    - Push notifications
+
+6. **Google Shopping Expansion**
+   - Multi-region product feeds
+   - Automated bid management
+   - Performance optimization
 
 ---
 
