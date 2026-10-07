@@ -53,7 +53,8 @@ export function Logo({
           width={width}
           height={height}
           className="object-contain"
-          priority={priority}
+          preload={priority}
+          loading={priority ? "eager" : "lazy"}
         />
       </div>
       {showGlow && (
