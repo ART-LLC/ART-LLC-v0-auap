@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import {
   CreditCard,
@@ -16,6 +16,8 @@ import {
   Pencil,
   KeyRound,
   CheckCircle2,
+  AlertTriangle,
+  X,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -41,15 +43,6 @@ import {
 
 type GatewayType = 'card' | 'wallet' | 'bank' | 'link' | 'offline'
 
-interface GatewayConfig {
-  apiKey?: string
-  merchantId?: string
-  environment?: 'sandbox' | 'production'
-  paymentLinkUrl?: string
-  instructions?: string
-  hasApiSecret?: boolean
-}
-
 interface Gateway {
   id: string
   name: string
@@ -60,7 +53,10 @@ interface Gateway {
   isEnabled: boolean
   isDefault: boolean
   sortOrder: number
-  config: GatewayConfig
+  config: Record<string, unknown> | null
+  paymentLink: string | null
+  instructions: string | null
+  envVarsRequired: string[] | null
 }
 
 const TYPE_ICON: Record<GatewayType, typeof CreditCard> = {
@@ -87,28 +83,37 @@ const EXAMPLES: Record<GatewayType, string> = {
   offline: 'e.g. Pay by Phone, Cash on Pickup',
 }
 
+// Suggested env var names per method type, used as quick-add chips. These are
+// names only — admins add the actual values in Vercel Project Settings, never
+// in this dashboard.
+const SUGGESTED_ENV_VARS: Record<GatewayType, string[]> = {
+  card: ['STRIPE_SECRET_KEY', 'STRIPE_PUBLISHABLE_KEY', 'AUTHORIZE_NET_API_LOGIN_ID', 'AUTHORIZE_NET_TRANSACTION_KEY'],
+  wallet: ['PAYPAL_CLIENT_ID', 'PAYPAL_CLIENT_SECRET', 'GOOGLE_PAY_MERCHANT_ID', 'APPLE_PAY_MERCHANT_ID'],
+  bank: [],
+  link: ['STRIPE_PAYMENT_LINK_URL'],
+  offline: [],
+}
+
 const EMPTY_FORM = {
   name: '',
   slug: '',
   type: 'card' as GatewayType,
   description: '',
   isEnabled: true,
-  apiKey: '',
-  apiSecret: '',
-  merchantId: '',
-  environment: 'sandbox' as 'sandbox' | 'production',
-  paymentLinkUrl: '',
+  paymentLink: '',
   instructions: '',
+  envVarsRequired: [] as string[],
 }
 
 export function PaymentGatewaysClient() {
   const router = useRouter()
   const [gateways, setGateways] = useState<Gateway[]>([])
+  const [envStatus, setEnvStatus] = useState<Record<string, boolean>>({})
   const [isLoading, setIsLoading] = useState(true)
   const [dialogOpen, setDialogOpen] = useState(false)
   const [editingId, setEditingId] = useState<string | null>(null)
-  const [hadApiSecret, setHadApiSecret] = useState(false)
   const [form, setForm] = useState(EMPTY_FORM)
+  const [envVarInput, setEnvVarInput] = useState('')
   const [isSaving, setIsSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
@@ -121,7 +126,21 @@ export function PaymentGatewaysClient() {
         return
       }
       const data = await res.json()
-      setGateways(data.gateways ?? [])
+      const list: Gateway[] = data.gateways ?? []
+      setGateways(list)
+
+      const allVars = Array.from(new Set(list.flatMap((g) => g.envVarsRequired ?? [])))
+      if (allVars.length > 0) {
+        const statusRes = await fetch(`/api/payment-gateways/env-status?vars=${encodeURIComponent(allVars.join(','))}`, {
+          credentials: 'include',
+        })
+        if (statusRes.ok) {
+          const statusData = await statusRes.json()
+          setEnvStatus(statusData.status ?? {})
+        }
+      } else {
+        setEnvStatus({})
+      }
     } catch {
       setError('Failed to load payment gateways.')
     } finally {
@@ -161,30 +180,38 @@ export function PaymentGatewaysClient() {
 
   const openAddDialog = () => {
     setEditingId(null)
-    setHadApiSecret(false)
     setForm(EMPTY_FORM)
+    setEnvVarInput('')
     setError(null)
     setDialogOpen(true)
   }
 
   const openEditDialog = (gateway: Gateway) => {
     setEditingId(gateway.id)
-    setHadApiSecret(Boolean(gateway.config?.hasApiSecret))
     setForm({
       name: gateway.name,
       slug: gateway.slug,
       type: gateway.type,
       description: gateway.description ?? '',
       isEnabled: gateway.isEnabled,
-      apiKey: gateway.config?.apiKey ?? '',
-      apiSecret: '',
-      merchantId: gateway.config?.merchantId ?? '',
-      environment: gateway.config?.environment ?? 'sandbox',
-      paymentLinkUrl: gateway.config?.paymentLinkUrl ?? '',
-      instructions: gateway.config?.instructions ?? '',
+      paymentLink: gateway.paymentLink ?? '',
+      instructions: gateway.instructions ?? '',
+      envVarsRequired: gateway.envVarsRequired ?? [],
     })
+    setEnvVarInput('')
     setError(null)
     setDialogOpen(true)
+  }
+
+  const addEnvVar = (name: string) => {
+    const trimmed = name.trim().toUpperCase().replace(/[^A-Z0-9_]/g, '_')
+    if (!trimmed || form.envVarsRequired.includes(trimmed)) return
+    setForm((f) => ({ ...f, envVarsRequired: [...f.envVarsRequired, trimmed] }))
+    setEnvVarInput('')
+  }
+
+  const removeEnvVar = (name: string) => {
+    setForm((f) => ({ ...f, envVarsRequired: f.envVarsRequired.filter((v) => v !== name) }))
   }
 
   const handleSave = async () => {
@@ -220,9 +247,12 @@ export function PaymentGatewaysClient() {
     }
   }
 
-  const needsCredentials = form.type === 'card' || form.type === 'wallet'
   const needsPaymentLink = form.type === 'link'
   const needsInstructions = form.type === 'bank' || form.type === 'offline' || form.type === 'link'
+  const suggestions = useMemo(
+    () => SUGGESTED_ENV_VARS[form.type].filter((v) => !form.envVarsRequired.includes(v)),
+    [form.type, form.envVarsRequired]
+  )
 
   return (
     <div>
@@ -234,7 +264,7 @@ export function PaymentGatewaysClient() {
           </h1>
           <p className="text-sm text-muted-foreground">
             Enable the gateways customers see at checkout, choose a default provider, and
-            configure each one&apos;s API keys or payment link
+            connect each one to its API keys, a hosted payment link, or wire/EPS instructions
           </p>
         </div>
         <Button onClick={openAddDialog} className="gap-2">
@@ -258,10 +288,11 @@ export function PaymentGatewaysClient() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {gateways.map((gateway) => {
             const Icon = TYPE_ICON[gateway.type] ?? CreditCard
-            const configured =
-              Boolean(gateway.config?.apiKey) ||
-              Boolean(gateway.config?.hasApiSecret) ||
-              Boolean(gateway.config?.paymentLinkUrl)
+            const requiredVars = gateway.envVarsRequired ?? []
+            const missingVars = requiredVars.filter((v) => !envStatus[v])
+            const hasPaymentLink = Boolean(gateway.paymentLink)
+            const isConfigured = requiredVars.length > 0 ? missingVars.length === 0 : hasPaymentLink || gateway.type === 'offline' || gateway.type === 'bank'
+
             return (
               <div
                 key={gateway.id}
@@ -298,15 +329,35 @@ export function PaymentGatewaysClient() {
                   <p className="text-sm text-muted-foreground">{gateway.description}</p>
                 )}
 
-                {configured ? (
+                {requiredVars.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5">
+                    {requiredVars.map((v) => (
+                      <span
+                        key={v}
+                        className={`inline-flex items-center gap-1 rounded px-1.5 py-0.5 text-[10px] font-mono ${
+                          envStatus[v]
+                            ? 'bg-emerald-500/10 text-emerald-500'
+                            : 'bg-amber-500/10 text-amber-500'
+                        }`}
+                      >
+                        {envStatus[v] ? <CheckCircle2 className="w-2.5 h-2.5" /> : <AlertTriangle className="w-2.5 h-2.5" />}
+                        {v}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {isConfigured ? (
                   <span className="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-500">
                     <CheckCircle2 className="w-3.5 h-3.5" />
-                    {gateway.config?.paymentLinkUrl ? 'Payment link configured' : 'API credentials configured'}
+                    {hasPaymentLink ? 'Payment link configured' : 'Ready to accept payments'}
                   </span>
                 ) : (
-                  <span className="inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-medium text-amber-500">
                     <KeyRound className="w-3.5 h-3.5" />
-                    No API key, secret, or link set yet
+                    {requiredVars.length > 0
+                      ? `Add ${missingVars.join(', ')} in Project Settings`
+                      : 'No payment link set yet'}
                   </span>
                 )}
 
@@ -347,8 +398,9 @@ export function PaymentGatewaysClient() {
           <DialogHeader>
             <DialogTitle>{editingId ? 'Edit Payment Gateway' : 'Add Payment Gateway'}</DialogTitle>
             <DialogDescription>
-              Configure how this method appears at checkout and, if needed, its API
-              credentials or hosted payment link.
+              Configure how this method appears at checkout. Any type of payment method works
+              here — card processors, digital wallets (PayPal, Google Pay, Apple Pay), bank or
+              wire transfer, hosted payment links (EPS, Stripe Payment Links), or offline/manual.
             </DialogDescription>
           </DialogHeader>
 
@@ -359,7 +411,7 @@ export function PaymentGatewaysClient() {
               <Label htmlFor="gw-name">Display name</Label>
               <Input
                 id="gw-name"
-                placeholder="e.g. Authorize.Net"
+                placeholder="e.g. Google Pay, Wire Transfer, EPS"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
               />
@@ -369,7 +421,7 @@ export function PaymentGatewaysClient() {
               <Label htmlFor="gw-slug">Slug</Label>
               <Input
                 id="gw-slug"
-                placeholder="e.g. authorize_net"
+                placeholder="e.g. google_pay"
                 value={form.slug}
                 disabled={Boolean(editingId)}
                 onChange={(e) =>
@@ -409,74 +461,80 @@ export function PaymentGatewaysClient() {
               />
             </div>
 
-            {needsCredentials && (
-              <div className="space-y-3 rounded-lg border border-border p-3">
-                <p className="text-xs font-semibold text-foreground/80 flex items-center gap-1.5">
-                  <KeyRound className="w-3.5 h-3.5" />
-                  API Credentials
-                </p>
-                <div className="grid sm:grid-cols-2 gap-3">
-                  <div className="space-y-1.5">
-                    <Label htmlFor="gw-apikey">API Login ID / Publishable Key</Label>
-                    <Input
-                      id="gw-apikey"
-                      placeholder="e.g. API Login ID or pk_live_…"
-                      value={form.apiKey}
-                      onChange={(e) => setForm({ ...form, apiKey: e.target.value })}
-                    />
-                  </div>
-                  <div className="space-y-1.5">
-                    <Label htmlFor="gw-apisecret">Transaction Key / Secret Key</Label>
-                    <Input
-                      id="gw-apisecret"
-                      type="password"
-                      placeholder={hadApiSecret ? 'Unchanged (leave blank to keep)' : 'e.g. sk_live_… or Transaction Key'}
-                      value={form.apiSecret}
-                      onChange={(e) => setForm({ ...form, apiSecret: e.target.value })}
-                    />
-                  </div>
-                  <div className="space-y-1.5">
-                    <Label htmlFor="gw-merchantid">Merchant / Client ID</Label>
-                    <Input
-                      id="gw-merchantid"
-                      placeholder="Optional"
-                      value={form.merchantId}
-                      onChange={(e) => setForm({ ...form, merchantId: e.target.value })}
-                    />
-                  </div>
-                  <div className="space-y-1.5">
-                    <Label htmlFor="gw-env">Environment</Label>
-                    <Select
-                      value={form.environment}
-                      onValueChange={(value: 'sandbox' | 'production') =>
-                        setForm({ ...form, environment: value })
-                      }
+            <div className="space-y-2 rounded-lg border border-border p-3">
+              <p className="text-xs font-semibold text-foreground/80 flex items-center gap-1.5">
+                <KeyRound className="w-3.5 h-3.5" />
+                Required API keys (env var names)
+              </p>
+              <p className="text-xs text-muted-foreground">
+                List the Vercel environment variable names this gateway's live API key/secret
+                should be read from. Add the actual values in Project Settings → Environment
+                Variables — never here.
+              </p>
+              {form.envVarsRequired.length > 0 && (
+                <div className="flex flex-wrap gap-1.5">
+                  {form.envVarsRequired.map((v) => (
+                    <span
+                      key={v}
+                      className="inline-flex items-center gap-1 rounded bg-muted px-2 py-1 text-xs font-mono"
                     >
-                      <SelectTrigger id="gw-env">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="sandbox">Sandbox / Test</SelectItem>
-                        <SelectItem value="production">Production / Live</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
+                      {v}
+                      <button
+                        type="button"
+                        onClick={() => removeEnvVar(v)}
+                        aria-label={`Remove ${v}`}
+                        className="text-muted-foreground hover:text-foreground"
+                      >
+                        <X className="w-3 h-3" />
+                      </button>
+                    </span>
+                  ))}
                 </div>
+              )}
+              <div className="flex gap-2">
+                <Input
+                  placeholder="e.g. STRIPE_SECRET_KEY"
+                  value={envVarInput}
+                  onChange={(e) => setEnvVarInput(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && !e.nativeEvent.isComposing) {
+                      e.preventDefault()
+                      addEnvVar(envVarInput)
+                    }
+                  }}
+                  className="font-mono text-xs"
+                />
+                <Button type="button" variant="outline" size="sm" onClick={() => addEnvVar(envVarInput)}>
+                  Add
+                </Button>
               </div>
-            )}
+              {suggestions.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 pt-1">
+                  {suggestions.map((v) => (
+                    <button
+                      type="button"
+                      key={v}
+                      onClick={() => addEnvVar(v)}
+                      className="rounded border border-dashed border-border px-2 py-0.5 text-[10px] font-mono text-muted-foreground hover:border-primary hover:text-primary"
+                    >
+                      + {v}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
 
             {needsPaymentLink && (
               <div className="space-y-1.5">
                 <Label htmlFor="gw-link">Hosted payment link URL</Label>
                 <Input
                   id="gw-link"
-                  placeholder="e.g. https://pay.example.com/your-store or a PayPal.me link"
-                  value={form.paymentLinkUrl}
-                  onChange={(e) => setForm({ ...form, paymentLinkUrl: e.target.value })}
+                  placeholder="e.g. https://pay.example.com/your-store, EPS checkout, or a PayPal.me link"
+                  value={form.paymentLink}
+                  onChange={(e) => setForm({ ...form, paymentLink: e.target.value })}
                 />
                 <p className="text-xs text-muted-foreground">
-                  Customers are sent to this link to complete payment (EPS pages, Stripe
-                  Payment Links, PayPal.me, etc.).
+                  Customers are sent to this link to complete payment.
                 </p>
               </div>
             )}
@@ -493,12 +551,6 @@ export function PaymentGatewaysClient() {
                 />
               </div>
             )}
-
-            <p className="text-xs text-muted-foreground border-t border-border pt-3">
-              Secret keys are never redisplayed after saving — leave the secret field blank
-              when editing to keep the existing value. For production use, prefer gateway
-              credentials that support IP allow-listing or restricted/limited-scope keys.
-            </p>
           </div>
 
           <DialogFooter>
