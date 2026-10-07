@@ -84,7 +84,6 @@ export async function POST(request: NextRequest) {
 
     // Create Stripe Checkout Session
     const checkoutSession = await stripe.checkout.sessions.create({
-      payment_method_types: ['card'],
       line_items: lineItems,
       mode: 'payment',
       success_url: `${process.env.NEXT_PUBLIC_API_URL || process.env.VERCEL_URL}/buyer/orders?success=true`,

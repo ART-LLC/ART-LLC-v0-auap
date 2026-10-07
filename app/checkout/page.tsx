@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import { Check, ArrowLeft, ShieldCheck, Lock, ExternalLink, Landmark, Wallet, Phone } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { StripeCardPayment } from '@/components/checkout/stripe-card-payment'
 
 import { BrandLogosSection } from '@/components/brand-logos'
 import { useRouter } from 'next/navigation'
@@ -342,6 +343,19 @@ export default function CheckoutPage() {
 
                     {step === 'payment' && (
                       <div className="space-y-5">
+                        <div>
+                          <label htmlFor="checkout-notes" className="sr-only">Order notes</label>
+                          <Textarea
+                            id="checkout-notes"
+                            placeholder="VIN, best time to call, or delivery notes (optional)"
+                            name="notes"
+                            rows={3}
+                            maxLength={1000}
+                            value={formData.notes}
+                            onChange={handleInputChange}
+                          />
+                        </div>
+
                         {gateways.length > 0 && (
                           <div className="space-y-2">
                             <p className="text-sm font-semibold text-foreground/90">Payment Method</p>
@@ -380,6 +394,43 @@ export default function CheckoutPage() {
                         {(() => {
                           const active = gateways.find((g) => g.slug === selectedGateway)
                           if (!active) return null
+
+                          if (active.type === 'card' && active.slug === 'stripe') {
+                            return (
+                              <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-3">
+                                <div className="flex items-center justify-between flex-wrap gap-2">
+                                  <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                                    <ShieldCheck className="w-4 h-4" />
+                                    Secured by Stripe
+                                  </div>
+                                  <div className="flex items-center gap-1.5">
+                                    {['VISA', 'MASTERCARD', 'AMEX', 'DISCOVER'].map((card) => (
+                                      <span
+                                        key={card}
+                                        className="px-1.5 py-0.5 rounded border border-white/15 text-[9px] font-bold tracking-wide text-foreground/60"
+                                      >
+                                        {card}
+                                      </span>
+                                    ))}
+                                  </div>
+                                </div>
+                                <StripeCardPayment
+                                  customer={formData}
+                                  items={items.map(({ id, make, price, quantity }) => ({ id, make, price, quantity }))}
+                                  onPaid={({ orderNumber, totalAmount }) => {
+                                    setPlacedOrder({ orderNumber, totalAmount })
+                                    clearCart()
+                                    setStep('confirmation')
+                                  }}
+                                  onError={(message) => setError(message)}
+                                />
+                                <p className="flex items-center gap-1.5 text-xs text-foreground/50">
+                                  <Lock className="w-3 h-3" />
+                                  Your card is charged securely by Stripe when you submit payment above.
+                                </p>
+                              </div>
+                            )
+                          }
 
                           if (active.type === 'card') {
                             return (
@@ -501,26 +552,20 @@ export default function CheckoutPage() {
                           )
                         })()}
 
-                        <p className="text-sm text-foreground/70 leading-relaxed">
-                          No card needed online. After you place your order, a parts specialist calls you to confirm fitment for your VIN and take payment securely{selectedGateway && selectedGateway !== 'phone' ? ` using ${gateways.find((g) => g.slug === selectedGateway)?.name}` : ''} by phone.
-                        </p>
-                        <label htmlFor="checkout-notes" className="sr-only">Order notes</label>
-                        <Textarea
-                          id="checkout-notes"
-                          placeholder="VIN, best time to call, or delivery notes (optional)"
-                          name="notes"
-                          rows={3}
-                          maxLength={1000}
-                          value={formData.notes}
-                          onChange={handleInputChange}
-                        />
+                        {selectedGateway !== 'stripe' && (
+                          <p className="text-sm text-foreground/70 leading-relaxed">
+                            No card needed online. After you place your order, a parts specialist calls you to confirm fitment for your VIN and take payment securely{selectedGateway && selectedGateway !== 'phone' ? ` using ${gateways.find((g) => g.slug === selectedGateway)?.name}` : ''} by phone.
+                          </p>
+                        )}
                         <div className="flex flex-col sm:flex-row gap-3">
                           <Button variant="outline" size="lg" onClick={() => setStep('shipping')} disabled={isProcessing}>
                             Edit Shipping
                           </Button>
-                          <Button size="lg" className="flex-1" onClick={handlePlaceOrder} disabled={isProcessing}>
-                            {isProcessing ? 'Placing order...' : 'Place Order'}
-                          </Button>
+                          {selectedGateway !== 'stripe' && (
+                            <Button size="lg" className="flex-1" onClick={handlePlaceOrder} disabled={isProcessing}>
+                              {isProcessing ? 'Placing order...' : 'Place Order'}
+                            </Button>
+                          )}
                         </div>
                       </div>
                     )}
