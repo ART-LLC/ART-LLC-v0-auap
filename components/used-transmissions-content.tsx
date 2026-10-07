@@ -50,7 +50,7 @@ export function UsedTransmissionsContent() {
             {/* Feature grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
               {[
-                { icon: Truck, title: "Free Shipping", desc: "Free shipping all across the USA. No extra charges -- you pay only for the transmission." },
+                { icon: Truck, title: "$240 Shipping Per Part", desc: "Flat-rate shipping across the USA. Each transmission ships for $240, with the charge shown before checkout." },
                 { icon: Shield, title: "Warranty From Dealers", desc: "30-180 days warranty directly from junkyard and salvage yard dealers." },
                 { icon: Cog, title: "All Types", desc: "Find automatic, manual, and CVT transmissions for all types of vehicles." },
                 { icon: RotateCcw, title: "Returns Available", desc: "Not satisfied? Easily return the part. Contact us through our toll-free number." },

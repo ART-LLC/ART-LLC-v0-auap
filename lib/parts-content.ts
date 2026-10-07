@@ -20,7 +20,7 @@ export const ALL_PARTS: PartInfo[] = [
     category: "engines",
     description: "Complete used engines with low mileage from verified salvage yards. Gasoline, diesel, and hybrid engines available.",
     longDescription: "The engine is the heart of your vehicle. Our used engines are carefully inspected and tested before listing. We source engines from late-model vehicles with low mileage, ensuring you get a reliable powerplant at a fraction of the cost of a new one. Whether you need a 4-cylinder economy engine, a V6 for your family sedan, or a V8 for your truck or performance car, we have options from every major manufacturer.",
-    benefits: ["Save 40-70% vs new", "Low mileage units available", "Tested and inspected", "30-180 day warranty included", "Free shipping nationwide"],
+    benefits: ["Save 40-70% vs new", "Low mileage units available", "Tested and inspected", "30-180 day warranty included", "$240 flat-rate shipping per part"],
     faqs: [
       { q: "How many miles can a used engine last?", a: "A quality used engine with proper maintenance can last 100,000-200,000+ miles. We source engines with documented low mileage, typically 30,000-80,000 miles, giving you years of reliable service." },
       { q: "Are used engines reliable?", a: "Yes, when sourced from reputable suppliers like us. Every engine is inspected, compression tested, and verified before shipping. Our 6-month warranty gives you peace of mind." },
@@ -41,7 +41,7 @@ export const ALL_PARTS: PartInfo[] = [
       { q: "Is it better to buy a used or rebuilt transmission?", a: "Used transmissions are less expensive and work great for budget-conscious repairs. Rebuilt transmissions cost more but may offer longer life. Both are viable options depending on your needs and budget." },
       { q: "How can I tell if a used transmission is good?", a: "We check transmission fluid color and quality, test all gear engagements, verify there are no unusual noises, and inspect for leaks. Only transmissions that pass all tests are listed." },
       { q: "What should I look for when buying a used transmission?", a: "Key factors include mileage, fluid condition, warranty coverage, and seller reputation. Our transmissions come with full documentation and warranty protection." },
-      { q: "Can you ship a used transmission to my mechanic?", a: "Absolutely! We can ship directly to your home, garage, or mechanic shop anywhere in the USA with free shipping on most orders." },
+      { q: "Can you ship a used transmission to my mechanic?", a: "Absolutely! We can ship directly to your home, garage, or mechanic shop anywhere in the USA for a flat shipping rate of $240 per part." },
     ],
   },
   {

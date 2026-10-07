@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { useCartStore } from '@/lib/stores/cart-store'
+import { SHIPPING } from '@/lib/site-policy'
 import { Phone, MessageSquare, ShoppingCart, Zap, HelpCircle, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
 
@@ -41,7 +42,7 @@ export function ProductCardActions({
 
   const handleAddToCart = () => {
     if (purchaseDisabled) return
-    const shippingCost = Number.parseFloat(shipping?.replace(/[^0-9.]/g, '') || '0')
+    const shippingCost = SHIPPING.price
     addItem({
       id: productId,
       name: productName,

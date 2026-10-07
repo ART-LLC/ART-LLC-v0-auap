@@ -66,7 +66,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
       valveConfiguration: 'DOHC',
     },
     warranty: '90 Days',
-    shipping: 'Free',
+    shipping: '$240 per part',
     insurance: '$2M Transit Insurance',
     tags: ['Engine', 'Honda', 'Civic', '2015', 'Used', 'Complete'],
   }
@@ -214,7 +214,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                   </div>
                   <div className="flex flex-col items-center text-center">
                     <Truck className="w-6 h-6 text-primary mb-2" />
-                    <p className="text-xs font-semibold">Free<br/>Shipping</p>
+                    <p className="text-xs font-semibold">$240 per part<br/>Shipping</p>
                   </div>
                   <div className="flex flex-col items-center text-center">
                     <Shield className="w-6 h-6 text-primary mb-2" />

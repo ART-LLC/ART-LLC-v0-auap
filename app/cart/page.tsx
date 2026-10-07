@@ -1,6 +1,7 @@
 'use client'
 
 import { useCartStore } from '@/lib/stores/cart-store'
+import { SHIPPING } from '@/lib/site-policy'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Trash2, Plus, Minus, ShoppingBag } from 'lucide-react'
@@ -18,7 +19,7 @@ export default function CartPage() {
   const [promoCode, setPromoCode] = useState('')
 
   const totalPrice = getTotalPrice()
-  const shipping = items.reduce((total, item) => total + (item.shippingCost ?? 0) * item.quantity, 0)
+  const shipping = items.reduce((total, item) => total + SHIPPING.price * item.quantity, 0)
   const tax = totalPrice * 0.08
   const finalTotal = totalPrice + tax + shipping
 

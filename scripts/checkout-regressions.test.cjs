@@ -57,6 +57,7 @@ const checkoutItem = load('app/api/checkout-item/[id]/route.ts', {
   'next/server': { NextResponse: { json: (data, init) => Response.json(data, init) } },
   '@/lib/merchant': merchant,
   '@/lib/brand-catalog': catalog,
+  '@/lib/site-policy': load('lib/site-policy.ts', {}),
 })
 const item = (changes = {}) => ({ id: 'test-engine', make: 'Acura', price: 1200, quantity: 1, ...changes })
 function override(changes) {
@@ -77,6 +78,31 @@ test('accepts catalog prices and preserves mileage tiers', async () => {
     assert.equal(result.ok, true)
     assert.equal(result.lines[0].unitPrice, price)
   }
+})
+test('charges $240 for every unit, ignoring stale or tampered client shipping', async () => {
+  for (const shippingCost of [undefined, 0, 1, 999]) {
+    const result = await priceCart([item({ quantity: 2, shippingCost })])
+    assert.equal(result.ok, true)
+    assert.equal(result.shippingCost, 480)
+    assert.equal(result.totalAmount, 3072)
+  }
+  const split = await priceCart([item(), item({ price: 1000, quantity: 2 })])
+  assert.equal(split.ok, true)
+  assert.equal(split.shippingCost, 720)
+  assert.equal(split.totalAmount, 4176)
+})
+test('Google feed advertises the same $240 shipping rate as checkout', async () => {
+  const feed = load('app/feeds/google-shopping.xml/route.ts', {
+    'next/server': { after: () => {} },
+    '@/lib/brand-catalog': catalog,
+    '@/lib/catalog-fields': load('lib/catalog-fields.ts', {}),
+    '@/lib/merchant': merchant,
+    '@/lib/site-policy': load('lib/site-policy.ts', {}),
+  })
+  const response = await feed.GET(new Request('https://example.com/feeds/google-shopping.xml?brand=acura'))
+  const xml = await response.text()
+  assert.match(xml, /<g:shipping><g:country>US<\/g:country><g:price>240\.00 USD<\/g:price><\/g:shipping>/)
+  assert.doesNotMatch(xml, /free insured freight/i)
 })
 test('uses admin price and title overrides, rejecting stale tier prices', async () => {
   override({ price: '1550.00', title: 'Updated engine' })
@@ -119,6 +145,7 @@ test('Google checkout returns a canonical purchasable ID and current price', asy
   const { item: returnedItem } = await response.json()
   assert.equal(returnedItem.id, 'test-engine')
   assert.equal(returnedItem.price, 1550)
+  assert.equal(returnedItem.shippingCost, 240)
   assert.equal((await priceCart([{ ...returnedItem, quantity: 1 }])).ok, true)
 })
 test('Google checkout rejects excluded, hidden, and unavailable items', async () => {

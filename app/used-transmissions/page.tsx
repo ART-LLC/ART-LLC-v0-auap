@@ -7,7 +7,7 @@ import { UsedTransmissionsContent } from "@/components/used-transmissions-conten
 
 export const metadata: Metadata = {
   title: "Buy Used Automatic & Manual Transmissions | AUAPW LLC",
-  description: "Find quality used transmissions for sale. Automatic, manual, CVT transmissions from 2,000+ verified yards. Free shipping, warranty included.",
+  description: "Find quality used transmissions for sale. Automatic, manual, CVT transmissions from 2,000+ verified yards. $240 shipping per part, warranty included.",
 }
 
 export default function UsedTransmissionsPage() {
