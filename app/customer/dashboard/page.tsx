@@ -68,7 +68,7 @@ export default function CustomerDashboard() {
       make: 'Honda',
       model: 'Civic',
       price: 2450.00,
-      image: '/images/product-engine-1.png',
+      image: '/images/engine-block.jpg',
     },
     {
       id: '2',
@@ -76,7 +76,7 @@ export default function CustomerDashboard() {
       make: 'Toyota',
       model: 'Camry',
       price: 1850.00,
-      image: '/images/product-transmission-1.png',
+      image: '/images/transmission.jpg',
     },
   ])
 

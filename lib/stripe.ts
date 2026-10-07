@@ -1,9 +1,20 @@
-import StripeSDK from 'stripe'
+let Stripe: any
+let stripe: any
 
-const stripe = process.env.STRIPE_SECRET_KEY ? new StripeSDK(process.env.STRIPE_SECRET_KEY) : null
-
-if (!process.env.STRIPE_SECRET_KEY) {
-  console.warn('[v0] STRIPE_SECRET_KEY is not set - Stripe features will be disabled')
+try {
+  Stripe = require('stripe').default || require('stripe')
+  
+  if (!process.env.STRIPE_SECRET_KEY) {
+    console.warn('[v0] STRIPE_SECRET_KEY is not set - Stripe features will be disabled')
+    stripe = null
+  } else {
+    stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: '2026-06-24.dahlia' as any,
+    })
+  }
+} catch (error) {
+  console.warn('[v0] Stripe module not available - Stripe features will be disabled', error)
+  stripe = null
 }
 
 export { stripe }
