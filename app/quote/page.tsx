@@ -26,58 +26,45 @@ export default function QuotePage() {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+  const [quoteId, setQuoteId] = useState<number | null>(null)
 
   const models = make ? CAR_MODELS[make] || [] : []
   const partOptions = part ? getPartOptions(part) : []
   const selectClass = "w-full text-sm px-3 py-2.5 bg-[rgba(13,15,22,0.75)] border border-border/50 rounded-lg text-foreground appearance-none focus:border-primary/55 focus:ring-1 focus:ring-primary/20 outline-none transition-all"
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setError(null)
 
     if (!make) { setError("Please select a vehicle make."); return }
     if (!name.trim()) { setError("Please enter your name."); return }
-    if (!phone.trim()) { setError("Please enter your phone number."); return }
+    if (phone.replace(/\D/g, "").length < 10) { setError("Please enter a valid phone number."); return }
 
     setLoading(true)
-
-    // Build the email subject and body from the form fields.
-    const subject = `Quote Request: ${[year, make, model].filter(Boolean).join(" ")} - ${part || "Auto Part"}`
-      .replace(/\s+/g, " ")
-      .trim()
-
-    const body = [
-      "Hi AUAPW LLC team,",
-      "",
-      "I'd like a free quote for the following part:",
-      "",
-      "--- Vehicle Details ---",
-      `Part:    ${part || "Not specified"}`,
-      `Make:    ${make}`,
-      `Model:   ${model || "Not specified"}`,
-      `Year:    ${year || "Not specified"}`,
-      `Option:  ${option || "Not specified"}`,
-      "",
-      "--- My Contact Details ---",
-      `Name:    ${name}`,
-      `Phone:   ${phone}`,
-      `Email:   ${email || "Not provided"}`,
-      `State:   ${state || "Not provided"}`,
-      `ZIP:     ${zip || "Not provided"}`,
-      "",
-      "--- Message ---",
-      message || "(no additional details)",
-      "",
-      "Thank you!",
-    ].join("\n")
-
-    // Open the customer's own email client with everything pre-filled,
-    // so the quote request is sent from their mailbox to AUAPW LLC.
-    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-    window.location.href = mailto
-
-    setLoading(false)
-    setSuccess(true)
+    try {
+      const honeypot = new FormData(e.currentTarget).get("website")
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          part, make, model, year, option, name, phone, email, state, zip, message,
+          source: "quote-page",
+          pageUrl: window.location.pathname + window.location.search,
+          website: honeypot ?? "",
+        }),
+      })
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok) {
+        setError(data.error ?? `Something went wrong. Please call us at ${PHONE_DISPLAY}.`)
+        return
+      }
+      setQuoteId(data.id ?? null)
+      setSuccess(true)
+    } catch {
+      setError(`Network error. Please call us at ${PHONE_DISPLAY}.`)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -94,7 +81,7 @@ export default function QuotePage() {
             </div>
             <h1 className="font-serif text-[clamp(1.75rem,4vw,3.5rem)] font-bold text-foreground">Request a Free Quote</h1>
             <p className="mt-3 text-sm text-muted-foreground max-w-[520px]">
-              Fill out the form and our team will find the best available parts from our 2,000+ yard network. When you submit, your email app opens with the request pre-filled &mdash; just press Send.
+              Fill out the form and our team will find the best available parts from our 2,000+ yard network and call you back within one business day.
             </p>
           </div>
         </div>
@@ -135,9 +122,10 @@ export default function QuotePage() {
               {success ? (
                 <div className="glass-card rounded-sm p-8 text-center">
                   <CheckCircle2 className="w-16 h-16 text-green-400 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-foreground mb-3">Your Email Is Ready to Send!</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-3">Quote Request Received!</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-2">
-                    We&apos;ve opened your email app with your quote request pre-filled. Just press <strong>Send</strong> to deliver it, and we&apos;ll reply within <strong>24 hours</strong>. If your email app didn&apos;t open, use the options below.
+                    {quoteId ? <>Your reference is <strong>#{quoteId}</strong>. </> : null}
+                    A parts specialist will call you within <strong>one business day</strong> with pricing and availability.
                   </p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                     Need it faster? Call us at{" "}
@@ -163,6 +151,7 @@ export default function QuotePage() {
                   )}
 
                   <form onSubmit={handleSubmit} noValidate className="space-y-4">
+                    <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-[0.62rem] font-bold tracking-[0.2em] uppercase text-muted-foreground mb-2">Full Name *</label>
@@ -247,7 +236,7 @@ export default function QuotePage() {
                       {loading ? "Sending..." : "Get A Free Quote — Send Now"}
                     </button>
                     <p className="text-[11px] text-muted-foreground text-center">
-                      Your request is emailed instantly to our team at {CONTACT_EMAIL}. No spam, no obligation.
+                      Your request goes straight to our parts team. No spam, no obligation.
                     </p>
                     <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
                       By Submitting, you authorize AUAPW LLC to text and call the number you provided with offers &amp; other information, possibly using automated means. Messages/Data rates apply. Consent is not a condition of purchase.

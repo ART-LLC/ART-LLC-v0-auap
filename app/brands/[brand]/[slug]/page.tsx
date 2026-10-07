@@ -23,6 +23,7 @@ import {
   isValidBrand,
   resolveBrandPartImage,
 } from '@/lib/brand-catalog'
+import { SCHEMA_AVAILABILITY, applyOverrideToProduct, getProductOverride } from '@/lib/merchant'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight, ImageIcon, ExternalLink } from 'lucide-react'
 
 interface PageProps {
@@ -40,8 +41,11 @@ function getImageSearchUrl(name: string): string {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { brand, slug } = await params
   if (!isValidBrand(brand)) return {}
-  const product = getBrandProductBySlug(brand, slug)
-  if (!product) return {}
+  const sheetProduct = getBrandProductBySlug(brand, slug)
+  if (!sheetProduct) return {}
+  const override = await getProductOverride(brand, slug)
+  if (override?.hidden) return { robots: { index: false } }
+  const product = applyOverrideToProduct(sheetProduct, override)
   const label = getBrandLabel(brand)
   return {
     title: `${product.name} | Used OEM ${label} Part — $${product.price.toLocaleString()}`,
@@ -55,8 +59,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function BrandProductPage({ params }: PageProps) {
   const { brand, slug } = await params
   if (!isValidBrand(brand)) notFound()
-  const product = getBrandProductBySlug(brand, slug)
-  if (!product) notFound()
+  const sheetProduct = getBrandProductBySlug(brand, slug)
+  if (!sheetProduct) notFound()
+  const override = await getProductOverride(brand, slug)
+  if (override?.hidden) notFound()
+  const product = applyOverrideToProduct(sheetProduct, override)
+  const availability = SCHEMA_AVAILABILITY[override?.availability ?? 'in_stock']
 
   const label = getBrandLabel(brand)
   const related = getRelatedBrandProducts(brand, product)
@@ -93,7 +101,7 @@ export default async function BrandProductPage({ params }: PageProps) {
           lowPrice,
           highPrice,
           offerCount: 3,
-          availability: 'https://schema.org/InStock',
+          availability,
           itemCondition: 'https://schema.org/UsedCondition',
           url: canonicalUrl,
         }
@@ -101,7 +109,7 @@ export default async function BrandProductPage({ params }: PageProps) {
           '@type': 'Offer',
           priceCurrency: 'USD',
           price: product.price,
-          availability: 'https://schema.org/InStock',
+          availability,
           itemCondition: 'https://schema.org/UsedCondition',
           url: canonicalUrl,
         },

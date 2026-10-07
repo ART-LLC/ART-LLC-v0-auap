@@ -30,11 +30,11 @@ export default function CheckoutPage() {
     city: '',
     state: '',
     zipCode: '',
-    cardNumber: '',
-    expiryDate: '',
-    cvv: '',
+    notes: '',
   })
   const [isProcessing, setIsProcessing] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [placedOrder, setPlacedOrder] = useState<{ orderNumber: string; totalAmount: number } | null>(null)
 
   const totalPrice = getTotalPrice()
   const shipping = items.reduce((total, item) => total + (item.shippingCost ?? 0) * item.quantity, 0)
@@ -47,18 +47,44 @@ export default function CheckoutPage() {
   }
 
   const handleShippingSubmit = () => {
-    if (formData.firstName && formData.lastName && formData.email && formData.address && formData.city && formData.state && formData.zipCode) {
-      setStep('payment' as const)
+    const { firstName, lastName, email, phone, address, city, state, zipCode } = formData
+    if (!firstName || !lastName || !email || !address || !city || !state || !zipCode) {
+      setError('Please fill in all shipping fields.')
+      return
     }
+    if (phone.replace(/\D/g, '').length < 10) {
+      setError('Please enter a valid phone number so we can confirm your order.')
+      return
+    }
+    setError(null)
+    setStep('payment')
   }
 
-  const handlePaymentSubmit = async () => {
+  const handlePlaceOrder = async () => {
     setIsProcessing(true)
-    // Simulate payment processing
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-    setIsProcessing(false)
-    clearCart()
-    setStep('confirmation')
+    setError(null)
+    try {
+      const res = await fetch('/api/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          customer: formData,
+          items: items.map(({ id, make, price, quantity }) => ({ id, make, price, quantity })),
+        }),
+      })
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok) {
+        setError(data.error ?? 'We could not place your order. Please call (708) 896-2383.')
+        return
+      }
+      setPlacedOrder({ orderNumber: data.orderNumber, totalAmount: data.totalAmount })
+      clearCart()
+      setStep('confirmation')
+    } catch {
+      setError('Network error. Please try again or call (708) 896-2383.')
+    } finally {
+      setIsProcessing(false)
+    }
   }
 
   if (items.length === 0 && step !== 'confirmation') {
@@ -134,13 +160,15 @@ export default function CheckoutPage() {
               <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-6">
                 <Check className="w-8 h-8 text-green-400" />
               </div>
-              <h2 className="text-3xl font-bold mb-2">Order Confirmed!</h2>
-              <p className="text-foreground/60 mb-8">Thank you for your purchase. You will receive an email confirmation shortly.</p>
+              <h2 className="text-3xl font-bold mb-2">Order Received!</h2>
+              <p className="text-foreground/60 mb-8 text-pretty">
+                A parts specialist will call you within one business day to confirm fitment and take payment securely by phone. Nothing has been charged yet.
+              </p>
               <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-8 text-left">
                 <p className="text-sm text-foreground/60 mb-2">Order Number</p>
-                <p className="text-2xl font-bold mb-6">ORD-{Date.now()}</p>
-                <p className="text-sm text-foreground/60 mb-2">Total Amount</p>
-                <p className="text-2xl font-bold text-blue-400">${finalTotal.toFixed(2)}</p>
+                <p className="text-2xl font-bold mb-6 font-mono">{placedOrder?.orderNumber}</p>
+                <p className="text-sm text-foreground/60 mb-2">Order Total</p>
+                <p className="text-2xl font-bold text-blue-400">${(placedOrder?.totalAmount ?? 0).toFixed(2)}</p>
               </div>
               <div className="flex gap-4 justify-center">
                 <Link href="/parts">
@@ -157,6 +185,11 @@ export default function CheckoutPage() {
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Checkout form */}
               <div className="lg:col-span-2">
+                {error && (
+                  <div role="alert" className="mb-6 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-300">
+                    {error}
+                  </div>
+                )}
                 <div className="space-y-8">
                   {/* Shipping Info */}
                   <div className="p-6 border border-white/10 rounded-lg bg-white/5">
@@ -243,39 +276,32 @@ export default function CheckoutPage() {
                       <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${step !== 'shipping' ? 'bg-blue-500 text-white' : 'bg-white/10 text-foreground/60'}`}>
                         2
                       </div>
-                      <h2 className="text-xl font-bold">Payment Information</h2>
+                      <h2 className="text-xl font-bold">Review &amp; Place Order</h2>
                     </div>
 
                     {step === 'payment' && (
                       <div className="space-y-4">
-                        <Input
-                          placeholder="Card Number"
-                          name="cardNumber"
-                          value={formData.cardNumber}
+                        <p className="text-sm text-foreground/70 leading-relaxed">
+                          No card needed online. After you place your order, a parts specialist calls you to confirm fitment for your VIN and take payment securely by phone.
+                        </p>
+                        <label htmlFor="checkout-notes" className="sr-only">Order notes</label>
+                        <Textarea
+                          id="checkout-notes"
+                          placeholder="VIN, best time to call, or delivery notes (optional)"
+                          name="notes"
+                          rows={3}
+                          maxLength={1000}
+                          value={formData.notes}
                           onChange={handleInputChange}
                         />
-                        <div className="grid sm:grid-cols-2 gap-4">
-                          <Input
-                            placeholder="MM/YY"
-                            name="expiryDate"
-                            value={formData.expiryDate}
-                            onChange={handleInputChange}
-                          />
-                          <Input
-                            placeholder="CVV"
-                            name="cvv"
-                            value={formData.cvv}
-                            onChange={handleInputChange}
-                          />
+                        <div className="flex flex-col sm:flex-row gap-3">
+                          <Button variant="outline" size="lg" onClick={() => setStep('shipping')} disabled={isProcessing}>
+                            Edit Shipping
+                          </Button>
+                          <Button size="lg" className="flex-1" onClick={handlePlaceOrder} disabled={isProcessing}>
+                            {isProcessing ? 'Placing order...' : 'Place Order'}
+                          </Button>
                         </div>
-                        <Button
-                          size="lg"
-                          className="w-full"
-                          onClick={handlePaymentSubmit}
-                          disabled={isProcessing}
-                        >
-                          {isProcessing ? 'Processing...' : 'Complete Order'}
-                        </Button>
                       </div>
                     )}
 
