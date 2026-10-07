@@ -218,6 +218,31 @@ export function feedItemId(brand: string, slug: string): string {
   return `${brand.slice(0, 12)}-${createHash("sha1").update(`${brand}/${slug}`).digest("hex").slice(0, 16)}`
 }
 
+/**
+ * Reverses a feed `g:id` back to its brand + product, for the Merchant Center
+ * "Checkout URL" deep link (e.g. /checkout?item_id={id}). The brand prefix
+ * narrows the search to that brand's catalog before matching the full hash.
+ */
+export function resolveFeedItemId(
+  itemId: string,
+): { brand: string; product: BrandProduct } | null {
+  const prefix = itemId.split("-")[0]
+  const candidates = prefix
+    ? BRAND_DIRECTORY.filter((b) => b.slug.slice(0, 12) === prefix)
+    : BRAND_DIRECTORY
+  const searchOrder = candidates.length > 0 ? candidates : BRAND_DIRECTORY
+  for (const brand of searchOrder) {
+    const catalog = loadBrandCatalog(brand.slug)
+    if (!catalog) continue
+    for (const product of catalog.products) {
+      if (feedItemId(brand.slug, product.canonicalSlug) === itemId) {
+        return { brand: brand.slug, product }
+      }
+    }
+  }
+  return null
+}
+
 // --- Catalog stats / admin search -------------------------------------------
 
 export interface BrandFeedStats {
