@@ -17,6 +17,7 @@ interface ProductCardActionsProps {
   shipping?: string
   /** Where the "Details" button links. Defaults to /products/[productId]. */
   detailsHref?: string
+  purchaseDisabled?: boolean
 }
 
 const PHONE_SALES = '708-896-2383'
@@ -32,12 +33,14 @@ export function ProductCardActions({
   make,
   shipping,
   detailsHref,
+  purchaseDisabled = false,
 }: ProductCardActionsProps) {
   const [quantity, setQuantity] = useState(1)
   const [addedToCart, setAddedToCart] = useState(false)
   const addItem = useCartStore((state) => state.addItem)
 
   const handleAddToCart = () => {
+    if (purchaseDisabled) return
     const shippingCost = Number.parseFloat(shipping?.replace(/[^0-9.]/g, '') || '0')
     addItem({
       id: productId,
@@ -88,9 +91,11 @@ export function ProductCardActions({
         <input
           type="number"
           min="1"
-          max="10"
+          max="5"
+          aria-label="Quantity"
+          disabled={purchaseDisabled}
           value={quantity}
-          onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
+          onChange={(e) => setQuantity(Math.min(5, Math.max(1, parseInt(e.target.value) || 1)))}
           className="w-16 px-2 py-1 rounded border border-border bg-background text-foreground text-sm"
         />
       </div>
@@ -99,6 +104,7 @@ export function ProductCardActions({
       <div className="grid grid-cols-2 gap-2">
         <Button
           onClick={handleAddToCart}
+          disabled={purchaseDisabled}
           className={`text-xs font-bold transition-all ${
             addedToCart
               ? 'bg-green-600 hover:bg-green-700'
@@ -111,6 +117,7 @@ export function ProductCardActions({
         </Button>
         <Button
           onClick={handleBuyNow}
+          disabled={purchaseDisabled}
           className="auapw-btn auapw-btn-green text-xs font-bold"
           title="Add to cart and proceed to checkout"
         >

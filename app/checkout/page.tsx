@@ -86,6 +86,7 @@ export default function CheckoutPage() {
   const [isProcessing, setIsProcessing] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [placedOrder, setPlacedOrder] = useState<{ orderNumber: string; totalAmount: number } | null>(null)
+  const [paymentConfirmed, setPaymentConfirmed] = useState(false)
 
   const totalPrice = getTotalPrice()
   const shipping = items.reduce((total, item) => total + (item.shippingCost ?? 0) * item.quantity, 0)
@@ -139,6 +140,7 @@ export default function CheckoutPage() {
   }
 
   const handleStripePaid = (result: { orderNumber: string; totalAmount: number }) => {
+    setPaymentConfirmed(true)
     setPlacedOrder(result)
     clearCart()
     setStep('confirmation')
@@ -242,9 +244,11 @@ export default function CheckoutPage() {
               <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-6">
                 <Check className="w-8 h-8 text-green-400" />
               </div>
-              <h2 className="text-3xl font-bold mb-2">Order Received!</h2>
+              <h2 className="text-3xl font-bold mb-2">{paymentConfirmed ? 'Payment Confirmed!' : 'Order Received!'}</h2>
               <p className="text-foreground/60 mb-8 text-pretty">
-                A parts specialist will call you within one business day to confirm fitment and take payment securely by phone. Nothing has been charged yet.
+                {paymentConfirmed
+                  ? 'Your payment was received securely through Stripe. A parts specialist will call you within one business day to confirm fitment and delivery details. No additional payment is needed for this order.'
+                  : 'A parts specialist will call you within one business day to confirm fitment and take payment securely by phone. Nothing has been charged yet.'}
               </p>
               <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-8 text-left">
                 <p className="text-sm text-foreground/60 mb-2">Order Number</p>

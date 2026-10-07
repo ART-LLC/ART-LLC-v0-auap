@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { resolveFeedItemId, getEffectiveProduct } from '@/lib/merchant'
+import { resolveFeedItemId, getEffectiveProduct, getAllOverrides, isFeedEligible } from '@/lib/merchant'
 import { getBrandLabel } from '@/lib/brand-catalog'
 
 const SHIPPING_COST = 240
@@ -13,15 +13,21 @@ export async function GET(_req: Request, { params }: { params: Promise<{ id: str
   }
 
   const { brand, product } = resolved
-  const effective = getEffectiveProduct(brand, product, null)
+  let overrides: Awaited<ReturnType<typeof getAllOverrides>>
+  try {
+    overrides = await getAllOverrides()
+  } catch {
+    return NextResponse.json({ error: 'Unable to verify this item. Please try again.' }, { status: 503 })
+  }
+  const effective = getEffectiveProduct(brand, product, overrides.get(`${brand}/${product.canonicalSlug}`) ?? null)
 
-  if (effective.price === null || effective.hidden) {
+  if (!isFeedEligible(effective) || effective.availability !== 'in_stock') {
     return NextResponse.json({ error: 'Item not available' }, { status: 404 })
   }
 
   return NextResponse.json({
     item: {
-      id: `${brand}/${product.canonicalSlug}`,
+      id: product.canonicalSlug,
       name: effective.title,
       price: effective.price,
       image: effective.imageUrl,

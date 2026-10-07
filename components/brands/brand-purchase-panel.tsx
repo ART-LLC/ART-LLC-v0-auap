@@ -13,6 +13,8 @@ interface BrandPurchasePanelProps {
   productType: string
   make: string
   shipping?: string
+  availability?: 'in_stock' | 'out_of_stock' | 'backorder'
+  detailsHref?: string
 }
 
 /**
@@ -28,6 +30,8 @@ export function BrandPurchasePanel({
   productType,
   make,
   shipping,
+  availability = 'in_stock',
+  detailsHref,
 }: BrandPurchasePanelProps) {
   // Price of the mileage tier the shopper selected (null = default medium tier).
   const [selectedPrice, setSelectedPrice] = useState<number | null>(null)
@@ -49,7 +53,14 @@ export function BrandPurchasePanel({
         productType={productType}
         make={make}
         shipping={shipping}
+        detailsHref={detailsHref}
+        purchaseDisabled={availability !== 'in_stock'}
       />
+      {availability !== 'in_stock' && (
+        <p role="status" className="text-sm text-muted-foreground">
+          {availability === 'backorder' ? 'This part is on backorder.' : 'This part is out of stock.'} Contact us to confirm availability before ordering.
+        </p>
+      )}
     </div>
   )
 }

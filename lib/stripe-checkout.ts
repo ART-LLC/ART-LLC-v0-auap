@@ -32,7 +32,7 @@ export async function createStripeCheckoutSession(customer: StripeCheckoutCustom
     return { ok: false as const, error: "Card payments are not configured. Please choose another payment method." }
   }
 
-  const pricing = priceCart(items)
+  const pricing = await priceCart(items)
   if (!pricing.ok) return { ok: false as const, error: pricing.error }
 
   const order = await createOrder({
@@ -87,7 +87,7 @@ export async function createStripeCheckoutSession(customer: StripeCheckoutCustom
       customer_email: customer.email,
       line_items: lineItems,
       metadata: { orderId: order.id, orderNumber: order.orderNumber },
-    })
+    }, { idempotencyKey: `checkout-${order.id}` })
 
     await attachStripeSession(order.id, session.id)
 

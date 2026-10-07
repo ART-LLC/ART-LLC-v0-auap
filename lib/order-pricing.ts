@@ -1,6 +1,7 @@
 import "server-only"
 import { BRAND_DIRECTORY, getBrandProductBySlug, getBrandProductUrl } from "@/lib/brand-catalog"
 import { getSalesMode } from "@/lib/catalog-fields"
+import { applyOverrideToProduct, getAllOverrides } from "@/lib/merchant"
 import { SHIPPING } from "@/lib/site-policy"
 import type { OrderLine } from "@/lib/followup"
 
@@ -32,9 +33,17 @@ function findBrandSlug(make?: string): string | undefined {
  * which mileage tier the shopper picked; it must equal one of the catalog's
  * own prices for that part or the line is rejected.
  */
-export function priceCart(cart: CartLineInput[]): PricingResult {
+export async function priceCart(cart: CartLineInput[]): Promise<PricingResult> {
   if (!Array.isArray(cart) || cart.length === 0) return { ok: false, error: "Your cart is empty." }
   if (cart.length > MAX_LINES_PER_ORDER) return { ok: false, error: "Too many items in one order. Please call us." }
+
+  let overrides: Awaited<ReturnType<typeof getAllOverrides>>
+  try {
+    overrides = await getAllOverrides()
+  } catch {
+    // Unlike browsing, checkout must not fall back to stale prices or stock.
+    return { ok: false, error: "We couldn't verify current prices and availability. Please try again shortly." }
+  }
 
   const unitsByProduct = new Map<string, number>()
   const lines: OrderLine[] = []
@@ -44,10 +53,17 @@ export function priceCart(cart: CartLineInput[]): PricingResult {
     if (!Number.isInteger(quantity) || quantity < 1) return { ok: false, error: "Invalid quantity in cart." }
 
     const brand = findBrandSlug(item.make)
-    const product = brand ? getBrandProductBySlug(brand, String(item.id)) : undefined
-    if (!brand || !product) {
+    // Older Google checkout links stored brand/slug instead of the canonical slug.
+    const slug = brand && item.id.startsWith(`${brand}/`) ? item.id.slice(brand.length + 1) : item.id
+    const catalogProduct = brand ? getBrandProductBySlug(brand, slug) : undefined
+    if (!brand || !catalogProduct) {
       return { ok: false, error: "One of the parts in your cart needs a phone quote. Please call us to order it." }
     }
+    const override = overrides.get(`${brand}/${catalogProduct.canonicalSlug}`) ?? null
+    if (override?.hidden || (override?.availability && override.availability !== "in_stock")) {
+      return { ok: false, error: `${catalogProduct.name} is currently unavailable for online purchase. Please contact us.` }
+    }
+    const product = applyOverrideToProduct(catalogProduct, override)
     if (getSalesMode(product) !== "buy_now") {
       return { ok: false, error: `${product.name} is quote-only. Please call us to order it.` }
     }
@@ -60,11 +76,12 @@ export function priceCart(cart: CartLineInput[]): PricingResult {
       return { ok: false, error: `The price for ${product.name} has changed. Please re-add it to your cart.` }
     }
 
-    const units = (unitsByProduct.get(product.id) ?? 0) + quantity
+    const productKey = `${brand}/${product.canonicalSlug}`
+    const units = (unitsByProduct.get(productKey) ?? 0) + quantity
     if (units > MAX_UNITS_PER_PRODUCT) {
       return { ok: false, error: `Online orders are limited to ${MAX_UNITS_PER_PRODUCT} of the same part. Call us for fleet orders.` }
     }
-    unitsByProduct.set(product.id, units)
+    unitsByProduct.set(productKey, units)
 
     lines.push({
       productId: product.id,
