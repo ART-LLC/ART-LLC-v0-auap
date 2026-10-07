@@ -463,3 +463,34 @@ export const listingReviews = pgTable('listing_reviews', {
   createdAt: timestamp('createdAt').notNull().defaultNow(),
   updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })
+
+// --- Admin: Staff Directory (Sales Agents / Support Team / Developer Team) ---
+export const staffMembers = pgTable('staff_members', {
+  id: text('id').primaryKey(),
+  name: text('name').notNull(),
+  email: text('email').notNull(),
+  phone: text('phone'),
+  role: text('role').notNull(), // 'sales_agent' | 'support_team' | 'developer_team'
+  department: text('department'),
+  title: text('title'),
+  status: text('status').notNull().default('active'), // 'active' | 'inactive'
+  notes: text('notes'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Admin: Payment Gateways & Methods ---
+export const paymentGateways = pgTable('payment_gateways', {
+  id: text('id').primaryKey(),
+  name: text('name').notNull(), // Display name, e.g. "Authorize.Net"
+  slug: text('slug').notNull().unique(), // 'authorize_net' | 'stripe' | 'paypal' | ...
+  type: text('type').notNull().default('card'), // 'card' | 'wallet' | 'bank' | 'offline'
+  description: text('description'),
+  logo: text('logo'),
+  isEnabled: boolean('isEnabled').notNull().default(false),
+  isDefault: boolean('isDefault').notNull().default(false),
+  sortOrder: integer('sortOrder').notNull().default(0),
+  config: json('config'), // non-secret display config only (e.g. supported cards)
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
