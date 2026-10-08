@@ -8,8 +8,26 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
-        disallow: ['/cart', '/wishlist', '/comparison', '/api/'],
+        // Product images are served from /api/product-image and referenced by
+        // the product JSON-LD and the Google Shopping feed, so crawlers need them.
+        allow: ['/', '/api/product-image/'],
+        disallow: [
+          '/cart',
+          '/wishlist',
+          '/comparison',
+          '/api/',
+          '/admin',
+          '/dashboard',
+          '/customer',
+          '/checkout',
+          '/seller',
+          '/buyer',
+          '/portal',
+          '/chat',
+          '/test-plan',
+          '/responsive-preview',
+          '/analytics',
+        ],
       },
     ],
     sitemap: [

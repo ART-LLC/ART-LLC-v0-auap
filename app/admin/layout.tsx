@@ -6,6 +6,7 @@ import { getAdminSession } from '@/lib/admin-auth'
 export const metadata = {
   title: 'Admin Portal | AUAPW',
   description: 'AUAPW Admin Dashboard',
+  robots: { index: false, follow: false },
 }
 
 export default async function AdminLayout({ children }: { children: ReactNode }) {

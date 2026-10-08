@@ -1,7 +1,6 @@
 import { MetadataRoute } from 'next'
 import { PART_CATEGORIES, CAR_MAKES } from '@/lib/data'
 import { acuraProducts, getAcuraProductUrl } from '@/lib/acura-data'
-import { ACURA_MODEL_DIRECTORY } from '@/lib/acura-model-history'
 import { BRAND_DIRECTORY } from '@/lib/brand-catalog'
 
 function slugify(text: string) {
@@ -21,12 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/inventory',
     '/blog',
     '/makes',
-    '/parts',
     '/used-engines',
     '/used-transmissions',
-    '/cart',
-    '/wishlist',
-    '/comparison',
     '/privacy-policy',
     '/terms',
     '/return-policy',
@@ -50,8 +45,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/used-exhaust-parts',
   ]
 
-  // Dynamic category pages
-  const categoryPages = PART_CATEGORIES.map((cat) => `/parts/${cat.id}`)
+  // Dynamic category pages (engines and transmissions redirect to /brands, so
+  // only their individual part pages are listed)
+  const REDIRECTED_CATEGORIES = new Set(['engines', 'transmissions'])
+  const categoryPages = PART_CATEGORIES.filter((cat) => !REDIRECTED_CATEGORIES.has(cat.id)).map(
+    (cat) => `/parts/${cat.id}`,
+  )
 
   // Individual part pages (all parts from all categories)
   const partPages = PART_CATEGORIES.flatMap((cat) =>
@@ -61,9 +60,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Make pages
   const makePages = CAR_MAKES.map((make) => `/makes/${slugify(make)}`)
 
-  // Acura model guides and all product pages from the pricing sheet so Google
-  // can crawl every history hub, model index, engine, transmission, and part URL.
-  const acuraModelPages = ACURA_MODEL_DIRECTORY.map((model) => model.href)
+  // All Acura product pages from the pricing sheet. (The old /acura/<model>
+  // guides now redirect to the filtered catalog, so they are not listed.)
   const acuraProductPages = acuraProducts.map((product) => getAcuraProductUrl(product))
 
   // Brand directory + per-brand catalog pages. Individual brand product URLs
@@ -78,7 +76,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...categoryPages,
     ...partPages,
     ...makePages,
-    ...acuraModelPages,
     ...acuraProductPages,
     ...brandPages,
   ])]
