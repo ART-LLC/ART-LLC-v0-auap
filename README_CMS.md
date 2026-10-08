@@ -21,7 +21,7 @@ A comprehensive, multi-team content management system for managing website pages
 ### 1. Access the CMS
 ```
 Admin Dashboard: http://localhost:3000/admin/cms
-Login: admin@auapw.com / AUAPWAdmin123!
+Login: admin@auapw.com / <value of ADMIN_PASSWORD>
 ```
 
 ### 2. Choose Your Portal
@@ -98,9 +98,9 @@ components/admin/portal-switcher  → Portal navigation switcher
 All CMS endpoints require admin authentication:
 
 ```bash
-# Default credentials (CHANGE IN PRODUCTION!)
+# Required: there is no default admin password
 ADMIN_EMAIL=admin@auapw.com
-ADMIN_PASSWORD=AUAPWAdmin123!
+ADMIN_PASSWORD=choose-a-long-random-password
 
 # Set in production via environment variables
 ```

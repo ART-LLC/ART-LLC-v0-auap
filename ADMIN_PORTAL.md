@@ -393,7 +393,7 @@ Once logged in, customers have access to:
 
 ### Test Admin Account
 - Email: `admin@auapw.com`
-- Password: `AUAPWAdmin123!`
+- Password: `<value of ADMIN_PASSWORD>`
 - Role: Administrator
 - Access: Full admin dashboard with KPIs
 
@@ -413,7 +413,7 @@ Set these in your `.env.local` or Vercel environment:
 ```env
 # Admin credentials
 ADMIN_EMAIL=admin@auapw.com
-ADMIN_PASSWORD=AUAPWAdmin123!
+ADMIN_PASSWORD=choose-a-long-random-password
 
 # Better Auth (required for customer sessions)
 BETTER_AUTH_SECRET=your-secret-key-here
@@ -439,7 +439,7 @@ Request body:
 ```json
 {
   "username": "admin@auapw.com",
-  "password": "AUAPWAdmin123!"
+  "password": "<value of ADMIN_PASSWORD>"
 }
 ```
 

@@ -7,7 +7,7 @@
 
 **Admin Credentials:**
 - Email: `admin@auapw.com`
-- Password: `AUAPWAdmin123!`
+- Password: `<value of ADMIN_PASSWORD>`
 
 **Admin Dashboard:** `http://localhost:3000/admin/dashboard` or `https://allusedautopartswarehouse.com/admin/dashboard`
 
@@ -112,7 +112,7 @@ Create a `.env.local` file with:
 ```env
 # Admin Credentials
 ADMIN_EMAIL=admin@auapw.com
-ADMIN_PASSWORD=AUAPWAdmin123!
+ADMIN_PASSWORD=choose-a-long-random-password
 
 # Database
 DATABASE_URL=postgresql://user:password@localhost:5432/auapw
@@ -155,7 +155,7 @@ Content-Type: application/json
 
 {
   "username": "admin@auapw.com",
-  "password": "AUAPWAdmin123!"
+  "password": "<value of ADMIN_PASSWORD>"
 }
 
 Response:
