@@ -31,7 +31,9 @@ export const metadata: Metadata = {
     telephone: true,
   },
   alternates: {
-    canonical: 'https://www.allusedautopartswarehouse.com',
+    // './' resolves to each page's own path; an absolute homepage URL here
+    // would mark every page as a duplicate of the homepage.
+    canonical: './',
   },
   robots: {
     index: true,
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://www.allusedautopartswarehouse.com',
+    url: './',
     siteName: 'AUAPW LLC',
     title: 'AUAPW LLC - Quality Used Auto Parts | Engines, Transmissions & More',
     description: 'Your trusted source for quality used auto parts. Shop engines, transmissions, body parts and more from 2,000+ verified salvage yards nationwide.',

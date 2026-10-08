@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Used Auto Parts Inventory | AUAPW LLC',
     description: 'Browse quality used auto parts with advanced filtering. Price, condition, warranty, and location filters available.',
-    url: 'https://www.allusedautopartswarehouse.com/parts',
+    url: './',
   },
 }
 
