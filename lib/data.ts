@@ -477,10 +477,10 @@ export function generateResults(year: string, make: string, model: string, part:
     : part.toLowerCase().includes("radiator") ? 280
     : 400
   return [
-    { id: 1, yard: YARDS[0], price: base, miles: 32000, condition: "Excellent", warranty: "6 Months", shipping: 5, inStock: true },
+    { id: 1, yard: YARDS[0], price: base, miles: 32000, condition: "Excellent", warranty: "90 Days", shipping: 5, inStock: true },
     { id: 2, yard: YARDS[1], price: Math.round(base * 0.88), miles: 78000, condition: "Good", warranty: "90 Days", shipping: 7, inStock: true },
-    { id: 3, yard: YARDS[2], price: Math.round(base * 0.95), miles: 51000, condition: "Very Good", warranty: "6 Months", shipping: 8, inStock: true },
-    { id: 4, yard: YARDS[3], price: Math.round(base * 1.1), miles: 94000, condition: "Good", warranty: "30 Days", shipping: 10, inStock: false },
+    { id: 3, yard: YARDS[2], price: Math.round(base * 0.95), miles: 51000, condition: "Very Good", warranty: "90 Days", shipping: 8, inStock: true },
+    { id: 4, yard: YARDS[3], price: Math.round(base * 1.1), miles: 94000, condition: "Good", warranty: "90 Days", shipping: 10, inStock: false },
   ]
 }
 
@@ -493,7 +493,7 @@ export const NAV_LINKS = [
 
 export const PHONE_SALES = "1-708-896-2383"
 export const PHONE_DISPLAY = "(708) 896-2383"
-export const CONTACT_EMAIL = "aupworld@gmail.com"
+export const CONTACT_EMAIL = "auapworld@gmail.com"
 export const COMPANY_TAGLINE = "Trusted Partner for Automotive Services and Solutions"
 
 // Brand colors for background tints
@@ -635,6 +635,6 @@ export const BRAND_LOGOS = BRAND_COLORS
 export const TESTIMONIALS = [
   { text: "Found a complete engine for my F-150 at a fraction of dealer price. The process was seamless and the part arrived in perfect condition.", name: "Michael R.", location: "Austin, TX", rating: 5 },
   { text: "Called on a Monday, had a quote by Tuesday morning. Transmission arrived Wednesday. Exactly what was described. Outstanding service.", name: "Sandra L.", location: "Phoenix, AZ", rating: 5 },
-  { text: "Second time using AUAPW. First was a transfer case, now a cylinder head. Both times faultless. The 6-month warranty gives real peace of mind.", name: "James T.", location: "Atlanta, GA", rating: 5 },
+  { text: "Second time using AUAPW. First was a transfer case, now a cylinder head. Both times faultless. The 90-day warranty gives real peace of mind.", name: "James T.", location: "Atlanta, GA", rating: 5 },
   { text: "I was skeptical about buying a used engine online. Their team confirmed fitment and the part came with full paperwork. Couldn't ask for more.", name: "Patricia M.", location: "Seattle, WA", rating: 5 },
 ]

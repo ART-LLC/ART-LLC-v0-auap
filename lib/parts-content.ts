@@ -20,13 +20,13 @@ export const ALL_PARTS: PartInfo[] = [
     category: "engines",
     description: "Complete used engines with low mileage from verified salvage yards. Gasoline, diesel, and hybrid engines available.",
     longDescription: "The engine is the heart of your vehicle. Our used engines are carefully inspected and tested before listing. We source engines from late-model vehicles with low mileage, ensuring you get a reliable powerplant at a fraction of the cost of a new one. Whether you need a 4-cylinder economy engine, a V6 for your family sedan, or a V8 for your truck or performance car, we have options from every major manufacturer.",
-    benefits: ["Save 40-70% vs new", "Low mileage units available", "Tested and inspected", "30-180 day warranty included", "$240 flat-rate shipping per part"],
+    benefits: ["Save 40-70% vs new", "Low mileage units available", "Tested and inspected", "90-day warranty included", "$240 flat-rate shipping per part"],
     faqs: [
       { q: "How many miles can a used engine last?", a: "A quality used engine with proper maintenance can last 100,000-200,000+ miles. We source engines with documented low mileage, typically 30,000-80,000 miles, giving you years of reliable service." },
-      { q: "Are used engines reliable?", a: "Yes, when sourced from reputable suppliers like us. Every engine is inspected, compression tested, and verified before shipping. Our 6-month warranty gives you peace of mind." },
+      { q: "Are used engines reliable?", a: "Yes, when sourced from reputable suppliers like us. Every engine is inspected, compression tested, and verified before shipping. Our 90-day warranty gives you peace of mind." },
       { q: "How do I know if a used engine will fit my car?", a: "Our specialists verify fitment using your VIN, year, make, model, and engine size. We match OEM part numbers to ensure exact compatibility with your vehicle." },
       { q: "Is it better to buy a used or rebuilt engine?", a: "Used engines are more affordable for short-to-medium term needs. Rebuilt engines cost more but may last longer. For most drivers, a quality used engine with low mileage offers the best value." },
-      { q: "What warranty do used engines come with?", a: "Our used engines come with a minimum 30-day warranty, with most covered by a standard 6-month warranty. Extended warranties up to 180 days are available on select units." },
+      { q: "What warranty do used engines come with?", a: "Our used engines come with a 90-day warranty covering the whole unit." },
     ],
   },
   {
@@ -35,7 +35,7 @@ export const ALL_PARTS: PartInfo[] = [
     category: "transmissions",
     description: "Used automatic, manual, and CVT transmissions. All tested and inspected with warranty coverage.",
     longDescription: "Your vehicle's transmission is the second most critical component after the engine. We offer a complete range of used transmissions including automatic, manual, CVT, and dual-clutch units. Every transmission in our inventory has been tested for proper gear engagement, fluid quality, and overall operation. Our nationwide network of 2,000+ yards means we can find the exact transmission for your vehicle, often at 50-70% less than dealer prices.",
-    benefits: ["Automatic, manual, CVT available", "Fluid tested before shipping", "All gears verified functional", "Up to 6-month warranty", "Exact OEM fitment guaranteed"],
+    benefits: ["Automatic, manual, CVT available", "Fluid tested before shipping", "All gears verified functional", "90-day warranty", "Exact OEM fitment guaranteed"],
     faqs: [
       { q: "How long do used transmissions last?", a: "A quality used transmission can last 100,000+ miles with proper maintenance. We source units with verified mileage and test them thoroughly before sale." },
       { q: "Is it better to buy a used or rebuilt transmission?", a: "Used transmissions are less expensive and work great for budget-conscious repairs. Rebuilt transmissions cost more but may offer longer life. Both are viable options depending on your needs and budget." },
@@ -933,7 +933,7 @@ export function getBrandContent(brand: string): BrandContent {
     partsIntro: `Browse our complete selection of used ${brand} parts below. Every part listed is available from our network of 2,000+ verified salvage yards and junkyards across the USA. From engines and transmissions to body panels and electrical components, AUAPW LLC has the ${brand} part you need.`,
     orderingProcess: `To make an order, first, you need to find your desired auto part. To do this, you can use our custom-designed ${brand.toLowerCase()} auto parts locator that browses through all the junkyards across the country. All you need to do is fill in the car details, such as year, make, model, etc. and press the search button. The locator will find the best options at the most affordable prices. Choose the one that fits your car best and make an order. After you provide your contact details, AUAPW LLC will get in touch with you within 24 hours.`,
     shippingInfo: `No matter from where you are ordering, you will get your order shipped to your house, office or anywhere else for completely free. Simply order your desired OEM used ${brand} car part and get it delivered to any location in the USA without any charge. Most parts ship within 1-3 business days.`,
-    warrantyInfo: `In case you face any problems during maintenance, just know that the used part is under warranty for a certain period. For every used ${brand} part you buy, AUAPW LLC dealers provide you with a warranty from 30 up to 180 days. Engines and transmissions typically carry a 6-month warranty with full return and replacement coverage.`,
+    warrantyInfo: `In case you face any problems during maintenance, just know that the used part is under warranty for a certain period. For every used ${brand} part you buy, AUAPW LLC provides a 90-day warranty with full return and replacement coverage.`,
     returnPolicy: `In case if you are not satisfied with your order, just send it back, as we provide a return option as well. Also, if you have ordered the wrong ${brand} part you can return it and order the right one. AUAPW LLC does our best for our customers' satisfaction. Returns are accepted within the warranty period with no restocking fees.`,
     whyBuyOnline: `If you are very busy and don't have extra time to spend roaming around junkyards and auto recyclers, then AUAPW LLC is the best option for you. In just 24 hours you find a great deal without going anywhere. Besides, you buy your ${brand} part way cheaper than it will cost you to buy a new one plus you get it shipped for free. Our network compares prices from 2,000+ yards to ensure you get the absolute best deal available.`,
   }

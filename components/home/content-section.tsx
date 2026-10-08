@@ -40,7 +40,7 @@ export function ContentSection() {
               Our network spans all 50 states with partnerships across <strong className="text-foreground font-bold text-3d-accent">2,000+ verified salvage yards</strong> and recyclers. Whether you need a complete engine, transmission, body panels, electrical components, or any other part -- we have access to millions of quality-tested components ready for immediate shipping.
             </p>
             <p className="font-medium text-foreground/85">
-              Every part listed on AUAPW LLC goes through a rigorous quality inspection process. Our partnered dealers test and verify each component before listing, ensuring you receive parts that meet or exceed OEM specifications. We stand behind every sale with our comprehensive <strong className="text-foreground font-bold text-3d-accent">30 to 180-day warranty</strong> program.
+              Every part listed on AUAPW LLC goes through a rigorous quality inspection process. Our partnered dealers test and verify each component before listing, ensuring you receive parts that meet or exceed OEM specifications. We stand behind every sale with our comprehensive <strong className="text-foreground font-bold text-3d-accent">90-day warranty</strong> program.
             </p>
             <p className="font-medium text-foreground/85">
               Why pay dealership prices when you can get the same quality at a fraction of the cost? Used auto parts from AUAPW LLC typically save our customers <strong className="text-foreground font-bold text-3d-accent">40-70% compared to new OEM parts</strong>. Our transparent pricing means no hidden fees -- what you see is what you pay, with flat-rate shipping of $240 per part.
@@ -92,7 +92,7 @@ export function ContentSection() {
           {[
             { icon: Search, title: "Used Auto Parts Near You", desc: "Search by state, city and zip code to locate used car parts from junkyards near you." },
             { icon: Truck, title: "$240 Shipping Per Part", desc: "No matter which corner of USA you are ordering from, get auto parts delivered to your door." },
-            { icon: Shield, title: "Warranty From Dealers", desc: "Get 30-180 days warranty directly from junkyard and salvage yard dealers." },
+            { icon: Shield, title: "Warranty From Dealers", desc: "Every used part is covered by a 90-day warranty." },
             { icon: RotateCcw, title: "Easy Returns", desc: "Not satisfied? You can easily return the part. Simple process, no hassle." },
             { icon: Clock, title: "Quick 24-Hour Turnaround", desc: "After you place your request, get a response from dealers within 24 hours." },
             { icon: DollarSign, title: "Best Prices In Industry", desc: "Used car parts cost 2-3x less than new ones with the same durability." },
@@ -147,7 +147,7 @@ export function ContentSection() {
             </div>
             <div className="bg-secondary/20 p-6 rounded-lg flex flex-col items-center text-center">
               <div className="text-sm font-black text-3d-accent mb-2 uppercase tracking-wide">Complete Protection</div>
-              <p className="text-xs text-muted-foreground leading-relaxed" style={{ fontFamily: 'system-ui' }}>30 to 180-day warranty on all parts. Free returns within 30 days if not satisfied.</p>
+              <p className="text-xs text-muted-foreground leading-relaxed" style={{ fontFamily: 'system-ui' }}>90-day warranty on all used parts. Free returns within 30 days if not satisfied.</p>
             </div>
           </div>
 

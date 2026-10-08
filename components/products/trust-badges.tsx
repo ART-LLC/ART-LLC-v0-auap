@@ -2,9 +2,9 @@ import { BadgeCheck, ShieldCheck } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { REBUILT_WARRANTY, USED_WARRANTY } from "@/lib/site-policy"
 
-/** Infers the warranty tier shown to shoppers from the listing title. Rebuilt /
- * remanufactured units carry the longer 12-month tier; everything else (the
- * vast majority — used OEM replacement parts) carries the 90-day used tier. */
+/** Infers the warranty tier shown to shoppers from the listing title: rebuilt /
+ * remanufactured units use REBUILT_WARRANTY, everything else (the vast
+ * majority — used OEM replacement parts) uses USED_WARRANTY. */
 function getWarrantyLength(productName: string): string {
   return /\b(rebuilt|remanufactured|reman)\b/i.test(productName) ? REBUILT_WARRANTY : USED_WARRANTY
 }

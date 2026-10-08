@@ -25,7 +25,7 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     url: "/contact",
     keywords: ["contact", "phone", "call", "email", "support", "help", "hours", "reach", "talk", "human", "agent"],
     content:
-      "Phone: (708) 896-2383 (Mon-Sat 8:00am-6:00pm PST). Email: aupworld@gmail.com (we respond within 24 hours). You can also use the contact form on the Contact page. Our team is happy to help with fitment, orders, and quotes.",
+      "Phone: (708) 896-2383 (Mon-Sat 8:00am-6:00pm PST). Email: auapworld@gmail.com (we respond within 24 hours). You can also use the contact form on the Contact page. Our team is happy to help with fitment, orders, and quotes.",
   },
   {
     id: "shipping",
@@ -41,7 +41,7 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     url: "/return-policy",
     keywords: ["warranty", "guarantee", "coverage", "defect", "protected", "guaranteed"],
     content:
-      "All parts include a warranty (standard 90-day warranty, with up to 6-month coverage on eligible parts). If a part arrives defective or is not as described, contact support to arrange a replacement or refund.",
+      "Used and rebuilt parts include a 90-day warranty. If a part arrives defective or is not as described, contact support to arrange a replacement or refund.",
   },
   {
     id: "returns",
@@ -130,9 +130,9 @@ export function searchSiteKnowledge(query: string, limit = 3): KnowledgeEntry[] 
 
 // Short summary of site facts injected into the system prompt for quick answers.
 export const SITE_SUMMARY = `AUAPW LLC — used auto parts marketplace (2,000+ verified salvage yards nationwide).
-- Phone: (708) 896-2383, Mon-Sat 8am-6pm PST. Email: aupworld@gmail.com (24h response).
+- Phone: (708) 896-2383, Mon-Sat 8am-6pm PST. Email: auapworld@gmail.com (24h response).
 - Shipping: flat $240 per part, US-wide, typically 3-7 business days with tracking.
-- Warranty: standard 90-day (up to 6 months on eligible parts).
+- Warranty: 90 days on used and rebuilt parts.
 - Returns accepted for defective/damaged/not-as-described parts.
 - Guest checkout available; accounts support order tracking, wishlist, saved vehicles, warranty registration, and returns.
 - Categories: engines, transmissions, body, brakes, suspension, electrical, cooling, exhaust, drivetrain.`

@@ -9,12 +9,12 @@ import Link from "next/link"
 
 export const metadata = {
   title: "About Us - AUAPW LLC | Quality Used Auto Parts",
-  description: "Learn about AUAPW LLC - Your trusted source for quality used auto parts. 2,000+ verified yards, 6-month warranty, ASE-certified team.",
+  description: "Learn about AUAPW LLC - Your trusted source for quality used auto parts. 2,000+ verified yards, 90-day warranty, ASE-certified team.",
 }
 
 export default function AboutPage() {
   const values = [
-    { num: "01", title: "Quality Guaranteed", desc: "Every part is inspected and comes with a 6-month return & replacement warranty." },
+    { num: "01", title: "Quality Guaranteed", desc: "Every part is inspected and comes with a 90-day return & replacement warranty." },
     { num: "02", title: "Verified Network", desc: "We partner with 2,000+ vetted junkyards and salvage yards meeting our strict standards." },
     { num: "03", title: "Speed & Efficiency", desc: "Every request is answered within 24 hours -- no waiting, no runaround." },
     { num: "04", title: "Fair Pricing", desc: "We connect you directly with dealers with no inflated middleman markup." },
@@ -75,7 +75,7 @@ export default function AboutPage() {
                   { val: "2,000+", label: "Inventory Yards" },
                   { val: "50", label: "States Served" },
                   { val: "< 24hrs", label: "Response Time" },
-                  { val: "6-Mo", label: "Warranty" },
+                  { val: "90-Day", label: "Warranty" },
                 ].map((s) => (
                   <div key={s.label} className="glass-card rounded-sm p-5 sm:p-8 lg:p-10 flex flex-col items-center text-center gap-2">
                     <span className="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground">{s.val}</span>

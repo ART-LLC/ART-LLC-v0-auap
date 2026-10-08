@@ -59,7 +59,7 @@ export function Footer() {
               <BrandWordmark size="footer" />
             </div>
             <p className="text-xs sm:text-sm leading-6 sm:leading-7 text-muted-foreground mb-6 sm:mb-8 font-semibold tracking-tight">
-              Premium quality used auto parts from 2,000+ verified yards nationwide. 30-180 day warranty on every part.
+              Premium quality used auto parts from 2,000+ verified yards nationwide. 90-day warranty on every part.
             </p>
             <div className="space-y-2.5 sm:space-y-3">
               <a href="tel:+17088962383" className="auapw-btn auapw-btn-green auapw-btn-sm w-full">

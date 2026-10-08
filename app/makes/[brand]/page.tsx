@@ -46,7 +46,7 @@ function BrandHeroBanner({ brand, color }: { brand: string; color: string }) {
         <p className="text-xl md:text-2xl text-white/80 font-medium mb-6">Used Auto Parts</p>
         <div className="flex flex-wrap justify-center gap-3 mb-8">
           {[
-            { icon: Shield, text: "6-Month Warranty" },
+            { icon: Shield, text: "90-Day Warranty" },
             { icon: Truck, text: "$240 Shipping Per Part" },
             { icon: Clock, text: "24-HR Response" },
           ].map(({ icon: Icon, text }) => (
@@ -137,7 +137,7 @@ export default function BrandPage() {
       },
       {
         q: `What year range of ${brand} parts are available?`,
-        a: `We stock used parts for ${brand} vehicles spanning from the ${earliestDecade} to present day (${currentYear}). Whether you need parts for a classic ${brand} or a late-model vehicle, our nationwide network can source what you need with a 6-month warranty included.`,
+        a: `We stock used parts for ${brand} vehicles spanning from the ${earliestDecade} to present day (${currentYear}). Whether you need parts for a classic ${brand} or a late-model vehicle, our nationwide network can source what you need with a 90-day warranty included.`,
       },
       {
         q: `How do I find the right used part for my ${brand}?`,
@@ -145,7 +145,7 @@ export default function BrandPage() {
       },
       {
         q: `Do you offer warranties on used ${brand} parts?`,
-        a: `Yes! Every used ${brand} part we sell comes with a minimum 30-day warranty, with most parts covered by our standard 6-month warranty. Engines and transmissions may include extended 90-day to 6-month coverage. All parts are inspected and tested before shipping to ensure quality and proper function.`,
+        a: `Yes! Every used ${brand} part we sell comes with a 90-day warranty covering the whole part. All parts are inspected and tested before shipping to ensure quality and proper function.`,
       },
       {
         q: `Can you ship used ${brand} parts nationwide?`,

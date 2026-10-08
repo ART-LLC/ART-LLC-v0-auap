@@ -9,7 +9,7 @@ import { CAR_MAKES, CAR_MODELS, PART_CATEGORIES, YEARS, US_STATES, PHONE_DISPLAY
 import { getPartOptions } from "@/lib/parts-content"
 import { useState } from "react"
 
-const CONTACT_EMAIL = "aupworld@gmail.com"
+const CONTACT_EMAIL = "auapworld@gmail.com"
 
 export default function QuotePage() {
   const [make, setMake] = useState("")
@@ -92,7 +92,7 @@ export default function QuotePage() {
             <div className="flex flex-col gap-3 sm:gap-4 order-2 lg:order-1">
               {[
                 { icon: Zap, title: "24-Hour Response", desc: "Our team contacts you with options within one business day" },
-                { icon: Shield, title: "6-Month Warranty", desc: "Every part includes full return & replacement coverage" },
+                { icon: Shield, title: "90-Day Warranty", desc: "Every part includes full return & replacement coverage" },
                 { icon: DollarSign, title: "Best Price Match", desc: "We compare 2,000+ yards to find the lowest price" },
                 { icon: Truck, title: "Nationwide Delivery", desc: "Ships to all 50 states in 7-10 business days" },
                 { icon: Mail, title: "Direct Email", desc: `Your quote goes directly to ${CONTACT_EMAIL}` },

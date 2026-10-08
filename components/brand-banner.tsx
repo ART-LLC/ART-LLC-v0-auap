@@ -4,7 +4,7 @@ import { BrandWordmark } from "@/components/brand-wordmark"
 import { Logo } from "@/components/logo"
 
 const BADGES = [
-  { icon: Shield, label: "6-Month Warranty" },
+  { icon: Shield, label: "90-Day Warranty" },
   { icon: Zap, label: "24-Hr Response" },
   { icon: Truck, label: "All 50 States" },
   { icon: Wrench, label: "ASE-Certified" },

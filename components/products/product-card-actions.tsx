@@ -24,7 +24,7 @@ interface ProductCardActionsProps {
 
 const PHONE_SALES = '708-896-2383'
 const PHONE_DISPLAY = '(708) 896-2383'
-const CONTACT_EMAIL = 'aupworld@gmail.com'
+const CONTACT_EMAIL = 'auapworld@gmail.com'
 
 export function ProductCardActions({
   productId,

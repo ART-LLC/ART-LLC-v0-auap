@@ -36,7 +36,7 @@ const features = [
   {
     icon: BadgeCheck,
     title: 'Quality Guaranteed',
-    description: 'All parts undergo certified inspections before shipping. Every eligible part comes with a 30-180 day warranty for your peace of mind.'
+    description: 'All parts undergo certified inspections before shipping. Every part comes with a 90-day warranty for your peace of mind.'
   },
   {
     icon: Wrench,
@@ -111,7 +111,7 @@ export function FeaturesGridSection() {
 
           <div className="text-center">
             <h3 className="text-xs font-bold uppercase tracking-widest text-foreground/60 mb-3">Warranty Coverage</h3>
-            <p className="text-2xl sm:text-3xl font-black text-white mb-3">30-180 Days</p>
+            <p className="text-2xl sm:text-3xl font-black text-white mb-3">90 Days</p>
             <p className="text-foreground/70 leading-relaxed">
               Every part is certified and comes with a warranty. From common components to rare discontinued items, all covered.
             </p>

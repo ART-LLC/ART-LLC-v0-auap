@@ -53,7 +53,7 @@ export function UsedEnginesContent() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
               {[
                 { icon: Truck, title: "$240 Shipping Per Part", desc: "Flat-rate shipping across the USA. Each engine ships for $240, with the charge shown before checkout." },
-                { icon: Shield, title: "Warranty From Dealers", desc: "Get a 30-180 days warranty directly from the junkyard and salvage yard dealers after purchasing a used engine." },
+                { icon: Shield, title: "Warranty From Dealers", desc: "Every used engine is covered by a 90-day warranty." },
                 { icon: Cog, title: "All Engine Types", desc: "Find gasoline, diesel and hybrid engines with low mileage for all types of vehicles -- van, sedan, jeep and more." },
                 { icon: RotateCcw, title: "Returns Available", desc: "Not satisfied with the used auto part? You can easily return it. Contact us through our toll-free number." },
               ].map(({ icon: Icon, title, desc }) => (

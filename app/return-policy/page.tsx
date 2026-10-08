@@ -33,8 +33,8 @@ export default function ReturnPolicyPage() {
               <li>Pass inspection upon receipt at our warehouse</li>
             </ul>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4">6-Month Warranty</h2>
-            <p className="mb-4">All parts come with a 6-month warranty covering defects in workmanship and materials. If a part fails due to manufacturing defects within 6 months, we will replace it free of charge.</p>
+            <h2 className="text-2xl font-bold mt-8 mb-4">90-Day Warranty</h2>
+            <p className="mb-4">All used parts come with a 90-day warranty covering defects in workmanship and materials. If a part fails due to manufacturing defects within 90 days, we will replace it free of charge.</p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">Return Process</h2>
             <ol className="list-decimal pl-6 mb-4 space-y-2">
@@ -60,7 +60,7 @@ export default function ReturnPolicyPage() {
             <p className="mb-4">If you receive a defective part, we will replace it free of charge or provide a full refund. Contact us immediately with photos and documentation of the defect.</p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">Contact for Returns</h2>
-            <p className="mb-4">Email: aupworld@gmail.com | Phone: (708) 896-2383</p>
+            <p className="mb-4">Email: auapworld@gmail.com | Phone: (708) 896-2383</p>
           </div>
         </div>
         <BrandLogosSection />

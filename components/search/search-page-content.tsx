@@ -84,7 +84,7 @@ export function SearchPageContent() {
             Select your vehicle to instantly search 2,000+ verified yards nationwide. In-stock results with pricing in seconds.
           </p>
           <div className="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-8">
-            {["6-Month Warranty","2,000+ Verified Yards","Ships All 50 States","< 24-Hr Response","ASE-Certified Team"].map((t) => (
+            {["90-Day Warranty","2,000+ Verified Yards","Ships All 50 States","< 24-Hr Response","ASE-Certified Team"].map((t) => (
               <div key={t} className="flex items-center gap-1.5 sm:gap-2 text-[9px] sm:text-[11px] font-semibold text-muted-foreground">
                 <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-primary/60" />
                 {t}

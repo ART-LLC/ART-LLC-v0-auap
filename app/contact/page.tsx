@@ -32,7 +32,7 @@ export default function ContactPage() {
             <div className="flex flex-col gap-3 sm:gap-4 order-2 lg:order-1">
               {[
                 { icon: Phone, title: "(708) 896-2383", sub: "Mon-Sat 8am-6pm PST", href: "tel:+17088962383" },
-                { image: "/images/icon-email-logo.png", title: "aupworld@gmail.com", sub: "Response within 24 hours", href: "mailto:aupworld@gmail.com" },
+                { image: "/images/icon-email-logo.png", title: "auapworld@gmail.com", sub: "Response within 24 hours", href: "mailto:auapworld@gmail.com" },
                 { icon: MapPin, title: "508 S Elm St, Ste 104, Denton, TX 76201", sub: "United States", href: "https://maps.google.com/?q=508+S+Elm+St+Ste+104+Denton+TX+76201" },
                 { icon: Clock, title: "Business Hours", sub: "Monday-Saturday 8:00am - 6:00pm PST", href: "#" },
               ].map(({ icon: Icon, image, title, sub, href }) => (
