@@ -5,8 +5,15 @@ import { primeManualOverlay } from '@/lib/manual-products'
 
 import { SHIPPING } from '@/lib/site-policy'
 
+// Feed ids are "<brand slug, first 12 chars>-<16 hex>" (feedItemId in lib/merchant).
+const FEED_ITEM_ID = /^[a-z-]{1,12}-[0-9a-f]{16}$/
+
 export async function GET(_req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
+  // Reject malformed ids before any database work or catalog scan.
+  if (!FEED_ITEM_ID.test(id)) {
+    return NextResponse.json({ error: 'Item not found' }, { status: 404 })
+  }
   // Admin-added products are in the feed too; load the matching brand's before resolving.
   const prefix = id.slice(0, id.lastIndexOf('-'))
   await Promise.all(

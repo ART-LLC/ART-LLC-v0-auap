@@ -34,7 +34,8 @@ export async function POST(request: NextRequest) {
   switch (event.type) {
     // Storefront card payments: the order id lives on the Checkout Session, not
     // the Charge, so confirm through the session (idempotent with the browser's
-    // own confirmation call).
+    // own confirmation call). Errors deliberately propagate as a 500 so Stripe
+    // retries the event instead of the payment confirmation being dropped.
     case 'checkout.session.completed':
     case 'checkout.session.async_payment_succeeded':
       await confirmStripeCheckoutSession(event.data.object.id, new URL(request.url).origin)

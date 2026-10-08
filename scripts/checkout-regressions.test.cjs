@@ -36,7 +36,7 @@ const catalog = {
   getProductDisplayImage: () => ({ src: product.imageUrl, illustrative: false }),
   loadBrandCatalog: () => ({ products: [product] }),
 }
-const manualProducts = { primeManualOverlay: async () => {} }
+const manualProducts = { primed: 0, primeManualOverlay: async () => { manualProducts.primed++ } }
 let rows = []
 let databaseUnavailable = false
 const merchant = load('lib/merchant.ts', {
@@ -172,6 +172,14 @@ test('Google checkout returns a canonical purchasable ID and current price', asy
   assert.equal(returnedItem.price, 1550)
   assert.equal(returnedItem.shippingCost, 240)
   assert.equal((await priceCart([{ ...returnedItem, quantity: 1 }])).ok, true)
+})
+test('Google checkout rejects malformed item ids before loading any products', async () => {
+  manualProducts.primed = 0
+  for (const id of ['acura', 'acuraX', 'acura-XYZ', `acura-${'0'.repeat(15)}`]) {
+    const response = await checkoutItem.GET(new Request('https://example.com'), { params: Promise.resolve({ id }) })
+    assert.equal(response.status, 404)
+  }
+  assert.equal(manualProducts.primed, 0)
 })
 test('Google checkout rejects excluded, hidden, and unavailable items', async () => {
   for (const change of [{ hidden: true }, { exclude_from_feed: true }, { availability: 'out_of_stock' }, { availability: 'backorder' }]) {
