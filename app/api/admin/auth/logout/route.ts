@@ -8,7 +8,7 @@ export async function POST() {
   response.cookies.set(ADMIN_COOKIE, '', {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
-    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+    sameSite: 'lax',
     path: '/',
     maxAge: 0,
   })

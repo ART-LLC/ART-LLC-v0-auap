@@ -7,7 +7,9 @@ import { eq } from 'drizzle-orm'
 const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET || ''
 
 export async function POST(request: NextRequest) {
-  if (!stripe) {
+  // Without the signing secret, signatures would be checked against an empty
+  // key that anyone can reproduce, so refuse instead of accepting forged events.
+  if (!stripe || !endpointSecret) {
     return NextResponse.json({ error: 'Stripe not configured' }, { status: 503 })
   }
 
