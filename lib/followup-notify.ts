@@ -3,6 +3,7 @@ import { Resend } from "resend"
 import type { CustomerOrder, QuoteLead } from "@/lib/followup"
 import type { DashboardMetrics } from "@/lib/admin-metrics"
 import type { FeedAlert, FeedSnapshot } from "@/lib/merchant-health"
+import { PHONE_DISPLAY, SHIPPING, WARRANTY_SUMMARY } from "@/lib/site-policy"
 
 const STAFF_EMAIL = process.env.FOLLOWUP_EMAIL || "auapworld@gmail.com"
 const FROM =
@@ -42,11 +43,22 @@ function shell(title: string, body: string, adminPath: string, siteUrl: string) 
   </div>`
 }
 
-async function send(subject: string, html: string, to: string[] = [STAFF_EMAIL], replyTo?: string): Promise<boolean> {
+export interface SendResult {
+  ok: boolean
+  /** Why the email wasn't sent, in words the admin can act on. */
+  error?: string
+}
+
+async function sendWithResult(
+  subject: string,
+  html: string,
+  to: string[] = [STAFF_EMAIL],
+  replyTo?: string,
+): Promise<SendResult> {
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) {
     console.error("[followup] RESEND_API_KEY missing; email not sent (record is saved in admin)")
-    return false
+    return { ok: false, error: "RESEND_API_KEY is not set in Vercel" }
   }
   try {
     const { error } = await new Resend(apiKey).emails.send({
@@ -58,13 +70,42 @@ async function send(subject: string, html: string, to: string[] = [STAFF_EMAIL],
     })
     if (error) {
       console.error("[followup] Resend error:", error.message)
-      return false
+      return { ok: false, error: error.message }
     }
-    return true
+    return { ok: true }
   } catch (err) {
-    console.error("[followup] Email send failed:", err instanceof Error ? err.message : err)
-    return false
+    const message = err instanceof Error ? err.message : String(err)
+    console.error("[followup] Email send failed:", message)
+    return { ok: false, error: message }
   }
+}
+
+async function send(subject: string, html: string, to: string[] = [STAFF_EMAIL], replyTo?: string): Promise<boolean> {
+  return (await sendWithResult(subject, html, to, replyTo)).ok
+}
+
+/** True when emails can go to customers: Resend's shared test sender only delivers to the account owner. */
+export function customerEmailReady(): { ok: boolean; reason?: string } {
+  if (!process.env.RESEND_API_KEY) return { ok: false, reason: "RESEND_API_KEY is not set" }
+  if (!process.env.EMAIL_FROM && !process.env.RESEND_EMAIL_DOMAIN) {
+    return {
+      ok: false,
+      reason: "No verified sending domain (EMAIL_FROM or RESEND_EMAIL_DOMAIN); Resend only delivers test mail to your own address",
+    }
+  }
+  return { ok: true }
+}
+
+function customerShell(title: string, body: string) {
+  return `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto">
+    <div style="background:#0f1117;color:#fff;padding:20px;border-radius:8px 8px 0 0">
+      <h2 style="margin:0">${escapeHtml(title)}</h2>
+    </div>
+    <div style="border:1px solid #e5e7eb;border-top:none;padding:20px;border-radius:0 0 8px 8px">
+      ${body}
+      <p style="margin-top:20px;color:#6b7280;font-size:13px">Questions? Call ${escapeHtml(PHONE_DISPLAY)} or reply to this email.</p>
+    </div>
+  </div>`
 }
 
 export async function notifyNewChat(
@@ -208,6 +249,9 @@ export async function sendDailyReport(
       message: `${a.staleNewQuotes} quote request${a.staleNewQuotes === 1 ? " has" : "s have"} waited over 24 hours without a call-back.`,
     })
   }
+  for (const e of metrics.errors) {
+    alerts.push({ level: "critical", message: `The dashboard couldn't read ${e.section.toLowerCase()}: ${e.message}` })
+  }
   if (a.stalePendingOrders > 0) {
     alerts.push({
       level: "warning",
@@ -263,5 +307,98 @@ export async function sendDailyReport(
   return send(
     `${alerts.length ? `⚠ ${alerts.length} alert${alerts.length === 1 ? "" : "s"} · ` : ""}AUAPW daily report — ${headline}`,
     shell(`Daily report · ${snapshot.day}`, body, "/admin/dashboard", siteUrl),
+  )
+}
+
+const ORDER_STATUS_COPY: Record<string, { subject: string; title: string; text: string }> = {
+  pending: {
+    subject: "We received your order",
+    title: "Order Received",
+    text: "We have your order and a parts specialist will call you shortly to confirm fitment.",
+  },
+  reserved_pending_fitment: {
+    subject: "Your part is reserved",
+    title: "Part Reserved",
+    text: "Your part is on hold for you while we confirm fitment for your vehicle.",
+  },
+  confirmed: {
+    subject: "Your order is confirmed",
+    title: "Order Confirmed",
+    text: "We confirmed fitment for your vehicle. We'll take payment as agreed and get your part ready to ship.",
+  },
+  paid: {
+    subject: "Payment received",
+    title: "Payment Received",
+    text: `Thank you — your payment is in. ${SHIPPING.dispatch}.`,
+  },
+  shipped: {
+    subject: "Your part has shipped",
+    title: "Your Part Has Shipped",
+    text: `Your part is on its way: ${SHIPPING.transit}. ${SHIPPING.damage}`,
+  },
+  delivered: {
+    subject: "Your part was delivered",
+    title: "Delivered",
+    text: `Your part shows as delivered. It's covered by our ${WARRANTY_SUMMARY.toLowerCase()} — keep this email for your records.`,
+  },
+  cancelled: {
+    subject: "Your order was cancelled",
+    title: "Order Cancelled",
+    text: "Your order has been cancelled. If you were charged, the refund goes back to your original payment method.",
+  },
+}
+
+/** Status update to the customer, sent from the admin Orders page when "Email the customer" is ticked. */
+export async function sendOrderStatusEmail(order: CustomerOrder, note: string, siteUrl: string): Promise<SendResult> {
+  if (!order.customerEmail) return { ok: false, error: "this order has no customer email" }
+  const copy = ORDER_STATUS_COPY[order.status] ?? {
+    subject: "Update on your order",
+    title: "Order Update",
+    text: `Your order status is now: ${order.status.replace(/_/g, " ")}.`,
+  }
+  const items = order.items
+    .map((l) => `<li>${escapeHtml(l.name)} × ${l.quantity}</li>`)
+    .join("")
+  const body = `
+    <p>Hi ${escapeHtml(order.customerName) || "there"},</p>
+    <p>${escapeHtml(copy.text)}</p>
+    ${note ? `<p style="background:#f3f4f6;padding:12px;border-radius:6px;white-space:pre-wrap">${escapeHtml(note)}</p>` : ""}
+    <table style="width:100%;border-collapse:collapse">${rows([
+      ["Order #", order.orderNumber],
+      ["Total", money(order.totalAmount)],
+    ])}</table>
+    ${items ? `<h3>Items</h3><ul>${items}</ul>` : ""}
+    <p><a href="${escapeHtml(siteUrl)}" style="color:#2563eb">${escapeHtml(siteUrl.replace(/^https?:\/\//, ""))}</a></p>`
+  return sendWithResult(
+    `${copy.subject} — ${order.orderNumber}`,
+    customerShell(copy.title, body),
+    [order.customerEmail],
+    STAFF_EMAIL,
+  )
+}
+
+/** Written quote to the customer, sent from the admin Quotes page when "Email the quote" is ticked. */
+export async function sendQuoteEmail(lead: QuoteLead, amount: number, note: string, siteUrl: string): Promise<SendResult> {
+  if (!lead.email) return { ok: false, error: "this quote request has no email address" }
+  const vehicle = [lead.year, lead.make, lead.model].filter(Boolean).join(" ")
+  const part = `${vehicle ? `${vehicle} ` : ""}${lead.partType}`.trim()
+  const body = `
+    <p>Hi ${escapeHtml(lead.fullName) || "there"},</p>
+    <p>Thanks for your request. Here is your quote:</p>
+    <table style="width:100%;border-collapse:collapse">${rows([
+      ["Part", part],
+      ["Option", lead.partOption],
+      ["Price", money(amount)],
+      ["Shipping", SHIPPING.short],
+      ["Warranty", WARRANTY_SUMMARY],
+    ])}</table>
+    ${note ? `<p style="background:#f3f4f6;padding:12px;border-radius:6px;white-space:pre-wrap">${escapeHtml(note)}</p>` : ""}
+    <p style="margin-top:16px">To order, call <strong>${escapeHtml(PHONE_DISPLAY)}</strong> or simply reply to this email and we'll confirm fitment with your VIN before anything ships.</p>
+    <p><a href="${escapeHtml(siteUrl)}" style="color:#2563eb">${escapeHtml(siteUrl.replace(/^https?:\/\//, ""))}</a></p>`
+  return sendWithResult(
+    `Your quote: ${part} — ${money(amount)}`,
+    customerShell("Your Parts Quote", body),
+    [lead.email],
+    STAFF_EMAIL,
   )
 }

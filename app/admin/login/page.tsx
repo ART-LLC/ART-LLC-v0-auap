@@ -43,8 +43,10 @@ export default function AdminLoginPage() {
     }
   }
 
+  // A <div>, not <main>: app/admin/layout.tsx already wraps every admin page,
+  // this one included, in the page's single <main> landmark.
   return (
-    <main className="min-h-screen bg-gradient-to-br from-background via-card to-background flex items-center justify-center px-4">
+    <div className="min-h-[70vh] bg-gradient-to-br from-background via-card to-background flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         {/* Logo/Header */}
         <div className="text-center mb-8">
@@ -122,6 +124,6 @@ export default function AdminLoginPage() {
           <p>This is a secure, password-protected admin area. Do not share your credentials.</p>
         </div>
       </div>
-    </main>
+    </div>
   )
 }

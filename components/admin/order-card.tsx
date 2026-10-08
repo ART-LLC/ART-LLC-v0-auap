@@ -105,6 +105,32 @@ export function OrderCard({ order, statuses }: { order: CustomerOrder; statuses:
               className="resize-y rounded-md border border-border bg-background px-2 py-2 text-sm text-foreground"
             />
           </label>
+          <details className="rounded-md border border-border px-3 py-2 text-xs text-muted-foreground">
+            <summary className="cursor-pointer font-medium text-foreground">Email the customer</summary>
+            <label className="mt-2 flex items-start gap-2">
+              <input
+                type="checkbox"
+                name="emailCustomer"
+                disabled={!order.customerEmail}
+                className="mt-0.5 h-3.5 w-3.5 accent-primary"
+              />
+              <span>
+                {order.customerEmail
+                  ? `Send ${order.customerEmail} an update for the status above when I save`
+                  : "No email on this order"}
+              </span>
+            </label>
+            <label className="mt-2 flex flex-col gap-1">
+              Message (optional — e.g. tracking number)
+              <textarea
+                name="customerMessage"
+                rows={2}
+                maxLength={1000}
+                placeholder="Tracking #1Z… via R+L Carriers"
+                className="resize-y rounded-md border border-border bg-background px-2 py-2 text-sm text-foreground"
+              />
+            </label>
+          </details>
           <div className="flex items-center justify-between gap-3">
             <p role="status" className={`text-xs ${state.ok ? "text-green-500" : "text-destructive"}`}>
               {pending ? "" : state.message}

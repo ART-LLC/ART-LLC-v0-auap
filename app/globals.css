@@ -5030,3 +5030,16 @@ html:not(.hydrating) .cinematic-frame {
 }
 
 /* v0 rebuild cache busting */
+
+/* Admin pages are a working tool: plain, readable headings instead of the
+   storefront's embossed uppercase display style. */
+.admin-shell h1,
+.admin-shell h2,
+.admin-shell h3,
+.admin-shell h4 {
+  letter-spacing: normal;
+  text-transform: none;
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  text-shadow: none;
+}

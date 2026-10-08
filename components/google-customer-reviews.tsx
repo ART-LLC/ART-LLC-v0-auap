@@ -3,6 +3,7 @@
 import Script from 'next/script'
 import { useEffect, useRef, useState } from 'react'
 import { addBusinessDays, format } from 'date-fns'
+import { SHIPPING } from '@/lib/site-policy'
 
 const MERCHANT_ID = 5828832429
 
@@ -66,8 +67,11 @@ export function GoogleCustomerReviewsOptIn({
   email: string
 }) {
   const [ready, setReady] = useState(false)
-  // The current checkout is US-only; the shipping policy allows 7–14 working days.
-  const [estimatedDeliveryDate] = useState(() => format(addBusinessDays(new Date(), 14), 'yyyy-MM-dd'))
+  // The checkout is US-only. Google emails the survey after this date, so use the
+  // latest delivery the shipping policy promises (handling plus transit days).
+  const [estimatedDeliveryDate] = useState(() =>
+    format(addBusinessDays(new Date(), SHIPPING.handlingDays.max + SHIPPING.transitDays.max), 'yyyy-MM-dd'),
+  )
   const renderedOrder = useRef<string | null>(null)
   const customerEmail = email.trim()
   const validOrder = Boolean(orderId && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(customerEmail))

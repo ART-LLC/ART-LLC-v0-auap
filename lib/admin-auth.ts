@@ -9,8 +9,10 @@ import { cookies } from 'next/headers'
  * an httpOnly cookie so they are never exposed to client-side JavaScript.
  *
  * There is deliberately no fallback password: ADMIN_PASSWORD must be set or
- * admin login stays disabled. A fallback signing secret is only used outside
- * production, because a known secret lets anyone forge an admin session.
+ * admin login stays disabled. Without BETTER_AUTH_SECRET the signing key is
+ * derived from ADMIN_PASSWORD, so it is never a value anyone else knows (and
+ * changing the password signs everyone out); the fixed dev key is only used
+ * outside production.
  */
 
 export const ADMIN_COOKIE = 'auapw_admin_session'
@@ -19,7 +21,16 @@ const SESSION_TTL_MS = 1000 * 60 * 60 * 8 // 8 hours
 function getSecret(): string | null {
   const secret = process.env.BETTER_AUTH_SECRET || process.env.ADMIN_SESSION_SECRET
   if (secret) return secret
+  const password = process.env.ADMIN_PASSWORD
+  if (password) return createHash('sha256').update(`auapw-admin-session:${password}`).digest('hex')
   return process.env.NODE_ENV === 'production' ? null : 'auapw-dev-only-secret-change-me'
+}
+
+/** Which Vercel deployment this is, in the words the Vercel dashboard uses. */
+function deploymentLabel(): string {
+  if (process.env.VERCEL_ENV === 'production') return 'Production'
+  if (process.env.VERCEL_ENV === 'preview') return 'Preview'
+  return 'this server'
 }
 
 function getAdminCredentials() {
@@ -54,8 +65,17 @@ export async function validateAdminCredentials(
 
   const creds = getAdminCredentials()
   if (!creds.password || !getSecret()) {
-    console.error('[v0] Admin login is disabled: set ADMIN_PASSWORD and BETTER_AUTH_SECRET')
-    return { valid: false, message: 'Admin login is not configured on the server' }
+    // Names only, never values: say exactly what to add and where, because
+    // Vercel keeps separate settings for Production and Preview deployments.
+    const where = deploymentLabel()
+    console.error(`[admin] Login is disabled on ${where}: ADMIN_PASSWORD is not set`)
+    return {
+      valid: false,
+      message:
+        where === 'this server'
+          ? 'Admin login is turned off: ADMIN_PASSWORD is not set on the server.'
+          : `Admin login is turned off on this ${where} deployment: ADMIN_PASSWORD is not set for ${where} in Vercel → Settings → Environment Variables. Add it (tick ${where}), then redeploy.`,
+    }
   }
 
   const emailOk = safeEqual(email.trim().toLowerCase(), creds.email.toLowerCase())

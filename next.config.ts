@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
     // These pages showed sample products with made-up prices and were
     // removed; old links and search results go to the real catalog.
     return [
+      // Unused admin demos (CMS content never shown on the site, a seller
+      // marketplace this store doesn't run) were removed.
+      { source: "/admin/cms/:path*", destination: "/admin/dashboard", permanent: false },
+      { source: "/admin/marketplace/:path*", destination: "/admin/dashboard", permanent: false },
       { source: "/shop", destination: "/brands", permanent: true },
       { source: "/catalog", destination: "/brands", permanent: true },
       { source: "/comparison", destination: "/brands", permanent: true },
