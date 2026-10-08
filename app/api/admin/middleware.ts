@@ -8,13 +8,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  try {
-    const payload = verifyAdminToken(token)
-    // Token is valid, continue
-    return NextResponse.next()
-  } catch (error) {
+  const verification = verifyAdminToken(token)
+  if (!verification.valid) {
     return NextResponse.json({ error: 'Invalid session' }, { status: 401 })
   }
+  return NextResponse.next()
 }
 
 export const config = {
