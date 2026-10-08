@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import {
@@ -9,8 +9,6 @@ import {
   Heart,
   Package,
   Settings,
-  FileText,
-  Clock,
   Search,
 } from 'lucide-react'
 
@@ -40,65 +38,94 @@ export default function CustomerDashboard() {
   const [activeTab, setActiveTab] = useState<'overview' | 'orders' | 'wishlist' | 'profile'>('overview')
   const [customerEmail, setCustomerEmail] = useState('')
 
-  const [orders, setOrders] = useState<Order[]>([
-    {
-      id: '1',
-      orderNumber: 'ORD-001234',
-      date: '2024-01-15',
-      status: 'delivered',
-      total: 287.50,
-      items: 2,
-      trackingNumber: 'TRK123456789',
-    },
-    {
-      id: '2',
-      orderNumber: 'ORD-001235',
-      date: '2024-01-18',
-      status: 'shipped',
-      total: 450.00,
-      items: 1,
-      trackingNumber: 'TRK987654321',
-    },
-  ])
+  const orders = useMemo<Order[]>(
+    () => [
+      {
+        id: '1',
+        orderNumber: 'ORD-001234',
+        date: '2024-01-15',
+        status: 'delivered',
+        total: 287.5,
+        items: 2,
+        trackingNumber: 'TRK123456789',
+      },
+      {
+        id: '2',
+        orderNumber: 'ORD-001235',
+        date: '2024-01-18',
+        status: 'shipped',
+        total: 450.0,
+        items: 1,
+        trackingNumber: 'TRK987654321',
+      },
+    ],
+    []
+  )
 
-  const [wishlist, setWishlist] = useState<WishlistItem[]>([
-    {
-      id: '1',
-      partName: 'Engine Block',
-      make: 'Honda',
-      model: 'Civic',
-      price: 2450.00,
-      image: '/images/engine-block.jpg',
-    },
-    {
-      id: '2',
-      partName: 'Transmission',
-      make: 'Toyota',
-      model: 'Camry',
-      price: 1850.00,
-      image: '/images/transmission.jpg',
-    },
-  ])
+  const wishlist = useMemo<WishlistItem[]>(
+    () => [
+      {
+        id: '1',
+        partName: 'Engine Block',
+        make: 'Honda',
+        model: 'Civic',
+        price: 2450.0,
+        image: '/images/engine-block.jpg',
+      },
+      {
+        id: '2',
+        partName: 'Transmission',
+        make: 'Toyota',
+        model: 'Camry',
+        price: 1850.0,
+        image: '/images/transmission.jpg',
+      },
+    ],
+    []
+  )
 
   useEffect(() => {
-    const token = localStorage.getItem('customerToken')
-    const email = localStorage.getItem('customerEmail')
+    let cancelled = false
 
-    if (!token || !email) {
-      router.push('/customer/login')
-      return
+    const validateSession = async () => {
+      try {
+        const response = await fetch('/api/customer/auth/session', {
+          credentials: 'include',
+        })
+
+        if (!response.ok) {
+          router.replace('/customer/login')
+          return
+        }
+
+        const data = await response.json()
+        if (cancelled) return
+
+        setCustomerEmail(data?.user?.email ?? '')
+        setIsAuthenticated(true)
+      } catch {
+        router.replace('/customer/login')
+      } finally {
+        if (!cancelled) setIsLoading(false)
+      }
     }
 
-    setCustomerEmail(email)
-    setIsAuthenticated(true)
-    setIsLoading(false)
+    void validateSession()
+
+    return () => {
+      cancelled = true
+    }
   }, [router])
 
-  const handleLogout = () => {
-    localStorage.removeItem('customerToken')
-    localStorage.removeItem('customerId')
-    localStorage.removeItem('customerEmail')
-    router.push('/customer/login')
+  const handleLogout = async () => {
+    try {
+      await fetch('/api/customer/auth/logout', {
+        method: 'POST',
+        credentials: 'include',
+      })
+    } finally {
+      router.replace('/customer/login')
+    }
   }
 
   if (isLoading) {
@@ -146,7 +173,7 @@ export default function CustomerDashboard() {
           ].map(({ id, label, icon: Icon }) => (
             <button
               key={id}
-              onClick={() => setActiveTab(id as any)}
+              onClick={() => setActiveTab(id as 'overview' | 'orders' | 'wishlist' | 'profile')}
               className={`flex items-center gap-2 px-4 py-2 font-medium transition-colors ${
                 activeTab === id
                   ? 'text-primary border-b-2 border-primary'
@@ -184,6 +211,7 @@ export default function CustomerDashboard() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <Link
                   href="/search"
+                  prefetch={false}
                   className="flex items-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 font-medium transition-colors"
                 >
                   <Search className="w-4 h-4" />
@@ -191,6 +219,7 @@ export default function CustomerDashboard() {
                 </Link>
                 <Link
                   href="/customer/orders"
+                  prefetch={false}
                   className="flex items-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 font-medium transition-colors"
                 >
                   <Package className="w-4 h-4" />
@@ -198,6 +227,7 @@ export default function CustomerDashboard() {
                 </Link>
                 <Link
                   href="/customer/wishlist"
+                  prefetch={false}
                   className="flex items-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 font-medium transition-colors"
                 >
                   <Heart className="w-4 h-4" />
@@ -217,6 +247,7 @@ export default function CustomerDashboard() {
                 <p className="text-muted-foreground mb-4">No orders yet</p>
                 <Link
                   href="/search"
+                  prefetch={false}
                   className="inline-block px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 font-medium"
                 >
                   Browse Parts
@@ -276,7 +307,7 @@ export default function CustomerDashboard() {
                   </div>
                   <div className="flex items-center gap-4">
                     <p className="text-lg font-bold text-foreground">${item.price.toFixed(2)}</p>
-                    <button className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 font-medium">
+                    <button className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 font-medium" type="button">
                       Get Quote
                     </button>
                   </div>
@@ -302,13 +333,13 @@ export default function CustomerDashboard() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Password</label>
-                <button className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 font-medium">
+                <button className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 font-medium" type="button">
                   Change Password
                 </button>
               </div>
               <div className="pt-4 border-t border-border">
                 <p className="text-sm text-muted-foreground mb-4">Delete your account</p>
-                <button className="px-4 py-2 bg-destructive/10 text-destructive rounded-lg hover:bg-destructive/20 font-medium">
+                <button className="px-4 py-2 bg-destructive/10 text-destructive rounded-lg hover:bg-destructive/20 font-medium" type="button">
                   Delete Account
                 </button>
               </div>
