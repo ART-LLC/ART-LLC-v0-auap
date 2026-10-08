@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation'
 
-export function GET(_: any, { params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = params as unknown as { slug: string }
+export async function GET(_: any, { params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
   // Old Acura URL /acura/[slug] → /brands/acura/[slug]
-  redirect(`/brands/acura/${slug}`)
+  redirect(`/brands/acura/${encodeURIComponent(slug)}`)
 }
