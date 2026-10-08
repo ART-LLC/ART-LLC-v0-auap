@@ -225,6 +225,9 @@ function trimTitleTail(title: string): string {
   return t
 }
 
+/** The sheets' CSV export left inch marks as runs of quotes (6"""" extension), so collapse them. */
+export const collapseSheetQuotes = (text: string) => text.replace(/"{2,}/g, '"')
+
 const unclosedParens = (s: string) => Math.max(0, (s.match(/\(/g) ?? []).length - (s.match(/\)/g) ?? []).length)
 
 /**
@@ -234,7 +237,7 @@ const unclosedParens = (s: string) => Math.max(0, (s.match(/\(/g) ?? []).length 
  * word boundary instead of mid-word.
  */
 export function cleanFeedTitle(title: string): string {
-  let t = title.replace(/\s+/g, " ").trim()
+  let t = collapseSheetQuotes(title).replace(/\s+/g, " ").trim()
   const cut = t.match(/^(.*?)(?:\.{2,}|…)$/)
   if (cut) {
     t = cut[1]

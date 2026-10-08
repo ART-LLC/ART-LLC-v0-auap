@@ -118,6 +118,7 @@ test('feed titles drop the cut-off fragment the sheets end with', () => {
     '2015 Acura ILX Engine - 1.5L (VIN 3, 6th digit, Hybrid, SOHC, Canada)',
   )
   assert.equal(merchant.cleanFeedTitle('1970 Audi 100 Engine - (1.8L)'), '1970 Audi 100 Engine - (1.8L)')
+  assert.equal(merchant.cleanFeedTitle('Chevy Van Transmission - TH350, 6"""" extension'), 'Chevy Van Transmission - TH350, 6" extension')
   assert.ok(merchant.cleanFeedTitle(`${'word '.repeat(40)}(and more`).length <= 150)
 })
 test('uses admin price and title overrides, rejecting stale tier prices', async () => {

@@ -6,6 +6,7 @@ import {
   MERCHANT_STORE_NAME,
   SITE_URL,
   cleanFeedTitle,
+  collapseSheetQuotes,
   feedItemId,
   feedPriceBand,
   feedYearBand,
@@ -106,7 +107,7 @@ export async function GET(request: Request) {
           `<item>` +
             `<g:id>${feedItemId(brand.slug, product.canonicalSlug)}</g:id>` +
             `<title>${xml(cleanFeedTitle(effective.title))}</title>` +
-            `<description>${xml(effective.description.slice(0, 5000))}</description>` +
+            `<description>${xml(collapseSheetQuotes(effective.description).slice(0, 5000))}</description>` +
             `<link>${xml(effective.url)}</link>` +
             `<g:image_link>${xml(effective.imageUrl)}</g:image_link>` +
             `<g:condition>used</g:condition>` +
