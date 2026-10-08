@@ -14,7 +14,9 @@ await client.query(`
     ADD COLUMN IF NOT EXISTS customer_email text,
     ADD COLUMN IF NOT EXISTS customer_phone text,
     ADD COLUMN IF NOT EXISTS customer_notes text,
-    ADD COLUMN IF NOT EXISTS internal_notes text;
+    ADD COLUMN IF NOT EXISTS internal_notes text,
+    ADD COLUMN IF NOT EXISTS payment_gateway text,
+    ADD COLUMN IF NOT EXISTS stripe_session_id text;
 
   CREATE INDEX IF NOT EXISTS leads_status_created_idx ON public.leads (status, created_at DESC);
   CREATE INDEX IF NOT EXISTS orders_status_created_idx ON public.orders (status, createdat DESC);

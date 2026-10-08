@@ -3,6 +3,7 @@ import { stripe } from '@/lib/stripe'
 import { db } from '@/lib/db'
 import { orders, payouts, ledgerEntries, sellers } from '@/lib/db/schema'
 import { eq } from 'drizzle-orm'
+import { confirmStripeCheckoutSession } from '@/lib/stripe-checkout'
 
 const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET || ''
 
@@ -31,6 +32,14 @@ export async function POST(request: NextRequest) {
 
   // Handle the event
   switch (event.type) {
+    // Storefront card payments: the order id lives on the Checkout Session, not
+    // the Charge, so confirm through the session (idempotent with the browser's
+    // own confirmation call).
+    case 'checkout.session.completed':
+    case 'checkout.session.async_payment_succeeded':
+      await confirmStripeCheckoutSession(event.data.object.id, new URL(request.url).origin)
+      break
+
     case 'charge.succeeded':
       await handleChargeSucceeded(event.data.object)
       break

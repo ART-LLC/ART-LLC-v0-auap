@@ -4,6 +4,7 @@ import { getDashboardMetrics } from "@/lib/admin-metrics"
 import { sendDailyReport } from "@/lib/followup-notify"
 import { SITE_URL, getFeedStats, listFeedFetches } from "@/lib/merchant"
 import { pruneFeedFetchLog, recordDailySnapshot } from "@/lib/merchant-health"
+import { reconcilePendingStripeOrders } from "@/lib/stripe-checkout"
 
 export const dynamic = "force-dynamic"
 export const maxDuration = 300
@@ -25,7 +26,10 @@ function isAuthorized(request: Request): boolean {
   return /^vercel-cron\//.test(request.headers.get("user-agent") ?? "")
 }
 
-/** Daily automation: Google feed health snapshot + alerts, owner report email, log cleanup. */
+/**
+ * Daily automation: Google feed health snapshot + alerts, catch-up on card
+ * payments whose confirmation never arrived, owner report email, log cleanup.
+ */
 export async function GET(request: Request) {
   if (!isAuthorized(request)) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
 
@@ -34,6 +38,11 @@ export async function GET(request: Request) {
     const recorded = await recordDailySnapshot(stats, fetches)
     if (!recorded) return NextResponse.json({ ok: true, skipped: "Today's report already ran." })
 
+    // Before the report, so card orders that were paid but never confirmed count as paid.
+    const stripe = await reconcilePendingStripeOrders(SITE_URL).catch((error) => {
+      console.error("[cron/daily] Stripe reconcile failed:", error instanceof Error ? error.message : error)
+      return { checked: 0, paid: 0 }
+    })
     const metrics = await getDashboardMetrics()
     const emailed = await sendDailyReport(
       metrics,
@@ -48,6 +57,8 @@ export async function GET(request: Request) {
       eligible: recorded.snapshot.eligible,
       alerts: recorded.snapshot.alerts.length,
       emailed,
+      stripeOrdersChecked: stripe.checked,
+      stripeOrdersMarkedPaid: stripe.paid,
       prunedFetchLogRows: pruned,
     })
   } catch (error) {
