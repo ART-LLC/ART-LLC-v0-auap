@@ -1,6 +1,8 @@
 import "server-only"
 import { Resend } from "resend"
 import type { CustomerOrder, QuoteLead } from "@/lib/followup"
+import type { DashboardMetrics } from "@/lib/admin-metrics"
+import type { FeedAlert, FeedSnapshot } from "@/lib/merchant-health"
 
 const STAFF_EMAIL = process.env.FOLLOWUP_EMAIL || "auapworld@gmail.com"
 const FROM =
@@ -40,11 +42,11 @@ function shell(title: string, body: string, adminPath: string, siteUrl: string) 
   </div>`
 }
 
-async function send(subject: string, html: string, to: string[] = [STAFF_EMAIL], replyTo?: string) {
+async function send(subject: string, html: string, to: string[] = [STAFF_EMAIL], replyTo?: string): Promise<boolean> {
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) {
     console.error("[followup] RESEND_API_KEY missing; email not sent (record is saved in admin)")
-    return
+    return false
   }
   try {
     const { error } = await new Resend(apiKey).emails.send({
@@ -54,9 +56,14 @@ async function send(subject: string, html: string, to: string[] = [STAFF_EMAIL],
       html,
       ...(replyTo ? { replyTo } : {}),
     })
-    if (error) console.error("[followup] Resend error:", error.message)
+    if (error) {
+      console.error("[followup] Resend error:", error.message)
+      return false
+    }
+    return true
   } catch (err) {
     console.error("[followup] Email send failed:", err instanceof Error ? err.message : err)
+    return false
   }
 }
 
@@ -177,5 +184,84 @@ export async function sendCustomerOrderInvoice(order: CustomerOrder, siteUrl: st
       </div>
     </div>`,
     [order.customerEmail],
+  )
+}
+
+/**
+ * Morning report for the owner, sent by the daily cron: yesterday's quotes,
+ * orders and paid revenue, what is waiting on a call-back, and the Google
+ * Shopping feed's health with any alerts.
+ */
+export async function sendDailyReport(
+  metrics: DashboardMetrics,
+  feed: { snapshot: FeedSnapshot; previous: FeedSnapshot | null; lastGoogleFetch: string | null },
+  siteUrl: string,
+): Promise<boolean> {
+  const y = metrics.yesterday
+  const a = metrics.actions
+  const { snapshot, previous } = feed
+  const delta = previous ? snapshot.eligible - previous.eligible : null
+  const alerts: FeedAlert[] = [...snapshot.alerts]
+  if (a.staleNewQuotes > 0) {
+    alerts.push({
+      level: "warning",
+      message: `${a.staleNewQuotes} quote request${a.staleNewQuotes === 1 ? " has" : "s have"} waited over 24 hours without a call-back.`,
+    })
+  }
+  if (a.stalePendingOrders > 0) {
+    alerts.push({
+      level: "warning",
+      message: `${a.stalePendingOrders} order${a.stalePendingOrders === 1 ? " is" : "s are"} still pending after 24 hours.`,
+    })
+  }
+
+  const alertHtml = alerts.length
+    ? `<h3 style="margin:20px 0 8px">Needs attention</h3><ul style="padding-left:18px;margin:0">${alerts
+        .map(
+          (al) =>
+            `<li style="margin:4px 0;color:${al.level === "critical" ? "#b91c1c" : "#92400e"}">${escapeHtml(al.message)}</li>`,
+        )
+        .join("")}</ul>`
+    : `<p style="margin-top:20px;color:#047857">Nothing needs attention — all checks passed.</p>`
+
+  const body = `
+    <h3 style="margin:0 0 8px">Yesterday</h3>
+    <table style="width:100%;border-collapse:collapse">${rows([
+      ["Quote requests", String(y.quotes)],
+      ["Orders placed", String(y.orders)],
+      ["Paid revenue", money(y.revenue)],
+    ])}</table>
+    <h3 style="margin:20px 0 8px">Waiting on you</h3>
+    <table style="width:100%;border-collapse:collapse">${rows([
+      ["New quotes", String(a.newQuotes)],
+      ["Pending orders", String(a.pendingOrders)],
+      ["Reserved (fitment)", String(a.reservedOrders)],
+      ["Confirmed, unpaid", String(a.unpaidConfirmedOrders)],
+    ])}</table>
+    <h3 style="margin:20px 0 8px">Google Shopping</h3>
+    <table style="width:100%;border-collapse:collapse">${rows([
+      [
+        "Products in feed",
+        `${snapshot.eligible.toLocaleString("en-US")} of ${snapshot.total.toLocaleString("en-US")}${
+          delta === null || delta === 0 ? "" : ` (${delta > 0 ? "+" : ""}${delta.toLocaleString("en-US")})`
+        }`,
+      ],
+      [
+        "Google last fetched",
+        feed.lastGoogleFetch
+          ? new Date(feed.lastGoogleFetch).toLocaleString("en-US", {
+              dateStyle: "medium",
+              timeStyle: "short",
+              timeZone: metrics.timeZone,
+            })
+          : "Never",
+      ],
+    ])}</table>
+    ${alertHtml}`
+
+  const headline = `${y.quotes} quote${y.quotes === 1 ? "" : "s"}, ${y.orders} order${y.orders === 1 ? "" : "s"}, ${money(y.revenue)} paid`
+  return send(
+    `${alerts.length ? `⚠ ${alerts.length} alert${alerts.length === 1 ? "" : "s"} · ` : ""}AUAPW daily report — ${headline}`,
+    shell(`Daily report · ${snapshot.day}`, body, "/admin/dashboard", siteUrl),
   )
 }

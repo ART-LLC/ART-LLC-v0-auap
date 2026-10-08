@@ -16,6 +16,8 @@ import { MerchantOverview } from "@/components/admin/merchant/merchant-overview"
 import type { ProductFixCardProps } from "@/components/admin/merchant/product-fix-card"
 import { FixPagesList } from "@/components/admin/merchant/fix-pages-list"
 import { CatalogSyncPanel } from "@/components/admin/merchant/catalog-sync-panel"
+import { FeedHealthPanel } from "@/components/admin/merchant/feed-health-panel"
+import { buildFeedAlerts, listFeedSnapshots } from "@/lib/merchant-health"
 import { listManualProducts } from "@/lib/manual-products"
 import { getSalesMode } from "@/lib/catalog-fields"
 
@@ -43,13 +45,15 @@ export default async function AdminMerchantPage({
   const q = params.q?.trim().slice(0, 100) || undefined
   const searching = Boolean(brand || issues.length || q)
 
-  const [stats, fetches, recentOverrides, search, manualProducts] = await Promise.all([
+  const [stats, fetches, recentOverrides, search, manualProducts, snapshots] = await Promise.all([
     getFeedStats(),
     listFeedFetches(8),
     listRecentOverrides(500),
     searching ? searchProductsForAdmin({ brand, q, issues, limit: 30 }) : null,
     listManualProducts(),
+    listFeedSnapshots(30),
   ])
+  const feedAlerts = buildFeedAlerts(stats, fetches.lastGoogle, snapshots[0] ?? null)
 
   const cards: ProductFixCardProps[] = search
     ? search.hits.map((h) => ({
@@ -111,6 +115,8 @@ export default async function AdminMerchantPage({
       />
 
       <MerchantOverview stats={stats} fetches={fetches} overrideCount={recentOverrides.length} />
+
+      <FeedHealthPanel alerts={feedAlerts} snapshots={snapshots} />
 
       <section id="fix-pages" aria-labelledby="fix-heading" className="flex scroll-mt-24 flex-col gap-4">
         <div>
