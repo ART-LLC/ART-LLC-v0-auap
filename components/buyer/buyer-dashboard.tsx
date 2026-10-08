@@ -81,7 +81,7 @@ export function BuyerDashboard() {
         {orders.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-muted-foreground mb-4">No orders yet</p>
-            <Link href="/shop" className="inline-block px-6 py-2 rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition">
+            <Link href="/brands" className="inline-block px-6 py-2 rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition">
               Start Shopping
             </Link>
           </div>

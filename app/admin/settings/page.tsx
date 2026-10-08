@@ -1,12 +1,18 @@
 import { Metadata } from 'next'
+import { redirect } from 'next/navigation'
 import { Settings, Mail, Globe, Shield } from 'lucide-react'
+import { getAdminSession } from '@/lib/admin-auth'
 
 export const metadata: Metadata = {
   title: 'Settings | Admin',
   description: 'Manage site settings and configurations',
 }
 
-export default function SettingsPage() {
+export const dynamic = 'force-dynamic'
+
+export default async function SettingsPage() {
+  if (!(await getAdminSession())) redirect('/admin/login')
+
   return (
     <main className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
@@ -77,7 +83,7 @@ export default function SettingsPage() {
                     <label className="block text-sm font-medium mb-2">Support Email</label>
                     <input
                       type="email"
-                      defaultValue="aupworld@gmail.com"
+                      defaultValue="auapworld@gmail.com"
                       className="w-full px-4 py-2 border border-border rounded-lg bg-background focus:outline-none focus:border-primary"
                     />
                   </div>

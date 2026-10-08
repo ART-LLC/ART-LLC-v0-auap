@@ -83,7 +83,7 @@ export function PartRecommendations({ productId }: { productId: string }) {
           >
             <div className="relative aspect-square bg-secondary/30">
               <Image
-                src={part.image || "/placeholder.svg?height=300&width=300&query=acura+auto+part"}
+                src={part.image || "/images/placeholder-part.png"}
                 alt={part.name}
                 fill
                 sizes="(max-width: 768px) 50vw, 25vw"

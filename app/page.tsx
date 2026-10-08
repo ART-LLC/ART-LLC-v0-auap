@@ -10,7 +10,6 @@ import dynamic from "next/dynamic"
 const BrandValuesSection = dynamic(() => import("@/components/home/brand-values-section").then(m => ({ default: m.BrandValuesSection })))
 const ShowcaseGallerySection = dynamic(() => import("@/components/home/showcase-gallery-section").then(m => ({ default: m.ShowcaseGallerySection })))
 const CategoriesSection = dynamic(() => import("@/components/home/categories-section").then(m => ({ default: m.CategoriesSection })))
-const FeaturedProductsSection = dynamic(() => import("@/components/home/featured-products-section").then(m => ({ default: m.FeaturedProductsSection })))
 const BrandLogosSection = dynamic(() => import("@/components/brand-logos").then(m => ({ default: m.BrandLogosSection })))
 
 export default function HomePage() {
@@ -25,7 +24,6 @@ export default function HomePage() {
         <BrandValuesSection />
         <ShowcaseGallerySection />
         <CategoriesSection />
-        <FeaturedProductsSection />
         <BrandLogosSection />
       </main>
       <Footer />

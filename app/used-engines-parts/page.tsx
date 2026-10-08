@@ -58,7 +58,7 @@ export default function UsedEnginesPartsPage() {
         <div className="mx-auto max-w-[1280px] px-6 py-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { icon: Shield, title: "Up to 6-Month Warranty", desc: "Every engine part covered with full return & replacement" },
+              { icon: Shield, title: "90-Day Warranty", desc: "Every engine part covered with full return & replacement" },
               { icon: Truck, title: "$240 Shipping Per Part", desc: "Ships to all 50 states, 1-3 business day processing" },
               { icon: Clock, title: "24-Hour Response", desc: "Get quotes within one business day" },
             ].map(({ icon: Icon, title, desc }) => (

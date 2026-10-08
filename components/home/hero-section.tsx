@@ -60,7 +60,7 @@ export function HeroSection() {
             <div className="flex flex-wrap justify-center gap-6 sm:gap-10 text-center">
               {[
                 { value: "2,000+", label: "Verified Yards" },
-                { value: "30–180", label: "Day Warranty" },
+                { value: "90", label: "Day Warranty" },
                 { value: "24hr", label: "Response Time" },
                 { value: "50", label: "States Covered" },
               ].map(({ value, label }) => (
@@ -80,7 +80,7 @@ export function HeroSection() {
                 { title: "Verified Supplier Network", desc: "Every yard in our network is vetted for quality, reliability, and customer service. We connect you only with trusted suppliers who meet our strict standards." },
                 { title: "Hassle-Free Experience", desc: "Skip the traditional junkyard search. Our platform handles the hard work – sourcing, verifying, and coordinating – so you get quality parts delivered right to your door." },
                 { title: "Competitive Pricing", desc: "Save 40-70% compared to new OEM parts. Transparent quotes with no hidden fees – straightforward pricing from trusted US-based suppliers." },
-                { title: "Quality Guaranteed", desc: "All parts undergo certified inspections before shipping. Every eligible part comes with a 30-180 day warranty for your peace of mind." },
+                { title: "Quality Guaranteed", desc: "All parts undergo certified inspections before shipping. Every part comes with a 90-day warranty for your peace of mind." },
                 { title: "Dealer & DIY Friendly", desc: "Whether you are a professional mechanic or a DIY enthusiast, our platform provides the same premium access, expert support, and seamless ordering experience." },
               ].map(({ title, desc }) => (
                 <div key={title}
@@ -128,8 +128,8 @@ export function HeroSection() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
                 {[
                   {
-                    title: "30–180 Day Warranty on Every Part",
-                    body: "All eligible parts come with a clear warranty ranging from 30 to 180 days depending on the item. This set protection window gives you confidence that you are covered after purchase."
+                    title: "90-Day Warranty on Every Part",
+                    body: "All used parts come with a clear 90-day warranty. This set protection window gives you confidence that you are covered after purchase."
                   },
                   {
                     title: "Certified Quality Inspections",
@@ -238,7 +238,7 @@ export function HeroSection() {
                   <div className="flex flex-col gap-4 p-5 pt-2">
                   <span className="text-primary font-bold tracking-wide text-base uppercase sr-only">Used Engines</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">
-                    Our used engines are pulled from low-mileage donor vehicles, inspected for compression, leaks, and overall condition before they ship. Whether you need a replacement engine for a sedan, SUV, or truck, we source the right match for your year, make, and model. Every engine comes with a 30 to 180-day warranty so you have coverage after installation.
+                    Our used engines are pulled from low-mileage donor vehicles, inspected for compression, leaks, and overall condition before they ship. Whether you need a replacement engine for a sedan, SUV, or truck, we source the right match for your year, make, and model. Every engine comes with a 90-day warranty so you have coverage after installation.
                   </p>
                   <ul className="flex flex-col gap-1">
                     {["All major domestic and import makes", "Low-mileage verified units", "Compression and leak tested", "Matched by VIN or engine code", "Warranty included on all units"].map(item => (
@@ -267,7 +267,7 @@ export function HeroSection() {
                     We carry automatic and manual used transmissions for cars, trucks, and SUVs. Each unit is tested for proper shifting, gear engagement, and fluid integrity before it leaves the yard. Get a direct-fit replacement at a fraction of dealership or rebuild cost without sacrificing reliability or quality.
                   </p>
                   <ul className="flex flex-col gap-1">
-                    {["Automatic and manual available", "Shift and engagement tested", "All makes and models covered", "Direct OEM fitment", "30–180 day warranty included"].map(item => (
+                    {["Automatic and manual available", "Shift and engagement tested", "All makes and models covered", "Direct OEM fitment", "90-day warranty included"].map(item => (
                       <li key={item} className="text-sm font-bold tracking-wide text-foreground flex items-start gap-2">
                         <span className="text-primary mt-0.5">›</span>{item}
                       </li>

@@ -4,7 +4,7 @@ import { useState } from "react"
 import { CAR_MAKES, CAR_MODELS, YEARS } from "@/lib/data"
 import { Phone, AlertCircle, CheckCircle2, Mail, Loader2 } from "lucide-react"
 
-const CONTACT_EMAIL = "aupworld@gmail.com"
+const CONTACT_EMAIL = "auapworld@gmail.com"
 const PHONE_DISPLAY = "(708) 896-2383"
 
 interface QuoteFormProps {

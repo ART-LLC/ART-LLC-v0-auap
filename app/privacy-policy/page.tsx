@@ -97,7 +97,7 @@ const sections = [
     content: [
       "If you have any questions or concerns about this privacy policy, please contact us:",
       "Phone: (708) 896-2383",
-      "Email: aupworld@gmail.com",
+      "Email: auapworld@gmail.com",
       "Address: 508 S Elm St, Ste 104, Denton, TX 76201, United States",
     ],
   },

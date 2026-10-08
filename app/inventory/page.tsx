@@ -45,7 +45,7 @@ export default function InventoryPage() {
               </p>
               <div className="flex flex-wrap gap-3 mt-4">
                 <Link
-                  href="/search"
+                  href="/ai-search"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all"
                 >
                   <Search className="w-5 h-5" />

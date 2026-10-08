@@ -28,7 +28,17 @@ await client.query(`
   );
 
   CREATE INDEX IF NOT EXISTS merchant_feed_fetches_time_idx ON public.merchant_feed_fetches (fetched_at DESC);
+
+  -- Written by the daily cron (lib/merchant-health.ts creates it on first run too).
+  CREATE TABLE IF NOT EXISTS public.merchant_feed_snapshots (
+    day date PRIMARY KEY,
+    taken_at timestamptz NOT NULL DEFAULT now(),
+    total integer NOT NULL,
+    eligible integer NOT NULL,
+    brands jsonb NOT NULL,
+    alerts jsonb NOT NULL
+  );
 `)
 
-console.log("product_overrides and merchant_feed_fetches ready")
+console.log("product_overrides, merchant_feed_fetches and merchant_feed_snapshots ready")
 await client.end()

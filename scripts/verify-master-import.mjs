@@ -37,7 +37,7 @@ for (const file of files) {
     const product = products.get(slug)
     assert.ok(product, `${brand}/${slug}: missing product`)
     const rawPrice = typeof row.Price === 'number' ? row.Price : Number.parseFloat(String(row.Price ?? '').replace(/[^0-9.]/g, ''))
-    const isQuote = !Number.isFinite(rawPrice) || rawPrice <= 0 || rawPrice === 799
+    const isQuote = !Number.isFinite(rawPrice) || rawPrice <= 0 || Math.round(rawPrice) === 799
     const expected = isQuote ? 0 : Math.round(rawPrice * 100) / 100
     assert.equal(product.price, expected, `${brand}/${slug}: exact sheet price`)
     assert.equal(product.salesMode, isQuote ? 'quote' : 'buy_now', `${brand}/${slug}: sales mode`)

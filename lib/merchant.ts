@@ -214,6 +214,64 @@ export function isFeedEligible(effective: EffectiveProduct): boolean {
   return effective.price !== null && effective.price > 0 && !effective.hidden && !effective.excludeFromFeed
 }
 
+/** Strips trailing punctuation and dangling words ("ID", "exc.", "w/o") left at the end of a cut name. */
+function trimTitleTail(title: string): string {
+  let t = title
+  let prev: string
+  do {
+    prev = t
+    t = t.replace(/[\s,;:(-]+$/, "").replace(/\s(?:ID|exc\.?|w\/o?|with|without|and|or)$/i, "")
+  } while (t !== prev)
+  return t
+}
+
+/** The sheets' CSV export left inch marks as runs of quotes (6"""" extension), so collapse them. */
+export const collapseSheetQuotes = (text: string) => text.replace(/"{2,}/g, '"')
+
+const unclosedParens = (s: string) => Math.max(0, (s.match(/\(/g) ?? []).length - (s.match(/\)/g) ?? []).length)
+
+/**
+ * About 9,000 sheet names were cut at a fixed width and end in "..." — often
+ * mid-word and inside an unclosed "(". Google shows titles verbatim, so drop
+ * the cut-off fragment, close the bracket, and trim to the title limit at a
+ * word boundary instead of mid-word.
+ */
+export function cleanFeedTitle(title: string): string {
+  let t = collapseSheetQuotes(title).replace(/\s+/g, " ").trim()
+  const cut = t.match(/^(.*?)(?:\.{2,}|…)$/)
+  if (cut) {
+    t = cut[1]
+    // A letter or digit right before the "..." means the last word was cut in half.
+    if (/[A-Za-z0-9]$/.test(t)) t = t.replace(/\s*\S+$/, "")
+  }
+  t = trimTitleTail(t)
+  // Leave room for the ")" that will close any open bracket.
+  const budget = TITLE_LIMIT - unclosedParens(t)
+  if (t.length > budget) {
+    const head = t.slice(0, budget)
+    const space = head.lastIndexOf(" ")
+    t = trimTitleTail(space > budget / 2 ? head.slice(0, space) : head)
+  }
+  return (t + ")".repeat(unclosedParens(t))).slice(0, TITLE_LIMIT)
+}
+
+/** Price buckets near the catalog's quartiles, for splitting Shopping bids (custom_label_2). */
+export function feedPriceBand(price: number): string {
+  if (price < 1300) return "under_1300"
+  if (price < 2000) return "1300_1999"
+  if (price < 3500) return "2000_3499"
+  return "3500_plus"
+}
+
+/** Five-year vehicle bands (custom_label_3); everything before 1990 shares one band. */
+export function feedYearBand(year: string): string | null {
+  const y = Number.parseInt(year, 10)
+  if (!Number.isFinite(y) || y < 1900) return null
+  if (y < 1990) return "pre_1990"
+  const start = y - (y % 5)
+  return `${start}_${start + 4}`
+}
+
 /** Google limits offer ids to 50 chars; catalog slugs are longer, so hash them into a stable id. */
 export function feedItemId(brand: string, slug: string): string {
   return `${brand.slice(0, 12)}-${createHash("sha1").update(`${brand}/${slug}`).digest("hex").slice(0, 16)}`
@@ -227,7 +285,8 @@ export function feedItemId(brand: string, slug: string): string {
 export function resolveFeedItemId(
   itemId: string,
 ): { brand: string; product: BrandProduct } | null {
-  const prefix = itemId.split("-")[0]
+  // The id is "<brand prefix>-<hash>", and brand slugs can contain hyphens (land-rover).
+  const prefix = itemId.slice(0, itemId.lastIndexOf("-"))
   const candidates = prefix
     ? BRAND_DIRECTORY.filter((b) => b.slug.slice(0, 12) === prefix)
     : BRAND_DIRECTORY

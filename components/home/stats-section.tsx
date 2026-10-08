@@ -1,7 +1,7 @@
 export function StatsSection() {
   const stats = [
     { value: "2,000+", label: "Verified Yards", sub: "Nationwide network" },
-    { value: "6-Month", label: "Warranty", sub: "Every part covered" },
+    { value: "90-Day", label: "Warranty", sub: "Every part covered" },
     { value: "< 24hrs", label: "Response Time", sub: "Guaranteed" },
     { value: "50+", label: "Car Brands", sub: "All makes & models" },
   ]

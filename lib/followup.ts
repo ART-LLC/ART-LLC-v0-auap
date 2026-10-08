@@ -244,14 +244,28 @@ export async function getOrderByStripeSession(sessionId: string): Promise<Custom
 
 /**
  * Marks an order paid after Stripe confirms the Checkout Session succeeded.
- * Idempotent: safe to call more than once for the same order.
+ * Returns null when it was already paid, so the browser confirmation, the
+ * webhook and the daily reconcile can race without sending emails twice.
  */
-export async function markOrderPaid(orderId: string): Promise<CustomerOrder> {
+export async function markOrderPaid(orderId: string): Promise<CustomerOrder | null> {
   const { rows } = await pool.query(
-    `UPDATE public.orders SET status = 'paid', updatedat = now() WHERE id = $1 RETURNING *`,
+    `UPDATE public.orders SET status = 'paid', updatedat = now() WHERE id = $1 AND status <> 'paid' RETURNING *`,
     [orderId],
   )
-  return mapOrder(rows[0])
+  return rows[0] ? mapOrder(rows[0]) : null
+}
+
+/** Card orders still pending after their Stripe session was created, for the daily reconcile. */
+export async function listUnconfirmedStripeSessions(olderThanMinutes: number, withinDays: number): Promise<string[]> {
+  const { rows } = await pool.query(
+    `SELECT stripe_session_id FROM public.orders
+      WHERE status = 'pending' AND stripe_session_id IS NOT NULL
+        AND createdat < now() - make_interval(mins => $1)
+        AND createdat > now() - make_interval(days => $2)
+      ORDER BY createdat`,
+    [olderThanMinutes, withinDays],
+  )
+  return rows.map((r) => String(r.stripe_session_id))
 }
 
 export async function listQuoteLeads(status?: string, search?: string): Promise<QuoteLead[]> {

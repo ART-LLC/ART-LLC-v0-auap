@@ -4,9 +4,9 @@
 
 1. **Login to Admin**
    - Go to: `http://localhost:3000/admin/login`
-   - Default Email: `admin@auapw.com`
-   - Default Password: `AUAPWAdmin123!`
-   - Change these in production via environment variables
+   - Email: value of `ADMIN_EMAIL`
+   - Password: value of `ADMIN_PASSWORD` (there is no default; login is disabled until it is set)
+   - Set both in `.env.local` (development) or the Vercel project settings (production)
 
 2. **Navigate to CMS Dashboard**
    - After login, go to: `http://localhost:3000/admin/cms`

@@ -57,7 +57,7 @@ export default async function DashboardPage() {
           </div>
           <div className="flex gap-2">
             <Button asChild variant="outline">
-              <Link href="/shop">Continue Shopping</Link>
+              <Link href="/brands">Continue Shopping</Link>
             </Button>
           </div>
         </div>

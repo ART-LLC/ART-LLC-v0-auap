@@ -17,16 +17,16 @@ import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 const BODY_PARTS = [
-  { id: 'door-assembly', name: 'Door Assembly', description: 'Complete door with glass and hardware', avgPrice: 399 },
-  { id: 'hood', name: 'Hood', description: 'Engine hood assembly', avgPrice: 249 },
-  { id: 'fender', name: 'Fender', description: 'Front or rear fender', avgPrice: 199 },
-  { id: 'bumper-front', name: 'Front Bumper', description: 'Front bumper cover and frame', avgPrice: 299 },
-  { id: 'bumper-rear', name: 'Rear Bumper', description: 'Rear bumper cover and frame', avgPrice: 299 },
-  { id: 'tailgate', name: 'Tailgate', description: 'Truck or SUV tailgate assembly', avgPrice: 349 },
-  { id: 'headlight', name: 'Headlight Assembly', description: 'Complete headlight with housing', avgPrice: 249 },
-  { id: 'taillight', name: 'Tail Light Assembly', description: 'Complete tail light assembly', avgPrice: 149 },
-  { id: 'seat-assembly', name: 'Seat Assembly', description: 'Complete seat with frame and springs', avgPrice: 449 },
-  { id: 'dashboard', name: 'Dashboard', description: 'Complete dashboard assembly', avgPrice: 399 },
+  { id: 'door-assembly', name: 'Door Assembly', description: 'Complete door with glass and hardware' },
+  { id: 'hood', name: 'Hood', description: 'Engine hood assembly' },
+  { id: 'fender', name: 'Fender', description: 'Front or rear fender' },
+  { id: 'bumper-front', name: 'Front Bumper', description: 'Front bumper cover and frame' },
+  { id: 'bumper-rear', name: 'Rear Bumper', description: 'Rear bumper cover and frame' },
+  { id: 'tailgate', name: 'Tailgate', description: 'Truck or SUV tailgate assembly' },
+  { id: 'headlight', name: 'Headlight Assembly', description: 'Complete headlight with housing' },
+  { id: 'taillight', name: 'Tail Light Assembly', description: 'Complete tail light assembly' },
+  { id: 'seat-assembly', name: 'Seat Assembly', description: 'Complete seat with frame and springs' },
+  { id: 'dashboard', name: 'Dashboard', description: 'Complete dashboard assembly' },
 ]
 
 export default function BodyProductPage() {
@@ -36,9 +36,7 @@ export default function BodyProductPage() {
 
   const filteredProducts = useMemo(() => {
     let filtered = BODY_PARTS.filter(p => !searchTerm || p.name.toLowerCase().includes(searchTerm.toLowerCase()))
-    if (sortBy === 'price-low') filtered.sort((a, b) => a.avgPrice - b.avgPrice)
-    else if (sortBy === 'price-high') filtered.sort((a, b) => b.avgPrice - a.avgPrice)
-    else if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
+    if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
     return filtered
   }, [searchTerm, sortBy])
 
@@ -60,8 +58,6 @@ export default function BodyProductPage() {
                   <SelectTrigger><SelectValue placeholder="Sort" /></SelectTrigger>
                   <SelectContent>
                     <SelectItem value="relevance">Relevance</SelectItem>
-                    <SelectItem value="price-low">Price: Low to High</SelectItem>
-                    <SelectItem value="price-high">Price: High to Low</SelectItem>
                     <SelectItem value="name">Name A-Z</SelectItem>
                   </SelectContent>
                 </Select>
@@ -89,10 +85,7 @@ export default function BodyProductPage() {
                       <CardDescription className="text-xs">{part.description}</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <div className="flex items-baseline justify-between">
-                        <span className="text-2xl font-bold text-primary">${part.avgPrice}</span>
-                        <span className="text-xs text-muted-foreground">avg price</span>
-                      </div>
+                      <p className="text-sm text-muted-foreground">Price by quote</p>
                       <Button className="w-full auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=body`}>Get Quote</Link></Button>
                     </CardContent>
                   </Card>
@@ -109,10 +102,7 @@ export default function BodyProductPage() {
                           <h3 className="font-semibold text-foreground">{part.name}</h3>
                           <p className="text-sm text-muted-foreground">{part.description}</p>
                         </div>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xl font-bold text-primary">${part.avgPrice}</span>
-                          <Badge>In Stock</Badge>
-                        </div>
+                        <p className="text-sm text-muted-foreground">Price by quote</p>
                       </div>
                       <Button className="auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=body`}>Get Quote</Link></Button>
                     </div>

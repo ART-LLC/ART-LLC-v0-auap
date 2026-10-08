@@ -22,7 +22,7 @@ const features = [
   {
     icon: Shield,
     title: 'Quality Assured',
-    description: 'All parts come with 30-180 day warranty and guaranteed quality certification'
+    description: 'All parts come with a 90-day warranty and guaranteed quality certification'
   },
   {
     icon: TrendingDown,
@@ -109,7 +109,7 @@ export function BrandFeaturesSection({ brandName, partCount, modelCount }: Brand
 
           <div className="text-center">
             <h3 className="text-xs font-bold uppercase tracking-widest text-foreground/60 mb-3">Warranty</h3>
-            <p className="text-2xl sm:text-3xl font-black text-white mb-3">30-180 Days</p>
+            <p className="text-2xl sm:text-3xl font-black text-white mb-3">90 Days</p>
             <p className="text-foreground/70 leading-relaxed">
               All {brandName} parts certified and guaranteed. Complete peace of mind on every purchase.
             </p>

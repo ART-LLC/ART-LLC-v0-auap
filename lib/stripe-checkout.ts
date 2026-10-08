@@ -6,6 +6,7 @@ import {
   attachStripeSession,
   getOrderByStripeSession,
   markOrderPaid,
+  listUnconfirmedStripeSessions,
   type CustomerOrder,
 } from "@/lib/followup"
 import { notifyNewOrder, sendCustomerOrderInvoice } from "@/lib/followup-notify"
@@ -127,9 +128,32 @@ export async function confirmStripeCheckoutSession(
   }
 
   const paidOrder = await markOrderPaid(order.id)
+  // Another confirmation (webhook, browser, daily reconcile) got there first and sent the emails.
+  if (!paidOrder) return { ok: true, order: { ...order, status: "paid" }, paid: true }
   await notifyNewOrder(paidOrder, siteUrl).catch((err) => console.error("[v0] Order paid notification failed:", err))
   await sendCustomerOrderInvoice(paidOrder, siteUrl).catch((err) =>
     console.error("[v0] Customer paid invoice email failed:", err),
   )
   return { ok: true, order: paidOrder, paid: true }
+}
+
+/**
+ * Safety net for card orders whose browser confirmation never arrived (tab
+ * closed right after paying, network drop): asks Stripe about each pending
+ * session and marks the paid ones, sending the usual order emails.
+ */
+export async function reconcilePendingStripeOrders(siteUrl: string): Promise<{ checked: number; paid: number }> {
+  if (!stripe) return { checked: 0, paid: 0 }
+  // Leave fresh sessions alone: the shopper may still be on the payment form.
+  const sessionIds = await listUnconfirmedStripeSessions(30, 7)
+  let paid = 0
+  for (const sessionId of sessionIds) {
+    try {
+      const result = await confirmStripeCheckoutSession(sessionId, siteUrl)
+      if (result.ok && result.paid) paid++
+    } catch (error) {
+      console.error("[stripe] reconcile failed for a session:", error instanceof Error ? error.message : error)
+    }
+  }
+  return { checked: sessionIds.length, paid }
 }

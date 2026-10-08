@@ -16,7 +16,7 @@ interface ProductCardActionsProps {
   productType?: string
   make?: string
   shipping?: string
-  /** Where the "Details" button links. Defaults to /products/[productId]. */
+  /** Where the "Details" button links; the button is hidden without one. */
   detailsHref?: string
   purchaseDisabled?: boolean
   isQuoteOnly?: boolean
@@ -24,7 +24,7 @@ interface ProductCardActionsProps {
 
 const PHONE_SALES = '708-896-2383'
 const PHONE_DISPLAY = '(708) 896-2383'
-const CONTACT_EMAIL = 'aupworld@gmail.com'
+const CONTACT_EMAIL = 'auapworld@gmail.com'
 
 export function ProductCardActions({
   productId,
@@ -134,7 +134,7 @@ export function ProductCardActions({
       )}
 
       {/* Secondary Actions */}
-      <div className="grid grid-cols-4 gap-2">
+      <div className={`grid gap-2 ${detailsHref ? 'grid-cols-4' : 'grid-cols-3'}`}>
         <Button
           onClick={handleCall}
           variant="outline"
@@ -162,17 +162,19 @@ export function ProductCardActions({
           <HelpCircle className="w-3 h-3" />
           Quote
         </Button>
-        <Button
-          variant="outline"
-          className="text-xs font-bold border-primary/50 hover:border-primary hover:bg-primary/10"
-          title="View full product details"
-          asChild
-        >
-          <Link href={detailsHref ?? `/products/${productId}`}>
-            <ExternalLink className="w-3 h-3" />
-            Details
-          </Link>
-        </Button>
+        {detailsHref && (
+          <Button
+            variant="outline"
+            className="text-xs font-bold border-primary/50 hover:border-primary hover:bg-primary/10"
+            title="View full product details"
+            asChild
+          >
+            <Link href={detailsHref}>
+              <ExternalLink className="w-3 h-3" />
+              Details
+            </Link>
+          </Button>
+        )}
       </div>
 
       {/* Info Badges */}

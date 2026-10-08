@@ -7,7 +7,7 @@ import { UsedEnginesContent } from "@/components/used-engines-content"
 
 export const metadata: Metadata = {
   title: "Buy Quality Used Engines | Used Engines for Sale | AUAPW LLC",
-  description: "Find quality used engines for sale from 2,000+ verified junkyards. $240 shipping per part, 30-180 day warranty. Get a quote in under 24 hours.",
+  description: "Find quality used engines for sale from 2,000+ verified junkyards. $240 shipping per part, 90-day warranty. Get a quote in under 24 hours.",
 }
 
 export default function UsedEnginesPage() {

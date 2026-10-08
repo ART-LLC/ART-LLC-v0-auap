@@ -16,6 +16,9 @@ export const SHIPPING = {
   liftgate: "Liftgate and residential delivery included",
   dispatch: "Ships in 1-2 business days",
   transit: "3-7 business days door to door in the lower 48",
+  // The same windows as `dispatch` and `transit`, as numbers for the Google feed.
+  handlingDays: { min: 1, max: 2 },
+  transitDays: { min: 3, max: 7 },
   damage:
     "Every unit ships insured on a pallet. Note any damage on the delivery receipt and we replace or refund — you never file the freight claim yourself.",
 } as const
@@ -56,7 +59,7 @@ export const WARRANTY_LADDER: WarrantyStep[] = [
   },
   {
     tier: "Rebuilt",
-    length: "12 months",
+    length: "90 days",
     summary:
       "Fully disassembled, machined and rebuilt with new gaskets, seals and wear parts. Same plain-English claim process.",
   },
@@ -68,9 +71,9 @@ export const WARRANTY_LADDER: WarrantyStep[] = [
   },
 ]
 
-export const WARRANTY_SUMMARY = "90-day used · 12-month rebuilt warranty"
+export const WARRANTY_SUMMARY = "90-day warranty on used and rebuilt parts"
 export const USED_WARRANTY = "90 days"
-export const REBUILT_WARRANTY = "12 months"
+export const REBUILT_WARRANTY = "90 days"
 
 export const RETURNS = {
   window: "30-day returns",
@@ -80,7 +83,7 @@ export const RETURNS = {
 
 export const TRUST_FACTS = [
   { label: SHIPPING.short, detail: "Insured, liftgate included" },
-  { label: "90-day–12-month warranty", detail: "Used 90 days · rebuilt 12 months" },
+  { label: "90-day warranty", detail: "Used and rebuilt parts" },
   { label: "No core charge on used", detail: "Keep your old unit" },
   { label: "Ships 1-2 days", detail: "Tested, crated, dispatched" },
   { label: "30-day returns", detail: "Plain-English conditions" },

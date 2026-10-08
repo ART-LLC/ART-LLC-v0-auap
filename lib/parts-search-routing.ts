@@ -8,11 +8,11 @@ export type PartsSearchFilters = {
 }
 
 function isTransmissionPart(partType: string) {
-  return /\btransmission\b/i.test(partType)
+  return /\btransmissions?\b/i.test(partType)
 }
 
 function isEnginePart(partType: string) {
-  return /\bengine\b/i.test(partType) && !isTransmissionPart(partType)
+  return /\bengines?\b/i.test(partType) && !isTransmissionPart(partType)
 }
 
 /** Converts a make name (e.g. "Mercedes-Benz", "Land Rover") to its brand catalog slug. */
@@ -41,16 +41,7 @@ export function getPartsSearchUrl(filters: PartsSearchFilters) {
     return query ? `/brands/${makeToBrandSlug(make)}?${query}` : `/brands/${makeToBrandSlug(make)}`
   }
 
-  // No make selected — fall back to the general catalog page.
-  const params = new URLSearchParams()
-  if (model) params.set('model', model)
-  if (isTransmissionPart(partType)) params.set('category', 'transmission')
-  else if (isEnginePart(partType)) params.set('category', 'engine')
-  else if (partType) params.set('category', partType)
-  if (year) params.set('year', year)
-  if (filters.location) params.set('location', filters.location)
-  if (filters.zipCode) params.set('zip', filters.zipCode)
-
-  const query = params.toString()
-  return query ? `/catalog?${query}` : '/catalog'
+  // No make selected: the catalog is organised by make, so start at the
+  // brand directory.
+  return '/brands'
 }

@@ -20,9 +20,11 @@ const filterSchema = z.object({
 })
 
 export async function POST(req: Request) {
-  const { query } = (await req.json()) as { query?: string }
+  const body = (await req.json()) as { query?: unknown }
+  // Cap what reaches the paid model; a parts search never needs more.
+  const query = typeof body.query === "string" ? body.query.trim().slice(0, 300) : ""
 
-  if (!query || !query.trim()) {
+  if (!query) {
     return Response.json({ error: "Missing query" }, { status: 400 })
   }
 

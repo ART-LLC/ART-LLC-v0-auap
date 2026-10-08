@@ -184,9 +184,9 @@ All CMS endpoints require admin authentication via the existing admin session sy
 // Configured in ADMIN_EMAIL and ADMIN_PASSWORD environment variables
 ```
 
-**Default Credentials** (change in production):
+**Credentials** (no defaults; admin login is disabled until ADMIN_PASSWORD is set):
 - Email: admin@auapw.com
-- Password: AUAPWAdmin123!
+- Password: <value of ADMIN_PASSWORD>
 
 Login at: `/admin/login`
 

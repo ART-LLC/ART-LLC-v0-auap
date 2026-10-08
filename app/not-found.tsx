@@ -46,7 +46,7 @@ export default function NotFound() {
                   Go Home
                 </Link>
                 <Link
-                  href="/search"
+                  href="/ai-search"
                   className="inline-flex items-center gap-2 px-5 py-2.5 text-[0.7rem] font-bold tracking-[0.18em] uppercase border border-border/60 text-muted-foreground rounded-sm hover:border-foreground/50 hover:text-foreground transition-all"
                 >
                   <Search className="w-3.5 h-3.5" aria-hidden="true" />

@@ -17,13 +17,12 @@ export default function SitemapPage() {
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Get a Quote", href: "/quote" },
-    { label: "Search Parts", href: "/search" },
+    { label: "Search Parts", href: "/ai-search" },
     { label: "Inventory", href: "/inventory" },
     { label: "Blog", href: "/blog" },
     { label: "All Makes", href: "/makes" },
     { label: "Cart", href: "/cart" },
     { label: "Wishlist", href: "/wishlist" },
-    { label: "Compare Parts", href: "/comparison" },
   ]
 
   const partsPages = [

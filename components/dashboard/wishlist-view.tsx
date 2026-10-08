@@ -9,7 +9,7 @@ export function WishlistView({ wishlistItems }: { wishlistItems: any[] }) {
       <div className="rounded-lg border border-border bg-card p-8 text-center">
         <p className="text-foreground/70">Your wishlist is empty</p>
         <Button asChild className="mt-4">
-          <Link href="/shop">Browse Parts</Link>
+          <Link href="/brands">Browse Parts</Link>
         </Button>
       </div>
     )
@@ -23,7 +23,7 @@ export function WishlistView({ wishlistItems }: { wishlistItems: any[] }) {
       <div className="rounded-lg border border-border bg-card p-4">
         <p className="text-foreground">Wishlist items will display product details here</p>
         <Button asChild variant="outline" className="mt-4">
-          <Link href="/shop">Continue Shopping</Link>
+          <Link href="/brands">Continue Shopping</Link>
         </Button>
       </div>
     </div>

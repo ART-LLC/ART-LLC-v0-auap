@@ -19,16 +19,16 @@ import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 
 const DRIVETRAIN_PARTS = [
-  { id: 'axle-front', name: 'Front Axle Assembly', description: 'Complete front axle assembly', avgPrice: 599 },
-  { id: 'axle-rear', name: 'Rear Axle Assembly', description: 'Complete rear axle assembly', avgPrice: 749 },
-  { id: 'axle-shaft', name: 'Axle Shaft', description: 'Individual axle shaft', avgPrice: 249 },
-  { id: 'cv-axle', name: 'CV Axle', description: 'Front wheel drive CV axle', avgPrice: 199 },
-  { id: 'drive-shaft-front', name: 'Front Drive Shaft', description: 'Front drive shaft assembly', avgPrice: 349 },
-  { id: 'drive-shaft-rear', name: 'Rear Drive Shaft', description: 'Rear drive shaft assembly', avgPrice: 399 },
-  { id: 'differential-front', name: 'Front Differential', description: 'Front differential assembly', avgPrice: 799 },
-  { id: 'differential-rear', name: 'Rear Differential', description: 'Rear differential assembly', avgPrice: 899 },
-  { id: 'wheel-hub', name: 'Wheel Hub Assembly', description: 'Complete wheel hub with bearing', avgPrice: 249 },
-  { id: 'ujoint', name: 'U-Joint', description: 'Universal joint assembly', avgPrice: 149 },
+  { id: 'axle-front', name: 'Front Axle Assembly', description: 'Complete front axle assembly' },
+  { id: 'axle-rear', name: 'Rear Axle Assembly', description: 'Complete rear axle assembly' },
+  { id: 'axle-shaft', name: 'Axle Shaft', description: 'Individual axle shaft' },
+  { id: 'cv-axle', name: 'CV Axle', description: 'Front wheel drive CV axle' },
+  { id: 'drive-shaft-front', name: 'Front Drive Shaft', description: 'Front drive shaft assembly' },
+  { id: 'drive-shaft-rear', name: 'Rear Drive Shaft', description: 'Rear drive shaft assembly' },
+  { id: 'differential-front', name: 'Front Differential', description: 'Front differential assembly' },
+  { id: 'differential-rear', name: 'Rear Differential', description: 'Rear differential assembly' },
+  { id: 'wheel-hub', name: 'Wheel Hub Assembly', description: 'Complete wheel hub with bearing' },
+  { id: 'ujoint', name: 'U-Joint', description: 'Universal joint assembly' },
 ]
 
 export default function DrivetrainProductPage() {
@@ -46,11 +46,7 @@ export default function DrivetrainProductPage() {
       )
     }
 
-    if (sortBy === 'price-low') {
-      filtered.sort((a, b) => a.avgPrice - b.avgPrice)
-    } else if (sortBy === 'price-high') {
-      filtered.sort((a, b) => b.avgPrice - a.avgPrice)
-    } else if (sortBy === 'name') {
+    if (sortBy === 'name') {
       filtered.sort((a, b) => a.name.localeCompare(b.name))
     }
 
@@ -88,8 +84,6 @@ export default function DrivetrainProductPage() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="relevance">Relevance</SelectItem>
-                    <SelectItem value="price-low">Price: Low to High</SelectItem>
-                    <SelectItem value="price-high">Price: High to Low</SelectItem>
                     <SelectItem value="name">Name A-Z</SelectItem>
                   </SelectContent>
                 </Select>
@@ -121,10 +115,7 @@ export default function DrivetrainProductPage() {
                       <CardDescription className="text-xs">{part.description}</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <div className="flex items-baseline justify-between">
-                        <span className="text-2xl font-bold text-primary">${part.avgPrice}</span>
-                        <span className="text-xs text-muted-foreground">avg price</span>
-                      </div>
+                      <p className="text-sm text-muted-foreground">Price by quote</p>
                       <Button className="w-full auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=drivetrain`}>Get Quote</Link></Button>
                     </CardContent>
                   </Card>
@@ -141,10 +132,7 @@ export default function DrivetrainProductPage() {
                           <h3 className="font-semibold text-foreground">{part.name}</h3>
                           <p className="text-sm text-muted-foreground">{part.description}</p>
                         </div>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xl font-bold text-primary">${part.avgPrice}</span>
-                          <Badge>In Stock</Badge>
-                        </div>
+                        <p className="text-sm text-muted-foreground">Price by quote</p>
                       </div>
                       <Button className="auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=drivetrain`}>Get Quote</Link></Button>
                     </div>

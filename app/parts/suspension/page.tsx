@@ -18,16 +18,16 @@ import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 const SUSPENSION_PARTS = [
-  { id: 'control-arm-front', name: 'Front Control Arm', description: 'Front suspension control arm', avgPrice: 199 },
-  { id: 'strut', name: 'Strut Assembly', description: 'Complete strut with coil spring', avgPrice: 249 },
-  { id: 'coil-spring', name: 'Coil Spring', description: 'OEM coil spring', avgPrice: 129 },
-  { id: 'sway-bar', name: 'Sway Bar', description: 'Stabilizer bar assembly', avgPrice: 179 },
-  { id: 'steering-rack', name: 'Steering Rack', description: 'Power steering rack assembly', avgPrice: 449 },
-  { id: 'power-steering-pump', name: 'Power Steering Pump', description: 'Hydraulic steering pump', avgPrice: 249 },
-  { id: 'tie-rod', name: 'Tie Rod Assembly', description: 'Inner and outer tie rods', avgPrice: 149 },
-  { id: 'ball-joint', name: 'Ball Joint', description: 'Upper or lower ball joint', avgPrice: 99 },
-  { id: 'wheel-bearing', name: 'Wheel Bearing', description: 'Complete wheel bearing assembly', avgPrice: 179 },
-  { id: 'shock-absorber', name: 'Shock Absorber', description: 'OEM shock absorber', avgPrice: 199 },
+  { id: 'control-arm-front', name: 'Front Control Arm', description: 'Front suspension control arm' },
+  { id: 'strut', name: 'Strut Assembly', description: 'Complete strut with coil spring' },
+  { id: 'coil-spring', name: 'Coil Spring', description: 'OEM coil spring' },
+  { id: 'sway-bar', name: 'Sway Bar', description: 'Stabilizer bar assembly' },
+  { id: 'steering-rack', name: 'Steering Rack', description: 'Power steering rack assembly' },
+  { id: 'power-steering-pump', name: 'Power Steering Pump', description: 'Hydraulic steering pump' },
+  { id: 'tie-rod', name: 'Tie Rod Assembly', description: 'Inner and outer tie rods' },
+  { id: 'ball-joint', name: 'Ball Joint', description: 'Upper or lower ball joint' },
+  { id: 'wheel-bearing', name: 'Wheel Bearing', description: 'Complete wheel bearing assembly' },
+  { id: 'shock-absorber', name: 'Shock Absorber', description: 'OEM shock absorber' },
 ]
 
 export default function SuspensionProductPage() {
@@ -37,9 +37,7 @@ export default function SuspensionProductPage() {
 
   const filteredProducts = useMemo(() => {
     let filtered = SUSPENSION_PARTS.filter(p => !searchTerm || p.name.toLowerCase().includes(searchTerm.toLowerCase()))
-    if (sortBy === 'price-low') filtered.sort((a, b) => a.avgPrice - b.avgPrice)
-    else if (sortBy === 'price-high') filtered.sort((a, b) => b.avgPrice - a.avgPrice)
-    else if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
+    if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
     return filtered
   }, [searchTerm, sortBy])
 
@@ -61,8 +59,6 @@ export default function SuspensionProductPage() {
                   <SelectTrigger><SelectValue placeholder="Sort" /></SelectTrigger>
                   <SelectContent>
                     <SelectItem value="relevance">Relevance</SelectItem>
-                    <SelectItem value="price-low">Price: Low to High</SelectItem>
-                    <SelectItem value="price-high">Price: High to Low</SelectItem>
                     <SelectItem value="name">Name A-Z</SelectItem>
                   </SelectContent>
                 </Select>
@@ -90,10 +86,7 @@ export default function SuspensionProductPage() {
                       <CardDescription className="text-xs">{part.description}</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <div className="flex items-baseline justify-between">
-                        <span className="text-2xl font-bold text-primary">${part.avgPrice}</span>
-                        <span className="text-xs text-muted-foreground">avg price</span>
-                      </div>
+                      <p className="text-sm text-muted-foreground">Price by quote</p>
                       <Button className="w-full auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=suspension`}>Get Quote</Link></Button>
                     </CardContent>
                   </Card>
@@ -110,10 +103,7 @@ export default function SuspensionProductPage() {
                           <h3 className="font-semibold text-foreground">{part.name}</h3>
                           <p className="text-sm text-muted-foreground">{part.description}</p>
                         </div>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xl font-bold text-primary">${part.avgPrice}</span>
-                          <Badge>In Stock</Badge>
-                        </div>
+                        <p className="text-sm text-muted-foreground">Price by quote</p>
                       </div>
                       <Button className="auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=suspension`}>Get Quote</Link></Button>
                     </div>

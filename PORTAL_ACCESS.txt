@@ -12,7 +12,7 @@ URL:      http://localhost:3000/admin/login
           https://your-domain.com/admin/login (production)
 
 LOGIN:    Email:    admin@auapw.com
-          Password: AUAPWAdmin123!
+          Password: <value of ADMIN_PASSWORD>
 
 DASHBOARD: http://localhost:3000/admin/dashboard
 
@@ -28,7 +28,7 @@ FEATURES:
 
 API ACCESS:
   POST /api/admin/auth/login
-    Body: { username: "admin@auapw.com", password: "AUAPWAdmin123!" }
+    Body: { username: "admin@auapw.com", password: "<value of ADMIN_PASSWORD>" }
     
   GET /api/admin/kpis?period=today|week|month|year
     Header: Authorization: Bearer {token}
@@ -149,7 +149,7 @@ Required Environment Variables (.env.local):
 
   # Admin Credentials
   ADMIN_EMAIL=admin@auapw.com
-  ADMIN_PASSWORD=AUAPWAdmin123!
+  ADMIN_PASSWORD=choose-a-long-random-password
 
   # Database
   DATABASE_URL=postgresql://user:password@host:5432/auapw

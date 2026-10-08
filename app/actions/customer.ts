@@ -76,6 +76,16 @@ export async function updateCustomerProfile(data: {
   taxId?: string
 }) {
   const userId = await getUserId()
+  // List fields explicitly: the caller controls `data`, and spreading it
+  // would let them overwrite userId/id and edit another user's row.
+  const profile = {
+    firstName: data.firstName,
+    lastName: data.lastName,
+    phone: data.phone,
+    businessName: data.businessName,
+    businessType: data.businessType,
+    taxId: data.taxId,
+  }
 
   const existing = await db
     .select()
@@ -87,7 +97,7 @@ export async function updateCustomerProfile(data: {
     await db
       .update(customers)
       .set({
-        ...data,
+        ...profile,
         updatedAt: new Date(),
       })
       .where(eq(customers.userId, userId))
@@ -97,7 +107,7 @@ export async function updateCustomerProfile(data: {
       id: customerId,
       userId,
       email: '',
-      ...data,
+      ...profile,
       createdAt: new Date(),
       updatedAt: new Date(),
     } as any)

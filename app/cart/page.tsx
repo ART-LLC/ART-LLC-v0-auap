@@ -3,7 +3,7 @@
 import { useCartStore } from '@/lib/stores/cart-store'
 import { SHIPPING, RESERVE_SHIPPING } from '@/lib/site-policy'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Trash2, Plus, Minus, ShoppingBag } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
@@ -18,6 +18,10 @@ export default function CartPage() {
   const clearCart = useCartStore((state) => state.clearCart)
   const deliveryMethod = useCartStore((state) => state.deliveryMethod)
   const [promoCode, setPromoCode] = useState('')
+  // The cart lives in localStorage, so the server always renders it empty;
+  // wait until mounted before rendering anything that depends on it.
+  const [hydrated, setHydrated] = useState(false)
+  useEffect(() => setHydrated(true), [])
 
   const isReservationCart = items.length > 0 && items.every((item) => item.isReservation)
   const totalPrice = isReservationCart ? 0 : getTotalPrice()
@@ -26,6 +30,18 @@ export default function CartPage() {
     : items.reduce((total, item) => total + SHIPPING.price * item.quantity, 0)
   const tax = isReservationCart ? 0 : totalPrice * 0.08
   const finalTotal = totalPrice + tax + shipping
+
+  if (!hydrated) {
+    return (
+      <>
+        <Navbar />
+        <main className="pt-[58px]">
+          <div className="py-24 text-center text-foreground/60">Loading your cart…</div>
+        </main>
+        <Footer />
+      </>
+    )
+  }
 
   return (
     <>
