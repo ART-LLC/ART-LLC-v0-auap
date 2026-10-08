@@ -43,6 +43,8 @@ export default function AdminLoginPage() {
     }
   }
 
+  // A <div>, not <main>: app/admin/layout.tsx already wraps every admin page,
+  // this one included, in the page's single <main> landmark.
   return (
     <div className="min-h-[70vh] bg-gradient-to-br from-background via-card to-background flex items-center justify-center px-4">
       <div className="w-full max-w-md">
