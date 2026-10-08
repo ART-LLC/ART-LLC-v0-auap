@@ -55,6 +55,7 @@ function xml(value: string): string {
 // gzipped, so compressing it here keeps the download small and fast and well
 // under any platform limit on how much a function may send.
 function acceptsGzip(request: Request): boolean {
+  if (typeof CompressionStream !== "function") return false
   return (request.headers.get("accept-encoding") ?? "")
     .split(",")
     .some((part) => {

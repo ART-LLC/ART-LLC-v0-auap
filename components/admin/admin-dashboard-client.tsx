@@ -1,6 +1,6 @@
 'use client'
 
-import { Children, useCallback, useEffect, useState } from 'react'
+import { Children, useCallback, useEffect, useState, type ComponentType, type ReactNode } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import {
@@ -408,7 +408,7 @@ function KpiCard({
   value: string
   detail?: string
   href?: string
-  icon: React.ComponentType<{ className?: string; 'aria-hidden'?: boolean }>
+  icon: ComponentType<{ className?: string; 'aria-hidden'?: boolean }>
 }) {
   const body = (
     <>
@@ -442,7 +442,7 @@ function ListCard({
   linkLabel: string
   empty: string
   loading: boolean
-  children?: React.ReactNode
+  children?: ReactNode
 }) {
   const hasRows = Children.count(children) > 0
   return (
