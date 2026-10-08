@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 const INTERCOM_APP_ID = 'pldz9zi1'
 
@@ -22,8 +23,15 @@ declare global {
 }
 
 export function IntercomProvider({ user }: IntercomProviderProps) {
+  // The customer messenger has no place on the admin pages, where it covers controls.
+  const isAdmin = usePathname()?.startsWith('/admin') ?? false
+
   useEffect(() => {
     let cancelled = false
+    if (isAdmin) {
+      if (typeof window.Intercom === 'function') window.Intercom('shutdown')
+      return
+    }
 
     const bootIntercom = async () => {
       // Script is loaded via next/script in layout, check if window.Intercom is available
@@ -91,7 +99,7 @@ export function IntercomProvider({ user }: IntercomProviderProps) {
     return () => {
       cancelled = true
     }
-  }, [user])
+  }, [user, isAdmin])
 
   return null
 }

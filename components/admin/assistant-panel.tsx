@@ -70,7 +70,7 @@ export function AssistantPanel() {
   return (
     <section
       aria-label="AI assistant"
-      className="mx-auto mb-8 flex max-w-7xl flex-col overflow-hidden rounded-xl border border-border bg-card"
+      className="flex flex-col overflow-hidden rounded-xl border border-border bg-card"
     >
       <header className="flex items-center gap-3 border-b border-border px-4 py-3">
         <span className="flex size-8 items-center justify-center rounded-md bg-primary text-primary-foreground">

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useTheme } from '@/components/theme-provider'
 
 export function MobileThemeFab() {
@@ -11,6 +12,7 @@ export function MobileThemeFab() {
   const [mounted, setMounted] = useState(false)
   const startX = useRef(0)
   const hasDragged = useRef(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     setMounted(true)
@@ -20,7 +22,8 @@ export function MobileThemeFab() {
     } catch { /* noop */ }
   }, [])
 
-  if (!mounted) return null
+  // The quote/call/theme buttons are for shoppers; they cover admin controls.
+  if (!mounted || pathname?.startsWith('/admin')) return null
 
   const isDark = resolvedTheme === 'dark'
 
