@@ -2,6 +2,7 @@ import "server-only"
 import { BRAND_DIRECTORY, getBrandProductBySlug, getBrandProductUrl } from "@/lib/brand-catalog"
 import { getSalesMode } from "@/lib/catalog-fields"
 import { applyOverrideToProduct, getAllOverrides } from "@/lib/merchant"
+import { primeManualOverlay } from "@/lib/manual-products"
 import { RESERVE_SHIPPING, SHIPPING, type ReserveDeliveryMethod } from "@/lib/site-policy"
 import type { OrderLine } from "@/lib/followup"
 
@@ -53,6 +54,8 @@ export async function priceCart(cart: CartLineInput[]): Promise<PricingResult> {
     if (!Number.isInteger(quantity) || quantity < 1) return { ok: false, error: "Invalid quantity in cart." }
 
     const brand = findBrandSlug(item.make)
+    // Admin-added products live in the DB; load them so they can be bought like sheet parts.
+    if (brand) await primeManualOverlay(brand)
     // Older Google checkout links stored brand/slug instead of the canonical slug.
     const slug = brand && item.id.startsWith(`${brand}/`) ? item.id.slice(brand.length + 1) : item.id
     const catalogProduct = brand ? getBrandProductBySlug(brand, slug) : undefined
@@ -137,6 +140,8 @@ export async function priceReservationCart(
     if (!Number.isInteger(quantity) || quantity < 1) return { ok: false, error: "Invalid quantity in cart." }
 
     const brand = findBrandSlug(item.make)
+    // Admin-added products live in the DB; load them so they can be bought like sheet parts.
+    if (brand) await primeManualOverlay(brand)
     const slug = brand && item.id.startsWith(`${brand}/`) ? item.id.slice(brand.length + 1) : item.id
     const catalogProduct = brand ? getBrandProductBySlug(brand, slug) : undefined
     if (!brand || !catalogProduct) {

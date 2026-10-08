@@ -40,15 +40,18 @@ export const useCartStore = create<CartStore>()(
       deliveryMethod: 'standard',
       addItem: (item) =>
         set((state) => {
-          const existing = state.items.find((i) => i.id === item.id)
+          // Buy-now and reservation items never share a cart (see CartItem.isReservation).
+          const items = state.items.filter((i) => !i.isReservation)
+          const existing = items.find((i) => i.id === item.id)
           if (existing) {
+            // One line per part: the latest mileage tier picked sets the price for all units.
             return {
-              items: state.items.map((i) =>
-                i.id === item.id ? { ...i, quantity: i.quantity + item.quantity } : i
+              items: items.map((i) =>
+                i.id === item.id ? { ...i, price: item.price, quantity: i.quantity + item.quantity } : i
               ),
             }
           }
-          return { items: [...state.items, item] }
+          return { items: [...items, item] }
         }),
       addReservationItem: (item) =>
         set({ items: [{ ...item, price: 0, isReservation: true, quantity: 1 }], deliveryMethod: 'standard' }),
@@ -75,6 +78,16 @@ export const useCartStore = create<CartStore>()(
     }),
     {
       name: 'cart-store',
+      version: 1,
+      // Carts saved before version 1 could hold sample products from the removed
+      // demo pages ("part-001", numeric ids) that checkout always refuses.
+      migrate: (persisted) => {
+        const state = (persisted ?? {}) as Partial<CartStore>
+        const items = Array.isArray(state.items)
+          ? state.items.filter((i) => typeof i?.id === 'string' && !/^(part-)?\d+$/.test(i.id))
+          : []
+        return { ...state, items } as CartStore
+      },
     }
   )
 )

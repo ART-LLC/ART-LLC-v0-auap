@@ -285,7 +285,8 @@ export function feedItemId(brand: string, slug: string): string {
 export function resolveFeedItemId(
   itemId: string,
 ): { brand: string; product: BrandProduct } | null {
-  const prefix = itemId.split("-")[0]
+  // The id is "<brand prefix>-<hash>", and brand slugs can contain hyphens (land-rover).
+  const prefix = itemId.slice(0, itemId.lastIndexOf("-"))
   const candidates = prefix
     ? BRAND_DIRECTORY.filter((b) => b.slug.slice(0, 12) === prefix)
     : BRAND_DIRECTORY

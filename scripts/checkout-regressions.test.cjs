@@ -54,12 +54,14 @@ const { priceCart } = load('lib/order-pricing.ts', {
   '@/lib/catalog-fields': load('lib/catalog-fields.ts', {}),
   '@/lib/merchant': merchant,
   '@/lib/site-policy': load('lib/site-policy.ts', {}),
+  '@/lib/manual-products': manualProducts,
 })
 const checkoutItem = load('app/api/checkout-item/[id]/route.ts', {
   'next/server': { NextResponse: { json: (data, init) => Response.json(data, init) } },
   '@/lib/merchant': merchant,
   '@/lib/brand-catalog': catalog,
   '@/lib/site-policy': load('lib/site-policy.ts', {}),
+  '@/lib/manual-products': manualProducts,
 })
 const item = (changes = {}) => ({ id: 'test-engine', make: 'Acura', price: 1200, quantity: 1, ...changes })
 function override(changes) {
@@ -128,6 +130,12 @@ test('uses admin price and title overrides, rejecting stale tier prices', async 
   assert.equal(result.lines[0].name, 'Updated engine')
   assert.equal((await priceCart([item()])).ok, false)
   assert.equal((await priceCart([item({ price: 1000 })])).ok, false)
+})
+test('an admin price of exactly $799 is buyable, not mistaken for the sheet placeholder', async () => {
+  override({ price: '799.00' })
+  const result = await priceCart([item({ price: 799 })])
+  assert.equal(result.ok, true)
+  assert.equal(result.lines[0].unitPrice, 799)
 })
 test('blocks hidden, sold-out, and backordered products', async () => {
   for (const change of [{ hidden: true }, { availability: 'out_of_stock' }, { availability: 'backorder' }]) {

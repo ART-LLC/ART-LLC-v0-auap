@@ -1,11 +1,17 @@
 import { NextResponse } from 'next/server'
 import { resolveFeedItemId, getEffectiveProduct, getAllOverrides, isFeedEligible } from '@/lib/merchant'
-import { getBrandLabel } from '@/lib/brand-catalog'
+import { BRAND_DIRECTORY, getBrandLabel } from '@/lib/brand-catalog'
+import { primeManualOverlay } from '@/lib/manual-products'
 
 import { SHIPPING } from '@/lib/site-policy'
 
 export async function GET(_req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
+  // Admin-added products are in the feed too; load the matching brand's before resolving.
+  const prefix = id.slice(0, id.lastIndexOf('-'))
+  await Promise.all(
+    BRAND_DIRECTORY.filter((b) => b.slug.slice(0, 12) === prefix).map((b) => primeManualOverlay(b.slug)),
+  )
   const resolved = resolveFeedItemId(id)
 
   if (!resolved) {

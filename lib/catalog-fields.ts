@@ -37,10 +37,13 @@ export interface DerivedFields {
 }
 
 export function getSalesMode(row: Pick<RawCatalogRow, "price" | "salesMode">): SalesMode {
+  if (!row.price || row.price <= 0) return "quote"
+  // The import, admin price overrides and manual products all set the mode
+  // explicitly, and an admin may genuinely price a part at $799.
+  if (row.salesMode) return row.salesMode
   // The sheets' "$799" placeholder arrives with cents ($799.12), so compare the
   // rounded price; a real sheet price is never within a dollar of it.
-  if (!row.price || Math.round(row.price) === PLACEHOLDER_PRICE) return "quote"
-  return row.salesMode ?? "buy_now"
+  return Math.round(row.price) === PLACEHOLDER_PRICE ? "quote" : "buy_now"
 }
 
 /**

@@ -25,6 +25,8 @@ const CustomerSchema = z.object({
 const OrderSchema = z.object({
   mode: z.literal("buy_now").optional().default("buy_now"),
   customer: CustomerSchema,
+  // The method picked at checkout (wire, Zelle, phone…), so staff know how to collect.
+  paymentGateway: z.string().trim().max(60).optional(),
   items: z
     .array(
       z.object({
@@ -104,7 +106,7 @@ export async function POST(request: Request) {
   if (!parsed.success) {
     return NextResponse.json({ error: parsed.error.issues[0]?.message ?? "Invalid request." }, { status: 400 })
   }
-  const { customer, items } = parsed.data
+  const { customer, items, paymentGateway } = parsed.data
 
   const pricing = await priceCart(items)
   if (!pricing.ok) return NextResponse.json({ error: pricing.error }, { status: 422 })
@@ -121,6 +123,8 @@ export async function POST(request: Request) {
       tax: pricing.tax,
       shippingCost: pricing.shippingCost,
       totalAmount: pricing.totalAmount,
+      // Card payments go through /api/checkout/stripe, never this phone-order path.
+      paymentGateway: paymentGateway && paymentGateway !== "stripe" ? paymentGateway : undefined,
     })
     const origin = new URL(request.url).origin
     await notifyNewOrder(order, origin)

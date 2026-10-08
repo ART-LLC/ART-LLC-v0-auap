@@ -44,6 +44,10 @@ export default function CheckoutPage() {
   const [gateways, setGateways] = useState<PaymentGateway[]>([])
   const [selectedGateway, setSelectedGateway] = useState<string | null>(null)
   const [loadingItemId, setLoadingItemId] = useState(false)
+  // The cart lives in localStorage, so the server always renders it empty;
+  // wait until mounted before rendering anything that depends on it.
+  const [hydrated, setHydrated] = useState(false)
+  useEffect(() => setHydrated(true), [])
 
   useEffect(() => {
     fetch('/api/payment-gateways')
@@ -65,12 +69,14 @@ export default function CheckoutPage() {
   useEffect(() => {
     const itemId = new URLSearchParams(window.location.search).get('item_id')
     if (!itemId) return
+    // Consume the param so a reload or Back doesn't add the part again.
+    window.history.replaceState(null, '', window.location.pathname)
 
     setLoadingItemId(true)
     fetch(`/api/checkout-item/${encodeURIComponent(itemId)}`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (data?.item) {
+        if (data?.item && !useCartStore.getState().items.some((i) => i.id === data.item.id)) {
           addItem({ ...data.item, quantity: 1 })
         }
       })
@@ -91,7 +97,11 @@ export default function CheckoutPage() {
   const [isProcessing, setIsProcessing] = useState(false)
   const [agreedToTerms, setAgreedToTerms] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [placedOrder, setPlacedOrder] = useState<{ orderNumber: string; totalAmount: number } | null>(null)
+  const [placedOrder, setPlacedOrder] = useState<{
+    orderNumber: string
+    totalAmount: number
+    reserved?: boolean
+  } | null>(null)
   const [paymentConfirmed, setPaymentConfirmed] = useState(false)
 
   const totalPrice = isReservationCart ? 0 : getTotalPrice()
@@ -141,6 +151,7 @@ export default function CheckoutPage() {
               }
             : {
                 customer: formData,
+                paymentGateway: selectedGateway ?? undefined,
                 items: items.map(({ id, make, price, quantity }) => ({ id, make, price, quantity })),
               },
         ),
@@ -150,7 +161,7 @@ export default function CheckoutPage() {
         setError(data.error ?? 'We could not place your order. Please call (708) 896-2383.')
         return
       }
-      setPlacedOrder({ orderNumber: data.orderNumber, totalAmount: data.totalAmount })
+      setPlacedOrder({ orderNumber: data.orderNumber, totalAmount: data.totalAmount, reserved: isReservationCart })
       clearCart()
       setStep('confirmation')
     } catch {
@@ -172,7 +183,22 @@ export default function CheckoutPage() {
   }
 
   const activeGateway = gateways.find((g) => g.slug === selectedGateway)
-  const isStripeCard = activeGateway?.type === 'card' && activeGateway.slug === 'stripe'
+  const isStripeCard =
+    Boolean(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY) &&
+    activeGateway?.type === 'card' &&
+    activeGateway.slug === 'stripe'
+
+  if (!hydrated) {
+    return (
+      <>
+        <Navbar />
+        <main className="pt-[58px]">
+          <div className="py-24 text-center text-foreground/60">Loading your cart…</div>
+        </main>
+        <Footer />
+      </>
+    )
+  }
 
   if (items.length === 0 && step !== 'confirmation' && !loadingItemId) {
     return (
@@ -266,20 +292,20 @@ export default function CheckoutPage() {
                 <Check className="w-8 h-8 text-green-400" />
               </div>
               <h2 className="text-3xl font-bold mb-2">
-                {paymentConfirmed ? 'Payment Confirmed!' : isReservationCart ? 'Part Reserved!' : 'Order Received!'}
+                {paymentConfirmed ? 'Payment Confirmed!' : placedOrder?.reserved ? 'Part Reserved!' : 'Order Received!'}
               </h2>
               <p className="text-foreground/60 mb-8 text-pretty">
                 {paymentConfirmed
                   ? 'Your payment was received securely through Stripe. A parts specialist will call you within one business day to confirm fitment and delivery details. No additional payment is needed for this order.'
-                  : isReservationCart
+                  : placedOrder?.reserved
                     ? 'This part is reserved for you — no payment has been taken. A parts specialist will call you within one business day to confirm fitment, give you the final price and warranty terms in writing, and take payment only once you approve it.'
                     : 'A parts specialist will call you within one business day to confirm fitment and take payment securely by phone. Nothing has been charged yet.'}
               </p>
               <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-8 text-left">
-                <p className="text-sm text-foreground/60 mb-2">{isReservationCart ? 'Reservation Number' : 'Order Number'}</p>
+                <p className="text-sm text-foreground/60 mb-2">{placedOrder?.reserved ? 'Reservation Number' : 'Order Number'}</p>
                 <p className="text-2xl font-bold mb-6 font-mono">{placedOrder?.orderNumber}</p>
                 <p className="text-sm text-foreground/60 mb-2">
-                  {isReservationCart ? 'Due Today (Delivery Only)' : 'Order Total'}
+                  {placedOrder?.reserved ? 'Due Today (Delivery Only)' : 'Order Total'}
                 </p>
                 <p className="text-2xl font-bold text-blue-400">${(placedOrder?.totalAmount ?? 0).toFixed(2)}</p>
               </div>
@@ -464,6 +490,19 @@ export default function CheckoutPage() {
                           </div>
                         )}
 
+                        {/* Above the terms box: ticking it mounts the Stripe form, which saves the order
+                            with the notes as they are at that moment. */}
+                        <label htmlFor="checkout-notes" className="sr-only">Order notes</label>
+                        <Textarea
+                          id="checkout-notes"
+                          placeholder="VIN, best time to call, or delivery notes (optional)"
+                          name="notes"
+                          rows={3}
+                          maxLength={1000}
+                          value={formData.notes}
+                          onChange={handleInputChange}
+                          disabled={isStripeCard && agreedToTerms && !isReservationCart}
+                        />
                         <CheckoutTerms checked={agreedToTerms} onCheckedChange={setAgreedToTerms} />
 
                         {!agreedToTerms ? (
@@ -487,7 +526,7 @@ export default function CheckoutPage() {
                           const active = gateways.find((g) => g.slug === selectedGateway)
                           if (!active) return null
 
-                          if (active.type === 'card' && active.slug === 'stripe') {
+                          if (isStripeCard) {
                             return (
                               <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-3">
                                 <div className="flex items-center justify-between flex-wrap gap-2">
@@ -653,16 +692,6 @@ export default function CheckoutPage() {
                               : 'Nothing is due today — Standard Freight is free. The part price is confirmed by phone before any charge.'}
                           </p>
                         )}
-                        <label htmlFor="checkout-notes" className="sr-only">Order notes</label>
-                        <Textarea
-                          id="checkout-notes"
-                          placeholder="VIN, best time to call, or delivery notes (optional)"
-                          name="notes"
-                          rows={3}
-                          maxLength={1000}
-                          value={formData.notes}
-                          onChange={handleInputChange}
-                        />
                         <div className="flex flex-col sm:flex-row gap-3">
                           <Button variant="outline" size="lg" onClick={() => setStep('shipping')} disabled={isProcessing}>
                             Edit Shipping
