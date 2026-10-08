@@ -1,31 +1,10 @@
 import { NextResponse } from 'next/server'
+import { CUSTOMER_COOKIE, customerCookieOptions } from '@/lib/customer-auth'
 
 export async function POST() {
   const response = NextResponse.json({ success: true })
-
-  response.cookies.set('customerToken', '', {
-    httpOnly: false,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax',
-    path: '/',
-    maxAge: 0,
-  })
-
-  response.cookies.set('customerEmail', '', {
-    httpOnly: false,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax',
-    path: '/',
-    maxAge: 0,
-  })
-
-  response.cookies.set('customerId', '', {
-    httpOnly: false,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax',
-    path: '/',
-    maxAge: 0,
-  })
-
+  for (const name of [CUSTOMER_COOKIE, 'customerToken', 'customerEmail', 'customerId']) {
+    response.cookies.set(name, '', { ...customerCookieOptions, maxAge: 0 })
+  }
   return response
 }
