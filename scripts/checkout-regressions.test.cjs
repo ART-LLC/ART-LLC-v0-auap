@@ -36,6 +36,7 @@ const catalog = {
   getProductDisplayImage: () => ({ src: product.imageUrl, illustrative: false }),
   loadBrandCatalog: () => ({ products: [product] }),
 }
+const manualProducts = { primeManualOverlay: async () => {} }
 let rows = []
 let databaseUnavailable = false
 const merchant = load('lib/merchant.ts', {
@@ -46,6 +47,7 @@ const merchant = load('lib/merchant.ts', {
   } } },
   '@/lib/catalog-fields': load('lib/catalog-fields.ts', {}),
   '@/lib/brand-catalog': catalog,
+  '@/lib/manual-products': manualProducts,
 })
 const { priceCart } = load('lib/order-pricing.ts', {
   '@/lib/brand-catalog': catalog,
@@ -98,11 +100,25 @@ test('Google feed advertises the same $240 shipping rate as checkout', async () 
     '@/lib/catalog-fields': load('lib/catalog-fields.ts', {}),
     '@/lib/merchant': merchant,
     '@/lib/site-policy': load('lib/site-policy.ts', {}),
+    '@/lib/manual-products': manualProducts,
   })
   const response = await feed.GET(new Request('https://example.com/feeds/google-shopping.xml?brand=acura'))
   const xml = await response.text()
-  assert.match(xml, /<g:shipping><g:country>US<\/g:country><g:price>240\.00 USD<\/g:price><\/g:shipping>/)
+  assert.match(xml, /<g:shipping><g:country>US<\/g:country><g:price>240\.00 USD<\/g:price>/)
+  assert.match(xml, /<g:max_transit_time>7<\/g:max_transit_time><\/g:shipping>/)
   assert.doesNotMatch(xml, /free insured freight/i)
+})
+test('feed titles drop the cut-off fragment the sheets end with', () => {
+  assert.equal(
+    merchant.cleanFeedTitle('2013 Toyota Camry Engine - 2.5L, VIN D (5th digit, 2ARFXE engine, 4 cylinder,...'),
+    '2013 Toyota Camry Engine - 2.5L, VIN D (5th digit, 2ARFXE engine, 4 cylinder)',
+  )
+  assert.equal(
+    merchant.cleanFeedTitle('2015 Acura ILX Engine - 1.5L (VIN 3, 6th digit, Hybrid, SOHC, Canada marke... '),
+    '2015 Acura ILX Engine - 1.5L (VIN 3, 6th digit, Hybrid, SOHC, Canada)',
+  )
+  assert.equal(merchant.cleanFeedTitle('1970 Audi 100 Engine - (1.8L)'), '1970 Audi 100 Engine - (1.8L)')
+  assert.ok(merchant.cleanFeedTitle(`${'word '.repeat(40)}(and more`).length <= 150)
 })
 test('uses admin price and title overrides, rejecting stale tier prices', async () => {
   override({ price: '1550.00', title: 'Updated engine' })

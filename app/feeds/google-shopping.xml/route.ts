@@ -1,11 +1,14 @@
 import { after } from "next/server"
-import { SHIPPING } from "@/lib/site-policy"
+import { RETURNS, SHIPPING, WARRANTY_SUMMARY } from "@/lib/site-policy"
 import { BRAND_DIRECTORY, loadBrandCatalog } from "@/lib/brand-catalog"
 import { getPartType } from "@/lib/catalog-fields"
 import {
   MERCHANT_STORE_NAME,
   SITE_URL,
+  cleanFeedTitle,
   feedItemId,
+  feedPriceBand,
+  feedYearBand,
   getAllOverrides,
   getEffectiveProduct,
   isFeedEligible,
@@ -21,6 +24,21 @@ const CATEGORY = {
   transmission:
     "Vehicles & Parts > Vehicle Parts & Accessories > Motor Vehicle Parts > Motor Vehicle Transmission & Drivetrain Parts",
 } as const
+
+// Selling points the site already states (lib/site-policy), shown in the Shopping listing.
+const HIGHLIGHTS_XML = ["Tested before it ships", WARRANTY_SUMMARY, RETURNS.window, "No core charge on used parts"]
+  .map((h) => `<g:product_highlight>${xml(h)}</g:product_highlight>`)
+  .join("")
+
+// Handling and transit windows let Google show a delivery date on the ad.
+const SHIPPING_XML =
+  `<g:shipping><g:country>US</g:country>` +
+  `<g:price>${SHIPPING.price.toFixed(2)} USD</g:price>` +
+  `<g:min_handling_time>${SHIPPING.handlingDays.min}</g:min_handling_time>` +
+  `<g:max_handling_time>${SHIPPING.handlingDays.max}</g:max_handling_time>` +
+  `<g:min_transit_time>${SHIPPING.transitDays.min}</g:min_transit_time>` +
+  `<g:max_transit_time>${SHIPPING.transitDays.max}</g:max_transit_time>` +
+  `</g:shipping>`
 
 function xml(value: string): string {
   return value
@@ -80,24 +98,31 @@ export async function GET(request: Request) {
         if (!isFeedEligible(effective)) continue
 
         const partType = getPartType(product)
-        const productType = `Used ${partType === "engine" ? "Engines" : "Transmissions"} > ${brand.label}${product.model ? ` > ${product.model}` : ""}`
+        const partLabel = partType === "engine" ? "Engine" : "Transmission"
+        const productType = `Used ${partLabel}s > ${brand.label}${product.model ? ` > ${product.model}` : ""}`
+        const price = effective.price!
+        const yearBand = feedYearBand(product.year)
         chunk.push(
           `<item>` +
             `<g:id>${feedItemId(brand.slug, product.canonicalSlug)}</g:id>` +
-            `<title>${xml(effective.title.slice(0, 150))}</title>` +
+            `<title>${xml(cleanFeedTitle(effective.title))}</title>` +
             `<description>${xml(effective.description.slice(0, 5000))}</description>` +
             `<link>${xml(effective.url)}</link>` +
             `<g:image_link>${xml(effective.imageUrl)}</g:image_link>` +
             `<g:condition>used</g:condition>` +
             `<g:availability>${effective.availability}</g:availability>` +
-            `<g:price>${effective.price!.toFixed(2)} USD</g:price>` +
+            `<g:price>${price.toFixed(2)} USD</g:price>` +
             `<g:brand>${xml(brand.label)}</g:brand>` +
             `<g:identifier_exists>no</g:identifier_exists>` +
             `<g:google_product_category>${xml(CATEGORY[partType])}</g:google_product_category>` +
             `<g:product_type>${xml(productType)}</g:product_type>` +
-            `<g:shipping><g:country>US</g:country><g:price>${SHIPPING.price.toFixed(2)} USD</g:price></g:shipping>` +
+            HIGHLIGHTS_XML +
+            SHIPPING_XML +
             `<g:custom_label_0>${xml(brand.label)}</g:custom_label_0>` +
             `<g:custom_label_1>${partType}</g:custom_label_1>` +
+            `<g:custom_label_2>${feedPriceBand(price)}</g:custom_label_2>` +
+            (yearBand ? `<g:custom_label_3>${yearBand}</g:custom_label_3>` : "") +
+            `<g:custom_label_4>${effective.imageIsIllustrative ? "generated_image" : "photo"}</g:custom_label_4>` +
             `</item>\n`,
         )
       }

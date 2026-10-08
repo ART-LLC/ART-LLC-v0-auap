@@ -16,6 +16,9 @@ export const SHIPPING = {
   liftgate: "Liftgate and residential delivery included",
   dispatch: "Ships in 1-2 business days",
   transit: "3-7 business days door to door in the lower 48",
+  // The same windows as `dispatch` and `transit`, as numbers for the Google feed.
+  handlingDays: { min: 1, max: 2 },
+  transitDays: { min: 3, max: 7 },
   damage:
     "Every unit ships insured on a pallet. Note any damage on the delivery receipt and we replace or refund — you never file the freight claim yourself.",
 } as const
