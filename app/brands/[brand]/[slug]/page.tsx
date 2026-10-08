@@ -12,6 +12,7 @@ import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 import { SeoBacklinks } from '@/components/seo-backlinks'
 import { BrandPurchasePanel } from '@/components/brands/brand-purchase-panel'
+import { TrustBadges } from '@/components/products/trust-badges'
 import { BrandProductImage } from '@/components/brands/brand-product-image'
 import { BrandProductSearch } from '@/components/brands/brand-product-search'
 import {
@@ -202,6 +203,11 @@ export default async function BrandProductPage({ params }: PageProps) {
                     <span className="text-sm text-muted-foreground">Verified seller</span>
                     <span className="text-sm text-muted-foreground">SKU: {product.mpn || product.id}</span>
                   </div>
+                  <TrustBadges
+                    productName={product.name}
+                    isVerifiedPhoto={!displayImage.illustrative}
+                    className="mt-3"
+                  />
                 </div>
 
                 {product.description && (

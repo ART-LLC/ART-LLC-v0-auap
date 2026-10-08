@@ -90,7 +90,7 @@ export function OrderCard({ order, statuses }: { order: CustomerOrder; statuses:
             >
               {statuses.map((s) => (
                 <option key={s} value={s}>
-                  {s}
+                  {s.replace(/_/g, " ")}
                 </option>
               ))}
             </select>

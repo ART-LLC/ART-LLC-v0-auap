@@ -1,8 +1,12 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { MileagePriceSelector } from '@/components/acura/mileage-price-selector'
 import { ProductCardActions } from '@/components/products/product-card-actions'
+import { Button } from '@/components/ui/button'
+import { useCartStore } from '@/lib/stores/cart-store'
+import { CalendarCheck } from 'lucide-react'
 
 interface BrandPurchasePanelProps {
   productId: string
@@ -37,6 +41,19 @@ export function BrandPurchasePanel({
   const [selectedPrice, setSelectedPrice] = useState<number | null>(null)
   // No sheet price means this part is call/quote-only — never let it into the cart as a $0 item.
   const isQuoteOnly = !tiers && basePrice <= 0
+  const router = useRouter()
+  const addReservationItem = useCartStore((state) => state.addReservationItem)
+
+  const handleReserveOnline = () => {
+    addReservationItem({
+      id: productId,
+      name: productName,
+      image: productImage,
+      make,
+      partType: productType,
+    })
+    router.push('/checkout')
+  }
 
   return (
     <div className="flex flex-col gap-5">
@@ -60,9 +77,16 @@ export function BrandPurchasePanel({
         isQuoteOnly={isQuoteOnly}
       />
       {isQuoteOnly ? (
-        <p role="status" className="text-sm text-muted-foreground">
-          This part is priced by phone. Call or request a quote and we&apos;ll confirm pricing and availability.
-        </p>
+        <div className="flex flex-col gap-3 rounded-lg border border-primary/20 bg-primary/5 p-4">
+          <p role="status" className="text-sm text-muted-foreground">
+            This part is priced by phone. Reserve it online with no payment due now, or call and we&apos;ll confirm
+            pricing and availability.
+          </p>
+          <Button onClick={handleReserveOnline} className="w-full font-bold" size="lg">
+            <CalendarCheck className="h-4 w-4" />
+            Reserve Online — No Payment Due Now
+          </Button>
+        </div>
       ) : (
         availability !== 'in_stock' && (
           <p role="status" className="text-sm text-muted-foreground">

@@ -2,7 +2,7 @@ import "server-only"
 import { BRAND_DIRECTORY, getBrandProductBySlug, getBrandProductUrl } from "@/lib/brand-catalog"
 import { getSalesMode } from "@/lib/catalog-fields"
 import { applyOverrideToProduct, getAllOverrides } from "@/lib/merchant"
-import { SHIPPING } from "@/lib/site-policy"
+import { RESERVE_SHIPPING, SHIPPING, type ReserveDeliveryMethod } from "@/lib/site-policy"
 import type { OrderLine } from "@/lib/followup"
 
 export const MAX_UNITS_PER_PRODUCT = 5
@@ -98,4 +98,70 @@ export async function priceCart(cart: CartLineInput[]): Promise<PricingResult> {
   const shippingCost = round2(SHIPPING.price * lines.reduce((sum, l) => sum + l.quantity, 0))
   const tax = round2(subtotal * TAX_RATE)
   return { ok: true, lines, subtotal, tax, shippingCost, totalAmount: round2(subtotal + tax + shippingCost) }
+}
+
+export interface ReservationCartLineInput {
+  id: string
+  make?: string
+  quantity: number
+}
+
+/**
+ * Prices a "Reserve & Place Order" cart: quote-only parts reserved online
+ * with no payment collected. There is no catalog sheet price to validate
+ * against (that's what makes the part quote-only), so every line is $0 and
+ * the part's real price is confirmed by phone before any charge — only the
+ * chosen delivery surcharge is due today.
+ */
+export async function priceReservationCart(
+  cart: ReservationCartLineInput[],
+  deliveryMethod: ReserveDeliveryMethod,
+): Promise<PricingResult> {
+  if (!Array.isArray(cart) || cart.length === 0) return { ok: false, error: "Your cart is empty." }
+  if (cart.length > MAX_LINES_PER_ORDER) return { ok: false, error: "Too many items in one order. Please call us." }
+  if (deliveryMethod !== "standard" && deliveryMethod !== "liftgate") {
+    return { ok: false, error: "Please choose a delivery method." }
+  }
+
+  let overrides: Awaited<ReturnType<typeof getAllOverrides>>
+  try {
+    overrides = await getAllOverrides()
+  } catch {
+    return { ok: false, error: "We couldn't verify current availability. Please try again shortly." }
+  }
+
+  const lines: OrderLine[] = []
+
+  for (const item of cart) {
+    const quantity = Number(item.quantity)
+    if (!Number.isInteger(quantity) || quantity < 1) return { ok: false, error: "Invalid quantity in cart." }
+
+    const brand = findBrandSlug(item.make)
+    const slug = brand && item.id.startsWith(`${brand}/`) ? item.id.slice(brand.length + 1) : item.id
+    const catalogProduct = brand ? getBrandProductBySlug(brand, slug) : undefined
+    if (!brand || !catalogProduct) {
+      return { ok: false, error: "One of the parts in your reservation could not be found. Please call us to order it." }
+    }
+    const override = overrides.get(`${brand}/${catalogProduct.canonicalSlug}`) ?? null
+    if (override?.hidden || (override?.availability && override.availability !== "in_stock")) {
+      return { ok: false, error: `${catalogProduct.name} is currently unavailable. Please contact us.` }
+    }
+    const product = applyOverrideToProduct(catalogProduct, override)
+    if (getSalesMode(product) !== "quote") {
+      return { ok: false, error: `${product.name} is priced online — please use the standard checkout.` }
+    }
+
+    lines.push({
+      productId: product.id,
+      name: product.name,
+      make: brand,
+      unitPrice: 0,
+      quantity,
+      lineTotal: 0,
+      url: getBrandProductUrl(brand, product),
+    })
+  }
+
+  const shippingCost = RESERVE_SHIPPING[deliveryMethod].price
+  return { ok: true, lines, subtotal: 0, tax: 0, shippingCost, totalAmount: shippingCost }
 }

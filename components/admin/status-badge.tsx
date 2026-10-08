@@ -1,6 +1,7 @@
 const TONES: Record<string, string> = {
   new: "bg-amber-500/15 text-amber-500 border-amber-500/30",
   pending: "bg-amber-500/15 text-amber-500 border-amber-500/30",
+  reserved_pending_fitment: "bg-orange-500/15 text-orange-500 border-orange-500/30",
   contacted: "bg-sky-500/15 text-sky-500 border-sky-500/30",
   confirmed: "bg-sky-500/15 text-sky-500 border-sky-500/30",
   quoted: "bg-indigo-500/15 text-indigo-400 border-indigo-500/30",
@@ -19,7 +20,7 @@ export function StatusBadge({ status }: { status: string }) {
         TONES[status] ?? "bg-muted text-muted-foreground border-border"
       }`}
     >
-      {status}
+      {status.replace(/_/g, " ")}
     </span>
   )
 }
