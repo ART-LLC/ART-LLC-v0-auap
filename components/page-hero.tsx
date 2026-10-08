@@ -84,7 +84,7 @@ export function PageHero({
     >
       {/* Background image */}
       <Image
-        src={src || "/placeholder.svg"}
+        src={src || "/images/placeholder-part.png"}
         alt=""
         fill
         priority={priority}

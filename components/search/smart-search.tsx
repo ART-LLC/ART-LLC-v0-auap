@@ -188,7 +188,7 @@ function ResultCard({ hit }: { hit: CatalogHit }) {
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-secondary/40">
         <Image
-          src={hit.image || "/placeholder.svg"}
+          src={hit.image || "/images/placeholder-part.png"}
           alt={hit.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
