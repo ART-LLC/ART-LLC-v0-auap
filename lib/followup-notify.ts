@@ -60,6 +60,24 @@ async function send(subject: string, html: string, to: string[] = [STAFF_EMAIL],
   }
 }
 
+export async function notifyNewChat(
+  chat: { conversationId: string; name?: string | null; email?: string | null; pageUrl?: string | null; body: string },
+  siteUrl: string,
+) {
+  const body = `<table style="width:100%;border-collapse:collapse">${rows([
+    ["Name", chat.name],
+    ["Email", chat.email],
+    ["Page", chat.pageUrl],
+    ["Message", chat.body],
+  ])}</table>`
+  await send(
+    `New live chat${chat.name ? ` from ${chat.name}` : ""}`,
+    shell("New Live Chat", body, `/admin/chats?c=${encodeURIComponent(chat.conversationId)}`, siteUrl),
+    [STAFF_EMAIL],
+    chat.email || undefined,
+  )
+}
+
 export async function notifyNewQuote(lead: QuoteLead, siteUrl: string) {
   const vehicle = [lead.year, lead.make, lead.model].filter(Boolean).join(" ")
   const body = `<table style="width:100%;border-collapse:collapse">${rows([
