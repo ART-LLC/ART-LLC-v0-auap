@@ -61,6 +61,12 @@ export function ProductFixCard(props: ProductFixCardProps) {
               </span>
             </div>
             <h2 className="text-pretty font-semibold text-foreground">{o?.title || props.sheetName}</h2>
+            <p className="mt-1 flex min-w-0 items-center gap-1 text-[11px] text-muted-foreground">
+              <span className="shrink-0 font-medium text-foreground/80">Image URL:</span>
+              <span className="truncate" title={props.imageUrl}>
+                {props.imageUrl}
+              </span>
+            </p>
             <a
               href={props.pagePath}
               target="_blank"

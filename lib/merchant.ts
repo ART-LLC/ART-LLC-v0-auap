@@ -292,7 +292,7 @@ export interface ProductSearchHit {
 export async function searchProductsForAdmin(opts: {
   brand?: string
   q?: string
-  issue?: IssueCode
+  issues?: IssueCode[]
   limit?: number
 }): Promise<{ hits: ProductSearchHit[]; total: number }> {
   const overrides = await getAllOverrides()
@@ -310,7 +310,7 @@ export async function searchProductsForAdmin(opts: {
       const override = overrides.get(`${b.slug}/${product.canonicalSlug}`) ?? null
       const effective = getEffectiveProduct(b.slug, product, override)
       const issues = auditProduct(effective)
-      if (opts.issue && !issues.includes(opts.issue)) continue
+      if (opts.issues?.length && !opts.issues.some((code) => issues.includes(code))) continue
       total++
       if (hits.length < limit) {
         hits.push({
