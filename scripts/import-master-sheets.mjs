@@ -129,7 +129,8 @@ for (const [slug, { file, make, rows }] of byBrand) {
     seen.add(canonicalSlug)
 
     const sheetPrice = parsePrice(r.Price)
-    const isQuote = sheetPrice === null || sheetPrice <= 0 || sheetPrice === PLACEHOLDER_PRICE
+    // The $799 placeholder arrives with cents ($799.12), so compare the rounded price.
+    const isQuote = sheetPrice === null || sheetPrice <= 0 || Math.round(sheetPrice) === PLACEHOLDER_PRICE
     const standard = isQuote ? 0 : Math.round(sheetPrice * 100) / 100
     if (isQuote) quote++
     else buyNow++

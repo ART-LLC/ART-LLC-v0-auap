@@ -17,6 +17,7 @@ import type { ProductFixCardProps } from "@/components/admin/merchant/product-fi
 import { FixPagesList } from "@/components/admin/merchant/fix-pages-list"
 import { CatalogSyncPanel } from "@/components/admin/merchant/catalog-sync-panel"
 import { listManualProducts } from "@/lib/manual-products"
+import { getSalesMode } from "@/lib/catalog-fields"
 
 export const dynamic = "force-dynamic"
 export const maxDuration = 60
@@ -75,7 +76,7 @@ export default async function AdminMerchantPage({
             slug: o.slug,
             pagePath: getBrandProductUrl(o.brand, product),
             sheetName: product.name,
-            sheetPrice: product.salesMode === "quote" ? null : product.price,
+            sheetPrice: getSalesMode(product) === "buy_now" ? product.price : null,
             sheetDescription: product.description || "",
             imageUrl: effective.imageUrl,
             livePrice: effective.price,

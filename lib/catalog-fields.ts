@@ -37,7 +37,9 @@ export interface DerivedFields {
 }
 
 export function getSalesMode(row: Pick<RawCatalogRow, "price" | "salesMode">): SalesMode {
-  if (!row.price || row.price === PLACEHOLDER_PRICE) return "quote"
+  // The sheets' "$799" placeholder arrives with cents ($799.12), so compare the
+  // rounded price; a real sheet price is never within a dollar of it.
+  if (!row.price || Math.round(row.price) === PLACEHOLDER_PRICE) return "quote"
   return row.salesMode ?? "buy_now"
 }
 
