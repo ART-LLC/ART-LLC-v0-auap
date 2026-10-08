@@ -89,6 +89,32 @@ export function QuoteLeadCard({ lead, statuses }: { lead: QuoteLead; statuses: r
               className="resize-y rounded-md border border-border bg-background px-2 py-2 text-sm text-foreground"
             />
           </label>
+          <details className="rounded-md border border-border px-3 py-2 text-xs text-muted-foreground">
+            <summary className="cursor-pointer font-medium text-foreground">Email the quote</summary>
+            <label className="mt-2 flex items-start gap-2">
+              <input
+                type="checkbox"
+                name="emailQuote"
+                disabled={!lead.email}
+                className="mt-0.5 h-3.5 w-3.5 accent-primary"
+              />
+              <span>
+                {lead.email
+                  ? `Send ${lead.email} the quoted price above when I save`
+                  : "No email on this request — call instead"}
+              </span>
+            </label>
+            <label className="mt-2 flex flex-col gap-1">
+              Message (optional)
+              <textarea
+                name="customerMessage"
+                rows={2}
+                maxLength={1000}
+                placeholder="Low-mileage unit, 62k miles, ships tomorrow"
+                className="resize-y rounded-md border border-border bg-background px-2 py-2 text-sm text-foreground"
+              />
+            </label>
+          </details>
           <div className="flex items-center justify-between gap-3">
             <p role="status" className={`text-xs ${state.ok ? "text-green-500" : "text-destructive"}`}>
               {pending ? "" : state.message}

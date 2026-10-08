@@ -7,8 +7,9 @@ import {
   AlertTriangle,
   CalendarDays,
   ClipboardList,
+  DatabaseZap,
   DollarSign,
-  LogOut,
+  Hourglass,
   RefreshCw,
   ShoppingBag,
   ShoppingCart,
@@ -16,6 +17,7 @@ import {
 } from 'lucide-react'
 import type { DashboardMetrics } from '@/lib/admin-metrics'
 import type { FeedAlert } from '@/lib/merchant-health'
+import { StatusBadge } from '@/components/admin/status-badge'
 
 type KpiResponse = DashboardMetrics & {
   feed: {
@@ -44,8 +46,10 @@ function money(n: number) {
 
 const count = (n: number) => n.toLocaleString('en-US')
 const plural = (n: number, word: string) => `${count(n)} ${word}${n === 1 ? '' : 's'}`
+const when = (iso: string) =>
+  new Date(iso).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
 
-export function AdminDashboardClient({ adminEmail }: { adminEmail: string }) {
+export function AdminDashboardClient() {
   const router = useRouter()
   const [data, setData] = useState<KpiResponse | null>(null)
   const [error, setError] = useState<Error | null>(null)
@@ -76,12 +80,6 @@ export function AdminDashboardClient({ adminEmail }: { adminEmail: string }) {
     }
   }, [error, router])
 
-  const handleLogout = async () => {
-    await fetch('/api/admin/auth/logout', { method: 'POST', credentials: 'include' })
-    router.push('/admin/login')
-    router.refresh()
-  }
-
   const alerts: FeedAlert[] = data
     ? [
         ...data.feed.alerts,
@@ -105,229 +103,241 @@ export function AdminDashboardClient({ adminEmail }: { adminEmail: string }) {
     : []
 
   return (
-    <main className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="bg-card border-b border-border sticky top-0 z-10">
-        <div className="max-w-full px-6 py-4 flex flex-wrap items-center justify-between gap-3">
-          <div>
-            <h1 className="text-2xl font-bold text-foreground text-balance">
-              AUAPW Admin Dashboard
-            </h1>
-            <p className="text-sm text-muted-foreground">
-              Logged in as: <span className="font-semibold">{adminEmail}</span>
-            </p>
-          </div>
-          <div className="flex items-center gap-2">
-            <button
-              onClick={load}
-              className="flex items-center gap-2 px-4 py-2 bg-muted text-foreground hover:bg-muted/70 rounded-lg transition-colors"
-              aria-label="Refresh KPIs"
-            >
-              <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin' : ''}`} />
-              Refresh
-            </button>
-            <button
-              onClick={handleLogout}
-              className="flex items-center gap-2 px-4 py-2 bg-destructive/10 text-destructive hover:bg-destructive/20 rounded-lg transition-colors"
-            >
-              <LogOut className="w-4 h-4" />
-              Logout
-            </button>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-full px-6 py-8">
-        {error && error.message !== 'unauthorized' && (
-          <div className="bg-destructive/10 border border-destructive/20 text-destructive px-4 py-3 rounded-md mb-6 text-sm">
-            Failed to load live KPIs. The dashboard will retry automatically.
-          </div>
-        )}
-
-        <div className="mb-4 flex items-center justify-between">
+    <div className="mx-auto flex max-w-7xl flex-col gap-6">
+      <header className="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <h1 className="text-2xl font-bold text-foreground">Dashboard</h1>
           <p className="text-sm text-muted-foreground">
-            Live numbers from orders and quote requests
+            Live numbers from your orders and quote requests
             {data
-              ? ` — updated ${new Date(data.generatedAt).toLocaleTimeString()}, days counted in ${data.timeZone.replace('_', ' ')} time`
+              ? ` · updated ${new Date(data.generatedAt).toLocaleTimeString()} · days in ${data.timeZone.replace('_', ' ')} time`
               : ''}
           </p>
-          {isLoading && !data && <p className="text-sm text-muted-foreground">Loading…</p>}
         </div>
+        <button
+          onClick={load}
+          className="flex items-center gap-2 rounded-lg bg-muted px-4 py-2 text-sm text-foreground transition-colors hover:bg-muted/70"
+          aria-label="Refresh numbers"
+        >
+          <RefreshCw className={`h-4 w-4 ${isLoading ? 'animate-spin' : ''}`} aria-hidden="true" />
+          Refresh
+        </button>
+      </header>
 
-        {alerts.length > 0 && (
-          <section
-            aria-labelledby="alerts-heading"
-            className="mb-6 rounded-lg border border-amber-500/40 bg-amber-500/10 p-4"
-          >
-            <h2 id="alerts-heading" className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
-              <AlertTriangle className="h-4 w-4 text-amber-500" aria-hidden="true" />
-              Needs attention
-            </h2>
-            <ul className="flex flex-col gap-1 text-sm">
-              {alerts.map((a) => (
-                <li
-                  key={a.message}
-                  className={a.level === 'critical' ? 'text-destructive' : 'text-foreground'}
-                >
-                  {a.message}
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {/* Primary KPI Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
-          <KpiCard
-            label="Paid revenue today"
-            value={data ? money(data.today.revenue) : '—'}
-            detail={data ? `${plural(data.today.orders, 'order')} placed today` : undefined}
-            icon={<DollarSign className="w-5 h-5 text-primary" />}
-          />
-          <KpiCard
-            label="Last 7 days"
-            value={data ? money(data.last7.revenue) : '—'}
-            detail={data ? `${plural(data.last7.orders, 'order')} · ${plural(data.last7.quotes, 'quote')}` : undefined}
-            icon={<CalendarDays className="w-5 h-5 text-primary" />}
-          />
-          <KpiCard
-            label="Last 30 days"
-            value={data ? money(data.last30.revenue) : '—'}
-            detail={
-              data
-                ? `Avg paid order ${data.last30.paidOrders ? money(data.last30.averageOrderValue) : '—'}`
-                : undefined
-            }
-            icon={<ShoppingCart className="w-5 h-5 text-primary" />}
-          />
-          <KpiCard
-            label="Quote requests today"
-            value={data ? count(data.today.quotes) : '—'}
-            detail={data ? `${count(data.yesterday.quotes)} yesterday · ${count(data.last30.quotes)} in 30 days` : undefined}
-            icon={<ClipboardList className="w-5 h-5 text-primary" />}
-          />
+      {error && error.message !== 'unauthorized' && (
+        <div role="alert" className="rounded-md border border-destructive/20 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+          The dashboard couldn't load ({error.message}). It retries every minute; Settings → System health shows what is
+          misconfigured.
         </div>
+      )}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          <KpiCard
-            label="Quote win rate (30 days)"
-            value={data ? (data.last30.quoteWinRate === null ? '—' : `${Math.round(data.last30.quoteWinRate * 100)}%`) : '—'}
-            detail="Won ÷ (won + lost)"
-            icon={<Trophy className="w-5 h-5 text-primary" />}
-          />
-          <KpiCard
-            label="Open quotes"
-            value={data ? count(data.actions.openQuotes) : '—'}
-            detail={data ? `${count(data.actions.newQuotes)} not yet contacted` : undefined}
-            href="/admin/quotes?status=new"
-            icon={<ClipboardList className="w-5 h-5 text-primary" />}
-          />
-          <KpiCard
-            label="Orders to confirm"
-            value={data ? count(data.actions.pendingOrders + data.actions.reservedOrders) : '—'}
-            detail={
-              data
-                ? `${count(data.actions.pendingOrders)} pending · ${count(data.actions.reservedOrders)} reserved · ${count(data.actions.unpaidConfirmedOrders)} unpaid`
-                : undefined
-            }
-            href="/admin/orders?status=pending"
-            icon={<ShoppingCart className="w-5 h-5 text-primary" />}
-          />
-          <KpiCard
-            label="Products in Google feed"
-            value={data?.feed.eligible != null ? count(data.feed.eligible) : '—'}
-            detail={
-              data
-                ? data.feed.lastGoogleFetch
-                  ? `Google fetched ${new Date(data.feed.lastGoogleFetch).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}`
-                  : 'Google has not fetched the feed yet'
-                : undefined
-            }
-            href="/admin/merchant"
-            icon={<ShoppingBag className="w-5 h-5 text-primary" />}
-          />
-        </div>
+      {data && data.errors.length > 0 && (
+        <section
+          aria-labelledby="data-errors"
+          className="rounded-lg border border-destructive/40 bg-destructive/10 p-4 text-sm"
+        >
+          <h2 id="data-errors" className="mb-2 flex items-center gap-2 font-semibold text-destructive">
+            <DatabaseZap className="h-4 w-4" aria-hidden="true" />
+            Some numbers couldn't be read from the database
+          </h2>
+          <ul className="flex flex-col gap-1 text-foreground">
+            {data.errors.map((e) => (
+              <li key={`${e.section}-${e.message}`}>
+                <span className="font-medium">{e.section}:</span> <code className="text-xs">{e.message}</code>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Those cards show 0 until this is fixed.{' '}
+            <Link href="/admin/settings" className="text-primary hover:underline">
+              Open System health
+            </Link>
+          </p>
+        </section>
+      )}
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
-          <section aria-labelledby="trend-heading" className="bg-card border border-border rounded-lg p-6 lg:col-span-2">
-            <h2 id="trend-heading" className="text-lg font-semibold text-foreground mb-4">
-              Last 14 days
-            </h2>
-            {data ? <DailyChart daily={data.daily} /> : <p className="text-sm text-muted-foreground">Loading…</p>}
-          </section>
+      {alerts.length > 0 && (
+        <section aria-labelledby="alerts-heading" className="rounded-lg border border-amber-500/40 bg-amber-500/10 p-4">
+          <h2 id="alerts-heading" className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+            <AlertTriangle className="h-4 w-4 text-amber-500" aria-hidden="true" />
+            Needs attention
+          </h2>
+          <ul className="flex flex-col gap-1 text-sm">
+            {alerts.map((a) => (
+              <li key={a.message} className={a.level === 'critical' ? 'text-destructive' : 'text-foreground'}>
+                {a.message}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
-          <section aria-labelledby="makes-heading" className="bg-card border border-border rounded-lg p-6">
-            <h2 id="makes-heading" className="text-lg font-semibold text-foreground mb-1">
-              Most requested makes
-            </h2>
-            <p className="mb-4 text-xs text-muted-foreground">Quote requests, last 30 days</p>
-            {data && data.topMakes.length === 0 && <p className="text-sm text-muted-foreground">No quote requests yet.</p>}
-            <ul className="space-y-2 text-sm">
-              {data?.topMakes.map((m) => (
-                <li key={m.make} className="flex items-center gap-3">
-                  <span className="w-24 shrink-0 truncate text-foreground">{m.make}</span>
-                  <span className="h-2 flex-1 rounded-full bg-muted" aria-hidden="true">
-                    <span
-                      className="block h-2 rounded-full bg-primary"
-                      style={{ width: `${(m.count / data.topMakes[0].count) * 100}%` }}
-                    />
-                  </span>
-                  <span className="w-8 text-right font-semibold tabular-nums text-foreground">{m.count}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          <section aria-labelledby="lifetime-heading" className="bg-card border border-border rounded-lg p-6">
-            <h2 id="lifetime-heading" className="text-lg font-semibold text-foreground mb-4">
-              All time
-            </h2>
-            <ul className="space-y-3 text-sm">
-              <OpRow label="Paid revenue" value={data ? money(data.lifetime.revenue) : '—'} />
-              <OpRow label="Orders" value={data ? count(data.lifetime.orders) : '—'} />
-              <OpRow label="Quote requests" value={data ? count(data.lifetime.quotes) : '—'} />
-            </ul>
-          </section>
-
-          <section aria-labelledby="recent-heading" className="bg-card border border-border rounded-lg p-6 lg:col-span-2">
-            <div className="mb-4 flex items-center justify-between">
-              <h2 id="recent-heading" className="text-lg font-semibold text-foreground">
-                Recent orders
-              </h2>
-              <Link href="/admin/orders" className="text-sm text-primary hover:underline">
-                All orders
-              </Link>
-            </div>
-            {data && data.recentOrders.length === 0 && (
-              <p className="text-sm text-muted-foreground">No orders yet.</p>
-            )}
-            <div className="divide-y divide-border">
-              {data?.recentOrders.map((o) => (
-                <Link
-                  key={o.id}
-                  href={`/admin/orders?q=${encodeURIComponent(o.orderNumber)}`}
-                  className="grid grid-cols-2 gap-x-3 py-3 text-sm hover:bg-muted/40 sm:grid-cols-4"
-                >
-                  <span className="font-mono text-foreground">{o.orderNumber}</span>
-                  <span className="truncate text-muted-foreground">{o.customerName || 'Guest'}</span>
-                  <span className="text-muted-foreground capitalize">{o.status.replace(/_/g, ' ')}</span>
-                  <span className="text-right font-semibold text-foreground">{money(o.amount)}</span>
-                </Link>
-              ))}
-              {!data && (
-                <p className="py-3 text-sm text-muted-foreground">Loading orders…</p>
-              )}
-            </div>
-          </section>
-        </div>
+      <div role="group" aria-label="Sales" className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <KpiCard
+          label="Paid revenue today"
+          value={data ? money(data.today.revenue) : '—'}
+          detail={data ? `${plural(data.today.orders, 'order')} placed today` : undefined}
+          icon={DollarSign}
+        />
+        <KpiCard
+          label="Last 7 days"
+          value={data ? money(data.last7.revenue) : '—'}
+          detail={data ? `${plural(data.last7.orders, 'order')} · ${plural(data.last7.quotes, 'quote')}` : undefined}
+          icon={CalendarDays}
+        />
+        <KpiCard
+          label="Last 30 days"
+          value={data ? money(data.last30.revenue) : '—'}
+          detail={
+            data ? `Avg paid order ${data.last30.paidOrders ? money(data.last30.averageOrderValue) : '—'}` : undefined
+          }
+          icon={ShoppingCart}
+        />
+        <KpiCard
+          label="Awaiting payment"
+          value={data ? money(data.awaitingPayment.amount) : '—'}
+          detail={data ? `${plural(data.awaitingPayment.orders, 'confirmed order')} not yet paid` : undefined}
+          href="/admin/orders?status=confirmed"
+          icon={Hourglass}
+        />
       </div>
-    </main>
+
+      <div role="group" aria-label="Follow-up" className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <KpiCard
+          label="Quotes to call"
+          value={data ? count(data.actions.newQuotes) : '—'}
+          detail={data ? `${count(data.actions.openQuotes)} open · ${count(data.today.quotes)} new today` : undefined}
+          href="/admin/quotes?status=new"
+          icon={ClipboardList}
+        />
+        <KpiCard
+          label="Orders to confirm"
+          value={data ? count(data.actions.pendingOrders + data.actions.reservedOrders) : '—'}
+          detail={
+            data ? `${count(data.actions.pendingOrders)} pending · ${count(data.actions.reservedOrders)} reserved` : undefined
+          }
+          href="/admin/orders?status=pending"
+          icon={ShoppingCart}
+        />
+        <KpiCard
+          label="Quote win rate (30 days)"
+          value={
+            data ? (data.last30.quoteWinRate === null ? '—' : `${Math.round(data.last30.quoteWinRate * 100)}%`) : '—'
+          }
+          detail="Won ÷ (won + lost)"
+          icon={Trophy}
+        />
+        <KpiCard
+          label="Products in Google feed"
+          value={data?.feed.eligible != null ? count(data.feed.eligible) : '—'}
+          detail={
+            data
+              ? data.feed.lastGoogleFetch
+                ? `Google fetched ${when(data.feed.lastGoogleFetch)}`
+                : 'Google has not fetched the feed yet'
+              : undefined
+          }
+          href="/admin/merchant"
+          icon={ShoppingBag}
+        />
+      </div>
+
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+        <section aria-labelledby="trend-heading" className="rounded-lg border border-border bg-card p-5 lg:col-span-2">
+          <h2 id="trend-heading" className="mb-4 text-lg font-semibold text-foreground">
+            Last 14 days
+          </h2>
+          {data ? <DailyChart daily={data.daily} /> : <p className="text-sm text-muted-foreground">Loading…</p>}
+        </section>
+
+        <section aria-labelledby="makes-heading" className="rounded-lg border border-border bg-card p-5">
+          <h2 id="makes-heading" className="text-lg font-semibold text-foreground">
+            Most requested makes
+          </h2>
+          <p className="mb-4 text-xs text-muted-foreground">Quote requests, last 30 days</p>
+          {data && data.topMakes.length === 0 && <p className="text-sm text-muted-foreground">No quote requests yet.</p>}
+          <ul className="space-y-2 text-sm">
+            {data?.topMakes.map((m) => (
+              <li key={m.make} className="flex items-center gap-3">
+                <span className="w-24 shrink-0 truncate text-foreground">{m.make}</span>
+                <span className="h-2 flex-1 rounded-full bg-muted" aria-hidden="true">
+                  <span
+                    className="block h-2 rounded-full bg-primary"
+                    style={{ width: `${(m.count / data.topMakes[0].count) * 100}%` }}
+                  />
+                </span>
+                <span className="w-8 text-right font-semibold tabular-nums text-foreground">{m.count}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
+
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <ListCard title="Recent orders" href="/admin/orders" linkLabel="All orders" empty="No orders yet." loading={!data}>
+          {data?.recentOrders.map((o) => (
+            <Link
+              key={o.id}
+              href={`/admin/orders?q=${encodeURIComponent(o.orderNumber)}`}
+              className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 py-3 text-sm hover:bg-muted/40"
+            >
+              <span className="min-w-0">
+                <span className="block font-mono text-foreground">{o.orderNumber}</span>
+                <span className="block truncate text-xs text-muted-foreground">
+                  {o.customerName || 'Guest'} · {when(o.createdAt)}
+                </span>
+              </span>
+              <span className="flex items-center gap-3">
+                <StatusBadge status={o.status} />
+                <span className="font-semibold tabular-nums text-foreground">{money(o.amount)}</span>
+              </span>
+            </Link>
+          ))}
+        </ListCard>
+
+        <ListCard
+          title="Recent quote requests"
+          href="/admin/quotes"
+          linkLabel="All quotes"
+          empty="No quote requests yet."
+          loading={!data}
+        >
+          {data?.recentQuotes.map((q) => (
+            <Link
+              key={q.id}
+              href={`/admin/quotes?q=${encodeURIComponent(q.name)}`}
+              className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 py-3 text-sm hover:bg-muted/40"
+            >
+              <span className="min-w-0">
+                <span className="block truncate text-foreground">
+                  {q.vehicle || 'Vehicle not given'} <span className="capitalize text-muted-foreground">{q.partType}</span>
+                </span>
+                <span className="block truncate text-xs text-muted-foreground">
+                  {q.name} · {when(q.createdAt)}
+                </span>
+              </span>
+              <StatusBadge status={q.status} />
+            </Link>
+          ))}
+        </ListCard>
+      </div>
+
+      <section aria-labelledby="lifetime-heading" className="rounded-lg border border-border bg-card p-5">
+        <h2 id="lifetime-heading" className="mb-3 text-lg font-semibold text-foreground">
+          All time
+        </h2>
+        <dl className="grid grid-cols-1 gap-3 text-sm sm:grid-cols-3">
+          <Stat label="Paid revenue" value={data ? money(data.lifetime.revenue) : '—'} />
+          <Stat label="Orders" value={data ? count(data.lifetime.orders) : '—'} />
+          <Stat label="Quote requests" value={data ? count(data.lifetime.quotes) : '—'} />
+        </dl>
+      </section>
+    </div>
   )
 }
 
 function DailyChart({ daily }: { daily: KpiResponse['daily'] }) {
+  if (daily.length === 0) return <p className="text-sm text-muted-foreground">No data for the chart.</p>
   const maxRevenue = Math.max(...daily.map((d) => d.revenue), 1)
   const maxQuotes = Math.max(...daily.map((d) => d.quotes), 1)
   const label = (day: string) =>
@@ -392,38 +402,73 @@ function KpiCard({
   value,
   detail,
   href,
-  icon,
+  icon: Icon,
 }: {
   label: string
   value: string
   detail?: string
   href?: string
-  icon: React.ReactNode
+  icon: React.ComponentType<{ className?: string; 'aria-hidden'?: boolean }>
 }) {
   const body = (
     <>
-      <div className="flex items-center justify-between mb-2">
+      <div className="mb-2 flex items-center justify-between">
         <p className="text-sm font-medium text-muted-foreground">{label}</p>
-        {icon}
+        <Icon className="h-5 w-5 text-primary" aria-hidden />
       </div>
       <p className="text-2xl font-bold text-foreground">{value}</p>
       {detail && <p className="mt-1 text-xs text-muted-foreground">{detail}</p>}
     </>
   )
   return href ? (
-    <Link href={href} className="block bg-card border border-border rounded-lg p-6 transition-colors hover:border-primary">
+    <Link href={href} className="block rounded-lg border border-border bg-card p-5 transition-colors hover:border-primary">
       {body}
     </Link>
   ) : (
-    <div className="bg-card border border-border rounded-lg p-6">{body}</div>
+    <div className="rounded-lg border border-border bg-card p-5">{body}</div>
   )
 }
 
-function OpRow({ label, value }: { label: string; value: string }) {
+function ListCard({
+  title,
+  href,
+  linkLabel,
+  empty,
+  loading,
+  children,
+}: {
+  title: string
+  href: string
+  linkLabel: string
+  empty: string
+  loading: boolean
+  children?: React.ReactNode[]
+}) {
+  const hasRows = Array.isArray(children) && children.length > 0
   return (
-    <li className="flex items-center justify-between">
-      <span className="text-muted-foreground">{label}</span>
-      <span className="font-semibold text-foreground">{value}</span>
-    </li>
+    <section className="rounded-lg border border-border bg-card p-5">
+      <div className="mb-2 flex items-center justify-between">
+        <h2 className="text-lg font-semibold text-foreground">{title}</h2>
+        <Link href={href} className="text-sm text-primary hover:underline">
+          {linkLabel}
+        </Link>
+      </div>
+      {loading ? (
+        <p className="py-3 text-sm text-muted-foreground">Loading…</p>
+      ) : hasRows ? (
+        <div className="divide-y divide-border">{children}</div>
+      ) : (
+        <p className="py-3 text-sm text-muted-foreground">{empty}</p>
+      )}
+    </section>
+  )
+}
+
+function Stat({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex items-center justify-between rounded-md bg-muted/40 px-3 py-2 sm:flex-col sm:items-start">
+      <dt className="text-muted-foreground">{label}</dt>
+      <dd className="font-semibold text-foreground">{value}</dd>
+    </div>
   )
 }

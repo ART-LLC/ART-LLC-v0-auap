@@ -268,28 +268,38 @@ export async function listUnconfirmedStripeSessions(olderThanMinutes: number, wi
   return rows.map((r) => String(r.stripe_session_id))
 }
 
-export async function listQuoteLeads(status?: string, search?: string): Promise<QuoteLead[]> {
+export async function listQuoteLeads(status?: string, search?: string, limit = 300): Promise<QuoteLead[]> {
   const { rows } = await pool.query(
     `SELECT * FROM public.leads
      WHERE ($1::text IS NULL OR status = $1)
        AND ($2::text IS NULL OR full_name ILIKE $2 OR phone ILIKE $2 OR email ILIKE $2 OR make ILIKE $2 OR model ILIKE $2)
      ORDER BY created_at DESC
-     LIMIT 300`,
-    [status || null, search ? `%${search}%` : null],
+     LIMIT $3`,
+    [status || null, search ? `%${search}%` : null, limit],
   )
   return rows.map(mapLead)
 }
 
-export async function listOrders(status?: string, search?: string): Promise<CustomerOrder[]> {
+export async function listOrders(status?: string, search?: string, limit = 300): Promise<CustomerOrder[]> {
   const { rows } = await pool.query(
     `SELECT * FROM public.orders
      WHERE ($1::text IS NULL OR status = $1)
        AND ($2::text IS NULL OR ordernumber ILIKE $2 OR customer_name ILIKE $2 OR customer_phone ILIKE $2 OR customer_email ILIKE $2)
      ORDER BY createdat DESC
-     LIMIT 300`,
-    [status || null, search ? `%${search}%` : null],
+     LIMIT $3`,
+    [status || null, search ? `%${search}%` : null, limit],
   )
   return rows.map(mapOrder)
+}
+
+export async function getOrderById(id: string): Promise<CustomerOrder | null> {
+  const { rows } = await pool.query(`SELECT * FROM public.orders WHERE id = $1`, [id])
+  return rows[0] ? mapOrder(rows[0]) : null
+}
+
+export async function getQuoteLeadById(id: number): Promise<QuoteLead | null> {
+  const { rows } = await pool.query(`SELECT * FROM public.leads WHERE id = $1`, [id])
+  return rows[0] ? mapLead(rows[0]) : null
 }
 
 export async function countByStatus(table: "leads" | "orders"): Promise<Record<string, number>> {

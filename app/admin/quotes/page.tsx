@@ -2,6 +2,7 @@ import { redirect } from "next/navigation"
 import { getAdminSession } from "@/lib/admin-auth"
 import { QUOTE_STATUSES, countByStatus, listQuoteLeads } from "@/lib/followup"
 import { FollowupFilters } from "@/components/admin/followup-filters"
+import { ExportLink } from "@/components/admin/export-link"
 import { QuoteLeadCard } from "@/components/admin/quote-lead-card"
 
 export const dynamic = "force-dynamic"
@@ -21,11 +22,14 @@ export default async function AdminQuotesPage({
 
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-6">
-      <header>
-        <h1 className="text-2xl font-bold text-foreground">Quote Requests</h1>
-        <p className="text-sm text-muted-foreground">
-          Every quote submitted on the website. Call the customer, then update the status and notes.
-        </p>
+      <header className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h1 className="text-2xl font-bold text-foreground">Quote Requests</h1>
+          <p className="text-sm text-muted-foreground">
+            Every quote submitted on the website. Call the customer, then update the status and notes.
+          </p>
+        </div>
+        <ExportLink kind="quotes" status={status} query={query} />
       </header>
 
       <FollowupFilters

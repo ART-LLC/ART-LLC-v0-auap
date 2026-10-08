@@ -2,6 +2,7 @@ import { redirect } from "next/navigation"
 import { getAdminSession } from "@/lib/admin-auth"
 import { ORDER_STATUSES, countByStatus, listOrders } from "@/lib/followup"
 import { FollowupFilters } from "@/components/admin/followup-filters"
+import { ExportLink } from "@/components/admin/export-link"
 import { OrderCard } from "@/components/admin/order-card"
 
 export const dynamic = "force-dynamic"
@@ -21,12 +22,15 @@ export default async function AdminOrdersPage({
 
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-6">
-      <header>
-        <h1 className="text-2xl font-bold text-foreground">Orders</h1>
-        <p className="text-sm text-muted-foreground">
-          Orders placed at checkout. No card is collected online — call to confirm fitment and take payment, then
-          update the status.
-        </p>
+      <header className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h1 className="text-2xl font-bold text-foreground">Orders</h1>
+          <p className="text-sm text-muted-foreground">
+            Orders from checkout. Card orders arrive paid; phone and reservation orders wait for your call. Update the
+            status as you go and tick “Email the customer” to send them the update.
+          </p>
+        </div>
+        <ExportLink kind="orders" status={status} query={query} />
       </header>
 
       <FollowupFilters
