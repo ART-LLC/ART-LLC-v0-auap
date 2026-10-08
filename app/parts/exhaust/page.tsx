@@ -18,16 +18,16 @@ import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 const EXHAUST_PARTS = [
-  { id: 'catalytic-converter', name: 'Catalytic Converter', description: 'OEM catalytic converter assembly', avgPrice: 599 },
-  { id: 'muffler', name: 'Muffler', description: 'Complete muffler assembly', avgPrice: 199 },
-  { id: 'exhaust-manifold', name: 'Exhaust Manifold', description: 'Cast iron exhaust manifold', avgPrice: 249 },
-  { id: 'exhaust-pipe', name: 'Exhaust Pipe', description: 'Complete exhaust pipe section', avgPrice: 149 },
-  { id: 'resonator', name: 'Resonator', description: 'Exhaust resonator assembly', avgPrice: 129 },
-  { id: 'oxygen-sensor', name: 'Oxygen Sensor', description: 'O2 sensor for exhaust system', avgPrice: 79 },
-  { id: 'heat-shield', name: 'Heat Shield', description: 'Exhaust heat shield cover', avgPrice: 59 },
-  { id: 'hangers-clamps', name: 'Hangers & Clamps', description: 'Exhaust hangers and brackets', avgPrice: 49 },
-  { id: 'dp-kit', name: 'Downpipe Kit', description: 'Complete downpipe assembly', avgPrice: 349 },
-  { id: 'y-pipe', name: 'Y-Pipe', description: 'Exhaust Y-pipe merge section', avgPrice: 199 },
+  { id: 'catalytic-converter', name: 'Catalytic Converter', description: 'OEM catalytic converter assembly' },
+  { id: 'muffler', name: 'Muffler', description: 'Complete muffler assembly' },
+  { id: 'exhaust-manifold', name: 'Exhaust Manifold', description: 'Cast iron exhaust manifold' },
+  { id: 'exhaust-pipe', name: 'Exhaust Pipe', description: 'Complete exhaust pipe section' },
+  { id: 'resonator', name: 'Resonator', description: 'Exhaust resonator assembly' },
+  { id: 'oxygen-sensor', name: 'Oxygen Sensor', description: 'O2 sensor for exhaust system' },
+  { id: 'heat-shield', name: 'Heat Shield', description: 'Exhaust heat shield cover' },
+  { id: 'hangers-clamps', name: 'Hangers & Clamps', description: 'Exhaust hangers and brackets' },
+  { id: 'dp-kit', name: 'Downpipe Kit', description: 'Complete downpipe assembly' },
+  { id: 'y-pipe', name: 'Y-Pipe', description: 'Exhaust Y-pipe merge section' },
 ]
 
 export default function ExhaustProductPage() {
@@ -37,9 +37,7 @@ export default function ExhaustProductPage() {
 
   const filteredProducts = useMemo(() => {
     let filtered = EXHAUST_PARTS.filter(p => !searchTerm || p.name.toLowerCase().includes(searchTerm.toLowerCase()))
-    if (sortBy === 'price-low') filtered.sort((a, b) => a.avgPrice - b.avgPrice)
-    else if (sortBy === 'price-high') filtered.sort((a, b) => b.avgPrice - a.avgPrice)
-    else if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
+    if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
     return filtered
   }, [searchTerm, sortBy])
 
@@ -61,8 +59,6 @@ export default function ExhaustProductPage() {
                   <SelectTrigger><SelectValue placeholder="Sort" /></SelectTrigger>
                   <SelectContent>
                     <SelectItem value="relevance">Relevance</SelectItem>
-                    <SelectItem value="price-low">Price: Low to High</SelectItem>
-                    <SelectItem value="price-high">Price: High to Low</SelectItem>
                     <SelectItem value="name">Name A-Z</SelectItem>
                   </SelectContent>
                 </Select>
@@ -90,10 +86,7 @@ export default function ExhaustProductPage() {
                       <CardDescription className="text-xs">{part.description}</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <div className="flex items-baseline justify-between">
-                        <span className="text-2xl font-bold text-primary">${part.avgPrice}</span>
-                        <span className="text-xs text-muted-foreground">avg price</span>
-                      </div>
+                      <p className="text-sm text-muted-foreground">Price by quote</p>
                       <Button className="w-full auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=exhaust`}>Get Quote</Link></Button>
                     </CardContent>
                   </Card>
@@ -110,10 +103,7 @@ export default function ExhaustProductPage() {
                           <h3 className="font-semibold text-foreground">{part.name}</h3>
                           <p className="text-sm text-muted-foreground">{part.description}</p>
                         </div>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xl font-bold text-primary">${part.avgPrice}</span>
-                          <Badge>In Stock</Badge>
-                        </div>
+                        <p className="text-sm text-muted-foreground">Price by quote</p>
                       </div>
                       <Button className="auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=exhaust`}>Get Quote</Link></Button>
                     </div>

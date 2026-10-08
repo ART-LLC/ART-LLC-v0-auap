@@ -21,7 +21,7 @@ export function CTASection() {
         </p>
         <div className="flex flex-wrap gap-4 justify-center items-center">
           <Link 
-            href="/search" 
+            href="/ai-search" 
             className="auapw-btn auapw-btn-blue"
           >
             <Search className="w-4 h-4" />

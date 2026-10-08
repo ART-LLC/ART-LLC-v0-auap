@@ -18,16 +18,16 @@ import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 const ELECTRICAL_PARTS = [
-  { id: 'alternator', name: 'Alternator', description: 'OEM alternator assembly', avgPrice: 199 },
-  { id: 'starter', name: 'Starter Motor', description: 'Complete starter motor', avgPrice: 249 },
-  { id: 'ecu-pcm', name: 'ECU / PCM Module', description: 'Engine Control Unit', avgPrice: 399 },
-  { id: 'abs-module', name: 'ABS Control Module', description: 'Anti-lock braking control module', avgPrice: 349 },
-  { id: 'bcm', name: 'Body Control Module', description: 'Vehicle body control module', avgPrice: 299 },
-  { id: 'ignition-coil', name: 'Ignition Coil', description: 'Ignition coil pack', avgPrice: 89 },
-  { id: 'maf-sensor', name: 'Mass Air Flow Sensor', description: 'MAF sensor assembly', avgPrice: 149 },
-  { id: 'oxygen-sensor', name: 'Oxygen Sensor', description: 'O2 sensor for exhaust', avgPrice: 79 },
-  { id: 'wiper-motor', name: 'Wiper Motor', description: 'Front windshield wiper motor', avgPrice: 119 },
-  { id: 'instrument-cluster', name: 'Instrument Cluster', description: 'Digital or analog instrument panel', avgPrice: 249 },
+  { id: 'alternator', name: 'Alternator', description: 'OEM alternator assembly' },
+  { id: 'starter', name: 'Starter Motor', description: 'Complete starter motor' },
+  { id: 'ecu-pcm', name: 'ECU / PCM Module', description: 'Engine Control Unit' },
+  { id: 'abs-module', name: 'ABS Control Module', description: 'Anti-lock braking control module' },
+  { id: 'bcm', name: 'Body Control Module', description: 'Vehicle body control module' },
+  { id: 'ignition-coil', name: 'Ignition Coil', description: 'Ignition coil pack' },
+  { id: 'maf-sensor', name: 'Mass Air Flow Sensor', description: 'MAF sensor assembly' },
+  { id: 'oxygen-sensor', name: 'Oxygen Sensor', description: 'O2 sensor for exhaust' },
+  { id: 'wiper-motor', name: 'Wiper Motor', description: 'Front windshield wiper motor' },
+  { id: 'instrument-cluster', name: 'Instrument Cluster', description: 'Digital or analog instrument panel' },
 ]
 
 export default function ElectricalProductPage() {
@@ -40,9 +40,7 @@ export default function ElectricalProductPage() {
       !searchTerm || p.name.toLowerCase().includes(searchTerm.toLowerCase()) || p.description.toLowerCase().includes(searchTerm.toLowerCase())
     )
 
-    if (sortBy === 'price-low') filtered.sort((a, b) => a.avgPrice - b.avgPrice)
-    else if (sortBy === 'price-high') filtered.sort((a, b) => b.avgPrice - a.avgPrice)
-    else if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
+    if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
 
     return filtered
   }, [searchTerm, sortBy])
@@ -71,8 +69,6 @@ export default function ElectricalProductPage() {
                   <SelectTrigger><SelectValue placeholder="Sort" /></SelectTrigger>
                   <SelectContent>
                     <SelectItem value="relevance">Relevance</SelectItem>
-                    <SelectItem value="price-low">Price: Low to High</SelectItem>
-                    <SelectItem value="price-high">Price: High to Low</SelectItem>
                     <SelectItem value="name">Name A-Z</SelectItem>
                   </SelectContent>
                 </Select>
@@ -104,10 +100,7 @@ export default function ElectricalProductPage() {
                       <CardDescription className="text-xs">{part.description}</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <div className="flex items-baseline justify-between">
-                        <span className="text-2xl font-bold text-primary">${part.avgPrice}</span>
-                        <span className="text-xs text-muted-foreground">avg price</span>
-                      </div>
+                      <p className="text-sm text-muted-foreground">Price by quote</p>
                       <Button className="w-full auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=electrical`}>Get Quote</Link></Button>
                     </CardContent>
                   </Card>
@@ -124,10 +117,7 @@ export default function ElectricalProductPage() {
                           <h3 className="font-semibold text-foreground">{part.name}</h3>
                           <p className="text-sm text-muted-foreground">{part.description}</p>
                         </div>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xl font-bold text-primary">${part.avgPrice}</span>
-                          <Badge>In Stock</Badge>
-                        </div>
+                        <p className="text-sm text-muted-foreground">Price by quote</p>
                       </div>
                       <Button className="auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=electrical`}>Get Quote</Link></Button>
                     </div>

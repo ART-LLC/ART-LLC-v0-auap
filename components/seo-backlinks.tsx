@@ -16,7 +16,7 @@ const CORE_LINKS = [
   { href: '/used-transmissions', label: 'Quality Used Transmissions' },
   { href: '/used-drivetrain-parts', label: 'Used Drivetrain Parts' },
   { href: '/used-electrical-parts', label: 'Used Electrical Parts' },
-  { href: '/shop', label: 'Shop All Used Auto Parts' },
+  { href: '/brands', label: 'Shop All Used Auto Parts' },
 ]
 
 export function SeoBacklinks({

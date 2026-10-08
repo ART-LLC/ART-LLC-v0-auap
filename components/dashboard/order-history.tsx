@@ -11,7 +11,7 @@ export function OrderHistory({ orders }: { orders: any[] }) {
       <div className="rounded-lg border border-border bg-card p-8 text-center">
         <p className="text-foreground/70">No orders yet</p>
         <Button asChild className="mt-4">
-          <Link href="/shop">Start Shopping</Link>
+          <Link href="/brands">Start Shopping</Link>
         </Button>
       </div>
     )

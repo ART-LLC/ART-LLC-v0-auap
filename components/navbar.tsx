@@ -57,7 +57,6 @@ export function Navbar() {
 
   const navItems = [
   { label: "Home", href: "/", icon: Home },
-  { label: "Shop", href: "/shop" },
   { label: "Car Brands", href: "/brands" },
   { label: "Used Parts", href: "/parts" },
   { label: "Engines", href: "/used-engines" },
@@ -72,12 +71,11 @@ export function Navbar() {
     { label: "Used Transmissions", href: "/used-transmissions" },
     { label: "All Makes", href: "/makes" },
     { label: "Inventory", href: "/inventory" },
-    { label: "Search", href: "/search" },
+    { label: "Search", href: "/ai-search" },
     { label: "Get a Quote", href: "/quote" },
     { label: "Contact", href: "/contact" },
     { label: "Blog", href: "/blog" },
     { label: "Cart", href: "/cart" },
-    { label: "Compare Parts", href: "/comparison" },
   ]
 
   const partsCategories = [

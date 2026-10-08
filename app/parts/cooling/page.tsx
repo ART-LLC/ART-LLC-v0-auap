@@ -18,16 +18,16 @@ import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 const COOLING_PARTS = [
-  { id: 'radiator', name: 'Radiator', description: 'Complete radiator assembly', avgPrice: 249 },
-  { id: 'ac-compressor', name: 'AC Compressor', description: 'Air conditioning compressor', avgPrice: 399 },
-  { id: 'ac-condenser', name: 'AC Condenser', description: 'A/C condenser unit', avgPrice: 349 },
-  { id: 'water-pump', name: 'Water Pump', description: 'Engine water pump assembly', avgPrice: 149 },
-  { id: 'heater-core', name: 'Heater Core', description: 'Interior heater core', avgPrice: 199 },
-  { id: 'blower-motor', name: 'Blower Motor', description: 'HVAC blower motor', avgPrice: 119 },
-  { id: 'fan-blade', name: 'Fan Blade', description: 'Engine cooling fan assembly', avgPrice: 99 },
-  { id: 'thermostat', name: 'Thermostat Housing', description: 'Engine thermostat assembly', avgPrice: 79 },
-  { id: 'intercooler', name: 'Intercooler', description: 'Turbo intercooler assembly', avgPrice: 299 },
-  { id: 'supercharger', name: 'Supercharger', description: 'Complete supercharger assembly', avgPrice: 1299 },
+  { id: 'radiator', name: 'Radiator', description: 'Complete radiator assembly' },
+  { id: 'ac-compressor', name: 'AC Compressor', description: 'Air conditioning compressor' },
+  { id: 'ac-condenser', name: 'AC Condenser', description: 'A/C condenser unit' },
+  { id: 'water-pump', name: 'Water Pump', description: 'Engine water pump assembly' },
+  { id: 'heater-core', name: 'Heater Core', description: 'Interior heater core' },
+  { id: 'blower-motor', name: 'Blower Motor', description: 'HVAC blower motor' },
+  { id: 'fan-blade', name: 'Fan Blade', description: 'Engine cooling fan assembly' },
+  { id: 'thermostat', name: 'Thermostat Housing', description: 'Engine thermostat assembly' },
+  { id: 'intercooler', name: 'Intercooler', description: 'Turbo intercooler assembly' },
+  { id: 'supercharger', name: 'Supercharger', description: 'Complete supercharger assembly' },
 ]
 
 export default function CoolingProductPage() {
@@ -37,9 +37,7 @@ export default function CoolingProductPage() {
 
   const filteredProducts = useMemo(() => {
     let filtered = COOLING_PARTS.filter(p => !searchTerm || p.name.toLowerCase().includes(searchTerm.toLowerCase()))
-    if (sortBy === 'price-low') filtered.sort((a, b) => a.avgPrice - b.avgPrice)
-    else if (sortBy === 'price-high') filtered.sort((a, b) => b.avgPrice - a.avgPrice)
-    else if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
+    if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
     return filtered
   }, [searchTerm, sortBy])
 
@@ -61,8 +59,6 @@ export default function CoolingProductPage() {
                   <SelectTrigger><SelectValue placeholder="Sort" /></SelectTrigger>
                   <SelectContent>
                     <SelectItem value="relevance">Relevance</SelectItem>
-                    <SelectItem value="price-low">Price: Low to High</SelectItem>
-                    <SelectItem value="price-high">Price: High to Low</SelectItem>
                     <SelectItem value="name">Name A-Z</SelectItem>
                   </SelectContent>
                 </Select>
@@ -90,10 +86,7 @@ export default function CoolingProductPage() {
                       <CardDescription className="text-xs">{part.description}</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <div className="flex items-baseline justify-between">
-                        <span className="text-2xl font-bold text-primary">${part.avgPrice}</span>
-                        <span className="text-xs text-muted-foreground">avg price</span>
-                      </div>
+                      <p className="text-sm text-muted-foreground">Price by quote</p>
                       <Button className="w-full auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=cooling`}>Get Quote</Link></Button>
                     </CardContent>
                   </Card>
@@ -110,10 +103,7 @@ export default function CoolingProductPage() {
                           <h3 className="font-semibold text-foreground">{part.name}</h3>
                           <p className="text-sm text-muted-foreground">{part.description}</p>
                         </div>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xl font-bold text-primary">${part.avgPrice}</span>
-                          <Badge>In Stock</Badge>
-                        </div>
+                        <p className="text-sm text-muted-foreground">Price by quote</p>
                       </div>
                       <Button className="auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=cooling`}>Get Quote</Link></Button>
                     </div>

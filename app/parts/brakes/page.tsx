@@ -18,16 +18,16 @@ import { ShippingInfo } from '@/components/products/shipping-info'
 import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 const BRAKES_PARTS = [
-  { id: 'brake-caliper', name: 'Brake Caliper', description: 'Front or rear brake caliper', avgPrice: 149 },
-  { id: 'brake-rotor', name: 'Brake Rotor', description: 'OEM brake rotor disc', avgPrice: 129 },
-  { id: 'brake-pads', name: 'Brake Pad Set', description: 'Complete brake pad set', avgPrice: 89 },
-  { id: 'master-cylinder', name: 'Master Cylinder', description: 'Brake master cylinder assembly', avgPrice: 199 },
-  { id: 'booster', name: 'Power Brake Booster', description: 'Brake booster pump', avgPrice: 249 },
-  { id: 'abs-pump', name: 'ABS Pump', description: 'Anti-lock braking system pump', avgPrice: 399 },
-  { id: 'brake-line', name: 'Brake Line Assembly', description: 'Complete brake line set', avgPrice: 149 },
-  { id: 'proportioning', name: 'Proportioning Valve', description: 'Brake proportioning valve', avgPrice: 99 },
-  { id: 'wheel-cylinder', name: 'Wheel Cylinder', description: 'Drum brake wheel cylinder', avgPrice: 79 },
-  { id: 'brake-fluid-reservoir', name: 'Brake Fluid Reservoir', description: 'Brake fluid container assembly', avgPrice: 59 },
+  { id: 'brake-caliper', name: 'Brake Caliper', description: 'Front or rear brake caliper' },
+  { id: 'brake-rotor', name: 'Brake Rotor', description: 'OEM brake rotor disc' },
+  { id: 'brake-pads', name: 'Brake Pad Set', description: 'Complete brake pad set' },
+  { id: 'master-cylinder', name: 'Master Cylinder', description: 'Brake master cylinder assembly' },
+  { id: 'booster', name: 'Power Brake Booster', description: 'Brake booster pump' },
+  { id: 'abs-pump', name: 'ABS Pump', description: 'Anti-lock braking system pump' },
+  { id: 'brake-line', name: 'Brake Line Assembly', description: 'Complete brake line set' },
+  { id: 'proportioning', name: 'Proportioning Valve', description: 'Brake proportioning valve' },
+  { id: 'wheel-cylinder', name: 'Wheel Cylinder', description: 'Drum brake wheel cylinder' },
+  { id: 'brake-fluid-reservoir', name: 'Brake Fluid Reservoir', description: 'Brake fluid container assembly' },
 ]
 
 export default function BrakesProductPage() {
@@ -37,9 +37,7 @@ export default function BrakesProductPage() {
 
   const filteredProducts = useMemo(() => {
     let filtered = BRAKES_PARTS.filter(p => !searchTerm || p.name.toLowerCase().includes(searchTerm.toLowerCase()))
-    if (sortBy === 'price-low') filtered.sort((a, b) => a.avgPrice - b.avgPrice)
-    else if (sortBy === 'price-high') filtered.sort((a, b) => b.avgPrice - a.avgPrice)
-    else if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
+    if (sortBy === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name))
     return filtered
   }, [searchTerm, sortBy])
 
@@ -61,8 +59,6 @@ export default function BrakesProductPage() {
                   <SelectTrigger><SelectValue placeholder="Sort" /></SelectTrigger>
                   <SelectContent>
                     <SelectItem value="relevance">Relevance</SelectItem>
-                    <SelectItem value="price-low">Price: Low to High</SelectItem>
-                    <SelectItem value="price-high">Price: High to Low</SelectItem>
                     <SelectItem value="name">Name A-Z</SelectItem>
                   </SelectContent>
                 </Select>
@@ -90,10 +86,7 @@ export default function BrakesProductPage() {
                       <CardDescription className="text-xs">{part.description}</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <div className="flex items-baseline justify-between">
-                        <span className="text-2xl font-bold text-primary">${part.avgPrice}</span>
-                        <span className="text-xs text-muted-foreground">avg price</span>
-                      </div>
+                      <p className="text-sm text-muted-foreground">Price by quote</p>
                       <Button className="w-full auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=brakes`}>Get Quote</Link></Button>
                     </CardContent>
                   </Card>
@@ -110,10 +103,7 @@ export default function BrakesProductPage() {
                           <h3 className="font-semibold text-foreground">{part.name}</h3>
                           <p className="text-sm text-muted-foreground">{part.description}</p>
                         </div>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xl font-bold text-primary">${part.avgPrice}</span>
-                          <Badge>In Stock</Badge>
-                        </div>
+                        <p className="text-sm text-muted-foreground">Price by quote</p>
                       </div>
                       <Button className="auapw-btn auapw-btn-blue" asChild><Link href={`/quote?part=${part.id}&type=brakes`}>Get Quote</Link></Button>
                     </div>
