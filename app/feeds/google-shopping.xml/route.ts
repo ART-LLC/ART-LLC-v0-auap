@@ -51,6 +51,20 @@ function xml(value: string): string {
     .replace(/'/g, "&apos;")
 }
 
+// Google's fetchers accept gzip. The full feed is ~108 MB of XML but ~3 MB
+// gzipped, so compressing it here keeps the download small and fast and well
+// under any platform limit on how much a function may send.
+function acceptsGzip(request: Request): boolean {
+  return (request.headers.get("accept-encoding") ?? "")
+    .split(",")
+    .some((part) => {
+      const [coding, ...params] = part.trim().toLowerCase().split(";")
+      if (coding.trim() !== "gzip") return false
+      const q = params.map((p) => p.trim()).find((p) => p.startsWith("q="))
+      return !q || Number.parseFloat(q.slice(2)) > 0
+    })
+}
+
 export async function GET(request: Request) {
   const url = new URL(request.url)
   const brandFilter = url.searchParams.get("brand")
@@ -131,9 +145,12 @@ export async function GET(request: Request) {
     },
   })
 
-  return new Response(stream, {
+  const gzip = acceptsGzip(request)
+  return new Response(gzip ? stream.pipeThrough(new CompressionStream("gzip")) : stream, {
     headers: {
       "Content-Type": "application/xml; charset=utf-8",
+      ...(gzip ? { "Content-Encoding": "gzip" } : {}),
+      Vary: "Accept-Encoding",
       "Cache-Control": "no-store",
       "X-Robots-Tag": "noindex",
     },
