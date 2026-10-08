@@ -1,6 +1,7 @@
 'use client'
 
 import { useCartStore } from '@/lib/stores/cart-store'
+import { SHIPPING, RESERVE_SHIPPING } from '@/lib/site-policy'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Trash2, Plus, Minus, ShoppingBag } from 'lucide-react'
@@ -15,11 +16,15 @@ export default function CartPage() {
   const updateQuantity = useCartStore((state) => state.updateQuantity)
   const getTotalPrice = useCartStore((state) => state.getTotalPrice)
   const clearCart = useCartStore((state) => state.clearCart)
+  const deliveryMethod = useCartStore((state) => state.deliveryMethod)
   const [promoCode, setPromoCode] = useState('')
 
-  const totalPrice = getTotalPrice()
-  const shipping = items.reduce((total, item) => total + (item.shippingCost ?? 0) * item.quantity, 0)
-  const tax = totalPrice * 0.08
+  const isReservationCart = items.length > 0 && items.every((item) => item.isReservation)
+  const totalPrice = isReservationCart ? 0 : getTotalPrice()
+  const shipping = isReservationCart
+    ? RESERVE_SHIPPING[deliveryMethod].price
+    : items.reduce((total, item) => total + SHIPPING.price * item.quantity, 0)
+  const tax = isReservationCart ? 0 : totalPrice * 0.08
   const finalTotal = totalPrice + tax + shipping
 
   return (
@@ -58,7 +63,13 @@ export default function CartPage() {
                     <div className="flex-1 min-w-0">
                       <h3 className="font-semibold text-base sm:text-lg truncate">{item.name}</h3>
                       {item.make && <p className="text-xs sm:text-sm text-foreground/60">{item.make}</p>}
-                      <p className="text-base sm:text-lg font-bold text-blue-400 mt-2">${item.price.toFixed(2)}</p>
+                      {item.isReservation ? (
+                        <p className="text-sm font-semibold text-foreground/60 italic mt-2">
+                          Reserved — price confirmed by phone
+                        </p>
+                      ) : (
+                        <p className="text-base sm:text-lg font-bold text-blue-400 mt-2">${item.price.toFixed(2)}</p>
+                      )}
                     </div>
                     <div className="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-start gap-3 mt-2 sm:mt-0">
                       <div className="flex items-center gap-2 bg-white/10 rounded px-2 py-1 order-1 sm:order-2">
@@ -96,18 +107,33 @@ export default function CartPage() {
                   <h2 className="text-lg sm:text-xl font-bold">Order Summary</h2>
                   
                   <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-foreground/60">Subtotal</span>
-                      <span>${totalPrice.toFixed(2)}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground/60">Shipping</span>
-                      <span className={shipping > 0 ? '' : 'text-green-400'}>${shipping.toFixed(2)}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground/60">Tax (8%)</span>
-                      <span>${tax.toFixed(2)}</span>
-                    </div>
+                    {isReservationCart ? (
+                      <>
+                        <div className="flex justify-between">
+                          <span className="text-foreground/60">Parts price</span>
+                          <span className="text-foreground/50 italic">Confirmed by phone</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-foreground/60">{RESERVE_SHIPPING[deliveryMethod].label}</span>
+                          <span className={shipping > 0 ? '' : 'text-green-400'}>${shipping.toFixed(2)}</span>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="flex justify-between">
+                          <span className="text-foreground/60">Subtotal</span>
+                          <span>${totalPrice.toFixed(2)}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-foreground/60">Shipping</span>
+                          <span className={shipping > 0 ? '' : 'text-green-400'}>${shipping.toFixed(2)}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-foreground/60">Tax (8%)</span>
+                          <span>${tax.toFixed(2)}</span>
+                        </div>
+                      </>
+                    )}
                   </div>
 
                   <div className="h-px bg-white/10" />
@@ -121,7 +147,7 @@ export default function CartPage() {
                       className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded text-sm placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
                     />
                     <div className="flex justify-between text-lg font-bold">
-                      <span>Total</span>
+                      <span>{isReservationCart ? 'Due Today' : 'Total'}</span>
                       <span className="text-blue-400">${finalTotal.toFixed(2)}</span>
                     </div>
                   </div>

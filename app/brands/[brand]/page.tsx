@@ -7,6 +7,7 @@ import { Footer } from '@/components/footer'
 import { Badge } from '@/components/ui/badge'
 import { SeoBacklinks } from '@/components/seo-backlinks'
 import { BrandProductImage } from '@/components/brands/brand-product-image'
+import { TrustBadges } from '@/components/products/trust-badges'
 import {
   BRAND_DIRECTORY,
   getBrandLabel,
@@ -24,6 +25,7 @@ import { BrandStorySection } from '@/components/brands/brand-story-section'
 import { BrandFeaturesSection } from '@/components/brands/brand-features-section'
 import { BrandMaterialTabs } from '@/components/brands/brand-material-tabs'
 import { MaterialType, filterPartsByMaterial, countPartsByMaterial } from '@/lib/material-mapper'
+import { primeManualOverlay } from '@/lib/manual-products'
 
 interface PageProps {
   params: Promise<{ brand: string }>
@@ -46,6 +48,7 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
   const { brand } = await params
   const sp = await searchParams
   if (!isValidBrand(brand)) notFound()
+  await primeManualOverlay(brand)
 
   const label = getBrandLabel(brand)
   const catalog = loadBrandCatalog(brand)
@@ -310,8 +313,15 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
                       <h2 className="text-sm font-bold text-foreground line-clamp-2 group-hover:text-primary transition-colors">
                         {product.name}
                       </h2>
+                      <TrustBadges
+                        productName={product.name}
+                        isVerifiedPhoto={!getProductDisplayImage(brand, product).illustrative}
+                        size="sm"
+                      />
                       <div className="mt-auto flex items-baseline justify-between gap-2">
-                        <span className="text-lg font-black text-primary">${product.price.toLocaleString()}</span>
+                        <span className="text-lg font-black text-primary">
+                          {product.price > 0 ? `$${product.price.toLocaleString()}` : 'Call for price'}
+                        </span>
                         {product.tiers && (
                           <span className="text-[11px] text-muted-foreground">
                             ${Math.min(product.tiers.high, product.tiers.low).toLocaleString()}–$

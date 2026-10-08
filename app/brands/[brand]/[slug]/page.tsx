@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SHIPPING as SHIPPING_POLICY } from '@/lib/site-policy'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/navbar'
@@ -11,6 +12,7 @@ import { PartsDetails } from '@/components/products/parts-details'
 import { PartsHistory } from '@/components/products/parts-history'
 import { SeoBacklinks } from '@/components/seo-backlinks'
 import { BrandPurchasePanel } from '@/components/brands/brand-purchase-panel'
+import { TrustBadges } from '@/components/products/trust-badges'
 import { BrandProductImage } from '@/components/brands/brand-product-image'
 import { BrandProductSearch } from '@/components/brands/brand-product-search'
 import {
@@ -23,15 +25,17 @@ import {
   isValidBrand,
   resolveBrandPartImage,
 } from '@/lib/brand-catalog'
+import { SCHEMA_AVAILABILITY, applyOverrideToProduct, getProductOverride } from '@/lib/merchant'
+import { primeManualOverlay } from '@/lib/manual-products'
 import { Star, ShieldCheck, Truck, BadgeCheck, ChevronRight, ImageIcon, ExternalLink } from 'lucide-react'
 
 interface PageProps {
   params: Promise<{ brand: string; slug: string }>
 }
 
-const SITE_URL = 'https://www.auapw.org'
+const SITE_URL = 'https://www.allusedautopartswarehouse.com'
 const WARRANTY = '90 Days'
-const SHIPPING = '$240'
+const SHIPPING = SHIPPING_POLICY.label
 
 function getImageSearchUrl(name: string): string {
   return `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(`${name} used OEM part`)}`
@@ -40,11 +44,15 @@ function getImageSearchUrl(name: string): string {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { brand, slug } = await params
   if (!isValidBrand(brand)) return {}
-  const product = getBrandProductBySlug(brand, slug)
-  if (!product) return {}
+  await primeManualOverlay(brand)
+  const sheetProduct = getBrandProductBySlug(brand, slug)
+  if (!sheetProduct) return {}
+  const override = await getProductOverride(brand, slug)
+  if (override?.hidden) return { robots: { index: false } }
+  const product = applyOverrideToProduct(sheetProduct, override)
   const label = getBrandLabel(brand)
   return {
-    title: `${product.name} | Used OEM ${label} Part — $${product.price.toLocaleString()}`,
+    title: `${product.name} | Used OEM ${label} Part${product.price > 0 ? ` — $${product.price.toLocaleString()}` : ''}`,
     description:
       product.description ||
       `Buy a tested used OEM ${product.name} with exact mileage-based pricing, ${WARRANTY} warranty, and nationwide shipping.`,
@@ -55,8 +63,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function BrandProductPage({ params }: PageProps) {
   const { brand, slug } = await params
   if (!isValidBrand(brand)) notFound()
-  const product = getBrandProductBySlug(brand, slug)
-  if (!product) notFound()
+  await primeManualOverlay(brand)
+  const sheetProduct = getBrandProductBySlug(brand, slug)
+  if (!sheetProduct) notFound()
+  const override = await getProductOverride(brand, slug)
+  if (override?.hidden) notFound()
+  const product = applyOverrideToProduct(sheetProduct, override)
+  const availability = SCHEMA_AVAILABILITY[override?.availability ?? 'in_stock']
 
   const label = getBrandLabel(brand)
   const related = getRelatedBrandProducts(brand, product)
@@ -65,7 +78,7 @@ export default async function BrandProductPage({ params }: PageProps) {
   const partTypeHeading = getBrandPartTypeLabel(product)
   const imageSearchUrl = getImageSearchUrl(product.name)
   const fitmentYear = product.year || '1990-Present'
-  const canonicalUrl = product.productUrl || `${SITE_URL}${getBrandProductUrl(brand, product)}`
+  const canonicalUrl = `${SITE_URL}${getBrandProductUrl(brand, product)}`
 
   // Structured data: exact sheet prices as an AggregateOffer across the three
   // mileage tiers (single Offer when the sheet has one price).
@@ -86,25 +99,30 @@ export default async function BrandProductPage({ params }: PageProps) {
     brand: { '@type': 'Brand', name: label },
     category: partTypeHeading,
     url: canonicalUrl,
-    offers: tiers
+    // Quote-only parts have no sheet price — omit offers rather than advertise $0.
+    ...(tiers || product.price > 0
       ? {
-          '@type': 'AggregateOffer',
-          priceCurrency: 'USD',
-          lowPrice,
-          highPrice,
-          offerCount: 3,
-          availability: 'https://schema.org/InStock',
-          itemCondition: 'https://schema.org/UsedCondition',
-          url: canonicalUrl,
+          offers: tiers
+            ? {
+                '@type': 'AggregateOffer',
+                priceCurrency: 'USD',
+                lowPrice,
+                highPrice,
+                offerCount: 3,
+                availability,
+                itemCondition: 'https://schema.org/UsedCondition',
+                url: canonicalUrl,
+              }
+            : {
+                '@type': 'Offer',
+                priceCurrency: 'USD',
+                price: product.price,
+                availability,
+                itemCondition: 'https://schema.org/UsedCondition',
+                url: canonicalUrl,
+              },
         }
-      : {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: product.price,
-          availability: 'https://schema.org/InStock',
-          itemCondition: 'https://schema.org/UsedCondition',
-          url: canonicalUrl,
-        },
+      : {}),
   }
 
   return (
@@ -150,7 +168,9 @@ export default async function BrandProductPage({ params }: PageProps) {
                   priority
                 />
                 <Badge className="absolute top-4 left-4 capitalize">{product.category || 'Part'}</Badge>
-                <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">In Stock</Badge>
+                <Badge className="absolute top-4 right-4" variant={override?.availability === 'out_of_stock' ? 'secondary' : 'default'}>
+                  {override?.availability === 'out_of_stock' ? 'Out of Stock' : override?.availability === 'backorder' ? 'Backorder' : 'In Stock'}
+                </Badge>
 
               </div>
 
@@ -183,6 +203,11 @@ export default async function BrandProductPage({ params }: PageProps) {
                     <span className="text-sm text-muted-foreground">Verified seller</span>
                     <span className="text-sm text-muted-foreground">SKU: {product.mpn || product.id}</span>
                   </div>
+                  <TrustBadges
+                    productName={product.name}
+                    isVerifiedPhoto={!displayImage.illustrative}
+                    className="mt-3"
+                  />
                 </div>
 
                 {product.description && (
@@ -213,14 +238,16 @@ export default async function BrandProductPage({ params }: PageProps) {
 
                 {/* Mileage tier pricing + Call/Message/Quote/Cart actions */}
                 <BrandPurchasePanel
-                  productId={product.id}
+                  productId={product.canonicalSlug}
                   productName={product.name}
                   basePrice={product.price}
                   tiers={product.tiers}
-                  productImage={product.imageUrl || fallbackImage}
+                  productImage={displayImage.src}
                   productType={product.category || 'Part'}
-                  make={product.compatibility || label}
+                  make={label}
                   shipping={SHIPPING}
+                  availability={override?.availability ?? 'in_stock'}
+                  detailsHref={getBrandProductUrl(brand, product)}
                 />
 
                 {/* Trust Badges */}
@@ -289,7 +316,9 @@ export default async function BrandProductPage({ params }: PageProps) {
                         <CardTitle className="text-sm line-clamp-2">{rp.name}</CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <span className="text-lg font-bold text-primary">${rp.price.toLocaleString()}</span>
+                        <span className="text-lg font-bold text-primary">
+                          {rp.price > 0 ? `$${rp.price.toLocaleString()}` : 'Call for price'}
+                        </span>
                       </CardContent>
                     </Card>
                   </Link>

@@ -1,4 +1,5 @@
 import acuraData from "@/lib/acura-products.json"
+import { SHIPPING } from "@/lib/site-policy"
 
 export interface AcuraProduct {
   id: string
@@ -7,8 +8,11 @@ export interface AcuraProduct {
   canonicalSlug: string
   brand: string
   description: string
+  /** 0 when the part is quote-only (see salesMode). */
   price: number
   pricingTiers?: { low?: number; medium?: number; high?: number }
+  salesMode?: "buy_now" | "quote"
+  modelName?: string
   image?: string
   imageSpec?: string
   imageLabel: string
@@ -23,9 +27,9 @@ export interface AcuraProduct {
   mpn?: string
   model: string
   year: string
-  /** Canonical product URL from the pricing sheet (auapw.org). */
+  /** Canonical product URL from the pricing sheet (legacy sheet). */
   productUrl?: string | null
-  /** Reference image URL from the pricing sheet (auapw.org). */
+  /** Reference image URL from the pricing sheet (legacy sheet). */
   imageUrl?: string | null
 }
 
@@ -58,19 +62,25 @@ const ENGINE_REPRESENTATIVE = "/images/parts/engine-used.jpg"
 const TRANSMISSION_AUTOMATIC = "/images/acura/transmissions/acura-cl-transmission-automatic.png"
 const TRANSMISSION_MANUAL = "/images/acura/transmissions/acura-cl-transmission-manual.png"
 
-export function parseAcuraModelYear(product: Pick<RawAcuraProduct, "name" | "compatibility">): {
+export function parseAcuraModelYear(
+  product: Pick<RawAcuraProduct, "name" | "compatibility"> & { modelName?: string },
+): {
   model: string
   year: string
 } {
   const source = `${product.name || ""} ${product.compatibility || ""}`
   const year = source.match(/\b(?:19|20)\d{2}\b/)?.[0] || ""
-  const model = source.match(/Acura\s+([A-Za-z0-9-]+)/i)?.[1]?.toUpperCase() || "Acura"
+  const model =
+    product.modelName?.toUpperCase() ||
+    source.match(/Acura\s+([A-Za-z0-9-]+)/i)?.[1]?.toUpperCase() ||
+    "Acura"
   return { model, year }
 }
 
+/** Sheet slugs are already unique, so they are used as the canonical slug. */
 export function getCanonicalAcuraSlug(product: Pick<RawAcuraProduct, "slug" | "id">): string {
   const base = product.slug.replace(/-+$/g, "")
-  return `${base}-${product.id.toLowerCase()}`
+  return product.id === product.slug ? base : `${base}-${product.id.toLowerCase()}`
 }
 
 // Prices come directly from the Acura pricing sheet — no markup or clamping.
@@ -95,8 +105,8 @@ function normalizeProduct(product: RawAcuraProduct): AcuraProduct {
     model,
     year,
     warranty: "90 Days",
-    shipping: "$240",
-    imageSpec: (product.imageSpec || "").replace(/free shipping/gi, "$240 shipping"),
+    shipping: SHIPPING.label,
+    imageSpec: product.imageSpec || product.name,
     imageLabel: "Representative image — verify VIN/fitment before purchase",
   }
 }
@@ -142,7 +152,7 @@ export function getAcuraProductById(id: string): AcuraProduct | undefined {
 }
 
 export function getAcuraProductUrl(product: Pick<AcuraProduct, "canonicalSlug">): string {
-  return `/acura/${product.canonicalSlug}`
+  return `/brands/acura/${product.canonicalSlug}`
 }
 
 /** Human-readable part-type label, e.g. "Used Engine", "Used Transmission". */

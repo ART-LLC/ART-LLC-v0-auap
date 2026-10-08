@@ -20,9 +20,17 @@ import {
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [hidden, setHidden] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const lastScrollY = useRef(0)
-  const cartItems = useCartStore((state) => state.getTotalItems())
-  const wishlistCount = useWishlistStore((state) => state.getCount())
+  const cartItems = useCartStore((state) =>
+    state.items.reduce((total, item) => total + item.quantity, 0)
+  )
+  const wishlistCount = useWishlistStore((state) => state.items.length)
+
+  // Persisted browser counts must not change the server's initial badge markup.
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -140,7 +148,7 @@ export function Navbar() {
           </Link>
 
           {/* Center — embossed typography navigation (desktop only) */}
-          <div className="hidden lg:flex items-center gap-6 flex-1 justify-center">
+          <div className="hidden min-[1600px]:flex items-center gap-1 flex-1 justify-center">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -233,7 +241,7 @@ export function Navbar() {
             {/* Cart indicator — desktop only */}
             <Link href="/cart" className="relative hidden sm:flex items-center justify-center w-9 h-9 rounded-lg hover:bg-white/10 transition-colors" title="Cart">
               <ShoppingCart className="w-5 h-5 text-foreground" />
-              {cartItems > 0 && (
+              {mounted && cartItems > 0 && (
                 <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-xs font-bold flex items-center justify-center">
                   {cartItems}
                 </span>
@@ -248,7 +256,7 @@ export function Navbar() {
 
             {/* Mobile menu toggle */}
             <button
-              className="lg:hidden flex flex-col items-center justify-center rounded-md border border-white/25 bg-white/8 hover:bg-white/15 active:scale-90 transition-all duration-150 cursor-pointer gap-[4px] px-1.5"
+              className="min-[1600px]:hidden flex flex-col items-center justify-center rounded-md border border-white/25 bg-white/8 hover:bg-white/15 active:scale-90 transition-all duration-150 cursor-pointer gap-[4px] px-1.5"
               style={{ width: '1.75rem', height: '1.75rem' }}
               onClick={() => setMobileOpen(!mobileOpen)}
               onKeyDown={(e) => {
@@ -283,14 +291,14 @@ export function Navbar() {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/75 lg:hidden"
+            className="fixed inset-0 bg-black/75 min-[1600px]:hidden"
             onClick={() => setMobileOpen(false)}
             style={{ zIndex: 9998 }}
             aria-hidden="true"
           />
 
           <div
-            className="fixed left-0 right-0 lg:hidden"
+            className="fixed left-0 right-0 min-[1600px]:hidden"
             style={{
               top: '92px',
               zIndex: 9999,
@@ -307,11 +315,11 @@ export function Navbar() {
               {/* ── Quick-contact strip ── */}
               <div className="grid grid-cols-2 gap-2">
                 <a
-                  href="tel:8888185001"
+                  href="tel:+17088962383"
                   className="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-green-500/15 border border-green-500/30 hover:bg-green-500/25 active:scale-95 transition-all"
                 >
                   <Phone className="w-4 h-4 text-green-400 shrink-0" />
-                  <span className="text-xs font-black text-green-300 tracking-wide">(888) 818-5001</span>
+                  <span className="text-xs font-black text-green-300 tracking-wide">(708) 896-2383</span>
                 </a>
                 <Link
                   href="/quote"
@@ -399,7 +407,7 @@ export function Navbar() {
                 >
                   <ShoppingCart className="w-4 h-4 text-blue-400" />
                   <span className="text-[10px] font-bold text-blue-300">Cart</span>
-                  {cartItems > 0 && (
+                  {mounted && cartItems > 0 && (
                     <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-blue-500 text-white text-[9px] font-black flex items-center justify-center">
                       {cartItems}
                     </span>
@@ -412,7 +420,7 @@ export function Navbar() {
                 >
                   <Heart className="w-4 h-4 text-pink-400" />
                   <span className="text-[10px] font-bold text-pink-300">Saved</span>
-                  {wishlistCount > 0 && (
+                  {mounted && wishlistCount > 0 && (
                     <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-pink-500 text-white text-[9px] font-black flex items-center justify-center">
                       {wishlistCount}
                     </span>

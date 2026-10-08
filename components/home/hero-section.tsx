@@ -195,7 +195,7 @@ export function HeroSection() {
                   <span className="text-2xl font-bold tracking-wide text-primary/40">03</span>
                   <span className="text-sm font-bold tracking-wide text-primary uppercase">Confirm &amp; Order</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">Review availability, warranty details, and shipping options, then confirm your order with ease.</p>
-                  <a href="tel:8888185001" className="mt-auto w-full auapw-btn auapw-btn-green auapw-btn-sm">
+                  <a href="tel:+17088962383" className="mt-auto w-full auapw-btn auapw-btn-green auapw-btn-sm">
                     <Phone className="w-4 h-4" />
                     <span>Call &amp; Order</span>
                   </a>
@@ -206,7 +206,7 @@ export function HeroSection() {
                   <span className="text-2xl font-bold tracking-wide text-primary/40">04</span>
                   <span className="text-sm font-bold tracking-wide text-primary uppercase">Fast Delivery</span>
                   <p className="text-sm font-bold tracking-wide text-foreground leading-relaxed">Your part ships same day when available, delivered directly to your door or local shop.</p>
-                  <a href="mailto:support@auapw.com" className="mt-auto w-full auapw-btn auapw-btn-teal auapw-btn-sm">
+                  <a href="mailto:support@allusedautopartswarehouse.com" className="mt-auto w-full auapw-btn auapw-btn-teal auapw-btn-sm">
                     <Mail className="w-4 h-4" />
                     <span>Email Us</span>
                   </a>
@@ -304,9 +304,9 @@ export function HeroSection() {
                       <Calendar className="w-4 h-4" />
                       <span>Schedule Callback</span>
                     </Link>
-                    <a href="mailto:support@auapw.com" className="w-full auapw-btn auapw-btn-teal auapw-btn-sm">
+                    <a href="mailto:support@allusedautopartswarehouse.com" className="w-full auapw-btn auapw-btn-teal auapw-btn-sm">
                       <Mail className="w-4 h-4" />
-                      <span>support@auapw.com</span>
+                      <span>support@allusedautopartswarehouse.com</span>
                     </a>
                   </div>
                   </div>

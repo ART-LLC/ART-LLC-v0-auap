@@ -9,6 +9,7 @@ export const user = pgTable('user', {
   email: text('email').notNull().unique(),
   emailVerified: boolean('emailVerified').notNull().default(false),
   image: text('image'),
+  role: text('role').default('buyer'), // 'buyer', 'seller', 'admin'
   createdAt: timestamp('createdAt').notNull().defaultNow(),
   updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })
@@ -182,6 +183,317 @@ export const vinQuotes = pgTable('vin_quotes', {
   parts: json('parts'),
   quoteStatus: text('quoteStatus').default('pending'),
   expiresAt: timestamp('expiresAt'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Content Management System (CMS) ---
+export const contentPages = pgTable('content_pages', {
+  id: text('id').primaryKey(),
+  slug: text('slug').notNull().unique(),
+  title: text('title').notNull(),
+  description: text('description'),
+  content: text('content').notNull(),
+  contentType: text('contentType').notNull(),
+  category: text('category'),
+  teamType: text('teamType'),
+  seoTitle: text('seoTitle'),
+  seoDescription: text('seoDescription'),
+  metaKeywords: text('metaKeywords'),
+  featuredImage: text('featuredImage'),
+  authorId: text('authorId'),
+  status: text('status').default('draft'),
+  published: boolean('published').default(false),
+  publishedAt: timestamp('publishedAt'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+export const pageContent = pgTable('page_content', {
+  id: text('id').primaryKey(),
+  page: text('page').notNull().unique(),
+  title: text('title').notNull(),
+  description: text('description'),
+  content: text('content').notNull(),
+  sections: json('sections'),
+  published: boolean('published').default(false),
+  publishedAt: timestamp('publishedAt'),
+  createdBy: text('createdBy').notNull(),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+export const contentBlocks = pgTable('content_blocks', {
+  id: text('id').primaryKey(),
+  pageId: text('pageId').notNull(),
+  title: text('title').notNull(),
+  content: text('content').notNull(),
+  blockType: text('blockType').notNull(),
+  order: integer('order').notNull(),
+  visible: boolean('visible').default(true),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Team/Business Portal ---
+export const teams = pgTable('teams', {
+  id: text('id').primaryKey(),
+  name: text('name').notNull(),
+  businessId: text('businessId'),
+  ownerId: text('ownerId').notNull(),
+  description: text('description'),
+  logo: text('logo'),
+  status: text('status').default('active'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+export const teamMembers = pgTable('team_members', {
+  id: text('id').primaryKey(),
+  teamId: text('teamId').notNull(),
+  userId: text('userId').notNull(),
+  role: text('role').notNull(),
+  joinedAt: timestamp('joinedAt').notNull().defaultNow(),
+})
+
+export const teamBulkOrders = pgTable('team_bulk_orders', {
+  id: text('id').primaryKey(),
+  teamId: text('teamId').notNull(),
+  userId: text('userId').notNull(),
+  status: text('status').default('draft'),
+  items: json('items').notNull(),
+  quantity: integer('quantity').notNull(),
+  discount: decimal('discount', { precision: 10, scale: 2 }).default('0'),
+  total: decimal('total', { precision: 10, scale: 2 }).notNull(),
+  approvedBy: text('approvedBy'),
+  approvedAt: timestamp('approvedAt'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Support Portal ---
+export const supportTickets = pgTable('support_tickets', {
+  id: text('id').primaryKey(),
+  userId: text('userId').notNull(),
+  ticketNumber: text('ticketNumber').notNull().unique(),
+  subject: text('subject').notNull(),
+  description: text('description').notNull(),
+  category: text('category').notNull(),
+  priority: text('priority').default('medium'),
+  status: text('status').default('open'),
+  assignedTo: text('assignedTo'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+  resolvedAt: timestamp('resolvedAt'),
+})
+
+export const supportTicketMessages = pgTable('support_ticket_messages', {
+  id: text('id').primaryKey(),
+  ticketId: text('ticketId').notNull(),
+  userId: text('userId').notNull(),
+  message: text('message').notNull(),
+  attachments: json('attachments'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+})
+
+export const supportTeamUsers = pgTable('support_team_users', {
+  id: text('id').primaryKey(),
+  userId: text('userId').notNull(),
+  role: text('role').notNull(),
+  department: text('department'),
+  status: text('status').default('active'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Settings & Configuration ---
+export const siteSettings = pgTable('site_settings', {
+  id: text('id').primaryKey(),
+  key: text('key').notNull().unique(),
+  value: text('value'),
+  category: text('category'),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+  updatedBy: text('updatedBy'),
+})
+
+export const auditLog = pgTable('audit_log', {
+  id: text('id').primaryKey(),
+  userId: text('userId'),
+  action: text('action').notNull(),
+  resource: text('resource').notNull(),
+  resourceId: text('resourceId'),
+  changes: json('changes'),
+  ipAddress: text('ipAddress'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+})
+
+export const portalActivityLog = pgTable('portal_activity_log', {
+  id: text('id').primaryKey(),
+  userId: text('userId'),
+  teamType: text('teamType').notNull(),
+  action: text('action').notNull(),
+  resourceType: text('resourceType').notNull(),
+  resourceId: text('resourceId'),
+  details: json('details'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+})
+
+// --- Marketplace: Sellers ---
+export const sellers = pgTable('sellers', {
+  id: text('id').primaryKey(),
+  userId: text('userId').notNull().unique(),
+  businessName: text('businessName').notNull(),
+  description: text('description'),
+  businessType: text('businessType'),
+  stripeConnectId: text('stripeConnectId').unique(),
+  onboardingStatus: text('onboardingStatus').default('pending'), // 'pending', 'in_progress', 'completed', 'rejected'
+  verificationStatus: text('verificationStatus').default('unverified'), // 'unverified', 'verified', 'suspended'
+  website: text('website'),
+  phone: text('phone'),
+  address: text('address'),
+  city: text('city'),
+  state: text('state'),
+  zipCode: text('zipCode'),
+  country: text('country').default('USA'),
+  taxId: text('taxId'),
+  rating: decimal('rating', { precision: 3, scale: 2 }).default('0'),
+  totalReviews: integer('totalReviews').default(0),
+  totalSales: decimal('totalSales', { precision: 15, scale: 2 }).default('0'),
+  commissionRate: decimal('commissionRate', { precision: 5, scale: 2 }).default('5'), // Platform takes 5% by default
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Marketplace: Listings (Products/Inventory) ---
+export const listings = pgTable('listings', {
+  id: text('id').primaryKey(),
+  sellerId: text('sellerId').notNull(),
+  sku: text('sku').notNull(),
+  title: text('title').notNull(),
+  description: text('description'),
+  category: text('category').notNull(),
+  subcategory: text('subcategory'),
+  price: decimal('price', { precision: 10, scale: 2 }).notNull(),
+  originalPrice: decimal('originalPrice', { precision: 10, scale: 2 }),
+  quantity: integer('quantity').notNull().default(0),
+  images: json('images'), // Array of image URLs
+  specifications: json('specifications'), // VIN, year, make, model, etc.
+  condition: text('condition').notNull(), // 'new', 'like-new', 'excellent', 'good', 'fair'
+  warranty: text('warranty'),
+  shippingCost: decimal('shippingCost', { precision: 10, scale: 2 }).default('0'),
+  status: text('status').default('active'), // 'active', 'inactive', 'sold', 'delisted'
+  views: integer('views').default(0),
+  sales: integer('sales').default(0),
+  rating: decimal('rating', { precision: 3, scale: 2 }).default('0'),
+  totalReviews: integer('totalReviews').default(0),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Marketplace: Ledger Entries (Financial Records) ---
+export const ledgerEntries = pgTable('ledger_entries', {
+  id: text('id').primaryKey(),
+  sellerId: text('sellerId').notNull(),
+  type: text('type').notNull(), // 'sale', 'commission_deduction', 'refund', 'adjustment', 'payout'
+  amount: decimal('amount', { precision: 10, scale: 2 }).notNull(),
+  orderId: text('orderId'),
+  description: text('description'),
+  status: text('status').default('completed'), // 'pending', 'completed', 'failed'
+  reference: text('reference'), // Transaction ID, check number, etc.
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Marketplace: Payouts ---
+export const payouts = pgTable('payouts', {
+  id: text('id').primaryKey(),
+  sellerId: text('sellerId').notNull(),
+  amount: decimal('amount', { precision: 10, scale: 2 }).notNull(),
+  status: text('status').default('pending'), // 'pending', 'in_transit', 'completed', 'failed', 'canceled'
+  method: text('method').notNull(), // 'stripe', 'bank_transfer', 'check'
+  stripeTransferId: text('stripeTransferId'),
+  bankDetails: json('bankDetails'),
+  period: text('period').notNull(), // 'YYYY-MM' for monthly periods
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  processedAt: timestamp('processedAt'),
+  completedAt: timestamp('completedAt'),
+})
+
+// --- Marketplace: Fraud Detection ---
+export const fraudFlags = pgTable('fraud_flags', {
+  id: text('id').primaryKey(),
+  userId: text('userId'),
+  sellerId: text('sellerId'),
+  type: text('type').notNull(), // 'chargeback', 'dispute', 'suspicious_activity', 'policy_violation'
+  severity: text('severity').notNull(), // 'low', 'medium', 'high', 'critical'
+  description: text('description'),
+  evidence: json('evidence'),
+  status: text('status').default('open'), // 'open', 'investigating', 'resolved', 'dismissed'
+  actionTaken: text('actionTaken'), // 'none', 'warning', 'suspension', 'termination'
+  resolvedAt: timestamp('resolvedAt'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Marketplace: Reviews & Ratings ---
+export const sellerReviews = pgTable('seller_reviews', {
+  id: text('id').primaryKey(),
+  sellerId: text('sellerId').notNull(),
+  buyerId: text('buyerId').notNull(),
+  orderId: text('orderId').notNull(),
+  rating: integer('rating').notNull(), // 1-5 stars
+  title: text('title'),
+  comment: text('comment'),
+  verified: boolean('verified').default(false), // Verified purchase
+  helpful: integer('helpful').default(0),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+export const listingReviews = pgTable('listing_reviews', {
+  id: text('id').primaryKey(),
+  listingId: text('listingId').notNull(),
+  buyerId: text('buyerId').notNull(),
+  orderId: text('orderId').notNull(),
+  rating: integer('rating').notNull(), // 1-5 stars
+  title: text('title'),
+  comment: text('comment'),
+  verified: boolean('verified').default(false), // Verified purchase
+  helpful: integer('helpful').default(0),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Admin: Staff Directory (Sales Agents / Support Team / Developer Team) ---
+export const staffMembers = pgTable('staff_members', {
+  id: text('id').primaryKey(),
+  name: text('name').notNull(),
+  email: text('email').notNull(),
+  phone: text('phone'),
+  role: text('role').notNull(), // 'sales_agent' | 'support_team' | 'developer_team'
+  department: text('department'),
+  title: text('title'),
+  status: text('status').notNull().default('active'), // 'active' | 'inactive'
+  notes: text('notes'),
+  createdAt: timestamp('createdAt').notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
+})
+
+// --- Admin: Payment Gateways & Methods ---
+export const paymentGateways = pgTable('payment_gateways', {
+  id: text('id').primaryKey(),
+  name: text('name').notNull(), // Display name, e.g. "Authorize.Net"
+  slug: text('slug').notNull().unique(), // 'authorize_net' | 'stripe' | 'paypal' | ...
+  type: text('type').notNull().default('card'), // 'card' | 'wallet' | 'bank' | 'offline' | 'link'
+  description: text('description'),
+  logo: text('logo'),
+  isEnabled: boolean('isEnabled').notNull().default(false),
+  isDefault: boolean('isDefault').notNull().default(false),
+  sortOrder: integer('sortOrder').notNull().default(0),
+  config: json('config'), // non-secret display config only (e.g. supported cards)
+  instructions: text('instructions'), // customer-facing instructions (bank/offline/link types)
+  paymentLink: text('paymentLink'), // hosted checkout / payment link URL (e.g. EPS, PayPal.me)
+  envVarsRequired: json('envVarsRequired'), // string[] of env var names this gateway needs (names only, never values)
   createdAt: timestamp('createdAt').notNull().defaultNow(),
   updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })

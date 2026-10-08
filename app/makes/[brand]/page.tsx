@@ -47,7 +47,7 @@ function BrandHeroBanner({ brand, color }: { brand: string; color: string }) {
         <div className="flex flex-wrap justify-center gap-3 mb-8">
           {[
             { icon: Shield, text: "6-Month Warranty" },
-            { icon: Truck, text: "Free Shipping" },
+            { icon: Truck, text: "$240 Shipping Per Part" },
             { icon: Clock, text: "24-HR Response" },
           ].map(({ icon: Icon, text }) => (
             <div key={text} className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm">
@@ -149,7 +149,7 @@ export default function BrandPage() {
       },
       {
         q: `Can you ship used ${brand} parts nationwide?`,
-        a: `Absolutely. We ship used ${brand} parts to all 50 states. Many orders qualify for free shipping, and most parts ship within 1-3 business days. For large components like engines and transmissions, we use freight carriers with full insurance coverage. Expedited shipping is also available upon request.`,
+        a: `Absolutely. We ship used ${brand} parts to all 50 states. Shipping is a flat $240 per part, and most parts ship within 1-3 business days. For large components like engines and transmissions, we use freight carriers with full insurance coverage. Expedited shipping is also available upon request.`,
       },
       ...(activeModels.length > 0 ? [{
         q: `Which ${brand} models are currently in production?`,
@@ -358,7 +358,7 @@ export default function BrandPage() {
             <div className="p-6 rounded-xl border border-border/50 bg-card">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"><Truck className="w-5 h-5 text-primary" /></div>
-                <h3 className="text-lg font-bold">Free Shipping in the USA</h3>
+                <h3 className="text-lg font-bold">$240 Shipping Per Part in the USA</h3>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">{brandContent.shippingInfo}</p>
             </div>

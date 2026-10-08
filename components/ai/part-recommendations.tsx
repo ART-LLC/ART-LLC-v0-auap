@@ -10,7 +10,7 @@ interface RecPart {
   name: string
   slug: string
   category: string
-  price: number
+  price: number | null
   image: string
   url: string
 }
@@ -95,7 +95,9 @@ export function PartRecommendations({ productId }: { productId: string }) {
               <span className="text-[10px] font-bold uppercase tracking-wider text-primary">{part.category}</span>
               <span className="text-xs font-semibold text-foreground line-clamp-2 min-h-[2rem]">{part.name}</span>
               <div className="mt-1 flex items-center justify-between">
-                <span className="text-sm font-black text-foreground">${part.price.toLocaleString()}</span>
+                <span className="text-sm font-black text-foreground">
+                  {part.price === null ? "Call for price" : `$${part.price.toLocaleString()}`}
+                </span>
                 <ArrowRight className="w-4 h-4 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-primary" />
               </div>
             </div>

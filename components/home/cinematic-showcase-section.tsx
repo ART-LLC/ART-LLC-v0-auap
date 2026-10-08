@@ -9,7 +9,7 @@ const FRAMES = [
 ]
 
 const STATS = [
-  { icon: Truck, value: "Free", label: "Nationwide Shipping" },
+  { icon: Truck, value: "$240", label: "Shipping Per Part" },
   { icon: ShieldCheck, value: "30–180", label: "Day Warranty" },
   { icon: DollarSign, value: "40–70%", label: "Cost Savings" },
 ]
@@ -81,9 +81,9 @@ export function CinematicShowcaseSection() {
                 <Search className="w-4 h-4" />
                 <span>Find Your Part</span>
               </Link>
-              <a href="tel:8888185001" className="auapw-btn auapw-btn-green">
+              <a href="tel:+17088962383" className="auapw-btn auapw-btn-green">
                 <Phone className="w-4 h-4" />
-                <span>Call 888-818-5001</span>
+                <span>Call 708-896-2383</span>
               </a>
             </div>
           </div>

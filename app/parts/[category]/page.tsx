@@ -57,7 +57,7 @@ export default function CategoryPage() {
           align="left"
           eyebrow="Parts Category"
           title={cat.label}
-          subtitle={`Quality used ${cat.label.toLowerCase()} from our network of 2,000+ verified yards. Every part comes with a warranty and free shipping.`}
+          subtitle={`Quality used ${cat.label.toLowerCase()} from our network of 2,000+ verified yards. Every part comes with a warranty and $240 flat-rate shipping per part.`}
         >
           <div className="flex items-center gap-2 text-xs text-slate-300">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
@@ -73,7 +73,7 @@ export default function CategoryPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
               { icon: Shield, title: "Up to 6-Month Warranty", desc: "Every part covered with full return & replacement" },
-              { icon: Truck, title: "Free Shipping USA", desc: "Ships to all 50 states, 1-3 business day processing" },
+              { icon: Truck, title: "$240 Shipping Per Part", desc: "Ships to all 50 states, 1-3 business day processing" },
               { icon: Clock, title: "24-Hour Response", desc: "Get quotes within one business day" },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="glass-card rounded-sm p-5 flex items-start gap-3.5">

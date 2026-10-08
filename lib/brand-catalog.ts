@@ -1,6 +1,15 @@
 import "server-only"
 import fs from "node:fs"
 import path from "node:path"
+import {
+  deriveFields,
+  getPartType,
+  slugifyModel,
+  type DerivedFields,
+  type Gearbox,
+  type PartType,
+  type SalesMode,
+} from "@/lib/catalog-fields"
 
 /**
  * Server-side loader for the per-brand catalogs generated from the uploaded
@@ -24,6 +33,8 @@ export interface BrandProduct {
   description?: string
   model: string
   year: string
+  salesMode?: SalesMode
+  modelClean?: string
 }
 
 export interface BrandCatalog {
@@ -50,6 +61,22 @@ export const BRAND_DIRECTORY: { slug: string; label: string; count: number }[] =
 
 const catalogCache = new Map<string, BrandCatalog>()
 const slugIndexCache = new Map<string, Map<string, BrandProduct>>()
+const manualOverlay = new Map<string, BrandProduct[]>()
+
+/**
+ * Layers admin-added manual/uploaded products on top of a brand's sheet
+ * catalog for the current request. Call this (via lib/manual-products'
+ * primeManualOverlay) before reading the catalog so every consumer —
+ * listings, product pages, search, the feed — sees the merged result.
+ */
+export function setManualOverlay(brand: string, products: BrandProduct[]): void {
+  manualOverlay.set(brand, products)
+  // Derived caches are keyed off the previously-merged product set, so they
+  // must be dropped whenever the overlay changes.
+  slugIndexCache.delete(brand)
+  derivedCache.delete(brand)
+  sharedImageCache.delete(brand)
+}
 
 export function isValidBrand(brand: string): boolean {
   return BRAND_DIRECTORY.some((b) => b.slug === brand)
@@ -61,13 +88,16 @@ export function getBrandLabel(brand: string): string {
 
 export function loadBrandCatalog(brand: string): BrandCatalog | null {
   if (!isValidBrand(brand)) return null
-  const cached = catalogCache.get(brand)
-  if (cached) return cached
-  const filePath = path.join(process.cwd(), "data", "brands", `${brand}.json`)
-  if (!fs.existsSync(filePath)) return null
-  const catalog = JSON.parse(fs.readFileSync(filePath, "utf8")) as BrandCatalog
-  catalogCache.set(brand, catalog)
-  return catalog
+  let catalog = catalogCache.get(brand)
+  if (!catalog) {
+    const filePath = path.join(process.cwd(), "data", "brands", `${brand}.json`)
+    if (!fs.existsSync(filePath)) return null
+    catalog = JSON.parse(fs.readFileSync(filePath, "utf8")) as BrandCatalog
+    catalogCache.set(brand, catalog)
+  }
+  const manual = manualOverlay.get(brand)
+  if (!manual || manual.length === 0) return catalog
+  return { ...catalog, products: [...manual, ...catalog.products], count: catalog.products.length + manual.length }
 }
 
 export function getBrandProductBySlug(brand: string, slug: string): BrandProduct | undefined {
@@ -77,15 +107,6 @@ export function getBrandProductBySlug(brand: string, slug: string): BrandProduct
     if (!catalog) return undefined
     index = new Map(catalog.products.map((p) => [p.canonicalSlug, p]))
     slugIndexCache.set(brand, index)
-  }
-
-  // The primary and previously shared 2003 CL engine URLs highlight the
-  // selected Type-S automatic listing (P-2) at the correct $900 medium price.
-  if (
-    brand === "acura" &&
-    (slug === "2003-acura-cl-engine" || slug === "2003-acura-cl-engine-p-3")
-  ) {
-    return index.get("2003-acura-cl-engine-p-2")
   }
 
   return index.get(slug)
@@ -166,6 +187,107 @@ export function getRelatedBrandProducts(brand: string, product: BrandProduct, li
     .slice(0, limit)
 }
 
+export type DerivedProduct = BrandProduct & DerivedFields
+
+const derivedCache = new Map<string, DerivedProduct[]>()
+
+/** Catalog rows enriched with sales_mode, clean model, variant and specs. */
+export function loadDerivedCatalog(brand: string): DerivedProduct[] {
+  const cached = derivedCache.get(brand)
+  if (cached) return cached
+  const catalog = loadBrandCatalog(brand)
+  if (!catalog) return []
+  const label = getBrandLabel(brand)
+  const rows = catalog.products.map((p) => ({ ...p, ...deriveFields(p, label) }))
+  derivedCache.set(brand, rows)
+  return rows
+}
+
+export function deriveBrandProduct(brand: string, product: BrandProduct): DerivedProduct {
+  return { ...product, ...deriveFields(product, getBrandLabel(brand)) }
+}
+
+export const PRICE_BANDS = [
+  { id: "under-1500", label: "Under $1,500", min: 0, max: 1500 },
+  { id: "1500-3000", label: "$1,500–$3,000", min: 1500, max: 3000 },
+  { id: "3000-5000", label: "$3,000–$5,000", min: 3000, max: 5000 },
+  { id: "over-5000", label: "$5,000+", min: 5000, max: Infinity },
+] as const
+
+export interface PartQuery {
+  partType?: PartType
+  model?: string
+  year?: number
+  engineSize?: string
+  gearbox?: Gearbox
+  priceBand?: string
+  salesMode?: SalesMode
+  page?: number
+  pageSize?: number
+}
+
+export interface PartQueryResult {
+  products: DerivedProduct[]
+  total: number
+  page: number
+  pageCount: number
+  facets: { engineSizes: string[]; gearboxes: Gearbox[]; years: number[] }
+}
+
+export function queryBrandParts(brand: string, q: PartQuery = {}): PartQueryResult {
+  const all = loadDerivedCatalog(brand)
+  const base = all.filter(
+    (p) =>
+      (!q.partType || p.partType === q.partType) &&
+      (!q.model || slugifyModel(p.modelName) === q.model),
+  )
+
+  const facets = {
+    engineSizes: [...new Set(base.map((p) => p.engineSize).filter(Boolean) as string[])].sort(
+      (a, b) => Number.parseFloat(a) - Number.parseFloat(b),
+    ),
+    gearboxes: [...new Set(base.map((p) => p.gearbox).filter(Boolean) as Gearbox[])].sort(),
+    years: [...new Set(base.map((p) => p.yearNumber).filter(Boolean) as number[])].sort((a, b) => b - a),
+  }
+
+  const band = PRICE_BANDS.find((b) => b.id === q.priceBand)
+  const items = base.filter((p) => {
+    if (q.year && p.yearNumber !== q.year) return false
+    if (q.engineSize && p.engineSize !== q.engineSize) return false
+    if (q.gearbox && p.gearbox !== q.gearbox) return false
+    if (q.salesMode && p.salesMode !== q.salesMode) return false
+    if (band) {
+      if (p.salesMode !== "buy_now" || !p.priceTiers) return false
+      const price = p.priceTiers.standard
+      if (price < band.min || price >= band.max) return false
+    }
+    return true
+  })
+
+  // Buyable units first, newest first, so the top of every page is sellable.
+  items.sort(
+    (a, b) =>
+      (a.salesMode === b.salesMode ? 0 : a.salesMode === "buy_now" ? -1 : 1) ||
+      (b.yearNumber ?? 0) - (a.yearNumber ?? 0),
+  )
+
+  const pageSize = q.pageSize ?? PAGE_SIZE
+  const total = items.length
+  const pageCount = Math.max(1, Math.ceil(total / pageSize))
+  const page = Math.min(Math.max(1, q.page || 1), pageCount)
+  return { products: items.slice((page - 1) * pageSize, page * pageSize), total, page, pageCount, facets }
+}
+
+/** Other model years / variants of the same model and part — the fitment table. */
+export function getFitmentRows(brand: string, product: DerivedProduct, limit = 24): DerivedProduct[] {
+  const model = slugifyModel(product.modelName)
+  return loadDerivedCatalog(brand)
+    .filter((p) => p.partType === product.partType && slugifyModel(p.modelName) === model)
+    .filter((p) => !product.engineSize || p.engineSize === product.engineSize)
+    .sort((a, b) => (a.yearNumber ?? 0) - (b.yearNumber ?? 0))
+    .slice(0, limit)
+}
+
 /**
  * Local representative image by part category — used as fallback alongside
  * the sheet-provided image_url so every product shows a matching part photo.
@@ -218,6 +340,8 @@ function isUsablePhotoUrl(url: string | undefined): boolean {
   if (!url) return false
   // The original spreadsheet photo host is offline — every URL 400s.
   if (url.includes("auapw.org")) return false
+  // Master-sheet /images/ paths return 404 on both the old and replacement domains.
+  if (/^https?:\/\/(?:www\.)?(?:auapw\.com|allusedautopartswarehouse\.com)\/images\//i.test(url)) return false
   return /^https?:\/\//.test(url)
 }
 
@@ -246,7 +370,7 @@ export function getProductDisplayImage(
   // Otherwise use model/spec-specific, brand-specific professional images.
   // These are representative of the part's make/spec but not photos of the
   // exact unit, so they are disclosed as illustrative.
-  const brandModelImage = getBrandModelImage(brand, product.category || 'part', product.name || '')
+  const brandModelImage = getBrandModelImage(brand, getPartType(product), product.name || '')
   return {
     // Never substitute another manufacturer's image. When a brand/spec asset
     // is unavailable, use the product's own deterministic branded illustration.
