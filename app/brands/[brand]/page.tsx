@@ -26,6 +26,10 @@ import { BrandFeaturesSection } from '@/components/brands/brand-features-section
 import { BrandMaterialTabs } from '@/components/brands/brand-material-tabs'
 import { MaterialType, filterPartsByMaterial, countPartsByMaterial } from '@/lib/material-mapper'
 import { primeManualOverlay } from '@/lib/manual-products'
+import { getBrandLogoUrl } from '@/lib/data'
+
+// No /brand-cars/<brand>-car.png exists for these makes.
+const BRANDS_WITHOUT_CAR_IMAGE = new Set(['aston-martin', 'austin'])
 
 interface PageProps {
   params: Promise<{ brand: string }>
@@ -100,7 +104,7 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
           </div>
 
           {/* Car Background Image - if available */}
-          {brand && (
+          {brand && !BRANDS_WITHOUT_CAR_IMAGE.has(brand) && (
             <div className="absolute inset-0 opacity-30">
               <Image
                 src={`/brand-cars/${brand}-car.png`}
@@ -137,7 +141,7 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
                 <div className="w-28 h-28 sm:w-36 sm:h-36 relative flex-shrink-0">
                   <div className="relative w-full h-full bg-slate-100 backdrop-blur rounded-2xl shadow-2xl p-3 sm:p-4 border border-slate-200/50 flex items-center justify-center">
                     <Image
-                      src={`/logos/${brand}.png`}
+                      src={getBrandLogoUrl(label) || `/logos/${brand}.png`}
                       alt={`${label} logo`}
                       fill
                       className="object-contain object-center p-2 sm:p-3"
