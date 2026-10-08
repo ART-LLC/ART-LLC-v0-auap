@@ -14,6 +14,7 @@ import {
 } from '@/lib/db/schema'
 import { eq, and, gte, lte, desc } from 'drizzle-orm'
 import { auth } from '@/lib/auth'
+import { getAdminSession } from '@/lib/admin-auth'
 
 /**
  * Create or update seller profile
@@ -45,9 +46,24 @@ export async function upsertSellerProfile(data: {
 
     if (existing.length > 0) {
       // Update existing
+      // List fields explicitly: a server action receives whatever the caller
+      // sends, and spreading it would let a seller set verificationStatus,
+      // commissionRate, totalSales, etc.
       await db
         .update(sellers)
-        .set({ ...data, updatedAt: new Date() })
+        .set({
+          businessName: data.businessName,
+          description: data.description,
+          businessType: data.businessType,
+          website: data.website,
+          phone: data.phone,
+          address: data.address,
+          city: data.city,
+          state: data.state,
+          zipCode: data.zipCode,
+          taxId: data.taxId,
+          updatedAt: new Date(),
+        })
         .where(eq(sellers.userId, session.user.id))
 
       return { success: true, sellerId: existing[0].id }
@@ -148,6 +164,11 @@ export async function recordSale(data: {
   orderId: string
   amount: number // Gross amount before commission
 }) {
+  // Exported 'use server' functions are public endpoints; ledger writes are admin-only.
+  if (!(await getAdminSession())) {
+    return { success: false, error: 'Unauthorized' }
+  }
+
   try {
     const commission = (data.amount * 0.05).toString() // 5% platform fee
     const netAmount = (data.amount - parseFloat(commission)).toString()
@@ -197,6 +218,11 @@ export async function processPayout(data: {
   method: 'stripe' | 'bank_transfer' | 'check'
   stripeTransferId?: string
 }) {
+  // Exported 'use server' functions are public endpoints; ledger writes are admin-only.
+  if (!(await getAdminSession())) {
+    return { success: false, error: 'Unauthorized' }
+  }
+
   try {
     const payoutId = `payout_${Date.now()}`
     const period = new Date().toISOString().slice(0, 7) // YYYY-MM
