@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useState } from 'react'
+import { Children, useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import {
@@ -442,9 +442,9 @@ function ListCard({
   linkLabel: string
   empty: string
   loading: boolean
-  children?: React.ReactNode[]
+  children?: React.ReactNode
 }) {
-  const hasRows = Array.isArray(children) && children.length > 0
+  const hasRows = Children.count(children) > 0
   return (
     <section className="rounded-lg border border-border bg-card p-5">
       <div className="mb-2 flex items-center justify-between">

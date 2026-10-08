@@ -6,12 +6,15 @@ export const dynamic = "force-dynamic"
 
 const MAX_ROWS = 5000
 
-/** CSV cell. Text starting with = + - @ is prefixed with ' so a spreadsheet never runs it as a formula. */
+/**
+ * CSV cell. Text starting with = + - @ (even after leading spaces, which some
+ * spreadsheets ignore) is prefixed with ' so it never runs as a formula.
+ */
 function cell(value: unknown): string {
   if (value === null || value === undefined) return ""
   if (typeof value === "number") return Number.isFinite(value) ? String(value) : ""
   let s = String(value)
-  if (/^[=+\-@\t\r]/.test(s)) s = `'${s}`
+  if (/^[\s\uFEFF\xA0]*[=+\-@]/.test(s) || /^[\t\r]/.test(s)) s = `'${s}`
   return /[",\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
 }
 
