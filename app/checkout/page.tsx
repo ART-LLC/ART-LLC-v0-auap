@@ -14,6 +14,7 @@ import { Footer } from '@/components/footer'
 import { BrandLogosSection } from '@/components/brand-logos'
 import { StripeCardPayment } from '@/components/checkout/stripe-card-payment'
 import { GoogleCustomerReviewsOptIn } from '@/components/google-customer-reviews'
+import { CheckoutTerms } from '@/components/checkout/checkout-terms'
 import { useRouter } from 'next/navigation'
 
 interface PaymentGateway {
@@ -85,6 +86,7 @@ export default function CheckoutPage() {
     notes: '',
   })
   const [isProcessing, setIsProcessing] = useState(false)
+  const [agreedToTerms, setAgreedToTerms] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [placedOrder, setPlacedOrder] = useState<{ orderNumber: string; totalAmount: number } | null>(null)
   const [paymentConfirmed, setPaymentConfirmed] = useState(false)
@@ -114,6 +116,10 @@ export default function CheckoutPage() {
   }
 
   const handlePlaceOrder = async () => {
+    if (!agreedToTerms) {
+      setError('Please agree to the order terms and conditions before placing your order.')
+      return
+    }
     setIsProcessing(true)
     setError(null)
     try {
@@ -403,7 +409,14 @@ export default function CheckoutPage() {
                           </div>
                         )}
 
-                        {(() => {
+                        <CheckoutTerms checked={agreedToTerms} onCheckedChange={setAgreedToTerms} />
+
+                        {!agreedToTerms ? (
+                          <p className="text-sm text-foreground/60 italic">
+                            Check the box above to agree to the order terms before continuing to payment.
+                          </p>
+                        ) : (
+                        (() => {
                           const active = gateways.find((g) => g.slug === selectedGateway)
                           if (!active) return null
 
@@ -558,7 +571,8 @@ export default function CheckoutPage() {
                               </p>
                             </div>
                           )
-                        })()}
+                        })()
+                        )}
 
                         {!isStripeCard && (
                           <p className="text-sm text-foreground/70 leading-relaxed">
@@ -580,7 +594,7 @@ export default function CheckoutPage() {
                             Edit Shipping
                           </Button>
                           {!isStripeCard && (
-                            <Button size="lg" className="flex-1" onClick={handlePlaceOrder} disabled={isProcessing}>
+                            <Button size="lg" className="flex-1" onClick={handlePlaceOrder} disabled={isProcessing || !agreedToTerms}>
                               {isProcessing ? 'Placing order...' : 'Place Order'}
                             </Button>
                           )}

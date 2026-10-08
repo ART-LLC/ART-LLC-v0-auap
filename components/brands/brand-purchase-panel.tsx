@@ -35,6 +35,8 @@ export function BrandPurchasePanel({
 }: BrandPurchasePanelProps) {
   // Price of the mileage tier the shopper selected (null = default medium tier).
   const [selectedPrice, setSelectedPrice] = useState<number | null>(null)
+  // No sheet price means this part is call/quote-only — never let it into the cart as a $0 item.
+  const isQuoteOnly = !tiers && basePrice <= 0
 
   return (
     <div className="flex flex-col gap-5">
@@ -54,12 +56,19 @@ export function BrandPurchasePanel({
         make={make}
         shipping={shipping}
         detailsHref={detailsHref}
-        purchaseDisabled={availability !== 'in_stock'}
+        purchaseDisabled={availability !== 'in_stock' || isQuoteOnly}
+        isQuoteOnly={isQuoteOnly}
       />
-      {availability !== 'in_stock' && (
+      {isQuoteOnly ? (
         <p role="status" className="text-sm text-muted-foreground">
-          {availability === 'backorder' ? 'This part is on backorder.' : 'This part is out of stock.'} Contact us to confirm availability before ordering.
+          This part is priced by phone. Call or request a quote and we&apos;ll confirm pricing and availability.
         </p>
+      ) : (
+        availability !== 'in_stock' && (
+          <p role="status" className="text-sm text-muted-foreground">
+            {availability === 'backorder' ? 'This part is on backorder.' : 'This part is out of stock.'} Contact us to confirm availability before ordering.
+          </p>
+        )
       )}
     </div>
   )

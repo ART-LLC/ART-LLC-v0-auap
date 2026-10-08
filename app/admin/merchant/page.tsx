@@ -13,7 +13,10 @@ import {
   type IssueCode,
 } from "@/lib/merchant"
 import { MerchantOverview } from "@/components/admin/merchant/merchant-overview"
-import { ProductFixCard, type ProductFixCardProps } from "@/components/admin/merchant/product-fix-card"
+import type { ProductFixCardProps } from "@/components/admin/merchant/product-fix-card"
+import { FixPagesList } from "@/components/admin/merchant/fix-pages-list"
+import { CatalogSyncPanel } from "@/components/admin/merchant/catalog-sync-panel"
+import { listManualProducts } from "@/lib/manual-products"
 
 export const dynamic = "force-dynamic"
 export const maxDuration = 60
@@ -28,21 +31,23 @@ function toCardProps(brand: string, slug: string): ProductFixCardProps | null {
 export default async function AdminMerchantPage({
   searchParams,
 }: {
-  searchParams: Promise<{ brand?: string; q?: string; issue?: string }>
+  searchParams: Promise<{ brand?: string; q?: string; issue?: string | string[] }>
 }) {
   if (!(await getAdminSession())) redirect("/admin/login")
 
   const params = await searchParams
   const brand = BRAND_DIRECTORY.find((b) => b.slug === params.brand)?.slug
-  const issue = (Object.keys(ISSUE_LABELS) as IssueCode[]).find((c) => c === params.issue)
+  const rawIssues = Array.isArray(params.issue) ? params.issue : params.issue ? [params.issue] : []
+  const issues = (Object.keys(ISSUE_LABELS) as IssueCode[]).filter((c) => rawIssues.includes(c))
   const q = params.q?.trim().slice(0, 100) || undefined
-  const searching = Boolean(brand || issue || q)
+  const searching = Boolean(brand || issues.length || q)
 
-  const [stats, fetches, recentOverrides, search] = await Promise.all([
+  const [stats, fetches, recentOverrides, search, manualProducts] = await Promise.all([
     getFeedStats(),
     listFeedFetches(8),
     listRecentOverrides(500),
-    searching ? searchProductsForAdmin({ brand, q, issue, limit: 30 }) : null,
+    searching ? searchProductsForAdmin({ brand, q, issues, limit: 30 }) : null,
+    listManualProducts(),
   ])
 
   const cards: ProductFixCardProps[] = search
@@ -90,6 +95,20 @@ export default async function AdminMerchantPage({
         </p>
       </header>
 
+      <CatalogSyncPanel
+        brands={BRAND_DIRECTORY.map((b) => ({ slug: b.slug, label: b.label }))}
+        manualProducts={manualProducts.map((p) => ({
+          brand: p.brand,
+          brandLabel: getBrandLabel(p.brand),
+          slug: p.slug,
+          name: p.name,
+          price: p.price,
+          source: p.source,
+          pagePath: `/brands/${p.brand}/${p.slug}`,
+          createdAt: p.createdAt,
+        }))}
+      />
+
       <MerchantOverview stats={stats} fetches={fetches} overrideCount={recentOverrides.length} />
 
       <section id="fix-pages" aria-labelledby="fix-heading" className="flex scroll-mt-24 flex-col gap-4">
@@ -115,17 +134,23 @@ export default async function AdminMerchantPage({
               ))}
             </select>
           </label>
-          <label className="flex flex-col gap-1 text-xs font-medium text-muted-foreground">
-            Issue
-            <select name="issue" defaultValue={issue ?? ""} className={inputClass}>
-              <option value="">Any</option>
+          <fieldset className="flex flex-col gap-1 text-xs font-medium text-muted-foreground">
+            <legend className="mb-1">Issue (select any)</legend>
+            <div className={`flex max-w-xs flex-wrap gap-x-3 gap-y-1 rounded-md border border-border bg-card px-3 py-2 font-normal text-foreground`}>
               {(Object.keys(ISSUE_LABELS) as IssueCode[]).map((code) => (
-                <option key={code} value={code}>
+                <label key={code} className="inline-flex items-center gap-1.5 text-xs">
+                  <input
+                    type="checkbox"
+                    name="issue"
+                    value={code}
+                    defaultChecked={issues.includes(code)}
+                    className="h-3.5 w-3.5 accent-primary"
+                  />
                   {ISSUE_LABELS[code]}
-                </option>
+                </label>
               ))}
-            </select>
-          </label>
+            </div>
+          </fieldset>
           <label className="flex min-w-0 flex-1 flex-col gap-1 text-xs font-medium text-muted-foreground">
             Search
             <span className="relative">
@@ -154,11 +179,7 @@ export default async function AdminMerchantPage({
               : "No pages edited yet. Search above to start fixing a page."}
         </p>
 
-        <div className="flex flex-col gap-4">
-          {cards.map((c) => (
-            <ProductFixCard key={`${c.brand}/${c.slug}`} {...c} />
-          ))}
-        </div>
+        <FixPagesList cards={cards} />
       </section>
     </div>
   )
