@@ -120,8 +120,9 @@ export async function sendCustomerOrderInvoice(order: CustomerOrder, siteUrl: st
     )
     .join("")
   const paid = order.status === "paid"
+  const reserved = order.status === "reserved_pending_fitment"
   const body = `
-    <p>Thanks for your order, ${escapeHtml(order.customerName) || "there"}! Here is your receipt.</p>
+    <p>Thanks for your ${reserved ? "reservation" : "order"}, ${escapeHtml(order.customerName) || "there"}! Here is your receipt.</p>
     <table style="width:100%;border-collapse:collapse">${rows([
       ["Order #", order.orderNumber],
       ["Date", new Date(order.createdAt).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" })],
@@ -141,15 +142,17 @@ export async function sendCustomerOrderInvoice(order: CustomerOrder, siteUrl: st
       ${
         paid
           ? `Your card has been charged and your order is confirmed.`
-          : `No charge has been made yet — a parts specialist will call you at ${escapeHtml(order.customerPhone)} within one business day to confirm fitment and take payment securely by phone.`
+          : reserved
+            ? `This part is reserved for you — no payment has been taken. A parts specialist will call you at ${escapeHtml(order.customerPhone)} within one business day to confirm fitment, give you the final price in writing, and take payment only once you approve it. Your warranty coverage is confirmed in writing at that time too.`
+            : `No charge has been made yet — a parts specialist will call you at ${escapeHtml(order.customerPhone)} within one business day to confirm fitment and take payment securely by phone.`
       }
     </p>`
 
   await send(
-    `Your AUAPW order ${order.orderNumber}${paid ? " — paid" : " — received"}`,
+    `Your AUAPW ${reserved ? "reservation" : "order"} ${order.orderNumber}${paid ? " — paid" : reserved ? " — reserved" : " — received"}`,
     `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto">
       <div style="background:#0f1117;color:#fff;padding:20px;border-radius:8px 8px 0 0">
-        <h2 style="margin:0">${paid ? "Payment Received" : "Order Received"}</h2>
+        <h2 style="margin:0">${paid ? "Payment Received" : reserved ? "Part Reserved" : "Order Received"}</h2>
       </div>
       <div style="border:1px solid #e5e7eb;border-top:none;padding:20px;border-radius:0 0 8px 8px">
         ${body}

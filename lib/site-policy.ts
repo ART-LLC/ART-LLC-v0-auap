@@ -20,6 +20,27 @@ export const SHIPPING = {
     "Every unit ships insured on a pallet. Note any damage on the delivery receipt and we replace or refund — you never file the freight claim yourself.",
 } as const
 
+/**
+ * Delivery pricing for "Reserve & Place Order" — the online reservation path
+ * for quote-only parts. No payment is collected online for these orders, so
+ * this is a delivery-method surcharge only, separate from the buy-now
+ * flat-rate SHIPPING above.
+ */
+export const RESERVE_SHIPPING = {
+  standard: {
+    price: 0,
+    label: "Standard Freight",
+    detail: "Free — curbside freight delivery, 3-7 business days door to door.",
+  },
+  liftgate: {
+    price: 75,
+    label: "Liftgate + Residential Delivery",
+    detail: "+$75 — liftgate lowering and residential delivery included.",
+  },
+} as const
+
+export type ReserveDeliveryMethod = keyof typeof RESERVE_SHIPPING
+
 export interface WarrantyStep {
   tier: string
   length: string

@@ -1,13 +1,13 @@
 'use client'
 
 import { useCartStore } from '@/lib/stores/cart-store'
-import { SHIPPING } from '@/lib/site-policy'
+import { SHIPPING, RESERVE_SHIPPING, type ReserveDeliveryMethod } from '@/lib/site-policy'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { Check, ArrowLeft, ShieldCheck, Lock, ExternalLink, Landmark, Wallet, Phone } from 'lucide-react'
+import { Check, ArrowLeft, ShieldCheck, Lock, ExternalLink, Landmark, Wallet, Phone, Truck } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 
@@ -35,6 +35,9 @@ export default function CheckoutPage() {
   const getTotalPrice = useCartStore((state) => state.getTotalPrice)
   const clearCart = useCartStore((state) => state.clearCart)
   const addItem = useCartStore((state) => state.addItem)
+  const deliveryMethod = useCartStore((state) => state.deliveryMethod)
+  const setDeliveryMethod = useCartStore((state) => state.setDeliveryMethod)
+  const isReservationCart = items.length > 0 && items.every((item) => item.isReservation)
   
   const [step, setStep] = useState<'auth' | 'shipping' | 'payment' | 'confirmation'>('auth')
   const [isGuest, setIsGuest] = useState(false)
@@ -91,9 +94,11 @@ export default function CheckoutPage() {
   const [placedOrder, setPlacedOrder] = useState<{ orderNumber: string; totalAmount: number } | null>(null)
   const [paymentConfirmed, setPaymentConfirmed] = useState(false)
 
-  const totalPrice = getTotalPrice()
-  const shipping = items.reduce((total, item) => total + SHIPPING.price * item.quantity, 0)
-  const tax = totalPrice * 0.08
+  const totalPrice = isReservationCart ? 0 : getTotalPrice()
+  const shipping = isReservationCart
+    ? RESERVE_SHIPPING[deliveryMethod].price
+    : items.reduce((total, item) => total + SHIPPING.price * item.quantity, 0)
+  const tax = isReservationCart ? 0 : totalPrice * 0.08
   const finalTotal = totalPrice + shipping + tax
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -126,10 +131,19 @@ export default function CheckoutPage() {
       const res = await fetch('/api/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          customer: formData,
-          items: items.map(({ id, make, price, quantity }) => ({ id, make, price, quantity })),
-        }),
+        body: JSON.stringify(
+          isReservationCart
+            ? {
+                mode: 'reserve',
+                customer: formData,
+                deliveryMethod,
+                items: items.map(({ id, make, quantity }) => ({ id, make, quantity })),
+              }
+            : {
+                customer: formData,
+                items: items.map(({ id, make, price, quantity }) => ({ id, make, price, quantity })),
+              },
+        ),
       })
       const data = await res.json().catch(() => ({}))
       if (!res.ok) {
@@ -251,16 +265,22 @@ export default function CheckoutPage() {
               <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-6">
                 <Check className="w-8 h-8 text-green-400" />
               </div>
-              <h2 className="text-3xl font-bold mb-2">{paymentConfirmed ? 'Payment Confirmed!' : 'Order Received!'}</h2>
+              <h2 className="text-3xl font-bold mb-2">
+                {paymentConfirmed ? 'Payment Confirmed!' : isReservationCart ? 'Part Reserved!' : 'Order Received!'}
+              </h2>
               <p className="text-foreground/60 mb-8 text-pretty">
                 {paymentConfirmed
                   ? 'Your payment was received securely through Stripe. A parts specialist will call you within one business day to confirm fitment and delivery details. No additional payment is needed for this order.'
-                  : 'A parts specialist will call you within one business day to confirm fitment and take payment securely by phone. Nothing has been charged yet.'}
+                  : isReservationCart
+                    ? 'This part is reserved for you — no payment has been taken. A parts specialist will call you within one business day to confirm fitment, give you the final price and warranty terms in writing, and take payment only once you approve it.'
+                    : 'A parts specialist will call you within one business day to confirm fitment and take payment securely by phone. Nothing has been charged yet.'}
               </p>
               <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-8 text-left">
-                <p className="text-sm text-foreground/60 mb-2">Order Number</p>
+                <p className="text-sm text-foreground/60 mb-2">{isReservationCart ? 'Reservation Number' : 'Order Number'}</p>
                 <p className="text-2xl font-bold mb-6 font-mono">{placedOrder?.orderNumber}</p>
-                <p className="text-sm text-foreground/60 mb-2">Order Total</p>
+                <p className="text-sm text-foreground/60 mb-2">
+                  {isReservationCart ? 'Due Today (Delivery Only)' : 'Order Total'}
+                </p>
                 <p className="text-2xl font-bold text-blue-400">${(placedOrder?.totalAmount ?? 0).toFixed(2)}</p>
               </div>
               <div className="flex gap-4 justify-center">
@@ -374,7 +394,42 @@ export default function CheckoutPage() {
 
                     {step === 'payment' && (
                       <div className="space-y-5">
-                        {gateways.length > 0 && (
+                        {isReservationCart && (
+                          <div className="space-y-2">
+                            <p className="text-sm font-semibold text-foreground/90">Delivery Method</p>
+                            <div className="grid sm:grid-cols-2 gap-3">
+                              {(Object.keys(RESERVE_SHIPPING) as ReserveDeliveryMethod[]).map((method) => {
+                                const info = RESERVE_SHIPPING[method]
+                                const isSelected = deliveryMethod === method
+                                return (
+                                  <button
+                                    key={method}
+                                    type="button"
+                                    onClick={() => setDeliveryMethod(method)}
+                                    className={`text-left p-4 rounded-lg border transition-colors ${
+                                      isSelected
+                                        ? 'border-blue-500 bg-blue-500/10'
+                                        : 'border-white/10 bg-white/5 hover:border-white/30'
+                                    }`}
+                                  >
+                                    <div className="flex items-center justify-between mb-1">
+                                      <span className="font-semibold text-sm">{info.label}</span>
+                                      {info.price === 0 ? (
+                                        <span className="text-[10px] uppercase tracking-wide font-bold text-green-400">Free</span>
+                                      ) : (
+                                        <span className="text-[10px] uppercase tracking-wide font-bold text-blue-400">
+                                          +${info.price}
+                                        </span>
+                                      )}
+                                    </div>
+                                    <p className="text-xs text-foreground/60 leading-snug">{info.detail}</p>
+                                  </button>
+                                )
+                              })}
+                            </div>
+                          </div>
+                        )}
+                        {!isReservationCart && gateways.length > 0 && (
                           <div className="space-y-2">
                             <p className="text-sm font-semibold text-foreground/90">Payment Method</p>
                             <div className="grid sm:grid-cols-2 gap-3">
@@ -415,6 +470,18 @@ export default function CheckoutPage() {
                           <p className="text-sm text-foreground/60 italic">
                             Check the box above to agree to the order terms before continuing to payment.
                           </p>
+                        ) : isReservationCart ? (
+                          <div className="rounded-lg border border-white/10 bg-white/5 p-4 space-y-2">
+                            <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                              <Truck className="w-4 h-4" />
+                              No part payment due now
+                            </div>
+                            <p className="text-sm text-foreground/60 whitespace-pre-line">
+                              We reserve this part for you today. A parts specialist calls to confirm fitment for your
+                              VIN, gives you the final price and warranty terms in writing, and only takes payment once
+                              you approve it.
+                            </p>
+                          </div>
                         ) : (
                         (() => {
                           const active = gateways.find((g) => g.slug === selectedGateway)
@@ -574,9 +641,16 @@ export default function CheckoutPage() {
                         })()
                         )}
 
-                        {!isStripeCard && (
+                        {!isStripeCard && !isReservationCart && (
                           <p className="text-sm text-foreground/70 leading-relaxed">
                             No card needed online. After you place your order, a parts specialist calls you to confirm fitment for your VIN and take payment securely{selectedGateway && selectedGateway !== 'phone' ? ` using ${gateways.find((g) => g.slug === selectedGateway)?.name}` : ''} by phone.
+                          </p>
+                        )}
+                        {isReservationCart && (
+                          <p className="text-sm text-foreground/70 leading-relaxed">
+                            {shipping > 0
+                              ? `Only the $${shipping.toFixed(2)} delivery charge is due today. The part price is confirmed by phone before any further charge.`
+                              : 'Nothing is due today — Standard Freight is free. The part price is confirmed by phone before any charge.'}
                           </p>
                         )}
                         <label htmlFor="checkout-notes" className="sr-only">Order notes</label>
@@ -593,10 +667,16 @@ export default function CheckoutPage() {
                           <Button variant="outline" size="lg" onClick={() => setStep('shipping')} disabled={isProcessing}>
                             Edit Shipping
                           </Button>
-                          {!isStripeCard && (
+                          {isReservationCart ? (
                             <Button size="lg" className="flex-1" onClick={handlePlaceOrder} disabled={isProcessing || !agreedToTerms}>
-                              {isProcessing ? 'Placing order...' : 'Place Order'}
+                              {isProcessing ? 'Reserving...' : 'Reserve & Place Order'}
                             </Button>
+                          ) : (
+                            !isStripeCard && (
+                              <Button size="lg" className="flex-1" onClick={handlePlaceOrder} disabled={isProcessing || !agreedToTerms}>
+                                {isProcessing ? 'Placing order...' : 'Place Order'}
+                              </Button>
+                            )
                           )}
                         </div>
                       </div>
@@ -615,7 +695,9 @@ export default function CheckoutPage() {
                     {items.map((item) => (
                       <div key={item.id} className="flex justify-between text-sm">
                         <span className="text-foreground/60">{item.name} x {item.quantity}</span>
-                        <span>${(item.price * item.quantity).toFixed(2)}</span>
+                        <span className={item.isReservation ? 'text-foreground/50 italic' : ''}>
+                          {item.isReservation ? 'Confirmed by phone' : `$${(item.price * item.quantity).toFixed(2)}`}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -623,24 +705,39 @@ export default function CheckoutPage() {
                   <div className="h-px bg-white/10" />
 
                   <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-foreground/60">Subtotal</span>
-                      <span>${totalPrice.toFixed(2)}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground/60">Shipping</span>
-                      <span className={shipping > 0 ? '' : 'text-green-400'}>${shipping.toFixed(2)}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground/60">Tax (8%)</span>
-                      <span>${tax.toFixed(2)}</span>
-                    </div>
+                    {isReservationCart ? (
+                      <>
+                        <div className="flex justify-between">
+                          <span className="text-foreground/60">Parts price</span>
+                          <span className="text-foreground/50 italic">Confirmed by phone</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-foreground/60">{RESERVE_SHIPPING[deliveryMethod].label}</span>
+                          <span className={shipping > 0 ? '' : 'text-green-400'}>${shipping.toFixed(2)}</span>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="flex justify-between">
+                          <span className="text-foreground/60">Subtotal</span>
+                          <span>${totalPrice.toFixed(2)}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-foreground/60">Shipping</span>
+                          <span className={shipping > 0 ? '' : 'text-green-400'}>${shipping.toFixed(2)}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-foreground/60">Tax (8%)</span>
+                          <span>${tax.toFixed(2)}</span>
+                        </div>
+                      </>
+                    )}
                   </div>
 
                   <div className="h-px bg-white/10" />
 
                   <div className="flex justify-between text-lg font-bold">
-                    <span>Total</span>
+                    <span>{isReservationCart ? 'Due Today' : 'Total'}</span>
                     <span className="text-blue-400">${finalTotal.toFixed(2)}</span>
                   </div>
                 </div>

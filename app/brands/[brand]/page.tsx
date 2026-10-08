@@ -7,6 +7,7 @@ import { Footer } from '@/components/footer'
 import { Badge } from '@/components/ui/badge'
 import { SeoBacklinks } from '@/components/seo-backlinks'
 import { BrandProductImage } from '@/components/brands/brand-product-image'
+import { TrustBadges } from '@/components/products/trust-badges'
 import {
   BRAND_DIRECTORY,
   getBrandLabel,
@@ -312,6 +313,11 @@ export default async function BrandCatalogPage({ params, searchParams }: PagePro
                       <h2 className="text-sm font-bold text-foreground line-clamp-2 group-hover:text-primary transition-colors">
                         {product.name}
                       </h2>
+                      <TrustBadges
+                        productName={product.name}
+                        isVerifiedPhoto={!getProductDisplayImage(brand, product).illustrative}
+                        size="sm"
+                      />
                       <div className="mt-auto flex items-baseline justify-between gap-2">
                         <span className="text-lg font-black text-primary">
                           {product.price > 0 ? `$${product.price.toLocaleString()}` : 'Call for price'}

@@ -40,7 +40,7 @@ export function FollowupFilters({
             : "border-border bg-card text-muted-foreground hover:text-foreground"
         }`}
       >
-        {label}
+        {label.replace(/_/g, " ")}
         <span className={`rounded-full px-1.5 text-xs ${active ? "bg-primary-foreground/20" : "bg-muted"}`}>{count}</span>
       </Link>
     )
